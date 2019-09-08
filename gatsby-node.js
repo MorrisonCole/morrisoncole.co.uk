@@ -62,3 +62,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type Site implements Node {
+      siteMetadata: SiteSiteMetadata!
+    }
+    
+    type SiteSiteMetadata {
+      title: String!
+      description: String!
+      author: String!
+    }
+  `
+  createTypes(typeDefs)
+}

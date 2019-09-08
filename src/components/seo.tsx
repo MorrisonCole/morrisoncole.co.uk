@@ -1,22 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet, { HelmetProps } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import Helmet from "react-helmet"
+import { graphql, useStaticQuery } from "gatsby"
+import { SeoQuery } from "../graphql-types"
 
 interface SEOProps {
-  description?: string,
-  lang?: string,
-  meta?: {
-    name: string
-    content: string,
-  }
-  title: string,
+  description?: string
+  lang?: string
+  meta?: []
+  title: string
 }
 
 function SEO({ description, lang, meta, title }: SEOProps) {
-  const { site } = useStaticQuery(
+  const { site }: SeoQuery = useStaticQuery(
     graphql`
-      query {
+      query Seo {
         site {
           siteMetadata {
             title
@@ -27,6 +25,10 @@ function SEO({ description, lang, meta, title }: SEOProps) {
       }
     `
   )
+
+  if (site == null) {
+    return <div/>
+  }
 
   const metaDescription = description || site.siteMetadata.description
 
