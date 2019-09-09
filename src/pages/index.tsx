@@ -1,12 +1,17 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-class BlogIndex extends React.Component {
+interface BlogIndexProps {
+  location: Location
+  data: any
+}
+
+class BlogIndex extends React.Component<BlogIndexProps, {}> {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -16,7 +21,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <Bio />
-        {posts.map(({ node }) => {
+        {posts.map(({ node }: any) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <article key={node.fields.slug}>

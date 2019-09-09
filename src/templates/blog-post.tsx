@@ -1,12 +1,18 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
+interface BlogPostTemplateProps {
+  location: Location
+  data: any // TODO: TS
+  pageContext: any // TODO: TS
+}
+
+class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
