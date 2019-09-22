@@ -2,16 +2,17 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
+import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import Layout from "../components/layout"
 
-interface BlogIndexProps {
+interface TimelineIndexProps {
   location: Location
   data: any
 }
 
-class BlogIndex extends React.Component<BlogIndexProps, {}> {
+class TimelineIndex extends React.Component<TimelineIndexProps, {}> {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -19,40 +20,15 @@ class BlogIndex extends React.Component<BlogIndexProps, {}> {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Timeline" />
         <Bio />
-        {posts.map(({ node }: any) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <article key={node.fields.slug}>
-              <header>
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4),
-                  }}
-                >
-                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                    {title}
-                  </Link>
-                </h3>
-                <small>{node.frontmatter.date}</small>
-              </header>
-              <section>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: node.frontmatter.description || node.excerpt,
-                  }}
-                />
-              </section>
-            </article>
-          )
-        })}
+
       </Layout>
     )
   }
 }
 
-export default BlogIndex
+export default TimelineIndex
 
 export const pageQuery = graphql`
   query BlogIndex {

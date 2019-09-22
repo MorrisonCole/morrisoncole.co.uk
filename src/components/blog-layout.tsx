@@ -2,20 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
-import { Container, createMuiTheme } from "@material-ui/core"
-import { ThemeProvider } from "@material-ui/styles"
-
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: "Roboto",
-  },
-  spacing: 4,
-  palette: {
-    primary: {
-      main: "#007bff",
-    },
-  },
-})
 
 interface LayoutProps {
   location: Location,
@@ -23,7 +9,7 @@ interface LayoutProps {
   children: React.ReactNode
 }
 
-class Layout extends React.Component<LayoutProps, {}> {
+class BlogLayout extends React.Component<LayoutProps, {}> {
 
   render() {
     const { location, title, children } = this.props
@@ -73,17 +59,22 @@ class Layout extends React.Component<LayoutProps, {}> {
       )
     }
     return (
-      <ThemeProvider theme={theme}>
-        <Container className="mainContent" maxWidth="md">
-          <header>{header}</header>
-          <main>{children}</main>
-          <footer>
-            &copy; Morrison Cole {new Date().getFullYear()}
-          </footer>
-        </Container>
-      </ThemeProvider>
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        }}
+      >
+        <header>{header}</header>
+        <main>{children}</main>
+        <footer>
+          &copy; Morrison Cole {new Date().getFullYear()}
+        </footer>
+      </div>
     )
   }
 }
 
-export default Layout
+export default BlogLayout
