@@ -2,6 +2,7 @@ import React from "react"
 import { Container } from "@material-ui/core"
 import Header from "./header/header"
 import NavBar from "./navbar/navbar"
+import Footer from "./footer/footer"
 
 interface LayoutProps {
   location: Location,
@@ -14,16 +15,16 @@ class Layout extends React.Component<LayoutProps, {}> {
     const { location, children } = this.props
 
     return (
-      <Container className="mainContent" maxWidth="md">
-        <Header/>
+      <React.Fragment>
+        <Container className="mainContent" maxWidth="md">
+          <Header/>
 
-        <NavBar/>
+          <NavBar/>
 
-        <main>{children}</main>
-        <footer>
-          &copy; Morrison Cole {new Date().getFullYear()}
-        </footer>
-      </Container>
+          <main>{children}</main>
+        </Container>
+        <Footer/>
+      </React.Fragment>
     )
   }
 }
