@@ -3,6 +3,7 @@ import { Container } from "@material-ui/core"
 import Header from "./header/header"
 import NavBar from "./navbar/navbar"
 import Footer from "./footer/footer"
+import "./layout.css"
 
 interface LayoutProps {
   location: Location,
@@ -21,7 +22,6 @@ class Layout extends React.Component<LayoutProps, {}> {
 
           <NavBar/>
 
-          <main>{children}</main>
         </Container>
         <Footer/>
       </React.Fragment>
