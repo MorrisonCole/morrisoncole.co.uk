@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
-
 interface LayoutProps {
   location: Location,
   title: string,
@@ -20,8 +18,6 @@ class BlogLayout extends React.Component<LayoutProps, {}> {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
         >
@@ -63,8 +59,6 @@ class BlogLayout extends React.Component<LayoutProps, {}> {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <header>{header}</header>

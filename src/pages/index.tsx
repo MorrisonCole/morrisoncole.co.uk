@@ -1,10 +1,8 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 
 interface TimelineIndexProps {
@@ -16,10 +14,9 @@ class TimelineIndex extends React.Component<TimelineIndexProps, {}> {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location}>
         <SEO title="Timeline" />
         <Bio />
 
@@ -31,7 +28,7 @@ class TimelineIndex extends React.Component<TimelineIndexProps, {}> {
 export default TimelineIndex
 
 export const pageQuery = graphql`
-  query BlogIndex {
+  query TimelineIndex {
     site {
       siteMetadata {
         title
