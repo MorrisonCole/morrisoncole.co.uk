@@ -1,6 +1,7 @@
 import React from "react"
 import { Container } from "@material-ui/core"
 import Header from "./header/header"
+import NavBar from "./navbar/navbar"
 
 interface LayoutProps {
   location: Location,
@@ -15,6 +16,9 @@ class Layout extends React.Component<LayoutProps, {}> {
     return (
       <Container className="mainContent" maxWidth="md">
         <Header/>
+
+        <NavBar/>
+
         <main>{children}</main>
         <footer>
           &copy; Morrison Cole {new Date().getFullYear()}
