@@ -4,7 +4,6 @@ import { graphql, Link } from "gatsby"
 import Bio from "../components/bio"
 import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 interface BlogPostTemplateProps {
   location: Location
@@ -28,7 +27,6 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           <header>
             <h1
               style={{
-                marginTop: rhythm(1),
                 marginBottom: 0,
               }}
             >
@@ -36,9 +34,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             </h1>
             <p
               style={{
-                ...scale(-1 / 5),
                 display: `block`,
-                marginBottom: rhythm(1),
               }}
             >
               {post.frontmatter.date}
@@ -47,7 +43,6 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
             style={{
-              marginBottom: rhythm(1),
             }}
           />
           <footer>
