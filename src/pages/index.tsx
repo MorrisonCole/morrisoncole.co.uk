@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import Layout from "../components/layout"
 
 interface TimelineIndexProps {
   location: Location
@@ -14,10 +13,7 @@ class TimelineIndex extends React.Component<TimelineIndexProps, {}> {
     const siteTitle = data.site.siteMetadata.title
 
     return (
-      <Layout location={this.props.location}>
         <SEO title="Timeline" />
-
-      </Layout>
     )
   }
 }
