@@ -38,10 +38,6 @@ interface SoftwareProps {
 export default function Software(props: SoftwareProps) {
   const classes = styles()
 
-  useEffect(() => {
-    document.title = "Morrison Cole | Software"
-  })
-
   const listItems = technologies2019.map((item) =>
     <ListItem button>
       <ListItemIcon>
