@@ -1,9 +1,11 @@
+const siteAddress = new URL("https://www.morrisoncole.co.uk")
+
 module.exports = {
   siteMetadata: {
     title: `Morrison Cole`,
     author: `Morrison Cole`,
     description: `Software Engineer, Technical Product Manager & Musician. Previously @improbable & @shazam. Founder of Third Nerve & Latent Signal.`,
-    siteUrl: `https://morrisoncole.co.uk/`,
+    siteUrl: siteAddress.href,
     social: {
       twitter: `morrisoncole`,
     },
@@ -87,7 +89,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'morrisoncole.co.uk'
+        bucketName: 'morrisoncole.co.uk',
+        protocol: siteAddress.protocol.slice(0, -1),
+        hostname: siteAddress.hostname,
       },
     },
   ],
