@@ -20,8 +20,11 @@ class Layout extends React.Component<LayoutProps, {}> {
         <Container className="mainContent" maxWidth="md">
           <Header/>
 
-          <NavBar/>
+          <main>
+            <NavBar/>
 
+            {children}
+          </main>
         </Container>
         <Footer/>
       </React.Fragment>

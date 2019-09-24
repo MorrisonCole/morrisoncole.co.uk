@@ -1,17 +1,17 @@
-import React from "react";
-import Container from "@material-ui/core/Container";
-import {Typography} from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import Grid from "@material-ui/core/Grid";
+import React from "react"
+import Container from "@material-ui/core/Container"
+import { Typography } from "@material-ui/core"
+import makeStyles from "@material-ui/core/styles/makeStyles"
+import Grid from "@material-ui/core/Grid"
 import classNames from "classnames"
 
 function currentYear() {
-  return new Date().getFullYear();
+  return new Date().getFullYear()
 }
 
 const useStyles = makeStyles({
   container: {
-    padding: 0
+    padding: 0,
   },
   footer: {
     backgroundColor: "#f5f5f5",
@@ -22,17 +22,18 @@ const useStyles = makeStyles({
     borderTop: "1px solid #e5e5e5",
   },
   footerText: {
-    paddingLeft: "5%"
+    paddingLeft: "5%",
   },
   fade: {
-    opacity: 0.6
-  }
-});
+    opacity: 0.6,
+  },
+})
 
 export default function Footer() {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
+    <footer>
       <Container maxWidth={false} className={classes.container}>
         <Grid item xs className={classes.footer}>
           <Typography variant="body2" className={classes.footerText}>Handcrafted with TS, React and a bunch of other
@@ -41,5 +42,6 @@ export default function Footer() {
             Cole {currentYear()}</Typography>
         </Grid>
       </Container>
-  );
+    </footer>
+  )
 }

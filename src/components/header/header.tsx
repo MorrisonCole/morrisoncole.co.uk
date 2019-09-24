@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme: Theme) =>
     profilePicture: {
       width: "65%",
       height: "65%",
-      marginBottom: 0
+      marginBottom: 0,
     },
     logo: {
       margin: "0 30px 10px 0",
@@ -54,42 +54,45 @@ export default function Header() {
   `)
 
   return (
-    <Grid container
-          direction="column">
+    <header>
       <Grid container
-            direction="row"
-            justify="flex-start"
-            alignItems="center"
-            className={classes.grid}>
+            direction="column">
+        <Grid container
+              direction="row"
+              justify="flex-start"
+              alignItems="center"
+              className={classes.grid}>
 
-        <Grid item xs>
-          <Grid container justify="center" alignItems="center">
-            <Image
-              fluid={data.logo.childImageSharp.fluid}
-              alt={"Morrison Cole logo"}
-              className={classes.logo}
-            />
+          <Grid item xs>
+            <Grid container justify="center" alignItems="center">
+              <Image
+                fluid={data.logo.childImageSharp.fluid}
+                alt={"Morrison Cole logo"}
+                className={classes.logo}
+              />
+            </Grid>
           </Grid>
+
+          <Grid item xs={2}>
+            <Grid container justify="center" alignItems="center">
+              <Avatar alt="Morrison Cole" src={data.avatar.childImageSharp.fluid.src}
+                      className={classes.profilePicture}/>
+            </Grid>
+          </Grid>
+
         </Grid>
 
-        <Grid item xs={2}>
-          <Grid container justify="center" alignItems="center">
-            <Avatar alt="Morrison Cole" src={data.avatar.childImageSharp.fluid.src} className={classes.profilePicture}/>
-          </Grid>
+        <Grid container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              className={classes.socialContainer}>
+          <GitHubSocialIcon/>
+          <LinkedInSocialIcon/>
+          <StackOverflowSocialIcon/>
+          <TwitterSocialIcon/>
         </Grid>
-
       </Grid>
-
-      <Grid container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            className={classes.socialContainer}>
-        <GitHubSocialIcon/>
-        <LinkedInSocialIcon/>
-        <StackOverflowSocialIcon/>
-        <TwitterSocialIcon/>
-      </Grid>
-    </Grid>
+    </header>
   )
 }
