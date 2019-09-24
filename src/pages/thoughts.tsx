@@ -8,7 +8,7 @@ import ListItemText from "@material-ui/core/ListItemText"
 import Star from "@material-ui/icons/Star"
 import Typography from "@material-ui/core/Typography"
 import { createStyles, Theme } from "@material-ui/core"
-import { books } from "../migrate/thoughts_data"
+import { books } from "../migrate/thoughts-data"
 import SEO from "../components/seo"
 
 const styles = makeStyles((theme: Theme) =>

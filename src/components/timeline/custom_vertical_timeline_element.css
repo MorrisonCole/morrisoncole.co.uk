@@ -1,0 +1,109 @@
+.vertical-timeline.vertical-timeline--two-columns {
+    width: 95%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.custom-vertical-timeline-element-content {
+    position: relative;
+    margin-left: 60px;
+    padding: 1em;
+}
+.vertical-timeline-element--no-children .custom-vertical-timeline-element-content {
+    background: transparent;
+    box-shadow: none;
+}
+.custom-vertical-timeline-element-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.custom-vertical-timeline-element-content .vertical-timeline-element-date {
+    display: inline-block;
+}
+.custom-vertical-timeline-element-content .vertical-timeline-element-date {
+    float: left;
+    padding: .8em 0;
+    opacity: .7;
+}
+.custom-vertical-timeline-element-content::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+}
+.vertical-timeline-element--no-children .custom-vertical-timeline-element-content::before {
+    display: none;
+}
+@media only screen and (min-width: 1170px) {
+    .vertical-timeline--two-columns .custom-vertical-timeline-element-content {
+        margin-left: 0;
+        padding: 1.5em;
+        width: 40%;
+    }
+    .vertical-timeline--two-columns .custom-vertical-timeline-element-content::before {
+        top: 24px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: white;
+    }
+
+    .vertical-timeline--two-columns .custom-vertical-timeline-element-content .vertical-timeline-element-date {
+        position: absolute;
+        width: 100%;
+        left: 140%;
+        top: 0;
+    }
+
+    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .custom-vertical-timeline-element-content,
+    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .custom-vertical-timeline-element-content {
+        float: right;
+    }
+    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .custom-vertical-timeline-element-content::before,
+    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .custom-vertical-timeline-element-content::before {
+        top: 24px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color: white;
+    }
+
+    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .custom-vertical-timeline-element-content .vertical-timeline-element-date,
+    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .custom-vertical-timeline-element-content .vertical-timeline-element-date {
+        left: auto;
+        right: 140%;
+        text-align: right;
+    }
+}
+
+/* Box animations */
+.vertical-timeline--animate .custom-vertical-timeline-element-content.is-hidden {
+    visibility: hidden;
+}
+.vertical-timeline--animate .custom-vertical-timeline-element-content.bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2 0.6s;
+    -moz-animation: cd-bounce-2 0.6s;
+    animation: cd-bounce-2 0.6s;
+}
+
+@media only screen and (min-width: 1170px) {
+    /* inverse bounce effect on even content blocks */
+    .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .custom-vertical-timeline-element-content.bounce-in,
+    .vertical-timeline--two-columns.vertical-timeline--animate .vertical-timeline-element.vertical-timeline-element--right .custom-vertical-timeline-element-content.bounce-in {
+        -webkit-animation: cd-bounce-2-inverse 0.6s;
+        -moz-animation: cd-bounce-2-inverse 0.6s;
+        animation: cd-bounce-2-inverse 0.6s;
+    }
+}
+
+@media only screen and (max-width: 1169px) {
+    .custom-vertical-timeline-element-content.bounce-in {
+        visibility: visible;
+        -webkit-animation: cd-bounce-2-inverse 0.6s;
+        -moz-animation: cd-bounce-2-inverse 0.6s;
+        animation: cd-bounce-2-inverse 0.6s;
+    }
+}
