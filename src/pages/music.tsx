@@ -33,10 +33,6 @@ interface MusicProps {
 export default function Music(props: MusicProps) {
   const classes = styles()
 
-  useEffect(() => {
-    document.title = "Morrison Cole | Music"
-  })
-
   const [expanded, setExpanded] = React.useState<string | false>("panel1")
 
   const handleChange = (panel: string) => (event: React.ChangeEvent<{}>, isExpanded: boolean) => {

@@ -30,10 +30,6 @@ interface ThoughtsProps {
 export default function Thoughts(props: ThoughtsProps) {
   const classes = styles()
 
-  useEffect(() => {
-    document.title = "Morrison Cole | Thoughts"
-  })
-
   const listItems = books.map((item) =>
     <ListItem button component="a" href={item.link} target={"_blank"}>
       <ListItemIcon>
