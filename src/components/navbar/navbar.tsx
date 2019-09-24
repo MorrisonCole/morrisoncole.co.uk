@@ -40,14 +40,14 @@ export default function NavBar(props: NavBarProps) {
   return (
       <Grid container direction="column" alignItems={"center"}>
         <Grid item>
-          <Tabs value={props.location.pathname}
+          <Tabs value={props.location.pathname.replace(/\/+$/, '')}
                 onChange={handleChange}
                 indicatorColor="primary"
                 textColor="primary"
                 variant="scrollable"
                 scrollButtons="auto"
                 className={classes.grow}>
-            <Tab label="Timeline" value="/" component={Link} to={"/"}/>
+            <Tab label="Timeline" value="" component={Link} to={""}/>
             <Tab label="Software" value="/software" component={Link} to={"/software"}/>
             <Tab label="Music" value="/music" component={Link} to={"/music"}/>
             <Tab label="Thoughts" value="/thoughts" component={Link} to={"/thoughts"}/>

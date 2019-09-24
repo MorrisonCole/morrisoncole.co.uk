@@ -77,7 +77,6 @@ module.exports = {
         icon: `content/assets/favicon.ico`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     {
@@ -94,5 +93,6 @@ module.exports = {
         hostname: siteAddress.hostname,
       },
     },
+    `gatsby-plugin-remove-serviceworker`,
   ],
 }
