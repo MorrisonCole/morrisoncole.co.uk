@@ -32,7 +32,7 @@ class Layout extends React.Component<LayoutProps, {}> {
           <Header/>
 
           <main>
-            <NavBar/>
+            <NavBar location={location}/>
 
             {children}
           </main>

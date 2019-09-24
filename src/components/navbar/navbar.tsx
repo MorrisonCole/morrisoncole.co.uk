@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react"
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Grid from "@material-ui/core/Grid";
@@ -24,7 +24,11 @@ const styles = makeStyles((theme: Theme) =>
     })
 );
 
-export default function NavBar() {
+interface NavBarProps {
+  location: Location
+}
+
+export default function NavBar(props: NavBarProps) {
   const classes = styles();
 
   const [, setValue] = React.useState(0);
@@ -36,7 +40,7 @@ export default function NavBar() {
   return (
       <Grid container direction="column" alignItems={"center"}>
         <Grid item>
-          <Tabs value={window.location.pathname}
+          <Tabs value={props.location.pathname}
                 onChange={handleChange}
                 indicatorColor="primary"
                 textColor="primary"

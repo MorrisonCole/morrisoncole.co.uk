@@ -84,5 +84,11 @@ module.exports = {
         component: require.resolve(`./src/components/layout.tsx`),
       },
     },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'morrisoncole.co.uk'
+      },
+    },
   ],
 }
