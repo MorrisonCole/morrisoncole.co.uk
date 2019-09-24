@@ -14,7 +14,7 @@ import {
   Typography,
 } from "@material-ui/core"
 import { Star } from "@material-ui/icons"
-import { technologies2019 } from "../migrate/software_data"
+import { technologies2019 } from "../migrate/software-data"
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
