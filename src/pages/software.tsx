@@ -3,29 +3,29 @@ import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-interface TimelineIndexProps {
+interface SoftwareProps {
   location: Location
   data: any
 }
 
-class TimelineIndex extends React.Component<TimelineIndexProps, {}> {
+class Software extends React.Component<SoftwareProps, {}> {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
 
     return (
       <Layout location={this.props.location}>
-        <SEO title="Timeline" />
+        <SEO title="Software" />
 
       </Layout>
     )
   }
 }
 
-export default TimelineIndex
+export default Software
 
 export const pageQuery = graphql`
-  query TimelineIndex {
+  query Software {
     site {
       siteMetadata {
         title
