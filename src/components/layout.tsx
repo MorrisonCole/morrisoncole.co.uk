@@ -1,11 +1,22 @@
 import React from "react"
-import { Container } from "@material-ui/core"
+import { Container, createStyles, WithStyles, withStyles } from "@material-ui/core"
 import Header from "./header/header"
 import NavBar from "./navbar/navbar"
 import Footer from "./footer/footer"
 import "./layout.css"
 
-interface LayoutProps {
+const styles = createStyles({
+  site: {
+    display: "flex",
+    minHeight: "100%",
+    flexDirection: "column",
+  },
+  siteContent: {
+    flexGrow: 1
+  },
+})
+
+interface LayoutProps extends WithStyles<typeof styles> {
   location: Location,
   children: React.ReactNode
 }
@@ -13,11 +24,11 @@ interface LayoutProps {
 class Layout extends React.Component<LayoutProps, {}> {
 
   render() {
-    const { location, children } = this.props
+    const { classes, location, children } = this.props
 
     return (
-      <React.Fragment>
-        <Container className="mainContent" maxWidth="md">
+      <div className={classes.site}>
+        <Container className={classes.siteContent} maxWidth="md">
           <Header/>
 
           <main>
@@ -27,9 +38,9 @@ class Layout extends React.Component<LayoutProps, {}> {
           </main>
         </Container>
         <Footer/>
-      </React.Fragment>
+      </div>
     )
   }
 }
 
-export default Layout
+export default withStyles(styles)(Layout)
