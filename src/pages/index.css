@@ -1,0 +1,7 @@
+.vertical-timeline::before {
+    background-color: #4891c64a;
+}
+
+.vertical-timeline-element-content {
+    box-shadow: none;
+}
