@@ -20,7 +20,7 @@ export const books = [
     "link": "https://www.goodreads.com/book/show/35133922-educated"
   },
   {
-    "title": "This Is Water: Some Thoughts, Delivered on a Significant Occasion, about Living a Compassionate Life",
+    "title": "This Is Water: Some Blog, Delivered on a Significant Occasion, about Living a Compassionate Life",
     "author": "Wallace, David Foster",
     "link": "https://www.goodreads.com/book/show/5986375-this-is-water"
   },
