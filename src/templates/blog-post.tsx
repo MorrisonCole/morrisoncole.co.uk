@@ -1,11 +1,23 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-
-import Bio from "../components/bio"
-import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
+import List from "@material-ui/core/List"
+import { books } from "../migrate/thoughts-data"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import Star from '@material-ui/icons/Star';
+import ListItemText from "@material-ui/core/ListItemText"
+import { createStyles, Theme, Typography, WithStyles, withStyles } from "@material-ui/core"
+import Grid from "@material-ui/core/Grid"
 
-interface BlogPostTemplateProps {
+const styles = ({ spacing }: Theme) => createStyles({
+    container: {
+      marginTop: spacing(8),
+    }
+  }
+)
+
+interface BlogPostTemplateProps extends WithStyles<typeof styles> {
   location: Location
   data: any // TODO: TS
   pageContext: any // TODO: TS
@@ -13,41 +25,43 @@ interface BlogPostTemplateProps {
 
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const {classes, location, data, pageContext} = this.props
+
+    const post = data.markdownRemark
+    const { previous, next } = pageContext
+
+    const listItems = books.map((item) =>
+      <ListItem button component="a" href={item.link} target={"_blank"}>
+        <ListItemIcon>
+          <Star/>
+        </ListItemIcon>
+        <ListItemText
+          primary={item.title}
+          secondary={item.author}
+        />
+      </ListItem>,
+    )
 
     return (
-      <BlogLayout location={this.props.location} title={siteTitle}>
+      <Grid container className={classes.container} direction={"column"}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginBottom: 0,
-              }}
-            >
+            <Typography variant="h4">
               {post.frontmatter.title}
-            </h1>
-            <p
-              style={{
-                display: `block`,
-              }}
-            >
+            </Typography>
+            <Typography variant="subtitle2">
               {post.frontmatter.date}
-            </p>
+            </Typography>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <hr
-            style={{
-            }}
-          />
-          <footer>
-            <Bio />
-          </footer>
+          <List dense>
+            {listItems}
+          </List>
+          <hr/>
         </article>
 
         <nav>
@@ -76,12 +90,12 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             </li>
           </ul>
         </nav>
-      </BlogLayout>
+      </Grid>
     )
   }
 }
 
-export default BlogPostTemplate
+export default withStyles(styles)(BlogPostTemplate)
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
