@@ -50,7 +50,7 @@ export default function NavBar(props: NavBarProps) {
             <Tab label="Timeline" value="" component={Link} to={""}/>
             <Tab label="Software" value="/software" component={Link} to={"/software"}/>
             <Tab label="Music" value="/music" component={Link} to={"/music"}/>
-            <Tab label="Thoughts" value="/thoughts" component={Link} to={"/thoughts"}/>
+            <Tab label="Blog" value="/blog" component={Link} to={"/blog"}/>
           </Tabs>
         </Grid>
       </Grid>
