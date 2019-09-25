@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
-import BlogLayout from "../components/blog-layout"
 import SEO from "../components/seo"
 import { NotFoundPageQuery } from "../graphql-types"
 
@@ -16,11 +14,11 @@ class NotFoundPage extends React.Component<NotFoundPageProps, {}> {
     const siteTitle = data.site && data.site.siteMetadata.title || ""
 
     return (
-      <BlogLayout location={this.props.location} title={siteTitle}>
+      <div>
         <SEO title="404: Not Found" />
         <h1>Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-      </BlogLayout>
+      </div>
     )
   }
 }
