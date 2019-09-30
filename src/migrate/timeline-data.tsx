@@ -11,6 +11,8 @@ import ImprobableImage from "../migrate/images/timeline/improbable.png"
 // @ts-ignore
 import KobeImage from "../migrate/images/timeline/kobe.jpg"
 // @ts-ignore
+import MedmainImage from "../migrate/images/timeline/medmain.png"
+// @ts-ignore
 import LondonImage from "../migrate/images/timeline/london.jpg"
 // @ts-ignore
 import ThirdNerveImage from "../migrate/images/timeline/thirdnerve.png"
@@ -39,6 +41,16 @@ const icons = {
 export const life = [
   {
     "date": "2019 - Now",
+    "icon": icons.work,
+    "title": "Medmain Inc.",
+    "image": MedmainImage,
+    "subtitle1": "Software Engineer, Server",
+    "subtitle2": "",
+    "text": "Developing products at the forefront of AI-assisted medicine.",
+    "mainLink": "https://medmain.net/",
+  },
+  {
+    "date": "2019",
     "icon": icons.home,
     "title": "Moved 🇯🇵",
     "image": KobeImage,
