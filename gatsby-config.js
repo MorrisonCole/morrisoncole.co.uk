@@ -4,7 +4,8 @@ module.exports = {
   siteMetadata: {
     title: `Morrison Cole`,
     author: `Morrison Cole`,
-    description: `Software Engineer, Technical Product Manager & Musician. Previously @improbable & @shazam. Founder of Third Nerve & Latent Signal.`,
+    description: `I'm a software engineer, technical product manager & musician based in Tokyo, Japan. I love start-ups, 
+    and previously worked for Shazam & Improbable. Right now, I'm developing AI-based medicine at Medmain (amongst other things!).`,
     siteUrl: siteAddress.href,
     social: {
       twitter: `morrisoncole`,
