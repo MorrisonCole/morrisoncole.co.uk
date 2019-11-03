@@ -13,5 +13,8 @@ export const technologies2019 = [
     },
     {
         title: "TypeScript"
+    },
+    {
+        title: "GraphQL"
     }
 ];
