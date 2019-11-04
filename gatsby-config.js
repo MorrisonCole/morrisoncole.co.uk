@@ -12,6 +12,14 @@ module.exports = {
     },
   },
   plugins: [
+    'gatsby-transformer-json',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/`,
+        name: `data`
+      },
+    },
     {
       resolve: 'gatsby-plugin-material-ui',
       options: {

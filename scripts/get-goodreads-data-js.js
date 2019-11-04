@@ -1,6 +1,7 @@
 const goodreads = require("goodreads-api-node")
 const express = require("express")
 const open = require("open")
+const fs = require("fs")
 
 const myCredentials = {
   key: process.env.GOODREADS_KEY,
@@ -19,17 +20,17 @@ app.listen(port, async () => {
   await auth()
 
   let result = await list2019Books()
-  console.log(result.books)
+  fs.writeFile('./books.json', JSON.stringify(result.books, null, 2), function (err) {
+    if (err) throw err;
+  });
+  console.log("Wrote file")
 })
 
 async function auth() {
   gr.initOAuth(callbackURL)
 
-  await gr.getRequestToken()
-    .then(url => {
-      open(url)
-    })
-    .catch((err) => console.log("Error during auth: ", err))
+  let url = await gr.getRequestToken()
+  await open(url)
 }
 
 app.get("/" + goodreadsCallbackSuffix, async () => {
@@ -38,5 +39,5 @@ app.get("/" + goodreadsCallbackSuffix, async () => {
 
 async function list2019Books() {
   await gr.getAccessToken()
-  return gr.getBooksOnUserShelf("6320986-morrison", "2019", { per_page: 200 })
+  return gr.getBooksOnUserShelf("6320986-morrison", "2019", { per_page: 200, sort: 'position' })
 }
