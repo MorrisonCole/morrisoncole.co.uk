@@ -2,13 +2,13 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import SEO from "../components/seo"
 import List from "@material-ui/core/List"
-import { books } from "../migrate/thoughts-data"
 import ListItem from "@material-ui/core/ListItem"
 import ListItemIcon from "@material-ui/core/ListItemIcon"
-import Star from '@material-ui/icons/Star';
+import Star from "@material-ui/icons/Star"
 import ListItemText from "@material-ui/core/ListItemText"
 import { createStyles, Theme, Typography, WithStyles, withStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
+import { BlogPostBySlugQuery, SitePageContext } from "../graphql-types"
 
 const styles = ({ spacing }: Theme) => createStyles({
     container: {
@@ -19,8 +19,8 @@ const styles = ({ spacing }: Theme) => createStyles({
 
 interface BlogPostTemplateProps extends WithStyles<typeof styles> {
   location: Location
-  data: any // TODO: TS
-  pageContext: any // TODO: TS
+  data: BlogPostBySlugQuery
+  pageContext: SitePageContext
 }
 
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
@@ -30,14 +30,15 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     const post = data.markdownRemark
     const { previous, next } = pageContext
 
-    const listItems = books.map((item) =>
-      <ListItem button component="a" href={item.link} target={"_blank"}>
+    console.log("found " + data.allBooksJson.edges.length)
+    const listItems = data.allBooksJson.edges[0].node.book.map((book) =>
+      <ListItem button component="a" href={book.link} target={"_blank"}>
         <ListItemIcon>
           <Star/>
         </ListItemIcon>
         <ListItemText
-          primary={item.title}
-          secondary={item.author}
+          primary={book.title}
+          secondary={book.authors.author.name}
         />
       </ListItem>,
     )
@@ -55,6 +56,9 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             </Typography>
             <Typography variant="subtitle2">
               {post.frontmatter.date}
+            </Typography>
+            <Typography variant="caption">
+              {`(Last updated: ${post.frontmatter.updated})`}
             </Typography>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -112,7 +116,23 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        updated(formatString: "MMMM DD, YYYY")
         description
+      }
+    }
+    allBooksJson {
+      edges {
+        node {
+          book {
+            title
+            authors {
+              author {
+                name
+              }
+            }
+            link
+          }
+        }
       }
     }
   }
