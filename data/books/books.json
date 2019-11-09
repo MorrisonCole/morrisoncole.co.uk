@@ -13,7 +13,7 @@
       "isbn": "1984819194",
       "isbn13": "9781984819192",
       "text_reviews_count": {
-        "_": "1336",
+        "_": "1341",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.bn0VDHXEuyaEuW_iy4YvpA",
@@ -31,7 +31,7 @@
       "publication_year": "",
       "publication_month": "",
       "average_rating": "4.30",
-      "ratings_count": "18851",
+      "ratings_count": "19073",
       "description": "Stephen Hawking was the most renowned scientist since Einstein, known both for his groundbreaking work in physics and cosmology and for his mischievous sense of humor. He educated millions of readers about the origins of the universe and the nature of black holes, and inspired millions more by defying a terrifying early prognosis of ALS, which originally gave him only two years to live. In later life he could communicate only by using a few facial muscles, but he continued to advance his field and serve as a revered voice on social and humanitarian issues.<br /><br />Hawking not only unraveled some of the universe’s greatest mysteries but also believed science plays a critical role in fixing problems here on Earth. Now, as we face immense challenges on our planet—including climate change, the threat of nuclear war, and the development of artificial intelligence—he turns his attention to the most urgent issues facing us.<br /><br />Will humanity survive? Should we colonize space? Does God exist? These are just a few of the questions Hawking addresses in this wide-ranging, passionately argued final book from one of the greatest minds in history.<br /><br />Featuring a foreword by Eddie Redmayne, who won an Oscar for playing Stephen Hawking, an introduction by Nobel Laureate Kip Thorne, and an afterword from Hawking’s daughter, Lucy, Brief Answers to the Big Questions is a brilliant last message to the world.",
       "authors": {
         "author": {
@@ -48,8 +48,8 @@
           },
           "link": "https://www.goodreads.com/author/show/1401.Stephen_Hawking",
           "average_rating": "4.15",
-          "ratings_count": "469667",
-          "text_reviews_count": "18185"
+          "ratings_count": "470540",
+          "text_reviews_count": "18224"
         }
       },
       "published": "",
@@ -66,7 +66,7 @@
       "isbn": "0525427570",
       "isbn13": "9780525427575",
       "text_reviews_count": {
-        "_": "1396",
+        "_": "1400",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.odLvcaKh576A_1SG9oCq2w",
@@ -84,7 +84,7 @@
       "publication_year": "2018",
       "publication_month": "2",
       "average_rating": "4.23",
-      "ratings_count": "13479",
+      "ratings_count": "13544",
       "description": "If you think the world is coming to an end, think again: people are living longer, healthier, freer, and happier lives, and while our problems are formidable, the solutions lie in the Enlightenment ideal of using reason and science.<br /><br />Is the world really falling apart? Is the ideal of progress obsolete? In this elegant assessment of the human condition in the third millennium, cognitive scientist and public intellectual Steven Pinker urges us to step back from the gory headlines and prophecies of doom, which play to our psychological biases. Instead, follow the data: In seventy-five jaw-dropping graphs, Pinker shows that life, health, prosperity, safety, peace, knowledge, and happiness are on the rise, not just in the West, but worldwide. This progress is not the result of some cosmic force. It is a gift of the Enlightenment: the conviction that reason and science can enhance human flourishing.<br /><br />Far from being a naïve hope, the Enlightenment, we now know, has worked. But more than ever, it needs a vigorous defense. The Enlightenment project swims against currents of human nature–tribalism, authoritarianism, demonization, magical thinking–which demagogues are all too willing to exploit. Many commentators, committed to political, religious, or romantic ideologies, fight a rearguard action against it. The result is a corrosive fatalism and a willingness to wreck the precious institutions of liberal democracy and global cooperation.<br /><br />With intellectual depth and literary flair, Enlightenment Now makes the case for reason, science, and humanism: the ideals we need to confront our problems and continue our progress.",
       "authors": {
         "author": {
@@ -101,8 +101,8 @@
           },
           "link": "https://www.goodreads.com/author/show/3915.Steven_Pinker",
           "average_rating": "4.04",
-          "ratings_count": "128447",
-          "text_reviews_count": "9598"
+          "ratings_count": "128661",
+          "text_reviews_count": "9618"
         }
       },
       "published": "2018",
@@ -116,10 +116,14 @@
         "_": "34466963",
         "type": "integer"
       },
-      "isbn": "1501144316",
-      "isbn13": "9781501144318",
+      "isbn": {
+        "nil": "true"
+      },
+      "isbn13": {
+        "nil": "true"
+      },
       "text_reviews_count": {
-        "_": "3017",
+        "_": "3038",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.3UCkxIR7crzVijosMwzCDw",
@@ -137,7 +141,7 @@
       "publication_year": "2017",
       "publication_month": "10",
       "average_rating": "4.47",
-      "ratings_count": "28825",
+      "ratings_count": "29249",
       "description": "<b>A <i>New York Times</i> bestseller</b><br /> <br />The first sleep book by a leading scientific expert—Professor Matthew Walker, Director of UC Berkeley’s Sleep and Neuroimaging Lab—reveals his groundbreaking exploration of sleep, explaining how we can harness its transformative power to change our lives for the better.<br /><br />Sleep is one of the most important but least understood aspects of our life, wellness, and longevity. Until very recently, science had no answer to the question of why we sleep, or what good it served, or why we suffer such devastating health consequences when we don't sleep. Compared to the other basic drives in life—eating, drinking, and reproducing—the purpose of sleep remained elusive.<br /> <br /> An explosion of scientific discoveries in the last twenty years has shed new light on this fundamental aspect of our lives. Now, preeminent neuroscientist and sleep expert Matthew Walker gives us a new understanding of the vital importance of sleep and dreaming. Within the brain, sleep enriches our ability to learn, memorize, and make logical decisions. It recalibrates our emotions, restocks our immune system, fine-tunes our metabolism, and regulates our appetite. Dreaming mollifies painful memories and creates a virtual reality space in which the brain melds past and present knowledge to inspire creativity.<br /> <br /> Walker answers important questions about sleep: how do caffeine and alcohol affect sleep? What really happens during REM sleep? Why do our sleep patterns change across a lifetime? How do common sleep aids affect us and can they do long-term damage? Charting cutting-edge scientific breakthroughs, and synthesizing decades of research and clinical practice, Walker explains how we can harness sleep to improve learning, mood, and energy levels; regulate hormones; prevent cancer, Alzheimer’s, and diabetes; slow the effects of aging; increase longevity; enhance the education and lifespan of our children, and boost the efficiency, success, and productivity of our businesses. Clear-eyed, fascinating, and accessible, <i>Why We Sleep</i> is a crucial and illuminating book.",
       "authors": {
         "author": {
@@ -154,8 +158,8 @@
           },
           "link": "https://www.goodreads.com/author/show/17598726.Matthew_Walker",
           "average_rating": "4.47",
-          "ratings_count": "28766",
-          "text_reviews_count": "3916"
+          "ratings_count": "29061",
+          "text_reviews_count": "3943"
         }
       },
       "published": "2017",
@@ -172,7 +176,7 @@
       "isbn": "0399590501",
       "isbn13": "9780399590504",
       "text_reviews_count": {
-        "_": "38160",
+        "_": "38440",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.14HR980_cmpVGQr1xcdEsA",
@@ -190,7 +194,7 @@
       "publication_year": "2018",
       "publication_month": "2",
       "average_rating": "4.48",
-      "ratings_count": "438179",
+      "ratings_count": "442416",
       "description": "Tara Westover was 17 the first time she set foot in a classroom. Born to survivalists in the mountains of Idaho, she prepared for the end of the world by stockpiling home-canned peaches and sleeping with her \"head-for-the-hills bag\". In the summer she stewed herbs for her mother, a midwife and healer, and in the winter she salvaged in her father's junkyard.<br /><br />Her father forbade hospitals, so Tara never saw a doctor or nurse. Gashes and concussions, even burns from explosions, were all treated at home with herbalism. The family was so isolated from mainstream society that there was no one to ensure the children received an education and no one to intervene when one of Tara's older brothers became violent.<br /><br />Then, lacking any formal education, Tara began to educate herself. She taught herself enough mathematics and grammar to be admitted to Brigham Young University, where she studied history, learning for the first time about important world events like the Holocaust and the civil rights movement. Her quest for knowledge transformed her, taking her over oceans and across continents, to Harvard and to Cambridge. Only then would she wonder if she'd traveled too far, if there was still a way home.<br /><br /><em>Educated</em> is an account of the struggle for self-invention. It is a tale of fierce family loyalty and of the grief that comes with severing the closest of ties. With the acute insight that distinguishes all great writers, Westover has crafted a universal coming-of-age story that gets to the heart of what an education is and what it offers: the perspective to see one's life through new eyes and the will to change it.",
       "authors": {
         "author": {
@@ -207,8 +211,8 @@
           },
           "link": "https://www.goodreads.com/author/show/16121977.Tara_Westover",
           "average_rating": "4.48",
-          "ratings_count": "438206",
-          "text_reviews_count": "45957"
+          "ratings_count": "442458",
+          "text_reviews_count": "46313"
         }
       },
       "published": "2018",
@@ -243,7 +247,7 @@
       "publication_year": "2009",
       "publication_month": "4",
       "average_rating": "4.51",
-      "ratings_count": "19560",
+      "ratings_count": "19578",
       "description": "Only once did David Foster Wallace give a public talk on his views on life, during a commencement address given in 2005 at Kenyon College. The speech is reprinted for the first time in book form in THIS IS WATER. How does one keep from going through their comfortable, prosperous adult life unconsciously? How do we get ourselves out of the foreground of our thoughts and achieve compassion? The speech captures Wallace's electric intellect as well as his grace in attention to others. After his death, it became a treasured piece of writing reprinted in <em>The Wall Street Journal</em> and the <em>London Times</em>, commented on endlessly in blogs, and emailed from friend to friend.<br /><br />Writing with his one-of-a-kind blend of causal humor, exacting intellect, and practical philosophy, David Foster Wallace probes the challenges of daily living and offers advice that renews us with every reading.",
       "authors": {
         "author": {
@@ -260,8 +264,8 @@
           },
           "link": "https://www.goodreads.com/author/show/4339.David_Foster_Wallace",
           "average_rating": "4.14",
-          "ratings_count": "271287",
-          "text_reviews_count": "25692"
+          "ratings_count": "271466",
+          "text_reviews_count": "25702"
         }
       },
       "published": "2009",
@@ -278,7 +282,7 @@
       "isbn": "1250313570",
       "isbn13": "9781250313577",
       "text_reviews_count": {
-        "_": "1620",
+        "_": "1657",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.4lcBOcyrsu4ZiafiuPM6oA",
@@ -296,7 +300,7 @@
       "publication_year": "2019",
       "publication_month": "4",
       "average_rating": "4.31",
-      "ratings_count": "13789",
+      "ratings_count": "14123",
       "description": "<b>A debut from <i>Forbes'</i> third most powerful woman in the world, Melinda Gates, a timely and necessary call to action for women's empowerment.</b><br /><br />For the last twenty years, Melinda Gates has been on a mission. Her goal, as co-chair of the Bill &amp; Melinda Gates Foundation, has been to find solutions for people with the most urgent needs, wherever they live. Throughout this journey, one thing has become increasingly clear to her: If you want to lift a society up, invest in women.<br /><br />In this candid and inspiring book, Gates traces her awakening to the link between women's empowerment and the health of societies. She shows some of the tremendous opportunities that exist right now to “turbo-charge\" change. And she provides simple and effective ways each one of us can make a difference.<br /><br />Convinced that all women should be free to decide whether and when to have children, Gates took her first step onto the global stage to make a stand for family planning. That step launched her into further efforts: to ensure women everywhere have access to every kind of job; to encourage men around the globe to share equally in the burdens of household work; to advocate for paid family leave for everyone; to eliminate gender bias in all its forms.<br /><br />Throughout, Gates introduces us to her heroes in the movement towards equality, offers startling data, shares moving conversations she's had with women from all over the world—and shows how we can all get involved.<br /><br />A personal statement of passionate conviction, this book tells of Gates' journey from a partner working behind the scenes to one of the world's foremost advocates for women, driven by the belief that no one should be excluded, all lives have equal value, and gender equity is the lever that lifts everything.",
       "authors": {
         "author": {
@@ -313,8 +317,8 @@
           },
           "link": "https://www.goodreads.com/author/show/4197697.Melinda_Gates",
           "average_rating": "4.31",
-          "ratings_count": "13859",
-          "text_reviews_count": "1851"
+          "ratings_count": "14192",
+          "text_reviews_count": "1894"
         }
       },
       "published": "2019",
@@ -335,7 +339,7 @@
         "nil": "true"
       },
       "text_reviews_count": {
-        "_": "4154",
+        "_": "4181",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.haN7poKnOqf0TofDQwueMA",
@@ -353,7 +357,7 @@
       "publication_year": "2017",
       "publication_month": "9",
       "average_rating": "4.40",
-      "ratings_count": "89688",
+      "ratings_count": "90363",
       "description": "Adam Kay was a junior doctor from 2004 until 2010, before a devastating experience on a ward caused him to reconsider his future. He kept a diary throughout his training, and This Is Going to Hurt intersperses tales from the front line of the NHS with reflections on the current crisis. The result is a first-hand account of life as a junior doctor in all its joy, pain, sacrifice and maddening bureaucracy, and a love letter to those who might at any moment be holding our lives in their hands.",
       "authors": {
         "author": {
@@ -370,8 +374,8 @@
           },
           "link": "https://www.goodreads.com/author/show/17160706.Adam_Kay",
           "average_rating": "4.40",
-          "ratings_count": "92414",
-          "text_reviews_count": "6213"
+          "ratings_count": "93747",
+          "text_reviews_count": "6303"
         }
       },
       "published": "2017",
@@ -388,7 +392,7 @@
       "isbn": "0385199570",
       "isbn13": "9780385199575",
       "text_reviews_count": {
-        "_": "13168",
+        "_": "13178",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.CyVWl2YxCtwlBuCfNG3pqA",
@@ -406,7 +410,7 @@
       "publication_year": "1990",
       "publication_month": "5",
       "average_rating": "4.34",
-      "ratings_count": "560349",
+      "ratings_count": "560844",
       "description": "This is the way the world ends: with a nanosecond of computer error in a Defense Department laboratory and a million casual contacts that form the links in a chain letter of death. And here is the bleak new world of the day after: a world stripped of its institutions and emptied of 99 percent of its people. A world in which a handful of panicky survivors choose sides -- or are chosen.",
       "authors": {
         "author": {
@@ -423,8 +427,8 @@
           },
           "link": "https://www.goodreads.com/author/show/3389.Stephen_King",
           "average_rating": "4.03",
-          "ratings_count": "13033805",
-          "text_reviews_count": "495630"
+          "ratings_count": "13054374",
+          "text_reviews_count": "496996"
         }
       },
       "published": "1990",
@@ -441,7 +445,7 @@
       "isbn": "052549765X",
       "isbn13": "9780525497653",
       "text_reviews_count": {
-        "_": "849",
+        "_": "853",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.oTtlXYLlRlUCGcfvA7phKg",
@@ -459,7 +463,7 @@
       "publication_year": "2018",
       "publication_month": "1",
       "average_rating": "4.30",
-      "ratings_count": "6725",
+      "ratings_count": "6765",
       "description": "In the spirit of <i>Lilac Girls</i>, the heartbreaking history of Korea is brought to life in this deeply moving and redemptive debut that follows two sisters separated by World War II.<br /><br />Korea, 1943. Hana has lived her entire life under Japanese occupation. As a haenyeo, a female diver of the sea, she enjoys an independence that few other Koreans can still claim. Until the day Hana saves her younger sister from a Japanese soldier and is herself captured and transported to Manchuria. There she is forced to become a “comfort woman” in a Japanese military brothel. But haenyeo are women of power and strength. She will find her way home.<br /><br />South Korea, 2011. Emi has spent more than sixty years trying to forget the sacrifice her sister made, but she must confront the past to discover peace. Seeing the healing of her children and her country, can Emi move beyond the legacy of war to find forgiveness?<br /><br />Suspenseful, hopeful, and ultimately redemptive, <i>White Chrysanthemum</i> tells a story of two sisters whose love for each other is strong enough to triumph over the grim evils of war.",
       "authors": {
         "author": {
@@ -476,8 +480,8 @@
           },
           "link": "https://www.goodreads.com/author/show/16630898.Mary_Lynn_Bracht",
           "average_rating": "4.30",
-          "ratings_count": "6725",
-          "text_reviews_count": "1217"
+          "ratings_count": "6765",
+          "text_reviews_count": "1225"
         }
       },
       "published": "2018",
@@ -498,7 +502,7 @@
         "nil": "true"
       },
       "text_reviews_count": {
-        "_": "2323",
+        "_": "2339",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.SEfLlbw0v1JENKqxZLhTXA",
@@ -516,7 +520,7 @@
       "publication_year": "",
       "publication_month": "",
       "average_rating": "4.12",
-      "ratings_count": "432342",
+      "ratings_count": "432789",
       "description": "The story of a mentally disabled man whose experimental quest for intelligence mirrors that of Algernon, an extraordinary lab mouse. In diary entries, Charlie tells how a brain operation increases his IQ and changes his life. As the experimental procedure takes effect, Charlie's intelligence expands until it surpasses that of the doctors who engineered his metamorphosis. The experiment seems to be a scientific breakthrough of paramount importance--until Algernon begins his sudden, unexpected deterioration. Will the same happen to Charlie?",
       "authors": {
         "author": {
@@ -533,8 +537,8 @@
           },
           "link": "https://www.goodreads.com/author/show/11072.Daniel_Keyes",
           "average_rating": "4.12",
-          "ratings_count": "455799",
-          "text_reviews_count": "17380"
+          "ratings_count": "456307",
+          "text_reviews_count": "17406"
         }
       },
       "published": "",
@@ -569,7 +573,7 @@
       "publication_year": "2017",
       "publication_month": "8",
       "average_rating": "3.77",
-      "ratings_count": "38534",
+      "ratings_count": "38663",
       "description": "<b><b>**International Bestseller<br />**A <i>New York Times</i> Bestseller<br />**An NPR Best Book of 2017<br /></b>**An <i>Esquire</i> Best Book of 2017<br />**<b>A <i>Washington Post </i>Notable Book of 2017</b><br /><b>**A <i>San Francisco Chronicle </i>Best Book of 2017</b> </b><br /><br />The major new work of fiction from the internationally acclaimed, #1 <i>NYT </i>bestselling author--a dazzling collection of short stories.<br /><br />The much-anticipated new short story collection from the beloved Haruki Murakami--his first major new work of fiction since the #1 <i>New York Times</i> bestselling <i>Colorless Tsukuru Tazaki and His Years of Pilgrimage--Men Without Women</i> showcases the author at the peak of his powers. Across seven tales, Murakami draws his piercing observation to the lives of men who, in their own ways, find themselves alone. Here are vanishing cats and smoky bars, lonely hearts and mysterious women, baseball and The Beatles, woven together to tell stories that speak to us all. Marked by the same wry humor that has defined his entire body of work, in this collection Haruki Murakami has crafted another contemporary classic.",
       "authors": {
         "author": {
@@ -586,8 +590,8 @@
           },
           "link": "https://www.goodreads.com/author/show/3354.Haruki_Murakami",
           "average_rating": "3.95",
-          "ratings_count": "2068548",
-          "text_reviews_count": "151337"
+          "ratings_count": "2071691",
+          "text_reviews_count": "151556"
         }
       },
       "published": "2017",
@@ -604,7 +608,7 @@
       "isbn": "152473165X",
       "isbn13": "9781524731656",
       "text_reviews_count": {
-        "_": "9453",
+        "_": "9503",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.E8hHn_Xf1KbF5SyEp2vB9Q",
@@ -622,7 +626,7 @@
       "publication_year": "2018",
       "publication_month": "5",
       "average_rating": "4.46",
-      "ratings_count": "106427",
+      "ratings_count": "107126",
       "description": "<b>The full inside story of the breathtaking rise and shocking collapse of a multibillion-dollar startup, by the prize-winning journalist who first broke the story and pursued it to the end in the face of pressure and threats from the CEO and her lawyers.</b><br /><br />In 2014, Theranos founder and CEO Elizabeth Holmes was widely seen as the female Steve Jobs: a brilliant Stanford dropout whose startup \"unicorn\" promised to revolutionize the medical industry with a machine that would make blood tests significantly faster and easier. Backed by investors such as Larry Ellison and Tim Draper, Theranos sold shares in a fundraising round that valued the company at $9 billion, putting Holmes's worth at an estimated $4.7 billion. There was just one problem: The technology didn't work.<br /><br />For years, Holmes had been misleading investors, FDA officials, and her own employees. When Carreyrou, working at <i>The Wall Street Journal,</i> got a tip from a former Theranos employee and started asking questions, both Carreyrou and the <i>Journal</i> were threatened with lawsuits. Undaunted, the newspaper ran the first of dozens of Theranos articles in late 2015. By early 2017, the company's value was zero and Holmes faced potential legal action from the government and her investors. Here is the riveting story of the biggest corporate fraud since Enron, a disturbing cautionary tale set amid the bold promises and gold-rush frenzy of Silicon Valley.",
       "authors": {
         "author": {
@@ -639,8 +643,8 @@
           },
           "link": "https://www.goodreads.com/author/show/17575761.John_Carreyrou",
           "average_rating": "4.46",
-          "ratings_count": "106479",
-          "text_reviews_count": "11352"
+          "ratings_count": "107179",
+          "text_reviews_count": "11413"
         }
       },
       "published": "2018",
@@ -674,8 +678,8 @@
       "publication_day": "1",
       "publication_year": "2018",
       "publication_month": "11",
-      "average_rating": "4.00",
-      "ratings_count": "72",
+      "average_rating": "3.96",
+      "ratings_count": "73",
       "description": "<b>This is a fresh and surprising account of Japan's culture from the 'opening up' of the country in the mid-nineteenth century to the present.</b><br /><br /><b>'How much I admired it, what a lot I learned from it and, above all, how very much I enjoyed it ... M</b><b>asterly.' </b><b>Neil MacGregor</b><br /><br />It is told through the eyes of people who greeted this change not with the confidence and grasping ambition of Japan's modernizers and nationalists, but with resistance, conflict, distress.<br /><br />We encounter writers of dramas, ghost stories and crime novels where modernity itself is the tragedy, the ghoul and the bad guy; surrealist and avant-garde artists sketching their escape; rebel kamikaze pilots and the put-upon urban poor; hypnotists and gangsters; men in desperate search of the eternal feminine and feminists in search of something more than state-sanctioned subservience; Buddhists without morals; Marxist terror groups; couches full to bursting with the psychological fall-out of breakneck modernization. These people all sprang from the soil of modern Japan, but their personalities and projects failed to fit. They were 'dark blossoms': both East-West hybrids and home-grown varieties that wreathed, probed and sometimes penetrated the new structures of mainstream Japan.",
       "authors": {
         "author": {
@@ -691,8 +695,8 @@
             "nophoto": "false"
           },
           "link": "https://www.goodreads.com/author/show/18584398.Christopher_Harding",
-          "average_rating": "4.00",
-          "ratings_count": "72",
+          "average_rating": "3.96",
+          "ratings_count": "73",
           "text_reviews_count": "7"
         }
       },
@@ -714,7 +718,7 @@
         "nil": "true"
       },
       "text_reviews_count": {
-        "_": "440",
+        "_": "445",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.nhfyeTC8qV4I5CsDiX6NrQ",
@@ -732,7 +736,7 @@
       "publication_year": "",
       "publication_month": "",
       "average_rating": "4.05",
-      "ratings_count": "5362",
+      "ratings_count": "5416",
       "description": "<p>“I’m a barrister, a job which requires the skills of a social worker, relationship counsellor, arm-twister, hostage negotiator, named driver, bus fare-provider, accountant, suicide watchman, coffee-supplier, surrogate parent and, on one memorable occasion, whatever the official term is for someone tasked with breaking the news to a prisoner that his girlfriend has been diagnosed with gonorrhoea.”</p><p>Welcome to the world of the Secret Barrister. These are the stories of life inside the courtroom. They are sometimes funny, often moving and ultimately life-changing.</p><p>How can you defend a child-abuser you suspect to be guilty? What do you say to someone sentenced to ten years who you believe to be innocent? What is the law and why do we need it? </p><p>And why <i>do</i> they wear those stupid wigs?</p><p>From the criminals to the lawyers, the victims, witnesses and officers of the law, here is the best and worst of humanity, all struggling within a broken system which would never be off the front pages if the public knew what it was really like. </p><p>Both a searing first-hand account of the human cost of the criminal justice system, and a guide to how we got into this mess, The Secret Barrister wants to show you what it’s really like and why it really matters.</p>",
       "authors": {
         "author": {
@@ -749,8 +753,8 @@
           },
           "link": "https://www.goodreads.com/author/show/17141175.The_Secret_Barrister",
           "average_rating": "4.05",
-          "ratings_count": "5363",
-          "text_reviews_count": "536"
+          "ratings_count": "5418",
+          "text_reviews_count": "541"
         }
       },
       "published": "",
@@ -767,7 +771,7 @@
       "isbn": "1591847818",
       "isbn13": "9781591847816",
       "text_reviews_count": {
-        "_": "1404",
+        "_": "1407",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.WdkfTSgco8uNoG69MQjH_A",
@@ -785,7 +789,7 @@
       "publication_year": "2016",
       "publication_month": "6",
       "average_rating": "4.14",
-      "ratings_count": "24521",
+      "ratings_count": "24601",
       "description": "“While the history books are filled with tales of obsessive, visionary geniuses who remade the world in their image with sheer, almost irrational force, I’ve found that history is also made by individuals who fought their egos at every turn, who eschewed the spotlight, and who put their higher goals above their desire for recognition.” – from the Prologue<br /><br />Many of us insist the main impediment to a full, successful life is the outside world. In fact, the most common enemy lies within: our ego. Early in our careers, it impedes learning and the cultivation of talent. With success, it can blind us to our faults and sow future problems. In failure, it magnifies each blow and makes recovery more difficult. At every stage, ego holds us back.<br /><br /><i>The Ego is the Enemy</i> draws on a vast array of stories and examples, from literature to philosophy to history. We meet fascinating figures like Howard Hughes, Katharine Graham, Bill Belichick, and Eleanor Roosevelt, all of whom reached the highest levels of power and success by conquering their own egos. Their strategies and tactics can be ours as well.<br /><br />But why should we bother fighting ego in an era that glorifies social media, reality TV, and other forms of shameless self-promotion?  Armed with the lessons in this book, as Holiday writes, “you will be less invested in the story you tell about your own specialness, and as a result, you will be liberated to accomplish the world-changing work you’ve set out to achieve.”",
       "authors": {
         "author": {
@@ -802,8 +806,8 @@
           },
           "link": "https://www.goodreads.com/author/show/5775580.Ryan_Holiday",
           "average_rating": "4.11",
-          "ratings_count": "83305",
-          "text_reviews_count": "6575"
+          "ratings_count": "83827",
+          "text_reviews_count": "6615"
         }
       },
       "published": "2016",
@@ -820,7 +824,7 @@
       "isbn": "0450031063",
       "isbn13": "9780450031069",
       "text_reviews_count": {
-        "_": "5806",
+        "_": "5823",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.tRsZeS5AmKeA9Bk0D5UsnQ",
@@ -838,7 +842,7 @@
       "publication_year": "1991",
       "publication_month": "",
       "average_rating": "4.01",
-      "ratings_count": "299453",
+      "ratings_count": "299901",
       "description": "Thousands of miles away from the small township of 'Salem's Lot, two terrified people, a man and a boy, still share the secrets of those clapboard houses and tree-lined streets. They must return to 'Salem's Lot for a final confrontation with the unspeakable evil that lives on in the town.",
       "authors": {
         "author": {
@@ -855,8 +859,8 @@
           },
           "link": "https://www.goodreads.com/author/show/3389.Stephen_King",
           "average_rating": "4.03",
-          "ratings_count": "13033805",
-          "text_reviews_count": "495630"
+          "ratings_count": "13054374",
+          "text_reviews_count": "496996"
         }
       },
       "published": "1991",
@@ -873,7 +877,7 @@
       "isbn": "0143128728",
       "isbn13": "9780143128724",
       "text_reviews_count": {
-        "_": "782",
+        "_": "793",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.miJEuo9Vtk1Y_ignwy8rLQ",
@@ -891,7 +895,7 @@
       "publication_year": "2016",
       "publication_month": "2",
       "average_rating": "4.17",
-      "ratings_count": "34156",
+      "ratings_count": "34323",
       "description": "<b>Matt Haig’s accessible and life-affirming memoir of his struggle with depression, and how his triumph over the illness taught him to live.<br /><br />\"Destined to become a modern classic.\" —<i>Entertainment Weekly</i> </b><br /><br />Like nearly one in five people, Matt Haig suffers from depression. <i>Reasons to Stay Alive</i> is Matt’s inspiring account of how, minute by minute and day by day, he overcame the disease with the help of reading, writing, and the love of his parents and his girlfriend (and now-wife), Andrea. And eventually, he learned to appreciate life all the more for it.<br /> <br />Everyone’s lives are touched by mental illness: if we do not suffer from it ourselves, then we have a friend or loved one who does. Matt’s frankness about his experiences is both inspiring to those who feel daunted by depression and illuminating to those who are mystified by it. Above all, his humor and encouragement never let us lose sight of hope. Speaking as his present self to his former self in the depths of depression, Matt is adamant that the oldest cliché is the truest—there is light at the end of the tunnel. He teaches us to celebrate the small joys and moments of peace that life brings, and reminds us that there are always reasons to stay alive.",
       "authors": {
         "author": {
@@ -908,8 +912,8 @@
           },
           "link": "https://www.goodreads.com/author/show/76360.Matt_Haig",
           "average_rating": "3.97",
-          "ratings_count": "179147",
-          "text_reviews_count": "23300"
+          "ratings_count": "179763",
+          "text_reviews_count": "23388"
         }
       },
       "published": "2016",
@@ -926,7 +930,7 @@
       "isbn": "0451528522",
       "isbn13": "9780451528520",
       "text_reviews_count": {
-        "_": "3701",
+        "_": "3705",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.9rmb69iMnGUX3TWsMFwdIA",
@@ -944,7 +948,7 @@
       "publication_year": "2002",
       "publication_month": "9",
       "average_rating": "3.64",
-      "ratings_count": "122046",
+      "ratings_count": "122186",
       "description": "This masterpiece of science fiction is the fascinating story of Griffin, a scientist who creates a serum to render himself invisible, and his descent into madness that follows.",
       "authors": {
         "author": {
@@ -961,8 +965,8 @@
           },
           "link": "https://www.goodreads.com/author/show/880695.H_G_Wells",
           "average_rating": "3.82",
-          "ratings_count": "943253",
-          "text_reviews_count": "32382"
+          "ratings_count": "944264",
+          "text_reviews_count": "32425"
         }
       },
       "published": "2002",
@@ -979,7 +983,7 @@
       "isbn": "0553214322",
       "isbn13": "9780553214321",
       "text_reviews_count": {
-        "_": "2358",
+        "_": "2362",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.MS1JrS1zV2siiijFW0pOyQ",
@@ -997,7 +1001,7 @@
       "publication_year": "1994",
       "publication_month": "5",
       "average_rating": "3.73",
-      "ratings_count": "85147",
+      "ratings_count": "85256",
       "description": "Ranked among the classic novels of the English language and the inspiration for several unforgettable movies, this early work of H. G. Wells was greeted in 1896 by howls of protest from reviewers, who found it horrifying and blasphemous. They wanted to know more about the wondrous possibilities of science shown in his first book, <i>The Time Machine</i>, not its potential for misuse and terror. In <i>The Island of Dr. Moreau</i>, a shipwrecked gentleman named Edward Prendick, stranded on a Pacific island lorded over by the notorious Dr. Moreau, confronts dark secrets, strange creatures, and a reason to run for his life.<br /><br />While this riveting tale was intended to be a commentary on evolution, divine creation, and the tension between human nature and culture, modern readers familiar with genetic engineering will marvel at Wells’s prediction of the ethical issues raised by producing “smarter” human beings or bringing back extinct species. These levels of interpretation add a richness to Prendick’s adventures on Dr. Moreau’s island of lost souls without distracting from what is still a rip-roaring good read.",
       "authors": {
         "author": {
@@ -1014,8 +1018,8 @@
           },
           "link": "https://www.goodreads.com/author/show/880695.H_G_Wells",
           "average_rating": "3.82",
-          "ratings_count": "943253",
-          "text_reviews_count": "32382"
+          "ratings_count": "944264",
+          "text_reviews_count": "32425"
         }
       },
       "published": "1994",
@@ -1032,7 +1036,7 @@
       "isbn": "0141441089",
       "isbn13": "9780141441085",
       "text_reviews_count": {
-        "_": "363",
+        "_": "365",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.6qVNV9kJ5nOsFXIW9QUJ_g",
@@ -1050,7 +1054,7 @@
       "publication_year": "2005",
       "publication_month": "3",
       "average_rating": "3.69",
-      "ratings_count": "11808",
+      "ratings_count": "11825",
       "description": "When penniless businessman Mr Bedford retreats to the Kent coast to write a play, he meets by chance the brilliant Dr Cavor, an absent-minded scientist on the brink of developing a material that blocks gravity. Cavor soon succeeds in his experiments, only to tell a stunned Bedford the invention makes possible one of the oldest dreams of humanity: a journey to the moon. With Bedford motivated by money, and Cavor by the desire for knowledge, the two embark on the expedition. But neither are prepared for what they find - a world of freezing nights, boiling days and sinister alien life, on which they may be trapped forever.<br /><br />",
       "authors": {
         "author": {
@@ -1067,8 +1071,8 @@
           },
           "link": "https://www.goodreads.com/author/show/880695.H_G_Wells",
           "average_rating": "3.82",
-          "ratings_count": "943253",
-          "text_reviews_count": "32382"
+          "ratings_count": "944264",
+          "text_reviews_count": "32425"
         }
       },
       "published": "2005",
@@ -1085,7 +1089,7 @@
       "isbn": "0375759239",
       "isbn13": "9780375759239",
       "text_reviews_count": {
-        "_": "4346",
+        "_": "4353",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.9fEZ6zm_Vj0WNoyp1re-5A",
@@ -1103,7 +1107,7 @@
       "publication_year": "2002",
       "publication_month": "3",
       "average_rating": "3.82",
-      "ratings_count": "220472",
+      "ratings_count": "220722",
       "description": "With H.G. Wells’ other novels, <i>The War of the Worlds</i> was one of the first and greatest works of science fiction ever to be written. Even long before man had learned to fly, H.G. Wells wrote this story of the Martian attack on England. These unearthly creatures arrive in huge cylinders, from which they escape as soon as the metal is cool. The first falls near Woking and is regarded as a curiosity rather than a danger until the Martians climb out of it and kill many of the gaping crowd with a Heat-Ray. These unearthly creatures have heads four feet in diameter and colossal round bodies, and by manipulating two terrifying machines – the Handling Machine and the Fighting Machine – they are as versatile as humans and at the same time insuperable. They cause boundless destruction. The inhabitants of the Earth are powerless against them, and it looks as if the end of the World has come. But there is one factor which the Martians, in spite of their superior intelligence, have not reckoned on. It is this which brings about a miraculous conclusion to this famous work of the imagination.",
       "authors": {
         "author": {
@@ -1120,8 +1124,8 @@
           },
           "link": "https://www.goodreads.com/author/show/880695.H_G_Wells",
           "average_rating": "3.82",
-          "ratings_count": "943253",
-          "text_reviews_count": "32382"
+          "ratings_count": "944264",
+          "text_reviews_count": "32425"
         }
       },
       "published": "2002",
@@ -1138,7 +1142,7 @@
       "isbn": "014313342X",
       "isbn13": "9780143133421",
       "text_reviews_count": {
-        "_": "678",
+        "_": "685",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.lROxnV_OdEfqLtUhwt_y5g",
@@ -1156,7 +1160,7 @@
       "publication_year": "2019",
       "publication_month": "1",
       "average_rating": "4.10",
-      "ratings_count": "15034",
+      "ratings_count": "15129",
       "description": "<b>A follow-up to Matt Haig's internationally bestselling memoir, <i>Reasons to Stay Alive</i>, a broader look at how modern life feeds our anxiety, and how to live a better life.</b><br /><br />The societies we live in are increasingly making our minds ill, making it feel as though the way we live is engineered to make us unhappy. When Matt Haig developed panic disorder, anxiety, and depression as an adult, it took him a long time to work out the ways the external world could impact his mental health in both positive and negative ways. <i>Notes on a Nervous Planet </i>collects his observations, taking a look at how the various social, commercial and technological \"advancements\" that have created the world we now live in can actually hinder our happiness. Haig examines everything from broader phenomena like inequality, social media, and the news; to things closer to our daily lives, like how we sleep, how we exercise, and even the distinction we draw between our minds and our bodies.",
       "authors": {
         "author": {
@@ -1173,8 +1177,8 @@
           },
           "link": "https://www.goodreads.com/author/show/76360.Matt_Haig",
           "average_rating": "3.97",
-          "ratings_count": "179147",
-          "text_reviews_count": "23300"
+          "ratings_count": "179763",
+          "text_reviews_count": "23388"
         }
       },
       "published": "2019",
@@ -1195,7 +1199,7 @@
         "nil": "true"
       },
       "text_reviews_count": {
-        "_": "6586",
+        "_": "6590",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.Eu_4b59fezjXbHai_zIuYg",
@@ -1213,7 +1217,7 @@
       "publication_year": "2002",
       "publication_month": "10",
       "average_rating": "3.89",
-      "ratings_count": "371038",
+      "ratings_count": "371382",
       "description": "<b>“I’ve had a most amazing time....”</b><br /><br />So begins the Time Traveller’s astonishing firsthand account of his journey 800,000 years beyond his own era—and the story that launched H.G. Wells’s successful career and earned him his reputation as the father of science fiction. With a speculative leap that still fires the imagination, Wells sends his brave explorer to face a future burdened with our greatest hopes...and our darkest fears. A pull of the Time Machine’s lever propels him to the age of a slowly dying Earth.  There he discovers two bizarre races—the ethereal Eloi and the subterranean Morlocks—who not only symbolize the duality of human nature, but offer a terrifying portrait of the men of tomorrow as well.  Published in 1895, this masterpiece of invention captivated readers on the threshold of a new century. Thanks to Wells’s expert storytelling and provocative insight, <b>The Time Machine</b> will continue to enthrall readers for generations to come.<br /><br /> ",
       "authors": {
         "author": {
@@ -1230,8 +1234,8 @@
           },
           "link": "https://www.goodreads.com/author/show/880695.H_G_Wells",
           "average_rating": "3.82",
-          "ratings_count": "943253",
-          "text_reviews_count": "32382"
+          "ratings_count": "944264",
+          "text_reviews_count": "32425"
         }
       },
       "published": "2002",
@@ -1270,7 +1274,7 @@
       "publication_year": "",
       "publication_month": "",
       "average_rating": "3.76",
-      "ratings_count": "13768",
+      "ratings_count": "13792",
       "description": "In the summer of 2000, Jane Steare received the phone call every mother dreads. Her daughter Lucie Blackman - tall, blonde, and twenty-one years old - had stepped into the vastness of a Tokyo summer and disappeared forever. That winter, her dismembered remains were found buried in a desolate seaside cave.<br /><br />Her disappearance was mystifying. Had Lucie been abducted by a religious cult? Who was the mysterious man she had gone to meet? What did her work, as a 'hostess' in the notorious Roppongi district of Tokyo, really involve? And could Lucie's fate be linked to the disappearance of another girl some ten years earlier?<br /><br />Over the course of a decade, Richard Lloyd Parry has travelled to four continents to interview those caught up in the story and been given unprecedented access to Lucie's bitterly divided family to reveal the astonishing truth about Lucie and her fate.",
       "authors": {
         "author": {
@@ -1287,8 +1291,8 @@
           },
           "link": "https://www.goodreads.com/author/show/197865.Richard_Lloyd_Parry",
           "average_rating": "3.84",
-          "ratings_count": "16922",
-          "text_reviews_count": "2078"
+          "ratings_count": "16957",
+          "text_reviews_count": "2081"
         }
       },
       "published": "",
@@ -1305,7 +1309,7 @@
       "isbn": "0385333846",
       "isbn13": "9780385333849",
       "text_reviews_count": {
-        "_": "18547",
+        "_": "18564",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.3PjByO7V9VPpBzAd9jOwpQ",
@@ -1323,7 +1327,7 @@
       "publication_year": "1999",
       "publication_month": "1",
       "average_rating": "4.07",
-      "ratings_count": "1041470",
+      "ratings_count": "1042181",
       "description": "Selected by the Modern Library as one of the 100 best novels of all time, Slaughterhouse-Five, an American classic, is one of the world's great antiwar books. Centering on the infamous firebombing of Dresden, Billy Pilgrim's odyssey through time reflects the mythic journey of our own fractured lives as we search for meaning in what we fear most.",
       "authors": {
         "author": {
@@ -1340,8 +1344,8 @@
           },
           "link": "https://www.goodreads.com/author/show/2778055.Kurt_Vonnegut",
           "average_rating": "4.06",
-          "ratings_count": "2309859",
-          "text_reviews_count": "74102"
+          "ratings_count": "2311413",
+          "text_reviews_count": "74185"
         }
       },
       "published": "1999",
@@ -1358,7 +1362,7 @@
       "isbn": "1594487138",
       "isbn13": "9781594487132",
       "text_reviews_count": {
-        "_": "3612",
+        "_": "3611",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.9yxDa_fZP6JuUDSo4tGkkQ",
@@ -1376,7 +1380,7 @@
       "publication_year": "2015",
       "publication_month": "3",
       "average_rating": "3.94",
-      "ratings_count": "41493",
+      "ratings_count": "41550",
       "description": "<b>Now a  <i>New York Times</i>  bestseller and from the author of The Psychopath Test, a captivating and brilliant exploration of one of our world's most underappreciated forces: shame.<br /></b> <br /><i>'It's about the terror, isn't it?'<br /> <br />'The terror of what?' I said.<br /> <br />'The terror of being found out.'<br /></i> <br />For the past three years, Jon Ronson has travelled the world meeting recipients of high-profile public shamings. The shamed are people like us - people who, say, made a joke on social media that came out badly, or made a mistake at work. Once their transgression is revealed, collective outrage circles with the force of a hurricane and the next thing they know they're being torn apart by an angry mob, jeered at, demonized, sometimes even fired from their job.<br /> <br />A great renaissance of public shaming is sweeping our land. Justice has been democratized. The silent majority are getting a voice. But what are we doing with our voice? We are mercilessly finding people's faults. We are defining the boundaries of normality by ruining the lives of those outside it. We are using shame as a form of social control.<br /> <br />Simultaneously powerful and hilarious in the way only Jon Ronson can be, <i>So You've Been Publicly Shamed</i> is a deeply honest book about modern life, full of eye-opening truths about the escalating war on human flaws - and the very scary part we all play in it.",
       "authors": {
         "author": {
@@ -1393,8 +1397,8 @@
           },
           "link": "https://www.goodreads.com/author/show/1218.Jon_Ronson",
           "average_rating": "3.90",
-          "ratings_count": "211002",
-          "text_reviews_count": "16051"
+          "ratings_count": "211240",
+          "text_reviews_count": "16063"
         }
       },
       "published": "2015",
@@ -1445,8 +1449,8 @@
             "nophoto": "true"
           },
           "link": "https://www.goodreads.com/author/show/6585330.Nihongo_Tadoku_Kenky_kai",
-          "average_rating": "4.19",
-          "ratings_count": "245",
+          "average_rating": "4.20",
+          "ratings_count": "247",
           "text_reviews_count": "27"
         }
       },
@@ -1517,7 +1521,7 @@
       "isbn": "140887055X",
       "isbn13": "9781408870556",
       "text_reviews_count": {
-        "_": "2038",
+        "_": "2042",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.z7FGlRQIHIA95DnBySW3Bg",
@@ -1535,7 +1539,7 @@
       "publication_year": "2017",
       "publication_month": "6",
       "average_rating": "4.39",
-      "ratings_count": "22150",
+      "ratings_count": "22254",
       "description": "In 2014, award-winning journalist Reni Eddo-Lodge wrote about her frustration with the way that discussions of race and racism in Britain were being led by those who weren't affected by it. She posted a piece on her blog, entitled: 'Why I'm No Longer Talking to White People About Race' that led to this book.<br /><br />Exploring issues from eradicated black history to the political purpose of white dominance, whitewashed feminism to the inextricable link between class and race, Reni Eddo-Lodge offers a timely and essential new framework for how to see, acknowledge and counter racism. It is a searing, illuminating, absolutely necessary exploration of what it is to be a person of colour in Britain today.",
       "authors": {
         "author": {
@@ -1552,8 +1556,8 @@
           },
           "link": "https://www.goodreads.com/author/show/16239209.Reni_Eddo_Lodge",
           "average_rating": "4.38",
-          "ratings_count": "28242",
-          "text_reviews_count": "3230"
+          "ratings_count": "28368",
+          "text_reviews_count": "3236"
         }
       },
       "published": "2017",
@@ -1625,7 +1629,7 @@
       "isbn": "0062748661",
       "isbn13": "9780062748669",
       "text_reviews_count": {
-        "_": "121",
+        "_": "123",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.xJZ1LtuWR5OUlyf-aC1l-g",
@@ -1643,7 +1647,7 @@
       "publication_year": "2018",
       "publication_month": "12",
       "average_rating": "3.87",
-      "ratings_count": "1016",
+      "ratings_count": "1034",
       "description": "<strong>Bill Gates's Five Books for Summer Reading 2019</strong><br /><br />From world-renowned economist Paul Collier, a candid diagnosis of the failures of capitalism and a pragmatic and realistic vision for how we can repair it.<br /><br />Deep new rifts are tearing apart the fabric of the United States and other Western societies: thriving cities versus rural counties, the highly skilled elite versus the less educated, wealthy versus developing countries. As these divides deepen, we have lost the sense of ethical obligation to others that was crucial to the rise of post-war social democracy. So far these rifts have been answered only by the revivalist ideologies of populism and socialism, leading to the seismic upheavals of Trump, Brexit, and the return of the far-right in Germany. We have heard many critiques of capitalism but no one has laid out a realistic way to fix it, until now.<br /><br />In a passionate and polemical book, celebrated economist Paul Collier outlines brilliantly original and ethical ways of healing these rifts—economic, social and cultural—with the cool head of pragmatism, rather than the fervor of ideological revivalism. He reveals how he has personally lived across these three divides, moving from working-class Sheffield to hyper-competitive Oxford, and working between Britain and Africa, and acknowledges some of the failings of his profession.<br /><br />Drawing on his own solutions as well as ideas from some of the world’s most distinguished social scientists, he shows us how to save capitalism from itself—and free ourselves from the intellectual baggage of the twentieth century.",
       "authors": {
         "author": {
@@ -1660,8 +1664,8 @@
           },
           "link": "https://www.goodreads.com/author/show/137237.Paul_Collier",
           "average_rating": "3.85",
-          "ratings_count": "9250",
-          "text_reviews_count": "725"
+          "ratings_count": "9277",
+          "text_reviews_count": "729"
         }
       },
       "published": "2018",
@@ -1695,8 +1699,8 @@
       "publication_day": "",
       "publication_year": "2006",
       "publication_month": "",
-      "average_rating": "3.98",
-      "ratings_count": "43",
+      "average_rating": "4.00",
+      "ratings_count": "44",
       "description": "",
       "authors": {
         "author": {
@@ -1712,8 +1716,8 @@
             "nophoto": "true"
           },
           "link": "https://www.goodreads.com/author/show/6585330.Nihongo_Tadoku_Kenky_kai",
-          "average_rating": "4.19",
-          "ratings_count": "245",
+          "average_rating": "4.20",
+          "ratings_count": "247",
           "text_reviews_count": "27"
         }
       },
@@ -1765,8 +1769,8 @@
             "nophoto": "true"
           },
           "link": "https://www.goodreads.com/author/show/6585330.Nihongo_Tadoku_Kenky_kai",
-          "average_rating": "4.19",
-          "ratings_count": "245",
+          "average_rating": "4.20",
+          "ratings_count": "247",
           "text_reviews_count": "27"
         }
       },
@@ -1784,7 +1788,7 @@
       "isbn": "0451526341",
       "isbn13": "9780451526342",
       "text_reviews_count": {
-        "_": "5092",
+        "_": "5150",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.OPL1L19jvyFEvtyxeIp2CQ",
@@ -1802,7 +1806,7 @@
       "publication_year": "1996",
       "publication_month": "4",
       "average_rating": "3.92",
-      "ratings_count": "2429224",
+      "ratings_count": "2431770",
       "description": "<i>Librarian's note: There is an Alternate Cover Edition for this edition of this book <a href=\"https://www.goodreads.com/book/show/13456059-animal-farm\" rel=\"nofollow\">here</a>.</i><br /><br />A farm is taken over by its overworked, mistreated animals. With flaming idealism and stirring slogans, they set out to create a paradise of progress, justice, and equality. Thus the stage is set for one of the most telling satiric fables ever penned –a razor-edged fairy tale for grown-ups that records the evolution from revolution against tyranny to a totalitarianism just as terrible. <br />When <i>Animal Farm</i> was first published, Stalinist Russia was seen as its target. Today it is devastatingly clear that wherever and whenever freedom is attacked, under whatever banner, the cutting clarity and savage comedy of George Orwell’s masterpiece have a meaning and message still ferociously fresh.",
       "authors": {
         "author": {
@@ -1819,8 +1823,8 @@
           },
           "link": "https://www.goodreads.com/author/show/3706.George_Orwell",
           "average_rating": "4.06",
-          "ratings_count": "5501405",
-          "text_reviews_count": "124578"
+          "ratings_count": "5508095",
+          "text_reviews_count": "124799"
         }
       },
       "published": "1996",
@@ -1837,7 +1841,7 @@
       "isbn": "0062407805",
       "isbn13": "9780062407801",
       "text_reviews_count": {
-        "_": "2021",
+        "_": "2037",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.kbsgSS8iXqbL4YXnG5GuUg",
@@ -1855,7 +1859,7 @@
       "publication_year": "2016",
       "publication_month": "5",
       "average_rating": "4.39",
-      "ratings_count": "29597",
+      "ratings_count": "29855",
       "description": "<b>A former international hostage negotiator for the FBI offers a new, field-tested approach to high-stakes negotiations—whether in the boardroom or at home.</b><br /><br />After a stint policing the rough streets of Kansas City, Missouri, Chris Voss joined the FBI, where his career as a hostage negotiator brought him face-to-face with a range of criminals, including bank robbers and terrorists. Reaching the pinnacle of his profession, he became the FBI’s lead international kidnapping negotiator. <i>Never Split the Difference</i> takes you inside the world of high-stakes negotiations and into Voss’s head, revealing the skills that helped him and his colleagues to succeed where it mattered most: saving lives. In this practical guide, he shares the nine effective principles—counter-intuitive tactics and strategies—you too can use to become more persuasive in both your professional and personal life.<br /><br />Life is a series of negotiations you should be prepared for: buying a car; negotiating a salary; buying a home; renegotiating rent; deliberating with your partner. Taking emotional intelligence and intuition to the next level, <i>Never Split the Difference</i> gives you the competitive edge in any discussion.",
       "authors": {
         "author": {
@@ -1872,8 +1876,8 @@
           },
           "link": "https://www.goodreads.com/author/show/5525291.Chris_Voss",
           "average_rating": "4.39",
-          "ratings_count": "29604",
-          "text_reviews_count": "2401"
+          "ratings_count": "29864",
+          "text_reviews_count": "2421"
         }
       },
       "published": "2016",
@@ -1890,7 +1894,7 @@
       "isbn": "0316204366",
       "isbn13": "9780316204361",
       "text_reviews_count": {
-        "_": "7315",
+        "_": "7323",
         "type": "integer"
       },
       "uri": "kca://book/amzn1.gr.book.v1.-QIqCKRd4pN6T1_8icz60Q",
@@ -1908,7 +1912,7 @@
       "publication_year": "2013",
       "publication_month": "10",
       "average_rating": "3.94",
-      "ratings_count": "130528",
+      "ratings_count": "130716",
       "description": "In his #1 bestselling books <i>The Tipping Point</i>, <i>Blink</i>, and <i>Outliers</i>, Malcolm Gladwell has explored the ways we understand and change our world. Now he looks at the complex and surprising ways the weak can defeat the strong, the small can match up against the giant, and how our goals (often culturally determined) can make a huge difference in our ultimate sense of success. Drawing upon examples from the world of business, sports, culture, cutting-edge psychology, and an array of unforgettable characters around the world, <i>David and Goliath</i> is in many ways the most practical and provocative book Malcolm Gladwell has ever written.",
       "authors": {
         "author": {
@@ -1925,8 +1929,8 @@
           },
           "link": "https://www.goodreads.com/author/show/1439.Malcolm_Gladwell",
           "average_rating": "3.99",
-          "ratings_count": "1775421",
-          "text_reviews_count": "66447"
+          "ratings_count": "1779165",
+          "text_reviews_count": "66709"
         }
       },
       "published": "2013",
