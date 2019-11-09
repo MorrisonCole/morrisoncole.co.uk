@@ -49,7 +49,7 @@ export const life = [
     mainLink: "https://goo.gl/maps/7FFdpXCeUU3koAAv9",
     subtitle1: "Tokyo",
     subtitle2: "",
-    text: "From Kobe to Tokyo, where I plan to teach and work in the software industry.",
+    text: "From Kobe to Tokyo, where I'm now working and teaching in the software industry 🙌",
     title: "Moved 🇯🇵",
   },
   {
