@@ -83,6 +83,6 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
     "generate": "graphql-codegen",
-    "deploy": "npm run build && gatsby-plugin-s3 deploy -y"
+    "deploy": "gatsby-plugin-s3 deploy -y"
   }
 }
