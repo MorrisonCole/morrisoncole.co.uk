@@ -1,10 +1,10 @@
-import { createStyles, Theme } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import Typography from "@material-ui/core/Typography";
-import { graphql, Link } from "gatsby";
-import React from "react";
-import SEO from "../components/seo";
+import { createStyles, Theme } from "@material-ui/core"
+import Grid from "@material-ui/core/Grid"
+import makeStyles from "@material-ui/core/styles/makeStyles"
+import Typography from "@material-ui/core/Typography"
+import { graphql, Link } from "gatsby"
+import React from "react"
+import SEO from "../components/seo"
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -14,48 +14,47 @@ const styles = makeStyles((theme: Theme) =>
     body: {
       marginTop: theme.spacing(2),
     },
-  }),
-);
+  })
+)
 
 interface BlogProps {
-  location: Location;
-  data: any;
+  location: Location
+  data: any
 }
 
 export default function Blog(props: BlogProps) {
-  const classes = styles();
-  const posts = props.data.allMarkdownRemark.edges;
+  const classes = styles()
+  const posts = props.data.allMarkdownRemark.edges
 
   return (
     <Grid container className={classes.container} direction={"column"}>
-      <SEO title="Blog"/>
+      <SEO title="Blog" />
 
       {posts.map(({ node }: any) => {
-        const title = node.frontmatter.title || node.fields.slug;
+        const title = node.frontmatter.title || node.fields.slug
         return (
           <article key={node.fields.slug}>
             <header>
               <Typography variant="h4">
-                <Link to={node.fields.slug}>
-                  {title}
-                </Link>
+                <Link to={node.fields.slug}>{title}</Link>
               </Typography>
               <Typography variant="subtitle2">
                 {node.frontmatter.date}
               </Typography>
             </header>
             <section>
-              <Typography variant="subtitle1"
+              <Typography
+                variant="subtitle1"
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
             </section>
           </article>
-        );
+        )
       })}
     </Grid>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -81,4 +80,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

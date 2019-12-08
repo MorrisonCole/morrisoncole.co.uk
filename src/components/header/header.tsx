@@ -1,14 +1,14 @@
-import { createStyles, Theme } from "@material-ui/core";
-import Avatar from "@material-ui/core/Avatar";
-import Grid from "@material-ui/core/Grid";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
-import React from "react";
-import GitHubSocialIcon from "./github_social_icon";
-import LinkedInSocialIcon from "./linked_in_social_icon";
-import StackOverflowSocialIcon from "./stack_overflow_social_icon";
-import TwitterSocialIcon from "./twitter_social_icon";
+import { createStyles, Theme } from "@material-ui/core"
+import Avatar from "@material-ui/core/Avatar"
+import Grid from "@material-ui/core/Grid"
+import makeStyles from "@material-ui/core/styles/makeStyles"
+import { graphql, useStaticQuery } from "gatsby"
+import Image from "gatsby-image"
+import React from "react"
+import GitHubSocialIcon from "./github_social_icon"
+import LinkedInSocialIcon from "./linked_in_social_icon"
+import StackOverflowSocialIcon from "./stack_overflow_social_icon"
+import TwitterSocialIcon from "./twitter_social_icon"
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -28,11 +28,11 @@ const useStyles = makeStyles((theme: Theme) =>
     socialContainer: {
       marginBottom: theme.spacing(1),
     },
-  }),
-);
+  })
+)
 
 export default function Header() {
-  const classes = useStyles();
+  const classes = useStyles()
 
   const data = useStaticQuery(graphql`
     query Header {
@@ -51,18 +51,18 @@ export default function Header() {
         }
       }
     }
-  `);
+  `)
 
   return (
     <header>
-      <Grid container
-            direction="column">
-        <Grid container
-              direction="row"
-              justify="flex-start"
-              alignItems="center"
-              className={classes.grid}>
-
+      <Grid container direction="column">
+        <Grid
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="center"
+          className={classes.grid}
+        >
           <Grid item xs>
             <Grid container justify="center" alignItems="center">
               <Image
@@ -75,24 +75,28 @@ export default function Header() {
 
           <Grid item xs={2}>
             <Grid container justify="center" alignItems="center">
-              <Avatar alt="Morrison Cole" src={data.avatar.childImageSharp.fluid.src}
-                      className={classes.profilePicture}/>
+              <Avatar
+                alt="Morrison Cole"
+                src={data.avatar.childImageSharp.fluid.src}
+                className={classes.profilePicture}
+              />
             </Grid>
           </Grid>
-
         </Grid>
 
-        <Grid container
-              direction="row"
-              justify="center"
-              alignItems="center"
-              className={classes.socialContainer}>
-          <GitHubSocialIcon/>
-          <LinkedInSocialIcon/>
-          <StackOverflowSocialIcon/>
-          <TwitterSocialIcon/>
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          className={classes.socialContainer}
+        >
+          <GitHubSocialIcon />
+          <LinkedInSocialIcon />
+          <StackOverflowSocialIcon />
+          <TwitterSocialIcon />
         </Grid>
       </Grid>
     </header>
-  );
+  )
 }

@@ -1,45 +1,45 @@
 // @ts-ignore
-import { ChildFriendly, Home, School, Work } from "@material-ui/icons/";
-import React from "react";
+import { ChildFriendly, Home, School, Work } from "@material-ui/icons/"
+import React from "react"
 // @ts-ignore
-import FalmouthImage from "../migrate/images/timeline/falmouth.jpg";
+import FalmouthImage from "../migrate/images/timeline/falmouth.jpg"
 // @ts-ignore
-import ImprobableImage from "../migrate/images/timeline/improbable.png";
+import ImprobableImage from "../migrate/images/timeline/improbable.png"
 // @ts-ignore
-import KobeImage from "../migrate/images/timeline/kobe.jpg";
+import KobeImage from "../migrate/images/timeline/kobe.jpg"
 // @ts-ignore
-import LondonImage from "../migrate/images/timeline/london.jpg";
+import LondonImage from "../migrate/images/timeline/london.jpg"
 // @ts-ignore
-import MedmainImage from "../migrate/images/timeline/medmain.png";
+import MedmainImage from "../migrate/images/timeline/medmain.png"
 // @ts-ignore
-import ShazamImage from "../migrate/images/timeline/shazam.png";
+import ShazamImage from "../migrate/images/timeline/shazam.png"
 // @ts-ignore
-import ThirdNerveImage from "../migrate/images/timeline/thirdnerve.png";
+import ThirdNerveImage from "../migrate/images/timeline/thirdnerve.png"
 // @ts-ignore
-import TokyoImage from "../migrate/images/timeline/tokyo.jpg";
+import TokyoImage from "../migrate/images/timeline/tokyo.jpg"
 // @ts-ignore
-import UclImage from "../migrate/images/timeline/ucl.jpg";
+import UclImage from "../migrate/images/timeline/ucl.jpg"
 // @ts-ignore
-import WcsImage from "../migrate/images/timeline/wcs.jpg";
+import WcsImage from "../migrate/images/timeline/wcs.jpg"
 
 const icons = {
   born: {
     background: { background: "rgb(33, 150, 243)", color: "#fff" },
-    icon: <ChildFriendly/>,
+    icon: <ChildFriendly />,
   },
   home: {
     background: { background: "rgb(233, 30, 99)", color: "#fff" },
-    icon: <Home/>,
+    icon: <Home />,
   },
   school: {
     background: { background: "rgb(233, 30, 99)", color: "#fff" },
-    icon: <School/>,
+    icon: <School />,
   },
   work: {
     background: { background: "rgb(233, 30, 99)", color: "#fff" },
-    icon: <Work/>,
+    icon: <Work />,
   },
-};
+}
 
 export const life = [
   {
@@ -49,7 +49,8 @@ export const life = [
     mainLink: "https://goo.gl/maps/7FFdpXCeUU3koAAv9",
     subtitle1: "Tokyo",
     subtitle2: "",
-    text: "From Kobe to Tokyo, where I'm now working and teaching in the software industry 🙌",
+    text:
+      "From Kobe to Tokyo, where I'm now working and teaching in the software industry 🙌",
     title: "Moved 🇯🇵",
   },
   {
@@ -79,7 +80,8 @@ export const life = [
     mainLink: "https://www.crunchbase.com/organization/improbable",
     subtitle1: "Software Engineer & Product Manager",
     subtitle2: "",
-    text: "Improbable contacted me when they were an early-stage startup of around 40 people. The mission " +
+    text:
+      "Improbable contacted me when they were an early-stage startup of around 40 people. The mission " +
       "merged the gaming industry with challenging software and product problems, so I immediately interviewed and " +
       "the rest, as they say, is history. Improbable now stands at around 400 people. I was sad to leave after I " +
       "had experienced so much there, but new horizons beckoned!",
@@ -92,7 +94,8 @@ export const life = [
     mainLink: "https://www.crunchbase.com/organization/shazam",
     subtitle1: "Junior Software Engineer",
     subtitle2: "(Aqc. by Apple, 2018)",
-    text: "After interning here during the final year of my degree, I joined the Android team full-time.",
+    text:
+      "After interning here during the final year of my degree, I joined the Android team full-time.",
     title: "Shazam",
   },
   {
@@ -102,7 +105,8 @@ export const life = [
     mainLink: "https://steamcommunity.com/sharedfiles/filedetails/?id=92967778",
     subtitle1: "Founder",
     subtitle2: "",
-    text: "I founded Third Nerve at UCL during a resurgence of independent games. We developed" +
+    text:
+      "I founded Third Nerve at UCL during a resurgence of independent games. We developed" +
       " a multiplayer platformer that we took to game festivals around the UK and successfully got greenlit on Steam.",
     title: "Third Nerve",
   },
@@ -113,7 +117,8 @@ export const life = [
     mainLink: "https://www.ucl.ac.uk/",
     subtitle1: "BSc Computer Science",
     subtitle2: "First-class Honours",
-    text: "Rather than attend music College, I decided to get a degree in Computer Science. Graduated with 1st-class honours.",
+    text:
+      "Rather than attend music College, I decided to get a degree in Computer Science. Graduated with 1st-class honours.",
     title: "University College London",
   },
   {
@@ -146,4 +151,4 @@ export const life = [
     text: "",
     title: "Born 🇬🇧",
   },
-];
+]
