@@ -1,4 +1,4 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core"
 
 const theme = createMuiTheme({
   typography: {
@@ -10,6 +10,6 @@ const theme = createMuiTheme({
       main: "#007bff",
     },
   },
-});
+})
 
-export default theme;
+export default theme

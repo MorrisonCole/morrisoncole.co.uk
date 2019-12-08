@@ -1,16 +1,24 @@
-import { Button, createStyles, Grid, makeStyles, Paper, Theme, Typography } from "@material-ui/core";
-import { GetApp, Star } from "@material-ui/icons";
-import { graphql } from "gatsby";
-import React from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import SEO from "../components/seo";
-import CustomVerticalTimelineElement from "../components/timeline/custom_vertical_timeline_element";
-import TimelineImageCardRaw from "../components/timeline/timeline_image_card";
+import {
+  Button,
+  createStyles,
+  Grid,
+  makeStyles,
+  Paper,
+  Theme,
+  Typography,
+} from "@material-ui/core"
+import { GetApp, Star } from "@material-ui/icons"
+import { graphql } from "gatsby"
+import React from "react"
+import { VerticalTimeline } from "react-vertical-timeline-component"
+import "react-vertical-timeline-component/style.min.css"
+import SEO from "../components/seo"
+import CustomVerticalTimelineElement from "../components/timeline/custom_vertical_timeline_element"
+import TimelineImageCardRaw from "../components/timeline/timeline_image_card"
 // @ts-ignore
-import cvPdf from "../downloads/cv.pdf";
-import { life } from "../migrate/timeline-data";
-import "./index.css";
+import cvPdf from "../downloads/cv.pdf"
+import { life } from "../migrate/timeline-data"
+import "./index.css"
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -33,18 +41,18 @@ const styles = makeStyles((theme: Theme) =>
     button: {
       marginTop: theme.spacing(1),
     },
-  }),
-);
+  })
+)
 
 interface TimelineIndexProps {
-  location: Location;
-  data: any;
+  location: Location
+  data: any
 }
 
 export default function TimelineIndex(props: TimelineIndexProps) {
-  const classes = styles();
+  const classes = styles()
 
-  const listItems = life.map((item) =>
+  const listItems = life.map(item => (
     <CustomVerticalTimelineElement
       className="vertical-timeline-element--work"
       date={item.date}
@@ -52,30 +60,44 @@ export default function TimelineIndex(props: TimelineIndexProps) {
       icon={item.icon.icon}
       key={item.title}
     >
-      <TimelineImageCardRaw title={item.title} image={item.image} subtitle1={item.subtitle1} text={item.text}
-                            mainLink={item.mainLink}/>
-    </CustomVerticalTimelineElement>,
-  );
+      <TimelineImageCardRaw
+        title={item.title}
+        image={item.image}
+        subtitle1={item.subtitle1}
+        text={item.text}
+        mainLink={item.mainLink}
+      />
+    </CustomVerticalTimelineElement>
+  ))
 
   return (
     <div>
-      <SEO title="Timeline"/>
+      <SEO title="Timeline" />
       <Grid container direction="column" alignItems={"center"}>
         <Grid item className={classes.introContainer}>
           <Paper className={classes.introTextPaper}>
-            <Typography variant={"h5"} align={"center"}>Hello!</Typography>
-            <Typography variant={"body2"} align={"center"} className={classes.introTextBody}>
-              I'm Morrison - a Software Engineer, Product Manager, and (occasional) Musician.
+            <Typography variant={"h5"} align={"center"}>
+              Hello!
+            </Typography>
+            <Typography
+              variant={"body2"}
+              align={"center"}
+              className={classes.introTextBody}
+            >
+              I'm Morrison - a Software Engineer, Product Manager, and
+              (occasional) Musician.
             </Typography>
             <Grid container direction="column" alignItems={"center"}>
-              <Button variant="contained"
-                      color="primary"
-                      size="medium"
-                      className={classes.button}
-                      href={cvPdf}
-                      download={"cv-morrison-cole.pdf"}>
+              <Button
+                variant="contained"
+                color="primary"
+                size="medium"
+                className={classes.button}
+                href={cvPdf}
+                download={"cv-morrison-cole.pdf"}
+              >
                 CV (.pdf)
-                <GetApp className={classes.rightIcon}/>
+                <GetApp className={classes.rightIcon} />
               </Button>
             </Grid>
           </Paper>
@@ -87,11 +109,11 @@ export default function TimelineIndex(props: TimelineIndexProps) {
 
         <CustomVerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<Star/>}
+          icon={<Star />}
         />
       </VerticalTimeline>
     </div>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -117,4 +139,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

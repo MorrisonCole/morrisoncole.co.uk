@@ -1,12 +1,12 @@
-import { Typography } from "@material-ui/core";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import classNames from "classnames";
-import React from "react";
+import { Typography } from "@material-ui/core"
+import Container from "@material-ui/core/Container"
+import Grid from "@material-ui/core/Grid"
+import makeStyles from "@material-ui/core/styles/makeStyles"
+import classNames from "classnames"
+import React from "react"
 
 function currentYear() {
-  return new Date().getFullYear();
+  return new Date().getFullYear()
 }
 
 const useStyles = makeStyles({
@@ -27,21 +27,27 @@ const useStyles = makeStyles({
   fade: {
     opacity: 0.6,
   },
-});
+})
 
 export default function Footer() {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <footer>
       <Container maxWidth={false} className={classes.container}>
         <Grid item xs className={classes.footer}>
-          <Typography variant="body2" className={classes.footerText}>Handcrafted with TS, React and a bunch of other
-            useful technologies ♥</Typography>
-          <Typography variant="caption" className={classNames(classes.footerText, classes.fade)}>&copy; Morrison
-            Cole {currentYear()}</Typography>
+          <Typography variant="body2" className={classes.footerText}>
+            Handcrafted with TS, React and a bunch of other useful technologies
+            ♥
+          </Typography>
+          <Typography
+            variant="caption"
+            className={classNames(classes.footerText, classes.fade)}
+          >
+            &copy; Morrison Cole {currentYear()}
+          </Typography>
         </Grid>
       </Container>
     </footer>
-  );
+  )
 }
