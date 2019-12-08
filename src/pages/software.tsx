@@ -1,6 +1,3 @@
-import React, { useEffect } from "react"
-import { graphql } from "gatsby"
-import SEO from "../components/seo"
 import {
   createStyles,
   Grid,
@@ -12,9 +9,12 @@ import {
   Paper,
   Theme,
   Typography,
-} from "@material-ui/core"
-import { Star } from "@material-ui/icons"
-import { technologies2019 } from "../migrate/software-data"
+} from "@material-ui/core";
+import { Star } from "@material-ui/icons";
+import { graphql } from "gatsby";
+import React, { useEffect } from "react";
+import SEO from "../components/seo";
+import { technologies2019 } from "../migrate/software-data";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -28,15 +28,15 @@ const styles = makeStyles((theme: Theme) =>
       padding: theme.spacing(2),
     },
   }),
-)
+);
 
 interface SoftwareProps {
-  location: Location
-  data: any
+  location: Location;
+  data: any;
 }
 
 export default function Software(props: SoftwareProps) {
-  const classes = styles()
+  const classes = styles();
 
   const listItems = technologies2019.map((item) =>
     <ListItem button>
@@ -47,7 +47,7 @@ export default function Software(props: SoftwareProps) {
         primary={item.title}
       />
     </ListItem>,
-  )
+  );
 
   return (
     <React.Fragment>
@@ -69,7 +69,7 @@ export default function Software(props: SoftwareProps) {
         {listItems}
       </List>
     </React.Fragment>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -95,4 +95,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

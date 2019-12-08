@@ -1,31 +1,31 @@
-import React, { useEffect } from "react"
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+import {createStyles, Theme} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import {createStyles, Theme} from "@material-ui/core";
-import { Link } from "gatsby"
+import Tab from "@material-ui/core/Tab";
+import Tabs from "@material-ui/core/Tabs";
+import { Link } from "gatsby";
+import React, { useEffect } from "react";
 
 const styles = makeStyles((theme: Theme) =>
     createStyles({
       grow: {
-        flexGrow: 1
+        flexGrow: 1,
       },
       introContainer: {
         width: "40%",
-        marginTop: theme.spacing(3)
+        marginTop: theme.spacing(3),
       },
       introTextPaper: {
-        padding: theme.spacing(2.5)
+        padding: theme.spacing(2.5),
       },
       introTextBody: {
-        marginTop: theme.spacing(1)
-      }
-    })
+        marginTop: theme.spacing(1),
+      },
+    }),
 );
 
 interface NavBarProps {
-  location: Location
+  location: Location;
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -34,7 +34,7 @@ export default function NavBar(props: NavBarProps) {
   const [, setValue] = React.useState(0);
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue)
+    setValue(newValue);
   };
 
   return (
@@ -56,4 +56,4 @@ export default function NavBar(props: NavBarProps) {
       </Grid>
   );
 }
-
+

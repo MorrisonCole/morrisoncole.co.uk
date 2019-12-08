@@ -1,7 +1,7 @@
+import {createStyles, Theme} from "@material-ui/core";
+import IconButton from "@material-ui/core/IconButton";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import React from "react";
-import IconButton from "@material-ui/core/IconButton";
-import {createStyles, Theme} from "@material-ui/core";
 
 interface SocialIconProps {
     ariaLabel: string;
@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         iconButton: {
             marginLeft: theme.spacing(1),
-            marginRight: theme.spacing(1)
-        }
-    })
+            marginRight: theme.spacing(1),
+        },
+    }),
 );
 
 export default function SocialIcon(props: SocialIconProps) {

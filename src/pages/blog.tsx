@@ -1,10 +1,10 @@
-import React from "react"
-import Grid from "@material-ui/core/Grid"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import Typography from "@material-ui/core/Typography"
-import { createStyles, Theme } from "@material-ui/core"
-import SEO from "../components/seo"
-import { graphql, Link } from "gatsby"
+import { createStyles, Theme } from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import Typography from "@material-ui/core/Typography";
+import { graphql, Link } from "gatsby";
+import React from "react";
+import SEO from "../components/seo";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -15,23 +15,23 @@ const styles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(2),
     },
   }),
-)
+);
 
 interface BlogProps {
-  location: Location
-  data: any
+  location: Location;
+  data: any;
 }
 
 export default function Blog(props: BlogProps) {
-  const classes = styles()
-  const posts = props.data.allMarkdownRemark.edges
+  const classes = styles();
+  const posts = props.data.allMarkdownRemark.edges;
 
   return (
     <Grid container className={classes.container} direction={"column"}>
       <SEO title="Blog"/>
 
       {posts.map(({ node }: any) => {
-        const title = node.frontmatter.title || node.fields.slug
+        const title = node.frontmatter.title || node.fields.slug;
         return (
           <article key={node.fields.slug}>
             <header>
@@ -52,10 +52,10 @@ export default function Blog(props: BlogProps) {
               />
             </section>
           </article>
-        )
+        );
       })}
     </Grid>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -81,4 +81,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -1,12 +1,12 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import { Typography } from "@material-ui/core"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import Grid from "@material-ui/core/Grid"
-import classNames from "classnames"
+import { Typography } from "@material-ui/core";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import classNames from "classnames";
+import React from "react";
 
 function currentYear() {
-  return new Date().getFullYear()
+  return new Date().getFullYear();
 }
 
 const useStyles = makeStyles({
@@ -27,10 +27,10 @@ const useStyles = makeStyles({
   fade: {
     opacity: 0.6,
   },
-})
+});
 
 export default function Footer() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <footer>
@@ -43,5 +43,5 @@ export default function Footer() {
         </Grid>
       </Container>
     </footer>
-  )
+  );
 }
