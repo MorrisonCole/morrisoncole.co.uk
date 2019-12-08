@@ -1,14 +1,14 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
-import { SeoQuery } from "../graphql-types"
+import { graphql, useStaticQuery } from "gatsby";
+import PropTypes from "prop-types";
+import React from "react";
+import Helmet from "react-helmet";
+import { SeoQuery } from "../graphql-types";
 
 interface SEOProps {
-  description?: string
-  lang?: string
-  meta?: []
-  title: string
+  description?: string;
+  lang?: string;
+  meta?: [];
+  title: string;
 }
 
 function SEO({ description, lang, meta, title }: SEOProps) {
@@ -23,14 +23,14 @@ function SEO({ description, lang, meta, title }: SEOProps) {
           }
         }
       }
-    `
-  )
+    `,
+  );
 
   if (site == null) {
-    return <div/>
+    return <div/>;
   }
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -74,20 +74,20 @@ function SEO({ description, lang, meta, title }: SEOProps) {
         },
       ].concat(meta || [])}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;

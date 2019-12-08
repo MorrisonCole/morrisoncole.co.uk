@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby";
+import Image from "gatsby-image";
+import React from "react";
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -21,9 +21,9 @@ const Bio = () => {
         }
       }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <div
       style={{
@@ -50,7 +50,7 @@ const Bio = () => {
         </a>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

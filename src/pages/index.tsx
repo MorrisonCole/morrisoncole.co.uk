@@ -1,16 +1,16 @@
-import React from "react"
-import { graphql } from "gatsby"
-import SEO from "../components/seo"
-import { VerticalTimeline } from "react-vertical-timeline-component"
-import "react-vertical-timeline-component/style.min.css"
-import "./index.css"
-import { Button, createStyles, Grid, makeStyles, Paper, Theme, Typography } from "@material-ui/core"
-import { life } from "../migrate/timeline-data"
-import CustomVerticalTimelineElement from "../components/timeline/custom_vertical_timeline_element"
-import TimelineImageCardRaw from "../components/timeline/timeline_image_card"
-import { GetApp, Star } from "@material-ui/icons"
+import { Button, createStyles, Grid, makeStyles, Paper, Theme, Typography } from "@material-ui/core";
+import { GetApp, Star } from "@material-ui/icons";
+import { graphql } from "gatsby";
+import React from "react";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import SEO from "../components/seo";
+import CustomVerticalTimelineElement from "../components/timeline/custom_vertical_timeline_element";
+import TimelineImageCardRaw from "../components/timeline/timeline_image_card";
 // @ts-ignore
-import cvPdf from "../downloads/cv.pdf"
+import cvPdf from "../downloads/cv.pdf";
+import { life } from "../migrate/timeline-data";
+import "./index.css";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -34,15 +34,15 @@ const styles = makeStyles((theme: Theme) =>
       marginTop: theme.spacing(1),
     },
   }),
-)
+);
 
 interface TimelineIndexProps {
-  location: Location
-  data: any
+  location: Location;
+  data: any;
 }
 
 export default function TimelineIndex(props: TimelineIndexProps) {
-  const classes = styles()
+  const classes = styles();
 
   const listItems = life.map((item) =>
     <CustomVerticalTimelineElement
@@ -55,7 +55,7 @@ export default function TimelineIndex(props: TimelineIndexProps) {
       <TimelineImageCardRaw title={item.title} image={item.image} subtitle1={item.subtitle1} text={item.text}
                             mainLink={item.mainLink}/>
     </CustomVerticalTimelineElement>,
-  )
+  );
 
   return (
     <div>
@@ -91,7 +91,7 @@ export default function TimelineIndex(props: TimelineIndexProps) {
         />
       </VerticalTimeline>
     </div>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -117,4 +117,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
