@@ -58,7 +58,7 @@
     "@graphql-codegen/typescript-operations": "1.12.1",
     "express": "4.17.1",
     "goodreads-api-node": "0.0.10",
-    "open": "7.0.0",
+    "open": "7.0.1",
     "prettier": "1.19.1",
     "server": "1.0.22",
     "tslint": "6.0.0",
