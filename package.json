@@ -38,7 +38,7 @@
     "gatsby-source-filesystem": "2.1.47",
     "gatsby-transformer-json": "2.2.25",
     "gatsby-transformer-remark": "2.6.49",
-    "gatsby-transformer-sharp": "2.3.13",
+    "gatsby-transformer-sharp": "2.3.14",
     "graphql": "14.6.0",
     "graphql-import": "0.7.1",
     "prismjs": "1.19.0",
