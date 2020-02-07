@@ -55,7 +55,7 @@
   "devDependencies": {
     "@graphql-codegen/cli": "1.12.1",
     "@graphql-codegen/typescript": "1.12.1",
-    "@graphql-codegen/typescript-operations": "1.12.1",
+    "@graphql-codegen/typescript-operations": "1.12.2",
     "express": "4.17.1",
     "goodreads-api-node": "0.0.10",
     "open": "7.0.2",
