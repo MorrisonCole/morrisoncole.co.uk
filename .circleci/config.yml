@@ -1,5 +1,16 @@
 version: 2.1
 
+workflows:
+  version: 2.1
+    build_and_deploy:
+      jobs:
+        - build
+        - deploy:
+            filters:
+              branches:
+                only:
+                  - production
+
 executors:
   docker_executor:
     docker:
@@ -27,10 +38,6 @@ jobs:
       - checkout_with_cache
       - run: npm run build
   deploy:
-    filters:
-      branches:
-        only:
-          - production
     executor: docker_executor
     steps:
       - checkout_with_cache
