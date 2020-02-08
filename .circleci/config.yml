@@ -4,7 +4,11 @@ workflows:
   version: 2.1
   build_and_deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore:
+                - production
       - deploy:
           filters:
             branches:
@@ -41,4 +45,5 @@ jobs:
     executor: docker_executor
     steps:
       - checkout_with_cache
+      - run: npm run build
       - run: npm run deploy
