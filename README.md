@@ -1,4 +1,4 @@
-# morrisoncole.co.uk ![](https://github.com/MorrisonCole/morrisoncole.co.uk/workflows/CI/badge.svg)
+# morrisoncole.co.uk [![CircleCI](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk.svg?style=svg)](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk)
 
 Just my personal website. 
 
