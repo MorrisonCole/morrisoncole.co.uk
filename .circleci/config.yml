@@ -2,14 +2,14 @@ version: 2.1
 
 workflows:
   version: 2.1
-    build_and_deploy:
-      jobs:
-        - build
-        - deploy:
-            filters:
-              branches:
-                only:
-                  - production
+  build_and_deploy:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            branches:
+              only:
+                - production
 
 executors:
   docker_executor:
