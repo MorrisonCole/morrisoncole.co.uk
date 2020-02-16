@@ -14,7 +14,7 @@ import { Star } from "@material-ui/icons"
 import { graphql } from "gatsby"
 import React, { useEffect } from "react"
 import SEO from "../components/seo"
-import { technologies2019 } from "../migrate/software-data"
+import { technologies2019, technologies2020 } from "../migrate/software-data"
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -38,7 +38,16 @@ interface SoftwareProps {
 export default function Software(props: SoftwareProps) {
   const classes = styles()
 
-  const listItems = technologies2019.map(item => (
+  const listItems2020 = technologies2020.map(item => (
+    <ListItem button>
+      <ListItemIcon>
+        <Star />
+      </ListItemIcon>
+      <ListItemText primary={item.title} />
+    </ListItem>
+  ))
+
+  const listItems2019 = technologies2019.map(item => (
     <ListItem button>
       <ListItemIcon>
         <Star />
@@ -80,10 +89,14 @@ export default function Software(props: SoftwareProps) {
         </Paper>
       </Grid>
       <Typography variant={"h5"} className={classes.container}>
-        New stuff I've been learning / using (2019)
+        2020: New stuff I've been learning / using
       </Typography>
       <Typography variant={"subtitle1"}>(By no means exhaustive ♥)</Typography>
-      <List dense>{listItems}</List>
+      <List dense>{listItems2020}</List>
+      <Typography variant={"h5"} className={classes.container}>
+        2019: Stuff I learned
+      </Typography>
+      <List dense>{listItems2019}</List>
     </React.Fragment>
   )
 }
