@@ -63,7 +63,7 @@
     "server": "1.0.27",
     "tslint": "6.0.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "3.8.2",
+    "typescript": "3.8.3",
     "yaml": "1.7.2"
   },
   "homepage": "https://github.com/MorrisonCole/morrisoncole.co.uk#readme",
