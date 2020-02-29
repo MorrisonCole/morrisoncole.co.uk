@@ -57,7 +57,7 @@ export const life = [
     date: "2019 - Now",
     icon: icons.work,
     image: MedmainImage,
-    mainLink: "https://medmain.net/",
+    mainLink: "https://medmain.com/",
     subtitle1: "Software Engineer, Server",
     subtitle2: "",
     text: "Developing products at the forefront of AI-assisted medicine.",
