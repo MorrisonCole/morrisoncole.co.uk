@@ -1,8 +1,8 @@
-import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
-import React from 'react';
-import Helmet from 'react-helmet';
-import { SeoQuery } from '../graphql-types';
+import { graphql, useStaticQuery } from "gatsby"
+import PropTypes from "prop-types"
+import React from "react"
+import Helmet from "react-helmet"
+import { SeoQuery } from "../../types/graphql-types"
 
 interface SEOProps {
   description?: string;
@@ -12,7 +12,7 @@ interface SEOProps {
 }
 
 function SEO({
-  description, lang, meta, title,
+               description, lang, meta, title,
 }: SEOProps) {
   const { site }: SeoQuery = useStaticQuery(
     graphql`

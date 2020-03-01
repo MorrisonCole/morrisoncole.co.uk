@@ -1,11 +1,11 @@
-import { createStyles, Theme } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Typography from '@material-ui/core/Typography';
-import { graphql, Link } from 'gatsby';
-import React from 'react';
-import SEO from '../components/seo';
-import { Query } from '../graphql-types';
+import { createStyles, Theme } from "@material-ui/core"
+import Grid from "@material-ui/core/Grid"
+import makeStyles from "@material-ui/core/styles/makeStyles"
+import Typography from "@material-ui/core/Typography"
+import { graphql, Link } from "gatsby"
+import React from "react"
+import SEO from "../components/seo"
+import { BlogIndexQuery } from "../../types/graphql-types"
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
@@ -14,11 +14,11 @@ const styles = makeStyles((theme: Theme) => createStyles({
   body: {
     marginTop: theme.spacing(2),
   },
-}));
+}))
 
 interface BlogProps {
   location: Location;
-  data: Query;
+  data: BlogIndexQuery;
 }
 
 export default function Blog(props: BlogProps) {

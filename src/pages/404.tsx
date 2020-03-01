@@ -1,7 +1,7 @@
-import { graphql } from 'gatsby';
-import React from 'react';
-import SEO from '../components/seo';
-import { NotFoundPageQuery } from '../graphql-types';
+import { graphql } from "gatsby"
+import React from "react"
+import SEO from "../components/seo"
+import { NotFoundPageQuery } from "../../types/graphql-types"
 
 interface NotFoundPageProps {
   location: Location;
@@ -10,8 +10,8 @@ interface NotFoundPageProps {
 
 class NotFoundPage extends React.Component<NotFoundPageProps, {}> {
   public render() {
-    const { data } = this.props;
-    const siteTitle = (data.site && data.site.siteMetadata.title) || '';
+    const { data } = this.props
+    const siteTitle = (data.site && data.site.siteMetadata.title) || ""
 
     return (
       <div>
