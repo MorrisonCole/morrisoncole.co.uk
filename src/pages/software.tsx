@@ -9,96 +9,97 @@ import {
   Paper,
   Theme,
   Typography,
-} from "@material-ui/core"
-import { Star } from "@material-ui/icons"
-import { graphql } from "gatsby"
-import React, { useEffect } from "react"
-import SEO from "../components/seo"
-import { technologies2019, technologies2020 } from "../migrate/software-data"
+} from '@material-ui/core';
+import { Star } from '@material-ui/icons';
+import { graphql } from 'gatsby';
+import React from 'react';
+import SEO from '../components/seo';
+import { technologies2019, technologies2020 } from '../migrate/software-data';
 
-const styles = makeStyles((theme: Theme) =>
-  createStyles({
-    container: {
-      marginTop: theme.spacing(8),
-    },
-    body: {
-      marginTop: theme.spacing(2),
-    },
-    announcement: {
-      padding: theme.spacing(2),
-    },
-  })
-)
+const styles = makeStyles((theme: Theme) => createStyles({
+  container: {
+    marginTop: theme.spacing(8),
+  },
+  body: {
+    marginTop: theme.spacing(2),
+  },
+  announcement: {
+    padding: theme.spacing(2),
+  },
+}));
 
 interface SoftwareProps {
-  location: Location
-  data: any
+  location: Location;
+  data: any;
 }
 
 export default function Software(props: SoftwareProps) {
-  const classes = styles()
+  const classes = styles();
 
-  const listItems2020 = technologies2020.map(item => (
+  const listItems2020 = technologies2020.map((item) => (
     <ListItem button>
       <ListItemIcon>
         <Star />
       </ListItemIcon>
       <ListItemText primary={item.title} />
     </ListItem>
-  ))
+  ));
 
-  const listItems2019 = technologies2019.map(item => (
+  const listItems2019 = technologies2019.map((item) => (
     <ListItem button>
       <ListItemIcon>
         <Star />
       </ListItemIcon>
       <ListItemText primary={item.title} />
     </ListItem>
-  ))
+  ));
 
   return (
-    <React.Fragment>
+    <>
       <SEO title="Software" />
       <Grid
         container
         className={classes.container}
-        alignContent={"center"}
-        justify={"center"}
-        direction={"column"}
+        alignContent="center"
+        justify="center"
+        direction="column"
       >
         <Paper className={classes.announcement}>
-          <Typography variant={"h5"} align={"center"}>
+          <Typography variant="h5" align="center">
             Eventually I'll list my projects here!
           </Typography>
           <Typography
-            variant={"body1"}
-            align={"center"}
+            variant="body1"
+            align="center"
             className={classes.body}
           >
-            In the meantime, you can check out my{" "}
-            <a href={"https://github.com/morrisoncole"}>GitHub</a> or{" "}
+            In the meantime, you can check out my
+            {' '}
+            <a href="https://github.com/morrisoncole">GitHub</a>
+            {' '}
+            or
+            {' '}
             <a
-              href={
-                "https://stackoverflow.com/users/516642/morrison-cole?tab=profile"
-              }
+              href="https://stackoverflow.com/users/516642/morrison-cole?tab=profile"
             >
               Stack Overflow
-            </a>{" "}
+            </a>
+            {' '}
             :)
           </Typography>
         </Paper>
       </Grid>
-      <Typography variant={"h5"} className={classes.container}>
+      <Typography variant="h5" className={classes.container}>
         2020: New stuff I've been learning / using
       </Typography>
-      <Typography variant={"subtitle1"}>(By no means exhaustive ♥)</Typography>
+      <Typography variant="subtitle1">(By no means exhaustive ♥)</Typography>
       <List dense>{listItems2020}</List>
-      <Typography variant={"h5"} className={classes.container}>
+      <Typography variant="h5" className={classes.container}>
         2019: Stuff I learned
       </Typography>
       <List dense>{listItems2019}</List>
-    </React.Fragment>
-  )
+    </>
+  );
 }
 
 export const pageQuery = graphql`
@@ -115,13 +116,13 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
+            frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                title
+                description
+            }
         }
       }
     }
   }
-`
+`;

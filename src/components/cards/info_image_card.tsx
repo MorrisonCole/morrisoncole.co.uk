@@ -1,20 +1,20 @@
-import Button from "@material-ui/core/Button"
-import Card from "@material-ui/core/Card"
-import CardActionArea from "@material-ui/core/CardActionArea"
-import CardActions from "@material-ui/core/CardActions"
-import CardContent from "@material-ui/core/CardContent"
-import CardMedia from "@material-ui/core/CardMedia"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import Typography from "@material-ui/core/Typography"
-import React from "react"
+import Button from '@material-ui/core/Button';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@material-ui/core/Typography';
+import React from 'react';
 
 interface InfoImageCardProps {
-  title: string
-  subtitle1: string
-  text: string
-  actionTitle: string
-  actionHref: string
-  image: string
+  title: string;
+  subtitle1: string;
+  text: string;
+  actionTitle: string;
+  actionHref: string;
+  image: string;
 }
 
 const styles = makeStyles({
@@ -23,12 +23,12 @@ const styles = makeStyles({
   },
   image: {
     height: 0,
-    paddingTop: "56.25%", // 16:9
+    paddingTop: '56.25%', // 16:9
   },
-})
+});
 
 export default function InfoImageCard(props: InfoImageCardProps) {
-  const classes = styles()
+  const classes = styles();
 
   return (
     <Card className={classes.card}>
@@ -49,14 +49,14 @@ export default function InfoImageCard(props: InfoImageCardProps) {
             size="small"
             color="primary"
             href={props.actionHref}
-            target={"_blank"}
+            target="_blank"
           >
             {props.actionTitle}
           </Button>
         </CardActions>
       ) : (
-        ""
+        ''
       )}
     </Card>
-  )
+  );
 }

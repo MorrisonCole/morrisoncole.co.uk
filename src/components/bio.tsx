@@ -1,6 +1,6 @@
-import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
-import React from "react"
+import { graphql, useStaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
+import React from 'react';
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -12,22 +12,22 @@ const Bio = () => {
           }
         }
       }
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-          }
+        site {
+            siteMetadata {
+                author
+                social {
+                    twitter
+                }
+            }
         }
-      }
     }
-  `)
+  `);
 
-  const { author, social } = data.site.siteMetadata
+  const { author, social } = data.site.siteMetadata;
   return (
     <div
       style={{
-        display: `flex`,
+        display: 'flex',
       }}
     >
       <Image
@@ -36,22 +36,26 @@ const Bio = () => {
         style={{
           marginBottom: 0,
           minWidth: 50,
-          borderRadius: `100%`,
+          borderRadius: '100%',
         }}
         imgStyle={{
-          borderRadius: `50%`,
+          borderRadius: '50%',
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Kobe, Japan
+        Written by
+        {' '}
+        <strong>{author}</strong>
+        {' '}
+        who lives and works in Kobe, Japan
         building things and writing music.
-        {` `}
+        {' '}
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
         </a>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

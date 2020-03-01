@@ -1,61 +1,59 @@
-import { createStyles, Theme } from "@material-ui/core"
-import Grid from "@material-ui/core/Grid"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import Typography from "@material-ui/core/Typography"
-import { graphql, Link } from "gatsby"
-import React from "react"
-import SEO from "../components/seo"
-import { Query } from "../graphql-types"
+import { createStyles, Theme } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import Typography from '@material-ui/core/Typography';
+import { graphql, Link } from 'gatsby';
+import React from 'react';
+import SEO from '../components/seo';
+import { Query } from '../graphql-types';
 
-const styles = makeStyles((theme: Theme) =>
-  createStyles({
-    container: {
-      marginTop: theme.spacing(8),
-    },
-    body: {
-      marginTop: theme.spacing(2),
-    },
-  })
-)
+const styles = makeStyles((theme: Theme) => createStyles({
+  container: {
+    marginTop: theme.spacing(8),
+  },
+  body: {
+    marginTop: theme.spacing(2),
+  },
+}));
 
 interface BlogProps {
-  location: Location
-  data: Query
+  location: Location;
+  data: Query;
 }
 
 export default function Blog(props: BlogProps) {
-  const classes = styles()
-  const posts = props.data.allMarkdownRemark.edges
+  const classes = styles();
+  const posts = props.data.allMarkdownRemark.edges;
 
   return (
-    <Grid container className={classes.container} direction={"column"}>
-      <SEO title="Blog"/>
+    <Grid container className={classes.container} direction="column">
+      <SEO title="Blog" />
 
       {posts.map(({ node }) => {
-        const title = node.frontmatter?.title || node.fields?.slug
+        const title = node.frontmatter?.title || node.fields?.slug;
         return (
-          <article key={node.fields?.slug ?? ""}>
+          <article key={node.fields?.slug ?? ''}>
             <header>
               <Typography variant="h4">
-                <Link to={node.fields?.slug ?? ""}>{title}</Link>
+                <Link to={node.fields?.slug ?? ''}>{title}</Link>
               </Typography>
               <Typography variant="subtitle2">
-                {node.frontmatter?.date ?? ""}
+                {node.frontmatter?.date ?? ''}
               </Typography>
             </header>
             <section>
               <Typography
                 variant="subtitle1"
                 dangerouslySetInnerHTML={{
-                  __html: (node.frontmatter?.description || node.excerpt) ?? "",
+                  __html: (node.frontmatter?.description || node.excerpt) ?? '',
                 }}
               />
             </section>
           </article>
-        )
+        );
       })}
     </Grid>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -72,13 +70,13 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
+            frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                title
+                description
+            }
         }
       }
     }
   }
-`
+`;
