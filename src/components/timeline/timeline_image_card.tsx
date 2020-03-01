@@ -1,17 +1,17 @@
-import { makeStyles } from "@material-ui/core"
-import Card from "@material-ui/core/Card"
-import CardActionArea from "@material-ui/core/CardActionArea"
-import CardContent from "@material-ui/core/CardContent"
-import CardMedia from "@material-ui/core/CardMedia"
-import Typography from "@material-ui/core/Typography"
-import React from "react"
+import { makeStyles } from '@material-ui/core';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
+import React from 'react';
 
 interface TimelineImageCardProps {
-  title: string
-  mainLink: string
-  image: string
-  subtitle1: string
-  text: string
+  title: string;
+  mainLink: string;
+  image: string;
+  subtitle1: string;
+  text: string;
 }
 
 const styles = makeStyles({
@@ -21,10 +21,10 @@ const styles = makeStyles({
   pos: {
     marginBottom: 12,
   },
-})
+});
 
 export default function TimelineImageCardRaw(props: TimelineImageCardProps) {
-  const classes = styles()
+  const classes = styles();
 
   return (
     <Card className={classes.card}>
@@ -49,5 +49,5 @@ export default function TimelineImageCardRaw(props: TimelineImageCardProps) {
         </CardContent>
       </CardActionArea>
     </Card>
-  )
+  );
 }

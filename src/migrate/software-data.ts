@@ -1,29 +1,29 @@
 export const technologies2020 = [
   {
-    title: "Terraform",
+    title: 'Terraform',
   },
   {
-    title: "Bazel",
-  }
-]
+    title: 'Bazel',
+  },
+];
 
 export const technologies2019 = [
   {
-    title: "Golang",
+    title: 'Golang',
   },
   {
-    title: "Kotlin",
+    title: 'Kotlin',
   },
   {
-    title: "Docker",
+    title: 'Docker',
   },
   {
-    title: "gRPC",
+    title: 'gRPC',
   },
   {
-    title: "TypeScript",
+    title: 'TypeScript',
   },
   {
-    title: "GraphQL",
+    title: 'GraphQL',
   },
-]
+];

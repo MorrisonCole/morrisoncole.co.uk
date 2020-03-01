@@ -1,17 +1,17 @@
-import { graphql } from "gatsby"
-import React from "react"
-import SEO from "../components/seo"
-import { NotFoundPageQuery } from "../graphql-types"
+import { graphql } from 'gatsby';
+import React from 'react';
+import SEO from '../components/seo';
+import { NotFoundPageQuery } from '../graphql-types';
 
 interface NotFoundPageProps {
-  location: Location
-  data: NotFoundPageQuery
+  location: Location;
+  data: NotFoundPageQuery;
 }
 
 class NotFoundPage extends React.Component<NotFoundPageProps, {}> {
   public render() {
-    const { data } = this.props
-    const siteTitle = (data.site && data.site.siteMetadata.title) || ""
+    const { data } = this.props;
+    const siteTitle = (data.site && data.site.siteMetadata.title) || '';
 
     return (
       <div>
@@ -19,18 +19,18 @@ class NotFoundPage extends React.Component<NotFoundPageProps, {}> {
         <h1>Not Found</h1>
         <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       </div>
-    )
+    );
   }
 }
 
-export default NotFoundPage
+export default NotFoundPage;
 
 export const pageQuery = graphql`
-  query NotFoundPage {
-    site {
-      siteMetadata {
-        title
-      }
+    query NotFoundPage {
+        site {
+            siteMetadata {
+                title
+            }
+        }
     }
-  }
-`
+`;

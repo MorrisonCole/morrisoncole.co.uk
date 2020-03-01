@@ -1,25 +1,23 @@
-import { createStyles, Theme } from "@material-ui/core"
-import IconButton from "@material-ui/core/IconButton"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import React from "react"
+import { createStyles, Theme } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import React from 'react';
 
 interface SocialIconProps {
-  ariaLabel: string
-  href: string
-  icon: React.ReactNode
+  ariaLabel: string;
+  href: string;
+  icon: React.ReactNode;
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    iconButton: {
-      marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
-    },
-  })
-)
+const useStyles = makeStyles((theme: Theme) => createStyles({
+  iconButton: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+  },
+}));
 
 export default function SocialIcon(props: SocialIconProps) {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <IconButton
@@ -30,5 +28,5 @@ export default function SocialIcon(props: SocialIconProps) {
     >
       {props.icon}
     </IconButton>
-  )
+  );
 }

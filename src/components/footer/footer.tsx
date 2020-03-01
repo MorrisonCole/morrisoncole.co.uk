@@ -1,12 +1,12 @@
-import { Typography } from "@material-ui/core"
-import Container from "@material-ui/core/Container"
-import Grid from "@material-ui/core/Grid"
-import makeStyles from "@material-ui/core/styles/makeStyles"
-import classNames from "classnames"
-import React from "react"
+import { Typography } from '@material-ui/core';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import makeStyles from '@material-ui/core/styles/makeStyles';
+import classNames from 'classnames';
+import React from 'react';
 
 function currentYear() {
-  return new Date().getFullYear()
+  return new Date().getFullYear();
 }
 
 const useStyles = makeStyles({
@@ -14,23 +14,23 @@ const useStyles = makeStyles({
     padding: 0,
   },
   footer: {
-    backgroundColor: "#f5f5f5",
-    fontSize: "0.9em",
+    backgroundColor: '#f5f5f5',
+    fontSize: '0.9em',
     flexShrink: 0,
-    marginTop: "45px",
-    padding: "35px 0 36px",
-    borderTop: "1px solid #e5e5e5",
+    marginTop: '45px',
+    padding: '35px 0 36px',
+    borderTop: '1px solid #e5e5e5',
   },
   footerText: {
-    paddingLeft: "5%",
+    paddingLeft: '5%',
   },
   fade: {
     opacity: 0.6,
   },
-})
+});
 
 export default function Footer() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <footer>
@@ -44,10 +44,12 @@ export default function Footer() {
             variant="caption"
             className={classNames(classes.footerText, classes.fade)}
           >
-            &copy; Morrison Cole {currentYear()}
+            &copy; Morrison Cole
+            {' '}
+            {currentYear()}
           </Typography>
         </Grid>
       </Container>
     </footer>
-  )
+  );
 }
