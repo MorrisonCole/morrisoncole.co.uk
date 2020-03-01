@@ -1,4 +1,4 @@
-# morrisoncole.co.uk [![CircleCI](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk.svg?style=svg)](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk)
+# morrisoncole.co.uk [![CircleCI](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk/tree/develop.svg?style=svg)](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk/tree/develop)
 
 Just my personal website.
 
