@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography"
 import { graphql, Link } from "gatsby"
 import React from "react"
 import SEO from "../components/seo"
+import { Query } from "../graphql-types"
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,7 +20,7 @@ const styles = makeStyles((theme: Theme) =>
 
 interface BlogProps {
   location: Location
-  data: any
+  data: Query
 }
 
 export default function Blog(props: BlogProps) {
@@ -28,25 +29,25 @@ export default function Blog(props: BlogProps) {
 
   return (
     <Grid container className={classes.container} direction={"column"}>
-      <SEO title="Blog" />
+      <SEO title="Blog"/>
 
-      {posts.map(({ node }: any) => {
-        const title = node.frontmatter.title || node.fields.slug
+      {posts.map(({ node }) => {
+        const title = node.frontmatter?.title || node.fields?.slug
         return (
-          <article key={node.fields.slug}>
+          <article key={node.fields?.slug ?? ""}>
             <header>
               <Typography variant="h4">
-                <Link to={node.fields.slug}>{title}</Link>
+                <Link to={node.fields?.slug ?? ""}>{title}</Link>
               </Typography>
               <Typography variant="subtitle2">
-                {node.frontmatter.date}
+                {node.frontmatter?.date ?? ""}
               </Typography>
             </header>
             <section>
               <Typography
                 variant="subtitle1"
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: (node.frontmatter?.description || node.excerpt) ?? "",
                 }}
               />
             </section>
