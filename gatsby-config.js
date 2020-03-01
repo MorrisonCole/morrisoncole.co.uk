@@ -12,23 +12,23 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-transformer-json',
+    "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/data/`,
-        name: `data`
+        name: `data`,
       },
     },
     {
-      resolve: 'gatsby-plugin-material-ui',
+      resolve: "gatsby-plugin-material-ui",
       options: {
         stylesProvider: {
           injectFirst: true,
         },
       },
     },
-    'gatsby-plugin-styled-components',
+    "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -97,7 +97,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'morrisoncole.co.uk',
+        bucketName: "morrisoncole.co.uk",
         protocol: siteAddress.protocol.slice(0, -1),
         hostname: siteAddress.hostname,
       },
