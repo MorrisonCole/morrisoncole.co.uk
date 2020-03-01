@@ -1,0 +1,14 @@
+{
+  "2020": [
+    "Terraform",
+    "Bazel"
+  ],
+  "2019": [
+    "Golang",
+    "Kotlin",
+    "Docker",
+    "gRPC",
+    "TypeScript",
+    "GraphQL"
+  ]
+}
