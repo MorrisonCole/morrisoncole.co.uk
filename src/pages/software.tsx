@@ -9,12 +9,12 @@ import {
   Paper,
   Theme,
   Typography,
-} from '@material-ui/core';
-import { Star } from '@material-ui/icons';
-import { graphql } from 'gatsby';
-import React from 'react';
-import SEO from '../components/seo';
-import { technologies2019, technologies2020 } from '../migrate/software-data';
+} from "@material-ui/core"
+import { Star } from "@material-ui/icons"
+import { graphql } from "gatsby"
+import React from "react"
+import SEO from "../components/seo"
+import { SoftwareQuery } from "../../types/graphql-types"
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
@@ -30,29 +30,29 @@ const styles = makeStyles((theme: Theme) => createStyles({
 
 interface SoftwareProps {
   location: Location;
-  data: any;
+  data: SoftwareQuery;
 }
 
 export default function Software(props: SoftwareProps) {
   const classes = styles();
 
-  const listItems2020 = technologies2020.map((item) => (
+  const listItems2020 = props.data.softwareJson?._2020?.map((item) => (
     <ListItem button>
       <ListItemIcon>
-        <Star />
+        <Star/>
       </ListItemIcon>
-      <ListItemText primary={item.title} />
+      <ListItemText primary={item}/>
     </ListItem>
-  ));
+  ))
 
-  const listItems2019 = technologies2019.map((item) => (
+  const listItems2019 = props.data.softwareJson?._2019?.map((item) => (
     <ListItem button>
       <ListItemIcon>
-        <Star />
+        <Star/>
       </ListItemIcon>
-      <ListItemText primary={item.title} />
+      <ListItemText primary={item}/>
     </ListItem>
-  ));
+  ))
 
   return (
     <>
@@ -104,25 +104,9 @@ export default function Software(props: SoftwareProps) {
 
 export const pageQuery = graphql`
   query Software {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                title
-                description
-            }
-        }
-      }
+    softwareJson {
+      _2019
+      _2020
     }
   }
 `;
