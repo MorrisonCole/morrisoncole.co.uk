@@ -1,22 +1,20 @@
-import {
-  createStyles, Theme, Typography, WithStyles, withStyles,
-} from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import Star from '@material-ui/icons/Star';
-import { graphql, Link } from 'gatsby';
-import React from 'react';
-import SEO from '../components/seo';
-import { BlogPostBySlugQuery, SitePageContext } from '../graphql-types';
+import { createStyles, Theme, Typography, WithStyles, withStyles } from "@material-ui/core"
+import Grid from "@material-ui/core/Grid"
+import List from "@material-ui/core/List"
+import ListItem from "@material-ui/core/ListItem"
+import ListItemIcon from "@material-ui/core/ListItemIcon"
+import ListItemText from "@material-ui/core/ListItemText"
+import Star from "@material-ui/icons/Star"
+import { graphql, Link } from "gatsby"
+import React from "react"
+import SEO from "../components/seo"
+import { BlogPostBySlugQuery, SitePageContext } from "../../types/graphql-types"
 
 const styles = ({ spacing }: Theme) => createStyles({
   container: {
     marginTop: spacing(8),
   },
-});
+})
 
 interface BlogPostTemplateProps extends WithStyles<typeof styles> {
   location: Location;

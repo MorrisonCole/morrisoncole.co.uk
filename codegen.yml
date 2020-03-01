@@ -1,10 +1,9 @@
 schema: http://localhost:8000/___graphql
 documents:
   - ./src/**/*.{ts,tsx}
-  - ./node_modules/gatsby-transformer-sharp/*.js
-  - ./.cache/fragments/*.js
+  - ./node_modules/gatsby*/!(node_modules)/**/*.js
 generates:
-  ./src/graphql-types.ts:
+  ./types/graphql-types.ts:
     plugins:
       - typescript
       - typescript-operations
