@@ -1,6 +1,6 @@
 # morrisoncole.co.uk [![CircleCI](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk.svg?style=svg)](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk)
 
-Just my personal website. 
+Just my personal website.
 
 ## Getting Started
 

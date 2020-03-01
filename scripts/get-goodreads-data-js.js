@@ -22,9 +22,11 @@ app.listen(port, async () => {
   await auth()
 
   let result = await list2019Books()
-  fs.writeFile('./books.json', JSON.stringify(result.books, null, 2), function (err) {
-    if (err) throw err;
-  });
+  fs.writeFile("./books.json", JSON.stringify(result.books, null, 2), function(
+    err
+  ) {
+    if (err) throw err
+  })
   console.log("Wrote file")
 })
 
@@ -41,5 +43,8 @@ app.get("/" + goodreadsCallbackSuffix, async () => {
 
 async function list2019Books() {
   await gr.getAccessToken()
-  return gr.getBooksOnUserShelf("6320986-morrison", "2019", { per_page: 200, sort: 'position' })
+  return gr.getBooksOnUserShelf("6320986-morrison", "2019", {
+    per_page: 200,
+    sort: "position",
+  })
 }
