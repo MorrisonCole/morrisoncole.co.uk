@@ -1,7 +1,7 @@
 {
   "name": "morrisoncole.co.uk",
   "private": true,
-  "description": "An open-source port of my personal website",
+  "description": "My personal website",
   "version": "0.1.0",
   "author": "Morrison Cole <admin@morrisoncole.co.uk>",
   "bugs": {
@@ -83,7 +83,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "generate": "graphql-codegen",
