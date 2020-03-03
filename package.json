@@ -10,6 +10,8 @@
   "dependencies": {
     "@material-ui/core": "4.9.5",
     "@material-ui/icons": "4.9.1",
+    "@mdx-js/mdx": "^1.5.7",
+    "@mdx-js/react": "^1.5.7",
     "@types/classnames": "2.2.9",
     "@types/react-helmet": "5.0.15",
     "@types/typography": "0.16.3",
@@ -22,6 +24,7 @@
     "gatsby-plugin-layout": "1.1.22",
     "gatsby-plugin-manifest": "2.2.42",
     "gatsby-plugin-material-ui": "2.1.6",
+    "gatsby-plugin-mdx": "^1.0.74",
     "gatsby-plugin-react-helmet": "3.1.22",
     "gatsby-plugin-remote-images": "2.1.0",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
