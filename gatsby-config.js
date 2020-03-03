@@ -38,12 +38,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-creator",
-      options: {
-        path: `${__dirname}/src/blog`,
-      },
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
