@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-mdx",
     "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,15 +33,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/`,
+        name: `content`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+        path: `${__dirname}/src/blog`,
       },
     },
     {
