@@ -5,10 +5,10 @@ import Helmet from 'react-helmet'
 import { SeoQuery } from '../../types/graphql-types'
 
 interface SEOProps {
-  description?: string
-  lang?: string
-  meta?: []
-  title: string
+  description?: string;
+  lang?: string;
+  meta?: [];
+  title: string;
 }
 
 function SEO ({

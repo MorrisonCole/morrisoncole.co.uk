@@ -37,8 +37,8 @@ const styles = makeStyles((theme: Theme) => createStyles({
 }))
 
 interface TimelineIndexProps {
-  location: Location
-  data: any
+  location: Location;
+  data: any;
 }
 
 export default function TimelineIndex (props: TimelineIndexProps) {

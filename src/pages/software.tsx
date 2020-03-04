@@ -29,8 +29,8 @@ const styles = makeStyles((theme: Theme) => createStyles({
 }))
 
 interface SoftwareProps {
-  location: Location
-  data: SoftwareQuery
+  location: Location;
+  data: SoftwareQuery;
 }
 
 export default function Software (props: SoftwareProps) {

@@ -7,11 +7,11 @@ import Typography from '@material-ui/core/Typography'
 import React from 'react'
 
 interface TimelineImageCardProps {
-  title: string
-  mainLink: string
-  image: string
-  subtitle1: string
-  text: string
+  title: string;
+  mainLink: string;
+  image: string;
+  subtitle1: string;
+  text: string;
 }
 
 const styles = makeStyles({

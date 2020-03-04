@@ -24,8 +24,8 @@ const styles = makeStyles((theme: Theme) => createStyles({
 }))
 
 interface MusicProps {
-  location: Location
-  data: any
+  location: Location;
+  data: any;
 }
 
 export default function Music (props: MusicProps) {

@@ -4,9 +4,9 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 import React from 'react'
 
 interface SocialIconProps {
-  ariaLabel: string
-  href: string
-  icon: React.ReactNode
+  ariaLabel: string;
+  href: string;
+  icon: React.ReactNode;
 }
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
