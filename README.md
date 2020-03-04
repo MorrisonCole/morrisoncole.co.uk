@@ -9,4 +9,4 @@ Requires `GOODREADS_KEY` and `GOODREADS_SECRET` in order to import Goodreads dat
 # Development
 
 1. Run `npm install`
-2. Run `npm run develop`
+2. Run `npm start`
