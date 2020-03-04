@@ -85,8 +85,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "generate": "graphql-codegen",
     "deploy": "gatsby-plugin-s3 deploy -y",
