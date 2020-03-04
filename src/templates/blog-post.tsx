@@ -9,8 +9,9 @@ import { graphql, Link } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
 import { BlogPostBySlugQuery, SitePageContext } from '../../types/graphql-types'
+import { StyleRules } from '@material-ui/core/styles/withStyles'
 
-const styles = ({ spacing }: Theme) => createStyles({
+const styles = ({ spacing }: Theme): StyleRules => createStyles({
   container: {
     marginTop: spacing(8)
   }
@@ -23,7 +24,7 @@ interface BlogPostTemplateProps extends WithStyles<typeof styles> {
 }
 
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
-  public render () {
+  public render (): JSX.Element {
     const {
       classes, location, data, pageContext
     } = this.props
@@ -31,7 +32,6 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     const post = data.markdownRemark
     const { previous, next } = pageContext
 
-    console.log(`found ${data.allBooksJson.edges.length}`)
     const listItems = data.allBooksJson.edges[0].node.book.map((book) => (
       <ListItem button component="a" href={book.link} target="_blank">
         <ListItemIcon>
