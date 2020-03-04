@@ -17,9 +17,9 @@ const styles = ({ spacing }: Theme) => createStyles({
 })
 
 interface BlogPostTemplateProps extends WithStyles<typeof styles> {
-  location: Location
-  data: BlogPostBySlugQuery
-  pageContext: SitePageContext
+  location: Location;
+  data: BlogPostBySlugQuery;
+  pageContext: SitePageContext;
 }
 
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {

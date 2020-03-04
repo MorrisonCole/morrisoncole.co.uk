@@ -9,12 +9,12 @@ import Typography from '@material-ui/core/Typography'
 import React from 'react'
 
 interface InfoImageCardProps {
-  title: string
-  subtitle1: string
-  text: string
-  actionTitle: string
-  actionHref: string
-  image: string
+  title: string;
+  subtitle1: string;
+  text: string;
+  actionTitle: string;
+  actionHref: string;
+  image: string;
 }
 
 const styles = makeStyles({

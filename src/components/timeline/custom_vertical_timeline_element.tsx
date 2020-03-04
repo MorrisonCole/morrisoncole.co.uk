@@ -5,15 +5,15 @@ import VisibilitySensor from 'react-visibility-sensor'
 import './custom_vertical_timeline_element.css'
 
 interface CustomVerticalTimelineElementProps {
-  id?: string
-  children?: React.ReactNode | React.ReactNodeArray
-  className?: string
-  icon: React.ReactNode
-  iconStyle: CSSProperties
-  iconOnClick?: MouseEventHandler
-  style?: CSSProperties
-  date?: React.ReactNode
-  position?: string
+  id?: string;
+  children?: React.ReactNode | React.ReactNodeArray;
+  className?: string;
+  icon: React.ReactNode;
+  iconStyle: CSSProperties;
+  iconOnClick?: MouseEventHandler;
+  style?: CSSProperties;
+  date?: React.ReactNode;
+  position?: string;
 }
 
 export default function CustomVerticalTimelineElement (

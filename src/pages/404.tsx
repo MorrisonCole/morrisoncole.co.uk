@@ -4,8 +4,8 @@ import SEO from '../components/seo'
 import { NotFoundPageQuery } from '../../types/graphql-types'
 
 interface NotFoundPageProps {
-  location: Location
-  data: NotFoundPageQuery
+  location: Location;
+  data: NotFoundPageQuery;
 }
 
 class NotFoundPage extends React.Component<NotFoundPageProps, {}> {

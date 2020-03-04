@@ -19,12 +19,12 @@ const styles = createStyles({
 })
 
 interface LayoutProps extends WithStyles<typeof styles> {
-  location: Location
-  children: React.ReactNode
+  location: Location;
+  children: React.ReactNode;
 }
 
 class Layout extends React.Component<LayoutProps, {}> {
-  public render () {
+  public render (): JSX.Element {
     const { classes, location, children } = this.props
 
     return (

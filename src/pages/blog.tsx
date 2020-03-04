@@ -17,8 +17,8 @@ const styles = makeStyles((theme: Theme) => createStyles({
 }))
 
 interface BlogProps {
-  location: Location
-  data: BlogIndexQuery
+  location: Location;
+  data: BlogIndexQuery;
 }
 
 export default function Blog (props: BlogProps) {

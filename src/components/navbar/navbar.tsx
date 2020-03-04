@@ -23,7 +23,7 @@ const styles = makeStyles((theme: Theme) => createStyles({
 }))
 
 interface NavBarProps {
-  location: Location
+  location: Location;
 }
 
 export default function NavBar (props: NavBarProps) {
