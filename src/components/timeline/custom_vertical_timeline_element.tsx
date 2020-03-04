@@ -1,31 +1,31 @@
-import { Typography } from '@material-ui/core';
-import classNames from 'classnames';
-import React, { CSSProperties, MouseEventHandler } from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
-import './custom_vertical_timeline_element.css';
+import { Typography } from '@material-ui/core'
+import classNames from 'classnames'
+import React, { CSSProperties, MouseEventHandler } from 'react'
+import VisibilitySensor from 'react-visibility-sensor'
+import './custom_vertical_timeline_element.css'
 
 interface CustomVerticalTimelineElementProps {
-  id?: string;
-  children?: React.ReactNode | React.ReactNodeArray;
-  className?: string;
-  icon: React.ReactNode;
-  iconStyle: CSSProperties;
-  iconOnClick?: MouseEventHandler;
-  style?: CSSProperties;
-  date?: React.ReactNode;
-  position?: string;
+  id?: string
+  children?: React.ReactNode | React.ReactNodeArray
+  className?: string
+  icon: React.ReactNode
+  iconStyle: CSSProperties
+  iconOnClick?: MouseEventHandler
+  style?: CSSProperties
+  date?: React.ReactNode
+  position?: string
 }
 
-export default function CustomVerticalTimelineElement(
-  props: CustomVerticalTimelineElementProps,
+export default function CustomVerticalTimelineElement (
+  props: CustomVerticalTimelineElementProps
 ) {
-  const [visible, setVisible] = React.useState<{}>(false);
+  const [visible, setVisible] = React.useState<{}>(false)
 
   const handleChange = (isVisible: boolean) => {
     if (isVisible) {
-      setVisible(true);
+      setVisible(true)
     }
-  };
+  }
 
   return (
     <div
@@ -33,7 +33,7 @@ export default function CustomVerticalTimelineElement(
       className={classNames(props.className, 'vertical-timeline-element', {
         'vertical-timeline-element--left': props.position === 'left',
         'vertical-timeline-element--right': props.position === 'right',
-        'vertical-timeline-element--no-children': props.children === null,
+        'vertical-timeline-element--no-children': props.children === null
       })}
       style={props.style}
     >
@@ -65,5 +65,5 @@ export default function CustomVerticalTimelineElement(
         </div>
       </VisibilitySensor>
     </div>
-  );
+  )
 }

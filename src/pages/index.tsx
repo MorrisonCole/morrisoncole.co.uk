@@ -1,48 +1,48 @@
 import {
-  Button, createStyles, Grid, makeStyles, Paper, Theme, Typography,
-} from '@material-ui/core';
-import { GetApp, Star } from '@material-ui/icons';
-import { graphql } from 'gatsby';
-import React from 'react';
-import { VerticalTimeline } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import SEO from '../components/seo';
-import CustomVerticalTimelineElement from '../components/timeline/custom_vertical_timeline_element';
-import TimelineImageCardRaw from '../components/timeline/timeline_image_card';
+  Button, createStyles, Grid, makeStyles, Paper, Theme, Typography
+} from '@material-ui/core'
+import { GetApp, Star } from '@material-ui/icons'
+import { graphql } from 'gatsby'
+import React from 'react'
+import { VerticalTimeline } from 'react-vertical-timeline-component'
+import 'react-vertical-timeline-component/style.min.css'
+import SEO from '../components/seo'
+import CustomVerticalTimelineElement from '../components/timeline/custom_vertical_timeline_element'
+import TimelineImageCardRaw from '../components/timeline/timeline_image_card'
 // @ts-ignore
-import cvPdf from '../downloads/cv.pdf';
-import { life } from '../migrate/timeline-data';
-import './index.css';
+import cvPdf from '../downloads/cv.pdf'
+import { life } from '../migrate/timeline-data'
+import './index.css'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   introContainer: {
     width: '40%',
     [theme.breakpoints.down('sm')]: {
-      width: '80%',
+      width: '80%'
     },
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(3)
   },
   introTextPaper: {
-    padding: theme.spacing(2.5),
+    padding: theme.spacing(2.5)
   },
   introTextBody: {
-    marginTop: theme.spacing(1),
+    marginTop: theme.spacing(1)
   },
   rightIcon: {
-    marginLeft: theme.spacing(1),
+    marginLeft: theme.spacing(1)
   },
   button: {
-    marginTop: theme.spacing(1),
-  },
-}));
+    marginTop: theme.spacing(1)
+  }
+}))
 
 interface TimelineIndexProps {
-  location: Location;
-  data: any;
+  location: Location
+  data: any
 }
 
-export default function TimelineIndex(props: TimelineIndexProps) {
-  const classes = styles();
+export default function TimelineIndex (props: TimelineIndexProps) {
+  const classes = styles()
 
   const listItems = life.map((item) => (
     <CustomVerticalTimelineElement
@@ -60,7 +60,7 @@ export default function TimelineIndex(props: TimelineIndexProps) {
         mainLink={item.mainLink}
       />
     </CustomVerticalTimelineElement>
-  ));
+  ))
 
   return (
     <div>
@@ -105,7 +105,7 @@ export default function TimelineIndex(props: TimelineIndexProps) {
         />
       </VerticalTimeline>
     </div>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -131,4 +131,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -1,37 +1,37 @@
-import { createStyles, Theme, Typography, WithStyles, withStyles } from "@material-ui/core"
-import Grid from "@material-ui/core/Grid"
-import List from "@material-ui/core/List"
-import ListItem from "@material-ui/core/ListItem"
-import ListItemIcon from "@material-ui/core/ListItemIcon"
-import ListItemText from "@material-ui/core/ListItemText"
-import Star from "@material-ui/icons/Star"
-import { graphql, Link } from "gatsby"
-import React from "react"
-import SEO from "../components/seo"
-import { BlogPostBySlugQuery, SitePageContext } from "../../types/graphql-types"
+import { createStyles, Theme, Typography, WithStyles, withStyles } from '@material-ui/core'
+import Grid from '@material-ui/core/Grid'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import Star from '@material-ui/icons/Star'
+import { graphql, Link } from 'gatsby'
+import React from 'react'
+import SEO from '../components/seo'
+import { BlogPostBySlugQuery, SitePageContext } from '../../types/graphql-types'
 
 const styles = ({ spacing }: Theme) => createStyles({
   container: {
-    marginTop: spacing(8),
-  },
+    marginTop: spacing(8)
+  }
 })
 
 interface BlogPostTemplateProps extends WithStyles<typeof styles> {
-  location: Location;
-  data: BlogPostBySlugQuery;
-  pageContext: SitePageContext;
+  location: Location
+  data: BlogPostBySlugQuery
+  pageContext: SitePageContext
 }
 
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
-  public render() {
+  public render () {
     const {
-      classes, location, data, pageContext,
-    } = this.props;
+      classes, location, data, pageContext
+    } = this.props
 
-    const post = data.markdownRemark;
-    const { previous, next } = pageContext;
+    const post = data.markdownRemark
+    const { previous, next } = pageContext
 
-    console.log(`found ${data.allBooksJson.edges.length}`);
+    console.log(`found ${data.allBooksJson.edges.length}`)
     const listItems = data.allBooksJson.edges[0].node.book.map((book) => (
       <ListItem button component="a" href={book.link} target="_blank">
         <ListItemIcon>
@@ -42,13 +42,13 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           secondary={book.authors.author.name}
         />
       </ListItem>
-    ));
+    ))
 
     return (
       <Grid container className={classes.container} direction="column">
         <SEO
           title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          description={post.frontmatter.description ?? post.excerpt}
         />
         <article>
           <header>
@@ -70,7 +70,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
               flexWrap: 'wrap',
               justifyContent: 'space-between',
               listStyle: 'none',
-              padding: 0,
+              padding: 0
             }}
           >
             <li>
@@ -94,11 +94,11 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           </ul>
         </nav>
       </Grid>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(BlogPostTemplate);
+export default withStyles(styles)(BlogPostTemplate)
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -135,4 +135,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

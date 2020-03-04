@@ -1,39 +1,39 @@
-import { createStyles, Theme } from '@material-ui/core';
-import Grid from '@material-ui/core/Grid';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import Tab from '@material-ui/core/Tab';
-import Tabs from '@material-ui/core/Tabs';
-import { Link } from 'gatsby';
-import React from 'react';
+import { createStyles, Theme } from '@material-ui/core'
+import Grid from '@material-ui/core/Grid'
+import makeStyles from '@material-ui/core/styles/makeStyles'
+import Tab from '@material-ui/core/Tab'
+import Tabs from '@material-ui/core/Tabs'
+import { Link } from 'gatsby'
+import React from 'react'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   grow: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   introContainer: {
     width: '40%',
-    marginTop: theme.spacing(3),
+    marginTop: theme.spacing(3)
   },
   introTextPaper: {
-    padding: theme.spacing(2.5),
+    padding: theme.spacing(2.5)
   },
   introTextBody: {
-    marginTop: theme.spacing(1),
-  },
-}));
+    marginTop: theme.spacing(1)
+  }
+}))
 
 interface NavBarProps {
-  location: Location;
+  location: Location
 }
 
-export default function NavBar(props: NavBarProps) {
-  const classes = styles();
+export default function NavBar (props: NavBarProps) {
+  const classes = styles()
 
-  const [, setValue] = React.useState(0);
+  const [, setValue] = React.useState(0)
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   return (
     <Grid container direction="column" alignItems="center">
@@ -59,5 +59,5 @@ export default function NavBar(props: NavBarProps) {
         </Tabs>
       </Grid>
     </Grid>
-  );
+  )
 }
