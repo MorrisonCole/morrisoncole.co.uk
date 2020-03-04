@@ -5,40 +5,40 @@ import {
   ExpansionPanelSummary,
   makeStyles,
   Theme,
-  Typography,
-} from '@material-ui/core';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { graphql } from 'gatsby';
-import React from 'react';
-import InfoImageCard from '../components/cards/info_image_card';
-import SEO from '../components/seo';
+  Typography
+} from '@material-ui/core'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
+import { graphql } from 'gatsby'
+import React from 'react'
+import InfoImageCard from '../components/cards/info_image_card'
+import SEO from '../components/seo'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
-    marginTop: theme.spacing(4),
+    marginTop: theme.spacing(4)
   },
   heading: {
     fontSize: 20,
-    fontWeight: 'normal',
-  },
-}));
+    fontWeight: 'normal'
+  }
+}))
 
 interface MusicProps {
-  location: Location;
-  data: any;
+  location: Location
+  data: any
 }
 
-export default function Music(props: MusicProps) {
-  const classes = styles();
+export default function Music (props: MusicProps) {
+  const classes = styles()
 
-  const [expanded, setExpanded] = React.useState<string | false>('panel1');
+  const [expanded, setExpanded] = React.useState<string | false>('panel1')
 
   const handleChange = (panel: string) => (
     event: React.ChangeEvent<{}>,
-    isExpanded: boolean,
+    isExpanded: boolean
   ) => {
-    setExpanded(isExpanded ? panel : false);
-  };
+    setExpanded(isExpanded ? panel : false)
+  }
 
   return (
     <div className={classes.container}>
@@ -95,7 +95,7 @@ export default function Music(props: MusicProps) {
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -135,4 +135,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -8,33 +8,33 @@ import {
   makeStyles,
   Paper,
   Theme,
-  Typography,
-} from "@material-ui/core"
-import { Star } from "@material-ui/icons"
-import { graphql } from "gatsby"
-import React from "react"
-import SEO from "../components/seo"
-import { SoftwareQuery } from "../../types/graphql-types"
+  Typography
+} from '@material-ui/core'
+import { Star } from '@material-ui/icons'
+import { graphql } from 'gatsby'
+import React from 'react'
+import SEO from '../components/seo'
+import { SoftwareQuery } from '../../types/graphql-types'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(8)
   },
   body: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(2)
   },
   announcement: {
-    padding: theme.spacing(2),
-  },
-}));
+    padding: theme.spacing(2)
+  }
+}))
 
 interface SoftwareProps {
-  location: Location;
-  data: SoftwareQuery;
+  location: Location
+  data: SoftwareQuery
 }
 
-export default function Software(props: SoftwareProps) {
-  const classes = styles();
+export default function Software (props: SoftwareProps) {
+  const classes = styles()
 
   const listItems2020 = props.data.softwareJson?._2020?.map((item) => (
     <ListItem button>
@@ -99,7 +99,7 @@ export default function Software(props: SoftwareProps) {
       </Typography>
       <List dense>{listItems2019}</List>
     </>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -109,4 +109,4 @@ export const pageQuery = graphql`
       _2020
     }
   }
-`;
+`
