@@ -26,7 +26,7 @@ interface NavBarProps {
   location: Location;
 }
 
-export default function NavBar (props: NavBarProps) {
+export default function NavBar (props: NavBarProps): JSX.Element {
   const classes = styles()
 
   const [, setValue] = React.useState(0)

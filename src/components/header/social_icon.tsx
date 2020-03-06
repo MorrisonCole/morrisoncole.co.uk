@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-export default function SocialIcon (props: SocialIconProps) {
+export default function SocialIcon (props: SocialIconProps): JSX.Element {
   const classes = useStyles()
 
   return (

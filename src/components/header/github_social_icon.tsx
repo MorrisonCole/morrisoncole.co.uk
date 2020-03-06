@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-function GithubIcon (props: SvgIconProps) {
+function GithubIcon (props: SvgIconProps): JSX.Element {
   return (
     <SvgIcon {...props}>
       <path
@@ -24,7 +24,7 @@ function GithubIcon (props: SvgIconProps) {
   )
 }
 
-export default function GitHubSocialIcon () {
+export default function GitHubSocialIcon (): JSX.Element {
   const classes = useStyles()
 
   return (

@@ -33,7 +33,7 @@ interface SoftwareProps {
   data: SoftwareQuery;
 }
 
-export default function Software (props: SoftwareProps) {
+export default function Software (props: SoftwareProps): JSX.Element {
   const classes = styles()
 
   const listItems2020 = props.data.softwareJson?._2020?.map((item) => (
@@ -90,7 +90,7 @@ export default function Software (props: SoftwareProps) {
         </Paper>
       </Grid>
       <Typography variant="h5" className={classes.container}>
-        2020: New stuff I've been learning / using
+        2020: New stuff I&apos;ve been learning / using
       </Typography>
       <Typography variant="subtitle1">(By no means exhaustive ♥)</Typography>
       <List dense>{listItems2020}</List>

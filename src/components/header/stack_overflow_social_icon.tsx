@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-function StackOverflowIcon (props: SvgIconProps) {
+function StackOverflowIcon (props: SvgIconProps): JSX.Element {
   return (
     <SvgIcon {...props}>
       <path
@@ -24,7 +24,7 @@ function StackOverflowIcon (props: SvgIconProps) {
   )
 }
 
-export default function StackOverflowSocialIcon () {
+export default function StackOverflowSocialIcon (): JSX.Element {
   const classes = useStyles()
 
   return (

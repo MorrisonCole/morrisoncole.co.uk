@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-export default function Header () {
+export default function Header (): JSX.Element {
   const classes = useStyles()
 
   const data = useStaticQuery(graphql`

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-function LinkedinIcon (props: SvgIconProps) {
+function LinkedinIcon (props: SvgIconProps): JSX.Element {
   return (
     <SvgIcon {...props}>
       <path
@@ -24,7 +24,7 @@ function LinkedinIcon (props: SvgIconProps) {
   )
 }
 
-export default function LinkedInSocialIcon () {
+export default function LinkedInSocialIcon (): JSX.Element {
   const classes = useStyles()
 
   return (

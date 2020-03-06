@@ -5,7 +5,7 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 import classNames from 'classnames'
 import React from 'react'
 
-function currentYear () {
+function currentYear (): number {
   return new Date().getFullYear()
 }
 
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   }
 })
 
-export default function Footer () {
+export default function Footer (): JSX.Element {
   const classes = useStyles()
 
   return (

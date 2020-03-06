@@ -18,7 +18,7 @@ interface CustomVerticalTimelineElementProps {
 
 export default function CustomVerticalTimelineElement (
   props: CustomVerticalTimelineElementProps
-) {
+): JSX.Element {
   const [visible, setVisible] = React.useState<{}>(false)
 
   const handleChange = (isVisible: boolean) => {
