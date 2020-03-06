@@ -12,6 +12,7 @@ import TimelineImageCardRaw from '../components/timeline/timeline_image_card'
 import cvPdf from '../downloads/cv.pdf'
 import { life } from '../migrate/timeline-data'
 import './index.css'
+import { TimelineIndexQuery } from '../../types/graphql-types'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   introContainer: {
@@ -35,10 +36,15 @@ const styles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-export default function TimelineIndex (): JSX.Element {
+interface TimelineIndexProps {
+  data: TimelineIndexQuery;
+}
+
+export default function TimelineIndex (props: TimelineIndexProps): JSX.Element {
   const classes = styles()
 
-  const listItems = life.map((item) => (
+  const imageFiles = props.data.allFile.edges.map(edge => edge.node)
+  const listItems = life(new Map(imageFiles.map(i => [i.name, i.childImageSharp]))).map((item) => (
     <CustomVerticalTimelineElement
       className="vertical-timeline-element--work"
       date={item.date}
@@ -104,9 +110,16 @@ export default function TimelineIndex (): JSX.Element {
 
 export const pageQuery = graphql`
   query TimelineIndex {
-    site {
-      siteMetadata {
-        title
+    allFile(filter: {absolutePath: {regex: "/timeline/.*/"}}) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

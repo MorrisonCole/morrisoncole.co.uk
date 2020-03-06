@@ -5,11 +5,12 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 import React from 'react'
+import Image, { FluidObject } from 'gatsby-image'
 
 interface TimelineImageCardProps {
   title: string;
   mainLink: string;
-  image: string;
+  image: FluidObject;
   subtitle1: string;
   text: string;
 }
@@ -30,10 +31,9 @@ export default function TimelineImageCardRaw (props: TimelineImageCardProps): JS
     <Card className={classes.card}>
       <CardActionArea href={props.mainLink} target="_blank">
         <CardMedia
-          component="img"
+          component={Image}
+          fluid={props.image}
           alt={props.title}
-          height="140"
-          image={props.image}
           title={props.title}
         />
         <CardContent>
