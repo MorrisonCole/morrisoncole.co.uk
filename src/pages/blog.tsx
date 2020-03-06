@@ -21,7 +21,7 @@ interface BlogProps {
   data: BlogIndexQuery;
 }
 
-export default function Blog (props: BlogProps) {
+export default function Blog (props: BlogProps): JSX.Element {
   const classes = styles()
   const posts = props.data.allMarkdownRemark.edges
 

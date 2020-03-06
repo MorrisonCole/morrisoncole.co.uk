@@ -28,7 +28,7 @@ interface MusicProps {
   data: any;
 }
 
-export default function Music (props: MusicProps) {
+export default function Music (props: MusicProps): JSX.Element {
   const classes = styles()
 
   const [expanded, setExpanded] = React.useState<string | false>('panel1')

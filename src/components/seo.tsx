@@ -13,7 +13,7 @@ interface SEOProps {
 
 function SEO ({
   description, lang, meta, title
-}: SEOProps) {
+}: SEOProps): JSX.Element {
   const { site }: SeoQuery = useStaticQuery(
     graphql`
         query Seo {

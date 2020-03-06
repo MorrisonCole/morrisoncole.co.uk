@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-function TwitterIcon (props: SvgIconProps) {
+function TwitterIcon (props: SvgIconProps): JSX.Element {
   return (
     <SvgIcon {...props}>
       <path
@@ -24,7 +24,7 @@ function TwitterIcon (props: SvgIconProps) {
   )
 }
 
-export default function TwitterSocialIcon () {
+export default function TwitterSocialIcon (): JSX.Element {
   const classes = useStyles()
 
   return (

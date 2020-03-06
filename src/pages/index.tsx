@@ -41,7 +41,7 @@ interface TimelineIndexProps {
   data: any;
 }
 
-export default function TimelineIndex (props: TimelineIndexProps) {
+export default function TimelineIndex (props: TimelineIndexProps): JSX.Element {
   const classes = styles()
 
   const listItems = life.map((item) => (

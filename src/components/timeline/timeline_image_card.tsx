@@ -23,7 +23,7 @@ const styles = makeStyles({
   }
 })
 
-export default function TimelineImageCardRaw (props: TimelineImageCardProps) {
+export default function TimelineImageCardRaw (props: TimelineImageCardProps): JSX.Element {
   const classes = styles()
 
   return (

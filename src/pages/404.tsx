@@ -9,10 +9,7 @@ interface NotFoundPageProps {
 }
 
 class NotFoundPage extends React.Component<NotFoundPageProps, {}> {
-  public render () {
-    const { data } = this.props
-    const siteTitle = (data.site && data.site.siteMetadata.title) || ''
-
+  public render (): JSX.Element {
     return (
       <div>
         <SEO title="404: Not Found"/>
