@@ -1,27 +1,16 @@
-// @ts-ignore
 import {
   ChildFriendly, Home, School, Work
 } from '@material-ui/icons/'
 import React from 'react'
-// @ts-ignore
 import FalmouthImage from './images/timeline/falmouth.jpg'
-// @ts-ignore
 import ImprobableImage from './images/timeline/improbable.png'
-// @ts-ignore
 import KobeImage from './images/timeline/kobe.jpg'
-// @ts-ignore
 import LondonImage from './images/timeline/london.jpg'
-// @ts-ignore
 import MedmainImage from './images/timeline/medmain.png'
-// @ts-ignore
 import ShazamImage from './images/timeline/shazam.png'
-// @ts-ignore
 import ThirdNerveImage from './images/timeline/thirdnerve.png'
-// @ts-ignore
 import TokyoImage from './images/timeline/tokyo.jpg'
-// @ts-ignore
 import UclImage from './images/timeline/ucl.jpg'
-// @ts-ignore
 import WcsImage from './images/timeline/wcs.jpg'
 
 const icons = {

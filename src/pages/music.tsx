@@ -12,6 +12,7 @@ import { graphql } from 'gatsby'
 import React from 'react'
 import InfoImageCard from '../components/cards/info_image_card'
 import SEO from '../components/seo'
+import { MusicQuery } from '../../types/graphql-types'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
@@ -25,7 +26,7 @@ const styles = makeStyles((theme: Theme) => createStyles({
 
 interface MusicProps {
   location: Location;
-  data: any;
+  data: MusicQuery;
 }
 
 export default function Music (props: MusicProps): JSX.Element {
@@ -34,9 +35,9 @@ export default function Music (props: MusicProps): JSX.Element {
   const [expanded, setExpanded] = React.useState<string | false>('panel1')
 
   const handleChange = (panel: string) => (
-    event: React.ChangeEvent<{}>,
+    _: React.ChangeEvent<{}>,
     isExpanded: boolean
-  ) => {
+  ): void => {
     setExpanded(isExpanded ? panel : false)
   }
 
