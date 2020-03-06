@@ -24,7 +24,7 @@
     "gatsby-plugin-layout": "1.1.23",
     "gatsby-plugin-manifest": "2.2.42",
     "gatsby-plugin-material-ui": "2.1.6",
-    "gatsby-plugin-mdx": "^1.0.75",
+    "gatsby-plugin-mdx": "^1.0.76",
     "gatsby-plugin-react-helmet": "3.1.23",
     "gatsby-plugin-remote-images": "2.1.0",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
