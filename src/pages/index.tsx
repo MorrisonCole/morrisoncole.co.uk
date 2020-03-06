@@ -76,7 +76,7 @@ export default function TimelineIndex (props: TimelineIndexProps): JSX.Element {
               align="center"
               className={classes.introTextBody}
             >
-              I'm Morrison - a Software Engineer, Product Manager, and
+              I&apos;m Morrison - a Software Engineer, Product Manager, and
               (occasional) Musician.
             </Typography>
             <Grid container direction="column" alignItems="center">
