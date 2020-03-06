@@ -66,7 +66,7 @@ export default function Software (props: SoftwareProps): JSX.Element {
       >
         <Paper className={classes.announcement}>
           <Typography variant="h5" align="center">
-            Eventually I'll list my projects here!
+            Eventually I&apos;ll list my projects here!
           </Typography>
           <Typography
             variant="body1"
