@@ -27,7 +27,7 @@ const styles = makeStyles({
   }
 })
 
-export default function InfoImageCard (props: InfoImageCardProps) {
+export default function InfoImageCard (props: InfoImageCardProps): JSX.Element {
   const classes = styles()
 
   return (

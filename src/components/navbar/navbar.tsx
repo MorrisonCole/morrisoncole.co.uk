@@ -31,7 +31,7 @@ export default function NavBar (props: NavBarProps): JSX.Element {
 
   const [, setValue] = React.useState(0)
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+  const handleChange = (_: React.ChangeEvent<{}>, newValue: number): void => {
     setValue(newValue)
   }
 

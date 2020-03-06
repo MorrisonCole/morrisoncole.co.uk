@@ -26,14 +26,14 @@ interface BlogPostTemplateProps extends WithStyles<typeof styles> {
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
   public render (): JSX.Element {
     const {
-      classes, location, data, pageContext
+      classes, data, pageContext
     } = this.props
 
     const post = data.markdownRemark
     const { previous, next } = pageContext
 
     const listItems = data.allBooksJson.edges[0].node.book.map((book) => (
-      <ListItem button component="a" href={book.link} target="_blank">
+      <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
         <ListItemIcon>
           <Star />
         </ListItemIcon>

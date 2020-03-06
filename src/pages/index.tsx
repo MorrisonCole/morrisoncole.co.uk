@@ -9,7 +9,6 @@ import 'react-vertical-timeline-component/style.min.css'
 import SEO from '../components/seo'
 import CustomVerticalTimelineElement from '../components/timeline/custom_vertical_timeline_element'
 import TimelineImageCardRaw from '../components/timeline/timeline_image_card'
-// @ts-ignore
 import cvPdf from '../downloads/cv.pdf'
 import { life } from '../migrate/timeline-data'
 import './index.css'
@@ -36,12 +35,7 @@ const styles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-interface TimelineIndexProps {
-  location: Location;
-  data: any;
-}
-
-export default function TimelineIndex (props: TimelineIndexProps): JSX.Element {
+export default function TimelineIndex (): JSX.Element {
   const classes = styles()
 
   const listItems = life.map((item) => (
@@ -113,21 +107,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                title
-                description
-            }
-        }
       }
     }
   }
