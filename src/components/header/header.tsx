@@ -74,8 +74,9 @@ export default function Header (): JSX.Element {
           <Grid item xs={2}>
             <Grid container justify="center" alignItems="center">
               <Avatar
+                component={Image}
                 alt="Morrison Cole"
-                src={data.avatar.childImageSharp.fluid.src}
+                fluid={data.avatar.childImageSharp.fluid}
                 className={classes.profilePicture}
               />
             </Grid>
