@@ -10,7 +10,7 @@ import SEO from '../components/seo'
 import CustomVerticalTimelineElement from '../components/timeline/custom_vertical_timeline_element'
 import TimelineImageCardRaw from '../components/timeline/timeline_image_card'
 import cvPdf from '../downloads/cv.pdf'
-import { life } from '../migrate/timeline-data'
+import { life } from '../components/timeline/timeline-data'
 import './index.css'
 import { TimelineIndexQuery } from '../../types/graphql-types'
 
