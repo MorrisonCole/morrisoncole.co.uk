@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Typography from '@material-ui/core/Typography'
 import React from 'react'
+import Image, { FluidObject } from 'gatsby-image'
 
 interface InfoImageCardProps {
   title: string;
@@ -14,7 +15,7 @@ interface InfoImageCardProps {
   text: string;
   actionTitle: string;
   actionHref: string;
-  image: string;
+  image: FluidObject;
 }
 
 const styles = makeStyles({
@@ -33,7 +34,7 @@ export default function InfoImageCard (props: InfoImageCardProps): JSX.Element {
   return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia className={classes.image} image={props.image} />
+        <CardMedia className={classes.image} component={Image} fluid={props.image} />
         <CardContent>
           <Typography variant="h5">{props.title}</Typography>
           <Typography gutterBottom color="textSecondary">
