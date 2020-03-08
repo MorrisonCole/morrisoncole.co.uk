@@ -10,6 +10,7 @@ import React from 'react'
 import SEO from '../components/seo'
 import { BlogPostBySlugQuery, SitePageContext } from '../../types/graphql-types'
 import { StyleRules } from '@material-ui/core/styles/withStyles'
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const styles = ({ spacing }: Theme): StyleRules => createStyles({
   container: {
@@ -29,7 +30,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
       classes, data, pageContext
     } = this.props
 
-    const post = data.markdownRemark
+    const post = data.mdx
     const { previous, next } = pageContext
 
     const listItems = data.allBooksJson.edges[0].node.book.map((book) => (
@@ -58,7 +59,9 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
               {`(Last updated: ${post.frontmatter.updated})`}
             </Typography>
           </header>
-          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section>
+            <MDXRenderer>{post.body}</MDXRenderer>
+          </section>          
           <List dense>{listItems}</List>
           <hr />
         </article>
@@ -108,10 +111,10 @@ export const pageQuery = graphql`
         author
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -129,7 +132,7 @@ export const pageQuery = graphql`
                     name
                 }
             }
-              link
+            link
           }
         }
       }

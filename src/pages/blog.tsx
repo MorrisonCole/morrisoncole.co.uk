@@ -23,7 +23,7 @@ interface BlogProps {
 
 export default function Blog (props: BlogProps): JSX.Element {
   const classes = styles()
-  const posts = props.data.allMarkdownRemark.edges
+  const posts = props.data.allMdx.edges
 
   return (
     <Grid container className={classes.container} direction="column">
@@ -63,7 +63,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
