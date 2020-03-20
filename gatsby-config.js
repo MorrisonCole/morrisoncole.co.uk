@@ -12,6 +12,7 @@ module.exports = {
     }
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-mdx',
     'gatsby-transformer-json',
     {
