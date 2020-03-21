@@ -1,10 +1,5 @@
 import { createStyles, Theme, Typography, WithStyles, withStyles } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemIcon from '@material-ui/core/ListItemIcon'
-import ListItemText from '@material-ui/core/ListItemText'
-import Star from '@material-ui/icons/Star'
 import { graphql, Link } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
@@ -33,18 +28,6 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     const post = data.mdx
     const { previous, next } = pageContext
 
-    const listItems = data.allBooksJson.edges[0].node.book.map((book) => (
-      <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
-        <ListItemIcon>
-          <Star />
-        </ListItemIcon>
-        <ListItemText
-          primary={book.title}
-          secondary={book.authors.author.name}
-        />
-      </ListItem>
-    ))
-
     return (
       <Grid container className={classes.container} direction="column">
         <SEO
@@ -60,9 +43,8 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             </Typography>
           </header>
           <section>
-            <MDXRenderer>{post.body}</MDXRenderer>
+            <MDXRenderer data={data}>{post.body}</MDXRenderer>
           </section>          
-          <List dense>{listItems}</List>
           <hr />
         </article>
 
