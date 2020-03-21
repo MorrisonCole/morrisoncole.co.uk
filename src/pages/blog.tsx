@@ -1,4 +1,4 @@
-import { createStyles, Theme } from '@material-ui/core'
+import { createStyles, Theme, CardActionArea, Card, CardContent, Hidden, CardMedia } from '@material-ui/core'
 import Grid from '@material-ui/core/Grid'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import Typography from '@material-ui/core/Typography'
@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
 import { BlogIndexQuery } from '../../types/graphql-types'
+import Image from 'gatsby-image'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
@@ -13,6 +14,15 @@ const styles = makeStyles((theme: Theme) => createStyles({
   },
   body: {
     marginTop: theme.spacing(2)
+  },
+  card: {
+    display: 'flex',
+  },
+  cardDetails: {
+    flex: 1,
+  },
+  cardMedia: {
+    width: 160,
   }
 }))
 
@@ -29,29 +39,46 @@ export default function Blog (props: BlogProps): JSX.Element {
     <Grid container className={classes.container} direction="column">
       <SEO title="Blog" />
 
-      {posts.map(({ node }) => {
-        const title = node.frontmatter?.title ?? node.fields?.slug
-        return (
-          <article key={node.fields?.slug ?? ''}>
-            <header>
-              <Typography variant="h4">
-                <Link to={node.fields?.slug ?? ''}>{title}</Link>
-              </Typography>
-              <Typography variant="subtitle2">
-                {node.frontmatter?.date ?? ''}
-              </Typography>
-            </header>
-            <section>
-              <Typography
-                variant="subtitle1"
-                dangerouslySetInnerHTML={{
-                  __html: (node.frontmatter?.description ?? node.excerpt) ?? ''
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      {
+        posts.map(({ node }) => {
+          const title = node.frontmatter?.title ?? node.fields?.slug
+          const date = node.frontmatter?.date ?? ''
+          const description = (node.frontmatter?.description ?? node.excerpt) ?? ''
+          const link = node.fields?.slug ?? ''
+          const linkText = node.frontmatter?.linkText ?? 'Continue to post...'
+          const image = node.frontmatter?.image?.childImageSharp?.fluid
+
+          return (
+            <article key={link}>
+              <Grid item xs={12} md={6}>
+                <CardActionArea component={Link} to={link}>
+                  <Card className={classes.card}>
+                    <div className={classes.cardDetails}>
+                      <CardContent>
+                        <Typography component="h2" variant="h5">
+                          {title}
+                        </Typography>
+                        <Typography variant="subtitle1" color="textSecondary">
+                          {date}
+                        </Typography>
+                        <Typography variant="subtitle1" paragraph>
+                          {description}
+                        </Typography>
+                        <Typography variant="subtitle1" color="primary">
+                          {linkText}
+                        </Typography>
+                      </CardContent>
+                    </div>
+                    <Hidden xsDown>
+                      <CardMedia className={classes.cardMedia} component={Image} fluid={image} alt={title} />
+                    </Hidden>
+                  </Card>
+                </CardActionArea>
+              </Grid>
+            </article>
+          )
+        })
+      }
     </Grid>
   )
 }
@@ -71,9 +98,17 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-              date(formatString: "MMMM DD, YYYY")
               title
+              date(formatString: "MMMM DD, YYYY")
               description
+              linkText
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
           }
         }
       }
