@@ -4,3 +4,25 @@ date: "2019-09-25T00:01:57+00:00"
 updated: "2019-12-31T12:00:00+00:00"
 description: "Books I read in 2019, roughly ordered by how highly I recommend them ♥"
 ---
+
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import Star from '@material-ui/icons/Star'
+
+<List dense>
+    {
+        props.data.allBooksJson.edges[0].node.book.map((book) => 
+            <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
+                <ListItemIcon>
+                    <Star />
+                </ListItemIcon>
+                <ListItemText
+                    primary={book.title}
+                    secondary={book.authors.author.name}
+                />
+            </ListItem>
+        )
+    }
+</List>
