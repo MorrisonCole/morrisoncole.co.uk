@@ -10,13 +10,14 @@ import Image from 'gatsby-image'
 
 const styles = makeStyles((theme: Theme) => createStyles({
   container: {
-    marginTop: theme.spacing(8)
+    marginTop: theme.spacing(4)
   },
   body: {
     marginTop: theme.spacing(2)
   },
   card: {
     display: 'flex',
+    height: 220
   },
   cardDetails: {
     flex: 1,
@@ -36,7 +37,7 @@ export default function Blog (props: BlogProps): JSX.Element {
   const posts = props.data.allMdx.edges
 
   return (
-    <Grid container className={classes.container} direction="column">
+    <Grid container className={classes.container} spacing={4}>
       <SEO title="Blog" />
 
       {
@@ -49,8 +50,7 @@ export default function Blog (props: BlogProps): JSX.Element {
           const image = node.frontmatter?.image?.childImageSharp?.fluid
 
           return (
-            <article key={link}>
-              <Grid item xs={12} md={6}>
+              <Grid key={title} item xs={12} md={6}>
                 <CardActionArea component={Link} to={link}>
                   <Card className={classes.card}>
                     <div className={classes.cardDetails}>
@@ -69,13 +69,14 @@ export default function Blog (props: BlogProps): JSX.Element {
                         </Typography>
                       </CardContent>
                     </div>
-                    <Hidden xsDown>
-                      <CardMedia className={classes.cardMedia} component={Image} fluid={image} alt={title} />
-                    </Hidden>
+                    {image &&  (
+                      <Hidden xsDown>
+                        <CardMedia className={classes.cardMedia} component={Image} fluid={image} alt={title} />
+                      </Hidden>
+                    )}
                   </Card>
                 </CardActionArea>
               </Grid>
-            </article>
           )
         })
       }

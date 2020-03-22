@@ -1193,6 +1193,7 @@ export enum FileFieldsEnum {
   ChildMdxFrontmatterImageId = 'childMdx___frontmatter___image___id',
   ChildMdxFrontmatterImageChildren = 'childMdx___frontmatter___image___children',
   ChildMdxFrontmatterLinkText = 'childMdx___frontmatter___linkText',
+  ChildMdxFrontmatterDynamicImage = 'childMdx___frontmatter___dynamicImage',
   ChildMdxBody = 'childMdx___body',
   ChildMdxExcerpt = 'childMdx___excerpt',
   ChildMdxHeadings = 'childMdx___headings',
@@ -2276,6 +2277,7 @@ export enum MdxFieldsEnum {
   FrontmatterImageChildMdxId = 'frontmatter___image___childMdx___id',
   FrontmatterImageChildMdxChildren = 'frontmatter___image___childMdx___children',
   FrontmatterLinkText = 'frontmatter___linkText',
+  FrontmatterDynamicImage = 'frontmatter___dynamicImage',
   Body = 'body',
   Excerpt = 'excerpt',
   Headings = 'headings',
@@ -2408,6 +2410,7 @@ export type MdxFrontmatter = {
   description?: Maybe<Scalars['String']>;
   image?: Maybe<File>;
   linkText?: Maybe<Scalars['String']>;
+  dynamicImage?: Maybe<Scalars['String']>;
 };
 
 
@@ -2433,6 +2436,7 @@ export type MdxFrontmatterFilterInput = {
   description?: Maybe<StringQueryOperatorInput>;
   image?: Maybe<FileFilterInput>;
   linkText?: Maybe<StringQueryOperatorInput>;
+  dynamicImage?: Maybe<StringQueryOperatorInput>;
 };
 
 export type MdxGroupConnection = {
@@ -3235,10 +3239,72 @@ export type SitePageConnectionGroupArgs = {
 export type SitePageContext = {
    __typename?: 'SitePageContext';
   slug?: Maybe<Scalars['String']>;
+  previous?: Maybe<SitePageContextPrevious>;
+  next?: Maybe<SitePageContextNext>;
 };
 
 export type SitePageContextFilterInput = {
   slug?: Maybe<StringQueryOperatorInput>;
+  previous?: Maybe<SitePageContextPreviousFilterInput>;
+  next?: Maybe<SitePageContextNextFilterInput>;
+};
+
+export type SitePageContextNext = {
+   __typename?: 'SitePageContextNext';
+  frontmatter?: Maybe<SitePageContextNextFrontmatter>;
+  fields?: Maybe<SitePageContextNextFields>;
+};
+
+export type SitePageContextNextFields = {
+   __typename?: 'SitePageContextNextFields';
+  slug?: Maybe<Scalars['String']>;
+};
+
+export type SitePageContextNextFieldsFilterInput = {
+  slug?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePageContextNextFilterInput = {
+  frontmatter?: Maybe<SitePageContextNextFrontmatterFilterInput>;
+  fields?: Maybe<SitePageContextNextFieldsFilterInput>;
+};
+
+export type SitePageContextNextFrontmatter = {
+   __typename?: 'SitePageContextNextFrontmatter';
+  title?: Maybe<Scalars['String']>;
+};
+
+export type SitePageContextNextFrontmatterFilterInput = {
+  title?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePageContextPrevious = {
+   __typename?: 'SitePageContextPrevious';
+  frontmatter?: Maybe<SitePageContextPreviousFrontmatter>;
+  fields?: Maybe<SitePageContextPreviousFields>;
+};
+
+export type SitePageContextPreviousFields = {
+   __typename?: 'SitePageContextPreviousFields';
+  slug?: Maybe<Scalars['String']>;
+};
+
+export type SitePageContextPreviousFieldsFilterInput = {
+  slug?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePageContextPreviousFilterInput = {
+  frontmatter?: Maybe<SitePageContextPreviousFrontmatterFilterInput>;
+  fields?: Maybe<SitePageContextPreviousFieldsFilterInput>;
+};
+
+export type SitePageContextPreviousFrontmatter = {
+   __typename?: 'SitePageContextPreviousFrontmatter';
+  title?: Maybe<Scalars['String']>;
+};
+
+export type SitePageContextPreviousFrontmatterFilterInput = {
+  title?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePageEdge = {
@@ -3256,6 +3322,10 @@ export enum SitePageFieldsEnum {
   MatchPath = 'matchPath',
   IsCreatedByStatefulCreatePages = 'isCreatedByStatefulCreatePages',
   ContextSlug = 'context___slug',
+  ContextPreviousFrontmatterTitle = 'context___previous___frontmatter___title',
+  ContextPreviousFieldsSlug = 'context___previous___fields___slug',
+  ContextNextFrontmatterTitle = 'context___next___frontmatter___title',
+  ContextNextFieldsSlug = 'context___next___fields___slug',
   PluginCreatorId = 'pluginCreator___id',
   PluginCreatorParentId = 'pluginCreator___parent___id',
   PluginCreatorParentParentId = 'pluginCreator___parent___parent___id',
@@ -4271,7 +4341,7 @@ export type BlogIndexQuery = (
           & Pick<MdxFields, 'slug'>
         )>, frontmatter?: Maybe<(
           { __typename?: 'MdxFrontmatter' }
-          & Pick<MdxFrontmatter, 'title' | 'date' | 'description' | 'linkText'>
+          & Pick<MdxFrontmatter, 'title' | 'date' | 'description' | 'linkText' | 'dynamicImage'>
           & { image?: Maybe<(
             { __typename?: 'File' }
             & { childImageSharp?: Maybe<(
@@ -4383,7 +4453,7 @@ export type BlogPostBySlugQuery = (
         { __typename?: 'BooksJson' }
         & { book?: Maybe<Array<Maybe<(
           { __typename?: 'BooksJsonBook' }
-          & Pick<BooksJsonBook, 'title' | 'link'>
+          & Pick<BooksJsonBook, 'title' | 'link' | 'image_url'>
           & { authors?: Maybe<(
             { __typename?: 'BooksJsonBookAuthors' }
             & { author?: Maybe<(

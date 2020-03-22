@@ -19,31 +19,40 @@ app.listen(port, async () => {
   console.log(`Listening on port ${port}`)
 
   console.log('Beginning auth...')
-  await auth()
+  await auth().catch(error => console.error(error))
+  await gr.getAccessToken().catch(error => console.error(error))
 
-  const result = await list2019Books()
-  fs.writeFile('./books.json', JSON.stringify(result.books, null, 2), function (
+  const books2019 = await listBooks('2019').catch(error => console.error(error))
+  const books2020 = await listBooks('2020').catch(error => console.error(error))
+  fs.writeFileSync('./data/books-2019/results.json', JSON.stringify(books2019.books, null, 2), function (
     err
   ) {
     if (err) throw err
   })
-  console.log('Wrote file')
+
+  fs.writeFileSync('./data/books-2020/results.json', JSON.stringify(books2020.books, null, 2), function (
+    err
+  ) {
+    if (err) throw err
+  })
+
+  console.log('Success (wrote files)!')
+  process.exit(0)
 })
 
 async function auth () {
   gr.initOAuth(callbackURL)
 
   const url = await gr.getRequestToken()
-  await open(url)
+  await open(url).catch(error => console.error(error))
 }
 
 app.get('/' + goodreadsCallbackSuffix, async () => {
   console.log('Completed auth successfully!')
 })
 
-async function list2019Books () {
-  await gr.getAccessToken()
-  return gr.getBooksOnUserShelf('6320986-morrison', '2019', {
+async function listBooks (shelfName) {
+  return gr.getBooksOnUserShelf('6320986-morrison', shelfName, {
     per_page: 200,
     sort: 'position'
   })
