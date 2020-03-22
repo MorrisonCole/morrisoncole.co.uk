@@ -17,16 +17,18 @@ import Star from '@material-ui/icons/Star'
 
 <List dense>
     {
-        props.data.allBooks2019Json.edges[0].node.book.map((book) => 
-            <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
-                <ListItemAvatar>
-                    <Avatar style={{height: 'auto'}} variant="rounded" alt={book.title} src={book.image_url} />
-                </ListItemAvatar>
-                <ListItemText
-                    primary={book.title}
-                    secondary={book.authors.author.name}
-                />
-            </ListItem>
-        )
+        props.data.books2019.edges[0].node.reviews
+            .sort((a, b) => parseInt(b.rating) - parseInt(a.rating))
+            .map(({book}) => 
+                <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
+                    <ListItemAvatar>
+                        <Avatar style={{height: 'auto'}} variant="rounded" alt={book.title} src={book.image_url} />
+                    </ListItemAvatar>
+                    <ListItemText
+                        primary={book.title}
+                        secondary={book.authors[0].name}
+                    />
+                </ListItem>
+            )
     }
 </List>
