@@ -2,6 +2,17 @@ version: 2.1
 
 workflows:
   version: 2.1
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - production
+    jobs:
+      - deploy
+
   build_and_deploy:
     jobs:
       - build:
