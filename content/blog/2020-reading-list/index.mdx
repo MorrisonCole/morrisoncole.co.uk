@@ -1,10 +1,10 @@
 ---
-title: "2019 Reading List"
-date: "2019-09-25"
-updated: "2019-12-31"
-description: "Books I read in 2019, roughly ordered by how highly I recommend them ♥"
+title: "2020 Reading List"
+date: "2020-03-22"
+updated:
+description: "Books I've read (so far) this year."
 image: books.jpg
-linkText: "See the full list... 📚"
+linkText: "See them all! 📚"
 ---
 
 import Avatar from '@material-ui/core/Avatar'
@@ -17,7 +17,7 @@ import Star from '@material-ui/icons/Star'
 
 <List dense>
     {
-        props.data.allBooks2019Json.edges[0].node.book.map((book) => 
+        props.data.allBooks2020Json.edges[0].node.book.map((book) => 
             <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
                 <ListItemAvatar>
                     <Avatar style={{height: 'auto'}} variant="rounded" alt={book.title} src={book.image_url} />

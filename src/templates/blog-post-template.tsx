@@ -39,7 +39,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             <Typography variant="h4">{post.frontmatter.title}</Typography>
             <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
             <Typography variant="caption">
-              {`(Last updated: ${post.frontmatter.updated})`}
+              {`(Last updated: ${post.frontmatter.updated ?? "never"})`}
             </Typography>
           </header>
           <section>
@@ -104,7 +104,23 @@ export const pageQuery = graphql`
         description
       }
     }
-    allBooksJson {
+    allBooks2019Json {
+      edges {
+        node {
+          book {
+            title
+            authors {
+                author {
+                    name
+                }
+            }
+            link
+            image_url
+          }
+        }
+      }
+    }
+    allBooks2020Json {
       edges {
         node {
           book {

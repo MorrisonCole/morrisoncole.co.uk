@@ -1,0 +1,225 @@
+{
+  "start": "1",
+  "end": "4",
+  "total": "4",
+  "numpages": "1",
+  "currentpage": "1",
+  "book": [
+    {
+      "id": {
+        "_": "168668",
+        "type": "integer"
+      },
+      "isbn": "0684833395",
+      "isbn13": "9780684833392",
+      "text_reviews_count": {
+        "_": "14771",
+        "type": "integer"
+      },
+      "uri": "kca://book/amzn1.gr.book.v1.bnDiMekj5pk1csnAkoPABw",
+      "title": "Catch-22 (Catch-22, #1)",
+      "title_without_series": "Catch-22",
+      "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463157317l/168668._SX98_.jpg",
+      "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463157317l/168668._SY75_.jpg",
+      "large_image_url": "",
+      "link": "https://www.goodreads.com/book/show/168668.Catch_22",
+      "num_pages": "453",
+      "format": "Paperback",
+      "edition_information": "",
+      "publisher": "Simon & Schuster ",
+      "publication_day": "4",
+      "publication_year": "2004",
+      "publication_month": "9",
+      "average_rating": "3.98",
+      "ratings_count": "694253",
+      "description": "The novel is set during World War II, from 1942 to 1944. It mainly follows the life of Captain John Yossarian, a U.S. Army Air Forces B-25 bombardier. Most of the events in the book occur while the fictional 256th Squadron is based on the island of Pianosa, in the Mediterranean Sea, west of Italy. The novel looks into the experiences of Yossarian and the other airmen in the camp, who attempt to maintain their sanity while fulfilling their service requirements so that they may return home.",
+      "authors": {
+        "author": {
+          "id": "3167",
+          "name": "Joseph Heller",
+          "role": "",
+          "image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1197308614p5/3167.jpg\n",
+            "nophoto": "false"
+          },
+          "small_image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1197308614p2/3167.jpg\n",
+            "nophoto": "false"
+          },
+          "link": "https://www.goodreads.com/author/show/3167.Joseph_Heller",
+          "average_rating": "3.97",
+          "ratings_count": "716208",
+          "text_reviews_count": "18694"
+        }
+      },
+      "published": "2004",
+      "work": {
+        "id": "814330",
+        "uri": "kca://work/amzn1.gr.work.v1.TGfOLXjds8UOkVpgIJnfFg"
+      }
+    },
+    {
+      "id": {
+        "_": "49084908",
+        "type": "integer"
+      },
+      "isbn": {
+        "nil": "true"
+      },
+      "isbn13": {
+        "nil": "true"
+      },
+      "text_reviews_count": {
+        "_": "18",
+        "type": "integer"
+      },
+      "uri": "kca://book/amzn1.gr.book.v3.WKCzw3dI27C6qGML",
+      "title": "The Life You Can Save: How to Do Your Part to End World Poverty",
+      "title_without_series": "The Life You Can Save: How to Do Your Part to End World Poverty",
+      "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+      "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+      "large_image_url": "",
+      "link": "https://www.goodreads.com/book/show/49084908-the-life-you-can-save",
+      "num_pages": "",
+      "format": "",
+      "edition_information": "10th Anniversary Edition",
+      "publisher": "",
+      "publication_day": "",
+      "publication_year": "",
+      "publication_month": "",
+      "average_rating": "4.11",
+      "ratings_count": "3581",
+      "description": " For the first time in history, eradicating world poverty is within our reach.   \n  <i>Yet around the world, a billion people struggle to live each day on less than many of us pay for bottled water. </i>\n <p>In The Life You Can Save, Peter Singer uses ethical arguments, illuminating examples, and case studies of charitable giving to show that our current response to world poverty is not only insufficient but morally indefensible. The Life You Can Save teaches us to be a part of the solution, helping others as we help ourselves.</p><p></p><p>'A persuasive and inspiring work that will change the way you think about philanthrophy . . . and shows us we can make a profound difference in the lives of the world's poorest.' - Bill &amp; Melinda Gates</p><p>'Mr. Singer is far from the world’s only serious thinker on poverty, but with The Life You Can Save he becomes, instantly, its most readable and lapel-grabbing one.' - The New York Times</p><p>Mr Singer is a compelling moral voice seeking far more compassion for those who have the least.' - The Wall Street Journal</p> \n  <u>Scroll up and grab a copy of The Life You Can Save Today.</u>\n ",
+      "authors": {
+        "author": {
+          "id": "12397",
+          "name": "Peter Singer",
+          "role": "",
+          "image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1255667717p5/12397.jpg\n",
+            "nophoto": "false"
+          },
+          "small_image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1255667717p2/12397.jpg\n",
+            "nophoto": "false"
+          },
+          "link": "https://www.goodreads.com/author/show/12397.Peter_Singer",
+          "average_rating": "4.02",
+          "ratings_count": "32104",
+          "text_reviews_count": "2931"
+        }
+      },
+      "published": "",
+      "work": {
+        "id": "4787382",
+        "uri": "kca://work/amzn1.gr.work.v1.bme-4SUgROaYOz3M7cq-VQ"
+      }
+    },
+    {
+      "id": {
+        "_": "4069",
+        "type": "integer"
+      },
+      "isbn": "080701429X",
+      "isbn13": "9780807014295",
+      "text_reviews_count": {
+        "_": "13608",
+        "type": "integer"
+      },
+      "uri": "kca://book/amzn1.gr.book.v1.FHjzYvqM_2RU0Dyt5t6c1Q",
+      "title": "Man's Search for Meaning",
+      "title_without_series": "Man's Search for Meaning",
+      "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535419394l/4069._SX98_.jpg",
+      "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535419394l/4069._SY75_.jpg",
+      "large_image_url": "",
+      "link": "https://www.goodreads.com/book/show/4069.Man_s_Search_for_Meaning",
+      "num_pages": "165",
+      "format": "Paperback",
+      "edition_information": "",
+      "publisher": "Beacon Press",
+      "publication_day": "1",
+      "publication_year": "2006",
+      "publication_month": "6",
+      "average_rating": "4.36",
+      "ratings_count": "336982",
+      "description": "Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival. Based on his own experience and the stories of his patients, Frankl argues that we cannot avoid suffering but we can choose how to cope with it, find meaning in it, and move forward with renewed purpose. At the heart of his theory, known as logotherapy, is a conviction that the primary human drive is not pleasure but the pursuit of what we find meaningful. <i>Man's Search for Meaning</i> has become one of the most influential books in America; it continues to inspire us all to find significance in the very act of living.",
+      "authors": {
+        "author": {
+          "id": "2782",
+          "name": "Viktor E. Frankl",
+          "role": "",
+          "image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1542894524p5/2782.jpg\n",
+            "nophoto": "false"
+          },
+          "small_image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1542894524p2/2782.jpg\n",
+            "nophoto": "false"
+          },
+          "link": "https://www.goodreads.com/author/show/2782.Viktor_E_Frankl",
+          "average_rating": "4.35",
+          "ratings_count": "345351",
+          "text_reviews_count": "18547"
+        }
+      },
+      "published": "2006",
+      "work": {
+        "id": "3389674",
+        "uri": "kca://work/amzn1.gr.work.v1.A7nYAiWvTn1MXcK_zXFOBw"
+      }
+    },
+    {
+      "id": {
+        "_": "43798285",
+        "type": "integer"
+      },
+      "isbn": "1982110562",
+      "isbn13": "9781982110567",
+      "text_reviews_count": {
+        "_": "7431",
+        "type": "integer"
+      },
+      "uri": "kca://book/amzn1.gr.book.v1.C3xsPtuFNgBAu1rjB5ZPeA",
+      "title": "The Institute",
+      "title_without_series": "The Institute",
+      "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549241208l/43798285._SX98_.jpg",
+      "small_image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1549241208l/43798285._SY75_.jpg",
+      "large_image_url": "",
+      "link": "https://www.goodreads.com/book/show/43798285-the-institute",
+      "num_pages": "561",
+      "format": "Hardcover",
+      "edition_information": "",
+      "publisher": "Scribner",
+      "publication_day": "10",
+      "publication_year": "2019",
+      "publication_month": "9",
+      "average_rating": "4.22",
+      "ratings_count": "81634",
+      "description": "In the middle of the night, in a house on a quiet street in suburban Minneapolis, intruders silently murder Luke Ellis’s parents and load him into a black SUV. The operation takes less than two minutes. Luke will wake up at The Institute, in a room that looks just like his own, except there’s no window. And outside his door are other doors, behind which are other kids with special talents—telekinesis and telepathy—who got to this place the same way Luke did: Kalisha, Nick, George, Iris, and ten-year-old Avery Dixon. They are all in Front Half. Others, Luke learns, graduated to Back Half, “like the roach motel,” Kalisha says. “You check in, but you don’t check out.”<br /><br />In this most sinister of institutions, the director, Mrs. Sigsby, and her staff are ruthlessly dedicated to extracting from these children the force of their extranormal gifts. There are no scruples here. If you go along, you get tokens for the vending machines. If you don’t, punishment is brutal. As each new victim disappears to Back Half, Luke becomes more and more desperate to get out and get help. But no one has ever escaped from the Institute.<br /><br />As psychically terrifying as <i>Firestarter</i>, and with the spectacular kid power of <i>It</i>, <i>The Institute</i> is Stephen King’s gut-wrenchingly dramatic story of good vs. evil in a world where the good guys don’t always win.",
+      "authors": {
+        "author": {
+          "id": "3389",
+          "name": "Stephen King",
+          "role": "",
+          "image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1362814142p5/3389.jpg\n",
+            "nophoto": "false"
+          },
+          "small_image_url": {
+            "_": "\nhttps://images.gr-assets.com/authors/1362814142p2/3389.jpg\n",
+            "nophoto": "false"
+          },
+          "link": "https://www.goodreads.com/author/show/3389.Stephen_King",
+          "average_rating": "4.04",
+          "ratings_count": "13627850",
+          "text_reviews_count": "529169"
+        }
+      },
+      "published": "2019",
+      "work": {
+        "id": "68147322",
+        "uri": "kca://work/amzn1.gr.work.v1.yUdKrcgT0-qDWni2z1k5Gw"
+      }
+    }
+  ]
+}
