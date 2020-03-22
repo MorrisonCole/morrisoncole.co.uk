@@ -7,8 +7,10 @@ image: books.jpg
 linkText: "See the full list... 📚"
 ---
 
+import Avatar from '@material-ui/core/Avatar'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
+import ListItemAvatar from '@material-ui/core/ListItemAvatar'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
 import Star from '@material-ui/icons/Star'
@@ -17,9 +19,9 @@ import Star from '@material-ui/icons/Star'
     {
         props.data.allBooksJson.edges[0].node.book.map((book) => 
             <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
-                <ListItemIcon>
-                    <Star />
-                </ListItemIcon>
+                <ListItemAvatar>
+                    <Avatar style={{height: 'auto'}} variant="rounded" alt={book.title} src={book.image_url} />
+                </ListItemAvatar>
                 <ListItemText
                     primary={book.title}
                     secondary={book.authors.author.name}
