@@ -44,7 +44,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           </header>
           <section>
             <MDXRenderer data={data}>{post.body}</MDXRenderer>
-          </section>          
+          </section>
           <hr />
         </article>
 
