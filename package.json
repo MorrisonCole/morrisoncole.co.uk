@@ -25,7 +25,6 @@
     "gatsby-plugin-material-ui": "2.1.6",
     "gatsby-plugin-mdx": "^1.0.84",
     "gatsby-plugin-react-helmet": "3.1.24",
-    "gatsby-plugin-remote-images": "2.1.0",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
     "gatsby-plugin-s3": "0.3.3",
     "gatsby-plugin-sharp": "2.4.13",
