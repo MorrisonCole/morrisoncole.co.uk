@@ -1,7 +1,8 @@
 {
   "2020": [
     "Terraform",
-    "Bazel"
+    "Bazel",
+    "Gatsby"
   ],
   "2019": [
     "Golang",
