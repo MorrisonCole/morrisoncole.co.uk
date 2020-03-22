@@ -104,34 +104,38 @@ export const pageQuery = graphql`
         description
       }
     }
-    allBooks2019Json {
+    books2019: allGoodreadsShelf(filter: {name: {eq: "2019"}}) {
       edges {
         node {
-          book {
-            title
-            authors {
-                author {
-                    name
-                }
+          name
+          reviews {
+            rating
+            book {
+              title
+              authors {
+                name
+              }
+              link
+              image_url
             }
-            link
-            image_url
           }
         }
       }
     }
-    allBooks2020Json {
+    books2020: allGoodreadsShelf(filter: {name: {eq: "2020"}}) {
       edges {
         node {
-          book {
-            title
-            authors {
-                author {
-                    name
-                }
+          name
+          reviews {
+            rating
+            book {
+              title
+              authors {
+                name
+              }
+              link
+              image_url
             }
-            link
-            image_url
           }
         }
       }

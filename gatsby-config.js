@@ -12,6 +12,13 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: '@jamesdanylik/gatsby-source-goodreads',
+      options: {
+        key: process.env.GOODREADS_KEY,
+        id: '6320986-morrison'
+      }
+    },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-mdx',
     'gatsby-transformer-json',
