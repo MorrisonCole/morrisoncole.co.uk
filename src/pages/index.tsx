@@ -50,7 +50,7 @@ export default function TimelineIndex (props: TimelineIndexProps): JSX.Element {
       date={item.date}
       iconStyle={item.icon.background}
       icon={item.icon.icon}
-      key={item.title}
+      key={item.title + item.subtitle1}
     >
       <TimelineImageCardRaw
         title={item.title}
