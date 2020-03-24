@@ -4,7 +4,7 @@ Just my personal website.
 
 ## Getting Started
 
-Requires `GOODREADS_KEY` and `GOODREADS_SECRET` in order to import Goodreads data.
+Requires `GOODREADS_KEY` in order to import Goodreads data.
 
 # Development
 
