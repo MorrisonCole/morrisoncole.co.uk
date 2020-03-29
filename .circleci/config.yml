@@ -35,7 +35,7 @@ commands:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
-      - run: npm install
+      - run: yarn
       - save_cache:
           paths:
             - node_modules
@@ -46,10 +46,10 @@ jobs:
     executor: docker_executor
     steps:
       - checkout_with_cache
-      - run: npm run build
+      - run: yarn build
   deploy:
     executor: docker_executor
     steps:
       - checkout_with_cache
-      - run: npm run build
-      - run: npm run deploy
+      - run: yarn build
+      - run: yarn deploy

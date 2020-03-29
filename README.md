@@ -8,5 +8,5 @@ Requires `GOODREADS_KEY` in order to import Goodreads data.
 
 # Development
 
-1. Run `npm install`
-2. Run `npm start`
+1. Run `yarn`
+2. Run `yarn start`
