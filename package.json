@@ -89,6 +89,6 @@
     "generate": "graphql-codegen",
     "deploy": "gatsby-plugin-s3 deploy -y",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:prettier": "prettier \"**/*.{md,json,yml,html,css}\" --check"
+    "lint:prettier": "prettier \"**/*.{tsx,ts,js,md,json,yml,html,css}\" --check"
   }
 }

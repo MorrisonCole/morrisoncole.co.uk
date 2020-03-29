@@ -5,48 +5,50 @@ import {
   ExpansionPanelSummary,
   makeStyles,
   Theme,
-  Typography
-} from '@material-ui/core'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import { graphql } from 'gatsby'
-import React from 'react'
-import InfoImageCard from '../components/cards/info_image_card'
-import SEO from '../components/seo'
-import { MusicQuery } from '../../types/graphql-types'
+  Typography,
+} from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { graphql } from "gatsby";
+import React from "react";
+import InfoImageCard from "../components/cards/info_image_card";
+import SEO from "../components/seo";
+import { MusicQuery } from "../../types/graphql-types";
 
-const styles = makeStyles((theme: Theme) => createStyles({
-  container: {
-    marginTop: theme.spacing(4)
-  },
-  heading: {
-    fontSize: 20,
-    fontWeight: 'normal'
-  }
-}))
+const styles = makeStyles((theme: Theme) =>
+  createStyles({
+    container: {
+      marginTop: theme.spacing(4),
+    },
+    heading: {
+      fontSize: 20,
+      fontWeight: "normal",
+    },
+  })
+);
 
 interface MusicProps {
   location: Location;
   data: MusicQuery;
 }
 
-export default function Music (props: MusicProps): JSX.Element {
-  const classes = styles()
+export default function Music(props: MusicProps): JSX.Element {
+  const classes = styles();
 
-  const [expanded, setExpanded] = React.useState<string | false>('panel1')
+  const [expanded, setExpanded] = React.useState<string | false>("panel1");
 
   const handleChange = (panel: string) => (
     _: React.ChangeEvent<{}>,
     isExpanded: boolean
   ): void => {
-    setExpanded(isExpanded ? panel : false)
-  }
+    setExpanded(isExpanded ? panel : false);
+  };
 
   return (
     <div className={classes.container}>
       <SEO title="Music" />
       <ExpansionPanel
-        expanded={expanded === 'panel1'}
-        onChange={handleChange('panel1')}
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
       >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
@@ -59,7 +61,6 @@ export default function Music (props: MusicProps): JSX.Element {
           <section id="Latent%20Signal">
             <InfoImageCard
               title="Latent Signal"
-
               image={props.data.latentSignal.childImageSharp.fluid}
               subtitle1="British band creating original music, covers, and (sometimes) the odd vlog."
               text={
@@ -73,8 +74,8 @@ export default function Music (props: MusicProps): JSX.Element {
       </ExpansionPanel>
 
       <ExpansionPanel
-        expanded={expanded === 'panel2'}
-        onChange={handleChange('panel2')}
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
       >
         <ExpansionPanelSummary
           expandIcon={<ExpandMoreIcon />}
@@ -97,7 +98,7 @@ export default function Music (props: MusicProps): JSX.Element {
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>
-  )
+  );
 }
 
 export const pageQuery = graphql`
@@ -122,4 +123,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

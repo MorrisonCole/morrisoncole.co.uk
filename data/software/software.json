@@ -1,15 +1,4 @@
 {
-  "2020": [
-    "Terraform",
-    "Bazel",
-    "Gatsby"
-  ],
-  "2019": [
-    "Golang",
-    "Kotlin",
-    "Docker",
-    "gRPC",
-    "TypeScript",
-    "GraphQL"
-  ]
+  "2020": ["Terraform", "Bazel", "Gatsby"],
+  "2019": ["Golang", "Kotlin", "Docker", "gRPC", "TypeScript", "GraphQL"]
 }

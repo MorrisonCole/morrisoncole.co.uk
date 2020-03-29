@@ -1,17 +1,27 @@
-import { createStyles, Theme, Typography, WithStyles, withStyles } from '@material-ui/core'
-import Grid from '@material-ui/core/Grid'
-import { graphql, Link } from 'gatsby'
-import React from 'react'
-import SEO from '../components/seo'
-import { BlogPostBySlugQuery, SitePageContext } from '../../types/graphql-types'
-import { StyleRules } from '@material-ui/core/styles/withStyles'
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import {
+  createStyles,
+  Theme,
+  Typography,
+  WithStyles,
+  withStyles,
+} from "@material-ui/core";
+import Grid from "@material-ui/core/Grid";
+import { graphql, Link } from "gatsby";
+import React from "react";
+import SEO from "../components/seo";
+import {
+  BlogPostBySlugQuery,
+  SitePageContext,
+} from "../../types/graphql-types";
+import { StyleRules } from "@material-ui/core/styles/withStyles";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 
-const styles = ({ spacing }: Theme): StyleRules => createStyles({
-  container: {
-    marginTop: spacing(8)
-  }
-})
+const styles = ({ spacing }: Theme): StyleRules =>
+  createStyles({
+    container: {
+      marginTop: spacing(8),
+    },
+  });
 
 interface BlogPostTemplateProps extends WithStyles<typeof styles> {
   location: Location;
@@ -20,13 +30,11 @@ interface BlogPostTemplateProps extends WithStyles<typeof styles> {
 }
 
 class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
-  public render (): JSX.Element {
-    const {
-      classes, data, pageContext
-    } = this.props
+  public render(): JSX.Element {
+    const { classes, data, pageContext } = this.props;
 
-    const post = data.mdx
-    const { previous, next } = pageContext
+    const post = data.mdx;
+    const { previous, next } = pageContext;
 
     return (
       <Grid container className={classes.container} direction="column">
@@ -51,39 +59,35 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
         <nav>
           <ul
             style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'space-between',
-              listStyle: 'none',
-              padding: 0
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "space-between",
+              listStyle: "none",
+              padding: 0,
             }}
           >
             <li>
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  ←
-                  {' '}
-                  {previous.frontmatter.title}
+                  ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title}
-                  {' '}
-                  →
+                  {next.frontmatter.title} →
                 </Link>
               )}
             </li>
           </ul>
         </nav>
       </Grid>
-    )
+    );
   }
 }
 
-export default withStyles(styles)(BlogPostTemplate)
+export default withStyles(styles)(BlogPostTemplate);
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -104,7 +108,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    books2019: allGoodreadsShelf(filter: {name: {eq: "2019"}}) {
+    books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {
       edges {
         node {
           name
@@ -122,7 +126,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    books2020: allGoodreadsShelf(filter: {name: {eq: "2020"}}) {
+    books2020: allGoodreadsShelf(filter: { name: { eq: "2020" } }) {
       edges {
         node {
           name
@@ -141,4 +145,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
