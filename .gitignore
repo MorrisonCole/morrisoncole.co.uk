@@ -5,6 +5,5 @@ node_modules/
 .cache/
 public
 
-# WebStorm
-.idea/
-!.idea/runConfigurations
+# Terraform
+.terraform
