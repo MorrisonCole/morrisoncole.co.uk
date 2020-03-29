@@ -1,11 +1,11 @@
-import { makeStyles } from '@material-ui/core'
-import Card from '@material-ui/core/Card'
-import CardActionArea from '@material-ui/core/CardActionArea'
-import CardContent from '@material-ui/core/CardContent'
-import CardMedia from '@material-ui/core/CardMedia'
-import Typography from '@material-ui/core/Typography'
-import React from 'react'
-import Image, { FluidObject } from 'gatsby-image'
+import { makeStyles } from "@material-ui/core";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
+import React from "react";
+import Image, { FluidObject } from "gatsby-image";
 
 interface TimelineImageCardProps {
   title: string;
@@ -17,15 +17,17 @@ interface TimelineImageCardProps {
 
 const styles = makeStyles({
   card: {
-    maxWidth: 345
+    maxWidth: 345,
   },
   pos: {
-    marginBottom: 12
-  }
-})
+    marginBottom: 12,
+  },
+});
 
-export default function TimelineImageCardRaw (props: TimelineImageCardProps): JSX.Element {
-  const classes = styles()
+export default function TimelineImageCardRaw(
+  props: TimelineImageCardProps
+): JSX.Element {
+  const classes = styles();
 
   return (
     <Card className={classes.card}>
@@ -49,5 +51,5 @@ export default function TimelineImageCardRaw (props: TimelineImageCardProps): JS
         </CardContent>
       </CardActionArea>
     </Card>
-  )
+  );
 }

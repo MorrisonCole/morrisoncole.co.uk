@@ -1,6 +1,5 @@
 .cache
 .circleci
-.idea
 node_modules
 public
 types/graphql-types.ts
