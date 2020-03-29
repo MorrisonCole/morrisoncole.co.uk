@@ -13,5 +13,11 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:react/recommended",
     "prettier/@typescript-eslint"
-  ]
+  ],
+  settings: {
+    react: {
+      version: "detect"
+    },
+    linkComponents: [{ name: "Link", linkAttribute: "to" }]
+  }
 };
