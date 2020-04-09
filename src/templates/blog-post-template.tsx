@@ -4,6 +4,7 @@ import {
   Typography,
   WithStyles,
   withStyles,
+  Divider,
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import { graphql, Link } from "gatsby";
@@ -62,7 +63,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           <section>
             <MDXRenderer data={data}>{post.body}</MDXRenderer>
           </section>
-          <hr />
+          <Divider />
         </article>
 
         <nav>
