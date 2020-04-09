@@ -5,9 +5,10 @@ import {
   WithStyles,
   withStyles,
   Divider,
+  Link,
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import { graphql, Link } from "gatsby";
+import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import {
@@ -78,14 +79,22 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <Link
+                  component={GatsbyLink}
+                  to={previous.fields.slug ?? "/blog"}
+                  rel="prev"
+                >
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <Link
+                  component={GatsbyLink}
+                  to={next.fields.slug ?? "/blog"}
+                  rel="next"
+                >
                   {next.frontmatter.title} →
                 </Link>
               )}
