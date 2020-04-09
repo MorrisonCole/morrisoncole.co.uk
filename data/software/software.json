@@ -1,4 +1,4 @@
 {
-  "2020": ["Terraform", "Bazel", "Gatsby"],
+  "2020": ["Deno", "Terraform", "Bazel", "Gatsby"],
   "2019": ["Golang", "Kotlin", "Docker", "gRPC", "TypeScript", "GraphQL"]
 }
