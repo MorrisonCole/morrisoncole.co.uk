@@ -15,11 +15,15 @@ import {
 } from "../../types/graphql-types";
 import { StyleRules } from "@material-ui/core/styles/withStyles";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
     container: {
-      marginTop: spacing(8),
+      marginTop: spacing(6),
+    },
+    breadcrumbContainer: {
+      paddingBottom: spacing(2),
     },
   });
 
@@ -42,6 +46,11 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           title={post.frontmatter.title}
           description={post.frontmatter.description ?? post.excerpt}
         />
+
+        <Grid item className={classes.breadcrumbContainer}>
+          <SimpleBreadcrumbs />
+        </Grid>
+
         <article>
           <header>
             <Typography variant="h4">{post.frontmatter.title}</Typography>
