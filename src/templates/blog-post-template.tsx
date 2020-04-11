@@ -6,6 +6,7 @@ import {
   withStyles,
   Divider,
   Link,
+  Container,
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import { graphql, Link as GatsbyLink } from "gatsby";
@@ -44,7 +45,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
     const { previous, next } = pageContext;
 
     return (
-      <Grid container className={classes.container} direction="column">
+      <Container className={classes.container} maxWidth="md" direction="column">
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description ?? post.excerpt}
@@ -104,7 +105,7 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             </li>
           </ul>
         </nav>
-      </Grid>
+      </Container>
     );
   }
 }

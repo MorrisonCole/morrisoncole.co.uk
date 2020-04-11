@@ -2,35 +2,42 @@
 title: "2019 Reading List"
 date: "2019-09-25"
 updated: "2019-12-31"
-description: "Books I read in 2019, roughly ordered by how highly I recommend them ♥"
+description:
+  "Books I read in 2019, roughly ordered by how highly I recommend them ♥"
 image: books.jpg
 linkText: "See the full list... 📚"
 ---
 
-import Avatar from '@material-ui/core/Avatar'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemAvatar from '@material-ui/core/ListItemAvatar'
-import ListItemIcon from '@material-ui/core/ListItemIcon'
-import ListItemText from '@material-ui/core/ListItemText'
-import Rating from '@material-ui/lab/Rating'
-import Star from '@material-ui/icons/Star'
+import Avatar from "@material-ui/core/Avatar";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemAvatar from "@material-ui/core/ListItemAvatar";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import ListItemText from "@material-ui/core/ListItemText";
+import Rating from "@material-ui/lab/Rating";
+import Star from "@material-ui/icons/Star";
 
 <List dense>
-    {
-        props.data.books2019.edges[0].node.reviews
-            .sort((a, b) => parseInt(b.rating) - parseInt(a.rating))
-            .map(({rating, book}) => 
-                <ListItem button component="a" href={book.link} target="_blank" key={book.id}>
-                    <ListItemAvatar>
-                        <Avatar style={{height: 'auto'}} variant="rounded" alt={book.title} src={book.image_url} />
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary={book.title}
-                        secondary={book.authors[0].name}
-                    />
-                    <Rating name="read-only" value={rating} readOnly />
-                </ListItem>
-            )
-    }
+  {props.data.books2019.edges[0].node.reviews
+    .sort((a, b) => parseInt(b.rating) - parseInt(a.rating))
+    .map(({ rating, book }) => (
+      <ListItem
+        button
+        component="a"
+        href={book.link}
+        target="_blank"
+        key={book.id}
+      >
+        <ListItemAvatar>
+          <Avatar
+            style={{ height: "auto" }}
+            variant="rounded"
+            alt={book.title}
+            src={book.image_url}
+          />
+        </ListItemAvatar>
+        <ListItemText primary={book.title} secondary={book.authors[0].name} />
+        <Rating name="read-only" value={rating} readOnly />
+      </ListItem>
+    ))}
 </List>

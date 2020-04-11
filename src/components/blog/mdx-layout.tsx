@@ -1,14 +1,24 @@
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
-import { Typography, Divider, Paper, Grid, Theme, StyleRules, createStyles, withStyles } from "@material-ui/core";
+import {
+  Typography,
+  Divider,
+  Paper,
+  Grid,
+  Theme,
+  StyleRules,
+  createStyles,
+  withStyles,
+  Link,
+} from "@material-ui/core";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
     blockquoteContainer: {
-        padding: spacing(3),
+      padding: spacing(3),
     },
     blockquote: {
-        padding: spacing(3),
+      padding: spacing(3),
     },
   });
 
@@ -51,6 +61,7 @@ export default function MDXLayout({
             <Paper className={classes.blockquote} elevation={3} {...props} />
           </Grid>
         )),
+        a: (props) => <Link {...props} target="_blank" />,
       }}
     >
       {children}
