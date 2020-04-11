@@ -18,6 +18,7 @@ import {
 import { StyleRules } from "@material-ui/core/styles/withStyles";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
+import MDXLayout from "../components/blog/mdx-layout";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -62,7 +63,9 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
             </Typography>
           </header>
           <section>
-            <MDXRenderer data={data}>{post.body}</MDXRenderer>
+            <MDXLayout>
+              <MDXRenderer data={data}>{post.body}</MDXRenderer>
+            </MDXLayout>
           </section>
           <Divider />
         </article>
