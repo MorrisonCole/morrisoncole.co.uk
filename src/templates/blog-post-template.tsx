@@ -52,7 +52,9 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
         />
 
         <Grid item className={classes.breadcrumbContainer}>
-          <SimpleBreadcrumbs />
+          <SimpleBreadcrumbs
+            location={post?.frontmatter?.category ?? "Unknown"}
+          />
         </Grid>
 
         <article>
@@ -129,6 +131,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         updated(formatString: "MMMM DD, YYYY")
         description
+        category
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {
