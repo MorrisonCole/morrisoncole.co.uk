@@ -20,7 +20,19 @@ module.exports = {
       },
     },
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
