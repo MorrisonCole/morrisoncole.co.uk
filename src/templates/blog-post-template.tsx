@@ -49,6 +49,8 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description ?? post.excerpt}
+          image={post?.frontmatter?.image?.childImageSharp?.fluid.src}
+          article
         />
 
         <Grid item className={classes.breadcrumbContainer}>
@@ -132,6 +134,13 @@ export const pageQuery = graphql`
         updated(formatString: "MMMM DD, YYYY")
         description
         category
+        image {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {

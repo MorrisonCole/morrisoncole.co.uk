@@ -1,4 +1,5 @@
-const siteAddress = new URL("https://www.morrisoncole.co.uk");
+const rawUrl = "https://www.morrisoncole.co.uk";
+const siteAddress = new URL(rawUrl);
 
 module.exports = {
   siteMetadata: {
@@ -6,10 +7,11 @@ module.exports = {
     author: "Morrison Cole",
     description: `I'm a software engineer, technical product manager & musician based in Tokyo, Japan. I love start-ups, 
     and previously worked for Shazam & Improbable. Right now, I'm developing AI-based medicine at Medmain (amongst other things!).`,
-    siteUrl: siteAddress.href,
+    siteUrl: rawUrl, // Don't include a trailing slash!
     social: {
       twitter: "morrisoncole",
     },
+    image: "/morrison-cole.jpg",
   },
   plugins: [
     {
