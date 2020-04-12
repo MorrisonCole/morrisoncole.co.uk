@@ -11,6 +11,7 @@ import {
   withStyles,
   Link,
 } from "@material-ui/core";
+import { defaultComponents } from "./default-components";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -61,7 +62,8 @@ export default function MDXLayout({
             <Paper className={classes.blockquote} elevation={3} {...props} />
           </Grid>
         )),
-        a: (props) => <Link {...props} target="_blank" />,
+        a: (props) => <Link {...props} target="_blank" rel="noreferrer noopener"/>,
+        defaultComponents,
       }}
     >
       {children}
