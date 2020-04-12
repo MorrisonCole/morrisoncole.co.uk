@@ -21,6 +21,10 @@ const styles = ({ spacing }: Theme): StyleRules =>
     blockquote: {
       padding: spacing(3),
     },
+    divider: {
+      marginTop: spacing(2),
+      marginBottom: spacing(2),
+    },
   });
 
 export default function MDXLayout({
@@ -55,14 +59,42 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
+        h4: (props) => (
+          <Typography
+            {...props}
+            component="h4"
+            variant="h4"
+            gutterBottom={true}
+          />
+        ),
+        h5: (props) => (
+          <Typography
+            {...props}
+            component="h5"
+            variant="h5"
+            gutterBottom={true}
+          />
+        ),
+        h6: (props) => (
+          <Typography
+            {...props}
+            component="h6"
+            variant="h6"
+            gutterBottom={true}
+          />
+        ),
         p: (props) => <Typography {...props} paragraph={true} />,
-        hr: Divider,
+        ul: (props) => <Typography {...props} component="ul" />,
+        ol: (props) => <Typography {...props} component="ol" />,
+        hr: withStyles(styles)(({ classes, ...props }) => (
+          <Divider className={classes.divider} {...props} variant="middle" />
+        )),
         blockquote: withStyles(styles)(({ classes, ...props }) => (
           <Grid className={classes.blockquoteContainer}>
             <Paper className={classes.blockquote} elevation={3} {...props} />
           </Grid>
         )),
-        a: (props) => <Link {...props} target="_blank" rel="noreferrer noopener"/>,
+        a: (props) => <Link {...props} target="_blank" rel="noopener" />,
         defaultComponents,
       }}
     >
