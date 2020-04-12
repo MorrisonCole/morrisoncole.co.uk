@@ -63,9 +63,6 @@ class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
           <header>
             <Typography variant="h4">{post.frontmatter.title}</Typography>
             <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
-            <Typography variant="caption">
-              {`(Last updated: ${post.frontmatter.updated ?? "never"})`}
-            </Typography>
           </header>
           <section>
             <MDXLayout>
