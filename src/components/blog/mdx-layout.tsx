@@ -25,6 +25,9 @@ const styles = ({ spacing }: Theme): StyleRules =>
       marginTop: spacing(2),
       marginBottom: spacing(2),
     },
+    ol: {
+      marginBottom: spacing(2),
+    },
   });
 
 export default function MDXLayout({
@@ -84,8 +87,12 @@ export default function MDXLayout({
           />
         ),
         p: (props) => <Typography {...props} paragraph={true} />,
-        ul: (props) => <Typography {...props} component="ul" />,
-        ol: (props) => <Typography {...props} component="ol" />,
+        ul: withStyles(styles)(({ classes, ...props }) => (
+          <Typography className={classes.ol} {...props} component="ul" />
+        )),
+        ol: withStyles(styles)(({ classes, ...props }) => (
+          <Typography className={classes.ol} {...props} component="ol" />
+        )),
         hr: withStyles(styles)(({ classes, ...props }) => (
           <Divider className={classes.divider} {...props} variant="middle" />
         )),
