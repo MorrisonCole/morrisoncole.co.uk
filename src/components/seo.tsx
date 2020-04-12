@@ -1,17 +1,25 @@
 import { graphql, useStaticQuery } from "gatsby";
-import PropTypes from "prop-types";
 import React from "react";
 import Helmet from "react-helmet";
 import { SeoQuery } from "../../types/graphql-types";
 
 interface SEOProps {
+  title: string;
   description?: string;
   lang?: string;
   meta?: [];
-  title: string;
+  article?: boolean;
+  image?: string;
 }
 
-function SEO({ description, lang, meta, title }: SEOProps): JSX.Element {
+function SEO({
+  title,
+  description,
+  lang,
+  meta,
+  article,
+  image,
+}: SEOProps): JSX.Element {
   const { site }: SeoQuery = useStaticQuery(
     graphql`
       query Seo {
@@ -20,6 +28,8 @@ function SEO({ description, lang, meta, title }: SEOProps): JSX.Element {
             title
             description
             author
+            image
+            siteUrl
           }
         }
       }
@@ -31,6 +41,8 @@ function SEO({ description, lang, meta, title }: SEOProps): JSX.Element {
   }
 
   const metaDescription = description ?? site.siteMetadata.description;
+  const contentType = article ? "article" : "website";
+  const imagePath: string = image ?? site.siteMetadata.image!;
 
   return (
     <Helmet
@@ -54,7 +66,11 @@ function SEO({ description, lang, meta, title }: SEOProps): JSX.Element {
         },
         {
           property: "og:type",
-          content: "website",
+          content: contentType,
+        },
+        {
+          property: "og:image",
+          content: `${site.siteMetadata.siteUrl}${imagePath}`,
         },
         {
           name: "twitter:card",
@@ -81,13 +97,7 @@ SEO.defaultProps = {
   lang: "en",
   meta: [],
   description: "",
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  article: false,
 };
 
 export default SEO;
