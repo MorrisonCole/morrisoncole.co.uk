@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import Helmet from "react-helmet";
 import { SeoQuery } from "../../types/graphql-types";
+import { Helmet } from "react-helmet";
 
 interface SEOProps {
   title: string;
