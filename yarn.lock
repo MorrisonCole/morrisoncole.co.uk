@@ -16233,10 +16233,10 @@ typeface-montserrat@0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
   integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
 
-typescript@3.9.0-dev.20200419:
-  version "3.9.0-dev.20200419"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.0-dev.20200419.tgz#09b709f3ba1ce74760512523dc5cd1aa251ee651"
-  integrity sha512-mSBTfYntTYz1la6JQ1UBFoW8keQA9p8HwKEPjGv2I5CgwT6xHjGu8BSs+QNpADS0l8n/q27r/UddI1uoI64v7Q==
+typescript@3.9.0-dev.20200420:
+  version "3.9.0-dev.20200420"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.0-dev.20200420.tgz#99c2bc0936dbf4479b0b5260d80475ed494b1532"
+  integrity sha512-36MW6V+oXNnsSgliSjUWvtOkO21g9+iFGHPFv+O06HsCl3dcuqzBac17m8xuOuWo1LUlEgS6yAnD9fiVgvmCfg==
 
 typography-normalize@^0.16.19:
   version "0.16.19"
