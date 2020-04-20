@@ -72,7 +72,7 @@
     "prettier": "2.0.4",
     "server": "1.0.27",
     "typescript": "3.9.0-dev.20200420",
-    "yaml": "1.9.1"
+    "yaml": "1.9.2"
   },
   "homepage": "https://github.com/MorrisonCole/morrisoncole.co.uk#readme",
   "keywords": [
