@@ -22,19 +22,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-sitemap",
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
-            },
-          },
-        ],
-      },
-    },
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
@@ -57,6 +44,27 @@ module.exports = {
       options: {
         path: `${__dirname}/content/`,
         name: "content",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-autolink-headers",
+            options: {
+              maintainCase: true,
+              removeAccents: true,
+              isIconAfterHeader: false,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
       },
     },
     {

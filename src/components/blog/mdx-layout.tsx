@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 import {
@@ -9,9 +10,9 @@ import {
   StyleRules,
   createStyles,
   withStyles,
-  Link,
 } from "@material-ui/core";
 import { defaultComponents } from "./default-components";
+import Link from "./link";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -38,7 +39,7 @@ export default function MDXLayout({
   return (
     <MDXProvider
       components={{
-        h1: (props) => (
+        h1: (props): JSX.Element => (
           <Typography
             {...props}
             component="h1"
@@ -46,7 +47,7 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
-        h2: (props) => (
+        h2: (props): JSX.Element => (
           <Typography
             {...props}
             component="h2"
@@ -54,7 +55,7 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
-        h3: (props) => (
+        h3: (props): JSX.Element => (
           <Typography
             {...props}
             component="h3"
@@ -62,7 +63,7 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
-        h4: (props) => (
+        h4: (props): JSX.Element => (
           <Typography
             {...props}
             component="h4"
@@ -70,7 +71,7 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
-        h5: (props) => (
+        h5: (props): JSX.Element => (
           <Typography
             {...props}
             component="h5"
@@ -78,7 +79,7 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
-        h6: (props) => (
+        h6: (props): JSX.Element => (
           <Typography
             {...props}
             component="h6"
@@ -86,7 +87,7 @@ export default function MDXLayout({
             gutterBottom={true}
           />
         ),
-        p: (props) => <Typography {...props} paragraph={true} />,
+        p: (props): JSX.Element => <Typography {...props} paragraph={true} />,
         ul: withStyles(styles)(({ classes, ...props }) => (
           <Typography className={classes.ol} {...props} component="ul" />
         )),
@@ -101,7 +102,7 @@ export default function MDXLayout({
             <Paper className={classes.blockquote} elevation={3} {...props} />
           </Grid>
         )),
-        a: (props) => <Link {...props} target="_blank" rel="noopener" />,
+        a: (props): JSX.Element => <Link {...props}></Link>,
         defaultComponents,
       }}
     >
