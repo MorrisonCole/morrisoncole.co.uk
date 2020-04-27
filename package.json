@@ -35,7 +35,7 @@
     "gatsby-plugin-styled-components": "3.2.4",
     "gatsby-plugin-typescript": "2.3.5",
     "gatsby-plugin-typography": "2.4.4",
-    "gatsby-remark-autolink-headers": "^2.2.4",
+    "gatsby-remark-autolink-headers": "^2.3.0",
     "gatsby-remark-copy-linked-files": "2.2.4",
     "gatsby-remark-images": "3.2.6",
     "gatsby-remark-prismjs": "3.4.5",
