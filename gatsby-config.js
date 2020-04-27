@@ -27,7 +27,14 @@ module.exports = {
         id: "6320986-morrison",
       },
     },
-    "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        resolveSiteUrl: () => {
+          return rawUrl;
+        },
+      },
+    },
     "gatsby-transformer-json",
     {
       resolve: "gatsby-source-filesystem",
