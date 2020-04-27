@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://morrisoncole.co.uk/sitemap.xml
