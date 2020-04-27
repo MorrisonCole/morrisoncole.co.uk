@@ -49,15 +49,15 @@ export default function NavBar(props: NavBarProps): JSX.Element {
           scrollButtons="auto"
           className={classes.grow}
         >
-          <Tab label="Timeline" value="" component={Link} to="" />
+          <Tab label="Timeline" value="" component={Link} to="/" />
           <Tab
             label="Software"
             value="software"
             component={Link}
-            to="/software"
+            to="/software/"
           />
-          <Tab label="Music" value="music" component={Link} to="/music" />
-          <Tab label="Blog" value="blog" component={Link} to="/blog" />
+          <Tab label="Music" value="music" component={Link} to="/music/" />
+          <Tab label="Blog" value="blog" component={Link} to="/blog/" />
         </Tabs>
       </Grid>
     </Grid>

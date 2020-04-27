@@ -13,7 +13,7 @@ export default function SimpleBreadcrumbs(
 ): JSX.Element {
   return (
     <Breadcrumbs aria-label="breadcrumb">
-      <Link color="inherit" component={GatsbyLink} to="/blog">
+      <Link color="inherit" component={GatsbyLink} to="/blog/">
         Blog
       </Link>
       <Typography color="textPrimary">{props.location}</Typography>
