@@ -1,4 +1,4 @@
-const rawUrl = "https://www.morrisoncole.co.uk";
+const rawUrl = "https://morrisoncole.co.uk";
 const siteAddress = new URL(rawUrl);
 
 module.exports = {
@@ -14,6 +14,12 @@ module.exports = {
     image: "/morrison-cole.jpg",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: rawUrl,
+      },
+    },
     {
       resolve: "@jamesdanylik/gatsby-source-goodreads",
       options: {
