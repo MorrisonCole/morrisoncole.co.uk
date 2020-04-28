@@ -26,6 +26,7 @@ export default function SocialIcon(props: SocialIconProps): JSX.Element {
       aria-label={props.ariaLabel}
       href={props.href}
       target="_blank"
+      rel="noopener"
       className={classes.iconButton}
     >
       {props.icon}
