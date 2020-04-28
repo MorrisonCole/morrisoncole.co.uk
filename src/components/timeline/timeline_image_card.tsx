@@ -31,7 +31,7 @@ export default function TimelineImageCardRaw(
 
   return (
     <Card className={classes.card}>
-      <CardActionArea href={props.mainLink} target="_blank">
+      <CardActionArea href={props.mainLink} target="_blank" rel="noopener">
         <CardMedia
           component={Image}
           fluid={props.image}

@@ -55,6 +55,7 @@ export default function InfoImageCard(props: InfoImageCardProps): JSX.Element {
             color="primary"
             href={props.actionHref}
             target="_blank"
+            rel="noopener"
           >
             {props.actionTitle}
           </Button>
