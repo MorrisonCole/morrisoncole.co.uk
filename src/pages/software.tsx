@@ -38,8 +38,8 @@ interface SoftwareProps {
 export default function Software(props: SoftwareProps): JSX.Element {
   const classes = styles();
 
-  const listItems2020 = props.data.softwareJson?._2020?.map((item) => (
-    <ListItem button>
+  const listItems2020 = props.data.softwareJson?._2020.map((item) => (
+    <ListItem button key={item}>
       <ListItemIcon>
         <Star />
       </ListItemIcon>
@@ -47,8 +47,8 @@ export default function Software(props: SoftwareProps): JSX.Element {
     </ListItem>
   ));
 
-  const listItems2019 = props.data.softwareJson?._2019?.map((item) => (
-    <ListItem button>
+  const listItems2019 = props.data.softwareJson?._2019.map((item) => (
+    <ListItem button key={item}>
       <ListItemIcon>
         <Star />
       </ListItemIcon>
