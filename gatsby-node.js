@@ -77,6 +77,11 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String!
       author: String!
     }
+
+    type SoftwareJson implements Node {
+      _2019: [String!]!
+      _2020: [String!]!
+    }
   `;
   createTypes(typeDefs);
 };
