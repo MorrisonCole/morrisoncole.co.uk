@@ -13767,10 +13767,10 @@ react-typography@0.16.19:
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.19.tgz#5736b47961dcf6b9605b6fa38d41980db2588e28"
   integrity sha512-kV2qLEsdm0x9P4YXQEDVc88tDb4Vg0h/vdVZGgbqaRn8ERvNzV76JHUeOby3vvcUYU5MPd5Kz5DPH9Bhp4I/iw==
 
-react-vertical-timeline-component@2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-2.6.0.tgz#de78646c06891a21e45d7eeabc0e03ea7a2d9910"
-  integrity sha512-bTjKDqmy/HYxSkf/k2lg9MidV+4n0Itdz6V77NKULCCeHx73C8O+JOlwxOD5WtEXk6w9SWG/PeVpigWZ0jkAYg==
+react-vertical-timeline-component@2.6.2:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-2.6.2.tgz#320bcea8f5913bbf279449902e9a0d428197963f"
+  integrity sha512-4RX2BOYyxvFb4cXVUxNcMrLnktthRpz3kFvpwgtlPTBZYYLasj+qAxB9Y2x6No8fBqiactr1xU9BSuC2q6YNjg==
   dependencies:
     classnames "^2.2.6"
     prop-types "^15.7.2"
