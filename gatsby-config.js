@@ -15,6 +15,16 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: [
+          "https://www.google.com",
+          "https://www.google.co.jp",
+          "https://stats.g.doubleclick.net",
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: rawUrl,
