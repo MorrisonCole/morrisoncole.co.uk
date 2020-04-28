@@ -15,9 +15,9 @@ interface SEOProps {
 function SEO({
   title,
   description,
-  lang,
+  lang = "en",
   meta,
-  article,
+  article = false,
   image,
 }: SEOProps): JSX.Element {
   const { site }: SeoQuery = useStaticQuery(
@@ -92,12 +92,5 @@ function SEO({
     />
   );
 }
-
-SEO.defaultProps = {
-  lang: "en",
-  meta: [],
-  description: "",
-  article: false,
-};
 
 export default SEO;
