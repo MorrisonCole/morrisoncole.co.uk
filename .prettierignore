@@ -1,4 +1,5 @@
 .cache
 .circleci
+.terraform
 node_modules
 public
