@@ -42,7 +42,7 @@ function SEO({
 
   const metaDescription = description ?? site.siteMetadata.description;
   const contentType = article ? "article" : "website";
-  const imagePath: string = image ?? site.siteMetadata.image!;
+  const imagePath: string = image ?? site.siteMetadata.image;
 
   return (
     <Helmet
