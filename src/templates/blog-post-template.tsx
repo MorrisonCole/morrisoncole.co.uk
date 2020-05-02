@@ -37,78 +37,78 @@ interface BlogPostTemplateProps extends WithStyles<typeof styles> {
   pageContext: SitePageContext;
 }
 
-class BlogPostTemplate extends React.Component<BlogPostTemplateProps, {}> {
-  public render(): JSX.Element {
-    const { classes, data, pageContext } = this.props;
+function BlogPostTemplate({
+  classes,
+  data,
+  pageContext,
+}: BlogPostTemplateProps): JSX.Element {
+  const post = data.mdx;
+  const { previous, next } = pageContext;
 
-    const post = data.mdx;
-    const { previous, next } = pageContext;
+  return (
+    <Container className={classes.container} maxWidth="md" direction="column">
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description ?? post.excerpt}
+        image={post?.frontmatter?.image?.childImageSharp?.fluid.src}
+        article
+      />
 
-    return (
-      <Container className={classes.container} maxWidth="md" direction="column">
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description ?? post.excerpt}
-          image={post?.frontmatter?.image?.childImageSharp?.fluid.src}
-          article
+      <Grid item className={classes.breadcrumbContainer}>
+        <SimpleBreadcrumbs
+          location={post?.frontmatter?.category ?? "Unknown"}
         />
+      </Grid>
 
-        <Grid item className={classes.breadcrumbContainer}>
-          <SimpleBreadcrumbs
-            location={post?.frontmatter?.category ?? "Unknown"}
-          />
-        </Grid>
+      <article>
+        <header>
+          <Typography variant="h4">{post.frontmatter.title}</Typography>
+          <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
+        </header>
+        <section>
+          <MDXLayout>
+            <MDXRenderer data={data}>{post.body}</MDXRenderer>
+          </MDXLayout>
+        </section>
+        <Divider />
+      </article>
 
-        <article>
-          <header>
-            <Typography variant="h4">{post.frontmatter.title}</Typography>
-            <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
-          </header>
-          <section>
-            <MDXLayout>
-              <MDXRenderer data={data}>{post.body}</MDXRenderer>
-            </MDXLayout>
-          </section>
-          <Divider />
-        </article>
-
-        <nav>
-          <ul
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "space-between",
-              listStyle: "none",
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link
-                  component={GatsbyLink}
-                  to={previous.fields.slug ?? "/blog"}
-                  rel="prev"
-                >
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link
-                  component={GatsbyLink}
-                  to={next.fields.slug ?? "/blog"}
-                  rel="next"
-                >
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
-      </Container>
-    );
-  }
+      <nav>
+        <ul
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            listStyle: "none",
+            padding: 0,
+          }}
+        >
+          <li>
+            {previous && (
+              <Link
+                component={GatsbyLink}
+                to={previous.fields.slug ?? "/blog"}
+                rel="prev"
+              >
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link
+                component={GatsbyLink}
+                to={next.fields.slug ?? "/blog"}
+                rel="next"
+              >
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
+    </Container>
+  );
 }
 
 export default withStyles(styles)(BlogPostTemplate);
