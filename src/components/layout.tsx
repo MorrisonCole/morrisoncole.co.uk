@@ -26,25 +26,21 @@ interface LayoutProps extends WithStyles<typeof styles> {
   children: React.ReactNode;
 }
 
-class Layout extends React.Component<LayoutProps, {}> {
-  public render(): JSX.Element {
-    const { classes, location, children } = this.props;
+function Layout({ classes, location, children }: LayoutProps): JSX.Element {
+  return (
+    <div className={classes.site}>
+      <Container className={classes.siteContent} maxWidth="md">
+        <Header />
 
-    return (
-      <div className={classes.site}>
-        <Container className={classes.siteContent} maxWidth="md">
-          <Header />
+        <main>
+          <NavBar location={location} />
 
-          <main>
-            <NavBar location={location} />
-
-            {children}
-          </main>
-        </Container>
-        <Footer />
-      </div>
-    );
-  }
+          {children}
+        </main>
+      </Container>
+      <Footer />
+    </div>
+  );
 }
 
 export default withStyles(styles)(Layout);
