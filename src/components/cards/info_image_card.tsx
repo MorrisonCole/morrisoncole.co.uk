@@ -9,15 +9,6 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import Image, { FluidObject } from "gatsby-image";
 
-interface InfoImageCardProps {
-  title: string;
-  subtitle1: string;
-  text: string;
-  actionTitle: string;
-  actionHref: string;
-  image: FluidObject;
-}
-
 const styles = makeStyles({
   card: {
     maxWidth: 400,
@@ -28,36 +19,48 @@ const styles = makeStyles({
   },
 });
 
-export default function InfoImageCard(props: InfoImageCardProps): JSX.Element {
+interface InfoImageCardProps {
+  title: string;
+  subtitle1: string;
+  text: string;
+  actionTitle: string;
+  actionHref: string;
+  image: FluidObject;
+}
+
+export default function InfoImageCard({
+  title,
+  subtitle1,
+  text,
+  actionTitle,
+  actionHref,
+  image,
+}: InfoImageCardProps): JSX.Element {
   const classes = styles();
 
   return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia
-          className={classes.image}
-          component={Image}
-          fluid={props.image}
-        />
+        <CardMedia className={classes.image} component={Image} fluid={image} />
         <CardContent>
-          <Typography variant="h5">{props.title}</Typography>
+          <Typography variant="h5">{title}</Typography>
           <Typography gutterBottom color="textSecondary">
-            {props.subtitle1}
+            {subtitle1}
             <br />
           </Typography>
-          <Typography variant="body2">{props.text}</Typography>
+          <Typography variant="body2">{text}</Typography>
         </CardContent>
       </CardActionArea>
-      {props.actionTitle ? (
+      {actionTitle ? (
         <CardActions>
           <Button
             size="small"
             color="primary"
-            href={props.actionHref}
+            href={actionHref}
             target="_blank"
             rel="noopener"
           >
-            {props.actionTitle}
+            {actionTitle}
           </Button>
         </CardActions>
       ) : (
