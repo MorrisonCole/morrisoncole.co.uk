@@ -27,11 +27,10 @@ const styles = makeStyles((theme: Theme) =>
 );
 
 interface MusicProps {
-  location: Location;
   data: MusicQuery;
 }
 
-export default function Music(props: MusicProps): JSX.Element {
+export default function Music({ data }: MusicProps): JSX.Element {
   const classes = styles();
 
   const [expanded, setExpanded] = React.useState<string | false>("panel1");
@@ -61,7 +60,7 @@ export default function Music(props: MusicProps): JSX.Element {
           <section id="Latent%20Signal">
             <InfoImageCard
               title="Latent Signal"
-              image={props.data.latentSignal.childImageSharp.fluid}
+              image={data.latentSignal.childImageSharp.fluid}
               subtitle1="British band creating original music, covers, and (sometimes) the odd vlog."
               text={
                 "We've been writing music for over 10 years, and recently began releasing our creations as fully-fledged music videos."
@@ -88,7 +87,7 @@ export default function Music(props: MusicProps): JSX.Element {
           <section id="Parapraxis:%20Suite%20I%20(Clio)">
             <InfoImageCard
               title="Parapraxis: Suite I (Clio)"
-              image={props.data.clioCover.childImageSharp.fluid}
+              image={data.clioCover.childImageSharp.fluid}
               subtitle1="Game OST"
               text="An original EP for the game Parapraxis: Foundations. Orchestral / Orchestral Rock, recorded with a mixture of VSTs and live instruments."
               actionTitle="Listen On Bandcamp"

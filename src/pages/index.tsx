@@ -48,10 +48,12 @@ interface TimelineIndexProps {
   data: TimelineIndexQuery;
 }
 
-export default function TimelineIndex(props: TimelineIndexProps): JSX.Element {
+export default function TimelineIndex({
+  data,
+}: TimelineIndexProps): JSX.Element {
   const classes = styles();
 
-  const imageFiles = props.data.allFile.edges.map((edge) => edge.node);
+  const imageFiles = data.allFile.edges.map((edge) => edge.node);
   const listItems = life(
     new Map(imageFiles.map((i) => [i.name, i.childImageSharp]))
   ).map((item) => (

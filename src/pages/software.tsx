@@ -31,14 +31,13 @@ const styles = makeStyles((theme: Theme) =>
 );
 
 interface SoftwareProps {
-  location: Location;
   data: SoftwareQuery;
 }
 
-export default function Software(props: SoftwareProps): JSX.Element {
+export default function Software({ data }: SoftwareProps): JSX.Element {
   const classes = styles();
 
-  const listItems2020 = props.data.softwareJson?._2020.map((item) => (
+  const listItems2020 = data.softwareJson?._2020.map((item) => (
     <ListItem button key={item}>
       <ListItemIcon>
         <Star />
@@ -47,7 +46,7 @@ export default function Software(props: SoftwareProps): JSX.Element {
     </ListItem>
   ));
 
-  const listItems2019 = props.data.softwareJson?._2019.map((item) => (
+  const listItems2019 = data.softwareJson?._2019.map((item) => (
     <ListItem button key={item}>
       <ListItemIcon>
         <Star />

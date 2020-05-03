@@ -38,13 +38,12 @@ const styles = makeStyles((theme: Theme) =>
 );
 
 interface BlogProps {
-  location: Location;
   data: BlogIndexQuery;
 }
 
-export default function Blog(props: BlogProps): JSX.Element {
+export default function Blog({ data }: BlogProps): JSX.Element {
   const classes = styles();
-  const posts = props.data.allMdx.edges;
+  const posts = data.allMdx.edges;
 
   return (
     <Grid container className={classes.container} spacing={4}>
