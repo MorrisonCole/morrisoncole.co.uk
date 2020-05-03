@@ -7,14 +7,6 @@ import Typography from "@material-ui/core/Typography";
 import React from "react";
 import Image, { FluidObject } from "gatsby-image";
 
-interface TimelineImageCardProps {
-  title: string;
-  mainLink: string;
-  image: FluidObject;
-  subtitle1: string;
-  text: string;
-}
-
 const styles = makeStyles({
   card: {
     maxWidth: 345,
@@ -24,29 +16,36 @@ const styles = makeStyles({
   },
 });
 
-export default function TimelineImageCardRaw(
-  props: TimelineImageCardProps
-): JSX.Element {
+interface TimelineImageCardProps {
+  title: string;
+  mainLink: string;
+  image: FluidObject;
+  subtitle1: string;
+  text: string;
+}
+
+export default function TimelineImageCardRaw({
+  title,
+  mainLink,
+  image,
+  subtitle1,
+  text,
+}: TimelineImageCardProps): JSX.Element {
   const classes = styles();
 
   return (
     <Card className={classes.card}>
-      <CardActionArea href={props.mainLink} target="_blank" rel="noopener">
-        <CardMedia
-          component={Image}
-          fluid={props.image}
-          alt={props.title}
-          title={props.title}
-        />
+      <CardActionArea href={mainLink} target="_blank" rel="noopener">
+        <CardMedia component={Image} fluid={image} alt={title} title={title} />
         <CardContent>
           <Typography variant="h5" component="h2">
-            {props.title}
+            {title}
           </Typography>
           <Typography className={classes.pos} color="textSecondary">
-            {props.subtitle1}
+            {subtitle1}
           </Typography>
           <Typography variant="body2" component="p">
-            {props.text}
+            {text}
           </Typography>
         </CardContent>
       </CardActionArea>

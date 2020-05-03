@@ -28,7 +28,7 @@ interface NavBarProps {
   location: Location;
 }
 
-export default function NavBar(props: NavBarProps): JSX.Element {
+export default function NavBar({ location }: NavBarProps): JSX.Element {
   const classes = styles();
 
   const [, setValue] = React.useState(0);
@@ -41,7 +41,7 @@ export default function NavBar(props: NavBarProps): JSX.Element {
     <Grid container direction="column" alignItems="center">
       <Grid item>
         <Tabs
-          value={props.location.pathname.split("/")[1]}
+          value={location.pathname.split("/")[1]}
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
