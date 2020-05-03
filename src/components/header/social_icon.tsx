@@ -3,12 +3,6 @@ import IconButton from "@material-ui/core/IconButton";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import React from "react";
 
-interface SocialIconProps {
-  ariaLabel: string;
-  href: string;
-  icon: React.ReactNode;
-}
-
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     iconButton: {
@@ -18,18 +12,28 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function SocialIcon(props: SocialIconProps): JSX.Element {
+interface SocialIconProps {
+  ariaLabel: string;
+  href: string;
+  icon: React.ReactNode;
+}
+
+export default function SocialIcon({
+  ariaLabel,
+  href,
+  icon,
+}: SocialIconProps): JSX.Element {
   const classes = useStyles();
 
   return (
     <IconButton
-      aria-label={props.ariaLabel}
-      href={props.href}
+      aria-label={ariaLabel}
+      href={href}
       target="_blank"
       rel="noopener"
       className={classes.iconButton}
     >
-      {props.icon}
+      {icon}
     </IconButton>
   );
 }
