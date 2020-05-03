@@ -16,9 +16,17 @@ interface CustomVerticalTimelineElementProps {
   position?: string;
 }
 
-export default function CustomVerticalTimelineElement(
-  props: CustomVerticalTimelineElementProps
-): JSX.Element {
+export default function CustomVerticalTimelineElement({
+  id,
+  children,
+  className,
+  icon,
+  iconStyle,
+  iconOnClick,
+  style,
+  date,
+  position,
+}: CustomVerticalTimelineElementProps): JSX.Element {
   const [visible, setVisible] = React.useState<{}>(false);
 
   const handleChange = (isVisible: boolean): void => {
@@ -29,13 +37,13 @@ export default function CustomVerticalTimelineElement(
 
   return (
     <div
-      id={props.id}
-      className={classNames(props.className, "vertical-timeline-element", {
-        "vertical-timeline-element--left": props.position === "left",
-        "vertical-timeline-element--right": props.position === "right",
-        "vertical-timeline-element--no-children": props.children === null,
+      id={id}
+      className={classNames(className, "vertical-timeline-element", {
+        "vertical-timeline-element--left": position === "left",
+        "vertical-timeline-element--right": position === "right",
+        "vertical-timeline-element--no-children": children === null,
       })}
-      style={props.style}
+      style={style}
     >
       <VisibilitySensor
         partialVisibility
@@ -44,22 +52,22 @@ export default function CustomVerticalTimelineElement(
       >
         <div>
           <span
-            style={props.iconStyle}
-            onClick={props.iconOnClick}
+            style={iconStyle}
+            onClick={iconOnClick}
             className={`vertical-timeline-element-icon ${
               visible ? "bounce-in" : "is-hidden"
             }`}
           >
-            {props.icon}
+            {icon}
           </span>
           <div
             className={`custom-vertical-timeline-element-content ${
               visible ? "bounce-in" : "is-hidden"
             }`}
           >
-            {props.children}
+            {children}
             <Typography variant="h5" className="vertical-timeline-element-date">
-              {props.date}
+              {date}
             </Typography>
           </div>
         </div>

@@ -8,15 +8,15 @@ interface SimpleBreadcrumbsProps {
   location: string;
 }
 
-export default function SimpleBreadcrumbs(
-  props: SimpleBreadcrumbsProps
-): JSX.Element {
+export default function SimpleBreadcrumbs({
+  location,
+}: SimpleBreadcrumbsProps): JSX.Element {
   return (
     <Breadcrumbs aria-label="breadcrumb">
       <Link color="inherit" component={GatsbyLink} to="/blog/">
         Blog
       </Link>
-      <Typography color="textPrimary">{props.location}</Typography>
+      <Typography color="textPrimary">{location}</Typography>
     </Breadcrumbs>
   );
 }

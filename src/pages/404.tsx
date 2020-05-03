@@ -1,7 +1,5 @@
-import { graphql } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
-import { NotFoundPageQuery } from "../../types/graphql-types";
 import {
   Grid,
   Paper,
@@ -28,12 +26,11 @@ const styles = makeStyles((theme: Theme) =>
 
 interface NotFoundPageProps {
   location: Location;
-  data: NotFoundPageQuery;
 }
 
-export default function NotFoundPage(
-  notFoundPageProps: NotFoundPageProps
-): JSX.Element {
+export default function NotFoundPage({
+  location,
+}: NotFoundPageProps): JSX.Element {
   const classes = styles();
 
   return (
@@ -52,20 +49,10 @@ export default function NotFoundPage(
           </Typography>
           <Alert severity="error" className={classes.alert}>
             Oh you explorer you! Unfortunately, there&apos;s no page at
-            {` ${notFoundPageProps.location.pathname}`}
+            {` ${location.pathname}`}
           </Alert>
         </Paper>
       </Grid>
     </div>
   );
 }
-
-export const pageQuery = graphql`
-  query NotFoundPage {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;
