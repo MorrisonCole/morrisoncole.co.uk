@@ -5568,19 +5568,6 @@ export type SeoQuery = { __typename?: "Query" } & {
   >;
 };
 
-export type NotFoundPageQueryVariables = {};
-
-export type NotFoundPageQuery = { __typename?: "Query" } & {
-  site?: Maybe<
-    { __typename?: "Site" } & {
-      siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
-        SiteSiteMetadata,
-        "title"
-      >;
-    }
-  >;
-};
-
 export type BlogIndexQueryVariables = {};
 
 export type BlogIndexQuery = { __typename?: "Query" } & {
@@ -5744,7 +5731,7 @@ export type BlogPostBySlugQuery = { __typename?: "Query" } & {
                       book?: Maybe<
                         { __typename?: "GoodreadsBook" } & Pick<
                           GoodreadsBook,
-                          "title" | "link" | "image_url"
+                          "title" | "link" | "image_url" | "small_image_url"
                         > & {
                             authors?: Maybe<
                               Array<
