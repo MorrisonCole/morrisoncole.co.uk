@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "gamunu.vscode-yarn",
-    "mauve.terraform"
+    "mauve.terraform",
+    "silvenon.mdx"
   ]
 }
