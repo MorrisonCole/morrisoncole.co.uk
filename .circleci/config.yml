@@ -24,7 +24,7 @@ workflows:
 executors:
   docker_executor:
     docker:
-      - image: circleci/node:13.7.0
+      - image: circleci/node:14.2.0
     working_directory: ~/repo
 
 commands:
