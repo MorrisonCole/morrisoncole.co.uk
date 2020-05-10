@@ -9,6 +9,7 @@ import {
   createStyles,
 } from "@material-ui/core";
 import Alert from "@material-ui/lab/Alert";
+import { PageProps } from "gatsby";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -24,18 +25,12 @@ const styles = makeStyles((theme: Theme) =>
   })
 );
 
-interface NotFoundPageProps {
-  location: Location;
-}
-
-export default function NotFoundPage({
-  location,
-}: NotFoundPageProps): JSX.Element {
+export default function NotFoundPage({ location }: PageProps): JSX.Element {
   const classes = styles();
 
   return (
     <div>
-      <SEO title="404: Not Found" />
+      <SEO title="404: Not Found" location={location} />
       <Grid
         container
         className={classes.container}

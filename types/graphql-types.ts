@@ -613,6 +613,7 @@ export type MdxFrontmatterFilterInput = {
   description?: Maybe<StringQueryOperatorInput>;
   category?: Maybe<StringQueryOperatorInput>;
   image?: Maybe<FileFilterInput>;
+  imageAlt?: Maybe<StringQueryOperatorInput>;
   linkText?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -1031,8 +1032,8 @@ export type ImageSharpFluid = {
   sizes: Scalars["String"];
   originalImg?: Maybe<Scalars["String"]>;
   originalName?: Maybe<Scalars["String"]>;
-  presentationWidth?: Maybe<Scalars["Int"]>;
-  presentationHeight?: Maybe<Scalars["Int"]>;
+  presentationWidth: Scalars["Int"];
+  presentationHeight: Scalars["Int"];
 };
 
 export type ImageSharpSizes = {
@@ -1047,8 +1048,8 @@ export type ImageSharpSizes = {
   sizes: Scalars["String"];
   originalImg?: Maybe<Scalars["String"]>;
   originalName?: Maybe<Scalars["String"]>;
-  presentationWidth?: Maybe<Scalars["Int"]>;
-  presentationHeight?: Maybe<Scalars["Int"]>;
+  presentationWidth: Scalars["Int"];
+  presentationHeight: Scalars["Int"];
 };
 
 export type ImageSharpOriginal = {
@@ -1119,6 +1120,7 @@ export type MdxFrontmatter = {
   description?: Maybe<Scalars["String"]>;
   category?: Maybe<Scalars["String"]>;
   image?: Maybe<File>;
+  imageAlt?: Maybe<Scalars["String"]>;
   linkText?: Maybe<Scalars["String"]>;
 };
 
@@ -1463,6 +1465,7 @@ export enum FileFieldsEnum {
   ChildMdxFrontmatterImagePublicUrl = "childMdx___frontmatter___image___publicURL",
   ChildMdxFrontmatterImageId = "childMdx___frontmatter___image___id",
   ChildMdxFrontmatterImageChildren = "childMdx___frontmatter___image___children",
+  ChildMdxFrontmatterImageAlt = "childMdx___frontmatter___imageAlt",
   ChildMdxFrontmatterLinkText = "childMdx___frontmatter___linkText",
   ChildMdxBody = "childMdx___body",
   ChildMdxExcerpt = "childMdx___excerpt",
@@ -2475,6 +2478,7 @@ export type SiteSiteMetadataFilterInput = {
   author?: Maybe<StringQueryOperatorInput>;
   siteUrl?: Maybe<StringQueryOperatorInput>;
   image?: Maybe<StringQueryOperatorInput>;
+  imageAlt?: Maybe<StringQueryOperatorInput>;
   social?: Maybe<SiteSiteMetadataSocialFilterInput>;
 };
 
@@ -2510,12 +2514,13 @@ export type SiteSiteMetadata = {
   author: Scalars["String"];
   siteUrl: Scalars["String"];
   image: Scalars["String"];
-  social?: Maybe<SiteSiteMetadataSocial>;
+  imageAlt: Scalars["String"];
+  social: SiteSiteMetadataSocial;
 };
 
 export type SiteSiteMetadataSocial = {
   __typename?: "SiteSiteMetadataSocial";
-  twitter?: Maybe<Scalars["String"]>;
+  twitter: Scalars["String"];
 };
 
 export type SiteFilterInput = {
@@ -2543,6 +2548,7 @@ export enum SiteFieldsEnum {
   SiteMetadataAuthor = "siteMetadata___author",
   SiteMetadataSiteUrl = "siteMetadata___siteUrl",
   SiteMetadataImage = "siteMetadata___image",
+  SiteMetadataImageAlt = "siteMetadata___imageAlt",
   SiteMetadataSocialTwitter = "siteMetadata___social___twitter",
   Port = "port",
   Host = "host",
@@ -2678,6 +2684,7 @@ export type MarkdownHeadingFilterListInput = {
 };
 
 export type MarkdownHeadingFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
   value?: Maybe<StringQueryOperatorInput>;
   depth?: Maybe<IntQueryOperatorInput>;
 };
@@ -2743,6 +2750,7 @@ export enum MarkdownHeadingLevels {
 
 export type MarkdownHeading = {
   __typename?: "MarkdownHeading";
+  id?: Maybe<Scalars["String"]>;
   value?: Maybe<Scalars["String"]>;
   depth?: Maybe<Scalars["Int"]>;
 };
@@ -2781,6 +2789,7 @@ export enum MarkdownRemarkFieldsEnum {
   Excerpt = "excerpt",
   ExcerptAst = "excerptAst",
   Headings = "headings",
+  HeadingsId = "headings___id",
   HeadingsValue = "headings___value",
   HeadingsDepth = "headings___depth",
   TimeToRead = "timeToRead",
@@ -3174,6 +3183,7 @@ export enum MdxFieldsEnum {
   FrontmatterImageChildMdxTimeToRead = "frontmatter___image___childMdx___timeToRead",
   FrontmatterImageChildMdxId = "frontmatter___image___childMdx___id",
   FrontmatterImageChildMdxChildren = "frontmatter___image___childMdx___children",
+  FrontmatterImageAlt = "frontmatter___imageAlt",
   FrontmatterLinkText = "frontmatter___linkText",
   Body = "body",
   Excerpt = "excerpt",
@@ -5355,6 +5365,13 @@ export type GatsbyImageSharpFluidFragment = {
   "base64" | "aspectRatio" | "src" | "srcSet" | "sizes"
 >;
 
+export type GatsbyImageSharpFluidLimitPresentationSizeFragment = {
+  __typename?: "ImageSharpFluid";
+} & {
+  maxHeight: ImageSharpFluid["presentationHeight"];
+  maxWidth: ImageSharpFluid["presentationWidth"];
+};
+
 export type GatsbyImageSharpFluid_TracedSvgFragment = {
   __typename?: "ImageSharpFluid";
 } & Pick<
@@ -5517,11 +5534,9 @@ export type BioQuery = { __typename?: "Query" } & {
         SiteSiteMetadata,
         "author"
       > & {
-          social?: Maybe<
-            { __typename?: "SiteSiteMetadataSocial" } & Pick<
-              SiteSiteMetadataSocial,
-              "twitter"
-            >
+          social: { __typename?: "SiteSiteMetadataSocial" } & Pick<
+            SiteSiteMetadataSocial,
+            "twitter"
           >;
         };
     }
@@ -5562,8 +5577,13 @@ export type SeoQuery = { __typename?: "Query" } & {
     { __typename?: "Site" } & {
       siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
         SiteSiteMetadata,
-        "title" | "description" | "author" | "image" | "siteUrl"
-      >;
+        "title" | "description" | "author" | "image" | "imageAlt" | "siteUrl"
+      > & {
+          social: { __typename?: "SiteSiteMetadataSocial" } & Pick<
+            SiteSiteMetadataSocial,
+            "twitter"
+          >;
+        };
     }
   >;
 };
@@ -5695,7 +5715,12 @@ export type BlogPostBySlugQuery = { __typename?: "Query" } & {
         frontmatter?: Maybe<
           { __typename?: "MdxFrontmatter" } & Pick<
             MdxFrontmatter,
-            "title" | "date" | "updated" | "description" | "category"
+            | "title"
+            | "date"
+            | "updated"
+            | "description"
+            | "category"
+            | "imageAlt"
           > & {
               image?: Maybe<
                 { __typename?: "File" } & {
@@ -5731,7 +5756,7 @@ export type BlogPostBySlugQuery = { __typename?: "Query" } & {
                       book?: Maybe<
                         { __typename?: "GoodreadsBook" } & Pick<
                           GoodreadsBook,
-                          "title" | "link" | "image_url" | "small_image_url"
+                          "title" | "link" | "image_url"
                         > & {
                             authors?: Maybe<
                               Array<

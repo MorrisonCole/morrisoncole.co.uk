@@ -20,6 +20,7 @@ import { StyleRules } from "@material-ui/core/styles/withStyles";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
 import MDXLayout from "../components/blog/mdx-layout";
+import { WindowLocation } from "@reach/router";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -32,13 +33,14 @@ const styles = ({ spacing }: Theme): StyleRules =>
   });
 
 interface BlogPostTemplateProps extends WithStyles<typeof styles> {
-  location: Location;
+  location: WindowLocation;
   data: BlogPostBySlugQuery;
   pageContext: SitePageContext;
 }
 
 function BlogPostTemplate({
   classes,
+  location,
   data,
   pageContext,
 }: BlogPostTemplateProps): JSX.Element {
@@ -48,9 +50,11 @@ function BlogPostTemplate({
   return (
     <Container className={classes.container} maxWidth="md" direction="column">
       <SEO
+        location={location}
         title={post.frontmatter.title}
         description={post.frontmatter.description ?? post.excerpt}
         image={post?.frontmatter?.image?.childImageSharp?.fluid.src}
+        imageAlt={post?.frontmatter?.imageAlt}
         article
       />
 
@@ -138,6 +142,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        imageAlt
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {
