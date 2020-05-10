@@ -34,7 +34,10 @@ interface SoftwareProps {
   data: SoftwareQuery;
 }
 
-export default function Software({ data }: SoftwareProps): JSX.Element {
+export default function Software({
+  data,
+  location,
+}: SoftwareProps & PageProps): JSX.Element {
   const classes = styles();
 
   const listItems2020 = data.softwareJson?._2020.map((item) => (
@@ -57,7 +60,7 @@ export default function Software({ data }: SoftwareProps): JSX.Element {
 
   return (
     <>
-      <SEO title="Software" />
+      <SEO title="Software" location={location} />
       <Grid
         container
         className={classes.container}

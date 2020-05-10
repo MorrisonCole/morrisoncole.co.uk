@@ -78,6 +78,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       author: String!
       siteUrl: String!
       image: String!
+      imageAlt: String!
+      social: SiteSiteMetadataSocial!
+    }
+
+    type SiteSiteMetadataSocial {
+      twitter: String!
     }
 
     type SoftwareJson implements Node {

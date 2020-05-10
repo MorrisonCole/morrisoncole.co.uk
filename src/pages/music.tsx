@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import React from "react";
 import InfoImageCard from "../components/cards/info_image_card";
 import SEO from "../components/seo";
@@ -30,7 +30,10 @@ interface MusicProps {
   data: MusicQuery;
 }
 
-export default function Music({ data }: MusicProps): JSX.Element {
+export default function Music({
+  data,
+  location,
+}: MusicProps & PageProps): JSX.Element {
   const classes = styles();
 
   const [expanded, setExpanded] = React.useState<string | false>("panel1");
@@ -44,7 +47,7 @@ export default function Music({ data }: MusicProps): JSX.Element {
 
   return (
     <div className={classes.container}>
-      <SEO title="Music" />
+      <SEO title="Music" location={location} />
       <ExpansionPanel
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}

@@ -10,7 +10,7 @@ import {
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
-import { graphql, Link } from "gatsby";
+import { graphql, Link, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import { BlogIndexQuery } from "../../types/graphql-types";
@@ -41,13 +41,16 @@ interface BlogProps {
   data: BlogIndexQuery;
 }
 
-export default function Blog({ data }: BlogProps): JSX.Element {
+export default function Blog({
+  data,
+  location,
+}: BlogProps & PageProps): JSX.Element {
   const classes = styles();
   const posts = data.allMdx.edges;
 
   return (
     <Grid container className={classes.container} spacing={4}>
-      <SEO title="Blog" />
+      <SEO title="Blog" location={location} />
 
       {posts.map(({ node }) => {
         const title = node.frontmatter?.title ?? node.fields?.slug;

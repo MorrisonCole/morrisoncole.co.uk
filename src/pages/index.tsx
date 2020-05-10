@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { GetApp, Star } from "@material-ui/icons";
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import React from "react";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
@@ -50,7 +50,8 @@ interface TimelineIndexProps {
 
 export default function TimelineIndex({
   data,
-}: TimelineIndexProps): JSX.Element {
+  location,
+}: TimelineIndexProps & PageProps): JSX.Element {
   const classes = styles();
 
   const imageFiles = data.allFile.edges.map((edge) => edge.node);
@@ -76,7 +77,7 @@ export default function TimelineIndex({
 
   return (
     <div>
-      <SEO title="Timeline" />
+      <SEO title="Timeline" location={location} />
       <Grid container direction="column" alignItems="center">
         <Grid item className={classes.introContainer}>
           <Paper className={classes.introTextPaper}>

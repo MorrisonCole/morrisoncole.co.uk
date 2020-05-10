@@ -1,4 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
+import { WindowLocation } from "@reach/router";
 import React from "react";
 import { SeoQuery } from "../../types/graphql-types";
 import { Helmet } from "react-helmet";
@@ -10,6 +11,8 @@ interface SEOProps {
   meta?: [];
   article?: boolean;
   image?: string;
+  imageAlt?: string;
+  location: WindowLocation;
 }
 
 function SEO({
@@ -19,6 +22,8 @@ function SEO({
   meta,
   article = false,
   image,
+  imageAlt,
+  location,
 }: SEOProps): JSX.Element {
   const { site }: SeoQuery = useStaticQuery(
     graphql`
@@ -29,7 +34,11 @@ function SEO({
             description
             author
             image
+            imageAlt
             siteUrl
+            social {
+              twitter
+            }
           }
         }
       }
@@ -43,6 +52,7 @@ function SEO({
   const metaDescription = description ?? site.siteMetadata.description;
   const contentType = article ? "article" : "website";
   const imagePath: string = image ?? site.siteMetadata.image;
+  const imageAltText: string = imageAlt ?? site.siteMetadata.imageAlt;
 
   return (
     <Helmet
@@ -55,6 +65,10 @@ function SEO({
         {
           name: "description",
           content: metaDescription,
+        },
+        {
+          property: "og:site_name",
+          content: site.siteMetadata.title,
         },
         {
           property: "og:title",
@@ -73,12 +87,28 @@ function SEO({
           content: `${site.siteMetadata.siteUrl}${imagePath}`,
         },
         {
+          property: "og:image:alt",
+          content: imageAltText,
+        },
+        {
+          property: "og:url",
+          content: `${site.siteMetadata.siteUrl}${location.pathname}`,
+        },
+        {
+          property: "og:locale",
+          content: lang,
+        },
+        {
           name: "twitter:card",
           content: "summary",
         },
         {
+          name: "twitter:site",
+          content: site.siteMetadata.social.twitter,
+        },
+        {
           name: "twitter:creator",
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.social.twitter,
         },
         {
           name: "twitter:title",

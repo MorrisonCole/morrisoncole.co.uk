@@ -9,9 +9,10 @@ module.exports = {
     and previously worked for Shazam & Improbable. Right now, I'm developing AI-based medicine at Medmain (amongst other things!).`,
     siteUrl: rawUrl, // Don't include a trailing slash!
     social: {
-      twitter: "morrisoncole",
+      twitter: "@morrisoncole",
     },
     image: "/morrison-cole.jpg",
+    imageAlt: "Morrison Cole Logo",
   },
   plugins: [
     {
