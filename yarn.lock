@@ -7256,7 +7256,7 @@ gatsby-cli@^2.12.18:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.2.1, gatsby-core-utils@^1.2.2:
+gatsby-core-utils@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.2.2.tgz#19ad6e3917e4748333d952a04ec30ade02fe81fd"
   integrity sha512-EdVUq0K7C9t32V7wndldUmUGzZp8EwU8gNMc1dtI1whyDUaUuZa6zlkbkpJwbwhPhRHdao5zhvHJXydhgzTEog==
@@ -7399,10 +7399,10 @@ gatsby-plugin-page-creator@^2.3.2:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-preconnect@1.1.31:
-  version "1.1.31"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.1.31.tgz#54bb03970b6687850b99b8cb5acfc5181e08f78f"
-  integrity sha512-MhRHHsazoce1yu0SPDjCaOoOWanEOOBDTzpjCfCA8kF/jjrLbupaRgVVeLK05FU25KU9Jr4XPXCYb+wEsCtrzw==
+gatsby-plugin-preconnect@1.1.32:
+  version "1.1.32"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preconnect/-/gatsby-plugin-preconnect-1.1.32.tgz#a0bfac7f18e69e43bc58e33573de59ff9ca51ce3"
+  integrity sha512-l5HsF5isyQiRWxhWiaPAf31biDv/lBiLKGmz+xmB3O5i7qXQAz6eSXk0YivjcfLJJ/F6hPjuJCAxdqBsVJlNhg==
   dependencies:
     "@babel/runtime" "^7.4.3"
 
