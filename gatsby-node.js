@@ -11,13 +11,15 @@ exports.createPages = async ({ graphql, actions }) => {
     `
       {
         allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { fields: [exports___meta___date], order: DESC }
           limit: 1000
         ) {
           edges {
             node {
-              frontmatter {
-                title
+              exports {
+                meta {
+                  title
+                }
               }
               fields {
                 slug

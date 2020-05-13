@@ -91,7 +91,7 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "generate": "graphql-codegen",
+    "codegen": "graphql-codegen",
     "deploy": "gatsby-plugin-s3 deploy -y",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:prettier": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --check",

@@ -53,12 +53,13 @@ export default function Blog({
       <SEO title="Blog" location={location} />
 
       {posts.map(({ node }) => {
-        const title = node.frontmatter?.title ?? node.fields?.slug;
-        const date = node.frontmatter?.date ?? "";
-        const description = node.frontmatter?.description ?? node.excerpt ?? "";
+        const title = node.exports?.meta?.title ?? node.fields?.slug;
+        const date = node.exports?.meta?.date ?? "";
+        const description =
+          node.exports?.meta?.description ?? node.excerpt ?? "";
         const link = node.fields?.slug ?? "";
-        const linkText = node.frontmatter?.linkText ?? "Continue to post...";
-        const image = node.frontmatter?.image?.childImageSharp?.fluid;
+        const linkText = node.exports?.meta?.linkText ?? "Continue to post...";
+        const image = node.exports?.meta?.image?.childImageSharp?.fluid;
 
         return (
           <Grid key={title} item xs={12} md={6}>
@@ -106,22 +107,24 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [exports___meta___date], order: DESC }) {
       edges {
         node {
           excerpt
           fields {
             slug
           }
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            description
-            linkText
-            image {
-              childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
+          exports {
+            meta {
+              title
+              date(formatString: "MMMM DD, YYYY")
+              description
+              linkText
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
