@@ -51,23 +51,23 @@ function BlogPostTemplate({
     <Container className={classes.container} maxWidth="md" direction="column">
       <SEO
         location={location}
-        title={post.frontmatter.title}
-        description={post.frontmatter.description ?? post.excerpt}
-        image={post?.frontmatter?.image?.childImageSharp?.fluid.src}
-        imageAlt={post?.frontmatter?.imageAlt}
+        title={post.exports?.meta.title}
+        description={post.exports?.meta.description ?? post.excerpt}
+        image={post?.exports?.meta?.image?.childImageSharp?.fluid.src}
+        imageAlt={post?.exports?.meta?.imageAlt}
         article
       />
 
       <Grid item className={classes.breadcrumbContainer}>
         <SimpleBreadcrumbs
-          location={post?.frontmatter?.category ?? "Unknown"}
+          location={post?.exports?.meta?.category ?? "Unknown"}
         />
       </Grid>
 
       <article>
         <header>
-          <Typography variant="h4">{post.frontmatter.title}</Typography>
-          <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
+          <Typography variant="h4">{post.exports?.meta.title}</Typography>
+          <Typography variant="subtitle2">{post.exports?.meta.date}</Typography>
         </header>
         <section>
           <MDXLayout>
@@ -94,7 +94,7 @@ function BlogPostTemplate({
                 to={previous.fields.slug ?? "/blog"}
                 rel="prev"
               >
-                ← {previous.frontmatter.title}
+                ← {previous.exports?.meta.title}
               </Link>
             )}
           </li>
@@ -105,7 +105,7 @@ function BlogPostTemplate({
                 to={next.fields.slug ?? "/blog"}
                 rel="next"
               >
-                {next.frontmatter.title} →
+                {next.exports?.meta.title} →
               </Link>
             )}
           </li>
@@ -129,20 +129,22 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       body
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        updated(formatString: "MMMM DD, YYYY")
-        description
-        category
-        image {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
+      exports {
+        meta {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          updated(formatString: "MMMM DD, YYYY")
+          description
+          category
+          image {
+            childImageSharp {
+              fluid(maxWidth: 800) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
+          imageAlt
         }
-        imageAlt
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {

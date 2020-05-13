@@ -240,6 +240,7 @@ export type QueryMdxArgs = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
+  exports?: Maybe<MdxExportsFilterInput>;
   fields?: Maybe<MdxFieldsFilterInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
@@ -599,6 +600,7 @@ export type MdxFilterInput = {
   tableOfContents?: Maybe<JsonQueryOperatorInput>;
   timeToRead?: Maybe<IntQueryOperatorInput>;
   wordCount?: Maybe<MdxWordCountFilterInput>;
+  exports?: Maybe<MdxExportsFilterInput>;
   fields?: Maybe<MdxFieldsFilterInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
@@ -607,6 +609,38 @@ export type MdxFilterInput = {
 };
 
 export type MdxFrontmatterFilterInput = {
+  title?: Maybe<StringQueryOperatorInput>;
+};
+
+export type MdxHeadingMdxFilterListInput = {
+  elemMatch?: Maybe<MdxHeadingMdxFilterInput>;
+};
+
+export type MdxHeadingMdxFilterInput = {
+  value?: Maybe<StringQueryOperatorInput>;
+  depth?: Maybe<IntQueryOperatorInput>;
+};
+
+export type JsonQueryOperatorInput = {
+  eq?: Maybe<Scalars["JSON"]>;
+  ne?: Maybe<Scalars["JSON"]>;
+  in?: Maybe<Array<Maybe<Scalars["JSON"]>>>;
+  nin?: Maybe<Array<Maybe<Scalars["JSON"]>>>;
+  regex?: Maybe<Scalars["JSON"]>;
+  glob?: Maybe<Scalars["JSON"]>;
+};
+
+export type MdxWordCountFilterInput = {
+  paragraphs?: Maybe<IntQueryOperatorInput>;
+  sentences?: Maybe<IntQueryOperatorInput>;
+  words?: Maybe<IntQueryOperatorInput>;
+};
+
+export type MdxExportsFilterInput = {
+  meta?: Maybe<MdxExportsMetaFilterInput>;
+};
+
+export type MdxExportsMetaFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   date?: Maybe<DateQueryOperatorInput>;
   updated?: Maybe<DateQueryOperatorInput>;
@@ -659,30 +693,6 @@ export type FileFilterInput = {
   internal?: Maybe<InternalFilterInput>;
   childSoftwareJson?: Maybe<SoftwareJsonFilterInput>;
   childMdx?: Maybe<MdxFilterInput>;
-};
-
-export type MdxHeadingMdxFilterListInput = {
-  elemMatch?: Maybe<MdxHeadingMdxFilterInput>;
-};
-
-export type MdxHeadingMdxFilterInput = {
-  value?: Maybe<StringQueryOperatorInput>;
-  depth?: Maybe<IntQueryOperatorInput>;
-};
-
-export type JsonQueryOperatorInput = {
-  eq?: Maybe<Scalars["JSON"]>;
-  ne?: Maybe<Scalars["JSON"]>;
-  in?: Maybe<Array<Maybe<Scalars["JSON"]>>>;
-  nin?: Maybe<Array<Maybe<Scalars["JSON"]>>>;
-  regex?: Maybe<Scalars["JSON"]>;
-  glob?: Maybe<Scalars["JSON"]>;
-};
-
-export type MdxWordCountFilterInput = {
-  paragraphs?: Maybe<IntQueryOperatorInput>;
-  sentences?: Maybe<IntQueryOperatorInput>;
-  words?: Maybe<IntQueryOperatorInput>;
 };
 
 export type MdxFieldsFilterInput = {
@@ -1092,6 +1102,7 @@ export type Mdx = Node & {
   tableOfContents?: Maybe<Scalars["JSON"]>;
   timeToRead?: Maybe<Scalars["Int"]>;
   wordCount?: Maybe<MdxWordCount>;
+  exports?: Maybe<MdxExports>;
   fields?: Maybe<MdxFields>;
   id: Scalars["ID"];
   parent?: Maybe<Node>;
@@ -1115,27 +1126,6 @@ export type MdxTableOfContentsArgs = {
 export type MdxFrontmatter = {
   __typename?: "MdxFrontmatter";
   title: Scalars["String"];
-  date?: Maybe<Scalars["Date"]>;
-  updated?: Maybe<Scalars["Date"]>;
-  description?: Maybe<Scalars["String"]>;
-  category?: Maybe<Scalars["String"]>;
-  image?: Maybe<File>;
-  imageAlt?: Maybe<Scalars["String"]>;
-  linkText?: Maybe<Scalars["String"]>;
-};
-
-export type MdxFrontmatterDateArgs = {
-  formatString?: Maybe<Scalars["String"]>;
-  fromNow?: Maybe<Scalars["Boolean"]>;
-  difference?: Maybe<Scalars["String"]>;
-  locale?: Maybe<Scalars["String"]>;
-};
-
-export type MdxFrontmatterUpdatedArgs = {
-  formatString?: Maybe<Scalars["String"]>;
-  fromNow?: Maybe<Scalars["Boolean"]>;
-  difference?: Maybe<Scalars["String"]>;
-  locale?: Maybe<Scalars["String"]>;
 };
 
 export enum HeadingsMdx {
@@ -1158,6 +1148,37 @@ export type MdxWordCount = {
   paragraphs?: Maybe<Scalars["Int"]>;
   sentences?: Maybe<Scalars["Int"]>;
   words?: Maybe<Scalars["Int"]>;
+};
+
+export type MdxExports = {
+  __typename?: "MdxExports";
+  meta?: Maybe<MdxExportsMeta>;
+};
+
+export type MdxExportsMeta = {
+  __typename?: "MdxExportsMeta";
+  title?: Maybe<Scalars["String"]>;
+  date?: Maybe<Scalars["Date"]>;
+  updated?: Maybe<Scalars["Date"]>;
+  description?: Maybe<Scalars["String"]>;
+  category?: Maybe<Scalars["String"]>;
+  image?: Maybe<File>;
+  imageAlt?: Maybe<Scalars["String"]>;
+  linkText?: Maybe<Scalars["String"]>;
+};
+
+export type MdxExportsMetaDateArgs = {
+  formatString?: Maybe<Scalars["String"]>;
+  fromNow?: Maybe<Scalars["Boolean"]>;
+  difference?: Maybe<Scalars["String"]>;
+  locale?: Maybe<Scalars["String"]>;
+};
+
+export type MdxExportsMetaUpdatedArgs = {
+  formatString?: Maybe<Scalars["String"]>;
+  fromNow?: Maybe<Scalars["Boolean"]>;
+  difference?: Maybe<Scalars["String"]>;
+  locale?: Maybe<Scalars["String"]>;
 };
 
 export type MdxFields = {
@@ -1425,48 +1446,6 @@ export enum FileFieldsEnum {
   ChildMdxRawBody = "childMdx___rawBody",
   ChildMdxFileAbsolutePath = "childMdx___fileAbsolutePath",
   ChildMdxFrontmatterTitle = "childMdx___frontmatter___title",
-  ChildMdxFrontmatterDate = "childMdx___frontmatter___date",
-  ChildMdxFrontmatterUpdated = "childMdx___frontmatter___updated",
-  ChildMdxFrontmatterDescription = "childMdx___frontmatter___description",
-  ChildMdxFrontmatterCategory = "childMdx___frontmatter___category",
-  ChildMdxFrontmatterImageSourceInstanceName = "childMdx___frontmatter___image___sourceInstanceName",
-  ChildMdxFrontmatterImageAbsolutePath = "childMdx___frontmatter___image___absolutePath",
-  ChildMdxFrontmatterImageRelativePath = "childMdx___frontmatter___image___relativePath",
-  ChildMdxFrontmatterImageExtension = "childMdx___frontmatter___image___extension",
-  ChildMdxFrontmatterImageSize = "childMdx___frontmatter___image___size",
-  ChildMdxFrontmatterImagePrettySize = "childMdx___frontmatter___image___prettySize",
-  ChildMdxFrontmatterImageModifiedTime = "childMdx___frontmatter___image___modifiedTime",
-  ChildMdxFrontmatterImageAccessTime = "childMdx___frontmatter___image___accessTime",
-  ChildMdxFrontmatterImageChangeTime = "childMdx___frontmatter___image___changeTime",
-  ChildMdxFrontmatterImageBirthTime = "childMdx___frontmatter___image___birthTime",
-  ChildMdxFrontmatterImageRoot = "childMdx___frontmatter___image___root",
-  ChildMdxFrontmatterImageDir = "childMdx___frontmatter___image___dir",
-  ChildMdxFrontmatterImageBase = "childMdx___frontmatter___image___base",
-  ChildMdxFrontmatterImageExt = "childMdx___frontmatter___image___ext",
-  ChildMdxFrontmatterImageName = "childMdx___frontmatter___image___name",
-  ChildMdxFrontmatterImageRelativeDirectory = "childMdx___frontmatter___image___relativeDirectory",
-  ChildMdxFrontmatterImageDev = "childMdx___frontmatter___image___dev",
-  ChildMdxFrontmatterImageMode = "childMdx___frontmatter___image___mode",
-  ChildMdxFrontmatterImageNlink = "childMdx___frontmatter___image___nlink",
-  ChildMdxFrontmatterImageUid = "childMdx___frontmatter___image___uid",
-  ChildMdxFrontmatterImageGid = "childMdx___frontmatter___image___gid",
-  ChildMdxFrontmatterImageRdev = "childMdx___frontmatter___image___rdev",
-  ChildMdxFrontmatterImageIno = "childMdx___frontmatter___image___ino",
-  ChildMdxFrontmatterImageAtimeMs = "childMdx___frontmatter___image___atimeMs",
-  ChildMdxFrontmatterImageMtimeMs = "childMdx___frontmatter___image___mtimeMs",
-  ChildMdxFrontmatterImageCtimeMs = "childMdx___frontmatter___image___ctimeMs",
-  ChildMdxFrontmatterImageAtime = "childMdx___frontmatter___image___atime",
-  ChildMdxFrontmatterImageMtime = "childMdx___frontmatter___image___mtime",
-  ChildMdxFrontmatterImageCtime = "childMdx___frontmatter___image___ctime",
-  ChildMdxFrontmatterImageBirthtime = "childMdx___frontmatter___image___birthtime",
-  ChildMdxFrontmatterImageBirthtimeMs = "childMdx___frontmatter___image___birthtimeMs",
-  ChildMdxFrontmatterImageBlksize = "childMdx___frontmatter___image___blksize",
-  ChildMdxFrontmatterImageBlocks = "childMdx___frontmatter___image___blocks",
-  ChildMdxFrontmatterImagePublicUrl = "childMdx___frontmatter___image___publicURL",
-  ChildMdxFrontmatterImageId = "childMdx___frontmatter___image___id",
-  ChildMdxFrontmatterImageChildren = "childMdx___frontmatter___image___children",
-  ChildMdxFrontmatterImageAlt = "childMdx___frontmatter___imageAlt",
-  ChildMdxFrontmatterLinkText = "childMdx___frontmatter___linkText",
   ChildMdxBody = "childMdx___body",
   ChildMdxExcerpt = "childMdx___excerpt",
   ChildMdxHeadings = "childMdx___headings",
@@ -1479,6 +1458,13 @@ export enum FileFieldsEnum {
   ChildMdxWordCountParagraphs = "childMdx___wordCount___paragraphs",
   ChildMdxWordCountSentences = "childMdx___wordCount___sentences",
   ChildMdxWordCountWords = "childMdx___wordCount___words",
+  ChildMdxExportsMetaTitle = "childMdx___exports___meta___title",
+  ChildMdxExportsMetaDate = "childMdx___exports___meta___date",
+  ChildMdxExportsMetaUpdated = "childMdx___exports___meta___updated",
+  ChildMdxExportsMetaDescription = "childMdx___exports___meta___description",
+  ChildMdxExportsMetaCategory = "childMdx___exports___meta___category",
+  ChildMdxExportsMetaImageAlt = "childMdx___exports___meta___imageAlt",
+  ChildMdxExportsMetaLinkText = "childMdx___exports___meta___linkText",
   ChildMdxFieldsSlug = "childMdx___fields___slug",
   ChildMdxId = "childMdx___id",
   ChildMdxParentId = "childMdx___parent___id",
@@ -1875,11 +1861,15 @@ export type SitePageContextFilterInput = {
 };
 
 export type SitePageContextPreviousFilterInput = {
-  frontmatter?: Maybe<SitePageContextPreviousFrontmatterFilterInput>;
+  exports?: Maybe<SitePageContextPreviousExportsFilterInput>;
   fields?: Maybe<SitePageContextPreviousFieldsFilterInput>;
 };
 
-export type SitePageContextPreviousFrontmatterFilterInput = {
+export type SitePageContextPreviousExportsFilterInput = {
+  meta?: Maybe<SitePageContextPreviousExportsMetaFilterInput>;
+};
+
+export type SitePageContextPreviousExportsMetaFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -1888,11 +1878,15 @@ export type SitePageContextPreviousFieldsFilterInput = {
 };
 
 export type SitePageContextNextFilterInput = {
-  frontmatter?: Maybe<SitePageContextNextFrontmatterFilterInput>;
+  exports?: Maybe<SitePageContextNextExportsFilterInput>;
   fields?: Maybe<SitePageContextNextFieldsFilterInput>;
 };
 
-export type SitePageContextNextFrontmatterFilterInput = {
+export type SitePageContextNextExportsFilterInput = {
+  meta?: Maybe<SitePageContextNextExportsMetaFilterInput>;
+};
+
+export type SitePageContextNextExportsMetaFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
 };
 
@@ -2064,12 +2058,17 @@ export type SitePageContext = {
 
 export type SitePageContextPrevious = {
   __typename?: "SitePageContextPrevious";
-  frontmatter?: Maybe<SitePageContextPreviousFrontmatter>;
+  exports?: Maybe<SitePageContextPreviousExports>;
   fields?: Maybe<SitePageContextPreviousFields>;
 };
 
-export type SitePageContextPreviousFrontmatter = {
-  __typename?: "SitePageContextPreviousFrontmatter";
+export type SitePageContextPreviousExports = {
+  __typename?: "SitePageContextPreviousExports";
+  meta?: Maybe<SitePageContextPreviousExportsMeta>;
+};
+
+export type SitePageContextPreviousExportsMeta = {
+  __typename?: "SitePageContextPreviousExportsMeta";
   title?: Maybe<Scalars["String"]>;
 };
 
@@ -2080,12 +2079,17 @@ export type SitePageContextPreviousFields = {
 
 export type SitePageContextNext = {
   __typename?: "SitePageContextNext";
-  frontmatter?: Maybe<SitePageContextNextFrontmatter>;
+  exports?: Maybe<SitePageContextNextExports>;
   fields?: Maybe<SitePageContextNextFields>;
 };
 
-export type SitePageContextNextFrontmatter = {
-  __typename?: "SitePageContextNextFrontmatter";
+export type SitePageContextNextExports = {
+  __typename?: "SitePageContextNextExports";
+  meta?: Maybe<SitePageContextNextExportsMeta>;
+};
+
+export type SitePageContextNextExportsMeta = {
+  __typename?: "SitePageContextNextExportsMeta";
   title?: Maybe<Scalars["String"]>;
 };
 
@@ -2336,9 +2340,7 @@ export enum SitePageFieldsEnum {
   InternalType = "internal___type",
   IsCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
   ContextSlug = "context___slug",
-  ContextPreviousFrontmatterTitle = "context___previous___frontmatter___title",
   ContextPreviousFieldsSlug = "context___previous___fields___slug",
-  ContextNextFrontmatterTitle = "context___next___frontmatter___title",
   ContextNextFieldsSlug = "context___next___fields___slug",
   PluginCreatorId = "pluginCreator___id",
   PluginCreatorParentId = "pluginCreator___parent___id",
@@ -3114,77 +3116,6 @@ export enum MdxFieldsEnum {
   RawBody = "rawBody",
   FileAbsolutePath = "fileAbsolutePath",
   FrontmatterTitle = "frontmatter___title",
-  FrontmatterDate = "frontmatter___date",
-  FrontmatterUpdated = "frontmatter___updated",
-  FrontmatterDescription = "frontmatter___description",
-  FrontmatterCategory = "frontmatter___category",
-  FrontmatterImageSourceInstanceName = "frontmatter___image___sourceInstanceName",
-  FrontmatterImageAbsolutePath = "frontmatter___image___absolutePath",
-  FrontmatterImageRelativePath = "frontmatter___image___relativePath",
-  FrontmatterImageExtension = "frontmatter___image___extension",
-  FrontmatterImageSize = "frontmatter___image___size",
-  FrontmatterImagePrettySize = "frontmatter___image___prettySize",
-  FrontmatterImageModifiedTime = "frontmatter___image___modifiedTime",
-  FrontmatterImageAccessTime = "frontmatter___image___accessTime",
-  FrontmatterImageChangeTime = "frontmatter___image___changeTime",
-  FrontmatterImageBirthTime = "frontmatter___image___birthTime",
-  FrontmatterImageRoot = "frontmatter___image___root",
-  FrontmatterImageDir = "frontmatter___image___dir",
-  FrontmatterImageBase = "frontmatter___image___base",
-  FrontmatterImageExt = "frontmatter___image___ext",
-  FrontmatterImageName = "frontmatter___image___name",
-  FrontmatterImageRelativeDirectory = "frontmatter___image___relativeDirectory",
-  FrontmatterImageDev = "frontmatter___image___dev",
-  FrontmatterImageMode = "frontmatter___image___mode",
-  FrontmatterImageNlink = "frontmatter___image___nlink",
-  FrontmatterImageUid = "frontmatter___image___uid",
-  FrontmatterImageGid = "frontmatter___image___gid",
-  FrontmatterImageRdev = "frontmatter___image___rdev",
-  FrontmatterImageIno = "frontmatter___image___ino",
-  FrontmatterImageAtimeMs = "frontmatter___image___atimeMs",
-  FrontmatterImageMtimeMs = "frontmatter___image___mtimeMs",
-  FrontmatterImageCtimeMs = "frontmatter___image___ctimeMs",
-  FrontmatterImageAtime = "frontmatter___image___atime",
-  FrontmatterImageMtime = "frontmatter___image___mtime",
-  FrontmatterImageCtime = "frontmatter___image___ctime",
-  FrontmatterImageBirthtime = "frontmatter___image___birthtime",
-  FrontmatterImageBirthtimeMs = "frontmatter___image___birthtimeMs",
-  FrontmatterImageBlksize = "frontmatter___image___blksize",
-  FrontmatterImageBlocks = "frontmatter___image___blocks",
-  FrontmatterImagePublicUrl = "frontmatter___image___publicURL",
-  FrontmatterImageChildImageSharpId = "frontmatter___image___childImageSharp___id",
-  FrontmatterImageChildImageSharpChildren = "frontmatter___image___childImageSharp___children",
-  FrontmatterImageId = "frontmatter___image___id",
-  FrontmatterImageParentId = "frontmatter___image___parent___id",
-  FrontmatterImageParentChildren = "frontmatter___image___parent___children",
-  FrontmatterImageChildren = "frontmatter___image___children",
-  FrontmatterImageChildrenId = "frontmatter___image___children___id",
-  FrontmatterImageChildrenChildren = "frontmatter___image___children___children",
-  FrontmatterImageInternalContent = "frontmatter___image___internal___content",
-  FrontmatterImageInternalContentDigest = "frontmatter___image___internal___contentDigest",
-  FrontmatterImageInternalDescription = "frontmatter___image___internal___description",
-  FrontmatterImageInternalFieldOwners = "frontmatter___image___internal___fieldOwners",
-  FrontmatterImageInternalIgnoreType = "frontmatter___image___internal___ignoreType",
-  FrontmatterImageInternalMediaType = "frontmatter___image___internal___mediaType",
-  FrontmatterImageInternalOwner = "frontmatter___image___internal___owner",
-  FrontmatterImageInternalType = "frontmatter___image___internal___type",
-  FrontmatterImageChildSoftwareJson_2019 = "frontmatter___image___childSoftwareJson____2019",
-  FrontmatterImageChildSoftwareJson_2020 = "frontmatter___image___childSoftwareJson____2020",
-  FrontmatterImageChildSoftwareJsonId = "frontmatter___image___childSoftwareJson___id",
-  FrontmatterImageChildSoftwareJsonChildren = "frontmatter___image___childSoftwareJson___children",
-  FrontmatterImageChildMdxRawBody = "frontmatter___image___childMdx___rawBody",
-  FrontmatterImageChildMdxFileAbsolutePath = "frontmatter___image___childMdx___fileAbsolutePath",
-  FrontmatterImageChildMdxBody = "frontmatter___image___childMdx___body",
-  FrontmatterImageChildMdxExcerpt = "frontmatter___image___childMdx___excerpt",
-  FrontmatterImageChildMdxHeadings = "frontmatter___image___childMdx___headings",
-  FrontmatterImageChildMdxHtml = "frontmatter___image___childMdx___html",
-  FrontmatterImageChildMdxMdxAst = "frontmatter___image___childMdx___mdxAST",
-  FrontmatterImageChildMdxTableOfContents = "frontmatter___image___childMdx___tableOfContents",
-  FrontmatterImageChildMdxTimeToRead = "frontmatter___image___childMdx___timeToRead",
-  FrontmatterImageChildMdxId = "frontmatter___image___childMdx___id",
-  FrontmatterImageChildMdxChildren = "frontmatter___image___childMdx___children",
-  FrontmatterImageAlt = "frontmatter___imageAlt",
-  FrontmatterLinkText = "frontmatter___linkText",
   Body = "body",
   Excerpt = "excerpt",
   Headings = "headings",
@@ -3197,6 +3128,49 @@ export enum MdxFieldsEnum {
   WordCountParagraphs = "wordCount___paragraphs",
   WordCountSentences = "wordCount___sentences",
   WordCountWords = "wordCount___words",
+  ExportsMetaTitle = "exports___meta___title",
+  ExportsMetaDate = "exports___meta___date",
+  ExportsMetaUpdated = "exports___meta___updated",
+  ExportsMetaDescription = "exports___meta___description",
+  ExportsMetaCategory = "exports___meta___category",
+  ExportsMetaImageSourceInstanceName = "exports___meta___image___sourceInstanceName",
+  ExportsMetaImageAbsolutePath = "exports___meta___image___absolutePath",
+  ExportsMetaImageRelativePath = "exports___meta___image___relativePath",
+  ExportsMetaImageExtension = "exports___meta___image___extension",
+  ExportsMetaImageSize = "exports___meta___image___size",
+  ExportsMetaImagePrettySize = "exports___meta___image___prettySize",
+  ExportsMetaImageModifiedTime = "exports___meta___image___modifiedTime",
+  ExportsMetaImageAccessTime = "exports___meta___image___accessTime",
+  ExportsMetaImageChangeTime = "exports___meta___image___changeTime",
+  ExportsMetaImageBirthTime = "exports___meta___image___birthTime",
+  ExportsMetaImageRoot = "exports___meta___image___root",
+  ExportsMetaImageDir = "exports___meta___image___dir",
+  ExportsMetaImageBase = "exports___meta___image___base",
+  ExportsMetaImageExt = "exports___meta___image___ext",
+  ExportsMetaImageName = "exports___meta___image___name",
+  ExportsMetaImageRelativeDirectory = "exports___meta___image___relativeDirectory",
+  ExportsMetaImageDev = "exports___meta___image___dev",
+  ExportsMetaImageMode = "exports___meta___image___mode",
+  ExportsMetaImageNlink = "exports___meta___image___nlink",
+  ExportsMetaImageUid = "exports___meta___image___uid",
+  ExportsMetaImageGid = "exports___meta___image___gid",
+  ExportsMetaImageRdev = "exports___meta___image___rdev",
+  ExportsMetaImageIno = "exports___meta___image___ino",
+  ExportsMetaImageAtimeMs = "exports___meta___image___atimeMs",
+  ExportsMetaImageMtimeMs = "exports___meta___image___mtimeMs",
+  ExportsMetaImageCtimeMs = "exports___meta___image___ctimeMs",
+  ExportsMetaImageAtime = "exports___meta___image___atime",
+  ExportsMetaImageMtime = "exports___meta___image___mtime",
+  ExportsMetaImageCtime = "exports___meta___image___ctime",
+  ExportsMetaImageBirthtime = "exports___meta___image___birthtime",
+  ExportsMetaImageBirthtimeMs = "exports___meta___image___birthtimeMs",
+  ExportsMetaImageBlksize = "exports___meta___image___blksize",
+  ExportsMetaImageBlocks = "exports___meta___image___blocks",
+  ExportsMetaImagePublicUrl = "exports___meta___image___publicURL",
+  ExportsMetaImageId = "exports___meta___image___id",
+  ExportsMetaImageChildren = "exports___meta___image___children",
+  ExportsMetaImageAlt = "exports___meta___imageAlt",
+  ExportsMetaLinkText = "exports___meta___linkText",
   FieldsSlug = "fields___slug",
   Id = "id",
   ParentId = "parent___id",
@@ -5606,25 +5580,29 @@ export type BlogIndexQuery = { __typename?: "Query" } & {
             fields?: Maybe<
               { __typename?: "MdxFields" } & Pick<MdxFields, "slug">
             >;
-            frontmatter?: Maybe<
-              { __typename?: "MdxFrontmatter" } & Pick<
-                MdxFrontmatter,
-                "title" | "date" | "description" | "linkText"
-              > & {
-                  image?: Maybe<
-                    { __typename?: "File" } & {
-                      childImageSharp?: Maybe<
-                        { __typename?: "ImageSharp" } & {
-                          fluid?: Maybe<
-                            {
-                              __typename?: "ImageSharpFluid";
-                            } & GatsbyImageSharpFluidFragment
+            exports?: Maybe<
+              { __typename?: "MdxExports" } & {
+                meta?: Maybe<
+                  { __typename?: "MdxExportsMeta" } & Pick<
+                    MdxExportsMeta,
+                    "title" | "date" | "description" | "linkText"
+                  > & {
+                      image?: Maybe<
+                        { __typename?: "File" } & {
+                          childImageSharp?: Maybe<
+                            { __typename?: "ImageSharp" } & {
+                              fluid?: Maybe<
+                                {
+                                  __typename?: "ImageSharpFluid";
+                                } & GatsbyImageSharpFluidFragment
+                              >;
+                            }
                           >;
                         }
                       >;
                     }
-                  >;
-                }
+                >;
+              }
             >;
           };
       }
@@ -5712,30 +5690,34 @@ export type BlogPostBySlugQuery = { __typename?: "Query" } & {
   >;
   mdx?: Maybe<
     { __typename?: "Mdx" } & Pick<Mdx, "id" | "excerpt" | "body"> & {
-        frontmatter?: Maybe<
-          { __typename?: "MdxFrontmatter" } & Pick<
-            MdxFrontmatter,
-            | "title"
-            | "date"
-            | "updated"
-            | "description"
-            | "category"
-            | "imageAlt"
-          > & {
-              image?: Maybe<
-                { __typename?: "File" } & {
-                  childImageSharp?: Maybe<
-                    { __typename?: "ImageSharp" } & {
-                      fluid?: Maybe<
-                        {
-                          __typename?: "ImageSharpFluid";
-                        } & GatsbyImageSharpFluidFragment
+        exports?: Maybe<
+          { __typename?: "MdxExports" } & {
+            meta?: Maybe<
+              { __typename?: "MdxExportsMeta" } & Pick<
+                MdxExportsMeta,
+                | "title"
+                | "date"
+                | "updated"
+                | "description"
+                | "category"
+                | "imageAlt"
+              > & {
+                  image?: Maybe<
+                    { __typename?: "File" } & {
+                      childImageSharp?: Maybe<
+                        { __typename?: "ImageSharp" } & {
+                          fluid?: Maybe<
+                            {
+                              __typename?: "ImageSharpFluid";
+                            } & GatsbyImageSharpFluidFragment
+                          >;
+                        }
                       >;
                     }
                   >;
                 }
-              >;
-            }
+            >;
+          }
         >;
       }
   >;
