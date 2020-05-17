@@ -1,0 +1,136 @@
+export const meta = {
+  title: "MDX Frontmatter to MDX Exports With Deno",
+  date: "2020-05-17",
+  updated: null,
+  description: "Migrating a small utility script from Node to Deno.",
+  category: "Code",
+  image: "deno_art.jpg",
+  imageAlt: "Deno Launch Art",
+  linkText: "Read more...",
+};
+
+> 🙌 **Note:** this is a short form post. That means it's not very well
+> researched, and is mainly just my raw notes. I'm sharing it in order to help
+> out anyone that may be investigating something similar, and also to try and
+> maintain a writing habit!
+
+### Deno
+
+![Deno Launch Art](./deno_art.jpg)
+
+Aside from the fact I can't disassociate the name of this tool from that of an
+[extraordinarily talented ex-colleague](https://twitter.com/DinoWernli), Deno is
+all new to me.
+
+It's basically a way to ship sandboxed TypeScript as a single executable. You
+can think of it like a cross-platform headless browser, with package manager
+built in.
+
+Deno is a Node successor in the sense that it has been designed to iterate on it
+for a new generation of JavaScript & TypeScript APIs, but it's probably no where
+near as stable yet. Node is ooooold. Deno is brand spanking new!
+
+> 💡You can read mode about Deno in the author's own words at:
+> https://deno.land/v1
+
+### MDX With Frontmatter to MDX With Exports
+
+When I first created this blog, I used to provide custom metadata for each post
+like this:
+
+```
+---
+title: Hello, deno!
+path: /hello-deno
+date: 2019-05-14
+---
+```
+
+It's just YAML (which is fine), but it's possible (and slightly more fun) to
+define an export with JS like this:
+
+```
+export const meta = {
+  "title": "Hello, deno!",
+  "path": "/hello-deno",
+  "date": "2019-05-14T00:00:00.000Z"
+}
+```
+
+Christopher Biscardi ([@chrisbiscardi](https://twitter.com/chrisbiscardi))
+posted a
+[handy little Node script](https://www.christopherbiscardi.com/convert-mdx-with-frontmatter-to-mdx-with-exports)
+to automate the migration a while back, and since I used it, I thought it would
+be a nice candidate for rewriting with Deno.
+
+Here's the final thing
+([frontmatter-to-exports.ts](https://github.com/MorrisonCole/morrisoncole.co.uk/blob/develop/content/blog/deno-v1/frontmatter-to-exports.ts)):
+
+```
+import { parseAll } from "https://deno.land/std@0.51.0/encoding/yaml.ts";
+
+let mdxDirectory = "./";
+
+console.log(`Reading from directory: ${mdxDirectory}`);
+
+for await (const file of Deno.readDir(mdxDirectory)) {
+  if (!file.name.endsWith("mdx")) continue;
+  console.log(`\n\nConverting '${file.name}':`);
+
+  let content = await Deno.readTextFile("./example.mdx");
+
+  let yaml = parseAll(content) as object[];
+  const output = `export const meta = ${JSON.stringify(yaml[0], null, 2)}`;
+  console.log(output);
+}
+```
+
+Run it with: `deno --allow-read frontmatter-to-exports.ts`
+
+There are a few differences from the original. Namely, it doesn't actually write
+the modified file back out. I did try to implement that, but without getting
+into some regex schenanigans, it wasn't particularly easy.
+
+### Problems
+
+To be honest, this took me _way_ longer than I expected.
+
+#### TypeScript & Iterables
+
+First I spent a while trying to write something vaguely functional-looking
+([thread](https://twitter.com/morrisoncole/status/1261064635819548672)), but
+gave up. I think I'm kind of spoiler by Kotlin, and to be honest the alternative
+I went with is just as readable anyway.
+
+#### Ecosystem (Or... Lack Thereof)
+
+Secondly I tried to figure out how to import some JS from the web but got this
+mysterious error:
+
+```
+Uncaught TypeError: Cannot resolve extension for "https://unpkg.com/browse/front-matter@3.2.1/index.js" with mediaType "Unknown".
+```
+
+Really crappy error but I finally figured out to add `-Ldebug` to Deno, then got
+a nicer stacktrace:
+
+```
+⚠️️ Granted network access to
+"https://unpkg.com/browse/front-matter@3.2.1/index.d.ts" unknown content type:
+text/html; charset=utf-8
+```
+
+Turns out I was pointing at the wrong file, obviously I needed the raw one 🤦‍♂️.
+
+> 👨‍💻Importing code was the source of most of my pain. I didn't want to re-invent
+> everything in the [front-matter](https://www.npmjs.com/package/front-matter)
+> library, so I spent quite a while trying to reuse it. In the end though, since
+> it had its own dependencies too, there was no simple way to do that.
+
+As the Deno ecosystem develops (or the NPM shim gets finished), I'm sure this
+will get much easier!
+
+### Useful Links
+
+- [Deno Core API](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts)
+- [Getting Started with Deno](https://deno.land/manual/getting_started/installation)
