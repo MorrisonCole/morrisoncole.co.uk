@@ -9,10 +9,10 @@ export const meta = {
   linkText: "Read more...",
 };
 
-> 🙌 **Note:** this is a short form post. That means it's not very well
-> researched, and is mainly just my raw notes. I'm sharing it in order to help
-> out anyone that may be investigating something similar, and also to try and
-> maintain a writing habit!
+> 🙌 **Note:** this is a short-form post. That means it's not very well
+> researched and is mainly just my raw notes. I'm sharing it to help out anyone
+> that may be investigating something similar, and also to try and maintain a
+> writing habit!
 
 ### Deno
 
@@ -22,13 +22,12 @@ Aside from the fact I can't disassociate the name of this tool from that of an
 [extraordinarily talented ex-colleague](https://twitter.com/DinoWernli), Deno is
 all new to me.
 
-It's basically a way to ship sandboxed TypeScript as a single executable. You
-can think of it like a cross-platform headless browser, with package manager
-built in.
+It's a way to ship sandboxed TypeScript as a single executable. You can think of
+it as a cross-platform headless browser, with a package manager built-in.
 
-Deno is a Node successor in the sense that it has been designed to iterate on it
-for a new generation of JavaScript & TypeScript APIs, but it's probably no where
-near as stable yet. Node is ooooold. Deno is brand spanking new!
+Deno is a Node successor in the sense that it is designed for a new generation
+of JavaScript & TypeScript APIs, but it's probably nowhere near as stable yet.
+Node is ooooold. Deno is brand-spanking-new!
 
 > 💡You can read mode about Deno in the author's own words at:
 > https://deno.land/v1
@@ -87,9 +86,9 @@ for await (const file of Deno.readDir(mdxDirectory)) {
 
 Run it with: `deno --allow-read frontmatter-to-exports.ts`
 
-There are a few differences from the original. Namely, it doesn't actually write
-the modified file back out. I did try to implement that, but without getting
-into some regex schenanigans, it wasn't particularly easy.
+There are a few differences from the original. Namely, it doesn't write the
+modified file back out. I did try to implement that, but without getting into
+some regex shenanigans, it wasn't particularly easy.
 
 ### Problems
 
@@ -114,8 +113,8 @@ mysterious error:
 Uncaught TypeError: Cannot resolve extension for "https://unpkg.com/browse/front-matter@3.2.1/index.js" with mediaType "Unknown".
 ```
 
-Really crappy error but I finally figured out to add `-Ldebug` to Deno, then got
-a nicer stacktrace:
+Really crappy message, but I finally figured out to add `-Ldebug` to Deno, and
+got a nicer stacktrace:
 
 ```
 ⚠️️ Granted network access to
@@ -131,7 +130,8 @@ Turns out I was pointing at the wrong file, obviously I needed the raw one 🤦�
 > it had its own dependencies too, there was no simple way to do that.
 
 As the Deno ecosystem develops (or the [NPM shim](https://deno.land/std/node/)
-gets finished), I'm sure this will get much easier!
+gets finished), I'm sure this will get much easier! Until then though, it's
+probably very much 'roll-your-own' when it comes to stuff like this.
 
 ### Useful Links
 
