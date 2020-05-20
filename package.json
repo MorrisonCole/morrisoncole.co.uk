@@ -27,7 +27,7 @@
     "gatsby-plugin-manifest": "2.4.6",
     "gatsby-plugin-material-ui": "2.1.8",
     "gatsby-plugin-mdx": "1.2.8",
-    "gatsby-plugin-preconnect": "1.1.42",
+    "gatsby-plugin-preconnect": "1.1.43",
     "gatsby-plugin-react-helmet": "3.3.1",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
     "gatsby-plugin-s3": "0.3.3",
