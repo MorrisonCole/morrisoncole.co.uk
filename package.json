@@ -43,7 +43,7 @@
     "gatsby-remark-responsive-iframe": "2.4.2",
     "gatsby-remark-smartypants": "2.3.1",
     "gatsby-source-filesystem": "2.3.7",
-    "gatsby-transformer-json": "2.4.2",
+    "gatsby-transformer-json": "2.4.3",
     "gatsby-transformer-remark": "2.8.12",
     "gatsby-transformer-sharp": "2.5.2",
     "graphql": "15.0.0",
