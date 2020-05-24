@@ -37,8 +37,7 @@ export default function Footer(): JSX.Element {
       <Container maxWidth={false} className={classes.container}>
         <Grid item xs className={classes.footer}>
           <Typography variant="body2" className={classes.footerText}>
-            Handcrafted with TS, React and a bunch of other useful technologies
-            ♥
+            Handcrafted with TypeScript, React, and Gatsby ♥
           </Typography>
           <Typography
             variant="caption"
