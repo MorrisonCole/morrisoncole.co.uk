@@ -169,7 +169,7 @@ export type QueryAllSitePageArgs = {
 export type QuerySiteArgs = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  port?: Maybe<IntQueryOperatorInput>;
+  port?: Maybe<DateQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
@@ -1546,6 +1546,7 @@ export type PageInfo = {
   itemCount: Scalars["Int"];
   pageCount: Scalars["Int"];
   perPage?: Maybe<Scalars["Int"]>;
+  totalCount: Scalars["Int"];
 };
 
 export type FileGroupConnection = {
@@ -1914,8 +1915,6 @@ export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
   domains?: Maybe<StringQueryOperatorInput>;
   siteUrl?: Maybe<StringQueryOperatorInput>;
-  key?: Maybe<StringQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   stylesProvider?: Maybe<SitePluginPluginOptionsStylesProviderFilterInput>;
@@ -1931,11 +1930,18 @@ export type SitePluginPluginOptionsFilterInput = {
   theme_color?: Maybe<StringQueryOperatorInput>;
   display?: Maybe<StringQueryOperatorInput>;
   icon?: Maybe<StringQueryOperatorInput>;
+  cache_busting_mode?: Maybe<StringQueryOperatorInput>;
+  include_favicon?: Maybe<BooleanQueryOperatorInput>;
+  legacy?: Maybe<BooleanQueryOperatorInput>;
+  theme_color_in_head?: Maybe<BooleanQueryOperatorInput>;
+  cacheDigest?: Maybe<StringQueryOperatorInput>;
   component?: Maybe<StringQueryOperatorInput>;
   bucketName?: Maybe<StringQueryOperatorInput>;
   protocol?: Maybe<StringQueryOperatorInput>;
   hostname?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
+  key?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPluginsFilterListInput = {
@@ -2120,8 +2126,6 @@ export type SitePluginPluginOptions = {
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
   domains?: Maybe<Array<Maybe<Scalars["String"]>>>;
   siteUrl?: Maybe<Scalars["String"]>;
-  key?: Maybe<Scalars["String"]>;
-  id?: Maybe<Scalars["String"]>;
   path?: Maybe<Scalars["String"]>;
   name?: Maybe<Scalars["String"]>;
   stylesProvider?: Maybe<SitePluginPluginOptionsStylesProvider>;
@@ -2137,11 +2141,18 @@ export type SitePluginPluginOptions = {
   theme_color?: Maybe<Scalars["String"]>;
   display?: Maybe<Scalars["String"]>;
   icon?: Maybe<Scalars["String"]>;
+  cache_busting_mode?: Maybe<Scalars["String"]>;
+  include_favicon?: Maybe<Scalars["Boolean"]>;
+  legacy?: Maybe<Scalars["Boolean"]>;
+  theme_color_in_head?: Maybe<Scalars["Boolean"]>;
+  cacheDigest?: Maybe<Scalars["String"]>;
   component?: Maybe<Scalars["String"]>;
   bucketName?: Maybe<Scalars["String"]>;
   protocol?: Maybe<Scalars["String"]>;
   hostname?: Maybe<Scalars["String"]>;
   pathCheck?: Maybe<Scalars["Boolean"]>;
+  key?: Maybe<Scalars["String"]>;
+  id?: Maybe<Scalars["String"]>;
 };
 
 export type SitePluginPluginOptionsPlugins = {
@@ -2392,8 +2403,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsPluginsPluginFilepath = "pluginCreator___pluginOptions___plugins___pluginFilepath",
   PluginCreatorPluginOptionsDomains = "pluginCreator___pluginOptions___domains",
   PluginCreatorPluginOptionsSiteUrl = "pluginCreator___pluginOptions___siteUrl",
-  PluginCreatorPluginOptionsKey = "pluginCreator___pluginOptions___key",
-  PluginCreatorPluginOptionsId = "pluginCreator___pluginOptions___id",
   PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
   PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
   PluginCreatorPluginOptionsStylesProviderInjectFirst = "pluginCreator___pluginOptions___stylesProvider___injectFirst",
@@ -2408,11 +2417,18 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsThemeColor = "pluginCreator___pluginOptions___theme_color",
   PluginCreatorPluginOptionsDisplay = "pluginCreator___pluginOptions___display",
   PluginCreatorPluginOptionsIcon = "pluginCreator___pluginOptions___icon",
+  PluginCreatorPluginOptionsCacheBustingMode = "pluginCreator___pluginOptions___cache_busting_mode",
+  PluginCreatorPluginOptionsIncludeFavicon = "pluginCreator___pluginOptions___include_favicon",
+  PluginCreatorPluginOptionsLegacy = "pluginCreator___pluginOptions___legacy",
+  PluginCreatorPluginOptionsThemeColorInHead = "pluginCreator___pluginOptions___theme_color_in_head",
+  PluginCreatorPluginOptionsCacheDigest = "pluginCreator___pluginOptions___cacheDigest",
   PluginCreatorPluginOptionsComponent = "pluginCreator___pluginOptions___component",
   PluginCreatorPluginOptionsBucketName = "pluginCreator___pluginOptions___bucketName",
   PluginCreatorPluginOptionsProtocol = "pluginCreator___pluginOptions___protocol",
   PluginCreatorPluginOptionsHostname = "pluginCreator___pluginOptions___hostname",
   PluginCreatorPluginOptionsPathCheck = "pluginCreator___pluginOptions___pathCheck",
+  PluginCreatorPluginOptionsKey = "pluginCreator___pluginOptions___key",
+  PluginCreatorPluginOptionsId = "pluginCreator___pluginOptions___id",
   PluginCreatorNodeApIs = "pluginCreator___nodeAPIs",
   PluginCreatorBrowserApIs = "pluginCreator___browserAPIs",
   PluginCreatorSsrApIs = "pluginCreator___ssrAPIs",
@@ -2492,7 +2508,7 @@ export type Site = Node & {
   __typename?: "Site";
   buildTime?: Maybe<Scalars["Date"]>;
   siteMetadata: SiteSiteMetadata;
-  port?: Maybe<Scalars["Int"]>;
+  port?: Maybe<Scalars["Date"]>;
   host?: Maybe<Scalars["String"]>;
   polyfill?: Maybe<Scalars["Boolean"]>;
   pathPrefix?: Maybe<Scalars["String"]>;
@@ -2503,6 +2519,13 @@ export type Site = Node & {
 };
 
 export type SiteBuildTimeArgs = {
+  formatString?: Maybe<Scalars["String"]>;
+  fromNow?: Maybe<Scalars["Boolean"]>;
+  difference?: Maybe<Scalars["String"]>;
+  locale?: Maybe<Scalars["String"]>;
+};
+
+export type SitePortArgs = {
   formatString?: Maybe<Scalars["String"]>;
   fromNow?: Maybe<Scalars["Boolean"]>;
   difference?: Maybe<Scalars["String"]>;
@@ -2528,7 +2551,7 @@ export type SiteSiteMetadataSocial = {
 export type SiteFilterInput = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  port?: Maybe<IntQueryOperatorInput>;
+  port?: Maybe<DateQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
@@ -5203,8 +5226,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsPluginFilepath = "pluginOptions___plugins___pluginFilepath",
   PluginOptionsDomains = "pluginOptions___domains",
   PluginOptionsSiteUrl = "pluginOptions___siteUrl",
-  PluginOptionsKey = "pluginOptions___key",
-  PluginOptionsId = "pluginOptions___id",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsName = "pluginOptions___name",
   PluginOptionsStylesProviderInjectFirst = "pluginOptions___stylesProvider___injectFirst",
@@ -5235,11 +5256,18 @@ export enum SitePluginFieldsEnum {
   PluginOptionsThemeColor = "pluginOptions___theme_color",
   PluginOptionsDisplay = "pluginOptions___display",
   PluginOptionsIcon = "pluginOptions___icon",
+  PluginOptionsCacheBustingMode = "pluginOptions___cache_busting_mode",
+  PluginOptionsIncludeFavicon = "pluginOptions___include_favicon",
+  PluginOptionsLegacy = "pluginOptions___legacy",
+  PluginOptionsThemeColorInHead = "pluginOptions___theme_color_in_head",
+  PluginOptionsCacheDigest = "pluginOptions___cacheDigest",
   PluginOptionsComponent = "pluginOptions___component",
   PluginOptionsBucketName = "pluginOptions___bucketName",
   PluginOptionsProtocol = "pluginOptions___protocol",
   PluginOptionsHostname = "pluginOptions___hostname",
   PluginOptionsPathCheck = "pluginOptions___pathCheck",
+  PluginOptionsKey = "pluginOptions___key",
+  PluginOptionsId = "pluginOptions___id",
   NodeApIs = "nodeAPIs",
   BrowserApIs = "browserAPIs",
   SsrApIs = "ssrAPIs",
