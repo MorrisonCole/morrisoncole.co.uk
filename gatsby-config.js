@@ -1,6 +1,11 @@
 const rawUrl = "https://morrisoncole.co.uk";
 const siteAddress = new URL(rawUrl);
 
+const goodreadsKey = process.env.GOODREADS_KEY;
+if (goodreadsKey == null) {
+  throw new Error("Environment variable 'GOODREADS_KEY' must be set.");
+}
+
 module.exports = {
   siteMetadata: {
     title: "Morrison Cole",
@@ -34,7 +39,7 @@ module.exports = {
     {
       resolve: "@jamesdanylik/gatsby-source-goodreads",
       options: {
-        key: process.env.GOODREADS_KEY,
+        key: goodreadsKey,
         id: "6320986-morrison",
       },
     },
