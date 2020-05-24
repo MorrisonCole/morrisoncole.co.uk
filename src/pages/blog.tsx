@@ -26,13 +26,15 @@ const styles = makeStyles((theme: Theme) =>
     },
     card: {
       display: "flex",
-      height: 220,
+      [theme.breakpoints.up("xs")]: {
+        height: 220,
+      },
     },
     cardDetails: {
       flex: 1,
     },
     cardMedia: {
-      width: 160,
+      flex: 0.66,
     },
   })
 );
@@ -82,14 +84,12 @@ export default function Blog({
                   </CardContent>
                 </div>
                 {image && (
-                  <Hidden xsDown>
-                    <CardMedia
-                      className={classes.cardMedia}
-                      component={Image}
-                      fluid={image}
-                      alt={title}
-                    />
-                  </Hidden>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    component={Image}
+                    fluid={image}
+                    alt={title}
+                  />
                 )}
               </Card>
             </CardActionArea>
