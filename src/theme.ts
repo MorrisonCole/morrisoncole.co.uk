@@ -2,9 +2,9 @@ import { createMuiTheme } from "@material-ui/core";
 
 const theme = createMuiTheme({
   typography: {
-    fontFamily: "Roboto",
+    fontFamily: "Roboto,Helvetica,Arial,sans-serif",
+    fontSize: 14,
   },
-  spacing: 4,
   palette: {
     primary: {
       main: "#007bff",

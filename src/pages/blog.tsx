@@ -26,7 +26,7 @@ const styles = makeStyles((theme: Theme) =>
     },
     card: {
       display: "flex",
-      [theme.breakpoints.up("xs")]: {
+      [theme.breakpoints.up("md")]: {
         height: 220,
       },
     },
