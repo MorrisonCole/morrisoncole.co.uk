@@ -59,6 +59,7 @@ module.exports = {
         name: "data",
       },
     },
+    "gatsby-plugin-top-layout",
     {
       resolve: "gatsby-plugin-material-ui",
       options: {
