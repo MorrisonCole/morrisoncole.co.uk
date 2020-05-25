@@ -19,7 +19,7 @@ import Image from "gatsby-image";
 const styles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(3),
     },
     body: {
       marginTop: theme.spacing(2),

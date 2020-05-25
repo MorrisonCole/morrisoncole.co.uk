@@ -19,10 +19,13 @@ import { SoftwareQuery } from "../../types/graphql-types";
 const styles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
-      marginTop: theme.spacing(8),
+      marginTop: theme.spacing(3),
     },
     body: {
       marginTop: theme.spacing(2),
+    },
+    announcementContainer: {
+      width: "60%",
     },
     announcement: {
       padding: theme.spacing(2),
@@ -64,23 +67,25 @@ export default function Software({
       <Grid
         container
         className={classes.container}
-        alignContent="center"
+        alignItems="center"
         justify="center"
         direction="column"
       >
-        <Paper className={classes.announcement}>
-          <Typography variant="h5" align="center">
-            Eventually I&apos;ll list my projects here!
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body}>
-            In the meantime, you can check out my{" "}
-            <a href="https://github.com/morrisoncole">GitHub</a> or{" "}
-            <a href="https://stackoverflow.com/users/516642/morrison-cole?tab=profile">
-              Stack Overflow
-            </a>{" "}
-            :)
-          </Typography>
-        </Paper>
+        <Grid item className={classes.announcementContainer}>
+          <Paper className={classes.announcement}>
+            <Typography variant="h5" align="center">
+              Eventually I&apos;ll list my projects here!
+            </Typography>
+            <Typography variant="body2" align="center" className={classes.body}>
+              In the meantime, you can check out my{" "}
+              <a href="https://github.com/morrisoncole">GitHub</a> or{" "}
+              <a href="https://stackoverflow.com/users/516642/morrison-cole?tab=profile">
+                Stack Overflow
+              </a>{" "}
+              :)
+            </Typography>
+          </Paper>
+        </Grid>
       </Grid>
       <Typography variant="h5" className={classes.container}>
         2020: New stuff I&apos;ve been learning / using
