@@ -9,9 +9,15 @@ import {
   Paper,
   Theme,
   Typography,
+  TableContainer,
+  Table,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableBody,
 } from "@material-ui/core";
 import { Star } from "@material-ui/icons";
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import { SoftwareQuery } from "../../types/graphql-types";
@@ -30,6 +36,9 @@ const styles = makeStyles((theme: Theme) =>
     announcement: {
       padding: theme.spacing(2),
     },
+    table: {
+      minWidth: 650,
+    },
   })
 );
 
@@ -42,6 +51,9 @@ export default function Software({
   location,
 }: SoftwareProps & PageProps): JSX.Element {
   const classes = styles();
+  const repositories = data.allGithubData?.edges?.flatMap(
+    ({ node }) => node.rawResult?.data?.viewer?.repositories?.nodes
+  );
 
   const listItems2020 = data.softwareJson?._2020.map((item) => (
     <ListItem button key={item}>
@@ -87,6 +99,30 @@ export default function Software({
           </Paper>
         </Grid>
       </Grid>
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Project</TableCell>
+              <TableCell align="right">Primary Language</TableCell>
+              <TableCell align="right">Last Updated</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {repositories.map((repository) => (
+              <TableRow key={repository?.name}>
+                <TableCell component="th" scope="row">
+                  {repository?.name}
+                </TableCell>
+                <TableCell align="right">
+                  {repository?.primaryLanguage?.name ?? "Unknown"}
+                </TableCell>
+                <TableCell align="right">Unknown</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
       <Typography variant="h5" className={classes.container}>
         2020: New stuff I&apos;ve been learning / using
       </Typography>
@@ -105,6 +141,29 @@ export const pageQuery = graphql`
     softwareJson {
       _2019
       _2020
+    }
+    allGithubData {
+      edges {
+        node {
+          id
+          rawResult {
+            data {
+              viewer {
+                repositories {
+                  nodes {
+                    name
+                    url
+                    primaryLanguage {
+                      name
+                    }
+                  }
+                  totalCount
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 `;

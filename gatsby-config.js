@@ -6,6 +6,11 @@ if (goodreadsKey == null) {
   throw new Error("Environment variable 'GOODREADS_KEY' must be set.");
 }
 
+const gitHubKey = process.env.GITHUB_KEY;
+if (gitHubKey == null) {
+  throw new Error("Environment variable 'GITHUB_KEY' must be set.");
+}
+
 module.exports = {
   siteMetadata: {
     title: "Morrison Cole",
@@ -41,6 +46,28 @@ module.exports = {
       options: {
         key: goodreadsKey,
         id: "6320986-morrison",
+      },
+    },
+    {
+      resolve: `gatsby-source-github-api`,
+      options: {
+        token: gitHubKey,
+        graphQLQuery: `
+          query { 
+            viewer {
+              repositories(first: 50, privacy: PUBLIC, isFork: false, orderBy: {field: UPDATED_AT, direction: DESC}) {
+                totalCount
+                nodes {
+                  name
+                  url
+                  primaryLanguage {
+                    name
+                  }
+                }
+              }
+            }
+          }
+        `,
       },
     },
     {
