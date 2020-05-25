@@ -30,6 +30,8 @@ export type Query = {
   allMdx: MdxConnection;
   softwareJson?: Maybe<SoftwareJson>;
   allSoftwareJson: SoftwareJsonConnection;
+  githubData?: Maybe<GithubData>;
+  allGithubData: GithubDataConnection;
   goodreadsShelf?: Maybe<GoodreadsShelf>;
   allGoodreadsShelf: GoodreadsShelfConnection;
   goodreadsBook?: Maybe<GoodreadsBook>;
@@ -267,6 +269,22 @@ export type QuerySoftwareJsonArgs = {
 export type QueryAllSoftwareJsonArgs = {
   filter?: Maybe<SoftwareJsonFilterInput>;
   sort?: Maybe<SoftwareJsonSortInput>;
+  skip?: Maybe<Scalars["Int"]>;
+  limit?: Maybe<Scalars["Int"]>;
+};
+
+export type QueryGithubDataArgs = {
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+  data?: Maybe<GithubDataDataFilterInput>;
+  rawResult?: Maybe<GithubDataRawResultFilterInput>;
+};
+
+export type QueryAllGithubDataArgs = {
+  filter?: Maybe<GithubDataFilterInput>;
+  sort?: Maybe<GithubDataSortInput>;
   skip?: Maybe<Scalars["Int"]>;
   limit?: Maybe<Scalars["Int"]>;
 };
@@ -1915,6 +1933,10 @@ export type SitePluginPluginOptionsFilterInput = {
   plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>;
   domains?: Maybe<StringQueryOperatorInput>;
   siteUrl?: Maybe<StringQueryOperatorInput>;
+  key?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  token?: Maybe<StringQueryOperatorInput>;
+  graphQLQuery?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   stylesProvider?: Maybe<SitePluginPluginOptionsStylesProviderFilterInput>;
@@ -1940,8 +1962,6 @@ export type SitePluginPluginOptionsFilterInput = {
   protocol?: Maybe<StringQueryOperatorInput>;
   hostname?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
-  key?: Maybe<StringQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsPluginsFilterListInput = {
@@ -2126,6 +2146,10 @@ export type SitePluginPluginOptions = {
   plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>;
   domains?: Maybe<Array<Maybe<Scalars["String"]>>>;
   siteUrl?: Maybe<Scalars["String"]>;
+  key?: Maybe<Scalars["String"]>;
+  id?: Maybe<Scalars["String"]>;
+  token?: Maybe<Scalars["String"]>;
+  graphQLQuery?: Maybe<Scalars["String"]>;
   path?: Maybe<Scalars["String"]>;
   name?: Maybe<Scalars["String"]>;
   stylesProvider?: Maybe<SitePluginPluginOptionsStylesProvider>;
@@ -2151,8 +2175,6 @@ export type SitePluginPluginOptions = {
   protocol?: Maybe<Scalars["String"]>;
   hostname?: Maybe<Scalars["String"]>;
   pathCheck?: Maybe<Scalars["Boolean"]>;
-  key?: Maybe<Scalars["String"]>;
-  id?: Maybe<Scalars["String"]>;
 };
 
 export type SitePluginPluginOptionsPlugins = {
@@ -2403,6 +2425,10 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsPluginsPluginFilepath = "pluginCreator___pluginOptions___plugins___pluginFilepath",
   PluginCreatorPluginOptionsDomains = "pluginCreator___pluginOptions___domains",
   PluginCreatorPluginOptionsSiteUrl = "pluginCreator___pluginOptions___siteUrl",
+  PluginCreatorPluginOptionsKey = "pluginCreator___pluginOptions___key",
+  PluginCreatorPluginOptionsId = "pluginCreator___pluginOptions___id",
+  PluginCreatorPluginOptionsToken = "pluginCreator___pluginOptions___token",
+  PluginCreatorPluginOptionsGraphQlQuery = "pluginCreator___pluginOptions___graphQLQuery",
   PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
   PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
   PluginCreatorPluginOptionsStylesProviderInjectFirst = "pluginCreator___pluginOptions___stylesProvider___injectFirst",
@@ -2427,8 +2453,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsProtocol = "pluginCreator___pluginOptions___protocol",
   PluginCreatorPluginOptionsHostname = "pluginCreator___pluginOptions___hostname",
   PluginCreatorPluginOptionsPathCheck = "pluginCreator___pluginOptions___pathCheck",
-  PluginCreatorPluginOptionsKey = "pluginCreator___pluginOptions___key",
-  PluginCreatorPluginOptionsId = "pluginCreator___pluginOptions___id",
   PluginCreatorNodeApIs = "pluginCreator___nodeAPIs",
   PluginCreatorBrowserApIs = "pluginCreator___browserAPIs",
   PluginCreatorSsrApIs = "pluginCreator___ssrAPIs",
@@ -3448,6 +3472,283 @@ export type SoftwareJsonGroupConnection = {
   totalCount: Scalars["Int"];
   edges: Array<SoftwareJsonEdge>;
   nodes: Array<SoftwareJson>;
+  pageInfo: PageInfo;
+  field: Scalars["String"];
+  fieldValue?: Maybe<Scalars["String"]>;
+};
+
+export type GithubDataDataFilterInput = {
+  viewer?: Maybe<GithubDataDataViewerFilterInput>;
+};
+
+export type GithubDataDataViewerFilterInput = {
+  repositories?: Maybe<GithubDataDataViewerRepositoriesFilterInput>;
+};
+
+export type GithubDataDataViewerRepositoriesFilterInput = {
+  totalCount?: Maybe<IntQueryOperatorInput>;
+  nodes?: Maybe<GithubDataDataViewerRepositoriesNodesFilterListInput>;
+};
+
+export type GithubDataDataViewerRepositoriesNodesFilterListInput = {
+  elemMatch?: Maybe<GithubDataDataViewerRepositoriesNodesFilterInput>;
+};
+
+export type GithubDataDataViewerRepositoriesNodesFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+  url?: Maybe<StringQueryOperatorInput>;
+  primaryLanguage?: Maybe<
+    GithubDataDataViewerRepositoriesNodesPrimaryLanguageFilterInput
+  >;
+};
+
+export type GithubDataDataViewerRepositoriesNodesPrimaryLanguageFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+};
+
+export type GithubDataRawResultFilterInput = {
+  data?: Maybe<GithubDataRawResultDataFilterInput>;
+};
+
+export type GithubDataRawResultDataFilterInput = {
+  viewer?: Maybe<GithubDataRawResultDataViewerFilterInput>;
+};
+
+export type GithubDataRawResultDataViewerFilterInput = {
+  repositories?: Maybe<GithubDataRawResultDataViewerRepositoriesFilterInput>;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesFilterInput = {
+  totalCount?: Maybe<IntQueryOperatorInput>;
+  nodes?: Maybe<GithubDataRawResultDataViewerRepositoriesNodesFilterListInput>;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesNodesFilterListInput = {
+  elemMatch?: Maybe<GithubDataRawResultDataViewerRepositoriesNodesFilterInput>;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesNodesFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+  url?: Maybe<StringQueryOperatorInput>;
+  primaryLanguage?: Maybe<
+    GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguageFilterInput
+  >;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguageFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+};
+
+export type GithubData = Node & {
+  __typename?: "GithubData";
+  id: Scalars["ID"];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
+  data?: Maybe<GithubDataData>;
+  rawResult?: Maybe<GithubDataRawResult>;
+};
+
+export type GithubDataData = {
+  __typename?: "GithubDataData";
+  viewer?: Maybe<GithubDataDataViewer>;
+};
+
+export type GithubDataDataViewer = {
+  __typename?: "GithubDataDataViewer";
+  repositories?: Maybe<GithubDataDataViewerRepositories>;
+};
+
+export type GithubDataDataViewerRepositories = {
+  __typename?: "GithubDataDataViewerRepositories";
+  totalCount?: Maybe<Scalars["Int"]>;
+  nodes?: Maybe<Array<Maybe<GithubDataDataViewerRepositoriesNodes>>>;
+};
+
+export type GithubDataDataViewerRepositoriesNodes = {
+  __typename?: "GithubDataDataViewerRepositoriesNodes";
+  name?: Maybe<Scalars["String"]>;
+  url?: Maybe<Scalars["String"]>;
+  primaryLanguage?: Maybe<GithubDataDataViewerRepositoriesNodesPrimaryLanguage>;
+};
+
+export type GithubDataDataViewerRepositoriesNodesPrimaryLanguage = {
+  __typename?: "GithubDataDataViewerRepositoriesNodesPrimaryLanguage";
+  name?: Maybe<Scalars["String"]>;
+};
+
+export type GithubDataRawResult = {
+  __typename?: "GithubDataRawResult";
+  data?: Maybe<GithubDataRawResultData>;
+};
+
+export type GithubDataRawResultData = {
+  __typename?: "GithubDataRawResultData";
+  viewer?: Maybe<GithubDataRawResultDataViewer>;
+};
+
+export type GithubDataRawResultDataViewer = {
+  __typename?: "GithubDataRawResultDataViewer";
+  repositories?: Maybe<GithubDataRawResultDataViewerRepositories>;
+};
+
+export type GithubDataRawResultDataViewerRepositories = {
+  __typename?: "GithubDataRawResultDataViewerRepositories";
+  totalCount?: Maybe<Scalars["Int"]>;
+  nodes?: Maybe<Array<Maybe<GithubDataRawResultDataViewerRepositoriesNodes>>>;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesNodes = {
+  __typename?: "GithubDataRawResultDataViewerRepositoriesNodes";
+  name?: Maybe<Scalars["String"]>;
+  url?: Maybe<Scalars["String"]>;
+  primaryLanguage?: Maybe<
+    GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage
+  >;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage = {
+  __typename?: "GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage";
+  name?: Maybe<Scalars["String"]>;
+};
+
+export type GithubDataFilterInput = {
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+  data?: Maybe<GithubDataDataFilterInput>;
+  rawResult?: Maybe<GithubDataRawResultFilterInput>;
+};
+
+export type GithubDataSortInput = {
+  fields?: Maybe<Array<Maybe<GithubDataFieldsEnum>>>;
+  order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+};
+
+export enum GithubDataFieldsEnum {
+  Id = "id",
+  ParentId = "parent___id",
+  ParentParentId = "parent___parent___id",
+  ParentParentParentId = "parent___parent___parent___id",
+  ParentParentParentChildren = "parent___parent___parent___children",
+  ParentParentChildren = "parent___parent___children",
+  ParentParentChildrenId = "parent___parent___children___id",
+  ParentParentChildrenChildren = "parent___parent___children___children",
+  ParentParentInternalContent = "parent___parent___internal___content",
+  ParentParentInternalContentDigest = "parent___parent___internal___contentDigest",
+  ParentParentInternalDescription = "parent___parent___internal___description",
+  ParentParentInternalFieldOwners = "parent___parent___internal___fieldOwners",
+  ParentParentInternalIgnoreType = "parent___parent___internal___ignoreType",
+  ParentParentInternalMediaType = "parent___parent___internal___mediaType",
+  ParentParentInternalOwner = "parent___parent___internal___owner",
+  ParentParentInternalType = "parent___parent___internal___type",
+  ParentChildren = "parent___children",
+  ParentChildrenId = "parent___children___id",
+  ParentChildrenParentId = "parent___children___parent___id",
+  ParentChildrenParentChildren = "parent___children___parent___children",
+  ParentChildrenChildren = "parent___children___children",
+  ParentChildrenChildrenId = "parent___children___children___id",
+  ParentChildrenChildrenChildren = "parent___children___children___children",
+  ParentChildrenInternalContent = "parent___children___internal___content",
+  ParentChildrenInternalContentDigest = "parent___children___internal___contentDigest",
+  ParentChildrenInternalDescription = "parent___children___internal___description",
+  ParentChildrenInternalFieldOwners = "parent___children___internal___fieldOwners",
+  ParentChildrenInternalIgnoreType = "parent___children___internal___ignoreType",
+  ParentChildrenInternalMediaType = "parent___children___internal___mediaType",
+  ParentChildrenInternalOwner = "parent___children___internal___owner",
+  ParentChildrenInternalType = "parent___children___internal___type",
+  ParentInternalContent = "parent___internal___content",
+  ParentInternalContentDigest = "parent___internal___contentDigest",
+  ParentInternalDescription = "parent___internal___description",
+  ParentInternalFieldOwners = "parent___internal___fieldOwners",
+  ParentInternalIgnoreType = "parent___internal___ignoreType",
+  ParentInternalMediaType = "parent___internal___mediaType",
+  ParentInternalOwner = "parent___internal___owner",
+  ParentInternalType = "parent___internal___type",
+  Children = "children",
+  ChildrenId = "children___id",
+  ChildrenParentId = "children___parent___id",
+  ChildrenParentParentId = "children___parent___parent___id",
+  ChildrenParentParentChildren = "children___parent___parent___children",
+  ChildrenParentChildren = "children___parent___children",
+  ChildrenParentChildrenId = "children___parent___children___id",
+  ChildrenParentChildrenChildren = "children___parent___children___children",
+  ChildrenParentInternalContent = "children___parent___internal___content",
+  ChildrenParentInternalContentDigest = "children___parent___internal___contentDigest",
+  ChildrenParentInternalDescription = "children___parent___internal___description",
+  ChildrenParentInternalFieldOwners = "children___parent___internal___fieldOwners",
+  ChildrenParentInternalIgnoreType = "children___parent___internal___ignoreType",
+  ChildrenParentInternalMediaType = "children___parent___internal___mediaType",
+  ChildrenParentInternalOwner = "children___parent___internal___owner",
+  ChildrenParentInternalType = "children___parent___internal___type",
+  ChildrenChildren = "children___children",
+  ChildrenChildrenId = "children___children___id",
+  ChildrenChildrenParentId = "children___children___parent___id",
+  ChildrenChildrenParentChildren = "children___children___parent___children",
+  ChildrenChildrenChildren = "children___children___children",
+  ChildrenChildrenChildrenId = "children___children___children___id",
+  ChildrenChildrenChildrenChildren = "children___children___children___children",
+  ChildrenChildrenInternalContent = "children___children___internal___content",
+  ChildrenChildrenInternalContentDigest = "children___children___internal___contentDigest",
+  ChildrenChildrenInternalDescription = "children___children___internal___description",
+  ChildrenChildrenInternalFieldOwners = "children___children___internal___fieldOwners",
+  ChildrenChildrenInternalIgnoreType = "children___children___internal___ignoreType",
+  ChildrenChildrenInternalMediaType = "children___children___internal___mediaType",
+  ChildrenChildrenInternalOwner = "children___children___internal___owner",
+  ChildrenChildrenInternalType = "children___children___internal___type",
+  ChildrenInternalContent = "children___internal___content",
+  ChildrenInternalContentDigest = "children___internal___contentDigest",
+  ChildrenInternalDescription = "children___internal___description",
+  ChildrenInternalFieldOwners = "children___internal___fieldOwners",
+  ChildrenInternalIgnoreType = "children___internal___ignoreType",
+  ChildrenInternalMediaType = "children___internal___mediaType",
+  ChildrenInternalOwner = "children___internal___owner",
+  ChildrenInternalType = "children___internal___type",
+  InternalContent = "internal___content",
+  InternalContentDigest = "internal___contentDigest",
+  InternalDescription = "internal___description",
+  InternalFieldOwners = "internal___fieldOwners",
+  InternalIgnoreType = "internal___ignoreType",
+  InternalMediaType = "internal___mediaType",
+  InternalOwner = "internal___owner",
+  InternalType = "internal___type",
+  DataViewerRepositoriesTotalCount = "data___viewer___repositories___totalCount",
+  DataViewerRepositoriesNodes = "data___viewer___repositories___nodes",
+}
+
+export type GithubDataConnection = {
+  __typename?: "GithubDataConnection";
+  totalCount: Scalars["Int"];
+  edges: Array<GithubDataEdge>;
+  nodes: Array<GithubData>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars["String"]>;
+  group: Array<GithubDataGroupConnection>;
+};
+
+export type GithubDataConnectionDistinctArgs = {
+  field: GithubDataFieldsEnum;
+};
+
+export type GithubDataConnectionGroupArgs = {
+  skip?: Maybe<Scalars["Int"]>;
+  limit?: Maybe<Scalars["Int"]>;
+  field: GithubDataFieldsEnum;
+};
+
+export type GithubDataEdge = {
+  __typename?: "GithubDataEdge";
+  next?: Maybe<GithubData>;
+  node: GithubData;
+  previous?: Maybe<GithubData>;
+};
+
+export type GithubDataGroupConnection = {
+  __typename?: "GithubDataGroupConnection";
+  totalCount: Scalars["Int"];
+  edges: Array<GithubDataEdge>;
+  nodes: Array<GithubData>;
   pageInfo: PageInfo;
   field: Scalars["String"];
   fieldValue?: Maybe<Scalars["String"]>;
@@ -5226,6 +5527,10 @@ export enum SitePluginFieldsEnum {
   PluginOptionsPluginsPluginFilepath = "pluginOptions___plugins___pluginFilepath",
   PluginOptionsDomains = "pluginOptions___domains",
   PluginOptionsSiteUrl = "pluginOptions___siteUrl",
+  PluginOptionsKey = "pluginOptions___key",
+  PluginOptionsId = "pluginOptions___id",
+  PluginOptionsToken = "pluginOptions___token",
+  PluginOptionsGraphQlQuery = "pluginOptions___graphQLQuery",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsName = "pluginOptions___name",
   PluginOptionsStylesProviderInjectFirst = "pluginOptions___stylesProvider___injectFirst",
@@ -5266,8 +5571,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsProtocol = "pluginOptions___protocol",
   PluginOptionsHostname = "pluginOptions___hostname",
   PluginOptionsPathCheck = "pluginOptions___pathCheck",
-  PluginOptionsKey = "pluginOptions___key",
-  PluginOptionsId = "pluginOptions___id",
   NodeApIs = "nodeAPIs",
   BrowserApIs = "browserAPIs",
   SsrApIs = "ssrAPIs",
@@ -5701,6 +6004,56 @@ export type SoftwareQuery = { __typename?: "Query" } & {
   softwareJson?: Maybe<
     { __typename?: "SoftwareJson" } & Pick<SoftwareJson, "_2019" | "_2020">
   >;
+  allGithubData: { __typename?: "GithubDataConnection" } & {
+    edges: Array<
+      { __typename?: "GithubDataEdge" } & {
+        node: { __typename?: "GithubData" } & Pick<GithubData, "id"> & {
+            rawResult?: Maybe<
+              { __typename?: "GithubDataRawResult" } & {
+                data?: Maybe<
+                  { __typename?: "GithubDataRawResultData" } & {
+                    viewer?: Maybe<
+                      { __typename?: "GithubDataRawResultDataViewer" } & {
+                        repositories?: Maybe<
+                          {
+                            __typename?: "GithubDataRawResultDataViewerRepositories";
+                          } & Pick<
+                            GithubDataRawResultDataViewerRepositories,
+                            "totalCount"
+                          > & {
+                              nodes?: Maybe<
+                                Array<
+                                  Maybe<
+                                    {
+                                      __typename?: "GithubDataRawResultDataViewerRepositoriesNodes";
+                                    } & Pick<
+                                      GithubDataRawResultDataViewerRepositoriesNodes,
+                                      "name" | "url"
+                                    > & {
+                                        primaryLanguage?: Maybe<
+                                          {
+                                            __typename?: "GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage";
+                                          } & Pick<
+                                            GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage,
+                                            "name"
+                                          >
+                                        >;
+                                      }
+                                  >
+                                >
+                              >;
+                            }
+                        >;
+                      }
+                    >;
+                  }
+                >;
+              }
+            >;
+          };
+      }
+    >;
+  };
 };
 
 export type BlogPostBySlugQueryVariables = {
