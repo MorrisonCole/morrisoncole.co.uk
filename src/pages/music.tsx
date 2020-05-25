@@ -1,13 +1,4 @@
-import {
-  createStyles,
-  ExpansionPanel,
-  ExpansionPanelDetails,
-  ExpansionPanelSummary,
-  makeStyles,
-  Theme,
-  Typography,
-} from "@material-ui/core";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { createStyles, makeStyles, Theme, Grid } from "@material-ui/core";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import InfoImageCard from "../components/cards/info_image_card";
@@ -17,7 +8,7 @@ import { MusicQuery } from "../../types/graphql-types";
 const styles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(3),
     },
     heading: {
       fontSize: 20,
@@ -36,69 +27,36 @@ export default function Music({
 }: MusicProps & PageProps): JSX.Element {
   const classes = styles();
 
-  const [expanded, setExpanded] = React.useState<string | false>("panel1");
-
-  const handleChange = (panel: string) => (
-    _: React.ChangeEvent<{}>,
-    isExpanded: boolean
-  ): void => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
   return (
     <div className={classes.container}>
       <SEO title="Music" location={location} />
-      <ExpansionPanel
-        expanded={expanded === "panel1"}
-        onChange={handleChange("panel1")}
-      >
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>Collaborations</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <section id="Latent%20Signal">
-            <InfoImageCard
-              title="Latent Signal"
-              image={data.latentSignal.childImageSharp.fluid}
-              subtitle1="British band creating original music, covers, and (sometimes) the odd vlog."
-              text={
-                "We've been writing music for over 10 years, and recently began releasing our creations as fully-fledged music videos."
-              }
-              actionTitle="Watch on YouTube"
-              actionHref="https://www.youtube.com/channel/UCqQdwJ5W-FDAin_Hc6oHz_A"
-            />
-          </section>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+      <Grid container justify="center" spacing={4}>
+        <Grid item xs={12}>
+          <InfoImageCard
+            title="Latent Signal"
+            image={data.latentSignal.childImageSharp.fluid}
+            subtitle1="Founded in 2010."
+            text={
+              "My band. We create original music, covers, and (sometimes) the odd vlog."
+            }
+            actionTitle="Watch on YouTube"
+            actionHref="https://www.youtube.com/channel/UCqQdwJ5W-FDAin_Hc6oHz_A"
+          />
+        </Grid>
+      </Grid>
 
-      <ExpansionPanel
-        expanded={expanded === "panel2"}
-        onChange={handleChange("panel2")}
-      >
-        <ExpansionPanelSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className={classes.heading}>Solo</Typography>
-        </ExpansionPanelSummary>
-        <ExpansionPanelDetails>
-          <section id="Parapraxis:%20Suite%20I%20(Clio)">
-            <InfoImageCard
-              title="Parapraxis: Suite I (Clio)"
-              image={data.clioCover.childImageSharp.fluid}
-              subtitle1="Game OST"
-              text="An original EP for the game Parapraxis: Foundations. Orchestral / Orchestral Rock, recorded with a mixture of VSTs and live instruments."
-              actionTitle="Listen On Bandcamp"
-              actionHref="https://morrisoncole.bandcamp.com/"
-            />
-          </section>
-        </ExpansionPanelDetails>
-      </ExpansionPanel>
+      <Grid container justify="flex-start" spacing={4}>
+        <Grid item xs={6}>
+          <InfoImageCard
+            title="Parapraxis: Suite I (Clio)"
+            image={data.clioCover.childImageSharp.fluid}
+            subtitle1="Game OST"
+            text="An original EP for the game Parapraxis: Foundations. Orchestral / Orchestral Rock, recorded with a mixture of VSTs and live instruments."
+            actionTitle="Listen On Bandcamp"
+            actionHref="https://morrisoncole.bandcamp.com/"
+          />
+        </Grid>
+      </Grid>
     </div>
   );
 }

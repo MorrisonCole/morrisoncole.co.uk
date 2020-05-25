@@ -10,9 +10,7 @@ import React from "react";
 import Image, { FluidObject } from "gatsby-image";
 
 const styles = makeStyles({
-  card: {
-    maxWidth: 400,
-  },
+  card: {},
   image: {
     height: 0,
     paddingTop: "56.25%", // 16:9
