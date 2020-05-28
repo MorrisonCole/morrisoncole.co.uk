@@ -60,6 +60,7 @@ module.exports = {
                 nodes {
                   name
                   url
+                  updatedAt
                   primaryLanguage {
                     name
                   }

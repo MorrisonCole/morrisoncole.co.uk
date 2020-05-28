@@ -3497,6 +3497,7 @@ export type GithubDataDataViewerRepositoriesNodesFilterListInput = {
 export type GithubDataDataViewerRepositoriesNodesFilterInput = {
   name?: Maybe<StringQueryOperatorInput>;
   url?: Maybe<StringQueryOperatorInput>;
+  updatedAt?: Maybe<DateQueryOperatorInput>;
   primaryLanguage?: Maybe<
     GithubDataDataViewerRepositoriesNodesPrimaryLanguageFilterInput
   >;
@@ -3530,6 +3531,7 @@ export type GithubDataRawResultDataViewerRepositoriesNodesFilterListInput = {
 export type GithubDataRawResultDataViewerRepositoriesNodesFilterInput = {
   name?: Maybe<StringQueryOperatorInput>;
   url?: Maybe<StringQueryOperatorInput>;
+  updatedAt?: Maybe<DateQueryOperatorInput>;
   primaryLanguage?: Maybe<
     GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguageFilterInput
   >;
@@ -3569,7 +3571,15 @@ export type GithubDataDataViewerRepositoriesNodes = {
   __typename?: "GithubDataDataViewerRepositoriesNodes";
   name?: Maybe<Scalars["String"]>;
   url?: Maybe<Scalars["String"]>;
+  updatedAt?: Maybe<Scalars["Date"]>;
   primaryLanguage?: Maybe<GithubDataDataViewerRepositoriesNodesPrimaryLanguage>;
+};
+
+export type GithubDataDataViewerRepositoriesNodesUpdatedAtArgs = {
+  formatString?: Maybe<Scalars["String"]>;
+  fromNow?: Maybe<Scalars["Boolean"]>;
+  difference?: Maybe<Scalars["String"]>;
+  locale?: Maybe<Scalars["String"]>;
 };
 
 export type GithubDataDataViewerRepositoriesNodesPrimaryLanguage = {
@@ -3602,9 +3612,17 @@ export type GithubDataRawResultDataViewerRepositoriesNodes = {
   __typename?: "GithubDataRawResultDataViewerRepositoriesNodes";
   name?: Maybe<Scalars["String"]>;
   url?: Maybe<Scalars["String"]>;
+  updatedAt?: Maybe<Scalars["Date"]>;
   primaryLanguage?: Maybe<
     GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage
   >;
+};
+
+export type GithubDataRawResultDataViewerRepositoriesNodesUpdatedAtArgs = {
+  formatString?: Maybe<Scalars["String"]>;
+  fromNow?: Maybe<Scalars["Boolean"]>;
+  difference?: Maybe<Scalars["String"]>;
+  locale?: Maybe<Scalars["String"]>;
 };
 
 export type GithubDataRawResultDataViewerRepositoriesNodesPrimaryLanguage = {
@@ -6028,7 +6046,7 @@ export type SoftwareQuery = { __typename?: "Query" } & {
                                       __typename?: "GithubDataRawResultDataViewerRepositoriesNodes";
                                     } & Pick<
                                       GithubDataRawResultDataViewerRepositoriesNodes,
-                                      "name" | "url"
+                                      "name" | "url" | "updatedAt"
                                     > & {
                                         primaryLanguage?: Maybe<
                                           {
