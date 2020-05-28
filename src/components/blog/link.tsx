@@ -1,16 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Link as GatsbyLink } from "gatsby";
 
 interface LinkProps {
-  children: JSX.Element;
   href: string;
-  activeClassName: string;
-  partiallyActive: boolean;
+  children: ReactNode;
+  activeClassName?: string;
+  partiallyActive?: boolean;
 }
 
 const Link = ({
-  children,
   href,
+  children,
   activeClassName,
   partiallyActive,
   ...other
