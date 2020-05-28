@@ -21,6 +21,7 @@ import { graphql, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import { SoftwareQuery } from "../../types/graphql-types";
+import Link from "../components/blog/link";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -36,8 +37,12 @@ const styles = makeStyles((theme: Theme) =>
     announcement: {
       padding: theme.spacing(2),
     },
-    table: {
-      minWidth: 650,
+    table: {},
+    paper: {
+      padding: theme.spacing(2),
+      display: "flex",
+      overflow: "auto",
+      flexDirection: "column",
     },
   })
 );
@@ -74,65 +79,60 @@ export default function Software({
   ));
 
   return (
-    <>
+    <Grid container className={classes.container}>
       <SEO title="Software" location={location} />
-      <Grid
-        container
-        className={classes.container}
-        alignItems="center"
-        justify="center"
-        direction="column"
-      >
-        <Grid item className={classes.announcementContainer}>
-          <Paper className={classes.announcement}>
-            <Typography variant="h5" align="center">
-              Eventually I&apos;ll list my projects here!
-            </Typography>
-            <Typography variant="body2" align="center" className={classes.body}>
-              In the meantime, you can check out my{" "}
-              <a href="https://github.com/morrisoncole">GitHub</a> or{" "}
-              <a href="https://stackoverflow.com/users/516642/morrison-cole?tab=profile">
-                Stack Overflow
-              </a>{" "}
-              :)
-            </Typography>
+      <Grid container direction="column" spacing={4}>
+        <Grid item container direction="column" md={6} spacing={4}>
+          <Grid item>
+            <Paper className={classes.paper}>
+              <Typography variant="h5">
+                2020: New stuff I&apos;ve been learning / using
+              </Typography>
+              <Typography variant="subtitle1">
+                (By no means exhaustive ♥)
+              </Typography>
+              <List dense>{listItems2020}</List>
+            </Paper>
+          </Grid>
+          <Grid item>
+            <Paper className={classes.paper}>
+              <Typography variant="h5">2019: Stuff I learned</Typography>
+              <List dense>{listItems2019}</List>
+            </Paper>
+          </Grid>
+        </Grid>
+        <Grid item md={8}>
+          <Paper className={classes.paper}>
+            <TableContainer>
+              <Table className={classes.table} aria-label="simple table">
+                <TableHead>
+                  <TableRow>
+                    <TableCell>Project</TableCell>
+                    <TableCell align="right">Primary Language</TableCell>
+                    <TableCell align="right">Last Updated</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {repositories.map((repository) => (
+                    <TableRow key={repository?.name}>
+                      <TableCell component="th" scope="row">
+                        <Link href={repository?.url}>{repository?.name}</Link>
+                      </TableCell>
+                      <TableCell align="right">
+                        {repository?.primaryLanguage?.name ?? "Unknown"}
+                      </TableCell>
+                      <TableCell align="right">
+                        {repository?.updatedAt}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
           </Paper>
         </Grid>
       </Grid>
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Project</TableCell>
-              <TableCell align="right">Primary Language</TableCell>
-              <TableCell align="right">Last Updated</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {repositories.map((repository) => (
-              <TableRow key={repository?.name}>
-                <TableCell component="th" scope="row">
-                  {repository?.name}
-                </TableCell>
-                <TableCell align="right">
-                  {repository?.primaryLanguage?.name ?? "Unknown"}
-                </TableCell>
-                <TableCell align="right">Unknown</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-      <Typography variant="h5" className={classes.container}>
-        2020: New stuff I&apos;ve been learning / using
-      </Typography>
-      <Typography variant="subtitle1">(By no means exhaustive ♥)</Typography>
-      <List dense>{listItems2020}</List>
-      <Typography variant="h5" className={classes.container}>
-        2019: Stuff I learned
-      </Typography>
-      <List dense>{listItems2019}</List>
-    </>
+    </Grid>
   );
 }
 
@@ -153,6 +153,7 @@ export const pageQuery = graphql`
                   nodes {
                     name
                     url
+                    updatedAt(formatString: "MMMM DD, YYYY")
                     primaryLanguage {
                       name
                     }
