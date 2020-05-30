@@ -1,0 +1,10 @@
+.anchor {
+  padding: 0 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.anchor:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
