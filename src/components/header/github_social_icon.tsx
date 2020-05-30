@@ -1,4 +1,4 @@
-import { createStyles, Theme } from "@material-ui/core";
+import { createStyles, Theme, lighten } from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import SvgIcon, { SvgIconProps } from "@material-ui/core/SvgIcon";
 import React from "react";
@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down("sm")]: {
         fontSize: "2.5rem",
       },
-      color: "#333",
+      color: theme.palette.type === "light" ? "#333" : lighten("#333", 0.75),
     },
   })
 );
