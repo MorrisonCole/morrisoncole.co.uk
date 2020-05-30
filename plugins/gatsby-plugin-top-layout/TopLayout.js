@@ -4,8 +4,14 @@ import { Helmet } from "react-helmet";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "../../src/theme";
+import { useMediaQuery } from "@material-ui/core";
 
 export default function TopLayout(props) {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const memoizedTheme = React.useMemo(() => theme(prefersDarkMode), [
+    prefersDarkMode,
+  ]);
+
   return (
     <React.Fragment>
       <Helmet>
@@ -18,7 +24,7 @@ export default function TopLayout(props) {
           rel="stylesheet"
         />
       </Helmet>
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={memoizedTheme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         {props.children}
