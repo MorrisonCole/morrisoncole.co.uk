@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Typography, createStyles, Theme, lighten } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
@@ -9,25 +9,29 @@ function currentYear(): number {
   return new Date().getFullYear();
 }
 
-const useStyles = makeStyles({
-  container: {
-    padding: 0,
-  },
-  footer: {
-    backgroundColor: "#f5f5f5",
-    fontSize: "0.9em",
-    flexShrink: 0,
-    marginTop: "45px",
-    padding: "35px 0 36px",
-    borderTop: "1px solid #e5e5e5",
-  },
-  footerText: {
-    paddingLeft: "5%",
-  },
-  fade: {
-    opacity: 0.6,
-  },
-});
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    container: {
+      padding: 0,
+    },
+    footer: {
+      backgroundColor:
+        theme.palette.type === "light"
+          ? theme.palette.grey[200]
+          : theme.palette.grey[800],
+      fontSize: "0.9em",
+      flexShrink: 0,
+      marginTop: "45px",
+      padding: "35px 0 36px",
+    },
+    footerText: {
+      paddingLeft: "5%",
+    },
+    fade: {
+      opacity: 0.6,
+    },
+  })
+);
 
 export default function Footer(): JSX.Element {
   const classes = useStyles();
