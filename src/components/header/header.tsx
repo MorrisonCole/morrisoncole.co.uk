@@ -1,4 +1,4 @@
-import { createStyles, Theme } from "@material-ui/core";
+import { createStyles, Theme, Switch } from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
@@ -9,6 +9,8 @@ import GitHubSocialIcon from "./github_social_icon";
 import LinkedInSocialIcon from "./linked_in_social_icon";
 import StackOverflowSocialIcon from "./stack_overflow_social_icon";
 import TwitterSocialIcon from "./twitter_social_icon";
+import useStateWithLocalStorage from "../../state-with-local-storage";
+import { useChangeTheme } from "../../theme";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -53,6 +55,17 @@ export default function Header(): JSX.Element {
     }
   `);
 
+  const [darkMode, setDarkMode] = useStateWithLocalStorage(false, "darkMode");
+  const changeTheme = useChangeTheme();
+
+  const handleDarkModeChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    const darkMode = event.target.checked;
+    setDarkMode(darkMode);
+    changeTheme({ darkMode });
+  };
+
   return (
     <header>
       <Grid container direction="column">
@@ -80,6 +93,11 @@ export default function Header(): JSX.Element {
                 alt="Morrison Cole"
                 fluid={data.avatar.childImageSharp.fluid}
                 className={classes.profilePicture}
+              />
+              <Switch
+                checked={darkMode}
+                onChange={handleDarkModeChange}
+                inputProps={{ "aria-label": "secondary checkbox" }}
               />
             </Grid>
           </Grid>
