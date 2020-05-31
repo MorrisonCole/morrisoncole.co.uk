@@ -23,7 +23,10 @@ export function ThemeProvider(props: {
 }): React.ReactNode {
   const { children } = props;
 
-  const systemPrefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const systemPrefersDarkMode = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+
   const [darkMode] = useStateWithLocalStorage(
     systemPrefersDarkMode,
     "darkMode"
