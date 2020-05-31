@@ -21,8 +21,8 @@ const useStyles = makeStyles((theme: Theme) =>
           : theme.palette.grey[800],
       fontSize: "0.9em",
       flexShrink: 0,
-      marginTop: "45px",
-      padding: "35px 0 36px",
+      marginTop: theme.spacing(4),
+      padding: theme.spacing(4, 2),
     },
     footerText: {
       paddingLeft: "5%",
@@ -39,7 +39,7 @@ export default function Footer(): JSX.Element {
   return (
     <footer>
       <Container maxWidth={false} className={classes.container}>
-        <Grid item xs className={classes.footer}>
+        <Grid item className={classes.footer}>
           <Typography variant="body2" className={classes.footerText}>
             Handcrafted with TypeScript, React, Material-UI, and Gatsby ♥
           </Typography>
