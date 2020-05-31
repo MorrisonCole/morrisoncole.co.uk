@@ -9,8 +9,8 @@ import GitHubSocialIcon from "./github_social_icon";
 import LinkedInSocialIcon from "./linked_in_social_icon";
 import StackOverflowSocialIcon from "./stack_overflow_social_icon";
 import TwitterSocialIcon from "./twitter_social_icon";
-import useStateWithLocalStorage from "../../state-with-local-storage";
-import { useChangeTheme } from "../../theme";
+import DarkModeSwitch from "./DarkModeSwitch";
+import ClientOnly from "../client_only";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -55,17 +55,6 @@ export default function Header(): JSX.Element {
     }
   `);
 
-  const [darkMode, setDarkMode] = useStateWithLocalStorage(false, "darkMode");
-  const changeTheme = useChangeTheme();
-
-  const handleDarkModeChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ): void => {
-    const darkMode = !event.target.checked;
-    setDarkMode(darkMode);
-    changeTheme({ darkMode });
-  };
-
   return (
     <header>
       <Grid container direction="column">
@@ -94,11 +83,9 @@ export default function Header(): JSX.Element {
                 fluid={data.avatar.childImageSharp.fluid}
                 className={classes.profilePicture}
               />
-              <Switch
-                checked={!darkMode}
-                onChange={handleDarkModeChange}
-                inputProps={{ "aria-label": "secondary checkbox" }}
-              />
+              <ClientOnly>
+                <DarkModeSwitch />
+              </ClientOnly>
             </Grid>
           </Grid>
         </Grid>
