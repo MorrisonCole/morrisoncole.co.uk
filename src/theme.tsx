@@ -18,7 +18,9 @@ export function useChangeTheme() {
   );
 }
 
-export function ThemeProvider(props: { children: any }) {
+export function ThemeProvider(props: {
+  children: React.ReactNode;
+}): React.ReactNode {
   const { children } = props;
 
   const systemPrefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");

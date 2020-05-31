@@ -1,6 +1,9 @@
 import React from "react";
 
-export default function ClientOnly({ children, ...delegated }) {
+export default function ClientOnly({
+  children,
+  ...delegated
+}): React.ReactNode {
   const [hasMounted, setHasMounted] = React.useState(false);
 
   React.useEffect(() => {
@@ -14,7 +17,7 @@ export default function ClientOnly({ children, ...delegated }) {
   return <div {...delegated}>{children}</div>;
 }
 
-export function useHasMounted() {
+export function useHasMounted(): boolean {
   const [hasMounted, setHasMounted] = React.useState(false);
 
   React.useEffect(() => {
