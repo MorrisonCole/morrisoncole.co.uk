@@ -61,7 +61,7 @@ export default function Header(): JSX.Element {
   const handleDarkModeChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ): void => {
-    const darkMode = event.target.checked;
+    const darkMode = !event.target.checked;
     setDarkMode(darkMode);
     changeTheme({ darkMode });
   };
@@ -95,7 +95,7 @@ export default function Header(): JSX.Element {
                 className={classes.profilePicture}
               />
               <Switch
-                checked={darkMode}
+                checked={!darkMode}
                 onChange={handleDarkModeChange}
                 inputProps={{ "aria-label": "secondary checkbox" }}
               />
