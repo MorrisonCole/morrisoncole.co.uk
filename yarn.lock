@@ -1537,22 +1537,6 @@
     "@graphql-tools/utils" "^6.0.0"
     tslib "~2.0.0"
 
-"@graphql-codegen/plugin-helpers@1.15.2":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.15.2.tgz#102d93094858f10537911bd3c788f730f0f74974"
-  integrity sha512-5bvgNrLEtXj0tmyGj0I2JfxbjL1wkOKcjTubGDFfmbOR4aGOCCJPCgTtoCyCX8qbazW4LOsVInWieKEoEGUzYg==
-  dependencies:
-    "@graphql-tools/utils" "^6.0.0"
-    camel-case "4.1.1"
-    common-tags "1.8.0"
-    constant-case "3.0.3"
-    import-from "3.0.0"
-    lower-case "2.0.1"
-    param-case "3.0.3"
-    pascal-case "3.1.1"
-    tslib "~2.0.0"
-    upper-case "2.0.1"
-
 "@graphql-codegen/plugin-helpers@1.15.3":
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.15.3.tgz#0e2cf89b8aec3ee7a737157ac1b08fbfce626e07"
@@ -1580,16 +1564,6 @@
     auto-bind "~4.0.0"
     tslib "~2.0.0"
 
-"@graphql-codegen/typescript@1.15.2":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript/-/typescript-1.15.2.tgz#c088b84d305fac8b560222022783ea8b9596b729"
-  integrity sha512-2FBuHbQNaLKw40gRi+8uRTTD87gIbBrKRykhJ+ynmooKTpGhl9PLq0q0Dt/kWfebxBzVyWAMVEEsC/KRQ/ACxg==
-  dependencies:
-    "@graphql-codegen/plugin-helpers" "1.15.2"
-    "@graphql-codegen/visitor-plugin-common" "1.15.2"
-    auto-bind "~4.0.0"
-    tslib "~2.0.0"
-
 "@graphql-codegen/typescript@1.15.3":
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript/-/typescript-1.15.3.tgz#3067ae374c7cc45a17ff30ed12eb8399af78ad93"
@@ -1598,21 +1572,6 @@
     "@graphql-codegen/plugin-helpers" "1.15.3"
     "@graphql-codegen/visitor-plugin-common" "1.15.3"
     auto-bind "~4.0.0"
-    tslib "~2.0.0"
-
-"@graphql-codegen/visitor-plugin-common@1.15.2":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/visitor-plugin-common/-/visitor-plugin-common-1.15.2.tgz#81a353f6b7fe2f5327884f354bca3175142232ef"
-  integrity sha512-/qdLy7HkdexVEa52qBEiJWte/caMSuNcxpf8sU31hDf+c8CPq6bkaEEfSKZpeMDgNzlOXStRSEHaR/S0NyWaJw==
-  dependencies:
-    "@graphql-codegen/plugin-helpers" "1.15.2"
-    "@graphql-tools/relay-operation-optimizer" "6.0.9"
-    array.prototype.flatmap "1.2.3"
-    auto-bind "~4.0.0"
-    dependency-graph "0.9.0"
-    graphql-tag "2.10.3"
-    parse-filepath "1.0.2"
-    pascal-case "3.1.1"
     tslib "~2.0.0"
 
 "@graphql-codegen/visitor-plugin-common@1.15.3":
