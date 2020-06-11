@@ -1478,13 +1478,13 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@graphql-codegen/cli@1.15.2":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.15.2.tgz#7513fdfbcd998131c37719044368ee1c2dea29ba"
-  integrity sha512-eEoChXpBGXI+4gAUoAe3c+xc1bXoDBwO0xiNqZeDFFAe4gh3qNzjhYUuiWLYDn56MOtgeGPAQcn6yAMHrH5M8Q==
+"@graphql-codegen/cli@1.15.3":
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-1.15.3.tgz#633d23c1ed5ffb32aceebabc768914a2595c87be"
+  integrity sha512-nq/ypeK6pIiH+9V6r7mTie5W6JUXLQHevwrp1mBTRhVwiXWTi9i67qOm+Twl61go+logRakG6dbTzCe9OP2J5Q==
   dependencies:
-    "@graphql-codegen/core" "1.15.2"
-    "@graphql-codegen/plugin-helpers" "1.15.2"
+    "@graphql-codegen/core" "1.15.3"
+    "@graphql-codegen/plugin-helpers" "1.15.3"
     "@graphql-tools/apollo-engine-loader" "^6.0.0"
     "@graphql-tools/code-file-loader" "^6.0.0"
     "@graphql-tools/git-loader" "^6.0.0"
@@ -1527,12 +1527,12 @@
     wrap-ansi "7.0.0"
     yargs "15.3.1"
 
-"@graphql-codegen/core@1.15.2":
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/@graphql-codegen/core/-/core-1.15.2.tgz#62817e652032528954b9a4c4d3c0a1ed406b2644"
-  integrity sha512-hZh68w4C1hGi/8F6oSK5cOzI03GKybN7unDtF2XWBvTevLVBZrVk/8RQJKLZYgx+ldGdcm2wbf4T6HPWo7w1Kg==
+"@graphql-codegen/core@1.15.3":
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/core/-/core-1.15.3.tgz#a7d72fefdbc20d111dd33bc1bf964faa565e98b7"
+  integrity sha512-L3iBKayJRJ1slNWppxfox5VXNu7KE5vNYhm6CqahywaaZLDxpbevw3D6U3O4sW2S7xdZQq2ucggjrRS8gQuS1g==
   dependencies:
-    "@graphql-codegen/plugin-helpers" "1.15.2"
+    "@graphql-codegen/plugin-helpers" "1.15.3"
     "@graphql-tools/merge" "^6.0.0"
     "@graphql-tools/utils" "^6.0.0"
     tslib "~2.0.0"
@@ -1541,6 +1541,22 @@
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.15.2.tgz#102d93094858f10537911bd3c788f730f0f74974"
   integrity sha512-5bvgNrLEtXj0tmyGj0I2JfxbjL1wkOKcjTubGDFfmbOR4aGOCCJPCgTtoCyCX8qbazW4LOsVInWieKEoEGUzYg==
+  dependencies:
+    "@graphql-tools/utils" "^6.0.0"
+    camel-case "4.1.1"
+    common-tags "1.8.0"
+    constant-case "3.0.3"
+    import-from "3.0.0"
+    lower-case "2.0.1"
+    param-case "3.0.3"
+    pascal-case "3.1.1"
+    tslib "~2.0.0"
+    upper-case "2.0.1"
+
+"@graphql-codegen/plugin-helpers@1.15.3":
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-1.15.3.tgz#0e2cf89b8aec3ee7a737157ac1b08fbfce626e07"
+  integrity sha512-32SbFNWRqUrjVbD5NQjlvbaM+be7x3upu3K/leS6+gop5q2y6CsvvoboMyj1p1N4Vee6lL87msojnOCOryxPFg==
   dependencies:
     "@graphql-tools/utils" "^6.0.0"
     camel-case "4.1.1"
@@ -1955,14 +1971,14 @@
     valid-url "1.0.9"
     websocket "1.0.31"
 
-"@graphql-tools/utils@6.0.7", "@graphql-tools/utils@^6.0.0":
+"@graphql-tools/utils@6.0.7":
   version "6.0.7"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.7.tgz#0dc8837988b04961162bb76741bfa1072a03418c"
   integrity sha512-ij/ohAg/PBWx8JHKNQO7PMuABDUGICFbpaJHCe1OB5q4lGmpwlJXI1jJ6JjAKN8+FX0fc1TPh7zY/ScJ8/dXgg==
   dependencies:
     camel-case "4.1.1"
 
-"@graphql-tools/utils@6.0.9":
+"@graphql-tools/utils@6.0.9", "@graphql-tools/utils@^6.0.0":
   version "6.0.9"
   resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-6.0.9.tgz#135a56f6520a99a2bbbfaf7d76bd5f681d1ce457"
   integrity sha512-WtX+t64SCN9VejKA/gdtm2sHPOX8D1G1tAyrrKH7hnh6RaCmQwYkhs/f6tBnTTYOIBy7yVYNoXzqiv/tmOkAOQ==
