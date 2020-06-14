@@ -9,3 +9,6 @@ public
 
 # Terraform
 .terraform
+
+# VSCode
+.vscode/settings.json
