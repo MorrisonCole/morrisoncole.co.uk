@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.15.4",
-    "@graphql-codegen/typescript": "1.15.3",
+    "@graphql-codegen/typescript": "1.15.4",
     "@graphql-codegen/typescript-operations": "1.15.4",
     "@types/mdx-js__react": "1.5.2",
     "@typescript-eslint/eslint-plugin": "3.3.0",
