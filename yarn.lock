@@ -8720,10 +8720,10 @@ good-listener@^1.2.2:
   dependencies:
     delegate "^3.1.2"
 
-goodreads-api-node@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/goodreads-api-node/-/goodreads-api-node-0.0.10.tgz#84376d99aad00e76e8e365d0934ee8a3badde28d"
-  integrity sha512-SEzrsAKOsfyAdQKYQyluyE6Z/n2HOBc622M3KXtDKOKei6vmWPrKeyCZs+6MlJSERT1TX1kTdTjWkx1T2ssaYg==
+goodreads-api-node@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/goodreads-api-node/-/goodreads-api-node-0.0.11.tgz#6370e067c7d8180bab625ef4bf7fe8630fab2685"
+  integrity sha512-aILctFtwMty07Fy48vQa/ULMJAkY6TTzdHrUpDzlT4BgvO9Z11VLP5xdDg84kcSHf/5YW3mFDGZ4xbSMP+iVXg==
   dependencies:
     oauth "^0.9.15"
     query-string "^4.3.1"
