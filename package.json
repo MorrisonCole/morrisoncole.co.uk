@@ -72,7 +72,7 @@
     "@typescript-eslint/parser": "3.7.1",
     "eslint": "7.5.0",
     "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react": "7.20.4",
     "express": "4.17.1",
     "goodreads-api-node": "0.0.12",
     "open": "7.1.0",
