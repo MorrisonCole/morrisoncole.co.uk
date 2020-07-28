@@ -74,7 +74,7 @@
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-react": "7.20.3",
     "express": "4.17.1",
-    "goodreads-api-node": "0.0.11",
+    "goodreads-api-node": "0.0.12",
     "open": "7.1.0",
     "prettier": "2.0.5",
     "server": "1.0.29",
