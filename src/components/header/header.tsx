@@ -1,4 +1,4 @@
-import { createStyles, Theme, Switch } from "@material-ui/core";
+import { createStyles, Theme } from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
@@ -11,6 +11,7 @@ import StackOverflowSocialIcon from "./stack_overflow_social_icon";
 import TwitterSocialIcon from "./twitter_social_icon";
 import DarkModeSwitch from "./DarkModeSwitch";
 import ClientOnly from "../client_only";
+import logo from "../../../content/assets/morrison-cole.svg";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -67,8 +68,8 @@ export default function Header(): JSX.Element {
         >
           <Grid item xs>
             <Grid container justify="center" alignItems="center">
-              <Image
-                fluid={data.logo.childImageSharp.fluid}
+              <img
+                src={logo}
                 alt="Morrison Cole logo"
                 className={classes.logo}
               />
