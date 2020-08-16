@@ -11,7 +11,7 @@ import StackOverflowSocialIcon from "./stack_overflow_social_icon";
 import TwitterSocialIcon from "./twitter_social_icon";
 import DarkModeSwitch from "./DarkModeSwitch";
 import ClientOnly from "../client_only";
-import logo from "../../../content/assets/morrison-cole.svg";
+import Logo from "./logo";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -19,11 +19,6 @@ const useStyles = makeStyles((theme: Theme) =>
       width: "65%",
       height: "65%",
       marginBottom: 0,
-    },
-    logo: {
-      margin: "0 30px 10px 0",
-      width: "80%",
-      height: "80%",
     },
     grid: {
       marginTop: "2%",
@@ -39,13 +34,6 @@ export default function Header(): JSX.Element {
 
   const data = useStaticQuery(graphql`
     query Header {
-      logo: file(absolutePath: { regex: "/morrison-cole-logo.png/" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
         childImageSharp {
           fluid {
@@ -68,11 +56,7 @@ export default function Header(): JSX.Element {
         >
           <Grid item xs>
             <Grid container justify="center" alignItems="center">
-              <img
-                src={logo}
-                alt="Morrison Cole logo"
-                className={classes.logo}
-              />
+              <Logo />
             </Grid>
           </Grid>
 
