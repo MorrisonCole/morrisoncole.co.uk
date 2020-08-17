@@ -1,4 +1,7 @@
 export type Maybe<T> = T | null;
+export type Exact<T extends { [key: string]: unknown }> = {
+  [K in keyof T]: T[K];
+};
 /** All built-in and custom scalars, mapped to their actual values */
 export type Scalars = {
   ID: string;
@@ -171,7 +174,7 @@ export type QueryAllSitePageArgs = {
 export type QuerySiteArgs = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  port?: Maybe<DateQueryOperatorInput>;
+  port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
@@ -234,6 +237,7 @@ export type QueryMdxArgs = {
   rawBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
   frontmatter?: Maybe<MdxFrontmatterFilterInput>;
+  slug?: Maybe<StringQueryOperatorInput>;
   body?: Maybe<StringQueryOperatorInput>;
   excerpt?: Maybe<StringQueryOperatorInput>;
   headings?: Maybe<MdxHeadingMdxFilterListInput>;
@@ -610,6 +614,7 @@ export type MdxFilterInput = {
   rawBody?: Maybe<StringQueryOperatorInput>;
   fileAbsolutePath?: Maybe<StringQueryOperatorInput>;
   frontmatter?: Maybe<MdxFrontmatterFilterInput>;
+  slug?: Maybe<StringQueryOperatorInput>;
   body?: Maybe<StringQueryOperatorInput>;
   excerpt?: Maybe<StringQueryOperatorInput>;
   headings?: Maybe<MdxHeadingMdxFilterListInput>;
@@ -1112,6 +1117,7 @@ export type Mdx = Node & {
   rawBody: Scalars["String"];
   fileAbsolutePath: Scalars["String"];
   frontmatter?: Maybe<MdxFrontmatter>;
+  slug?: Maybe<Scalars["String"]>;
   body: Scalars["String"];
   excerpt: Scalars["String"];
   headings?: Maybe<Array<Maybe<MdxHeadingMdx>>>;
@@ -1464,6 +1470,7 @@ export enum FileFieldsEnum {
   ChildMdxRawBody = "childMdx___rawBody",
   ChildMdxFileAbsolutePath = "childMdx___fileAbsolutePath",
   ChildMdxFrontmatterTitle = "childMdx___frontmatter___title",
+  ChildMdxSlug = "childMdx___slug",
   ChildMdxBody = "childMdx___body",
   ChildMdxExcerpt = "childMdx___excerpt",
   ChildMdxHeadings = "childMdx___headings",
@@ -2002,17 +2009,6 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptionsFilterInput = {
   isIconAfterHeader?: Maybe<BooleanQueryOperatorInput>;
   icon?: Maybe<StringQueryOperatorInput>;
   maxWidth?: Maybe<IntQueryOperatorInput>;
-  pathPrefix?: Maybe<StringQueryOperatorInput>;
-  wrapperStyle?: Maybe<StringQueryOperatorInput>;
-  backgroundColor?: Maybe<StringQueryOperatorInput>;
-  linkImagesToOriginal?: Maybe<BooleanQueryOperatorInput>;
-  showCaptions?: Maybe<BooleanQueryOperatorInput>;
-  markdownCaptions?: Maybe<BooleanQueryOperatorInput>;
-  withWebp?: Maybe<BooleanQueryOperatorInput>;
-  tracedSVG?: Maybe<BooleanQueryOperatorInput>;
-  loading?: Maybe<StringQueryOperatorInput>;
-  disableBgImageOnAlpha?: Maybe<BooleanQueryOperatorInput>;
-  disableBgImage?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginPackageJsonFilterInput = {
@@ -2212,17 +2208,6 @@ export type SitePluginPluginOptionsGatsbyRemarkPluginsOptions = {
   isIconAfterHeader?: Maybe<Scalars["Boolean"]>;
   icon?: Maybe<Scalars["String"]>;
   maxWidth?: Maybe<Scalars["Int"]>;
-  pathPrefix?: Maybe<Scalars["String"]>;
-  wrapperStyle?: Maybe<Scalars["String"]>;
-  backgroundColor?: Maybe<Scalars["String"]>;
-  linkImagesToOriginal?: Maybe<Scalars["Boolean"]>;
-  showCaptions?: Maybe<Scalars["Boolean"]>;
-  markdownCaptions?: Maybe<Scalars["Boolean"]>;
-  withWebp?: Maybe<Scalars["Boolean"]>;
-  tracedSVG?: Maybe<Scalars["Boolean"]>;
-  loading?: Maybe<Scalars["String"]>;
-  disableBgImageOnAlpha?: Maybe<Scalars["Boolean"]>;
-  disableBgImage?: Maybe<Scalars["Boolean"]>;
 };
 
 export type SitePluginPackageJson = {
@@ -2532,7 +2517,7 @@ export type Site = Node & {
   __typename?: "Site";
   buildTime?: Maybe<Scalars["Date"]>;
   siteMetadata: SiteSiteMetadata;
-  port?: Maybe<Scalars["Date"]>;
+  port?: Maybe<Scalars["Int"]>;
   host?: Maybe<Scalars["String"]>;
   polyfill?: Maybe<Scalars["Boolean"]>;
   pathPrefix?: Maybe<Scalars["String"]>;
@@ -2543,13 +2528,6 @@ export type Site = Node & {
 };
 
 export type SiteBuildTimeArgs = {
-  formatString?: Maybe<Scalars["String"]>;
-  fromNow?: Maybe<Scalars["Boolean"]>;
-  difference?: Maybe<Scalars["String"]>;
-  locale?: Maybe<Scalars["String"]>;
-};
-
-export type SitePortArgs = {
   formatString?: Maybe<Scalars["String"]>;
   fromNow?: Maybe<Scalars["Boolean"]>;
   difference?: Maybe<Scalars["String"]>;
@@ -2575,7 +2553,7 @@ export type SiteSiteMetadataSocial = {
 export type SiteFilterInput = {
   buildTime?: Maybe<DateQueryOperatorInput>;
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
-  port?: Maybe<DateQueryOperatorInput>;
+  port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
   polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
@@ -3163,6 +3141,7 @@ export enum MdxFieldsEnum {
   RawBody = "rawBody",
   FileAbsolutePath = "fileAbsolutePath",
   FrontmatterTitle = "frontmatter___title",
+  Slug = "slug",
   Body = "body",
   Excerpt = "excerpt",
   Headings = "headings",
@@ -5559,17 +5538,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsGatsbyRemarkPluginsOptionsIsIconAfterHeader = "pluginOptions___gatsbyRemarkPlugins___options___isIconAfterHeader",
   PluginOptionsGatsbyRemarkPluginsOptionsIcon = "pluginOptions___gatsbyRemarkPlugins___options___icon",
   PluginOptionsGatsbyRemarkPluginsOptionsMaxWidth = "pluginOptions___gatsbyRemarkPlugins___options___maxWidth",
-  PluginOptionsGatsbyRemarkPluginsOptionsPathPrefix = "pluginOptions___gatsbyRemarkPlugins___options___pathPrefix",
-  PluginOptionsGatsbyRemarkPluginsOptionsWrapperStyle = "pluginOptions___gatsbyRemarkPlugins___options___wrapperStyle",
-  PluginOptionsGatsbyRemarkPluginsOptionsBackgroundColor = "pluginOptions___gatsbyRemarkPlugins___options___backgroundColor",
-  PluginOptionsGatsbyRemarkPluginsOptionsLinkImagesToOriginal = "pluginOptions___gatsbyRemarkPlugins___options___linkImagesToOriginal",
-  PluginOptionsGatsbyRemarkPluginsOptionsShowCaptions = "pluginOptions___gatsbyRemarkPlugins___options___showCaptions",
-  PluginOptionsGatsbyRemarkPluginsOptionsMarkdownCaptions = "pluginOptions___gatsbyRemarkPlugins___options___markdownCaptions",
-  PluginOptionsGatsbyRemarkPluginsOptionsWithWebp = "pluginOptions___gatsbyRemarkPlugins___options___withWebp",
-  PluginOptionsGatsbyRemarkPluginsOptionsTracedSvg = "pluginOptions___gatsbyRemarkPlugins___options___tracedSVG",
-  PluginOptionsGatsbyRemarkPluginsOptionsLoading = "pluginOptions___gatsbyRemarkPlugins___options___loading",
-  PluginOptionsGatsbyRemarkPluginsOptionsDisableBgImageOnAlpha = "pluginOptions___gatsbyRemarkPlugins___options___disableBgImageOnAlpha",
-  PluginOptionsGatsbyRemarkPluginsOptionsDisableBgImage = "pluginOptions___gatsbyRemarkPlugins___options___disableBgImage",
   PluginOptionsMaxWidth = "pluginOptions___maxWidth",
   PluginOptionsWrapperStyle = "pluginOptions___wrapperStyle",
   PluginOptionsTrackingId = "pluginOptions___trackingId",
@@ -5829,7 +5797,7 @@ export type GatsbyImageSharpSizes_WithWebp_NoBase64Fragment = {
   "aspectRatio" | "src" | "srcSet" | "srcWebp" | "srcSetWebp" | "sizes"
 >;
 
-export type PagesQueryQueryVariables = {};
+export type PagesQueryQueryVariables = Exact<{ [key: string]: never }>;
 
 export type PagesQueryQuery = { __typename?: "Query" } & {
   allSitePage: { __typename?: "SitePageConnection" } & {
@@ -5837,7 +5805,7 @@ export type PagesQueryQuery = { __typename?: "Query" } & {
   };
 };
 
-export type BioQueryVariables = {};
+export type BioQueryVariables = Exact<{ [key: string]: never }>;
 
 export type BioQuery = { __typename?: "Query" } & {
   avatar?: Maybe<
@@ -5866,20 +5834,9 @@ export type BioQuery = { __typename?: "Query" } & {
   >;
 };
 
-export type HeaderQueryVariables = {};
+export type HeaderQueryVariables = Exact<{ [key: string]: never }>;
 
 export type HeaderQuery = { __typename?: "Query" } & {
-  logo?: Maybe<
-    { __typename?: "File" } & {
-      childImageSharp?: Maybe<
-        { __typename?: "ImageSharp" } & {
-          fluid?: Maybe<
-            { __typename?: "ImageSharpFluid" } & GatsbyImageSharpFluidFragment
-          >;
-        }
-      >;
-    }
-  >;
   avatar?: Maybe<
     { __typename?: "File" } & {
       childImageSharp?: Maybe<
@@ -5893,7 +5850,7 @@ export type HeaderQuery = { __typename?: "Query" } & {
   >;
 };
 
-export type SeoQueryVariables = {};
+export type SeoQueryVariables = Exact<{ [key: string]: never }>;
 
 export type SeoQuery = { __typename?: "Query" } & {
   site?: Maybe<
@@ -5911,7 +5868,7 @@ export type SeoQuery = { __typename?: "Query" } & {
   >;
 };
 
-export type BlogIndexQueryVariables = {};
+export type BlogIndexQueryVariables = Exact<{ [key: string]: never }>;
 
 export type BlogIndexQuery = { __typename?: "Query" } & {
   site?: Maybe<
@@ -5959,7 +5916,7 @@ export type BlogIndexQuery = { __typename?: "Query" } & {
   };
 };
 
-export type TimelineIndexQueryVariables = {};
+export type TimelineIndexQueryVariables = Exact<{ [key: string]: never }>;
 
 export type TimelineIndexQuery = { __typename?: "Query" } & {
   allFile: { __typename?: "FileConnection" } & {
@@ -5981,7 +5938,7 @@ export type TimelineIndexQuery = { __typename?: "Query" } & {
   };
 };
 
-export type MusicQueryVariables = {};
+export type MusicQueryVariables = Exact<{ [key: string]: never }>;
 
 export type MusicQuery = { __typename?: "Query" } & {
   latentSignal?: Maybe<
@@ -6016,7 +5973,7 @@ export type MusicQuery = { __typename?: "Query" } & {
   >;
 };
 
-export type SoftwareQueryVariables = {};
+export type SoftwareQueryVariables = Exact<{ [key: string]: never }>;
 
 export type SoftwareQuery = { __typename?: "Query" } & {
   softwareJson?: Maybe<
@@ -6074,9 +6031,9 @@ export type SoftwareQuery = { __typename?: "Query" } & {
   };
 };
 
-export type BlogPostBySlugQueryVariables = {
+export type BlogPostBySlugQueryVariables = Exact<{
   slug: Scalars["String"];
-};
+}>;
 
 export type BlogPostBySlugQuery = { __typename?: "Query" } & {
   site?: Maybe<
