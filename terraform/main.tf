@@ -5,10 +5,6 @@ terraform {
     region  = "us-west-2"
     profile = "morrisoncole"
   }
-
-  required_providers {
-    aws = "2.53.0"
-  }
 }
 
 provider "aws" {
