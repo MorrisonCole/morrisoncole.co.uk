@@ -37,12 +37,8 @@ const styles = makeStyles((theme: Theme) =>
     announcement: {
       padding: theme.spacing(2),
     },
-    table: {},
     paper: {
       padding: theme.spacing(2),
-      display: "flex",
-      overflow: "auto",
-      flexDirection: "column",
     },
   })
 );
@@ -81,7 +77,7 @@ export default function Software({
   return (
     <Grid container className={classes.container}>
       <SEO title="Software" location={location} />
-      <Grid container direction="column" spacing={4}>
+      <Grid container direction="row" spacing={4}>
         <Grid item container direction="column" md={6} spacing={4}>
           <Grid item>
             <Paper className={classes.paper}>
@@ -101,10 +97,10 @@ export default function Software({
             </Paper>
           </Grid>
         </Grid>
-        <Grid item md={8}>
+        <Grid item md={6}>
           <Paper className={classes.paper}>
             <TableContainer>
-              <Table className={classes.table} aria-label="simple table">
+              <Table aria-label="simple table">
                 <TableHead>
                   <TableRow>
                     <TableCell>Project</TableCell>
