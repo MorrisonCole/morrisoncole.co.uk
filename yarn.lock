@@ -8622,10 +8622,10 @@ gatsby-plugin-remove-serviceworker@1.0.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-remove-serviceworker/-/gatsby-plugin-remove-serviceworker-1.0.0.tgz#9fb433bc8bd766e14e1d3711c4ac6f051e1dff7c"
   integrity sha1-n7QzvIvXZuFOHTcRxKxvBR4d/3w=
 
-gatsby-plugin-s3@0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-s3/-/gatsby-plugin-s3-0.3.4.tgz#20df87fe41614918b2f23f95258c978962cfe0ce"
-  integrity sha512-QEBdYBRQuwlHthDkYjKxS6rcSM/dH941TU3xg9ubG5wHlvSSoON6toPYgePvv5QXZ2Qp+dbVwoC5XCcHzDdMcQ==
+gatsby-plugin-s3@0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-s3/-/gatsby-plugin-s3-0.3.5.tgz#78d250338db7b506e6ed591454e89401fb3d84b1"
+  integrity sha512-M8y1Z+FdMkwMuBhyKIWFm6ViFMTw+oJooXpY8Q7Qg/1zO8NQ1ec6FQKsoMXqvhZka/BaT1aAsRNAFCJCUNTB0g==
   dependencies:
     "@babel/polyfill" "^7.8.3"
     "@types/async" "^2.4.1"
