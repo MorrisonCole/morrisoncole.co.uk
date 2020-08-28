@@ -76,7 +76,7 @@
     "express": "4.17.1",
     "goodreads-api-node": "0.0.12",
     "open": "7.2.1",
-    "prettier": "2.1.0",
+    "prettier": "2.1.1",
     "server": "1.0.30",
     "typescript": "4.0.2",
     "yaml": "1.10.0"
