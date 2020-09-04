@@ -58,7 +58,7 @@
     "react-vertical-timeline-component": "3.0.2",
     "react-visibility-sensor": "5.1.1",
     "redux": "4.0.5",
-    "styled-components": "5.1.1",
+    "styled-components": "5.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "0.16.19"
