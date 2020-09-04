@@ -67,35 +67,35 @@ function SEO({
           content: metaDescription,
         },
         {
-          property: "og:site_name",
+          name: "og:site_name",
           content: site.siteMetadata.title,
         },
         {
-          property: "og:title",
+          name: "og:title",
           content: title,
         },
         {
-          property: "og:description",
+          name: "og:description",
           content: metaDescription,
         },
         {
-          property: "og:type",
+          name: "og:type",
           content: contentType,
         },
         {
-          property: "og:image",
+          name: "og:image",
           content: `${site.siteMetadata.siteUrl}${imagePath}`,
         },
         {
-          property: "og:image:alt",
+          name: "og:image:alt",
           content: imageAltText,
         },
         {
-          property: "og:url",
+          name: "og:url",
           content: `${site.siteMetadata.siteUrl}${location.pathname}`,
         },
         {
-          property: "og:locale",
+          name: "og:locale",
           content: lang,
         },
         {
