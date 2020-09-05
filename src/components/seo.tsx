@@ -8,7 +8,6 @@ interface SEOProps {
   title: string;
   description?: string;
   lang?: string;
-  meta?: [];
   article?: boolean;
   image?: string;
   imageAlt?: string;
@@ -19,7 +18,6 @@ function SEO({
   title,
   description,
   lang = "en",
-  meta,
   article = false,
   image,
   imageAlt,
@@ -62,6 +60,10 @@ function SEO({
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
+        {
+          name: "title",
+          content: title,
+        },
         {
           name: "description",
           content: metaDescription,
@@ -118,7 +120,7 @@ function SEO({
           name: "twitter:description",
           content: metaDescription,
         },
-      ].concat(meta ?? [])}
+      ]}
     />
   );
 }
