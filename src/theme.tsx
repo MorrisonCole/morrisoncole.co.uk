@@ -3,7 +3,6 @@ import {
   createMuiTheme,
 } from "@material-ui/core/styles";
 import React from "react";
-import { useMediaQuery } from "@material-ui/core";
 import useStateWithLocalStorage from "./state-with-local-storage";
 
 export const DispatchContext = React.createContext(() => {

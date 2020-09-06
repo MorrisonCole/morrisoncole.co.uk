@@ -87,7 +87,7 @@ module.exports = {
         name: "data",
       },
     },
-    "gatsby-plugin-top-layout",
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-material-ui",
     "gatsby-plugin-styled-components",
     {
@@ -173,7 +173,6 @@ module.exports = {
         icon: "content/assets/favicon.ico",
       },
     },
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
     {
       resolve: "gatsby-plugin-layout",
