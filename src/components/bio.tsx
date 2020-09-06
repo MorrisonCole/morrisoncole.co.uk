@@ -1,6 +1,8 @@
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import React from "react";
+import { SiteSiteMetadata } from "../../types/graphql-types";
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 const Bio = (): JSX.Element => {
   const data = useStaticQuery(graphql`
@@ -12,18 +14,11 @@ const Bio = (): JSX.Element => {
           }
         }
       }
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-          }
-        }
-      }
     }
   `);
 
-  const { author, social } = data.site.siteMetadata;
+  const { author, social }: SiteSiteMetadata = useSiteMetadata();
+
   return (
     <div
       style={{

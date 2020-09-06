@@ -1,8 +1,8 @@
-import { graphql, useStaticQuery } from "gatsby";
 import { WindowLocation } from "@reach/router";
 import React from "react";
-import { SeoQuery } from "../../types/graphql-types";
+import { SiteSiteMetadata } from "../../types/graphql-types";
 import { Helmet } from "react-helmet";
+import useSiteMetadata from "../hooks/use-site-metadata";
 
 interface SEOProps {
   title: string;
@@ -23,42 +23,21 @@ function SEO({
   imageAlt,
   location,
 }: SEOProps): JSX.Element {
-  const { site }: SeoQuery = useStaticQuery(
-    graphql`
-      query Seo {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            image
-            imageAlt
-            siteUrl
-            social {
-              twitter
-            }
-          }
-        }
-      }
-    `
-  );
+  const siteMetadata: SiteSiteMetadata = useSiteMetadata();
 
-  if (site == null) {
-    return <div />;
-  }
-
-  const metaDescription = description ?? site.siteMetadata.description;
+  const metaDescription = description ?? siteMetadata.description;
   const contentType = article ? "article" : "website";
-  const imagePath: string = image ?? site.siteMetadata.image;
-  const imageAltText: string = imageAlt ?? site.siteMetadata.imageAlt;
+  const imagePath: string = image ?? siteMetadata.image;
+  const imageAltText: string = imageAlt ?? siteMetadata.imageAlt;
 
   return (
     <Helmet
+      defer={false}
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${siteMetadata.title}`}
       meta={[
         {
           name: "title",
@@ -70,7 +49,7 @@ function SEO({
         },
         {
           name: "og:site_name",
-          content: site.siteMetadata.title,
+          content: siteMetadata.title,
         },
         {
           name: "og:title",
@@ -86,7 +65,7 @@ function SEO({
         },
         {
           name: "og:image",
-          content: `${site.siteMetadata.siteUrl}${imagePath}`,
+          content: `${siteMetadata.siteUrl}${imagePath}`,
         },
         {
           name: "og:image:alt",
@@ -94,7 +73,7 @@ function SEO({
         },
         {
           name: "og:url",
-          content: `${site.siteMetadata.siteUrl}${location.pathname}`,
+          content: `${siteMetadata.siteUrl}${location.pathname}`,
         },
         {
           name: "og:locale",
@@ -106,11 +85,11 @@ function SEO({
         },
         {
           name: "twitter:site",
-          content: site.siteMetadata.social.twitter,
+          content: siteMetadata.social.twitter,
         },
         {
           name: "twitter:creator",
-          content: site.siteMetadata.social.twitter,
+          content: siteMetadata.social.twitter,
         },
         {
           name: "twitter:title",
