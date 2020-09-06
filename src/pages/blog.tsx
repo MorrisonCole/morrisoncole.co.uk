@@ -4,7 +4,6 @@ import {
   CardActionArea,
   Card,
   CardContent,
-  Hidden,
   CardMedia,
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
@@ -102,11 +101,6 @@ export default function Blog({
 
 export const pageQuery = graphql`
   query BlogIndex {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMdx(sort: { fields: [exports___meta___date], order: DESC }) {
       edges {
         node {

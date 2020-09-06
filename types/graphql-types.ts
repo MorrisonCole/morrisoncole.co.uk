@@ -1946,7 +1946,6 @@ export type SitePluginPluginOptionsFilterInput = {
   graphQLQuery?: Maybe<StringQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
-  stylesProvider?: Maybe<SitePluginPluginOptionsStylesProviderFilterInput>;
   gatsbyRemarkPlugins?: Maybe<
     SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput
   >;
@@ -1988,10 +1987,6 @@ export type SitePluginPluginOptionsPluginsFilterInput = {
 export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
   maxWidth?: Maybe<IntQueryOperatorInput>;
   wrapperStyle?: Maybe<StringQueryOperatorInput>;
-};
-
-export type SitePluginPluginOptionsStylesProviderFilterInput = {
-  injectFirst?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsGatsbyRemarkPluginsFilterListInput = {
@@ -2148,7 +2143,6 @@ export type SitePluginPluginOptions = {
   graphQLQuery?: Maybe<Scalars["String"]>;
   path?: Maybe<Scalars["String"]>;
   name?: Maybe<Scalars["String"]>;
-  stylesProvider?: Maybe<SitePluginPluginOptionsStylesProvider>;
   gatsbyRemarkPlugins?: Maybe<
     Array<Maybe<SitePluginPluginOptionsGatsbyRemarkPlugins>>
   >;
@@ -2188,11 +2182,6 @@ export type SitePluginPluginOptionsPluginsPluginOptions = {
   __typename?: "SitePluginPluginOptionsPluginsPluginOptions";
   maxWidth?: Maybe<Scalars["Int"]>;
   wrapperStyle?: Maybe<Scalars["String"]>;
-};
-
-export type SitePluginPluginOptionsStylesProvider = {
-  __typename?: "SitePluginPluginOptionsStylesProvider";
-  injectFirst?: Maybe<Scalars["Boolean"]>;
 };
 
 export type SitePluginPluginOptionsGatsbyRemarkPlugins = {
@@ -2416,7 +2405,6 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsGraphQlQuery = "pluginCreator___pluginOptions___graphQLQuery",
   PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
   PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
-  PluginCreatorPluginOptionsStylesProviderInjectFirst = "pluginCreator___pluginOptions___stylesProvider___injectFirst",
   PluginCreatorPluginOptionsGatsbyRemarkPlugins = "pluginCreator___pluginOptions___gatsbyRemarkPlugins",
   PluginCreatorPluginOptionsGatsbyRemarkPluginsResolve = "pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve",
   PluginCreatorPluginOptionsMaxWidth = "pluginCreator___pluginOptions___maxWidth",
@@ -5530,7 +5518,6 @@ export enum SitePluginFieldsEnum {
   PluginOptionsGraphQlQuery = "pluginOptions___graphQLQuery",
   PluginOptionsPath = "pluginOptions___path",
   PluginOptionsName = "pluginOptions___name",
-  PluginOptionsStylesProviderInjectFirst = "pluginOptions___stylesProvider___injectFirst",
   PluginOptionsGatsbyRemarkPlugins = "pluginOptions___gatsbyRemarkPlugins",
   PluginOptionsGatsbyRemarkPluginsResolve = "pluginOptions___gatsbyRemarkPlugins___resolve",
   PluginOptionsGatsbyRemarkPluginsOptionsMaintainCase = "pluginOptions___gatsbyRemarkPlugins___options___maintainCase",
@@ -5819,19 +5806,6 @@ export type BioQuery = { __typename?: "Query" } & {
       >;
     }
   >;
-  site?: Maybe<
-    { __typename?: "Site" } & {
-      siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
-        SiteSiteMetadata,
-        "author"
-      > & {
-          social: { __typename?: "SiteSiteMetadataSocial" } & Pick<
-            SiteSiteMetadataSocial,
-            "twitter"
-          >;
-        };
-    }
-  >;
 };
 
 export type HeaderQueryVariables = Exact<{ [key: string]: never }>;
@@ -5850,9 +5824,9 @@ export type HeaderQuery = { __typename?: "Query" } & {
   >;
 };
 
-export type SeoQueryVariables = Exact<{ [key: string]: never }>;
+export type SiteMetadataQueryVariables = Exact<{ [key: string]: never }>;
 
-export type SeoQuery = { __typename?: "Query" } & {
+export type SiteMetadataQuery = { __typename?: "Query" } & {
   site?: Maybe<
     { __typename?: "Site" } & {
       siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
@@ -5871,14 +5845,6 @@ export type SeoQuery = { __typename?: "Query" } & {
 export type BlogIndexQueryVariables = Exact<{ [key: string]: never }>;
 
 export type BlogIndexQuery = { __typename?: "Query" } & {
-  site?: Maybe<
-    { __typename?: "Site" } & {
-      siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
-        SiteSiteMetadata,
-        "title"
-      >;
-    }
-  >;
   allMdx: { __typename?: "MdxConnection" } & {
     edges: Array<
       { __typename?: "MdxEdge" } & {
@@ -5963,14 +5929,6 @@ export type MusicQuery = { __typename?: "Query" } & {
       >;
     }
   >;
-  site?: Maybe<
-    { __typename?: "Site" } & {
-      siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
-        SiteSiteMetadata,
-        "title"
-      >;
-    }
-  >;
 };
 
 export type SoftwareQueryVariables = Exact<{ [key: string]: never }>;
@@ -6036,14 +5994,6 @@ export type BlogPostBySlugQueryVariables = Exact<{
 }>;
 
 export type BlogPostBySlugQuery = { __typename?: "Query" } & {
-  site?: Maybe<
-    { __typename?: "Site" } & {
-      siteMetadata: { __typename?: "SiteSiteMetadata" } & Pick<
-        SiteSiteMetadata,
-        "title" | "author"
-      >;
-    }
-  >;
   mdx?: Maybe<
     { __typename?: "Mdx" } & Pick<Mdx, "id" | "excerpt" | "body"> & {
         exports?: Maybe<

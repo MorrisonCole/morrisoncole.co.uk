@@ -88,14 +88,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-top-layout",
-    {
-      resolve: "gatsby-plugin-material-ui",
-      options: {
-        stylesProvider: {
-          injectFirst: true,
-        },
-      },
-    },
+    "gatsby-plugin-material-ui",
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
