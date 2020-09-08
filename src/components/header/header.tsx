@@ -10,7 +10,6 @@ import LinkedInSocialIcon from "./linked_in_social_icon";
 import StackOverflowSocialIcon from "./stack_overflow_social_icon";
 import TwitterSocialIcon from "./twitter_social_icon";
 import DarkModeSwitch from "./DarkModeSwitch";
-import ClientOnly from "../client_only";
 import Logo from "./logo";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -68,9 +67,7 @@ export default function Header(): JSX.Element {
                 fluid={data.avatar.childImageSharp.fluid}
                 className={classes.profilePicture}
               />
-              <ClientOnly>
-                <DarkModeSwitch />
-              </ClientOnly>
+              <DarkModeSwitch />
             </Grid>
           </Grid>
         </Grid>

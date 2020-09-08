@@ -3,7 +3,6 @@ import { Provider } from "react-redux";
 import { Helmet } from "react-helmet";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "./src/theme";
-import ClientOnly from "./src/components/client_only";
 import createStore from "./src/state/createStore";
 
 export default ({ element }) => {
@@ -21,12 +20,10 @@ export default ({ element }) => {
             rel="stylesheet"
           />
         </Helmet>
-        <ClientOnly>
-          <ThemeProvider>
-            <CssBaseline />
-            {element}
-          </ThemeProvider>
-        </ClientOnly>
+        <ThemeProvider>
+          <CssBaseline />
+          {element}
+        </ThemeProvider>
       </Provider>
     </React.Fragment>
   );

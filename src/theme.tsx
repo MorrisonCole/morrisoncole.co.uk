@@ -3,7 +3,6 @@ import {
   createMuiTheme,
 } from "@material-ui/core/styles";
 import React from "react";
-import useStateWithLocalStorage from "./state-with-local-storage";
 
 export const DispatchContext = React.createContext(() => {
   throw new Error("Forgot to wrap component in `ThemeProvider`");
@@ -22,14 +21,9 @@ export function ThemeProvider(props: {
 }): React.ReactNode {
   const { children } = props;
 
-  const systemPrefersDarkMode = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-  ).matches;
-
-  const [darkMode] = useStateWithLocalStorage(
-    systemPrefersDarkMode,
-    "darkMode"
-  );
+  const [darkMode] = React.useState(() => {
+    return false;
+  });
 
   const [prefersDarkMode, dispatch] = React.useReducer(
     (state: any, action: { type: any; payload: { darkMode: boolean } }) => {
