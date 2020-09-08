@@ -95,7 +95,7 @@
     "start": "gatsby develop",
     "debug": "node --nolazy node_modules/.bin/gatsby develop --inspect-brk",
     "codegen": "graphql-codegen",
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
+    "build": "env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby-plugin-s3 deploy -y",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
