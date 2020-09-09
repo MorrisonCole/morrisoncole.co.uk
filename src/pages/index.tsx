@@ -82,15 +82,15 @@ export default function TimelineIndex({
         <Grid item className={classes.introContainer}>
           <Paper className={classes.introTextPaper}>
             <Typography variant="h5" align="center">
-              Hello!
+              Hello! 👋
             </Typography>
             <Typography
               variant="body2"
               align="center"
               className={classes.introTextBody}
             >
-              I&apos;m Morrison - a Software Engineer, Product Manager, and
-              (occasional) Musician.
+              I&apos;m a software engineer, product manager, and (occasional)
+              musician working in Tokyo.
             </Typography>
             <Grid container direction="column" alignItems="center">
               <Button
