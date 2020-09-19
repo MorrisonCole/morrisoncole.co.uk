@@ -1,0 +1,111 @@
+export const meta = {
+  title: "Thinking About Microservices",
+  date: "2020-09-11",
+  updated: null,
+  description: "Even a 'monolith' is a distributed system...",
+  category: "Code",
+  image: "microservices.jpg",
+  imageAlt: "Microservice spaghetti",
+  linkText: "Or, 'When To Use Microservices'",
+};
+
+---
+
+Recently I ran into an relatively common architectural problem.
+
+There is a client that wants data. How do we serve it?
+
+Happily, the all-knowing YouTube algorithm suggested I watch this _goto;_ book
+club discussion:
+
+`youtube: https://youtu.be/GBTdnfD6s5Q`
+
+'Building Microservices' - 2015.
+
+'Monolith to Microservices' - sequel.
+
+How do you break up a big monolith into smaller services?
+
+Initially 1 chapter. But turned into an entire book.
+
+When should you use them?
+
+We focus on the activity not the outcome. Focus on the tool rather than what it
+lets us do. What do you think microservices can give?
+
+- More options to scale up apps
+- Independent deployability (limiting scope of release, ideally with zero
+  downtime)
+- Limit the 'blast radius' of failure
+- Isolation of data/processing of data (delineate GDPR, healthcare data to
+  services)
+- Enable a higher degree of org autonomy (distribute responsibility)
+- Microservices buy you options, but have a cost
+
+Default option is probably to go with a monolith, but microservices aren't an
+on/off switch. Single process monolithic app is actually distributed. DB, API,
+client. Just a very simple. Simple deployment topology. Process boundary. Turn
+the dial a bit and add some more 'distributedness'.
+
+'Distributed monolith'
+
+Called microservices but deployment is not independent. Everything must be
+deployed independently.
+
+Create a deployment mechanism that deploys independently. Small interfaces mean
+we can change the microservice without affecting other things. Information
+hiding.
+
+Why should we care about independent deployments? We can just redeploy
+constantly with a good pipeline. E.g., Etsy, Flickr.
+
+It's easier with microservices to reduce the impact of each release. If you
+deploy a monolith, anything could change.
+
+Another thing is org scale. If there's only one team working on a system, can
+reason about the changes you make when you deploy something. If you have 10-20
+teams to deploy a monolith, need a lot of coordination. Definitely a scale.
+
+[https://youtu.be/GBTdnfD6s5Q?t=1140](https://youtu.be/GBTdnfD6s5Q?t=1140)
+
+There is nothing less complicated than a distributed system. If you have to
+deploy just one part of it, it _still has to connect to the rest of the system_.
+It's easier to test one monolith.
+
+Modules SHOULD be the way to break up boundaries between teams, but it's easy to
+violate. Having a process boundary forces you to slow down your thinking. Makes
+it difficult to do the wrong thing. It's too easy to work around language
+barriers.
+
+Relationships between data are often more obvious than relationships between
+code. Many codebases the schema does a better job of communicating intent and
+domain than the code does. Often because someone thought about schema upfront
+and never really changed it. FK relationship makes it REALLY CLEAR what the
+relationship is.
+
+Extracting the data model is often the harder part. Splitting the data out
+first, then code. First people want to extract the code, then data. All too many
+leave the data. Separate process talking to the old DB. Keep one DB and separate
+the schema. Logically isolated DB running on same infra.
+
+Concerns around perf, e.g., latency. FK relationships are broken since no
+referential integrity. DB is the hardest part. We don't have many tools in the
+industry to do this well. Some patterns though.
+
+Monolith apps are great because transactions, joins, consistency.
+
+Microservices are eventual consistency.
+
+People are even more complicated than data.
+
+### I: The Distributed Monolith
+
+### II: BLAH
+
+### III: BLAH
+
+---
+
+_I doubt you made it this far, but if you did, I sometimes post about software
+on Twitter [@MorrisonCole](https://twitter.com/morrisoncole) - I'd love to see
+you there!_

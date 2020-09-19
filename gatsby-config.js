@@ -123,6 +123,15 @@ module.exports = {
             },
           },
           {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              ratio: 16 / 9,
+              related: false,
+              noIframeBorder: true,
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
