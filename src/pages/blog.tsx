@@ -101,7 +101,10 @@ export default function Blog({
 
 export const pageQuery = graphql`
   query BlogIndex {
-    allMdx(sort: { fields: [exports___meta___date], order: DESC }) {
+    allMdx(
+      sort: { fields: [exports___meta___date], order: DESC }
+      filter: { exports: { meta: { draft: { eq: false } } } }
+    ) {
       edges {
         node {
           excerpt
@@ -110,6 +113,7 @@ export const pageQuery = graphql`
           }
           exports {
             meta {
+              draft
               title
               date(formatString: "MMMM DD, YYYY")
               description
