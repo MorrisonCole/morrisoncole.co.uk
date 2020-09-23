@@ -68,7 +68,7 @@ export function life(imageFiles: Map<string, any>): TimelineEntryData[] {
       mainLink: "https://goo.gl/maps/hURywEujBbYCqqbA6",
       subtitle1: "Kobe, Hyogo",
       subtitle2: "",
-      text: "Studying Japanese and brushing up on new technologies.",
+      text: "Studied Japanese, hiked (a lot), and begun exploring Japan!",
       title: "Moved 🇯🇵",
     },
     {
