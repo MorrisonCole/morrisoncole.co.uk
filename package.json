@@ -46,7 +46,7 @@
     "gatsby-source-github-api": "0.2.1",
     "gatsby-transformer-json": "2.4.12",
     "gatsby-transformer-remark": "2.8.35",
-    "gatsby-transformer-sharp": "2.5.15",
+    "gatsby-transformer-sharp": "2.5.16",
     "gatsby-remark-embed-video": "3.0.10",
     "graphql": "15.3.0",
     "graphql-import": "1.0.2",
