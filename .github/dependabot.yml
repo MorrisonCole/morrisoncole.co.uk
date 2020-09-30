@@ -1,14 +1,26 @@
 version: 2
 updates:
-- package-ecosystem: npm
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "07:00"
-    timezone: Japan
-  open-pull-requests-limit: 99
-  reviewers:
-  - MorrisonCole
-  assignees:
-  - MorrisonCole
-  versioning-strategy: increase
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "07:00"
+      timezone: Japan
+    open-pull-requests-limit: 99
+    reviewers:
+      - MorrisonCole
+    assignees:
+      - MorrisonCole
+    versioning-strategy: increase
+
+  - package-ecosystem: terraform
+    directory: "/terraform"
+    schedule:
+      interval: daily
+      time: "07:00"
+      timezone: Japan
+    open-pull-requests-limit: 1
+    reviewers:
+      - MorrisonCole
+    assignees:
+      - MorrisonCole
