@@ -1,0 +1,14 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "07:00"
+    timezone: Japan
+  open-pull-requests-limit: 99
+  reviewers:
+  - MorrisonCole
+  assignees:
+  - MorrisonCole
+  versioning-strategy: increase
