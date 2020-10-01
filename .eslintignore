@@ -4,6 +4,3 @@ node_modules
 public
 types/graphql-types.ts
 scripts
-gatsby-browser.js
-gatsby-config.js
-gatsby-node.js
