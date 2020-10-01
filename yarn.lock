@@ -8616,10 +8616,10 @@ gatsby-plugin-canonical-urls@2.3.12:
   dependencies:
     "@babel/runtime" "^7.11.2"
 
-gatsby-plugin-google-tagmanager@2.3.13:
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.3.13.tgz#50dd21ba57a4ddffcdaf0792e2fb126bafc898d9"
-  integrity sha512-mtpDza7E7xFOBK2V1JNxgensjqn6K/Eooz/uPUBcuk5DytOB3JvMNVKQaEmxfpKHUN06igJAqb8l0y0UxKUWeA==
+gatsby-plugin-google-tagmanager@2.3.14:
+  version "2.3.14"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.3.14.tgz#4852d94e9333e9deece9ee2df9bbca5e253da760"
+  integrity sha512-yDSu//BwLmOrA9ExFXrNaXHCRw54+bGcnlmi4uoeMY2PnWo7ZzZdeZSIZ0Y/G5AJR1ybvdil4rl547EysavcBw==
   dependencies:
     "@babel/runtime" "^7.11.2"
 
