@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,9 +18,8 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es5",
+    "target": "esnext",
     "typeRoots": ["./types", "./node_modules/@types"]
   },
-  "exclude": ["types"],
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "exclude": [".cache", "node_modules", "public", "types"]
 }
