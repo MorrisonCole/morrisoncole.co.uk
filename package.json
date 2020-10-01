@@ -46,7 +46,7 @@
     "gatsby-source-filesystem": "2.3.32",
     "gatsby-source-github-api": "0.2.1",
     "gatsby-transformer-json": "2.4.13",
-    "gatsby-transformer-remark": "2.8.36",
+    "gatsby-transformer-remark": "2.8.37",
     "gatsby-transformer-sharp": "2.5.16",
     "graphql": "15.3.0",
     "graphql-import": "1.0.2",
