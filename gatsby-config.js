@@ -165,9 +165,17 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        trackingId: "UA-38635265-1",
+        id: "GTM-WCT4PHF",
+
+        includeInDevelopment: true,
+
+        defaultDataLayer: {
+          environment: process.env.NODE_ENV,
+        },
+
+        routeChangeEventName: "route-change",
       },
     },
     {
