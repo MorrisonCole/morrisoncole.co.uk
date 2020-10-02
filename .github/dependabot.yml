@@ -12,6 +12,8 @@ updates:
     assignees:
       - MorrisonCole
     versioning-strategy: increase
+    labels:
+      - "automerge"
 
   - package-ecosystem: terraform
     directory: "/terraform"
@@ -24,3 +26,5 @@ updates:
       - MorrisonCole
     assignees:
       - MorrisonCole
+    labels:
+      - "automerge"
