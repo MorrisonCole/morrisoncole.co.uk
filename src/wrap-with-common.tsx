@@ -2,8 +2,8 @@ import React from "react";
 import { Provider } from "react-redux";
 import { Helmet } from "react-helmet";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { ThemeProvider } from "./src/theme";
-import createStore from "./src/state/createStore";
+import { ThemeProvider } from "./theme";
+import createStore from "./state/createStore";
 
 export default ({ element }) => {
   // Instantiating store in `wrapRootElement` handler ensures:

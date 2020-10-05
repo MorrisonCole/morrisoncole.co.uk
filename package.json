@@ -16,6 +16,7 @@
     "@mdx-js/react": "1.6.18",
     "@types/classnames": "2.2.10",
     "@types/react-helmet": "6.1.0",
+    "@types/react-redux": "7.1.9",
     "@types/typography": "0.16.3",
     "async.queue": "0.5.2",
     "classnames": "2.2.6",
@@ -100,6 +101,7 @@
     "serve": "gatsby serve",
     "deploy": "gatsby-plugin-s3 deploy -y",
     "lint:eslint": "eslint .",
+    "lint:eslint:fix": "eslint . --fix",
     "lint:prettier": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --check",
     "lint:prettier:fix": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write"
   }
