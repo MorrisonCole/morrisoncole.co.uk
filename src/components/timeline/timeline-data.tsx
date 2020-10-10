@@ -1,6 +1,7 @@
 import { ChildFriendly, Home, School, Work } from "@material-ui/icons/";
 import React from "react";
 import { CSSProperties } from "@material-ui/core/styles/withStyles";
+import { ImageSharp, ImageSharpFluid } from "../../../types/graphql-types";
 
 interface TimelineIcon {
   background: CSSProperties;
@@ -30,7 +31,7 @@ class WorkIcon implements TimelineIcon {
 interface TimelineEntryData {
   date: string;
   icon: TimelineIcon;
-  image: string;
+  image: ImageSharpFluid;
   mainLink: string;
   subtitle1: string;
   subtitle2: string;
@@ -38,7 +39,7 @@ interface TimelineEntryData {
   title: string;
 }
 
-export function life(imageFiles: Map<string, any>): TimelineEntryData[] {
+export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
   return [
     {
       date: "2019",
