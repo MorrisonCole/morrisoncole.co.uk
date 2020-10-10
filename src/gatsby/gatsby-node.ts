@@ -1,15 +1,19 @@
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+import path from "path";
+import { createFilePath } from "gatsby-source-filesystem";
+import {
+  CreateNodeArgs,
+  CreatePagesArgs,
+  CreateSchemaCustomizationArgs,
+} from "gatsby";
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
-
-  const blogPostTemplate = path.resolve(
-    "./src/templates/blog-post-template.tsx"
-  );
+export async function createPages({
+  graphql,
+  actions,
+}: CreatePagesArgs): Promise<void> {
+  const blogPostTemplate = path.resolve("src/templates/blog-post-template.tsx");
   const result = await graphql(
     `
-      {
+      query BlogPages {
         allMdx(
           sort: { fields: [exports___meta___date], order: DESC }
           limit: 1000
@@ -35,14 +39,14 @@ exports.createPages = async ({ graphql, actions }) => {
     throw result.errors;
   }
 
-  // Create blog posts pages.
-  const posts = result.data.allMdx.edges;
+  const data: any = result.data;
+  const posts = data.allMdx.edges;
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
     const next = index === 0 ? null : posts[index - 1].node;
 
-    createPage({
+    actions.createPage({
       path: post.node.fields.slug,
       component: blogPostTemplate,
       context: {
@@ -52,23 +56,22 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-};
+}
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-
+export function onCreateNode({ node, actions, getNode }: CreateNodeArgs): void {
   if (node.internal.type === "Mdx") {
     const value = createFilePath({ node, getNode });
-    createNodeField({
+    actions.createNodeField({
       name: "slug",
       node,
       value: `${value}`,
     });
   }
-};
+}
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+export function createSchemaCustomization({
+  actions,
+}: CreateSchemaCustomizationArgs): void {
   const typeDefs = `
     type Site implements Node {
       siteMetadata: SiteSiteMetadata!
@@ -93,5 +96,5 @@ exports.createSchemaCustomization = ({ actions }) => {
       _2020: [String!]!
     }
   `;
-  createTypes(typeDefs);
-};
+  actions.createTypes(typeDefs);
+}
