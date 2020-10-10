@@ -76,6 +76,7 @@
     "eslint-config-prettier": "6.12.0",
     "eslint-plugin-react": "7.21.3",
     "express": "4.17.1",
+    "gatsby-plugin-ts-config": "1.0.0",
     "goodreads-api-node": "0.0.12",
     "open": "7.3.0",
     "prettier": "2.1.2",
