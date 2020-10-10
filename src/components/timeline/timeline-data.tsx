@@ -42,6 +42,16 @@ interface TimelineEntryData {
 export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
   return [
     {
+      date: "2020",
+      icon: new WorkIcon(),
+      image: imageFiles.get("laptop").fluid,
+      mainLink: "",
+      subtitle1: "Senior Software Engineer",
+      subtitle2: "",
+      text: "Something new 🕵️‍♀️",
+      title: "<tba>",
+    },
+    {
       date: "2019",
       icon: new HomeIcon(),
       image: imageFiles.get("tokyo").fluid,

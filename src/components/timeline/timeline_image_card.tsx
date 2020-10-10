@@ -11,6 +11,9 @@ const styles = makeStyles({
   card: {
     maxWidth: 345,
   },
+  cardImage: {
+    maxHeight: 200,
+  },
   pos: {
     marginBottom: 12,
   },
@@ -36,7 +39,13 @@ export default function TimelineImageCardRaw({
   return (
     <Card className={classes.card}>
       <CardActionArea href={mainLink} target="_blank" rel="noopener">
-        <CardMedia component={Image} fluid={image} alt={title} title={title} />
+        <CardMedia
+          className={classes.cardImage}
+          component={Image}
+          fluid={image}
+          alt={title}
+          title={title}
+        />
         <CardContent>
           <Typography variant="h5" component="h2">
             {title}
