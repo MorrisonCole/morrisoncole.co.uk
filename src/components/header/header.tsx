@@ -81,7 +81,6 @@ export default function Header(): JSX.Element {
         >
           <GitHubSocialIcon />
           <LinkedInSocialIcon />
-          <StackOverflowSocialIcon />
           <TwitterSocialIcon />
         </Grid>
       </Grid>
