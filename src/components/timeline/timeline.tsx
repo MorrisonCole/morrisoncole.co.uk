@@ -1,15 +1,6 @@
-import { ReactNode } from "react";
-import {
-  createStyles,
-  makeStyles,
-  Paper,
-  Theme,
-  Typography,
-} from "@material-ui/core";
-import { GetApp, Star } from "@material-ui/icons";
-import { graphql, PageProps } from "gatsby";
+import { createStyles, makeStyles, Theme, Typography } from "@material-ui/core";
+import { Star } from "@material-ui/icons";
 import React from "react";
-import { TimelineIndexQuery } from "../../types/graphql-types";
 import {
   Timeline,
   TimelineConnector,
@@ -36,8 +27,6 @@ const styles = makeStyles((theme: Theme) =>
 export default function CustomizedTimeline({
   timelineEntries,
 }: TimelineProps): JSX.Element {
-  const classes = styles();
-
   const listItems = timelineEntries.map((item) => (
     <TimelineItem key={item.title + item.subtitle1}>
       <TimelineOppositeContent>
