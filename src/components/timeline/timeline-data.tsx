@@ -28,7 +28,7 @@ class WorkIcon implements TimelineIcon {
   icon = (<Work />);
 }
 
-interface TimelineEntryData {
+export interface TimelineEntryData {
   date: string;
   icon: TimelineIcon;
   image: ImageSharpFluid;

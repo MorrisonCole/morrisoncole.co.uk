@@ -16,9 +16,10 @@ import SEO from "../components/seo";
 import CustomVerticalTimelineElement from "../components/timeline/custom_vertical_timeline_element";
 import TimelineImageCardRaw from "../components/timeline/timeline_image_card";
 import cvPdf from "../downloads/cv.pdf";
-import { life } from "../components/timeline/timeline-data";
+import { life, TimelineEntryData } from "../components/timeline/timeline-data";
 import "./index.css";
 import { TimelineIndexQuery } from "../../types/graphql-types";
+import OldTimeline from "../components/timeline/timeline-old";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -55,25 +56,9 @@ export default function TimelineIndex({
   const classes = styles();
 
   const imageFiles = data.allFile.edges.map((edge) => edge.node);
-  const listItems = life(
+  const lifeEvents: TimelineEntryData[] = life(
     new Map(imageFiles.map((i) => [i.name, i.childImageSharp]))
-  ).map((item) => (
-    <CustomVerticalTimelineElement
-      className="vertical-timeline-element--work"
-      date={item.date}
-      iconStyle={item.icon.background}
-      icon={item.icon.icon}
-      key={item.title + item.subtitle1}
-    >
-      <TimelineImageCardRaw
-        title={item.title}
-        image={item.image}
-        subtitle1={item.subtitle1}
-        text={item.text}
-        mainLink={item.mainLink}
-      />
-    </CustomVerticalTimelineElement>
-  ));
+  );
 
   return (
     <div>
@@ -109,14 +94,7 @@ export default function TimelineIndex({
         </Grid>
       </Grid>
 
-      <VerticalTimeline>
-        {listItems}
-
-        <CustomVerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-          icon={<Star />}
-        />
-      </VerticalTimeline>
+      <OldTimeline timelineEntries={lifeEvents} />
     </div>
   );
 }
