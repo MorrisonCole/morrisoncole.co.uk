@@ -55,6 +55,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
+    "react-intersection-observer": "8.29.0",
     "react-redux": "7.2.1",
     "react-typography": "0.16.19",
     "react-vertical-timeline-component": "3.0.2",

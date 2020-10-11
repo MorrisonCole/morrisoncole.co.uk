@@ -1,11 +1,12 @@
-import { makeStyles } from "@material-ui/core";
+import { Grow, makeStyles } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import React from "react";
+import React, { useState } from "react";
 import Image, { FluidObject } from "gatsby-image";
+import { useInView } from "react-intersection-observer";
 
 const styles = makeStyles({
   card: {
@@ -36,28 +37,47 @@ export default function TimelineImageCardRaw({
 }: TimelineImageCardProps): JSX.Element {
   const classes = styles();
 
+  const [visible, setVisible] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
+  if (!visible && inView) {
+    setVisible(true);
+  }
+
   return (
-    <Card className={classes.card}>
-      <CardActionArea href={mainLink} target="_blank" rel="noopener">
-        <CardMedia
-          className={classes.cardImage}
-          component={Image}
-          fluid={image}
-          alt={title}
-          title={title}
-        />
-        <CardContent>
-          <Typography variant="h5" component="h2">
-            {title}
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            {subtitle1}
-          </Typography>
-          <Typography variant="body2" component="p">
-            {text}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <Grow
+      ref={ref}
+      in={visible}
+      style={{
+        transformOrigin: "0 0 0",
+        visibility: visible ? "visible" : "hidden",
+      }}
+      {...{ timeout: 800 }}
+    >
+      <Card className={classes.card}>
+        <CardActionArea href={mainLink} target="_blank" rel="noopener">
+          <CardMedia
+            className={classes.cardImage}
+            component={Image}
+            fluid={image}
+            alt={title}
+            title={title}
+          />
+          <CardContent>
+            <Typography variant="h5" component="h2">
+              {title}
+            </Typography>
+            <Typography className={classes.pos} color="textSecondary">
+              {subtitle1}
+            </Typography>
+            <Typography variant="body2" component="p">
+              {text}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Grow>
   );
 }
