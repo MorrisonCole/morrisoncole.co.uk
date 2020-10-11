@@ -8855,10 +8855,10 @@ gatsby-plugin-styled-components@3.3.14:
   dependencies:
     "@babel/runtime" "^7.11.2"
 
-gatsby-plugin-ts-config@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts-config/-/gatsby-plugin-ts-config-1.0.0.tgz#63600b589a808e11513d76e7ce12a7756d8c3baf"
-  integrity sha512-/rcJpTHveEgZJqYXhPs7lKbeyrG+oGn1lUcUAV7krd4F2Arwri9WZ56cT/Irh84affUUQ1LcxM4pKu8/MDDQMA==
+gatsby-plugin-ts-config@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts-config/-/gatsby-plugin-ts-config-1.1.0.tgz#9a17a6aa1236433bce05653fb7ec7df4ec73c7e3"
+  integrity sha512-BonluUyjp4A2edwnjhD6PnFXmAb3jP337e1R5WlFvkWRpv6ecuTxzIgCN4Vk1Zifbn1BFCzjXd3mtHywG4IZzQ==
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.10.1"
     "@babel/plugin-proposal-optional-chaining" "^7.10.3"
@@ -8874,7 +8874,7 @@ gatsby-plugin-ts-config@1.0.0:
     babel-plugin-dynamic-import-node "^2.3.3"
     fs-extra "^8.1.0"
     lodash.mergewith "^4.6.2"
-    ts-node "^8.6.2"
+    ts-node "^9.0.0"
 
 gatsby-plugin-typescript@2.4.21, gatsby-plugin-typescript@^2.4.21:
   version "2.4.21"
@@ -18134,10 +18134,10 @@ ts-log@^2.2.3:
   resolved "https://registry.yarnpkg.com/ts-log/-/ts-log-2.2.3.tgz#4da5640fe25a9fb52642cd32391c886721318efb"
   integrity sha512-XvB+OdKSJ708Dmf9ore4Uf/q62AYDTzFcAdxc8KNML1mmAWywRFVt/dn1KYJH8Agt5UJNujfM3znU5PxgAzA2w==
 
-ts-node@^8.6.2:
-  version "8.10.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-8.10.2.tgz#eee03764633b1234ddd37f8db9ec10b75ec7fb8d"
-  integrity sha512-ISJJGgkIpDdBhWVu3jufsWpK3Rzo7bdiIXJjQc0ynKxVOVcg2oIrf2H2cejminGrptVc6q6/uynAHNCuWGbpVA==
+ts-node@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-9.0.0.tgz#e7699d2a110cc8c0d3b831715e417688683460b3"
+  integrity sha512-/TqB4SnererCDR/vb4S/QvSZvzQMJN8daAslg7MeaiHvD8rDZsSfXmNeNumyZZzMned72Xoq/isQljYSt8Ynfg==
   dependencies:
     arg "^4.1.0"
     diff "^4.0.1"
