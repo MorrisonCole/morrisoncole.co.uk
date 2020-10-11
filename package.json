@@ -51,7 +51,7 @@
     "gatsby-transformer-sharp": "2.5.17",
     "graphql": "15.3.0",
     "graphql-import": "1.0.2",
-    "prismjs": "1.21.0",
+    "prismjs": "1.22.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
