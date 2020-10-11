@@ -20,6 +20,7 @@ import { life, TimelineEntryData } from "../components/timeline/timeline-data";
 import "./index.css";
 import { TimelineIndexQuery } from "../../types/graphql-types";
 import OldTimeline from "../components/timeline/timeline-old";
+import CustomizedTimeline from "../components/timeline/timeline";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({

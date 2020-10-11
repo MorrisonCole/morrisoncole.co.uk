@@ -5,7 +5,7 @@ import { TimelineEntryData } from "./timeline-data";
 import TimelineImageCardRaw from "./timeline_image_card";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 
-interface TimelineProps {
+export interface TimelineProps {
   timelineEntries: TimelineEntryData[];
 }
 
