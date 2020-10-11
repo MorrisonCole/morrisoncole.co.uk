@@ -19,6 +19,8 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from "@material-ui/lab";
+import { TimelineProps } from "./timeline-old";
+import TimelineImageCardRaw from "./timeline_image_card";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -31,83 +33,45 @@ const styles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function CustomizedTimeline(): ReactNode {
+export default function CustomizedTimeline({
+  timelineEntries,
+}: TimelineProps): JSX.Element {
   const classes = styles();
+
+  const listItems = timelineEntries.map((item) => (
+    <TimelineItem key={item.title + item.subtitle1}>
+      <TimelineOppositeContent>
+        <Typography variant="body2" color="textSecondary">
+          {item.date}
+        </Typography>
+      </TimelineOppositeContent>
+      <TimelineSeparator>
+        <TimelineDot color="primary">{item.icon.icon}</TimelineDot>
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent>
+        <TimelineImageCardRaw
+          title={item.title}
+          image={item.image}
+          subtitle1={item.subtitle1}
+          text={item.text}
+          mainLink={item.mainLink}
+        />
+      </TimelineContent>
+    </TimelineItem>
+  ));
 
   return (
     <Timeline align="alternate">
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            9:30 am
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot>
-            <FastfoodIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Eat
-            </Typography>
-            <Typography>Because you need strength</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <Typography variant="body2" color="textSecondary">
-            10:00 am
-          </Typography>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="primary">
-            <LaptopMacIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Code
-            </Typography>
-            <Typography>Because it&apos;s awesome!</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
-          </TimelineDot>
-          <TimelineConnector className={classes.secondaryTail} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Sleep
-            </Typography>
-            <Typography>Because you need rest</Typography>
-          </Paper>
-        </TimelineContent>
-      </TimelineItem>
+      {listItems}
+
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="secondary">
-            <RepeatIcon />
+            <Star />
           </TimelineDot>
         </TimelineSeparator>
-        <TimelineContent>
-          <Paper elevation={3} className={classes.paper}>
-            <Typography variant="h6" component="h1">
-              Repeat
-            </Typography>
-            <Typography>Because this is the life you love!</Typography>
-          </Paper>
-        </TimelineContent>
+        <TimelineContent />
       </TimelineItem>
     </Timeline>
   );
