@@ -29,7 +29,7 @@
     "gatsby-plugin-material-ui": "2.1.10",
     "gatsby-plugin-mdx": "1.2.46",
     "gatsby-plugin-preconnect": "1.1.54",
-    "gatsby-plugin-react-helmet": "3.3.13",
+    "gatsby-plugin-react-helmet": "3.3.14",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
     "gatsby-plugin-s3": "0.3.5",
     "gatsby-plugin-sharp": "2.6.40",
