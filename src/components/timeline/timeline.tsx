@@ -15,11 +15,9 @@ import TimelineImageCardRaw from "./timeline_image_card";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
-    paper: {
-      padding: "6px 16px",
-    },
-    secondaryTail: {
-      backgroundColor: theme.palette.secondary.main,
+    timelineSeparator: {
+      marginLeft: theme.spacing(3),
+      marginRight: theme.spacing(3),
     },
   })
 );
@@ -27,14 +25,16 @@ const styles = makeStyles((theme: Theme) =>
 export default function CustomizedTimeline({
   timelineEntries,
 }: TimelineProps): JSX.Element {
+  const classes = styles();
+
   const listItems = timelineEntries.map((item) => (
     <TimelineItem key={item.title + item.subtitle1}>
       <TimelineOppositeContent>
-        <Typography variant="body2" color="textSecondary">
+        <Typography variant="h5" color="textSecondary">
           {item.date}
         </Typography>
       </TimelineOppositeContent>
-      <TimelineSeparator>
+      <TimelineSeparator className={classes.timelineSeparator}>
         <TimelineDot color="primary">{item.icon.icon}</TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
@@ -55,7 +55,7 @@ export default function CustomizedTimeline({
       {listItems}
 
       <TimelineItem>
-        <TimelineSeparator>
+        <TimelineSeparator className={classes.timelineSeparator}>
           <TimelineDot color="secondary">
             <Star />
           </TimelineDot>
