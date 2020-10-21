@@ -8714,10 +8714,10 @@ gatsby-plugin-material-ui@2.1.10:
     clean-css "^4.2.1"
     postcss "^7.0.17"
 
-gatsby-plugin-mdx@1.2.49:
-  version "1.2.49"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.49.tgz#a5b1e01a95f182dc53c636a5045a7c43c91868b4"
-  integrity sha512-T2VADMN3dU5qdUIpgltyoDV03e3FZSX7eU/eLqOiaIgTTVvliIWWeiEo6htRnUXsHe+C08+HxxVc8A8Jv2tPKg==
+gatsby-plugin-mdx@1.2.50:
+  version "1.2.50"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.50.tgz#7842476db75f795d77b8e9dad199176042280390"
+  integrity sha512-9jBzLLg85fTodZBKYGtqMrHSJHw/lKqDSmMMC4EGsERMNXnI0HtXTAatxBUG41aIcrDW6uGWsWb/gWNTSRyixw==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/generator" "^7.11.6"
