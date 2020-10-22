@@ -10,13 +10,12 @@ import {
 import { GetApp } from "@material-ui/icons";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
-import "react-vertical-timeline-component/style.min.css";
 import SEO from "../components/seo";
 import cvPdf from "../downloads/cv.pdf";
 import { life, TimelineEntryData } from "../components/timeline/timeline-data";
 import "./index.css";
 import { TimelineIndexQuery } from "../../types/graphql-types";
-import OldTimeline from "../components/timeline/timeline-old";
+import CustomizedTimeline from "../components/timeline/timeline";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -91,7 +90,7 @@ export default function TimelineIndex({
         </Grid>
       </Grid>
 
-      <OldTimeline timelineEntries={lifeEvents} />
+      <CustomizedTimeline timelineEntries={lifeEvents} />
     </div>
   );
 }

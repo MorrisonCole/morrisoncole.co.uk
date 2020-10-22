@@ -1,4 +1,12 @@
-import { createStyles, makeStyles, Theme, Typography } from "@material-ui/core";
+import {
+  createStyles,
+  isWidthDown,
+  makeStyles,
+  Theme,
+  Typography,
+  WithWidth,
+  withWidth,
+} from "@material-ui/core";
 import { Star } from "@material-ui/icons";
 import React from "react";
 import {
@@ -22,9 +30,12 @@ const styles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function CustomizedTimeline({
+export default withWidth()(CustomizedTimeline);
+
+function CustomizedTimeline({
   timelineEntries,
-}: TimelineProps): JSX.Element {
+  width,
+}: TimelineProps | WithWidth): JSX.Element {
   const classes = styles();
 
   const listItems = timelineEntries.map((item) => (
@@ -51,7 +62,7 @@ export default function CustomizedTimeline({
   ));
 
   return (
-    <Timeline align="alternate">
+    <Timeline align={isWidthDown("xs", width) ? "left" : "alternate"}>
       {listItems}
 
       <TimelineItem>

@@ -9,9 +9,6 @@ import Image, { FluidObject } from "gatsby-image";
 import { useInView } from "react-intersection-observer";
 
 const styles = makeStyles({
-  card: {
-    maxWidth: 345,
-  },
   cardImage: {
     maxHeight: 200,
   },
@@ -40,6 +37,7 @@ export default function TimelineImageCardRaw({
   const [visible, setVisible] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
+    threshold: 0.15,
   });
 
   if (!visible && inView) {
@@ -51,12 +49,12 @@ export default function TimelineImageCardRaw({
       ref={ref}
       in={visible}
       style={{
-        transformOrigin: "0 0 0",
+        transformOrigin: "top left",
         visibility: visible ? "visible" : "hidden",
       }}
       {...{ timeout: 800 }}
     >
-      <Card className={classes.card}>
+      <Card>
         <CardActionArea href={mainLink} target="_blank" rel="noopener">
           <CardMedia
             className={classes.cardImage}
