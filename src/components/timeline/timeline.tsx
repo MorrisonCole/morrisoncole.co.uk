@@ -62,7 +62,7 @@ function CustomizedTimeline({
   ));
 
   return (
-    <Timeline align={isWidthDown("xs", width) ? "left" : "alternate"}>
+    <Timeline align={isWidthDown("sm", width) ? "left" : "alternate"}>
       {listItems}
 
       <TimelineItem>
