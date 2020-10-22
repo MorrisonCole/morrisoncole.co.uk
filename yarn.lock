@@ -5394,7 +5394,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@2.2.6, classnames@^2.2.6:
+classnames@2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -8904,6 +8904,14 @@ gatsby-plugin-utils@^0.2.38:
   integrity sha512-honEdQSMwYO1DzJ6h+El2YfFollNzTHTs1rsR5UjBDXOgnBXL3VEWXhcMTGqSMmoPFqiqvQOzq6CKF7zHlytyA==
   dependencies:
     joi "^17.2.1"
+
+gatsby-plugin-web-font-loader@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-web-font-loader/-/gatsby-plugin-web-font-loader-1.0.4.tgz#c50bdb0c1980110b3fd213a5be70feb2459514c3"
+  integrity sha512-3c39bX9CcsYJQFhhmTyjuMJSqpld2rX+HsTOxP9k1PKFR4Rvo3lpzBW4d1tVpmUesR8BNL6u9eHT7/XksS1iog==
+  dependencies:
+    babel-runtime "^6.26.0"
+    webfontloader "^1.6.28"
 
 gatsby-react-router-scroll@^3.0.15:
   version "3.0.15"
@@ -15419,7 +15427,7 @@ react-icons@^3.0.1:
   dependencies:
     camelcase "^5.0.0"
 
-react-intersection-observer@8.29.1, react-intersection-observer@^8.26.2:
+react-intersection-observer@8.29.1:
   version "8.29.1"
   resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.29.1.tgz#8c6f494ca81b39aee9f509f12d29443fc66a2256"
   integrity sha512-JLxJ4V0L73ailfvbYQ2/lfAyirtud1WsRsYnzHyVLMfQff1AIG1lWdC5XaGSK4yb9jZHVbbNsrVIO3PJm03koQ==
@@ -15517,15 +15525,6 @@ react-typography@0.16.19:
   version "0.16.19"
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.19.tgz#5736b47961dcf6b9605b6fa38d41980db2588e28"
   integrity sha512-kV2qLEsdm0x9P4YXQEDVc88tDb4Vg0h/vdVZGgbqaRn8ERvNzV76JHUeOby3vvcUYU5MPd5Kz5DPH9Bhp4I/iw==
-
-react-vertical-timeline-component@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-3.3.0.tgz#826dd44bc64fe650654b564ada7631c4a948199e"
-  integrity sha512-EcDlb4ebzcD+cfIWgXZIjpJvlLFJXe7tMdmyV5q7+GBYV7daCXcbCBNdRJ/OZm0QXzqC3RhCxQdJM8R2Ct866A==
-  dependencies:
-    classnames "^2.2.6"
-    prop-types "^15.7.2"
-    react-intersection-observer "^8.26.2"
 
 react-visibility-sensor@5.1.1:
   version "5.1.1"
@@ -19033,6 +19032,11 @@ web-namespaces@^1.0.0, web-namespaces@^1.1.2:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
   integrity sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==
+
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+  integrity sha1-23hhKSU8tujq5UwvsF+HCvZnW64=
 
 webpack-dev-middleware@^3.7.2:
   version "3.7.2"
