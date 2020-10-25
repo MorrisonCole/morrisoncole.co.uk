@@ -67,7 +67,7 @@
     "typography": "0.16.19"
   },
   "devDependencies": {
-    "@graphql-codegen/cli": "1.18.0",
+    "@graphql-codegen/cli": "1.19.0",
     "@graphql-codegen/typescript": "1.17.11",
     "@graphql-codegen/typescript-operations": "1.17.8",
     "@types/mdx-js__react": "1.5.3",
