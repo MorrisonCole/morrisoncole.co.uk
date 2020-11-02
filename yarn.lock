@@ -15809,10 +15809,10 @@ serve-static@1.14.1:
     parseurl "~1.3.3"
     send "0.17.1"
 
-server@1.0.30:
-  version "1.0.30"
-  resolved "https://registry.yarnpkg.com/server/-/server-1.0.30.tgz#4fe1b19b738fec7ed0c618c66c5462a26aa89757"
-  integrity sha512-MynrapKX/W6znxUaS2hlpNQs5i+4R9RTJDnFdaSqLOwrVMtNvKmBWVacBz50A7NhNT7Sue8MU44BL7W0vsHqBg==
+server@1.0.31:
+  version "1.0.31"
+  resolved "https://registry.yarnpkg.com/server/-/server-1.0.31.tgz#1007ee6163e39906b5f09c6ac3214c17c010386a"
+  integrity sha512-n3NZFWYYTp3Q0U6heOIb3qwsdpovFGNX5OEKz8D7l+Jz3eC+q3WjCf/U1p+GV/7u3CsFQlGrmZjdTBLJtjFkbA==
   dependencies:
     body-parser "^1.15.2"
     compression "^1.6.2"
