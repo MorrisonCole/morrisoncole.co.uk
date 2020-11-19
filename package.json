@@ -21,7 +21,7 @@
     "async.queue": "0.5.2",
     "classnames": "2.2.6",
     "gatsby": "2.26.1",
-    "gatsby-image": "2.5.0",
+    "gatsby-image": "2.6.0",
     "gatsby-plugin-canonical-urls": "2.4.0",
     "gatsby-plugin-google-tagmanager": "2.5.0",
     "gatsby-plugin-layout": "1.4.0",
