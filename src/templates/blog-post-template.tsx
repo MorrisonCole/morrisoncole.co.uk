@@ -21,6 +21,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
 import MDXLayout from "../components/blog/mdx-layout";
 import { WindowLocation } from "@reach/router";
+import readingTime from "reading-time";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -66,8 +67,13 @@ function BlogPostTemplate({
 
       <article>
         <header>
-          <Typography variant="h4">{post.exports?.meta.title}</Typography>
+          <Typography variant="h4" gutterBottom>
+            {post.exports?.meta.title}
+          </Typography>
           <Typography variant="subtitle2">{post.exports?.meta.date}</Typography>
+          <Typography variant="subtitle2">
+            {readingTime(post.body).text}
+          </Typography>
         </header>
         <section>
           <MDXLayout>
