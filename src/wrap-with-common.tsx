@@ -2,7 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "./theme";
-import createStore from "./state/createStore";
+import createStore from "./state/create-store";
 
 type Props = {
   element: JSX.Element;

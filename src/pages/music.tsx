@@ -1,7 +1,7 @@
 import { createStyles, makeStyles, Theme, Grid } from "@material-ui/core";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
-import InfoImageCard from "../components/cards/info_image_card";
+import InfoImageCard from "../components/cards/info-image-card";
 import SEO from "../components/seo";
 import { MusicQuery } from "../../types/graphql-types";
 
