@@ -13,7 +13,6 @@ import React from "react";
 import SEO from "../components/seo";
 import cvPdf from "../downloads/cv.pdf";
 import { life, TimelineEntryData } from "../components/timeline/timeline-data";
-import "./index.css";
 import { TimelineIndexQuery } from "../../types/graphql-types";
 import CustomizedTimeline from "../components/timeline/timeline";
 
