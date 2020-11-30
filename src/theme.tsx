@@ -3,6 +3,7 @@ import {
   createMuiTheme,
 } from "@material-ui/core/styles";
 import React from "react";
+import { TOGGLE_DARK_MODE_MESSAGE } from "./state/create-store";
 
 export const DispatchContext = React.createContext(() => {
   throw new Error("Forgot to wrap component in `ThemeProvider`");
@@ -11,7 +12,7 @@ export const DispatchContext = React.createContext(() => {
 export function useChangeTheme() {
   const dispatch = React.useContext(DispatchContext);
   return React.useCallback(
-    (options) => dispatch({ type: "CHANGE", payload: options }),
+    (options) => dispatch({ type: TOGGLE_DARK_MODE_MESSAGE, payload: options }),
     [dispatch]
   );
 }
@@ -28,7 +29,7 @@ export function ThemeProvider(props: {
   const [prefersDarkMode, dispatch] = React.useReducer(
     (state: any, action: { type: any; payload: { darkMode: boolean } }) => {
       switch (action.type) {
-        case "CHANGE":
+        case TOGGLE_DARK_MODE_MESSAGE:
           return action.payload.darkMode;
         default:
           throw new Error(`Unrecognized type ${action.type}`);
