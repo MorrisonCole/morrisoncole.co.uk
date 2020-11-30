@@ -1,15 +1,28 @@
-import { createStore as reduxCreateStore } from "redux";
+import { createStore as reduxCreateStore, StoreCreator } from "redux";
 
-const reducer = (state, action) => {
-  if (action.type === `CHANGE`) {
-    return Object.assign({}, state, {
-      darkMode: state.darkMode,
-    });
-  }
-  return state;
+export const TOGGLE_DARK_MODE_MESSAGE = "TOGGLE_DARK_MODE_MESSAGE";
+
+export type ToggleDarkModeState = {
+  darkMode: boolean;
 };
 
-const initialState = { darkMode: false };
+export type ToggleDarkModeAction = {
+  type: typeof TOGGLE_DARK_MODE_MESSAGE;
+  payload: ToggleDarkModeState;
+};
 
-const createStore = () => reduxCreateStore(reducer, initialState);
+const reducer = (state = initialState, action: ToggleDarkModeAction) => {
+  switch (action.type) {
+    case TOGGLE_DARK_MODE_MESSAGE:
+      return {
+        darkMode: action.payload.darkMode,
+      };
+    default:
+      return state;
+  }
+};
+
+const initialState: ToggleDarkModeState = { darkMode: false };
+
+const createStore = (): StoreCreator => reduxCreateStore(reducer, initialState);
 export default createStore;
