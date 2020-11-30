@@ -87,7 +87,7 @@
     "yaml": "1.10.0"
   },
   "resolutions": {
-    "graphql": "15.4.0"
+    "graphql": "14.7.0"
   },
   "homepage": "https://github.com/MorrisonCole/morrisoncole.co.uk#readme",
   "keywords": [
