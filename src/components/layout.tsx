@@ -7,7 +7,6 @@ import {
 import React from "react";
 import Footer from "./footer/footer";
 import Header from "./header/header";
-import "./layout.css";
 import NavBar from "./navbar/navbar";
 
 const styles = createStyles({
