@@ -19,7 +19,7 @@ import {
   TimelineSeparator,
 } from "@material-ui/lab";
 import { TimelineProps } from "./timeline-old";
-import TimelineImageCardRaw from "./timeline_image_card";
+import TimelineImageCardRaw from "./timeline-image-card";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({

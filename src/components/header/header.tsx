@@ -5,11 +5,11 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import React from "react";
-import GitHubSocialIcon from "./github_social_icon";
-import LinkedInSocialIcon from "./linked_in_social_icon";
-import StackOverflowSocialIcon from "./stack_overflow_social_icon";
-import TwitterSocialIcon from "./twitter_social_icon";
-import DarkModeSwitch from "./DarkModeSwitch";
+import GitHubSocialIcon from "./github-social-icon";
+import LinkedInSocialIcon from "./linked-in-social-icon";
+import StackOverflowSocialIcon from "./stack-overflow-social-icon";
+import TwitterSocialIcon from "./twitter-social-icon";
+import DarkModeSwitch from "./dark-mode-switch";
 import Logo from "./logo";
 
 const useStyles = makeStyles((theme: Theme) =>
