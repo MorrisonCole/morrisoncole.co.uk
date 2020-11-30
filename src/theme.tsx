@@ -18,7 +18,7 @@ export function useChangeTheme() {
 
 export function ThemeProvider(props: {
   children: React.ReactNode;
-}): React.ReactNode {
+}): JSX.Element {
   const { children } = props;
 
   const [darkMode] = React.useState(() => {
