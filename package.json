@@ -13,7 +13,7 @@
     "@material-ui/icons": "4.9.1",
     "@material-ui/lab": "4.0.0-alpha.56",
     "@mdx-js/mdx": "1.6.21",
-    "@mdx-js/react": "1.6.21",
+    "@mdx-js/react": "1.6.22",
     "@types/classnames": "2.2.11",
     "@types/react-helmet": "6.1.0",
     "@types/react-redux": "7.1.11",
