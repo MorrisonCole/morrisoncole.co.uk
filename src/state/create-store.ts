@@ -1,4 +1,5 @@
-import { createStore as reduxCreateStore, StoreCreator } from "redux";
+import { Store } from "redux";
+import { createStore as reduxCreateStore } from "redux";
 
 export const TOGGLE_DARK_MODE_MESSAGE = "TOGGLE_DARK_MODE_MESSAGE";
 
@@ -24,5 +25,6 @@ const reducer = (state = initialState, action: ToggleDarkModeAction) => {
 
 const initialState: ToggleDarkModeState = { darkMode: false };
 
-const createStore = (): StoreCreator => reduxCreateStore(reducer, initialState);
+const createStore = (): Store<ToggleDarkModeState> =>
+  reduxCreateStore(reducer, initialState);
 export default createStore;
