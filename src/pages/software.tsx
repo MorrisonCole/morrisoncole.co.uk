@@ -21,7 +21,7 @@ import { graphql, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import { SoftwareQuery } from "../../types/graphql-types";
-import Link from "../components/blog/link";
+import CustomLink from "../components/blog/link";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -112,7 +112,9 @@ export default function Software({
                   {repositories.map((repository) => (
                     <TableRow key={repository?.name}>
                       <TableCell component="th" scope="row">
-                        <Link href={repository?.url}>{repository?.name}</Link>
+                        <CustomLink href={repository?.url}>
+                          {repository?.name}
+                        </CustomLink>
                       </TableCell>
                       <TableCell align="right">
                         {repository?.primaryLanguage?.name ?? "Unknown"}

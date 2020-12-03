@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { Link as GatsbyLink } from "gatsby";
+import Link from "@material-ui/core/Link";
 
 interface LinkProps {
   href: string;
@@ -8,7 +9,7 @@ interface LinkProps {
   partiallyActive?: boolean;
 }
 
-const Link = ({
+const CustomLink = ({
   href,
   children,
   activeClassName,
@@ -40,10 +41,10 @@ const Link = ({
         rel: "noopener",
       };
   return (
-    <a href={href} {...externalLinkAttributes} {...other}>
+    <Link href={href} {...externalLinkAttributes} {...other}>
       {children}
-    </a>
+    </Link>
   );
 };
 
-export default Link;
+export default CustomLink;
