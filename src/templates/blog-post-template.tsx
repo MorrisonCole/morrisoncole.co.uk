@@ -6,9 +6,7 @@ import {
   withStyles,
   Divider,
   Link,
-  Container,
 } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
 import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
@@ -27,6 +25,13 @@ const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
     blogPostContainer: {
       marginTop: spacing(6),
+    },
+    blogContent: {
+      display: "grid",
+      gridTemplateColumns: "1fr min(85ch, 100%) 1fr",
+      "& *": {
+        gridColumn: 2,
+      },
     },
     breadcrumbContainer: {
       paddingBottom: spacing(2),
@@ -75,7 +80,7 @@ function BlogPostTemplate({
             {readingTime(post.body).text}
           </Typography>
         </header>
-        <section>
+        <section className={classes.blogContent}>
           <MDXLayout>
             <MDXRenderer data={data}>{post.body}</MDXRenderer>
           </MDXLayout>

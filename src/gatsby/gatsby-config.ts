@@ -1,3 +1,5 @@
+import unwrapImages from "remark-unwrap-images";
+
 const rawUrl = "https://morrisoncole.co.uk";
 const siteAddress = new URL(rawUrl);
 
@@ -108,6 +110,10 @@ export const plugins = [
   {
     resolve: `gatsby-plugin-mdx`,
     options: {
+      remarkPlugins: [
+        // Prevents images in MDX being wrapped in a paragraph tag, which makes things difficult to style.
+        unwrapImages,
+      ],
       gatsbyRemarkPlugins: [
         {
           resolve: "gatsby-remark-autolink-headers",
@@ -143,30 +149,9 @@ export const plugins = [
           resolve: `gatsby-remark-images`,
           options: {
             maxWidth: 1200,
+            wrapperStyle: `width: 100%; grid-column: 1 / 4; margin-bottom: 16px;`,
           },
         },
-      ],
-    },
-  },
-  {
-    resolve: "gatsby-transformer-remark",
-    options: {
-      plugins: [
-        {
-          resolve: "gatsby-remark-images",
-          options: {
-            maxWidth: 590,
-          },
-        },
-        {
-          resolve: "gatsby-remark-responsive-iframe",
-          options: {
-            wrapperStyle: "margin-bottom: 1.0725rem",
-          },
-        },
-        "gatsby-remark-prismjs",
-        "gatsby-remark-copy-linked-files",
-        "gatsby-remark-smartypants",
       ],
     },
   },

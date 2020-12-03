@@ -62,6 +62,7 @@
     "react-visibility-sensor": "5.1.1",
     "reading-time": "1.2.1",
     "redux": "4.0.5",
+    "remark-unwrap-images": "2.0.0",
     "styled-components": "5.2.1",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
