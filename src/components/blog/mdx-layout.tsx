@@ -12,7 +12,7 @@ import {
   withStyles,
 } from "@material-ui/core";
 import { defaultComponents } from "./default-components";
-import Link from "./link";
+import CustomLink from "./link";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -102,7 +102,7 @@ export default function MDXLayout({ children }: Props): JSX.Element {
             <Paper className={classes.blockquote} elevation={3} {...props} />
           </Grid>
         )),
-        a: (props): JSX.Element => <Link {...props}></Link>,
+        a: (props): JSX.Element => <CustomLink {...props}></CustomLink>,
         defaultComponents,
       }}
     >

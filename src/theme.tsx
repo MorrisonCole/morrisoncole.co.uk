@@ -34,10 +34,10 @@ export function ThemeProvider({ children }: Props): JSX.Element {
         palette: {
           type: prefersDarkMode ? "dark" : "light",
           primary: {
-            main: "#007bff",
+            main: prefersDarkMode ? "#ff7043" : "#0070f2",
           },
           secondary: {
-            main: "#ff7043",
+            main: prefersDarkMode ? "#0070f2" : "#ff7043",
           },
         },
       }),
