@@ -18,7 +18,12 @@ import CustomizedTimeline from "../components/timeline/timeline";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
+    timelineGrid: {
+      display: "grid",
+      justifyContent: "center",
+    },
     introContainer: {
+      justifySelf: "center",
       width: "40%",
       [theme.breakpoints.down("sm")]: {
         width: "80%",
@@ -56,10 +61,10 @@ export default function TimelineIndex({
   );
 
   return (
-    <div>
+    <React.Fragment>
       <SEO title="Timeline" location={location} />
-      <Grid container direction="column" alignItems="center">
-        <Grid item className={classes.introContainer}>
+      <div className={classes.timelineGrid}>
+        <div className={classes.introContainer}>
           <Paper className={classes.introTextPaper}>
             <Typography variant="h5" align="center">
               Hello! 👋
@@ -86,11 +91,11 @@ export default function TimelineIndex({
               </Button>
             </Grid>
           </Paper>
-        </Grid>
-      </Grid>
+        </div>
 
-      <CustomizedTimeline timelineEntries={lifeEvents} />
-    </div>
+        <CustomizedTimeline timelineEntries={lifeEvents} />
+      </div>
+    </React.Fragment>
   );
 }
 
