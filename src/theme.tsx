@@ -21,6 +21,15 @@ export function ThemeProvider({ children }: Props): JSX.Element {
         typography: {
           fontFamily: "Roboto,Helvetica,Arial,sans-serif",
           fontSize: 14,
+          h1: {
+            fontSize: "2.6rem",
+          },
+          h2: {
+            fontSize: "2.3rem",
+          },
+          h3: {
+            fontSize: "2rem",
+          },
         },
         palette: {
           type: prefersDarkMode ? "dark" : "light",
