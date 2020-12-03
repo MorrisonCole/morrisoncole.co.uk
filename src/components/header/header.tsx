@@ -1,4 +1,4 @@
-import { createStyles, Theme } from "@material-ui/core";
+import { Container, createStyles, Theme } from "@material-ui/core";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
@@ -14,12 +14,35 @@ import { HeaderQuery } from "../../../types/graphql-types";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    profilePicture: {
-      width: "80%",
-      height: "80%",
-    },
-    grid: {
+    container: {
       marginTop: "2%",
+      display: "grid",
+      gridTemplateRows:
+        "minmax(min-content, 70%) minmax(min-content, max-content)",
+      gridTemplateColumns: "75% 25%",
+    },
+    logo: {
+      alignSelf: "center",
+      justifySelf: "stretch",
+      gridRow: "1 / span 2",
+      gridColumn: "1 / span 1",
+    },
+    avatar: {
+      alignSelf: "center",
+      gridRow: "1 / span 1",
+      gridColumn: "2 / span 1",
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2),
+    },
+    switch: {
+      justifySelf: "center",
+      gridRow: "2 / span 1",
+      gridColumn: "2 / span 1",
+    },
+    profilePicture: {
+      borderRadius: "50%",
+      height: "100%",
+      width: "auto",
     },
     socialContainer: {
       marginBottom: theme.spacing(1),
@@ -44,36 +67,23 @@ export default function Header(): JSX.Element {
 
   return (
     <header>
-      <Grid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-        className={classes.grid}
-      >
-        <Grid item xs={10}>
-          <Grid container justify="center" alignItems="center">
-            <Logo />
-          </Grid>
-        </Grid>
+      <div className={classes.container}>
+        <div className={classes.logo}>
+          <Logo />
+        </div>
 
-        <Grid item xs={2}>
-          <Grid
-            container
-            direction="column"
-            justify="flex-start"
-            alignItems="center"
-          >
-            <Avatar
-              component={Image}
-              alt="Morrison Cole"
-              fluid={data.avatar.childImageSharp.fluid}
-              className={classes.profilePicture}
-            />
-            <DarkModeSwitch />
-          </Grid>
-        </Grid>
-      </Grid>
+        <div className={classes.avatar}>
+          <Image
+            alt="Morrison Cole"
+            fluid={data.avatar.childImageSharp.fluid}
+            className={classes.profilePicture}
+          />
+        </div>
+
+        <div className={classes.switch}>
+          <DarkModeSwitch />
+        </div>
+      </div>
 
       <Grid
         container
