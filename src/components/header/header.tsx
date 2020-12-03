@@ -1,5 +1,4 @@
-import { Container, createStyles, Theme } from "@material-ui/core";
-import Avatar from "@material-ui/core/Avatar";
+import { createStyles, Theme } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { graphql, useStaticQuery } from "gatsby";
@@ -15,7 +14,7 @@ import { HeaderQuery } from "../../../types/graphql-types";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
-      marginTop: "2%",
+      marginTop: theme.spacing(2),
       display: "grid",
       gridTemplateRows:
         "minmax(min-content, 70%) minmax(min-content, max-content)",
@@ -44,7 +43,10 @@ const useStyles = makeStyles((theme: Theme) =>
       height: "100%",
       width: "auto",
     },
-    socialContainer: {
+    socialIconGrid: {
+      display: "grid",
+      justifyContent: "center",
+      gridTemplateColumns: "repeat(3, min-content)",
       marginBottom: theme.spacing(1),
     },
   })
@@ -85,17 +87,11 @@ export default function Header(): JSX.Element {
         </div>
       </div>
 
-      <Grid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-        className={classes.socialContainer}
-      >
+      <div className={classes.socialIconGrid}>
         <GitHubSocialIcon />
         <LinkedInSocialIcon />
         <TwitterSocialIcon />
-      </Grid>
+      </div>
     </header>
   );
 }
