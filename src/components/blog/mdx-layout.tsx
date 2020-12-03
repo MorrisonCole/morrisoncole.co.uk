@@ -31,11 +31,11 @@ const styles = ({ spacing }: Theme): StyleRules =>
     },
   });
 
-export default function MDXLayout({
-  children,
-}: {
-  children: JSX.Element[];
-}): JSX.Element {
+interface Props {
+  children: JSX.Element;
+}
+
+export default function MDXLayout({ children }: Props): JSX.Element {
   return (
     <MDXProvider
       components={{

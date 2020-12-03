@@ -25,7 +25,7 @@ import readingTime from "reading-time";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
-    container: {
+    blogPostContainer: {
       marginTop: spacing(6),
     },
     breadcrumbContainer: {
@@ -49,7 +49,7 @@ function BlogPostTemplate({
   const { previous, next } = pageContext;
 
   return (
-    <Container className={classes.container} maxWidth="md" direction="column">
+    <div className={classes.blogPostContainer}>
       <SEO
         location={location}
         title={post.exports?.meta.title}
@@ -59,15 +59,15 @@ function BlogPostTemplate({
         article
       />
 
-      <Grid item className={classes.breadcrumbContainer}>
+      <div className={classes.breadcrumbContainer}>
         <SimpleBreadcrumbs
           location={post?.exports?.meta?.category ?? "Unknown"}
         />
-      </Grid>
+      </div>
 
       <article>
         <header>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h1" gutterBottom>
             {post.exports?.meta.title}
           </Typography>
           <Typography variant="subtitle2">{post.exports?.meta.date}</Typography>
@@ -117,7 +117,7 @@ function BlogPostTemplate({
           </li>
         </ul>
       </nav>
-    </Container>
+    </div>
   );
 }
 
