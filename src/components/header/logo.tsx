@@ -7,9 +7,7 @@ const lightenCoefficient = 0.15;
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     logo: {
-      margin: "0 30px 10px 0",
       width: "80%",
-      height: "80%",
     },
     one: {
       fill: "#242429",
