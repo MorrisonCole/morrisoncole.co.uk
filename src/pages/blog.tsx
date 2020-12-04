@@ -6,7 +6,6 @@ import {
   CardContent,
   CardMedia,
 } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Typography from "@material-ui/core/Typography";
 import { graphql, Link, PageProps } from "gatsby";
@@ -17,7 +16,13 @@ import Image from "gatsby-image";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
-    container: {
+    postGrid: {
+      display: "grid",
+      gridAutoRows: "repeat(auto-fill, minmax(auto, 1fr))",
+      [theme.breakpoints.up("sm")]: {
+        gridTemplateColumns: "repeat(2, 1fr)",
+      },
+      gridGap: theme.spacing(4),
       marginTop: theme.spacing(3),
     },
     body: {
@@ -50,7 +55,7 @@ export default function Blog({
   const posts = data.allMdx.edges;
 
   return (
-    <Grid container className={classes.container} spacing={4}>
+    <div className={classes.postGrid}>
       <SEO title="Blog" location={location} />
 
       {posts.map(({ node }) => {
@@ -63,39 +68,37 @@ export default function Blog({
         const image = node.exports?.meta?.image?.childImageSharp?.fluid;
 
         return (
-          <Grid key={title} item xs={12} md={6}>
-            <CardActionArea component={Link} to={link}>
-              <Card className={classes.card}>
-                <div className={classes.cardDetails}>
-                  <CardContent>
-                    <Typography component="h2" variant="h5">
-                      {title}
-                    </Typography>
-                    <Typography variant="subtitle1" color="textSecondary">
-                      {date}
-                    </Typography>
-                    <Typography variant="subtitle1" paragraph>
-                      {description}
-                    </Typography>
-                    <Typography variant="subtitle1" color="primary">
-                      {linkText}
-                    </Typography>
-                  </CardContent>
-                </div>
-                {image && (
-                  <CardMedia
-                    className={classes.cardMedia}
-                    component={Image}
-                    fluid={image}
-                    alt={title}
-                  />
-                )}
-              </Card>
-            </CardActionArea>
-          </Grid>
+          <CardActionArea key={title} component={Link} to={link}>
+            <Card className={classes.card}>
+              <div className={classes.cardDetails}>
+                <CardContent>
+                  <Typography component="h2" variant="h5">
+                    {title}
+                  </Typography>
+                  <Typography variant="subtitle1" color="textSecondary">
+                    {date}
+                  </Typography>
+                  <Typography variant="subtitle1" paragraph>
+                    {description}
+                  </Typography>
+                  <Typography variant="subtitle1" color="primary">
+                    {linkText}
+                  </Typography>
+                </CardContent>
+              </div>
+              {image && (
+                <CardMedia
+                  className={classes.cardMedia}
+                  component={Image}
+                  fluid={image}
+                  alt={title}
+                />
+              )}
+            </Card>
+          </CardActionArea>
         );
       })}
-    </Grid>
+    </div>
   );
 }
 
