@@ -58,6 +58,17 @@ export function ThemeProvider({ children }: Props): JSX.Element {
             main: paletteType === "dark" ? "#0070f2" : "#ff7043",
           },
         },
+        overrides: {
+          MuiTimelineItem: {
+            missingOppositeContent: {
+              "&:before": {
+                content: '""',
+                flex: 0,
+                padding: 0,
+              },
+            },
+          },
+        },
       }),
     [paletteType]
   );

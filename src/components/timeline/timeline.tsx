@@ -1,6 +1,6 @@
 import {
   createStyles,
-  isWidthDown,
+  isWidthUp,
   makeStyles,
   Theme,
   Typography,
@@ -18,33 +18,45 @@ import {
   TimelineOppositeContent,
   TimelineSeparator,
 } from "@material-ui/lab";
-import { TimelineProps } from "./timeline-old";
 import TimelineImageCardRaw from "./timeline-image-card";
+import { TimelineEntryData } from "./timeline-data";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
+    timeline: {
+      padding: 0,
+    },
     timelineSeparator: {
-      marginLeft: theme.spacing(3),
-      marginRight: theme.spacing(3),
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
     },
   })
 );
 
 export default withWidth()(CustomizedTimeline);
 
+interface Props {
+  timelineEntries: TimelineEntryData[];
+}
+
 function CustomizedTimeline({
   timelineEntries,
   width,
-}: TimelineProps | WithWidth): JSX.Element {
+}: Props | WithWidth): JSX.Element {
   const classes = styles();
 
   const listItems = timelineEntries.map((item) => (
-    <TimelineItem key={item.title + item.subtitle1}>
-      <TimelineOppositeContent>
-        <Typography variant="h5" color="textSecondary">
-          {item.date}
-        </Typography>
-      </TimelineOppositeContent>
+    <TimelineItem
+      key={item.title + item.subtitle1}
+      className={classes.missingOppositeContent}
+    >
+      {isWidthUp("sm", width) && (
+        <TimelineOppositeContent>
+          <Typography variant="h5" color="textSecondary">
+            {item.date}
+          </Typography>
+        </TimelineOppositeContent>
+      )}
       <TimelineSeparator className={classes.timelineSeparator}>
         <TimelineDot color="primary">{item.icon.icon}</TimelineDot>
         <TimelineConnector />
@@ -62,7 +74,10 @@ function CustomizedTimeline({
   ));
 
   return (
-    <Timeline align={isWidthDown("sm", width) ? "left" : "alternate"}>
+    <Timeline
+      className={classes.timeline}
+      align={isWidthUp("sm", width) ? "alternate" : "left"}
+    >
       {listItems}
 
       <TimelineItem>
