@@ -11,11 +11,10 @@ interface Props {
 
 interface ThemeContext {
   paletteType: PaletteType;
+  setPaletteType: (paletteType: PaletteType) => void;
 }
 
-export const ThemeContext = React.createContext<ThemeContext>({
-  paletteType: "dark",
-});
+export const ThemeContext = React.createContext<ThemeContext>(undefined);
 
 export function ThemeProvider({ children }: Props): JSX.Element {
   const prefersDarkMode: boolean = useMediaQuery(
