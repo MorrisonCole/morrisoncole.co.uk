@@ -1,19 +1,38 @@
+import { PaletteType, useMediaQuery } from "@material-ui/core";
 import {
   ThemeProvider as MuiThemeProvider,
   createMuiTheme,
 } from "@material-ui/core/styles";
 import React from "react";
-import { useSelector } from "react-redux";
-import { ToggleDarkModeState } from "./state/create-store";
 
 interface Props {
   children: JSX.Element[];
 }
 
+interface ThemeContext {
+  paletteType: PaletteType;
+}
+
+export const ThemeContext = React.createContext<ThemeContext>({
+  paletteType: "dark",
+});
+
 export function ThemeProvider({ children }: Props): JSX.Element {
-  const prefersDarkMode = useSelector(
-    (state: ToggleDarkModeState) => state.darkMode
+  const prefersDarkMode: boolean = useMediaQuery(
+    "(prefers-color-scheme: dark)"
   );
+  const [paletteType, setPaletteType] = React.useState<PaletteType>(undefined);
+
+  React.useEffect(() => {
+    setPaletteType(prefersDarkMode ? "dark" : "light");
+  }, [prefersDarkMode]);
+
+  const contextValue = React.useMemo(() => {
+    return {
+      paletteType,
+      setPaletteType,
+    };
+  }, [paletteType, setPaletteType]);
 
   const theme = React.useMemo(
     () =>
@@ -32,17 +51,21 @@ export function ThemeProvider({ children }: Props): JSX.Element {
           },
         },
         palette: {
-          type: prefersDarkMode ? "dark" : "light",
+          type: paletteType,
           primary: {
-            main: prefersDarkMode ? "#ff7043" : "#0070f2",
+            main: paletteType === "dark" ? "#ff7043" : "#0070f2",
           },
           secondary: {
-            main: prefersDarkMode ? "#0070f2" : "#ff7043",
+            main: paletteType === "dark" ? "#0070f2" : "#ff7043",
           },
         },
       }),
-    [prefersDarkMode]
+    [paletteType]
   );
 
-  return <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>;
+  return (
+    <ThemeContext.Provider value={contextValue}>
+      <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
+    </ThemeContext.Provider>
+  );
 }

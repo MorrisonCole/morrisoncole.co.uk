@@ -1,5 +1,4 @@
 import { createStyles, Theme } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
