@@ -49,12 +49,12 @@ date: 2019-05-14
 It's just YAML (which is fine), but it's possible (and slightly more fun) to
 define an export with JS like this:
 
-```
+```js
 export const meta = {
-  "title": "Hello, deno!",
-  "path": "/hello-deno",
-  "date": "2019-05-14T00:00:00.000Z"
-}
+  title: "Hello, deno!",
+  path: "/hello-deno",
+  date: "2019-05-14T00:00:00.000Z",
+};
 ```
 
 Christopher Biscardi ([@chrisbiscardi](https://twitter.com/chrisbiscardi))
@@ -66,7 +66,7 @@ be a nice candidate for rewriting with Deno.
 Here's the final thing
 ([frontmatter-to-exports.ts](https://github.com/MorrisonCole/morrisoncole.co.uk/blob/develop/content/blog/deno-v1/frontmatter-to-exports.ts)):
 
-```
+```ts
 import { parseAll } from "https://deno.land/std@0.51.0/encoding/yaml.ts";
 
 let mdxDirectory = "./";
@@ -110,14 +110,14 @@ went with is just as readable anyway!
 Secondly I tried to figure out how to import some JS from the web but got this
 mysterious error:
 
-```
+```ts
 Uncaught TypeError: Cannot resolve extension for "https://unpkg.com/browse/front-matter@3.2.1/index.js" with mediaType "Unknown".
 ```
 
 Really crappy message, but I finally figured out to add `-Ldebug` to Deno, and
 got a nicer stacktrace:
 
-```
+```ts
 ⚠️️ Granted network access to
 "https://unpkg.com/browse/front-matter@3.2.1/index.d.ts" unknown content type:
 text/html; charset=utf-8

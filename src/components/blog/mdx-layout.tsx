@@ -11,8 +11,9 @@ import {
   createStyles,
   withStyles,
 } from "@material-ui/core";
-import { defaultComponents } from "./default-components";
 import CustomLink from "./link";
+import { preToCodeBlock } from "mdx-utils";
+import { Code } from "./code";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -103,7 +104,15 @@ export default function MDXLayout({ children }: Props): JSX.Element {
           </Grid>
         )),
         a: (props): JSX.Element => <CustomLink {...props}></CustomLink>,
-        defaultComponents,
+        pre: (preProps) => {
+          const props = preToCodeBlock(preProps);
+          if (props) {
+            return <Code {...props} />;
+          } else {
+            return <pre {...preProps} />;
+          }
+        },
+        Grid,
       }}
     >
       {children}
