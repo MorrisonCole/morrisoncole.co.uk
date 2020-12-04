@@ -14,6 +14,7 @@ import {
 import CustomLink from "./link";
 import { preToCodeBlock } from "mdx-utils";
 import { Code } from "./code";
+import "./mdx-layout.css";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
