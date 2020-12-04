@@ -28,9 +28,9 @@ const styles = ({ spacing }: Theme): StyleRules =>
     },
     blogContent: {
       display: "grid",
-      gridTemplateColumns: "1fr min(85ch, 100%) 1fr",
+      gridTemplateColumns: "3fr 1fr min(85ch, 100%) 1fr 3fr",
       "& *": {
-        gridColumn: 2,
+        gridColumn: "3 / 4",
       },
     },
     breadcrumbContainer: {
