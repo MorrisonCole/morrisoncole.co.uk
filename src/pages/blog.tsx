@@ -23,7 +23,6 @@ const styles = makeStyles((theme: Theme) =>
         gridTemplateColumns: "repeat(2, 1fr)",
       },
       gridGap: theme.spacing(4),
-      marginTop: theme.spacing(3),
     },
     body: {
       marginTop: theme.spacing(2),

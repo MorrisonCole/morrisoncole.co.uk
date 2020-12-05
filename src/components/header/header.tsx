@@ -12,8 +12,10 @@ import { HeaderQuery } from "../../../types/graphql-types";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    container: {
+    header: {
       marginTop: theme.spacing(2),
+    },
+    container: {
       display: "grid",
       gridTemplateRows:
         "minmax(min-content, 70%) minmax(min-content, max-content)",
@@ -67,7 +69,7 @@ export default function Header(): JSX.Element {
   `);
 
   return (
-    <header>
+    <header className={classes.header}>
       <div className={classes.container}>
         <div className={classes.logo}>
           <Logo />

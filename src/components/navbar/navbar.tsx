@@ -8,6 +8,9 @@ import React from "react";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
+    container: {
+      marginBottom: theme.spacing(3),
+    },
     grow: {
       flexGrow: 1,
     },
@@ -38,7 +41,12 @@ export default function NavBar({ location }: NavBarProps): JSX.Element {
   };
 
   return (
-    <Grid container direction="column" alignItems="center">
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      className={classes.container}
+    >
       <Grid item>
         <Tabs
           value={location.pathname.split("/")[1]}

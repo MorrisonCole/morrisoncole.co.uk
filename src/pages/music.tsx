@@ -7,9 +7,7 @@ import { MusicQuery } from "../../types/graphql-types";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
-    container: {
-      marginTop: theme.spacing(3),
-    },
+    container: {},
     heading: {
       fontSize: 20,
       fontWeight: "normal",
