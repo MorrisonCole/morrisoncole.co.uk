@@ -28,7 +28,6 @@ const styles = makeStyles((theme: Theme) =>
       [theme.breakpoints.down("sm")]: {
         width: "80%",
       },
-      marginTop: theme.spacing(3),
     },
     introTextPaper: {
       padding: theme.spacing(2.5),

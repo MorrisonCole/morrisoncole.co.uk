@@ -25,9 +25,7 @@ import CustomLink from "../components/blog/link";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
-    container: {
-      marginTop: theme.spacing(3),
-    },
+    container: {},
     body: {
       marginTop: theme.spacing(2),
     },
