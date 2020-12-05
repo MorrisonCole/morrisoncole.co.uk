@@ -1,5 +1,4 @@
 import { createStyles, Theme } from "@material-ui/core";
-import Grid from "@material-ui/core/Grid";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Tab from "@material-ui/core/Tab";
 import Tabs from "@material-ui/core/Tabs";
@@ -10,9 +9,8 @@ const styles = makeStyles((theme: Theme) =>
   createStyles({
     container: {
       marginBottom: theme.spacing(3),
-    },
-    grow: {
-      flexGrow: 1,
+      display: "grid",
+      justifyContent: "center",
     },
     introContainer: {
       width: "40%",
@@ -41,33 +39,26 @@ export default function NavBar({ location }: NavBarProps): JSX.Element {
   };
 
   return (
-    <Grid
-      container
-      direction="column"
-      alignItems="center"
-      className={classes.container}
-    >
-      <Grid item>
-        <Tabs
-          value={location.pathname.split("/")[1]}
-          onChange={handleChange}
-          indicatorColor="primary"
-          textColor="primary"
-          variant="scrollable"
-          scrollButtons="auto"
-          className={classes.grow}
-        >
-          <Tab label="Timeline" value="" component={Link} to="/" />
-          <Tab
-            label="Software"
-            value="software"
-            component={Link}
-            to="/software/"
-          />
-          <Tab label="Music" value="music" component={Link} to="/music/" />
-          <Tab label="Blog" value="blog" component={Link} to="/blog/" />
-        </Tabs>
-      </Grid>
-    </Grid>
+    <div className={classes.container}>
+      <Tabs
+        value={location.pathname.split("/")[1]}
+        onChange={handleChange}
+        indicatorColor="primary"
+        textColor="primary"
+        variant="scrollable"
+        scrollButtons="auto"
+        centered
+      >
+        <Tab label="Timeline" value="" component={Link} to="/" />
+        <Tab
+          label="Software"
+          value="software"
+          component={Link}
+          to="/software/"
+        />
+        <Tab label="Music" value="music" component={Link} to="/music/" />
+        <Tab label="Blog" value="blog" component={Link} to="/blog/" />
+      </Tabs>
+    </div>
   );
 }

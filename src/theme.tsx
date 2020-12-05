@@ -33,6 +33,7 @@ export function ThemeProvider({ children }: Props): JSX.Element {
     };
   }, [paletteType, setPaletteType]);
 
+  const defaultTheme = createMuiTheme();
   const theme = React.useMemo(
     () =>
       createMuiTheme({
@@ -61,10 +62,12 @@ export function ThemeProvider({ children }: Props): JSX.Element {
         overrides: {
           MuiTimelineItem: {
             missingOppositeContent: {
-              "&:before": {
-                content: '""',
-                flex: 0,
-                padding: 0,
+              [defaultTheme.breakpoints.only("xs")]: {
+                "&:before": {
+                  content: '""',
+                  flex: 0,
+                  padding: 0,
+                },
               },
             },
           },
