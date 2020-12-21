@@ -42,14 +42,14 @@ export interface TimelineEntryData {
 export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
   return [
     {
-      date: "2020",
+      date: "2020 - Now",
       icon: new WorkIcon(),
-      image: imageFiles.get("laptop").fluid,
-      mainLink: "",
+      image: imageFiles.get("unity").fluid,
+      mainLink: "https://unity.com/",
       subtitle1: "Senior Software Engineer",
       subtitle2: "",
-      text: "Something new 🕵️‍♀️",
-      title: "<tba>",
+      text: "Building new tools to democratize game development 🛠",
+      title: "Unity",
     },
     {
       date: "2019",
@@ -63,7 +63,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
       title: "Moved 🇯🇵",
     },
     {
-      date: "2019 - Now",
+      date: "2019 - 2020",
       icon: new WorkIcon(),
       image: imageFiles.get("medmain").fluid,
       mainLink: "https://medmain.com/",
