@@ -16,6 +16,7 @@ export async function createPages({
       query BlogPages {
         allMdx(
           sort: { fields: [exports___meta___date], order: DESC }
+          filter: { exports: { meta: { draft: { eq: false } } } }
           limit: 1000
         ) {
           edges {
