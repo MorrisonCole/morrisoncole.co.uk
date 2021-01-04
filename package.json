@@ -73,7 +73,7 @@
     "@graphql-codegen/typescript-operations": "1.17.13",
     "@types/mdx-js__react": "1.5.3",
     "@typescript-eslint/eslint-plugin": "4.11.1",
-    "@typescript-eslint/parser": "4.11.0",
+    "@typescript-eslint/parser": "4.11.1",
     "eslint": "7.17.0",
     "eslint-config-prettier": "7.1.0",
     "eslint-plugin-react": "7.22.0",
