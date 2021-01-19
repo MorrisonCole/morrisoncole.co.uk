@@ -6,6 +6,8 @@ Just my personal website.
 
 Requires `GOODREADS_KEY` in order to import Goodreads data.
 
+Requires `gatsby` to be available (`yarn global add gatsby-cli`).
+
 # Development
 
 1. Run `yarn`
