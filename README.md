@@ -5,6 +5,7 @@ Just my personal website.
 ## Getting Started
 
 Requires `GOODREADS_KEY` in order to import Goodreads data.
+
 Requires `GITHUB_KEY` in order to import GitHub data.
 
 Requires `gatsby` to be available (`yarn global add gatsby-cli`).
