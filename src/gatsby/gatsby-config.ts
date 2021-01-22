@@ -17,7 +17,7 @@ export const siteMetadata = {
   title: "Morrison Cole",
   author: "Morrison Cole",
   description: `I'm a software engineer, technical product manager & musician based in Tokyo, Japan. I love start-ups, 
-    and previously worked for Shazam & Improbable. Right now, I'm developing AI-based medicine at Medmain (amongst other things!).`,
+    and previously worked for Shazam & Improbable. Now I'm at Unity building tools for localization.`,
   siteUrl: rawUrl,
   social: {
     twitter: "@morrisoncole",
@@ -27,6 +27,7 @@ export const siteMetadata = {
 };
 
 export const plugins = [
+  "gatsby-plugin-image",
   {
     resolve: "gatsby-plugin-preconnect",
     options: {
