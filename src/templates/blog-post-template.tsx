@@ -143,7 +143,11 @@ export const pageQuery = graphql`
           category
           image {
             childImageSharp {
-              gatsbyImageData(width: 800, layout: CONSTRAINED)
+              gatsbyImageData(
+                width: 800
+                layout: CONSTRAINED
+                formats: [AUTO, WEBP, AVIF]
+              )
             }
           }
           imageAlt

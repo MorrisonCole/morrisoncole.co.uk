@@ -106,7 +106,7 @@ export const pageQuery = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP, AVIF])
           }
         }
       }

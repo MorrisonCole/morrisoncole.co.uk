@@ -9,7 +9,12 @@ const Bio = (): JSX.Element => {
     query Bio {
       avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
         childImageSharp {
-          gatsbyImageData(width: 50, height: 50, layout: FIXED)
+          gatsbyImageData(
+            width: 50
+            height: 50
+            layout: FIXED
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }
