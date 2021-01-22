@@ -5,8 +5,9 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import React, { useState } from "react";
-import Image, { FluidObject } from "gatsby-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 import { useInView } from "react-intersection-observer";
+import ComposableGatsbyImage from "../composable/composable-gatsby-image";
 
 const styles = makeStyles({
   cardImage: {
@@ -20,7 +21,7 @@ const styles = makeStyles({
 interface TimelineImageCardProps {
   title: string;
   mainLink: string;
-  image: FluidObject;
+  image: IGatsbyImageData;
   subtitle1: string;
   text: string;
 }
@@ -58,8 +59,8 @@ export default function TimelineImageCardRaw({
         <CardActionArea href={mainLink} target="_blank" rel="noopener">
           <CardMedia
             className={classes.cardImage}
-            component={Image}
-            fluid={image}
+            component={ComposableGatsbyImage}
+            imageSrc={image}
             alt={title}
             title={title}
           />

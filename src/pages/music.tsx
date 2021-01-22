@@ -32,7 +32,7 @@ export default function Music({
         <Grid item xs={12}>
           <InfoImageCard
             title="Latent Signal"
-            image={data.latentSignal.childImageSharp.fluid}
+            image={data.latentSignal.childImageSharp.gatsbyImageData}
             subtitle1="Founded in 2010."
             text={
               "My band. We create original music, covers, and (sometimes) the odd vlog."
@@ -47,7 +47,7 @@ export default function Music({
         <Grid item xs={6}>
           <InfoImageCard
             title="Parapraxis: Suite I (Clio)"
-            image={data.clioCover.childImageSharp.fluid}
+            image={data.clioCover.childImageSharp.gatsbyImageData}
             subtitle1="Game OST"
             text="An original EP for the game Parapraxis: Foundations. Orchestral / Orchestral Rock, recorded with a mixture of VSTs and live instruments."
             actionTitle="Listen On Bandcamp"
@@ -63,16 +63,12 @@ export const pageQuery = graphql`
   query Music {
     latentSignal: file(absolutePath: { regex: "/music/latent-signal.png/" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     clioCover: file(absolutePath: { regex: "/music/clio-cover.jpg/" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

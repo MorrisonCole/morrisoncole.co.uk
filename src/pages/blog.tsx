@@ -12,7 +12,7 @@ import { graphql, Link, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import { BlogIndexQuery } from "../../types/graphql-types";
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -64,7 +64,8 @@ export default function Blog({
           node.exports?.meta?.description ?? node.excerpt ?? "";
         const link = node.fields?.slug ?? "";
         const linkText = node.exports?.meta?.linkText ?? "Continue to post...";
-        const image = node.exports?.meta?.image?.childImageSharp?.fluid;
+        const image =
+          node.exports?.meta?.image?.childImageSharp?.gatsbyImageData;
 
         return (
           <CardActionArea key={title} component={Link} to={link}>
@@ -88,7 +89,7 @@ export default function Blog({
               {image && (
                 <CardMedia
                   className={classes.cardMedia}
-                  component={Image}
+                  component={GatsbyImage}
                   fluid={image}
                   alt={title}
                 />
@@ -122,9 +123,7 @@ export const pageQuery = graphql`
               linkText
               image {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 800, layout: CONSTRAINED)
                 }
               }
             }
