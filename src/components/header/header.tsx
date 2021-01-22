@@ -60,7 +60,7 @@ export default function Header(): JSX.Element {
     query Header {
       avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP, AVIF])
         }
       }
     }
