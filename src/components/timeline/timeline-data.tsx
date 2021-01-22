@@ -2,6 +2,7 @@ import { ChildFriendly, Home, School, Work } from "@material-ui/icons/";
 import React from "react";
 import { CSSProperties } from "@material-ui/core/styles/withStyles";
 import { ImageSharp, ImageSharpFluid } from "../../../types/graphql-types";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 interface TimelineIcon {
   background: CSSProperties;
@@ -31,7 +32,7 @@ class WorkIcon implements TimelineIcon {
 export interface TimelineEntryData {
   date: string;
   icon: TimelineIcon;
-  image: ImageSharpFluid;
+  image: IGatsbyImageData;
   mainLink: string;
   subtitle1: string;
   subtitle2: string;
@@ -39,12 +40,14 @@ export interface TimelineEntryData {
   title: string;
 }
 
-export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
+export function life(
+  imageFiles: Map<string, IGatsbyImageData>
+): TimelineEntryData[] {
   return [
     {
       date: "2020 - Now",
       icon: new WorkIcon(),
-      image: imageFiles.get("unity").fluid,
+      image: imageFiles.get("unity"),
       mainLink: "https://unity.com/",
       subtitle1: "Senior Software Engineer",
       subtitle2: "",
@@ -54,7 +57,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2019",
       icon: new HomeIcon(),
-      image: imageFiles.get("tokyo").fluid,
+      image: imageFiles.get("tokyo"),
       mainLink: "https://goo.gl/maps/7FFdpXCeUU3koAAv9",
       subtitle1: "Tokyo",
       subtitle2: "",
@@ -65,7 +68,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2019 - 2020",
       icon: new WorkIcon(),
-      image: imageFiles.get("medmain").fluid,
+      image: imageFiles.get("medmain"),
       mainLink: "https://medmain.com/",
       subtitle1: "Software Engineer, Server",
       subtitle2: "",
@@ -75,7 +78,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2019",
       icon: new HomeIcon(),
-      image: imageFiles.get("kobe").fluid,
+      image: imageFiles.get("kobe"),
       mainLink: "https://goo.gl/maps/hURywEujBbYCqqbA6",
       subtitle1: "Kobe, Hyogo",
       subtitle2: "",
@@ -85,7 +88,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2015 - 2019",
       icon: new WorkIcon(),
-      image: imageFiles.get("improbable").fluid,
+      image: imageFiles.get("improbable"),
       mainLink: "https://www.crunchbase.com/organization/improbable",
       subtitle1: "Software Engineer & Product Manager",
       subtitle2: "",
@@ -99,7 +102,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2013 - 2015",
       icon: new WorkIcon(),
-      image: imageFiles.get("shazam").fluid,
+      image: imageFiles.get("shazam"),
       mainLink: "https://www.crunchbase.com/organization/shazam",
       subtitle1: "Junior Software Engineer",
       subtitle2: "(Aqc. by Apple, 2018)",
@@ -110,7 +113,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2013",
       icon: new WorkIcon(),
-      image: imageFiles.get("thirdnerve").fluid,
+      image: imageFiles.get("thirdnerve"),
       mainLink:
         "https://steamcommunity.com/sharedfiles/filedetails/?id=92967778",
       subtitle1: "Founder",
@@ -123,7 +126,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2010 - 2014",
       icon: new SchoolIcon(),
-      image: imageFiles.get("ucl").fluid,
+      image: imageFiles.get("ucl"),
       mainLink: "https://www.ucl.ac.uk/",
       subtitle1: "BSc Computer Science",
       subtitle2: "First-class Honours",
@@ -134,7 +137,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2010",
       icon: new HomeIcon(),
-      image: imageFiles.get("london").fluid,
+      image: imageFiles.get("london"),
       mainLink: "https://goo.gl/maps/QoKpM98YJtjERNmY8",
       subtitle1: "London, UK",
       subtitle2: "",
@@ -144,7 +147,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "2006 - 2010",
       icon: new SchoolIcon(),
-      image: imageFiles.get("wcs").fluid,
+      image: imageFiles.get("wcs"),
       mainLink: "https://wells.cathedral.school/",
       subtitle1: "Specialist Musician",
       subtitle2: "3 A-Levels (A*-A), 6 GCSEs (A*-A)",
@@ -154,7 +157,7 @@ export function life(imageFiles: Map<string, ImageSharp>): TimelineEntryData[] {
     {
       date: "1992",
       icon: new BornIcon(),
-      image: imageFiles.get("falmouth").fluid,
+      image: imageFiles.get("falmouth"),
       mainLink: "https://goo.gl/maps/w7SRynhttGuu4Nst7",
       subtitle1: "Falmouth, Cornwall",
       subtitle2: "",

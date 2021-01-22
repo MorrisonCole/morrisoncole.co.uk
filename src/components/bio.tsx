@@ -1,17 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
-import { SiteSiteMetadata } from "../../types/graphql-types";
+import { BioQuery, SiteSiteMetadata } from "../../types/graphql-types";
 import useSiteMetadata from "../hooks/use-site-metadata";
 
 const Bio = (): JSX.Element => {
-  const data = useStaticQuery(graphql`
+  const data: BioQuery = useStaticQuery(graphql`
     query Bio {
       avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(width: 50, height: 50, layout: FIXED)
         }
       }
     }
@@ -25,8 +23,8 @@ const Bio = (): JSX.Element => {
         display: "flex",
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
+      <GatsbyImage
+        image={getImage(data.avatar)}
         alt={author}
         style={{
           marginBottom: 0,

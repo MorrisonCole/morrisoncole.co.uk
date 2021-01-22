@@ -59,7 +59,7 @@ function BlogPostTemplate({
         location={location}
         title={post.exports?.meta.title}
         description={post.exports?.meta.description ?? post.excerpt}
-        image={post?.exports?.meta?.image?.childImageSharp?.fluid.src}
+        image={post?.exports?.meta?.image?.childImageSharp?.gatsbyImageData.src}
         imageAlt={post?.exports?.meta?.imageAlt}
         article
       />
@@ -143,9 +143,7 @@ export const pageQuery = graphql`
           category
           image {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(width: 800, layout: CONSTRAINED)
             }
           }
           imageAlt

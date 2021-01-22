@@ -15,6 +15,7 @@ import cvPdf from "../downloads/cv.pdf";
 import { life, TimelineEntryData } from "../components/timeline/timeline-data";
 import { TimelineIndexQuery } from "../../types/graphql-types";
 import CustomizedTimeline from "../components/timeline/timeline";
+import { getImage } from "gatsby-plugin-image";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -56,7 +57,7 @@ export default function TimelineIndex({
 
   const imageFiles = data.allFile.edges.map((edge) => edge.node);
   const lifeEvents: TimelineEntryData[] = life(
-    new Map(imageFiles.map((i) => [i.name, i.childImageSharp]))
+    new Map(imageFiles.map((i) => [i.name, getImage(i)]))
   );
 
   return (
@@ -105,9 +106,7 @@ export const pageQuery = graphql`
         node {
           name
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }

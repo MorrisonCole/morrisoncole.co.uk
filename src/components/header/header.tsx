@@ -1,7 +1,7 @@
 import { createStyles, Theme } from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
 import GitHubSocialIcon from "./github-social-icon";
 import LinkedInSocialIcon from "./linked-in-social-icon";
@@ -60,9 +60,7 @@ export default function Header(): JSX.Element {
     query Header {
       avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -76,9 +74,9 @@ export default function Header(): JSX.Element {
         </div>
 
         <div className={classes.avatar}>
-          <Image
+          <GatsbyImage
+            image={data.avatar.childImageSharp.gatsbyImageData}
             alt="Morrison Cole"
-            fluid={data.avatar.childImageSharp.fluid}
             className={classes.profilePicture}
           />
         </div>
