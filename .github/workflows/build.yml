@@ -1,13 +1,19 @@
 name: Build
 
-on: push
+on: 
+  push:
+  cron: "0 20 * * *"	
+    branches:
+      - develop
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn --frozen-lockfile build
+      - run: |
+          yarn --frozen-lockfile
+          yarn build
         env:
           GOODREADS_TOKEN: ${{ secrets.GOODREADS_TOKEN }}
   deploy:
@@ -15,6 +21,6 @@ jobs:
     if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
-      - run: yarn --frozen-lockfile deploy
+      - run: yarn deploy
         env:
           GOODREADS_TOKEN: ${{ secrets.GOODREADS_TOKEN }}
