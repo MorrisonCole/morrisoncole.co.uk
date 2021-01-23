@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: github.ref != 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,13 +18,13 @@ jobs:
           GITHUB_KEY: ${{ secrets.GITHUB_TOKEN }}
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
   deploy:
-    needs: build
     if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: |
           yarn --frozen-lockfile
+          yarn build
           yarn deploy
         env:
           GITHUB_KEY: ${{ secrets.GITHUB_TOKEN }}
