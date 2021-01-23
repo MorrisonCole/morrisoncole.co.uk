@@ -1,0 +1,20 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn --frozen-lockfile build
+        env:
+          GOODREADS_TOKEN: ${{ secrets.GOODREADS_TOKEN }}
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    steps:
+      - run: yarn --frozen-lockfile deploy
+        env:
+          GOODREADS_TOKEN: ${{ secrets.GOODREADS_TOKEN }}
