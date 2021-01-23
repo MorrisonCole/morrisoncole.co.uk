@@ -12,7 +12,7 @@ import { graphql, Link, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import { BlogIndexQuery } from "../../types/graphql-types";
-import { GatsbyImage } from "gatsby-plugin-image";
+import ComposableGatsbyImage from "../components/composable/composable-gatsby-image";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -89,8 +89,8 @@ export default function Blog({
               {image && (
                 <CardMedia
                   className={classes.cardMedia}
-                  component={GatsbyImage}
-                  fluid={image}
+                  component={ComposableGatsbyImage}
+                  imageSrc={image}
                   alt={title}
                 />
               )}
