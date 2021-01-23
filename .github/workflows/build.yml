@@ -22,7 +22,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn deploy
+      - run: |
+          yarn --frozen-lockfile
+          yarn deploy
         env:
           GITHUB_KEY: ${{ secrets.GITHUB_TOKEN }}
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
