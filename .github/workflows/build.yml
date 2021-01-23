@@ -14,6 +14,7 @@ jobs:
           yarn --frozen-lockfile
           yarn build
         env:
+          GITHUB_KEY: ${{ secrets.GITHUB_TOKEN }}
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
   deploy:
     needs: build
@@ -22,4 +23,5 @@ jobs:
     steps:
       - run: yarn deploy
         env:
+          GITHUB_KEY: ${{ secrets.GITHUB_TOKEN }}
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
