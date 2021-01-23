@@ -1,10 +1,9 @@
-name: Build
+name: Build & Deploy
 
 on: 
   push:
-  cron: "0 20 * * *"	
-    branches:
-      - develop
+  schedule:
+    - cron: "0 20 * * *"
 
 jobs:
   build:
