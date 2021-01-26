@@ -47,7 +47,6 @@ export default function NavBar({ location }: NavBarProps): JSX.Element {
         textColor="primary"
         variant="scrollable"
         scrollButtons="auto"
-        centered
       >
         <Tab label="Timeline" value="" component={Link} to="/" />
         <Tab
