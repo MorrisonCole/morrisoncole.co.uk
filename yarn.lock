@@ -7841,10 +7841,10 @@ gatsby-plugin-google-tagmanager@2.10.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-image@0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-0.6.3.tgz#6afdc11b4f289748fbc8de49120c75f618a3a9ff"
-  integrity sha512-k57BD+mcgFTEcZM6za2LOaXPIIDhF0GcMLGK51sM45EcuBT2t1gI/Jzm7do+u78JgXYNxLphRYeYlCvrg6BSww==
+gatsby-plugin-image@0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-0.6.4.tgz#2fa15e736281e831e215cff792bd1f2aad3520ba"
+  integrity sha512-Bxf3KZ1dk/Fvz4Ag/b8/5fcQo2QyT9FATSvjvI+RH0h5G6CWgz9hCytjZo4nT/0Yf4UwWv3c5+B5J1UwbbxHUg==
   dependencies:
     "@babel/parser" "^7.12.5"
     "@babel/traverse" "^7.12.5"
