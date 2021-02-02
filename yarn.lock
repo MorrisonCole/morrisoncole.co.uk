@@ -7707,7 +7707,7 @@ fs-extra@^8.1.0:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^9.0.1, fs-extra@^9.1.0:
+fs-extra@^9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.1.0.tgz#5954460c764a8da2094ba3554bf839e6b9a7c86d"
   integrity sha512-hcg3ZmepS30/7BSFqRvoo3DOMQu7IjqxO5nCDt+zM9XWjb33Wg7ziNT+Qvqbuc3+gWpzO02JubVyk2G4Zvo1OQ==
@@ -7878,10 +7878,10 @@ gatsby-plugin-canonical-urls@2.10.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-google-tagmanager@2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.10.0.tgz#ab139ce84b869c94a5d7687bc51f4a8b99ad9d50"
-  integrity sha512-xxNq9X1vtrdYq6qXD+jo9vUR2oaRZfahZhBdgasOWKznL4Nsv8qlUAZP7KercqAupprBoGizPDRbFHTQERVK2g==
+gatsby-plugin-google-tagmanager@2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.11.0.tgz#e6fc5e662cc2e11451e8e4c5d762c73ee94b5916"
+  integrity sha512-TElfBrcitk3bYphBpfFv7rI+tYQ/SwKhQMNKj3J31yoVUh/GUu2/FnRwEpvNbfGkTql87DffxR/83mN4vUCWOA==
   dependencies:
     "@babel/runtime" "^7.12.5"
 

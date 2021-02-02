@@ -22,7 +22,7 @@
     "gatsby": "2.31.1",
     "gatsby-cli": "2.18.0",
     "gatsby-plugin-canonical-urls": "2.10.0",
-    "gatsby-plugin-google-tagmanager": "2.10.0",
+    "gatsby-plugin-google-tagmanager": "2.11.0",
     "gatsby-plugin-image": "0.7.0",
     "gatsby-plugin-layout": "1.9.0",
     "gatsby-plugin-manifest": "2.12.0",
