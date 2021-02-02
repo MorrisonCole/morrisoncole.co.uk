@@ -19,7 +19,7 @@
     "@types/typography": "0.16.3",
     "async.queue": "0.5.2",
     "classnames": "2.2.6",
-    "gatsby": "2.31.1",
+    "gatsby": "2.32.0",
     "gatsby-cli": "2.18.0",
     "gatsby-plugin-canonical-urls": "2.10.0",
     "gatsby-plugin-google-tagmanager": "2.10.0",
