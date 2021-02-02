@@ -63,12 +63,12 @@ export const pageQuery = graphql`
   query Music {
     latentSignal: file(absolutePath: { regex: "/music/latent-signal.png/" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
     clioCover: file(absolutePath: { regex: "/music/clio-cover.jpg/" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, formats: [AUTO, WEBP, AVIF])
+        gatsbyImageData(layout: FULL_WIDTH)
       }
     }
   }

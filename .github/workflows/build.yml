@@ -1,6 +1,6 @@
 name: Build & Deploy
 
-on: 
+on:
   push:
   schedule:
     - cron: "0 20 * * *"
