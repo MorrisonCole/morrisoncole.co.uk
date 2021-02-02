@@ -123,11 +123,7 @@ export const pageQuery = graphql`
               linkText
               image {
                 childImageSharp {
-                  gatsbyImageData(
-                    width: 800
-                    layout: CONSTRAINED
-                    formats: [AUTO, WEBP, AVIF]
-                  )
+                  gatsbyImageData(width: 800, layout: CONSTRAINED)
                 }
               }
             }

@@ -158,7 +158,14 @@ export const plugins = [
     },
   },
   "gatsby-transformer-sharp",
-  "gatsby-plugin-sharp",
+  {
+    resolve: "gatsby-plugin-sharp",
+    options: {
+      defaults: {
+        formats: ["auto", "webp", "avif"],
+      },
+    },
+  },
   {
     resolve: "gatsby-plugin-google-tagmanager",
     options: {
