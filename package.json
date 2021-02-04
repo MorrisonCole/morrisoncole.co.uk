@@ -20,7 +20,7 @@
     "async.queue": "0.5.2",
     "classnames": "2.2.6",
     "gatsby": "2.32.0",
-    "gatsby-cli": "2.19.0",
+    "gatsby-cli": "2.19.1",
     "gatsby-plugin-canonical-urls": "2.10.0",
     "gatsby-plugin-google-tagmanager": "2.11.0",
     "gatsby-plugin-image": "0.7.0",
