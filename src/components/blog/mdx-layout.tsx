@@ -5,7 +5,6 @@ import {
   Typography,
   Divider,
   Paper,
-  Grid,
   Theme,
   StyleRules,
   createStyles,
@@ -20,6 +19,7 @@ const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
     blockquoteContainer: {
       padding: spacing(3),
+      gridColumn: "3 / 4",
     },
     blockquote: {
       padding: spacing(3),
@@ -100,9 +100,9 @@ export default function MDXLayout({ children }: Props): JSX.Element {
           <Divider className={classes.divider} {...props} variant="middle" />
         )),
         blockquote: withStyles(styles)(({ classes, ...props }) => (
-          <Grid className={classes.blockquoteContainer}>
+          <div className={classes.blockquoteContainer}>
             <Paper className={classes.blockquote} elevation={3} {...props} />
-          </Grid>
+          </div>
         )),
         a: (props): JSX.Element => <CustomLink {...props}></CustomLink>,
         pre: (preProps) => {
@@ -113,7 +113,6 @@ export default function MDXLayout({ children }: Props): JSX.Element {
             return <pre {...preProps} />;
           }
         },
-        Grid,
       }}
     >
       {children}
