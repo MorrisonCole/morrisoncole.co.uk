@@ -20,6 +20,7 @@ import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
 import MDXLayout from "../components/blog/mdx-layout";
 import { WindowLocation } from "@reach/router";
 import readingTime from "reading-time";
+import { getSrc } from "gatsby-plugin-image";
 
 const styles = ({ spacing }: Theme): StyleRules =>
   createStyles({
@@ -59,7 +60,7 @@ function BlogPostTemplate({
         location={location}
         title={post.exports?.meta.title}
         description={post.exports?.meta.description ?? post.excerpt}
-        image={post?.exports?.meta?.image?.childImageSharp?.gatsbyImageData.src}
+        image={getSrc(post?.exports?.meta?.image)}
         imageAlt={post?.exports?.meta?.imageAlt}
         article
       />
