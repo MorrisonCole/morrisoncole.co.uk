@@ -13,6 +13,7 @@ import React from "react";
 import SEO from "../components/seo";
 import { BlogIndexQuery } from "../../types/graphql-types";
 import ComposableGatsbyImage from "../components/composable/composable-gatsby-image";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 const styles = makeStyles((theme: Theme) =>
   createStyles({
@@ -65,7 +66,7 @@ export default function Blog({
         const link = node.fields?.slug ?? "";
         const linkText = node.exports?.meta?.linkText ?? "Continue to post...";
         const image =
-          node.exports?.meta?.image?.childImageSharp?.gatsbyImageData;
+          node.exports?.meta?.image?.childImageSharp?.gatsbyImageData as IGatsbyImageData;
 
         return (
           <CardActionArea key={title} component={Link} to={link}>
@@ -91,7 +92,8 @@ export default function Blog({
                   className={classes.cardMedia}
                   component={ComposableGatsbyImage}
                   imageSrc={image}
-                  alt={title}
+                  title={title}
+                  src="" // TODO: avoid passing
                 />
               )}
             </Card>
