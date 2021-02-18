@@ -1,7 +1,6 @@
 import React from "react";
 import SEO from "../components/seo";
 import {
-  Grid,
   Paper,
   Typography,
   makeStyles,
@@ -29,15 +28,9 @@ export default function NotFoundPage({ location }: PageProps): JSX.Element {
   const classes = styles();
 
   return (
-    <div>
+    <React.Fragment>
       <SEO title="404: Not Found" location={location} />
-      <Grid
-        container
-        className={classes.container}
-        alignContent="center"
-        justify="center"
-        direction="column"
-      >
+      <div className={classes.container}>
         <Paper className={classes.announcement}>
           <Typography variant="h5" align="center">
             404: Not Found 🚷
@@ -47,7 +40,7 @@ export default function NotFoundPage({ location }: PageProps): JSX.Element {
             {` ${location.pathname}`}
           </Alert>
         </Paper>
-      </Grid>
-    </div>
+      </div>
+    </React.Fragment>
   );
 }
