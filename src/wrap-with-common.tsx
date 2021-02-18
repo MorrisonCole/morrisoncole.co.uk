@@ -1,18 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider } from "./theme";
 
 type Props = {
-  element: JSX.Element;
+  element: ReactNode;
 };
 
-export default function Common({ element }: Props): JSX.Element {
+export default function WrapWithCommon({ element }: Props): JSX.Element {
   return (
-    <React.Fragment>
-      <ThemeProvider>
-        <CssBaseline />
-        {element}
-      </ThemeProvider>
-    </React.Fragment>
+    <ThemeProvider>
+      <CssBaseline />
+      <React.Fragment>{element}</React.Fragment>
+    </ThemeProvider>
   );
 }

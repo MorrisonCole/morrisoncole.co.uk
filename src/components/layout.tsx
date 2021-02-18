@@ -1,4 +1,4 @@
-import { createStyles, makeStyles, Theme, withStyles } from "@material-ui/core";
+import { createStyles, makeStyles, Theme } from "@material-ui/core";
 import React from "react";
 import Footer from "./footer/footer";
 import Header from "./header/header";
@@ -32,7 +32,10 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-function Layout({ location, children }: LayoutProps): JSX.Element {
+export default function Layout({
+  location,
+  children,
+}: LayoutProps): JSX.Element {
   const classes = useStyles();
 
   return (
@@ -48,5 +51,3 @@ function Layout({ location, children }: LayoutProps): JSX.Element {
     </div>
   );
 }
-
-export default withStyles(useStyles)(Layout);
