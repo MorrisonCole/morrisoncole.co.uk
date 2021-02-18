@@ -20,7 +20,7 @@ export function ThemeProvider({ children }: Props): JSX.Element {
   const prefersDarkMode: boolean = useMediaQuery(
     "(prefers-color-scheme: dark)"
   );
-  const [paletteType, setPaletteType] = React.useState<PaletteType>(undefined);
+  const [paletteType, setPaletteType] = React.useState<PaletteType>("light");
 
   React.useEffect(() => {
     setPaletteType(prefersDarkMode ? "dark" : "light");

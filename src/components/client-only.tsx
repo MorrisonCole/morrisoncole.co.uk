@@ -1,9 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 export default function ClientOnly({
   children,
   ...delegated
-}): React.ReactNode {
+}: {
+  children: JSX.Element;
+}): ReactNode {
   const [hasMounted, setHasMounted] = React.useState(false);
 
   React.useEffect(() => {
