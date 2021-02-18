@@ -53,7 +53,7 @@ export const plugins = [
     },
   },
   {
-    resolve: "@jamesdanylik/gatsby-source-goodreads",
+    resolve: "@morrisoncole/gatsby-source-goodreads",
     options: {
       key: goodreadsKey,
       id: "6320986-morrison",
