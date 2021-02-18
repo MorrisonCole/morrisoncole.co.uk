@@ -186,5 +186,23 @@ export const pageQuery = graphql`
         }
       }
     }
+    books2021: allGoodreadsShelf(filter: { name: { eq: "2021" } }) {
+      edges {
+        node {
+          name
+          reviews {
+            rating
+            book {
+              title
+              authors {
+                name
+              }
+              link
+              image_url
+            }
+          }
+        }
+      }
+    }
   }
 `;
