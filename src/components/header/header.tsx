@@ -79,6 +79,7 @@ export default function Header(): JSX.Element {
             image={data.avatar.childImageSharp.gatsbyImageData}
             alt="Morrison Cole"
             className={classes.profilePicture}
+            loading="eager"
           />
         </div>
 
