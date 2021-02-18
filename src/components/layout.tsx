@@ -1,45 +1,52 @@
-import {
-  Container,
-  createStyles,
-  WithStyles,
-  withStyles,
-} from "@material-ui/core";
+import { createStyles, makeStyles, Theme, withStyles } from "@material-ui/core";
 import React from "react";
 import Footer from "./footer/footer";
 import Header from "./header/header";
 import NavBar from "./navbar/navbar";
 
-const styles = createStyles({
-  site: {
-    display: "flex",
-    minHeight: "100vh",
-    flexDirection: "column",
-  },
-  siteContent: {
-    flexGrow: 1,
-  },
-});
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    siteGrid: {
+      height: "100vh",
+      [theme.breakpoints.down("xs")]: {
+        paddingLeft: theme.spacing(1),
+        paddingRight: theme.spacing(1),
+      },
+      display: "grid",
+      gridTemplateColumns: "3fr 1fr min(85ch, 100%) 1fr 3fr",
+      gridTemplateRows: "auto 1fr auto",
+      gridTemplateAreas: `
+    '. header header header .'
+    '. content content content .'
+    'footer footer footer footer footer'
+    `,
+    },
+    content: {
+      gridArea: "content",
+    },
+  })
+);
 
-interface LayoutProps extends WithStyles<typeof styles> {
+interface LayoutProps {
   location: Location;
   children: React.ReactNode;
 }
 
-function Layout({ classes, location, children }: LayoutProps): JSX.Element {
+function Layout({ location, children }: LayoutProps): JSX.Element {
+  const classes = useStyles();
+
   return (
-    <div className={classes.site}>
-      <Container className={classes.siteContent} maxWidth="md">
-        <Header />
+    <div className={classes.siteGrid}>
+      <Header />
 
-        <main>
-          <NavBar location={location} />
+      <main className={classes.content}>
+        <NavBar location={location} />
+        {children}
+      </main>
 
-          {children}
-        </main>
-      </Container>
       <Footer />
     </div>
   );
 }
 
-export default withStyles(styles)(Layout);
+export default withStyles(useStyles)(Layout);

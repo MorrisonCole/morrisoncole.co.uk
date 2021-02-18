@@ -1,7 +1,6 @@
 import {
   Button,
   createStyles,
-  Grid,
   makeStyles,
   Paper,
   Theme,
@@ -21,16 +20,24 @@ const styles = makeStyles((theme: Theme) =>
   createStyles({
     timelineGrid: {
       display: "grid",
+      gridTemplateColumns: "1fr 1.4fr 1fr",
+      [theme.breakpoints.down("xs")]: {
+        gridTemplateColumns: "1fr 6fr 1fr",
+      },
+      gridTemplateRows: "auto auto",
       justifyContent: "center",
     },
     introContainer: {
-      justifySelf: "center",
-      width: "40%",
-      [theme.breakpoints.down("sm")]: {
-        width: "80%",
-      },
+      gridColumn: "2 / 3",
+      gridRow: 1,
+    },
+    timeline: {
+      gridRow: 2,
+      gridColumn: "1 / 4",
     },
     introTextPaper: {
+      display: "grid",
+      justifyItems: "center",
       padding: theme.spacing(2.5),
     },
     introTextBody: {
@@ -77,23 +84,23 @@ export default function TimelineIndex({
               I&apos;m a software engineer, product manager, and (occasional)
               musician working in Tokyo.
             </Typography>
-            <Grid container direction="column" alignItems="center">
-              <Button
-                variant="contained"
-                color="primary"
-                size="medium"
-                className={classes.button}
-                href={cvPdf}
-                download="cv-morrison-cole.pdf"
-              >
-                CV (.pdf)
-                <GetApp className={classes.rightIcon} />
-              </Button>
-            </Grid>
+            <Button
+              variant="contained"
+              color="primary"
+              size="medium"
+              className={classes.button}
+              href={cvPdf}
+              download="cv-morrison-cole.pdf"
+            >
+              CV (.pdf)
+              <GetApp className={classes.rightIcon} />
+            </Button>
           </Paper>
         </div>
 
-        <CustomizedTimeline timelineEntries={lifeEvents} />
+        <div className={classes.timeline}>
+          <CustomizedTimeline timelineEntries={lifeEvents} />
+        </div>
       </div>
     </React.Fragment>
   );

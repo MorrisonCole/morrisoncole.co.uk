@@ -1,6 +1,4 @@
-import { Typography, createStyles, Theme, lighten } from "@material-ui/core";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
+import { Typography, createStyles, Theme } from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import classNames from "classnames";
 import React from "react";
@@ -11,16 +9,18 @@ function currentYear(): number {
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    footer: {
+      gridArea: "footer",
+    },
     container: {
       padding: 0,
     },
-    footer: {
+    footerBackground: {
       backgroundColor:
         theme.palette.type === "light"
           ? theme.palette.grey[200]
           : theme.palette.grey[800],
       fontSize: "0.9em",
-      flexShrink: 0,
       marginTop: theme.spacing(4),
       padding: theme.spacing(4, 2),
     },
@@ -37,9 +37,9 @@ export default function Footer(): JSX.Element {
   const classes = useStyles();
 
   return (
-    <footer>
-      <Container maxWidth={false} className={classes.container}>
-        <Grid item className={classes.footer}>
+    <footer className={classes.footer}>
+      <div className={classes.container}>
+        <div className={classes.footerBackground}>
           <Typography variant="body2" className={classes.footerText}>
             Handcrafted with TypeScript, React, Material-UI, and Gatsby ♥
           </Typography>
@@ -49,8 +49,8 @@ export default function Footer(): JSX.Element {
           >
             &copy; Morrison Cole {currentYear()}
           </Typography>
-        </Grid>
-      </Container>
+        </div>
+      </div>
     </footer>
   );
 }
