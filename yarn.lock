@@ -2184,10 +2184,10 @@
   resolved "https://registry.yarnpkg.com/@mikaelkristiansson/domready/-/domready-1.0.10.tgz#f6d69866c0857664e70690d7a0bfedb72143adb5"
   integrity sha512-6cDuZeKSCSJ1KvfEQ25Y8OXUjqDJZ+HgUs6dhASWbAX8fxVraTfPsSeRe2bN+4QJDsgUaXaMWBYfRomCr04GGg==
 
-"@morrisoncole/gatsby-source-goodreads@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@morrisoncole/gatsby-source-goodreads/-/gatsby-source-goodreads-0.1.1.tgz#f0291f4b394f77e3a8b9af0a3bebb8cba5909068"
-  integrity sha512-+/5XttAaWHWHxm/dtyGZ2WPEs7MR/WQCBbDRZX+Z3Ldb/TeiWwC0bUPc+dprjASfZrCgQUllc7AKScYQwrYPrw==
+"@morrisoncole/gatsby-source-goodreads@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@morrisoncole/gatsby-source-goodreads/-/gatsby-source-goodreads-0.1.2.tgz#ab848c7e86fcc8f5a8b7637ac442c39bb0c0694b"
+  integrity sha512-dtINsLucZj5z2RAB+ewrpe+bR6Ktjdo1iyKQMH55FUJVx9ttbvZAON8USAYMmFYMVcVRbs0YwGNFKvovh7oSaw==
   dependencies:
     node-fetch "2.6.1"
     query-string "6.14.0"
