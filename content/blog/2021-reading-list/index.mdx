@@ -8,19 +8,19 @@ import Rating from "@material-ui/lab/Rating";
 import Star from "@material-ui/icons/Star";
 
 export const meta = {
-  title: "2020 Reading List",
-  date: "2020-03-22",
-  updated: "2021-02-19",
-  description: "Books I read in 2020, ranked.",
+  title: "2021 Reading List",
+  date: "2021-02-19",
+  updated: null,
+  description: "Books I've read (so far) this year, ranked.",
   category: "Books",
   image: "books.jpg",
   imageAlt: "Stack of Books",
-  linkText: "Quarantine reading 📚",
+  linkText: "See them so far 📚",
   draft: false,
 };
 
 <List dense>
-  {props.data.books2020.edges[0].node.reviews
+  {props.data.books2021.edges[0].node.reviews
     .sort((a, b) => parseInt(b.rating) - parseInt(a.rating))
     .map(({ rating, book }) => (
       <ListItem
