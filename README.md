@@ -1,4 +1,4 @@
-# morrisoncole.co.uk [![CircleCI](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk/tree/develop.svg?style=svg)](https://circleci.com/gh/MorrisonCole/morrisoncole.co.uk/tree/develop) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# morrisoncole.co.uk [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Just my personal website.
 
