@@ -12,6 +12,10 @@ export default function DarkModeSwitch(): JSX.Element {
   };
 
   return (
-    <Switch checked={paletteType === "light"} onChange={handleDarkModeChange} />
+    <Switch
+      checked={paletteType === "light"}
+      onChange={handleDarkModeChange}
+      inputProps={{ "aria-label": "Toggle Dark Mode" }}
+    />
   );
 }
