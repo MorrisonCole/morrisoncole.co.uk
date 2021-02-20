@@ -5,13 +5,17 @@ import {
   CreatePagesArgs,
   CreateSchemaCustomizationArgs,
 } from "gatsby";
+import { BlogPagesQuery } from "../../types/graphql-types";
 
 export async function createPages({
   graphql,
   actions,
 }: CreatePagesArgs): Promise<void> {
   const blogPostTemplate = path.resolve("src/templates/blog-post-template.tsx");
-  const result = await graphql(
+  const result: {
+    errors?: unknown;
+    data?: BlogPagesQuery;
+  } = await graphql<BlogPagesQuery, unknown>(
     `
       query BlogPages {
         allMdx(
@@ -40,8 +44,7 @@ export async function createPages({
     throw result.errors;
   }
 
-  const data: any = result.data;
-  const posts = data.allMdx.edges;
+  const posts = result.data.allMdx.edges;
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;

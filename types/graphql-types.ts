@@ -4045,15 +4045,15 @@ export type QuerySitePageArgs = {
   internalComponentName?: Maybe<StringQueryOperatorInput>;
   componentChunkName?: Maybe<StringQueryOperatorInput>;
   matchPath?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
   context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
   componentPath?: Maybe<StringQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
 };
 
 export type QueryAllSitePageArgs = {
@@ -4632,15 +4632,15 @@ export type SitePage = Node & {
   internalComponentName: Scalars["String"];
   componentChunkName: Scalars["String"];
   matchPath?: Maybe<Scalars["String"]>;
+  id: Scalars["ID"];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
   isCreatedByStatefulCreatePages?: Maybe<Scalars["Boolean"]>;
   context?: Maybe<SitePageContext>;
   pluginCreator?: Maybe<SitePlugin>;
   pluginCreatorId?: Maybe<Scalars["String"]>;
   componentPath?: Maybe<Scalars["String"]>;
-  id: Scalars["ID"];
-  parent?: Maybe<Node>;
-  children: Array<Node>;
-  internal: Internal;
 };
 
 export type SitePageConnection = {
@@ -4765,109 +4765,6 @@ export enum SitePageFieldsEnum {
   InternalComponentName = "internalComponentName",
   ComponentChunkName = "componentChunkName",
   MatchPath = "matchPath",
-  IsCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
-  ContextSlug = "context___slug",
-  ContextPreviousFieldsSlug = "context___previous___fields___slug",
-  ContextNextFieldsSlug = "context___next___fields___slug",
-  PluginCreatorId = "pluginCreator___id",
-  PluginCreatorParentId = "pluginCreator___parent___id",
-  PluginCreatorParentParentId = "pluginCreator___parent___parent___id",
-  PluginCreatorParentParentChildren = "pluginCreator___parent___parent___children",
-  PluginCreatorParentChildren = "pluginCreator___parent___children",
-  PluginCreatorParentChildrenId = "pluginCreator___parent___children___id",
-  PluginCreatorParentChildrenChildren = "pluginCreator___parent___children___children",
-  PluginCreatorParentInternalContent = "pluginCreator___parent___internal___content",
-  PluginCreatorParentInternalContentDigest = "pluginCreator___parent___internal___contentDigest",
-  PluginCreatorParentInternalDescription = "pluginCreator___parent___internal___description",
-  PluginCreatorParentInternalFieldOwners = "pluginCreator___parent___internal___fieldOwners",
-  PluginCreatorParentInternalIgnoreType = "pluginCreator___parent___internal___ignoreType",
-  PluginCreatorParentInternalMediaType = "pluginCreator___parent___internal___mediaType",
-  PluginCreatorParentInternalOwner = "pluginCreator___parent___internal___owner",
-  PluginCreatorParentInternalType = "pluginCreator___parent___internal___type",
-  PluginCreatorChildren = "pluginCreator___children",
-  PluginCreatorChildrenId = "pluginCreator___children___id",
-  PluginCreatorChildrenParentId = "pluginCreator___children___parent___id",
-  PluginCreatorChildrenParentChildren = "pluginCreator___children___parent___children",
-  PluginCreatorChildrenChildren = "pluginCreator___children___children",
-  PluginCreatorChildrenChildrenId = "pluginCreator___children___children___id",
-  PluginCreatorChildrenChildrenChildren = "pluginCreator___children___children___children",
-  PluginCreatorChildrenInternalContent = "pluginCreator___children___internal___content",
-  PluginCreatorChildrenInternalContentDigest = "pluginCreator___children___internal___contentDigest",
-  PluginCreatorChildrenInternalDescription = "pluginCreator___children___internal___description",
-  PluginCreatorChildrenInternalFieldOwners = "pluginCreator___children___internal___fieldOwners",
-  PluginCreatorChildrenInternalIgnoreType = "pluginCreator___children___internal___ignoreType",
-  PluginCreatorChildrenInternalMediaType = "pluginCreator___children___internal___mediaType",
-  PluginCreatorChildrenInternalOwner = "pluginCreator___children___internal___owner",
-  PluginCreatorChildrenInternalType = "pluginCreator___children___internal___type",
-  PluginCreatorInternalContent = "pluginCreator___internal___content",
-  PluginCreatorInternalContentDigest = "pluginCreator___internal___contentDigest",
-  PluginCreatorInternalDescription = "pluginCreator___internal___description",
-  PluginCreatorInternalFieldOwners = "pluginCreator___internal___fieldOwners",
-  PluginCreatorInternalIgnoreType = "pluginCreator___internal___ignoreType",
-  PluginCreatorInternalMediaType = "pluginCreator___internal___mediaType",
-  PluginCreatorInternalOwner = "pluginCreator___internal___owner",
-  PluginCreatorInternalType = "pluginCreator___internal___type",
-  PluginCreatorResolve = "pluginCreator___resolve",
-  PluginCreatorName = "pluginCreator___name",
-  PluginCreatorVersion = "pluginCreator___version",
-  PluginCreatorPluginOptionsDomains = "pluginCreator___pluginOptions___domains",
-  PluginCreatorPluginOptionsGoogleFamilies = "pluginCreator___pluginOptions___google___families",
-  PluginCreatorPluginOptionsSiteUrl = "pluginCreator___pluginOptions___siteUrl",
-  PluginCreatorPluginOptionsKey = "pluginCreator___pluginOptions___key",
-  PluginCreatorPluginOptionsId = "pluginCreator___pluginOptions___id",
-  PluginCreatorPluginOptionsToken = "pluginCreator___pluginOptions___token",
-  PluginCreatorPluginOptionsGraphQlQuery = "pluginCreator___pluginOptions___graphQLQuery",
-  PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
-  PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
-  PluginCreatorPluginOptionsGatsbyRemarkPlugins = "pluginCreator___pluginOptions___gatsbyRemarkPlugins",
-  PluginCreatorPluginOptionsGatsbyRemarkPluginsResolve = "pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve",
-  PluginCreatorPluginOptionsDefaultsFormats = "pluginCreator___pluginOptions___defaults___formats",
-  PluginCreatorPluginOptionsIncludeInDevelopment = "pluginCreator___pluginOptions___includeInDevelopment",
-  PluginCreatorPluginOptionsDefaultDataLayerType = "pluginCreator___pluginOptions___defaultDataLayer___type",
-  PluginCreatorPluginOptionsRouteChangeEventName = "pluginCreator___pluginOptions___routeChangeEventName",
-  PluginCreatorPluginOptionsShortName = "pluginCreator___pluginOptions___short_name",
-  PluginCreatorPluginOptionsStartUrl = "pluginCreator___pluginOptions___start_url",
-  PluginCreatorPluginOptionsBackgroundColor = "pluginCreator___pluginOptions___background_color",
-  PluginCreatorPluginOptionsThemeColor = "pluginCreator___pluginOptions___theme_color",
-  PluginCreatorPluginOptionsDisplay = "pluginCreator___pluginOptions___display",
-  PluginCreatorPluginOptionsIcon = "pluginCreator___pluginOptions___icon",
-  PluginCreatorPluginOptionsCacheBustingMode = "pluginCreator___pluginOptions___cache_busting_mode",
-  PluginCreatorPluginOptionsIncludeFavicon = "pluginCreator___pluginOptions___include_favicon",
-  PluginCreatorPluginOptionsLegacy = "pluginCreator___pluginOptions___legacy",
-  PluginCreatorPluginOptionsThemeColorInHead = "pluginCreator___pluginOptions___theme_color_in_head",
-  PluginCreatorPluginOptionsCacheDigest = "pluginCreator___pluginOptions___cacheDigest",
-  PluginCreatorPluginOptionsAllExtensions = "pluginCreator___pluginOptions___allExtensions",
-  PluginCreatorPluginOptionsIsTsx = "pluginCreator___pluginOptions___isTSX",
-  PluginCreatorPluginOptionsJsxPragma = "pluginCreator___pluginOptions___jsxPragma",
-  PluginCreatorPluginOptionsComponent = "pluginCreator___pluginOptions___component",
-  PluginCreatorPluginOptionsBucketName = "pluginCreator___pluginOptions___bucketName",
-  PluginCreatorPluginOptionsProtocol = "pluginCreator___pluginOptions___protocol",
-  PluginCreatorPluginOptionsHostname = "pluginCreator___pluginOptions___hostname",
-  PluginCreatorPluginOptionsConfigDir = "pluginCreator___pluginOptions___configDir",
-  PluginCreatorPluginOptionsBabel = "pluginCreator___pluginOptions___babel",
-  PluginCreatorPluginOptionsTsNodeProject = "pluginCreator___pluginOptions___tsNode___project",
-  PluginCreatorPluginOptionsPathCheck = "pluginCreator___pluginOptions___pathCheck",
-  PluginCreatorNodeApIs = "pluginCreator___nodeAPIs",
-  PluginCreatorBrowserApIs = "pluginCreator___browserAPIs",
-  PluginCreatorSsrApIs = "pluginCreator___ssrAPIs",
-  PluginCreatorPluginFilepath = "pluginCreator___pluginFilepath",
-  PluginCreatorPackageJsonName = "pluginCreator___packageJson___name",
-  PluginCreatorPackageJsonDescription = "pluginCreator___packageJson___description",
-  PluginCreatorPackageJsonVersion = "pluginCreator___packageJson___version",
-  PluginCreatorPackageJsonMain = "pluginCreator___packageJson___main",
-  PluginCreatorPackageJsonLicense = "pluginCreator___packageJson___license",
-  PluginCreatorPackageJsonDependencies = "pluginCreator___packageJson___dependencies",
-  PluginCreatorPackageJsonDependenciesName = "pluginCreator___packageJson___dependencies___name",
-  PluginCreatorPackageJsonDependenciesVersion = "pluginCreator___packageJson___dependencies___version",
-  PluginCreatorPackageJsonDevDependencies = "pluginCreator___packageJson___devDependencies",
-  PluginCreatorPackageJsonDevDependenciesName = "pluginCreator___packageJson___devDependencies___name",
-  PluginCreatorPackageJsonDevDependenciesVersion = "pluginCreator___packageJson___devDependencies___version",
-  PluginCreatorPackageJsonPeerDependencies = "pluginCreator___packageJson___peerDependencies",
-  PluginCreatorPackageJsonPeerDependenciesName = "pluginCreator___packageJson___peerDependencies___name",
-  PluginCreatorPackageJsonPeerDependenciesVersion = "pluginCreator___packageJson___peerDependencies___version",
-  PluginCreatorPackageJsonKeywords = "pluginCreator___packageJson___keywords",
-  PluginCreatorId = "pluginCreatorId",
-  ComponentPath = "componentPath",
   Id = "id",
   ParentId = "parent___id",
   ParentParentId = "parent___parent___id",
@@ -4954,6 +4851,115 @@ export enum SitePageFieldsEnum {
   InternalMediaType = "internal___mediaType",
   InternalOwner = "internal___owner",
   InternalType = "internal___type",
+  IsCreatedByStatefulCreatePages = "isCreatedByStatefulCreatePages",
+  ContextSlug = "context___slug",
+  ContextPreviousFieldsSlug = "context___previous___fields___slug",
+  ContextNextFieldsSlug = "context___next___fields___slug",
+  PluginCreatorId = "pluginCreator___id",
+  PluginCreatorParentId = "pluginCreator___parent___id",
+  PluginCreatorParentParentId = "pluginCreator___parent___parent___id",
+  PluginCreatorParentParentChildren = "pluginCreator___parent___parent___children",
+  PluginCreatorParentChildren = "pluginCreator___parent___children",
+  PluginCreatorParentChildrenId = "pluginCreator___parent___children___id",
+  PluginCreatorParentChildrenChildren = "pluginCreator___parent___children___children",
+  PluginCreatorParentInternalContent = "pluginCreator___parent___internal___content",
+  PluginCreatorParentInternalContentDigest = "pluginCreator___parent___internal___contentDigest",
+  PluginCreatorParentInternalDescription = "pluginCreator___parent___internal___description",
+  PluginCreatorParentInternalFieldOwners = "pluginCreator___parent___internal___fieldOwners",
+  PluginCreatorParentInternalIgnoreType = "pluginCreator___parent___internal___ignoreType",
+  PluginCreatorParentInternalMediaType = "pluginCreator___parent___internal___mediaType",
+  PluginCreatorParentInternalOwner = "pluginCreator___parent___internal___owner",
+  PluginCreatorParentInternalType = "pluginCreator___parent___internal___type",
+  PluginCreatorChildren = "pluginCreator___children",
+  PluginCreatorChildrenId = "pluginCreator___children___id",
+  PluginCreatorChildrenParentId = "pluginCreator___children___parent___id",
+  PluginCreatorChildrenParentChildren = "pluginCreator___children___parent___children",
+  PluginCreatorChildrenChildren = "pluginCreator___children___children",
+  PluginCreatorChildrenChildrenId = "pluginCreator___children___children___id",
+  PluginCreatorChildrenChildrenChildren = "pluginCreator___children___children___children",
+  PluginCreatorChildrenInternalContent = "pluginCreator___children___internal___content",
+  PluginCreatorChildrenInternalContentDigest = "pluginCreator___children___internal___contentDigest",
+  PluginCreatorChildrenInternalDescription = "pluginCreator___children___internal___description",
+  PluginCreatorChildrenInternalFieldOwners = "pluginCreator___children___internal___fieldOwners",
+  PluginCreatorChildrenInternalIgnoreType = "pluginCreator___children___internal___ignoreType",
+  PluginCreatorChildrenInternalMediaType = "pluginCreator___children___internal___mediaType",
+  PluginCreatorChildrenInternalOwner = "pluginCreator___children___internal___owner",
+  PluginCreatorChildrenInternalType = "pluginCreator___children___internal___type",
+  PluginCreatorInternalContent = "pluginCreator___internal___content",
+  PluginCreatorInternalContentDigest = "pluginCreator___internal___contentDigest",
+  PluginCreatorInternalDescription = "pluginCreator___internal___description",
+  PluginCreatorInternalFieldOwners = "pluginCreator___internal___fieldOwners",
+  PluginCreatorInternalIgnoreType = "pluginCreator___internal___ignoreType",
+  PluginCreatorInternalMediaType = "pluginCreator___internal___mediaType",
+  PluginCreatorInternalOwner = "pluginCreator___internal___owner",
+  PluginCreatorInternalType = "pluginCreator___internal___type",
+  PluginCreatorResolve = "pluginCreator___resolve",
+  PluginCreatorName = "pluginCreator___name",
+  PluginCreatorVersion = "pluginCreator___version",
+  PluginCreatorPluginOptionsQuery = "pluginCreator___pluginOptions___query",
+  PluginCreatorPluginOptionsFeeds = "pluginCreator___pluginOptions___feeds",
+  PluginCreatorPluginOptionsFeedsQuery = "pluginCreator___pluginOptions___feeds___query",
+  PluginCreatorPluginOptionsFeedsOutput = "pluginCreator___pluginOptions___feeds___output",
+  PluginCreatorPluginOptionsFeedsTitle = "pluginCreator___pluginOptions___feeds___title",
+  PluginCreatorPluginOptionsFeedsMatch = "pluginCreator___pluginOptions___feeds___match",
+  PluginCreatorPluginOptionsDomains = "pluginCreator___pluginOptions___domains",
+  PluginCreatorPluginOptionsGoogleFamilies = "pluginCreator___pluginOptions___google___families",
+  PluginCreatorPluginOptionsSiteUrl = "pluginCreator___pluginOptions___siteUrl",
+  PluginCreatorPluginOptionsKey = "pluginCreator___pluginOptions___key",
+  PluginCreatorPluginOptionsId = "pluginCreator___pluginOptions___id",
+  PluginCreatorPluginOptionsToken = "pluginCreator___pluginOptions___token",
+  PluginCreatorPluginOptionsGraphQlQuery = "pluginCreator___pluginOptions___graphQLQuery",
+  PluginCreatorPluginOptionsPath = "pluginCreator___pluginOptions___path",
+  PluginCreatorPluginOptionsName = "pluginCreator___pluginOptions___name",
+  PluginCreatorPluginOptionsGatsbyRemarkPlugins = "pluginCreator___pluginOptions___gatsbyRemarkPlugins",
+  PluginCreatorPluginOptionsGatsbyRemarkPluginsResolve = "pluginCreator___pluginOptions___gatsbyRemarkPlugins___resolve",
+  PluginCreatorPluginOptionsDefaultsFormats = "pluginCreator___pluginOptions___defaults___formats",
+  PluginCreatorPluginOptionsIncludeInDevelopment = "pluginCreator___pluginOptions___includeInDevelopment",
+  PluginCreatorPluginOptionsDefaultDataLayerType = "pluginCreator___pluginOptions___defaultDataLayer___type",
+  PluginCreatorPluginOptionsRouteChangeEventName = "pluginCreator___pluginOptions___routeChangeEventName",
+  PluginCreatorPluginOptionsShortName = "pluginCreator___pluginOptions___short_name",
+  PluginCreatorPluginOptionsStartUrl = "pluginCreator___pluginOptions___start_url",
+  PluginCreatorPluginOptionsBackgroundColor = "pluginCreator___pluginOptions___background_color",
+  PluginCreatorPluginOptionsThemeColor = "pluginCreator___pluginOptions___theme_color",
+  PluginCreatorPluginOptionsDisplay = "pluginCreator___pluginOptions___display",
+  PluginCreatorPluginOptionsIcon = "pluginCreator___pluginOptions___icon",
+  PluginCreatorPluginOptionsCacheBustingMode = "pluginCreator___pluginOptions___cache_busting_mode",
+  PluginCreatorPluginOptionsIncludeFavicon = "pluginCreator___pluginOptions___include_favicon",
+  PluginCreatorPluginOptionsLegacy = "pluginCreator___pluginOptions___legacy",
+  PluginCreatorPluginOptionsThemeColorInHead = "pluginCreator___pluginOptions___theme_color_in_head",
+  PluginCreatorPluginOptionsCacheDigest = "pluginCreator___pluginOptions___cacheDigest",
+  PluginCreatorPluginOptionsAllExtensions = "pluginCreator___pluginOptions___allExtensions",
+  PluginCreatorPluginOptionsIsTsx = "pluginCreator___pluginOptions___isTSX",
+  PluginCreatorPluginOptionsJsxPragma = "pluginCreator___pluginOptions___jsxPragma",
+  PluginCreatorPluginOptionsComponent = "pluginCreator___pluginOptions___component",
+  PluginCreatorPluginOptionsBucketName = "pluginCreator___pluginOptions___bucketName",
+  PluginCreatorPluginOptionsProtocol = "pluginCreator___pluginOptions___protocol",
+  PluginCreatorPluginOptionsHostname = "pluginCreator___pluginOptions___hostname",
+  PluginCreatorPluginOptionsConfigDir = "pluginCreator___pluginOptions___configDir",
+  PluginCreatorPluginOptionsBabel = "pluginCreator___pluginOptions___babel",
+  PluginCreatorPluginOptionsTsNodeProject = "pluginCreator___pluginOptions___tsNode___project",
+  PluginCreatorPluginOptionsPathCheck = "pluginCreator___pluginOptions___pathCheck",
+  PluginCreatorNodeApIs = "pluginCreator___nodeAPIs",
+  PluginCreatorBrowserApIs = "pluginCreator___browserAPIs",
+  PluginCreatorSsrApIs = "pluginCreator___ssrAPIs",
+  PluginCreatorPluginFilepath = "pluginCreator___pluginFilepath",
+  PluginCreatorPackageJsonName = "pluginCreator___packageJson___name",
+  PluginCreatorPackageJsonDescription = "pluginCreator___packageJson___description",
+  PluginCreatorPackageJsonVersion = "pluginCreator___packageJson___version",
+  PluginCreatorPackageJsonMain = "pluginCreator___packageJson___main",
+  PluginCreatorPackageJsonLicense = "pluginCreator___packageJson___license",
+  PluginCreatorPackageJsonDependencies = "pluginCreator___packageJson___dependencies",
+  PluginCreatorPackageJsonDependenciesName = "pluginCreator___packageJson___dependencies___name",
+  PluginCreatorPackageJsonDependenciesVersion = "pluginCreator___packageJson___dependencies___version",
+  PluginCreatorPackageJsonDevDependencies = "pluginCreator___packageJson___devDependencies",
+  PluginCreatorPackageJsonDevDependenciesName = "pluginCreator___packageJson___devDependencies___name",
+  PluginCreatorPackageJsonDevDependenciesVersion = "pluginCreator___packageJson___devDependencies___version",
+  PluginCreatorPackageJsonPeerDependencies = "pluginCreator___packageJson___peerDependencies",
+  PluginCreatorPackageJsonPeerDependenciesName = "pluginCreator___packageJson___peerDependencies___name",
+  PluginCreatorPackageJsonPeerDependenciesVersion = "pluginCreator___packageJson___peerDependencies___version",
+  PluginCreatorPackageJsonKeywords = "pluginCreator___packageJson___keywords",
+  PluginCreatorId = "pluginCreatorId",
+  ComponentPath = "componentPath",
 }
 
 export type SitePageFilterInput = {
@@ -4962,15 +4968,15 @@ export type SitePageFilterInput = {
   internalComponentName?: Maybe<StringQueryOperatorInput>;
   componentChunkName?: Maybe<StringQueryOperatorInput>;
   matchPath?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
   isCreatedByStatefulCreatePages?: Maybe<BooleanQueryOperatorInput>;
   context?: Maybe<SitePageContextFilterInput>;
   pluginCreator?: Maybe<SitePluginFilterInput>;
   pluginCreatorId?: Maybe<StringQueryOperatorInput>;
   componentPath?: Maybe<StringQueryOperatorInput>;
-  id?: Maybe<StringQueryOperatorInput>;
-  parent?: Maybe<NodeFilterInput>;
-  children?: Maybe<NodeFilterListInput>;
-  internal?: Maybe<InternalFilterInput>;
 };
 
 export type SitePageGroupConnection = {
@@ -5122,6 +5128,12 @@ export enum SitePluginFieldsEnum {
   Resolve = "resolve",
   Name = "name",
   Version = "version",
+  PluginOptionsQuery = "pluginOptions___query",
+  PluginOptionsFeeds = "pluginOptions___feeds",
+  PluginOptionsFeedsQuery = "pluginOptions___feeds___query",
+  PluginOptionsFeedsOutput = "pluginOptions___feeds___output",
+  PluginOptionsFeedsTitle = "pluginOptions___feeds___title",
+  PluginOptionsFeedsMatch = "pluginOptions___feeds___match",
   PluginOptionsDomains = "pluginOptions___domains",
   PluginOptionsGoogleFamilies = "pluginOptions___google___families",
   PluginOptionsSiteUrl = "pluginOptions___siteUrl",
@@ -5290,6 +5302,8 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 
 export type SitePluginPluginOptions = {
   __typename?: "SitePluginPluginOptions";
+  query?: Maybe<Scalars["String"]>;
+  feeds?: Maybe<Array<Maybe<SitePluginPluginOptionsFeeds>>>;
   domains?: Maybe<Array<Maybe<Scalars["String"]>>>;
   google?: Maybe<SitePluginPluginOptionsGoogle>;
   siteUrl?: Maybe<Scalars["String"]>;
@@ -5359,7 +5373,28 @@ export type SitePluginPluginOptionsDefaultsFilterInput = {
   formats?: Maybe<StringQueryOperatorInput>;
 };
 
+export type SitePluginPluginOptionsFeeds = {
+  __typename?: "SitePluginPluginOptionsFeeds";
+  query?: Maybe<Scalars["String"]>;
+  output?: Maybe<Scalars["String"]>;
+  title?: Maybe<Scalars["String"]>;
+  match?: Maybe<Scalars["String"]>;
+};
+
+export type SitePluginPluginOptionsFeedsFilterInput = {
+  query?: Maybe<StringQueryOperatorInput>;
+  output?: Maybe<StringQueryOperatorInput>;
+  title?: Maybe<StringQueryOperatorInput>;
+  match?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsFeedsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsFeedsFilterInput>;
+};
+
 export type SitePluginPluginOptionsFilterInput = {
+  query?: Maybe<StringQueryOperatorInput>;
+  feeds?: Maybe<SitePluginPluginOptionsFeedsFilterListInput>;
   domains?: Maybe<StringQueryOperatorInput>;
   google?: Maybe<SitePluginPluginOptionsGoogleFilterInput>;
   siteUrl?: Maybe<StringQueryOperatorInput>;
@@ -5947,7 +5982,12 @@ export type BlogIndexQuery = { __typename?: "Query" } & {
                 meta?: Maybe<
                   { __typename?: "MdxExportsMeta" } & Pick<
                     MdxExportsMeta,
-                    "draft" | "title" | "date" | "description" | "linkText"
+                    | "draft"
+                    | "title"
+                    | "date"
+                    | "description"
+                    | "category"
+                    | "linkText"
                   > & {
                       image?: Maybe<
                         { __typename?: "File" } & {

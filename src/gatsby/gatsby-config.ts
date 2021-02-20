@@ -1,4 +1,5 @@
 import unwrapImages from "remark-unwrap-images";
+import { BlogIndexQuery, SiteMetadataQuery } from "../../types/graphql-types";
 
 const rawUrl = "https://morrisoncole.co.uk";
 const siteAddress = new URL(rawUrl);
@@ -27,6 +28,83 @@ export const siteMetadata = {
 };
 
 export const plugins = [
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              author
+              image
+              imageAlt
+              siteUrl
+              social {
+                twitter
+              }
+            }
+          }
+        }
+      `,
+      feeds: [
+        {
+          serialize: ({
+            query,
+          }: {
+            query: SiteMetadataQuery & BlogIndexQuery;
+          }): any => {
+            return query.allMdx.edges.map((edge) => {
+              return Object.assign({}, edge.node.exports.meta, {
+                site_url: query.site.siteMetadata.siteUrl,
+                url: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
+                guid: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
+                categories: [edge.node.exports.meta.category],
+              });
+            });
+          },
+          query: `
+            {
+              allMdx(
+                sort: { fields: [exports___meta___date], order: DESC }
+                filter: { exports: { meta: { draft: { eq: false } } } }
+              ) {
+                edges {
+                  node {
+                    excerpt
+                    fields {
+                      slug
+                    }
+                    exports {
+                      meta {
+                        draft
+                        title
+                        date(formatString: "MMMM DD, YYYY")
+                        category
+                        description
+                        linkText
+                        image {
+                          childImageSharp {
+                            gatsbyImageData(width: 800, layout: CONSTRAINED)
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          `,
+          output: "/blog/rss.xml",
+          title: "Morrison Cole's RSS Feed",
+          site_url: rawUrl,
+          image_url: `${rawUrl}/morrison-cole.jpg`,
+          match: "^/blog/",
+        },
+      ],
+    },
+  },
   "gatsby-plugin-image",
   {
     resolve: "gatsby-plugin-preconnect",
