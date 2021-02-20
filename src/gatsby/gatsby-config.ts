@@ -61,6 +61,17 @@ export const plugins = [
                 url: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
                 guid: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
                 categories: [edge.node.exports.meta.category],
+                custom_elements: [
+                  {
+                    "content:encoded": `<strong><a href="${
+                      query.site.siteMetadata.siteUrl + edge.node.fields.slug
+                    }">Read directly on morrisoncole.co.uk</a>...</strong>`,
+                  },
+                ],
+                enclosure: {
+                  url: `${rawUrl}${edge.node.exports.meta.image.childImageSharp.gatsbyImageData.images.fallback.src}`,
+                  type: "image/jpeg",
+                },
               });
             });
           },
@@ -72,7 +83,6 @@ export const plugins = [
               ) {
                 edges {
                   node {
-                    excerpt
                     fields {
                       slug
                     }
@@ -96,9 +106,9 @@ export const plugins = [
               }
             }
           `,
-          output: "/blog/rss.xml",
-          title: "Morrison Cole's RSS Feed",
-          site_url: rawUrl,
+          output: "/rss.xml",
+          title: "Morrison Cole's Blog",
+          site_url: `${rawUrl}/`,
           image_url: `${rawUrl}/morrison-cole.jpg`,
           match: "^/blog/",
         },
