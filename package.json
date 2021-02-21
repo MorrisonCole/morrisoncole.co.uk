@@ -89,7 +89,7 @@
     "goodreads-api-node": "0.0.12",
     "open": "7.4.2",
     "prettier": "2.2.1",
-    "server": "1.0.31",
+    "server": "1.0.32",
     "typescript": "4.1.5",
     "yaml": "1.10.0"
   },
