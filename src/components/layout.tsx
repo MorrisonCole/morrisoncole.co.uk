@@ -8,10 +8,6 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     siteGrid: {
       height: "100vh",
-      [theme.breakpoints.down("xs")]: {
-        paddingLeft: theme.spacing(1),
-        paddingRight: theme.spacing(1),
-      },
       display: "grid",
       gridTemplateColumns: "3fr 1fr min(85ch, 100%) 1fr 3fr",
       gridTemplateRows: "auto 1fr auto",
@@ -21,8 +17,18 @@ const useStyles = makeStyles((theme: Theme) =>
     'footer footer footer footer footer'
     `,
     },
+    header: {
+      [theme.breakpoints.down("xs")]: {
+        paddingLeft: theme.spacing(1),
+        paddingRight: theme.spacing(1),
+      },
+    },
     content: {
       gridArea: "content",
+      [theme.breakpoints.down("xs")]: {
+        paddingLeft: theme.spacing(1),
+        paddingRight: theme.spacing(1),
+      },
     },
   })
 );

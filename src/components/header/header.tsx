@@ -13,6 +13,10 @@ import { HeaderQuery } from "../../../types/graphql-types";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     header: {
+      [theme.breakpoints.down("xs")]: {
+        paddingLeft: theme.spacing(1),
+        paddingRight: theme.spacing(1),
+      },
       gridArea: "header",
       marginTop: theme.spacing(2),
     },
