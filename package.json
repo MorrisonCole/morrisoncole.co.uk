@@ -90,7 +90,7 @@
     "open": "7.4.2",
     "prettier": "2.2.1",
     "server": "1.0.32",
-    "typescript": "4.1.5",
+    "typescript": "4.2.2",
     "yaml": "1.10.0"
   },
   "resolutions": {
