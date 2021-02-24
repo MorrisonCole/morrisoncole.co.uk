@@ -8287,20 +8287,7 @@ gatsby-plugin-ts-config@1.1.5:
     lodash.mergewith "^4.6.2"
     ts-node "^9.0.0"
 
-gatsby-plugin-typescript@2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.12.0.tgz#44df6cfde747ab94c1984621e5bb749da94af959"
-  integrity sha512-Gb8mPdIgAmlxb/EgH7h5ewq3nMJ+oU640AyfTCAp9GtQspRztRRKjuGceJH3gDVq8bO6wFOWxdRVYIC2KZF9mw==
-  dependencies:
-    "@babel/core" "^7.12.3"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.12.1"
-    "@babel/plugin-proposal-numeric-separator" "^7.12.5"
-    "@babel/plugin-proposal-optional-chaining" "^7.12.1"
-    "@babel/preset-typescript" "^7.12.1"
-    "@babel/runtime" "^7.12.5"
-    babel-plugin-remove-graphql-queries "^2.16.0"
-
-gatsby-plugin-typescript@^2.12.1:
+gatsby-plugin-typescript@2.12.1, gatsby-plugin-typescript@^2.12.1:
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.12.1.tgz#cb2f009d5c015a7703578b86608e90d71b55e9ae"
   integrity sha512-p32qJVDi5Xw1Oo5vLMUXdRBxSDlMrfxTGb7etMAsVfyLRlRhMLb2YsuXJIvN1IfybQ6Z3EbhlH293cpxn5jozg==
