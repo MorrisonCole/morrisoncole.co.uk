@@ -22,7 +22,7 @@
     "async.queue": "0.5.2",
     "babel-plugin-styled-components": "1.12.0",
     "classnames": "2.2.6",
-    "gatsby": "2.32.4",
+    "gatsby": "2.32.6",
     "gatsby-cli": "2.19.1",
     "gatsby-image": "2.11.0",
     "gatsby-plugin-canonical-urls": "2.10.0",
