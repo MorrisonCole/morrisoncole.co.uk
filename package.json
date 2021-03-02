@@ -87,7 +87,7 @@
     "express": "4.17.1",
     "gatsby-plugin-ts-config": "1.1.5",
     "goodreads-api-node": "0.0.12",
-    "open": "7.4.2",
+    "open": "8.0.1",
     "prettier": "2.2.1",
     "server": "1.0.32",
     "typescript": "4.2.2",
