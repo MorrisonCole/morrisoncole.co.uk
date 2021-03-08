@@ -49,13 +49,6 @@ export default function NavBar({ location }: NavBarProps): JSX.Element {
         scrollButtons="auto"
       >
         <Tab label="Timeline" value="" component={Link} to="/" />
-        <Tab
-          label="Software"
-          value="software"
-          component={Link}
-          to="/software/"
-        />
-        <Tab label="Music" value="music" component={Link} to="/music/" />
         <Tab label="Blog" value="blog" component={Link} to="/blog/" />
       </Tabs>
     </div>
