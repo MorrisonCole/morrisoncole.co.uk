@@ -44,7 +44,7 @@
     "gatsby-plugin-typography": "3.1.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-remark-autolink-headers": "3.0.0",
-    "gatsby-remark-copy-linked-files": "3.0.0",
+    "gatsby-remark-copy-linked-files": "3.1.0",
     "gatsby-remark-embed-video": "3.1.1",
     "gatsby-remark-images": "4.0.0",
     "gatsby-remark-responsive-iframe": "3.0.0",
