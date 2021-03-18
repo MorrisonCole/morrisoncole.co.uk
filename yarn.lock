@@ -7509,7 +7509,7 @@ gatsby-cli@3.1.0, gatsby-cli@^3.1.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^2.0.0, gatsby-core-utils@^2.1.0:
+gatsby-core-utils@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.1.0.tgz#634989bc3cde1c7add752fbdc3c6a3cdd8e23377"
   integrity sha512-zBNZ4kypfgqrUWNGMQQCXZookssXWaTnLWmxM7TOz5Phjvr0NvQo/xpkUgVbuylkQDwprmg88oRdox8L3zMY9Q==
@@ -7614,10 +7614,10 @@ gatsby-plugin-image@1.1.1:
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
 
-gatsby-plugin-layout@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-2.0.0.tgz#aa5ab40e2a9bf78009115cff79a40f6d29cb6bc5"
-  integrity sha512-dFuQ/h6Z1TiZrHwil1HaqyE0sDKpfPEC6XLiCgRqq1Ud0y8lS6DI8qUk4MRI3B1rq6kXakrkimN8bR/mmHo+jA==
+gatsby-plugin-layout@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-2.1.0.tgz#993672d09a98fc6098108c8a2561d00a29b51e4f"
+  integrity sha512-5WZ6tRM5B79lEiMWEBWCacUctmrHGgNOHGYklSxYZQaYsXTxtfhGJ4dHf10TUif2bttQ6IRi+4Elm5Lm6AJucg==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
@@ -8017,7 +8017,7 @@ gatsby-source-filesystem@3.1.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-telemetry@^2.0.0, gatsby-telemetry@^2.1.0:
+gatsby-telemetry@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-2.1.0.tgz#e7c0f8bc488a93bf4afcd10760f38b50471e754f"
   integrity sha512-ZAmjxYsLyJ9eK3ZGphoIjl1C/Mx732h+PWpyD+NNUPf+GFJcPDVAd/tX9XHjNTVrAN3rAaHuH48wK7JNeC/xIA==
