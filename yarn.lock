@@ -7733,23 +7733,23 @@ gatsby-plugin-s3@0.3.8:
     stream-to-promise "^2.2.0"
     yargs "^15.4.0"
 
-gatsby-plugin-sharp@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.0.1.tgz#994a2a2a0305bd7d3e4aa698e30532c0b7cfba96"
-  integrity sha512-HL519LIhTmTySUPFO2IuwIHBlgo/0N7gJng2gu2XwD/DJ3ENgw5+SXmiVTwvERx7Pr5YVPECgYuszWdlYgJmgw==
+gatsby-plugin-sharp@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.1.1.tgz#886f99646fe37870ed549e0763db5a829b343792"
+  integrity sha512-j/4i0ZII1q2wC8bAD3nsi7FuLQv5m6rtdBy42xZfv3TkXIuPpAN4nbN+5BEfSy1yQuOLGe6jMbsUrtenMk1IwQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
     bluebird "^3.7.2"
     filenamify "^4.2.0"
     fs-extra "^9.1.0"
-    gatsby-core-utils "^2.0.0"
-    gatsby-telemetry "^2.0.0"
+    gatsby-core-utils "^2.1.0"
+    gatsby-telemetry "^2.1.0"
     got "^10.7.0"
     imagemin "^7.0.1"
     imagemin-mozjpeg "^9.0.0"
     imagemin-pngquant "^9.0.1"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     mini-svg-data-uri "^1.2.3"
     potrace "^2.1.8"
     probe-image-size "^6.0.0"
