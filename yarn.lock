@@ -7509,7 +7509,7 @@ gatsby-cli@3.1.0, gatsby-cli@^3.1.0:
     yoga-layout-prebuilt "^1.9.6"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^2.0.0, gatsby-core-utils@^2.1.0:
+gatsby-core-utils@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-2.1.0.tgz#634989bc3cde1c7add752fbdc3c6a3cdd8e23377"
   integrity sha512-zBNZ4kypfgqrUWNGMQQCXZookssXWaTnLWmxM7TOz5Phjvr0NvQo/xpkUgVbuylkQDwprmg88oRdox8L3zMY9Q==
@@ -8017,7 +8017,7 @@ gatsby-source-filesystem@3.1.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-telemetry@^2.0.0, gatsby-telemetry@^2.1.0:
+gatsby-telemetry@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-2.1.0.tgz#e7c0f8bc488a93bf4afcd10760f38b50471e754f"
   integrity sha512-ZAmjxYsLyJ9eK3ZGphoIjl1C/Mx732h+PWpyD+NNUPf+GFJcPDVAd/tX9XHjNTVrAN3rAaHuH48wK7JNeC/xIA==
@@ -8037,10 +8037,10 @@ gatsby-telemetry@^2.0.0, gatsby-telemetry@^2.1.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-transformer-json@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-3.0.0.tgz#e8ab61ac5aa9aa7699c00d869c63b91ce37d606e"
-  integrity sha512-MyQZdoGbr1OEtFkAF1BAEvfhZKZVeD00yCX/9E/CSd/73jrBqxXqSWN2gIVx9HlPRbPUjmChMW6Nwx0z6GF+MA==
+gatsby-transformer-json@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-json/-/gatsby-transformer-json-3.1.0.tgz#d3cf91c5a6ec98f4a295af97b02b22e54dcb8682"
+  integrity sha512-eEd3LkxteckVQt0ka5tH2tJmYSogEfuULg7GPCsh9pcK2hR8YZq2dpFyGzwGREd6FYYkyJTg8KtqSSASiNjJrg==
   dependencies:
     "@babel/runtime" "^7.12.5"
     bluebird "^3.7.2"
