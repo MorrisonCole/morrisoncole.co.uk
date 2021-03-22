@@ -13921,10 +13921,10 @@ react-intersection-observer@8.31.0:
   resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.31.0.tgz#0ed21aaf93c4c0475b22b0ccaba6169076d01605"
   integrity sha512-XraIC/tkrD9JtrmVA7ypEN1QIpKc52mXBH1u/bz/aicRLo8QQEJQAMUTb8mz4B6dqpPwyzgjrr7Ljv/2ACDtqw==
 
-react-is@17.0.1, "react-is@^16.8.0 || ^17.0.0":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
-  integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+react-is@17.0.2, "react-is@^16.8.0 || ^17.0.0":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
+  integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
 react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
