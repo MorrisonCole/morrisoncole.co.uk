@@ -7610,10 +7610,10 @@ gatsby-plugin-feed@3.1.0:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
-gatsby-plugin-google-tagmanager@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-3.1.0.tgz#fa5d044075e501b2dc5dd85019be5ce028c4abad"
-  integrity sha512-DWwCv6OGgJz91B/p5ExtsGWV139UiOEi/LgjO5Q32nQCY6idX9PGwC30qGzSV4z/Vm3YyDQxOSAD2GFYmKePdw==
+gatsby-plugin-google-tagmanager@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-3.2.0.tgz#c862236c4ea8c190d4e2ef9883f2f72e1aea5d7a"
+  integrity sha512-B41EvUoXRzgWbXhZof2EcK6xMBkReM7bupyaFAKNXfNw7FbJnyMA1IJ7jRQcvgsdLLacSJTIYRPA1IiyBjTT0g==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
