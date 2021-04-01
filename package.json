@@ -21,7 +21,7 @@
     "@types/typography": "0.16.3",
     "async.queue": "0.5.2",
     "babel-plugin-styled-components": "1.12.0",
-    "classnames": "2.2.6",
+    "classnames": "2.3.0",
     "gatsby": "3.1.2",
     "gatsby-cli": "3.1.0",
     "gatsby-image": "3.2.0",
