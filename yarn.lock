@@ -3410,7 +3410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.92":
+"@types/lodash@npm:4, @types/lodash@npm:^4.14.92":
   version: 4.14.168
   resolution: "@types/lodash@npm:4.14.168"
   checksum: 9a4e25f89fc035b9f0388f1f7be85e5eff49f9e6db0d93432c9a89fce0916f8a89db4e8290415f7ea02de6b00d3573826378dcb655b7b2d20530a6e8d6dd6fd0
@@ -3503,7 +3503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*":
+"@types/prop-types@npm:*, @types/prop-types@npm:15":
   version: 15.7.3
   resolution: "@types/prop-types@npm:15.7.3"
   checksum: bd0eab69d5120ad3784d0c9985f902653d5924707a7f2b3702a330e762dfd61b6494954cb54ad0c52b918ffd6f1e7e27c9270e4442bc15250de348596f2f60cb
@@ -10072,7 +10072,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-link@npm:^3.2.0":
+"gatsby-link@npm:3.2.0, gatsby-link@npm:^3.2.0":
   version: 3.2.0
   resolution: "gatsby-link@npm:3.2.0"
   dependencies:
@@ -10495,7 +10495,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-react-router-scroll@npm:^4.2.0":
+"gatsby-react-router-scroll@npm:4.2.0, gatsby-react-router-scroll@npm:^4.2.0":
   version: 4.2.0
   resolution: "gatsby-react-router-scroll@npm:4.2.0"
   dependencies:
@@ -14589,7 +14589,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.13.1, lodash@npm:^4.17.10, lodash@npm:^4.17.11, lodash@npm:^4.17.12, lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.17.4, lodash@npm:~4.17.20":
+"lodash@npm:4.17.21, lodash@npm:^4.13.1, lodash@npm:^4.17.10, lodash@npm:^4.17.11, lodash@npm:^4.17.12, lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.17.4, lodash@npm:~4.17.20":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: 4983720b9abca930a4a46f18db163d7dad8dd00dbed6db0cc7b499b33b717cce69f80928b27bbb1ff2cbd3b19d251ee90669a8b5ea466072ca81c2ebe91e7468
@@ -15440,6 +15440,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"mitt@npm:2.1.0":
+  version: 2.1.0
+  resolution: "mitt@npm:2.1.0"
+  checksum: 549fd125e961ca7265e4d1a7c04b9b56787ac2c2093c594528a8afa3003fd3a17ddf55ae346ddf3e1c05084d441f198d6a55bd770915f4578d5843c9e4b6df16
+  languageName: node
+  linkType: hard
+
 "mitt@npm:^1.2.0":
   version: 1.2.0
   resolution: "mitt@npm:1.2.0"
@@ -15516,8 +15523,10 @@ fsevents@~2.3.1:
     "@mdx-js/react": 1.6.22
     "@morrisoncole/gatsby-source-goodreads": 0.1.2
     "@types/classnames": 2.2.11
+    "@types/lodash": 4
     "@types/mdx-js__react": 1.5.3
     "@types/node": 14.14.37
+    "@types/prop-types": 15
     "@types/react-helmet": 6.1.0
     "@types/typography": 0.16.3
     "@typescript-eslint/eslint-plugin": 4.20.0
@@ -15532,6 +15541,7 @@ fsevents@~2.3.1:
     gatsby: 3.2.1
     gatsby-cli: 3.2.0
     gatsby-image: 3.2.0
+    gatsby-link: 3.2.0
     gatsby-plugin-canonical-urls: 3.2.0
     gatsby-plugin-feed: 3.2.0
     gatsby-plugin-google-tagmanager: 3.2.0
@@ -15551,6 +15561,7 @@ fsevents@~2.3.1:
     gatsby-plugin-typescript: 3.2.0
     gatsby-plugin-typography: 3.2.0
     gatsby-plugin-web-font-loader: 1.0.4
+    gatsby-react-router-scroll: 4.2.0
     gatsby-remark-autolink-headers: 3.2.0
     gatsby-remark-copy-linked-files: 3.2.0
     gatsby-remark-embed-video: 3.1.1
@@ -15564,12 +15575,16 @@ fsevents@~2.3.1:
     goodreads-api-node: 0.0.12
     graphql: 15.5.0
     graphql-import: 1.0.2
+    lodash: 4.17.21
     mdx-utils: 0.2.0
+    mitt: 2.1.0
     open: 8.0.4
     path: 0.12.7
     prettier: 2.2.1
     prism-react-renderer: 1.2.0
     prismjs: 1.23.0
+    prop-types: 15.7.2
+    query-string: 7.0.0
     react: 17.0.2
     react-dom: 17.0.2
     react-helmet: 6.1.0
@@ -18019,7 +18034,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.8, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.5.8, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -18324,6 +18339,18 @@ fsevents@~2.3.1:
     split-on-first: ^1.0.0
     strict-uri-encode: ^2.0.0
   checksum: 70af3a82fe9babc51b72ed9d68cd5485754ee84456b8d1ab80c8f8fdda9302630513b91d96ed89e701cbdf04619bbcde1695b061ea47b91b099c9f79e4080bba
+  languageName: node
+  linkType: hard
+
+"query-string@npm:7.0.0":
+  version: 7.0.0
+  resolution: "query-string@npm:7.0.0"
+  dependencies:
+    decode-uri-component: ^0.2.0
+    filter-obj: ^1.1.0
+    split-on-first: ^1.0.0
+    strict-uri-encode: ^2.0.0
+  checksum: bfdb88aee494c246b1ed2614cd55e5ada111860755e4fa79271cbc6dcc8198db8d9b21873489f83a06027f78d293f37989b4602d36a642ea632cf22713ecc63d
   languageName: node
   linkType: hard
 
