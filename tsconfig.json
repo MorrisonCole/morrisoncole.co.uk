@@ -16,5 +16,5 @@
     "target": "esnext",
     "typeRoots": ["./types", "./node_modules/@types"]
   },
-  "exclude": [".cache", "./node_modules", "./public", "./types/graphql-types"]
+  "exclude": [".cache", "./public", "./types/graphql-types"]
 }

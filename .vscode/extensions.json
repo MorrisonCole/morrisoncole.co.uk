@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "gamunu.vscode-yarn",
     "hashicorp.terraform",
-    "silvenon.mdx"
+    "silvenon.mdx",
+    "arcanis.vscode-zipfs"
   ]
 }
