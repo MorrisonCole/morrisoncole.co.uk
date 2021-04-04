@@ -12,3 +12,7 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 
 1. Run `yarn`
 2. Run `yarn start`
+
+## Upgrade Dependencies
+
+`yarn upgrade-interactive`

@@ -3410,7 +3410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:4, @types/lodash@npm:^4.14.92":
+"@types/lodash@npm:4.14.168, @types/lodash@npm:^4.14.92":
   version: 4.14.168
   resolution: "@types/lodash@npm:4.14.168"
   checksum: 9a4e25f89fc035b9f0388f1f7be85e5eff49f9e6db0d93432c9a89fce0916f8a89db4e8290415f7ea02de6b00d3573826378dcb655b7b2d20530a6e8d6dd6fd0
@@ -3503,7 +3503,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prop-types@npm:*, @types/prop-types@npm:15":
+"@types/prop-types@npm:*, @types/prop-types@npm:15.7.3":
   version: 15.7.3
   resolution: "@types/prop-types@npm:15.7.3"
   checksum: bd0eab69d5120ad3784d0c9985f902653d5924707a7f2b3702a330e762dfd61b6494954cb54ad0c52b918ffd6f1e7e27c9270e4442bc15250de348596f2f60cb
@@ -6114,10 +6114,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:2.3.0":
-  version: 2.3.0
-  resolution: "classnames@npm:2.3.0"
-  checksum: 8ca9dad97dd63db49ecd4d4b7bb5f05bef6628794b0ca3154bd7ec7ed7f16bdb9947515eca86dad0e7223b0391aa96f6b15dc2a7d31c795a19669b70799ec7f3
+"classnames@npm:2.3.1":
+  version: 2.3.1
+  resolution: "classnames@npm:2.3.1"
+  checksum: 57d536edede609f81425d24b062d8d720a466565faf1e38d32c881e883920baa71519ac70c7b565e9cd39201fb1c1ff9bdf8aabf8e26544bac481e7924867c83
   languageName: node
   linkType: hard
 
@@ -15523,17 +15523,17 @@ fsevents@~2.3.1:
     "@mdx-js/react": 1.6.22
     "@morrisoncole/gatsby-source-goodreads": 0.1.2
     "@types/classnames": 2.2.11
-    "@types/lodash": 4
+    "@types/lodash": 4.14.168
     "@types/mdx-js__react": 1.5.3
     "@types/node": 14.14.37
-    "@types/prop-types": 15
+    "@types/prop-types": 15.7.3
     "@types/react-helmet": 6.1.0
     "@types/typography": 0.16.3
     "@typescript-eslint/eslint-plugin": 4.20.0
     "@typescript-eslint/parser": 4.20.0
     async.queue: 0.5.2
     babel-plugin-styled-components: 1.12.0
-    classnames: 2.3.0
+    classnames: 2.3.1
     eslint: 7.23.0
     eslint-config-prettier: 8.1.0
     eslint-plugin-react: 7.23.1
@@ -15578,7 +15578,7 @@ fsevents@~2.3.1:
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 2.1.0
-    open: 8.0.4
+    open: 8.0.5
     path: 0.12.7
     prettier: 2.2.1
     prism-react-renderer: 1.2.0
@@ -16356,14 +16356,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"open@npm:8.0.4":
-  version: 8.0.4
-  resolution: "open@npm:8.0.4"
+"open@npm:8.0.5":
+  version: 8.0.5
+  resolution: "open@npm:8.0.5"
   dependencies:
     define-lazy-prop: ^2.0.0
     is-docker: ^2.1.1
     is-wsl: ^2.2.0
-  checksum: 59ed69c1088736a5fe4b25426e32a3bec673aa9c7bbb7693235cafba03682ca558f0bcf6f3e9129da4250d2fd18d8d1fbc8ef91d574c6dae771d26070e387e3b
+  checksum: aecfd0b0edd37f7a58f3e71a32726ecbc91e6c19c475896c80085e38a3c9eb4a11d3311226ac2a4f33ff51ff42c1ef39077cff0b50f74da86c2c3ffcf1f0b97f
   languageName: node
   linkType: hard
 

@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.20.0"],
             ["async.queue", "npm:0.5.2"],
             ["babel-plugin-styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.12.0"],
-            ["classnames", "npm:2.3.0"],
+            ["classnames", "npm:2.3.1"],
             ["eslint", "npm:7.23.0"],
             ["eslint-config-prettier", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.1.0"],
             ["eslint-plugin-react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:7.23.1"],
@@ -104,7 +104,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["mdx-utils", "npm:0.2.0"],
             ["mitt", "npm:2.1.0"],
-            ["open", "npm:8.0.4"],
+            ["open", "npm:8.0.5"],
             ["path", "npm:0.12.7"],
             ["prettier", "npm:2.2.1"],
             ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.2.0"],
@@ -10185,10 +10185,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["classnames", [
-        ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/classnames-npm-2.3.0-8972516692-8ca9dad97d.zip/node_modules/classnames/",
+        ["npm:2.3.1", {
+          "packageLocation": "./.yarn/cache/classnames-npm-2.3.1-f2ae0a8d3c-57d536eded.zip/node_modules/classnames/",
           "packageDependencies": [
-            ["classnames", "npm:2.3.0"]
+            ["classnames", "npm:2.3.1"]
           ],
           "linkType": "HARD",
         }]
@@ -21366,7 +21366,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.20.0"],
             ["async.queue", "npm:0.5.2"],
             ["babel-plugin-styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.12.0"],
-            ["classnames", "npm:2.3.0"],
+            ["classnames", "npm:2.3.1"],
             ["eslint", "npm:7.23.0"],
             ["eslint-config-prettier", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.1.0"],
             ["eslint-plugin-react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:7.23.1"],
@@ -21411,7 +21411,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["mdx-utils", "npm:0.2.0"],
             ["mitt", "npm:2.1.0"],
-            ["open", "npm:8.0.4"],
+            ["open", "npm:8.0.5"],
             ["path", "npm:0.12.7"],
             ["prettier", "npm:2.2.1"],
             ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.2.0"],
@@ -22298,10 +22298,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.0.4", {
-          "packageLocation": "./.yarn/cache/open-npm-8.0.4-9266930e8e-59ed69c108.zip/node_modules/open/",
+        ["npm:8.0.5", {
+          "packageLocation": "./.yarn/cache/open-npm-8.0.5-581e4d0ef4-aecfd0b0ed.zip/node_modules/open/",
           "packageDependencies": [
-            ["open", "npm:8.0.4"],
+            ["open", "npm:8.0.5"],
             ["define-lazy-prop", "npm:2.0.0"],
             ["is-docker", "npm:2.1.1"],
             ["is-wsl", "npm:2.2.0"]
