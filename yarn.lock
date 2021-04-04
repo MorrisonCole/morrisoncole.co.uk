@@ -1666,7 +1666,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gatsbyjs/reach-router@npm:^1.3.6":
+"@gatsbyjs/reach-router@npm:1.3.6, @gatsbyjs/reach-router@npm:^1.3.6":
   version: 1.3.6
   resolution: "@gatsbyjs/reach-router@npm:1.3.6"
   dependencies:
@@ -2941,7 +2941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mikaelkristiansson/domready@npm:^1.0.10":
+"@mikaelkristiansson/domready@npm:1.0.11, @mikaelkristiansson/domready@npm:^1.0.10":
   version: 1.0.11
   resolution: "@mikaelkristiansson/domready@npm:1.0.11"
   checksum: acabb0b8c46aae658d4e44fb7825196cf61403302480c5b3c776f21275329a25168d037abccf431870f89b97b2c7564154b5b4fd38ab80b9e4ae7b504efc5d8f
@@ -3503,6 +3503,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/platform@npm:^1":
+  version: 1.3.3
+  resolution: "@types/platform@npm:1.3.3"
+  checksum: 7f3147867889c7457be201c3f142058c9197ad318df0bb905e25d544f4a5638414a9d745a1c0315db857d31f49d7b7162cee837969ec629c4e7a8f59603890be
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*, @types/prop-types@npm:15.7.3":
   version: 15.7.3
   resolution: "@types/prop-types@npm:15.7.3"
@@ -3588,6 +3595,13 @@ __metadata:
   version: 0.16.1
   resolution: "@types/scheduler@npm:0.16.1"
   checksum: 0124c2e4dee5e9b8c8524fcd6b1b8ea0b807b132e593925db04cdcc92ca2779a0d27c79414e60454b4458361a4d8319fa2b59d20585054f21617d1e9acf46a6f
+  languageName: node
+  linkType: hard
+
+"@types/stack-trace@npm:^0":
+  version: 0.0.29
+  resolution: "@types/stack-trace@npm:0.0.29"
+  checksum: afe0738c445597dc339b18ea9237ac1dcf0b1d540f24d356de5820c768abf922dee89c9ea1a33840ff7a1108ebd9ea7b287b250c04e0030fe081fff0ba148955
   languageName: node
   linkType: hard
 
@@ -4092,7 +4106,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anser@npm:^2.0.1":
+"anser@npm:2.0.1, anser@npm:^2.0.1":
   version: 2.0.1
   resolution: "anser@npm:2.0.1"
   checksum: 97949bee3f76cb57ce46b7049c862882f38b2f02cdd337891cda2147817cdc9a49b3c8688d5cd74201eb6a9aad58826b00814ee2d8503f5e0619894621bb1dfb
@@ -7117,7 +7131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css.escape@npm:^1.5.1":
+"css.escape@npm:1.5.1, css.escape@npm:^1.5.1":
   version: 1.5.1
   resolution: "css.escape@npm:1.5.1"
   checksum: 44fe5e93fee46fe60dbd0cdd078b14ef75697ee93519a7157f976b655463dd66eba598b0df16c16a897ac884c97845d2a3819cb8d370cbf91bc59bb557ebe826
@@ -8954,7 +8968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"event-source-polyfill@npm:^1.0.15":
+"event-source-polyfill@npm:1.0.22, event-source-polyfill@npm:^1.0.15":
   version: 1.0.22
   resolution: "event-source-polyfill@npm:1.0.22"
   checksum: 59fc715a4c1e81128859d3ac580562ebc16785df7d21a24ba9cf97ba20402f60cf65c077cdccc11de80024eeeae6069582c278589b175f2eb8093e8420be77cd
@@ -10054,21 +10068,21 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"gatsby-legacy-polyfills@npm:1.2.0, gatsby-legacy-polyfills@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "gatsby-legacy-polyfills@npm:1.2.0"
+  dependencies:
+    core-js-compat: 3.9.0
+  checksum: 891a837a84d888e1d91fb8c32826c858d36742e718d347c9e3380805c06e75623382082906ccef0c0453d88027ddda8326306d98fe86ddc8f96d9b93018be9f3
+  languageName: node
+  linkType: hard
+
 "gatsby-legacy-polyfills@npm:^1.1.0":
   version: 1.1.0
   resolution: "gatsby-legacy-polyfills@npm:1.1.0"
   dependencies:
     core-js-compat: 3.9.0
   checksum: 55df5b8ab7259eba90faeefa9a8ebd9fecb1240a14207c9a2c6c0063fd02b58da6aca53aed9ecd29d80c0cc1ebc011d62a95dba3abcb85704d3975622370e3bc
-  languageName: node
-  linkType: hard
-
-"gatsby-legacy-polyfills@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "gatsby-legacy-polyfills@npm:1.2.0"
-  dependencies:
-    core-js-compat: 3.9.0
-  checksum: 891a837a84d888e1d91fb8c32826c858d36742e718d347c9e3380805c06e75623382082906ccef0c0453d88027ddda8326306d98fe86ddc8f96d9b93018be9f3
   languageName: node
   linkType: hard
 
@@ -15512,6 +15526,7 @@ fsevents@~2.3.1:
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
     "@babel/core": 7.13.14
+    "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 1.21.3
     "@graphql-codegen/typescript": 1.21.1
     "@graphql-codegen/typescript-operations": 1.17.15
@@ -15521,26 +15536,33 @@ fsevents@~2.3.1:
     "@material-ui/styles": 4.11.3
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
+    "@mikaelkristiansson/domready": 1.0.11
     "@morrisoncole/gatsby-source-goodreads": 0.1.2
     "@types/classnames": 2.2.11
     "@types/lodash": 4.14.168
     "@types/mdx-js__react": 1.5.3
     "@types/node": 14.14.37
+    "@types/platform": ^1
     "@types/prop-types": 15.7.3
     "@types/react-helmet": 6.1.0
+    "@types/stack-trace": ^0
     "@types/typography": 0.16.3
     "@typescript-eslint/eslint-plugin": 4.20.0
     "@typescript-eslint/parser": 4.20.0
+    anser: 2.0.1
     async.queue: 0.5.2
     babel-plugin-styled-components: 1.12.0
     classnames: 2.3.1
+    css.escape: 1.5.1
     eslint: 7.23.0
     eslint-config-prettier: 8.1.0
     eslint-plugin-react: 7.23.1
+    event-source-polyfill: 1.0.22
     express: 4.17.1
     gatsby: 3.2.1
     gatsby-cli: 3.2.0
     gatsby-image: 3.2.0
+    gatsby-legacy-polyfills: 1.2.0
     gatsby-link: 3.2.0
     gatsby-plugin-canonical-urls: 3.2.0
     gatsby-plugin-feed: 3.2.0
@@ -15580,6 +15602,7 @@ fsevents@~2.3.1:
     mitt: 2.1.0
     open: 8.0.5
     path: 0.12.7
+    platform: 1.3.6
     prettier: 2.2.1
     prism-react-renderer: 1.2.0
     prismjs: 1.23.0
@@ -15596,6 +15619,8 @@ fsevents@~2.3.1:
     reading-time: 1.3.0
     remark-unwrap-images: 2.0.0
     server: 1.0.32
+    shallow-compare: 1.2.2
+    stack-trace: 0.0.10
     styled-components: 5.2.3
     tslib: 2.1.0
     typeface-merriweather: 1.1.13
@@ -17333,7 +17358,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"platform@npm:^1.3.6":
+"platform@npm:1.3.6, platform@npm:^1.3.6":
   version: 1.3.6
   resolution: "platform@npm:1.3.6"
   checksum: d4d10d5a55476c6d369b03e02b31df50a4e7f1c565efabe707379b8a119709fb2a66dec090ab7fe520a30b767fe3791e3c4a5aba985918e51a17df45e469189f
@@ -20060,7 +20085,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shallow-compare@npm:^1.2.2":
+"shallow-compare@npm:1.2.2, shallow-compare@npm:^1.2.2":
   version: 1.2.2
   resolution: "shallow-compare@npm:1.2.2"
   checksum: 40709b58510a9fb5177c216a51f1a6c91a9679254ee0549476d6817dc28707e3fe8ce27456cfebc8f05c87ed88ae71923731493c7d7df816b01ef4477b417bfe
@@ -20768,7 +20793,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stack-trace@npm:^0.0.10":
+"stack-trace@npm:0.0.10, stack-trace@npm:^0.0.10":
   version: 0.0.10
   resolution: "stack-trace@npm:0.0.10"
   checksum: 8e567bd9dc88f739f562e91d127cfe11740c3639900c9ddadbb3d78399171fd7236d8a7622f5a00047c162ec64e1f1869cf45daac11e4482e54ac2d98f8c3391
