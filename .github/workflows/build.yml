@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          yarn --frozen-lockfile
+          yarn install --immutable --immutable-cache
           yarn build
         env:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          yarn --frozen-lockfile
+          yarn install --immutable --immutable-cache
           yarn build
           yarn deploy
         env:
