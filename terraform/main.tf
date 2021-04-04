@@ -3,7 +3,6 @@ terraform {
     bucket  = "morrisoncole.co.uk-terraform-backend"
     key     = "state"
     region  = "us-west-2"
-    profile = "morrisoncole"
   }
 }
 

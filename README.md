@@ -16,3 +16,7 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 ## Upgrade Dependencies
 
 `yarn upgrade-interactive`
+
+## Terraform
+
+`terraform init -backend-config="access_key=access_key" -backend-config="secret_key=secret_key"`
