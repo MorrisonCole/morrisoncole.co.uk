@@ -119,6 +119,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/core@npm:7.13.15":
+  version: 7.13.15
+  resolution: "@babel/core@npm:7.13.15"
+  dependencies:
+    "@babel/code-frame": ^7.12.13
+    "@babel/generator": ^7.13.9
+    "@babel/helper-compilation-targets": ^7.13.13
+    "@babel/helper-module-transforms": ^7.13.14
+    "@babel/helpers": ^7.13.10
+    "@babel/parser": ^7.13.15
+    "@babel/template": ^7.12.13
+    "@babel/traverse": ^7.13.15
+    "@babel/types": ^7.13.14
+    convert-source-map: ^1.7.0
+    debug: ^4.1.0
+    gensync: ^1.0.0-beta.2
+    json5: ^2.1.2
+    semver: ^6.3.0
+    source-map: ^0.5.0
+  checksum: 818377633fa89d9b333c1a71625f9398e9e5a92270209cc8b5392e36385b5fe61210b2b31fb114ffe255974a3341cdfaa9e89a0fa81fabba9f6c14332fb72a02
+  languageName: node
+  linkType: hard
+
 "@babel/eslint-parser@npm:^7.13.4":
   version: 7.13.14
   resolution: "@babel/eslint-parser@npm:7.13.14"
@@ -440,6 +463,15 @@ __metadata:
   bin:
     parser: ./bin/babel-parser.js
   checksum: ae20be2d964cec7c6e8f1c8154b0b6457852a6269f957964b5cc7f39baa5b71dc733b9e88cc3f5b91de171f4c023d272040bf31065bef1573aa0e88dd0f3ee75
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.13.15":
+  version: 7.13.15
+  resolution: "@babel/parser@npm:7.13.15"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 74e9edc72f187c3956a52b3bb7dad22769fa9bf91c0107d6d5f1841ad5f655e6d12e0380a5b296f8c61c4471b200cdfea490969b75d5dff6b942157a26a1a9ac
   languageName: node
   linkType: hard
 
@@ -1541,6 +1573,22 @@ __metadata:
     debug: ^4.1.0
     globals: ^11.1.0
   checksum: 2669b654730a308747c38c0f89a873fa2452c7e2e23532988e529a4dec6c09a6b862f50a6ea139afc496bd0f85a86c4ff922b262d6c41ab43c1df3886b3bbb1e
+  languageName: node
+  linkType: hard
+
+"@babel/traverse@npm:^7.13.15":
+  version: 7.13.15
+  resolution: "@babel/traverse@npm:7.13.15"
+  dependencies:
+    "@babel/code-frame": ^7.12.13
+    "@babel/generator": ^7.13.9
+    "@babel/helper-function-name": ^7.12.13
+    "@babel/helper-split-export-declaration": ^7.12.13
+    "@babel/parser": ^7.13.15
+    "@babel/types": ^7.13.14
+    debug: ^4.1.0
+    globals: ^11.1.0
+  checksum: 4ee49a25e7875e0a05e09ca685ac4f92316aeacfa81526aa947cdfdddb49e595ddb0459b3566dac100e85069ec08bcdce66f4897cc22fee341fb83cf10dbfd14
   languageName: node
   linkType: hard
 
@@ -8818,7 +8866,54 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.23.0, eslint@npm:^7.20.0":
+"eslint@npm:7.24.0":
+  version: 7.24.0
+  resolution: "eslint@npm:7.24.0"
+  dependencies:
+    "@babel/code-frame": 7.12.11
+    "@eslint/eslintrc": ^0.4.0
+    ajv: ^6.10.0
+    chalk: ^4.0.0
+    cross-spawn: ^7.0.2
+    debug: ^4.0.1
+    doctrine: ^3.0.0
+    enquirer: ^2.3.5
+    eslint-scope: ^5.1.1
+    eslint-utils: ^2.1.0
+    eslint-visitor-keys: ^2.0.0
+    espree: ^7.3.1
+    esquery: ^1.4.0
+    esutils: ^2.0.2
+    file-entry-cache: ^6.0.1
+    functional-red-black-tree: ^1.0.1
+    glob-parent: ^5.0.0
+    globals: ^13.6.0
+    ignore: ^4.0.6
+    import-fresh: ^3.0.0
+    imurmurhash: ^0.1.4
+    is-glob: ^4.0.0
+    js-yaml: ^3.13.1
+    json-stable-stringify-without-jsonify: ^1.0.1
+    levn: ^0.4.1
+    lodash: ^4.17.21
+    minimatch: ^3.0.4
+    natural-compare: ^1.4.0
+    optionator: ^0.9.1
+    progress: ^2.0.0
+    regexpp: ^3.1.0
+    semver: ^7.2.1
+    strip-ansi: ^6.0.0
+    strip-json-comments: ^3.1.0
+    table: ^6.0.4
+    text-table: ^0.2.0
+    v8-compile-cache: ^2.0.3
+  bin:
+    eslint: bin/eslint.js
+  checksum: 8130aacc3698a730ba8fa10ac9e1436151181c34cad265c21c97708e62dba714b6f3cc4cb7a1d343918da3d35a5913505ccf53cfbdc1fa8d62d326b7e35b7aae
+  languageName: node
+  linkType: hard
+
+"eslint@npm:^7.20.0":
   version: 7.23.0
   resolution: "eslint@npm:7.23.0"
   dependencies:
@@ -10151,9 +10246,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:1.2.0":
-  version: 1.2.0
-  resolution: "gatsby-plugin-image@npm:1.2.0"
+"gatsby-plugin-image@npm:1.2.1":
+  version: 1.2.1
+  resolution: "gatsby-plugin-image@npm:1.2.1"
   dependencies:
     "@babel/code-frame": ^7.12.13
     "@babel/parser": ^7.12.5
@@ -10173,7 +10268,7 @@ fsevents@~2.3.1:
     gatsby-source-filesystem: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 0d54a9f5b7fc94b536402349c5557216b4cd32ec1d3d8b4274dc0e3576c5eed852d8027cf6113b72d8519a8e3f52466fd7117291b8817a1bf9a2a173a2d1aab0
+  checksum: af3d48a156a0792ee93aa38d87f36bc7974818dc5f70292fcebaa5e2d058ff615f0ba5a8ca5cdbafb99a66e035e725c71557bc2a58a22ec2b8a2a552583ff90a
   languageName: node
   linkType: hard
 
@@ -10347,9 +10442,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-plugin-sharp@npm:3.2.0"
+"gatsby-plugin-sharp@npm:3.2.1":
+  version: 3.2.1
+  resolution: "gatsby-plugin-sharp@npm:3.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
     async: ^3.2.0
@@ -10373,7 +10468,7 @@ fsevents@~2.3.1:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 46d8e7474f34ed99b785d738885c5bb7a7770bd97ca8af861ecf2188a1399276b8203000147eb36481912cb91440b788cf721e616559024aabd6e3a3eddd9ff0
+  checksum: f854cb73155b0b31e4a307395309e5e4bc6f209afc81a1af2858bc871587913550ac7d0ac5da95ffaffec8dbc83aee658595f4afdc130fc4beba9992a78270f1
   languageName: node
   linkType: hard
 
@@ -15745,7 +15840,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
-    "@babel/core": 7.13.14
+    "@babel/core": 7.13.15
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 1.21.3
     "@graphql-codegen/typescript": 1.21.1
@@ -15774,7 +15869,7 @@ fsevents@~2.3.1:
     babel-plugin-styled-components: 1.12.0
     classnames: 2.3.1
     css.escape: 1.5.1
-    eslint: 7.23.0
+    eslint: 7.24.0
     eslint-config-prettier: 8.1.0
     eslint-plugin-react: 7.23.2
     event-source-polyfill: 1.0.22
@@ -15787,7 +15882,7 @@ fsevents@~2.3.1:
     gatsby-plugin-canonical-urls: 3.2.0
     gatsby-plugin-feed: 3.2.0
     gatsby-plugin-google-tagmanager: 3.2.0
-    gatsby-plugin-image: 1.2.0
+    gatsby-plugin-image: 1.2.1
     gatsby-plugin-layout: 2.2.0
     gatsby-plugin-manifest: 3.2.0
     gatsby-plugin-material-ui: 3.0.1
@@ -15796,7 +15891,7 @@ fsevents@~2.3.1:
     gatsby-plugin-react-helmet: 4.2.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 3.2.0
+    gatsby-plugin-sharp: 3.2.1
     gatsby-plugin-sitemap: 3.2.0
     gatsby-plugin-styled-components: 4.2.0
     gatsby-plugin-ts-config: 1.1.5
