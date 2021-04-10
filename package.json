@@ -32,7 +32,7 @@
     "gatsby-plugin-canonical-urls": "3.2.0",
     "gatsby-plugin-feed": "3.2.0",
     "gatsby-plugin-google-tagmanager": "3.2.0",
-    "gatsby-plugin-image": "1.2.0",
+    "gatsby-plugin-image": "1.2.1",
     "gatsby-plugin-layout": "2.2.0",
     "gatsby-plugin-manifest": "3.2.0",
     "gatsby-plugin-material-ui": "3.0.1",
