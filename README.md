@@ -17,6 +17,10 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 
 `yarn upgrade-interactive`
 
+## Update Editor SDKs
+
+`yarn dlx @yarnpkg/pnpify --sdk vscode`
+
 ## Terraform
 
 `terraform init -backend-config="access_key=access_key" -backend-config="secret_key=secret_key"`
