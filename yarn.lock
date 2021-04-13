@@ -10784,9 +10784,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-copy-linked-files@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-remark-copy-linked-files@npm:3.2.0"
+"gatsby-remark-copy-linked-files@npm:4.0.0":
+  version: 4.0.0
+  resolution: "gatsby-remark-copy-linked-files@npm:4.0.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     cheerio: ^1.0.0-rc.3
@@ -10795,10 +10795,10 @@ fsevents@~2.3.1:
     lodash: ^4.17.21
     path-is-inside: ^1.0.2
     probe-image-size: ^6.0.0
-    unist-util-visit: ^1.4.1
+    unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 166722857796eb1ba5d7503283b575f719393748d0ae1c36a37c6be59ab4838873df46183da6c9096008a8944fd227ddb7e804dc71135f34242e3ad69a18e9c2
+  checksum: 828d3eb533f3fc71eb838d677c734c61e29efb3d9ddb66d981c3388de42221a3ed55f73bb102515602f05b280efb8ad97786544d5d740a9e7b1187ee798ab1ce
   languageName: node
   linkType: hard
 
@@ -15993,7 +15993,7 @@ fsevents@~2.3.1:
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.3.0
     gatsby-remark-autolink-headers: 4.0.0
-    gatsby-remark-copy-linked-files: 3.2.0
+    gatsby-remark-copy-linked-files: 4.0.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 4.2.0
     gatsby-remark-responsive-iframe: 3.2.0
