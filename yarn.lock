@@ -10997,17 +10997,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-smartypants@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-remark-smartypants@npm:3.2.0"
+"gatsby-remark-smartypants@npm:4.0.0":
+  version: 4.0.0
+  resolution: "gatsby-remark-smartypants@npm:4.0.0"
   dependencies:
     "@babel/runtime": ^7.12.5
-    retext: ^5.0.0
-    retext-smartypants: ^3.0.3
-    unist-util-visit: ^1.4.1
+    retext: ^7.0.1
+    retext-smartypants: ^4.0.0
+    unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 4f10fcec337fea53b90b4f13e36ce1ea2576f3383f58758abb3227b51b03a018521570a0078ea5d640b415e429c59744412297c4f096eeac3c4d0bf3f55aee98
+  checksum: 2ceff339808513b69dddcb572c3195dff4505490fa5617f2aa7dd2dd5602ad58bf27343654a8456d145358286f2248b5e5f669f55f31e3c1c4837e2a4191d65e
   languageName: node
   linkType: hard
 
@@ -16166,7 +16166,7 @@ fsevents@~2.3.1:
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 4.2.0
     gatsby-remark-responsive-iframe: 3.2.0
-    gatsby-remark-smartypants: 3.2.0
+    gatsby-remark-smartypants: 4.0.0
     gatsby-source-filesystem: 3.2.0
     gatsby-transformer-json: 3.2.0
     gatsby-transformer-remark: 3.2.0
@@ -20153,13 +20153,13 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"retext-smartypants@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "retext-smartypants@npm:3.0.3"
+"retext-smartypants@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "retext-smartypants@npm:4.0.0"
   dependencies:
     nlcst-to-string: ^2.0.0
-    unist-util-visit: ^1.0.0
-  checksum: 40d94932141f588bbc3e2276ec9d02e3e088ecba7f99207c812e57bc76042c3509d2c4d07147a22eec53265e2a38af45477c1f8498fbd0fb509d8679f2bf0124
+    unist-util-visit: ^2.0.0
+  checksum: a959ea698568ed5db71337fc341513e685c1b45bc5b38c76d5822fc16d61daaa7b49b8c8f4c6255781e9c173a7e89a6db68a5a7dc9a6cea4370f060aed4da045
   languageName: node
   linkType: hard
 
@@ -20172,14 +20172,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"retext@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "retext@npm:5.0.0"
+"retext@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "retext@npm:7.0.1"
   dependencies:
     retext-latin: ^2.0.0
     retext-stringify: ^2.0.0
-    unified: ^6.0.0
-  checksum: 2e3bd1c320c39ad7ffeb3dd631b756764cf6ca32bdbe43078b28da70e2ba1a637464fe17333463cd9252b1dd598eda4a0c9583a03e3972263334cd8fd8dd567f
+    unified: ^8.0.0
+  checksum: 98dccbb6e421bc07900dcbb3b4f180329b8b0051ccd25c60a016f0dcea87f6b21245ddd6395f3ddc819a692b74b92b04b2077ba401b5c9f410f6da06111c60d5
   languageName: node
   linkType: hard
 
@@ -22834,7 +22834,7 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"unified@npm:^6.0.0, unified@npm:^6.2.0":
+"unified@npm:^6.2.0":
   version: 6.2.0
   resolution: "unified@npm:6.2.0"
   dependencies:
@@ -22864,7 +22864,7 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"unified@npm:^8.4.2":
+"unified@npm:^8.0.0, unified@npm:^8.4.2":
   version: 8.4.2
   resolution: "unified@npm:8.4.2"
   dependencies:
