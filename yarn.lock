@@ -10548,9 +10548,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-plugin-sitemap@npm:3.2.0"
+"gatsby-plugin-sitemap@npm:3.3.0":
+  version: 3.3.0
+  resolution: "gatsby-plugin-sitemap@npm:3.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     common-tags: ^1.8.0
@@ -10561,7 +10561,7 @@ fsevents@~2.3.1:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 01474e91ad8211b1f34ecee2e8ed4dfcc1f8a7e1d7e7ab29f05ce47dbf2c746aae00f21cf168b24d304f23f0e5f0b4093fef99acca01d8fd2c5d73f902a47605
+  checksum: 0715ddfdcbf1583e846908f5bf52a55369292bd15885a2b4127beb2369a707e76b373d76381ec924c64da301ab686a0876e26dd9a0a1e3a4179f0e27ce655304
   languageName: node
   linkType: hard
 
@@ -16079,7 +16079,7 @@ fsevents@~2.3.1:
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.3.0
-    gatsby-plugin-sitemap: 3.2.0
+    gatsby-plugin-sitemap: 3.3.0
     gatsby-plugin-styled-components: 4.3.0
     gatsby-plugin-ts-config: 1.1.5
     gatsby-plugin-typescript: 3.2.0
