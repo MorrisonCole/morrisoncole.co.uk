@@ -10652,9 +10652,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typography@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-plugin-typography@npm:3.2.0"
+"gatsby-plugin-typography@npm:3.3.0":
+  version: 3.3.0
+  resolution: "gatsby-plugin-typography@npm:3.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
@@ -10663,7 +10663,7 @@ fsevents@~2.3.1:
     react-dom: ^16.9.0 || ^17.0.0
     react-typography: ^0.16.1 || ^1.0.0-alpha.0
     typography: ^0.16.0 || ^1.0.0-alpha.0
-  checksum: d7f1ee52a603d318aba94337ad5d134e56d10b60cbeef65cfbe106302980d4f3b0b71c89101a87a6082aac47a6fc9e887382eea86acee8ad428aa8a880d882c3
+  checksum: 7236b4af2eeb6618f2038af94e83598e0ac64c5aa75fa861cbf30d526a3dced84abc5dcdf9493f16e02198b0be76946f590f71b81e219b0990c87cc4d33cef93
   languageName: node
   linkType: hard
 
@@ -16035,7 +16035,7 @@ fsevents@~2.3.1:
     gatsby-plugin-styled-components: 4.3.0
     gatsby-plugin-ts-config: 1.1.5
     gatsby-plugin-typescript: 3.2.0
-    gatsby-plugin-typography: 3.2.0
+    gatsby-plugin-typography: 3.3.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.2.0
     gatsby-remark-autolink-headers: 3.2.0
