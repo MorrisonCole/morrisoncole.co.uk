@@ -10864,16 +10864,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-source-filesystem@npm:3.2.0"
+"gatsby-source-filesystem@npm:3.3.0":
+  version: 3.3.0
+  resolution: "gatsby-source-filesystem@npm:3.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     better-queue: ^3.8.10
     chokidar: ^3.4.3
     file-type: ^16.0.0
     fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.2.0
+    gatsby-core-utils: ^2.3.0
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.4.6
@@ -10883,7 +10883,7 @@ fsevents@~2.3.1:
     xstate: ^4.14.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 33b432da9c08e45ca1a1cddb783083a9746509b80bc238caa1a64da675bfa9ce97f0cd3b20bb9f9db9798dfca5d0555dd3725e121d80ecbb88138099ab1cb124
+  checksum: 4b2a050ecfc24c8d98fe2c6bcb211968f1fc8b3ce9a60d0cbd41d32f4d02586b5c9292b18dee2355732468ef8398268bd32597a9cfb7983dc5080b7538c15e0f
   languageName: node
   linkType: hard
 
@@ -16092,7 +16092,7 @@ fsevents@~2.3.1:
     gatsby-remark-images: 4.2.0
     gatsby-remark-responsive-iframe: 4.0.0
     gatsby-remark-smartypants: 4.0.0
-    gatsby-source-filesystem: 3.2.0
+    gatsby-source-filesystem: 3.3.0
     gatsby-transformer-json: 3.3.0
     gatsby-transformer-remark: 4.0.0
     gatsby-transformer-sharp: 3.2.0
