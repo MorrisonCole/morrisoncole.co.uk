@@ -103,7 +103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["gatsby-transformer-json", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
-            ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.2.0"],
+            ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["goodreads-api-node", "npm:0.0.12"],
             ["graphql", "npm:15.5.0"],
             ["graphql-import", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.0.2"],
@@ -9404,13 +9404,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["array-flatten", "npm:2.1.2"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/array-flatten-npm-3.0.0-bd1cc8ecc1-ad00c51ca7.zip/node_modules/array-flatten/",
-          "packageDependencies": [
-            ["array-flatten", "npm:3.0.0"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["array-includes", [
@@ -13149,14 +13142,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["decompress-response", "npm:5.0.0"],
             ["mimic-response", "npm:2.1.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/decompress-response-npm-6.0.0-359de2878c-d377cf47e0.zip/node_modules/decompress-response/",
-          "packageDependencies": [
-            ["decompress-response", "npm:6.0.0"],
-            ["mimic-response", "npm:3.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -17586,17 +17571,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-transformer-sharp", [
-        ["npm:3.2.0", {
-          "packageLocation": "./.yarn/cache/gatsby-transformer-sharp-npm-3.2.0-a4f1d3797e-e5827a6f76.zip/node_modules/gatsby-transformer-sharp/",
+        ["npm:3.3.0", {
+          "packageLocation": "./.yarn/cache/gatsby-transformer-sharp-npm-3.3.0-5f9b444a92-deb087bfdd.zip/node_modules/gatsby-transformer-sharp/",
           "packageDependencies": [
-            ["gatsby-transformer-sharp", "npm:3.2.0"]
+            ["gatsby-transformer-sharp", "npm:3.3.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.2.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-transformer-sharp-virtual-340d7dd1ff/0/cache/gatsby-transformer-sharp-npm-3.2.0-a4f1d3797e-e5827a6f76.zip/node_modules/gatsby-transformer-sharp/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-transformer-sharp-virtual-0aa8c1e69c/0/cache/gatsby-transformer-sharp-npm-3.3.0-5f9b444a92-deb087bfdd.zip/node_modules/gatsby-transformer-sharp/",
           "packageDependencies": [
-            ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.2.0"],
+            ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["@babel/runtime", "npm:7.13.10"],
             ["@types/gatsby", null],
             ["@types/gatsby-plugin-sharp", null],
@@ -17608,7 +17593,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["potrace", "npm:2.1.8"],
             ["probe-image-size", "npm:6.0.0"],
             ["semver", "npm:7.3.5"],
-            ["sharp", "npm:0.27.2"]
+            ["sharp", "npm:0.28.1"]
           ],
           "packagePeers": [
             "@types/gatsby-plugin-sharp",
@@ -22937,13 +22922,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mimic-response", "npm:2.1.0"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:3.1.0", {
-          "packageLocation": "./.yarn/cache/mimic-response-npm-3.1.0-a4a24b4e96-25739fee32.zip/node_modules/mimic-response/",
-          "packageDependencies": [
-            ["mimic-response", "npm:3.1.0"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["min-document", [
@@ -23246,7 +23224,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["gatsby-transformer-json", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
-            ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.2.0"],
+            ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["goodreads-api-node", "npm:0.0.12"],
             ["graphql", "npm:15.5.0"],
             ["graphql-import", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.0.2"],
@@ -28454,24 +28432,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sharp", [
-        ["npm:0.27.2", {
-          "packageLocation": "./.yarn/unplugged/sharp-npm-0.27.2-2a8ab510ed/node_modules/sharp/",
-          "packageDependencies": [
-            ["sharp", "npm:0.27.2"],
-            ["array-flatten", "npm:3.0.0"],
-            ["color", "npm:3.1.3"],
-            ["detect-libc", "npm:1.0.3"],
-            ["node-addon-api", "npm:3.1.0"],
-            ["node-gyp", "npm:8.0.0"],
-            ["npmlog", "npm:4.1.2"],
-            ["prebuild-install", "npm:6.1.1"],
-            ["semver", "npm:7.3.5"],
-            ["simple-get", "npm:4.0.0"],
-            ["tar-fs", "npm:2.1.1"],
-            ["tunnel-agent", "npm:0.6.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:0.28.1", {
           "packageLocation": "./.yarn/unplugged/sharp-npm-0.28.1-0266139b9f/node_modules/sharp/",
           "packageDependencies": [
@@ -28577,16 +28537,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["simple-get", "npm:3.1.0"],
             ["decompress-response", "npm:4.2.1"],
-            ["once", "npm:1.4.0"],
-            ["simple-concat", "npm:1.0.1"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/simple-get-npm-4.0.0-14ed0bd6c2-8af4fb788b.zip/node_modules/simple-get/",
-          "packageDependencies": [
-            ["simple-get", "npm:4.0.0"],
-            ["decompress-response", "npm:6.0.0"],
             ["once", "npm:1.4.0"],
             ["simple-concat", "npm:1.0.1"]
           ],
