@@ -3500,10 +3500,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.14.39":
-  version: 14.14.39
-  resolution: "@types/node@npm:14.14.39"
-  checksum: 57e56ceb7b8747cb8c2d83dad04f3435c8286063f58f6ebaa531e3f5dfb3c3ed6d1abbb31ec2e9d268047a68a7c45eb6d692664e059af7ebeb03519ce99f07e4
+"@types/node@npm:14.14.40":
+  version: 14.14.40
+  resolution: "@types/node@npm:14.14.40"
+  checksum: 5b788fdecd6f8cd03bf267fbac4e29e2e1f4baf5d33fd11b1c826fb47eaa54fbc42a7b703af402a1b0efecd7d6ea46a02dcffb8e646b412dd34c97f2907431de
   languageName: node
   linkType: hard
 
@@ -15976,7 +15976,7 @@ fsevents@~2.3.1:
     "@types/classnames": 2.2.11
     "@types/lodash": 4.14.168
     "@types/mdx-js__react": 1.5.3
-    "@types/node": 14.14.39
+    "@types/node": 14.14.40
     "@types/platform": 1.3.3
     "@types/prop-types": 15.7.3
     "@types/react-helmet": 6.1.1
