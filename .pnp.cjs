@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/classnames", "npm:2.2.11"],
             ["@types/lodash", "npm:4.14.168"],
             ["@types/mdx-js__react", "npm:1.5.3"],
-            ["@types/node", "npm:14.14.40"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/platform", "npm:1.3.3"],
             ["@types/prop-types", "npm:15.7.3"],
             ["@types/react-helmet", "npm:6.1.1"],
@@ -8108,10 +8108,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.14.40", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.40-760da8cbf3-5b788fdecd.zip/node_modules/@types/node/",
+        ["npm:14.14.41", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.41-86b32c9f0d-8fc205d411.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.14.40"]
+            ["@types/node", "npm:14.14.41"]
           ],
           "linkType": "HARD",
         }],
@@ -23148,7 +23148,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/classnames", "npm:2.2.11"],
             ["@types/lodash", "npm:4.14.168"],
             ["@types/mdx-js__react", "npm:1.5.3"],
-            ["@types/node", "npm:14.14.40"],
+            ["@types/node", "npm:14.14.41"],
             ["@types/platform", "npm:1.3.3"],
             ["@types/prop-types", "npm:15.7.3"],
             ["@types/react-helmet", "npm:6.1.1"],
