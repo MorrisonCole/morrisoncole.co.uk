@@ -16146,7 +16146,7 @@ fsevents@~2.3.1:
     react: 17.0.2
     react-dom: 17.0.2
     react-helmet: 6.1.0
-    react-intersection-observer: 8.31.0
+    react-intersection-observer: 8.31.1
     react-is: 17.0.2
     react-live: 2.2.3
     react-typography: 0.16.19
@@ -19132,12 +19132,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:8.31.0":
-  version: 8.31.0
-  resolution: "react-intersection-observer@npm:8.31.0"
+"react-intersection-observer@npm:8.31.1":
+  version: 8.31.1
+  resolution: "react-intersection-observer@npm:8.31.1"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
-  checksum: f821056c2edf9f2ed5bd71a405c31a9970e62ca27d3796f2066d0babcd95b000461bcf68b8dae44a3393607513d5f1fe22a5ea8458523bb398410ebf24b58a85
+  checksum: 21bc879cc47153d0b5a862f1cbaefa124e54a3b871686df22cb9f8515283befb9b3a15cce3a02a68abb792b7eba7ad1c06e92b9c9bd321aade9f17d324837037
   languageName: node
   linkType: hard
 
