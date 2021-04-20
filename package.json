@@ -90,7 +90,7 @@
     "@graphql-codegen/typescript": "1.22.0",
     "@graphql-codegen/typescript-operations": "1.17.16",
     "@types/babel__core": "7.1.14",
-    "@types/classnames": "2.2.11",
+    "@types/classnames": "2.3.0",
     "@types/eslint": "7.2.10",
     "@types/express": "4.17.11",
     "@types/lodash": "4.14.168",
