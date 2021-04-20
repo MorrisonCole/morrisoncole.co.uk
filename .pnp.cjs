@@ -49,7 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mikaelkristiansson/domready", "npm:1.0.11"],
             ["@morrisoncole/gatsby-source-goodreads", "npm:0.1.2"],
             ["@types/babel__core", "npm:7.1.14"],
-            ["@types/classnames", "npm:2.2.11"],
+            ["@types/classnames", "npm:2.3.0"],
             ["@types/eslint", "npm:7.2.10"],
             ["@types/express", "npm:4.17.11"],
             ["@types/lodash", "npm:4.14.168"],
@@ -7892,10 +7892,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/classnames", [
-        ["npm:2.2.11", {
-          "packageLocation": "./.yarn/cache/@types-classnames-npm-2.2.11-442af4f8b3-80f5798896.zip/node_modules/@types/classnames/",
+        ["npm:2.3.0", {
+          "packageLocation": "./.yarn/cache/@types-classnames-npm-2.3.0-9634c349d8-e1bd6de60f.zip/node_modules/@types/classnames/",
           "packageDependencies": [
-            ["@types/classnames", "npm:2.2.11"]
+            ["@types/classnames", "npm:2.3.0"],
+            ["classnames", "npm:2.3.1"]
           ],
           "linkType": "HARD",
         }]
@@ -12721,14 +12722,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:2.6.12", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-0b93d77d31/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-2.6.12-0b93d77d31-44fa9934a8.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:2.6.12"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.10.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.10.1-e4bd755b23/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.10.1-e4bd755b23-5a40a60391.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.10.1"]
           ],
@@ -12757,7 +12758,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js-pure", [
         ["npm:3.10.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.10.1-6081fa70e9/node_modules/core-js-pure/",
+          "packageLocation": "./.yarn/cache/core-js-pure-npm-3.10.1-6081fa70e9-3352d0613f.zip/node_modules/core-js-pure/",
           "packageDependencies": [
             ["core-js-pure", "npm:3.10.1"]
           ],
@@ -16556,14 +16557,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby", [
         ["npm:3.3.1", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-648b629cf2/node_modules/gatsby/",
+          "packageLocation": "./.yarn/cache/gatsby-npm-3.3.1-52de66272a-37cb0b1d3e.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "npm:3.3.1"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.1", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-648b629cf2/node_modules/gatsby/",
+          "packageLocation": "./.yarn/__virtual__/gatsby-virtual-648b629cf2/0/cache/gatsby-npm-3.3.1-52de66272a-37cb0b1d3e.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.1"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -16733,7 +16734,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-cli", [
         ["npm:3.3.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-cli-npm-3.3.0-0ec41dc4d9/node_modules/gatsby-cli/",
+          "packageLocation": "./.yarn/cache/gatsby-cli-npm-3.3.0-0ec41dc4d9-160db5ad84.zip/node_modules/gatsby-cli/",
           "packageDependencies": [
             ["gatsby-cli", "npm:3.3.0"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -17891,7 +17892,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-telemetry", [
         ["npm:2.3.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-telemetry-npm-2.3.0-bdcb6c0a03/node_modules/gatsby-telemetry/",
+          "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.3.0-bdcb6c0a03-a80e2150ce.zip/node_modules/gatsby-telemetry/",
           "packageDependencies": [
             ["gatsby-telemetry", "npm:2.3.0"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -18199,7 +18200,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["git-win", [
         ["npm:2.3.0", {
-          "packageLocation": "./.yarn/unplugged/git-win-npm-2.3.0-b98f2b7122/node_modules/git-win/",
+          "packageLocation": "./.yarn/cache/git-win-npm-2.3.0-b98f2b7122-c00bc4cd9a.zip/node_modules/git-win/",
           "packageDependencies": [
             ["git-win", "npm:2.3.0"],
             ["@babel/runtime", "npm:7.13.10"],
@@ -23579,7 +23580,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mikaelkristiansson/domready", "npm:1.0.11"],
             ["@morrisoncole/gatsby-source-goodreads", "npm:0.1.2"],
             ["@types/babel__core", "npm:7.1.14"],
-            ["@types/classnames", "npm:2.2.11"],
+            ["@types/classnames", "npm:2.3.0"],
             ["@types/eslint", "npm:7.2.10"],
             ["@types/express", "npm:4.17.11"],
             ["@types/lodash", "npm:4.14.168"],
@@ -23686,7 +23687,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.0.0-b83d656810/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.0.0-b83d656810-cd8c63c39d.zip/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -25622,7 +25623,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-2f2600ce9e.zip/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
