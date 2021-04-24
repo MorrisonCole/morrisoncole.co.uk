@@ -9126,14 +9126,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:8.2.0":
-  version: 8.2.0
-  resolution: "eslint-config-prettier@npm:8.2.0"
+"eslint-config-prettier@npm:8.3.0":
+  version: 8.3.0
+  resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 47f17ef33d9750563ee66d435e8d603c628561eea80140712188c96e5d22b0a51df778edb2f5aebb27c744e2fd415f11d577f828bf53b9aeb62dcc2766826004
+  checksum: df4cea3032671995bb5ab07e016169072f7fa59f44a53251664d9ca60951b66cdc872683b5c6a3729c91497c11490ca44a79654b395dd6756beb0c3903a37196
   languageName: node
   linkType: hard
 
@@ -16452,7 +16452,7 @@ fsevents@~2.3.1:
     classnames: 2.3.1
     css.escape: 1.5.1
     eslint: 7.24.0
-    eslint-config-prettier: 8.2.0
+    eslint-config-prettier: 8.3.0
     eslint-plugin-react: 7.23.2
     event-source-polyfill: 1.0.22
     express: 4.17.1
