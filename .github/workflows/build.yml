@@ -43,4 +43,5 @@ jobs:
           yarn install --immutable --immutable-cache
           yarn test:lhci
         env:
+          GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
