@@ -33,4 +33,8 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 
 Using [lighthouse-ci](https://github.com/GoogleChrome/lighthouse-ci) for performance regression testing.
 
+```
+yarn build && yarn test:lhci
+```
+
 _Note:_ running locally appears to be [broken on WSL2 at the moment](https://github.com/GoogleChrome/chrome-launcher/issues/195).
