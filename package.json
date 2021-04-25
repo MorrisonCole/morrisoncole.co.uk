@@ -89,6 +89,7 @@
     "@graphql-codegen/cli": "1.21.4",
     "@graphql-codegen/typescript": "1.22.0",
     "@graphql-codegen/typescript-operations": "1.17.16",
+    "@lhci/cli": "0.7.1",
     "@types/babel__core": "7.1.14",
     "@types/classnames": "2.3.1",
     "@types/eslint": "7.2.10",
@@ -146,6 +147,7 @@
     "lint:eslint": "eslint .",
     "lint:eslint:fix": "eslint . --fix",
     "lint:prettier": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --check",
-    "lint:prettier:fix": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write"
+    "lint:prettier:fix": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write",
+    "test:lhci": "yarn build && lhci autorun"
   }
 }

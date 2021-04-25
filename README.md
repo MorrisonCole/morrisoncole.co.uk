@@ -24,3 +24,13 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 ## Terraform
 
 `terraform init -backend-config="access_key=access_key" -backend-config="secret_key=secret_key"`
+
+# CI/CD
+
+## Performance Regression Testing
+
+(CI Only) - make sure `LHCI_GITHUB_APP_TOKEN` is present.
+
+Using [lighthouse-ci](https://github.com/GoogleChrome/lighthouse-ci) for performance regression testing.
+
+_Note:_ running locally appears to be [broken on WSL2 at the moment](https://github.com/GoogleChrome/chrome-launcher/issues/195).
