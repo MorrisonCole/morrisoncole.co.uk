@@ -38,9 +38,10 @@ jobs:
         run: |
           yarn install --immutable --immutable-cache
           yarn build
+        env:
+          GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
       - name: Run Lighthouse CI
         run: |
           yarn test:lhci
         env:
-          GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
