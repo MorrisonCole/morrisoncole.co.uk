@@ -148,6 +148,6 @@
     "lint:eslint:fix": "eslint . --fix",
     "lint:prettier": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --check",
     "lint:prettier:fix": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write",
-    "test:lhci": "yarn build && lhci autorun"
+    "test:lhci": "lhci autorun"
   }
 }
