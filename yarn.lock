@@ -16508,7 +16508,7 @@ fsevents@~2.3.1:
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 2.1.0
-    open: 8.0.6
+    open: 8.0.7
     path: 0.12.7
     platform: 1.3.6
     prettier: 2.2.1
@@ -17296,14 +17296,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"open@npm:8.0.6":
-  version: 8.0.6
-  resolution: "open@npm:8.0.6"
+"open@npm:8.0.7":
+  version: 8.0.7
+  resolution: "open@npm:8.0.7"
   dependencies:
     define-lazy-prop: ^2.0.0
     is-docker: ^2.1.1
     is-wsl: ^2.2.0
-  checksum: 64928a6a2da318fdb8ea72fbf907db1299675dbc5f33c5a3a1efc8ec35df58a5fa019c4ceb2b27c629c40a663cb92bc2eeec1f90bb4121acccff53f13c588c34
+  checksum: 76b00f0492d3b1e336004903e8737e8b82bdd720e30868cb845790ff4113bf873da9ec5eb5ed0fc577670f3b87d184724d9eee1fc8ba7cfe2e51aaeae48ea14c
   languageName: node
   linkType: hard
 
