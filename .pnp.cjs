@@ -114,7 +114,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-smartypants", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["gatsby-transformer-json", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
-            ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
+            ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
             ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["goodreads-api-node", "npm:0.0.12"],
             ["graphql", "npm:15.5.0"],
@@ -18137,21 +18137,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-transformer-remark", [
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/gatsby-transformer-remark-npm-4.0.0-a05bcf5e2e-217244ab12.zip/node_modules/gatsby-transformer-remark/",
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/gatsby-transformer-remark-npm-4.1.0-4e520a6ae5-80c03d0cb7.zip/node_modules/gatsby-transformer-remark/",
           "packageDependencies": [
-            ["gatsby-transformer-remark", "npm:4.0.0"]
+            ["gatsby-transformer-remark", "npm:4.1.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-transformer-remark-virtual-47914cfff5/0/cache/gatsby-transformer-remark-npm-4.0.0-a05bcf5e2e-217244ab12.zip/node_modules/gatsby-transformer-remark/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-transformer-remark-virtual-a9a31591b4/0/cache/gatsby-transformer-remark-npm-4.1.0-4e520a6ae5-80c03d0cb7.zip/node_modules/gatsby-transformer-remark/",
           "packageDependencies": [
-            ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
+            ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
             ["@babel/runtime", "npm:7.13.10"],
             ["@types/gatsby", null],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
-            ["gatsby-core-utils", "npm:2.3.0"],
+            ["gatsby-core-utils", "npm:2.4.0"],
             ["gray-matter", "npm:4.0.2"],
             ["hast-util-raw", "npm:6.1.0"],
             ["hast-util-to-html", "npm:7.1.2"],
@@ -18160,6 +18160,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mdast-util-to-string", "npm:2.0.0"],
             ["mdast-util-toc", "npm:5.1.0"],
             ["remark", "npm:13.0.0"],
+            ["remark-footnotes", "npm:3.0.0"],
             ["remark-gfm", "npm:1.0.0"],
             ["remark-parse", "npm:9.0.0"],
             ["remark-retext", "npm:4.0.0"],
@@ -22845,6 +22846,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["mdast-util-footnote", [
+        ["npm:0.1.7", {
+          "packageLocation": "./.yarn/cache/mdast-util-footnote-npm-0.1.7-c5e39e294e-6d05396a94.zip/node_modules/mdast-util-footnote/",
+          "packageDependencies": [
+            ["mdast-util-footnote", "npm:0.1.7"],
+            ["mdast-util-to-markdown", "npm:0.6.5"],
+            ["micromark", "npm:2.11.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["mdast-util-from-markdown", [
         ["npm:0.8.5", {
           "packageLocation": "./.yarn/cache/mdast-util-from-markdown-npm-0.8.5-0b8b6dc7ba-5a9d0d753a.zip/node_modules/mdast-util-from-markdown/",
@@ -23271,6 +23283,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromark", "npm:2.11.4"],
             ["debug", "virtual:877b553b60b9c0a2b06217c487c6ff09d68792cf3fe025beb7fec8d1d55e0ad216174b2def4118ba748692c39f0eb896f93b6cfa8141804d933268746165cf68#npm:4.3.1"],
             ["parse-entities", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["micromark-extension-footnote", [
+        ["npm:0.3.2", {
+          "packageLocation": "./.yarn/cache/micromark-extension-footnote-npm-0.3.2-7333bd280e-476c7f7ae8.zip/node_modules/micromark-extension-footnote/",
+          "packageDependencies": [
+            ["micromark-extension-footnote", "npm:0.3.2"],
+            ["micromark", "npm:2.11.4"]
           ],
           "linkType": "HARD",
         }]
@@ -23844,7 +23866,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-smartypants", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["gatsby-transformer-json", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
-            ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.0.0"],
+            ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
             ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.3.0"],
             ["goodreads-api-node", "npm:0.0.12"],
             ["graphql", "npm:15.5.0"],
@@ -27974,6 +27996,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/remark-footnotes-npm-2.0.0-b0be266d8e-f2f87ffd6f.zip/node_modules/remark-footnotes/",
           "packageDependencies": [
             ["remark-footnotes", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/remark-footnotes-npm-3.0.0-b9e76a5f48-5e84afb47b.zip/node_modules/remark-footnotes/",
+          "packageDependencies": [
+            ["remark-footnotes", "npm:3.0.0"],
+            ["mdast-util-footnote", "npm:0.1.7"],
+            ["micromark-extension-footnote", "npm:0.3.2"]
           ],
           "linkType": "HARD",
         }]
