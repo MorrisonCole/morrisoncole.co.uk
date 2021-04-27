@@ -11449,12 +11449,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:4.0.0":
-  version: 4.0.0
-  resolution: "gatsby-transformer-remark@npm:4.0.0"
+"gatsby-transformer-remark@npm:4.1.0":
+  version: 4.1.0
+  resolution: "gatsby-transformer-remark@npm:4.1.0"
   dependencies:
     "@babel/runtime": ^7.12.5
-    gatsby-core-utils: ^2.3.0
+    gatsby-core-utils: ^2.4.0
     gray-matter: ^4.0.2
     hast-util-raw: ^6.0.2
     hast-util-to-html: ^7.1.2
@@ -11463,6 +11463,7 @@ fsevents@~2.3.1:
     mdast-util-to-string: ^2.0.0
     mdast-util-toc: ^5.1.0
     remark: ^13.0.0
+    remark-footnotes: ^3.0.0
     remark-gfm: ^1.0.0
     remark-parse: ^9.0.0
     remark-retext: ^4.0.0
@@ -11476,7 +11477,7 @@ fsevents@~2.3.1:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 217244ab12d2c18ded31d2efebef3d9cb97cd6677e629d586f177f2d4c660785d9fef6d0dfbd918eab4bc543a0bc7bf28275d1a32230f9471dc4f129127b68d7
+  checksum: 80c03d0cb783dee8dc89289728ccbd47bff1038565bda16fdab34545206462778618924c061f950a93ac07a54fe1b174a2f2b49a96657ee647ee7bb34c3cf62b
   languageName: node
   linkType: hard
 
@@ -15712,6 +15713,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"mdast-util-footnote@npm:^0.1.0":
+  version: 0.1.7
+  resolution: "mdast-util-footnote@npm:0.1.7"
+  dependencies:
+    mdast-util-to-markdown: ^0.6.0
+    micromark: ~2.11.0
+  checksum: 6d05396a9497c289fecf844d68d3210968750b215cf1df3fd1962c77d73560d8598cc4d79cef36a750d5b43f30b71fec079e0563f267b65072cfc38548d39eda
+  languageName: node
+  linkType: hard
+
 "mdast-util-from-markdown@npm:^0.8.0":
   version: 0.8.5
   resolution: "mdast-util-from-markdown@npm:0.8.5"
@@ -16089,6 +16100,15 @@ fsevents@~2.3.1:
   version: 0.1.1
   resolution: "microevent.ts@npm:0.1.1"
   checksum: 7874fcdb3f0dfa4e996d3ea63b3b9882874ae7d22be28d51ae20da24c712e9e28e5011d988095c27dd2b32e37c0ad7425342a71b89adb8e808ec7194fadf4a7a
+  languageName: node
+  linkType: hard
+
+"micromark-extension-footnote@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "micromark-extension-footnote@npm:0.3.2"
+  dependencies:
+    micromark: ~2.11.0
+  checksum: 476c7f7ae86d7b3c33a07cbf7286d2cce06aa9b348eed79867fd6abc98c37519464c335c522e85208c99e573c1abbbcb72a0a27897f2a0b505d993c76df7bd1d
   languageName: node
   linkType: hard
 
@@ -16621,7 +16641,7 @@ fsevents@~2.3.1:
     gatsby-remark-smartypants: 4.0.0
     gatsby-source-filesystem: 3.3.0
     gatsby-transformer-json: 3.4.0
-    gatsby-transformer-remark: 4.0.0
+    gatsby-transformer-remark: 4.1.0
     gatsby-transformer-sharp: 3.3.0
     goodreads-api-node: 0.0.12
     graphql: 15.5.0
@@ -20130,6 +20150,16 @@ fsevents@~2.3.1:
   version: 2.0.0
   resolution: "remark-footnotes@npm:2.0.0"
   checksum: f2f87ffd6fe25892373c7164d6584a7cb03ab0ea4f186af493a73df519e24b72998a556e7f16cb996f18426cdb80556b95ff252769e252cf3ccba0fd2ca20621
+  languageName: node
+  linkType: hard
+
+"remark-footnotes@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "remark-footnotes@npm:3.0.0"
+  dependencies:
+    mdast-util-footnote: ^0.1.0
+    micromark-extension-footnote: ^0.3.0
+  checksum: 5e84afb47b57e512171f8af5146e8ba49817faff761c6cdd14abf26c9f018b497e69e79378d94b3ba529e491d3f0615c60851d3db86de785aa37641bf5bf7f8a
   languageName: node
   linkType: hard
 
