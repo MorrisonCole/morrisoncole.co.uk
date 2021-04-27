@@ -11452,15 +11452,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-json@npm:3.3.0":
-  version: 3.3.0
-  resolution: "gatsby-transformer-json@npm:3.3.0"
+"gatsby-transformer-json@npm:3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-transformer-json@npm:3.4.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     bluebird: ^3.7.2
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 831e0e0aa25d7495b775da1a9a534eb12096b52acbf2c70afafa919d5b18a852f67c553140d975994f5181f28919af73552ee0d1cef0cd62b263cbfc41117764
+  checksum: cb57fd7dd9836bcd47695d9b8fa60b4b220df3a09b1eb72f1a82cbe964832c133706ae3273a6974fbc33f0851e8fe8cbfdb68f020b7e4d81b0eab684bcc80611
   languageName: node
   linkType: hard
 
@@ -16635,7 +16635,7 @@ fsevents@~2.3.1:
     gatsby-remark-responsive-iframe: 4.0.0
     gatsby-remark-smartypants: 4.0.0
     gatsby-source-filesystem: 3.3.0
-    gatsby-transformer-json: 3.3.0
+    gatsby-transformer-json: 3.4.0
     gatsby-transformer-remark: 4.0.0
     gatsby-transformer-sharp: 3.3.0
     goodreads-api-node: 0.0.12
