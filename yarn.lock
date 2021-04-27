@@ -11026,17 +11026,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:3.3.1":
-  version: 3.3.1
-  resolution: "gatsby-plugin-sharp@npm:3.3.1"
+"gatsby-plugin-sharp@npm:3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-plugin-sharp@npm:3.4.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     async: ^3.2.0
     bluebird: ^3.7.2
     filenamify: ^4.2.0
     fs-extra: ^9.1.0
-    gatsby-core-utils: ^2.3.0
-    gatsby-telemetry: ^2.3.0
+    gatsby-core-utils: ^2.4.0
+    gatsby-telemetry: ^2.4.0
     got: ^10.7.0
     imagemin: ^7.0.1
     imagemin-mozjpeg: ^9.0.0
@@ -11052,7 +11052,7 @@ fsevents@~2.3.1:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 861aef27b74a989c6bd18fe53b684c57e42eb82a150540572a0b638413946c4daf80857a645e5f3759a01ffd386fde8f13fad693bb79f4ea9139dee828db9a49
+  checksum: d92ed204ca27917b917199be91d0616c76c4b56094b8bd58438d132182ae617691b473c5c11d7ba8ed954f33de37fca866dd4a7ce2d7445f3a41750e58ebb2f1
   languageName: node
   linkType: hard
 
@@ -11385,28 +11385,6 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
   checksum: 4b2a050ecfc24c8d98fe2c6bcb211968f1fc8b3ce9a60d0cbd41d32f4d02586b5c9292b18dee2355732468ef8398268bd32597a9cfb7983dc5080b7538c15e0f
-  languageName: node
-  linkType: hard
-
-"gatsby-telemetry@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "gatsby-telemetry@npm:2.3.0"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@turist/fetch": ^7.1.7
-    "@turist/time": ^0.0.1
-    async-retry-ng: ^2.0.1
-    boxen: ^4.2.0
-    configstore: ^5.0.1
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.3.0
-    git-up: ^4.0.2
-    is-docker: ^2.1.1
-    lodash: ^4.17.21
-    node-fetch: ^2.6.1
-    uuid: 3.4.0
-  checksum: a80e2150ce2547d942831ecd083cdef627389872d86d3aa16a16361609afe9e0af5c861c69db1a96190314ac99d65a09a4ff2feaae2752601a0e4a95288a0ee9
   languageName: node
   linkType: hard
 
@@ -16620,7 +16598,7 @@ fsevents@~2.3.1:
     gatsby-plugin-react-helmet: 4.4.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 3.3.1
+    gatsby-plugin-sharp: 3.4.0
     gatsby-plugin-sitemap: 4.0.0
     gatsby-plugin-styled-components: 4.4.0
     gatsby-plugin-ts-config: 1.1.5
