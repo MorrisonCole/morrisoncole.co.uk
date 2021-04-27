@@ -2878,14 +2878,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/core@npm:4.11.3":
-  version: 4.11.3
-  resolution: "@material-ui/core@npm:4.11.3"
+"@material-ui/core@npm:4.11.4":
+  version: 4.11.4
+  resolution: "@material-ui/core@npm:4.11.4"
   dependencies:
     "@babel/runtime": ^7.4.4
-    "@material-ui/styles": ^4.11.3
+    "@material-ui/styles": ^4.11.4
     "@material-ui/system": ^4.11.3
-    "@material-ui/types": ^5.1.0
+    "@material-ui/types": 5.1.0
     "@material-ui/utils": ^4.11.2
     "@types/react-transition-group": ^4.2.0
     clsx: ^1.0.4
@@ -2901,7 +2901,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 9cd3c765eef1ae8a4bae65d486ded31ac858099e355206d08c00f4562f99e9a28af0414ee4c283fe272b95c1e79bd1614060985d8324209b0e39cbabb954c275
+  checksum: fccfb867bc15875ab261552dcf4c626cfbd2fa93334666c880e32d509106e8804713e0421ad7af9095382eb06146e508ef75947d12d46a56cb8c9cabe7cf440e
   languageName: node
   linkType: hard
 
@@ -2943,7 +2943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/styles@npm:4.11.3, @material-ui/styles@npm:^4.11.3":
+"@material-ui/styles@npm:4.11.3":
   version: 4.11.3
   resolution: "@material-ui/styles@npm:4.11.3"
   dependencies:
@@ -2974,6 +2974,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@material-ui/styles@npm:^4.11.4":
+  version: 4.11.4
+  resolution: "@material-ui/styles@npm:4.11.4"
+  dependencies:
+    "@babel/runtime": ^7.4.4
+    "@emotion/hash": ^0.8.0
+    "@material-ui/types": 5.1.0
+    "@material-ui/utils": ^4.11.2
+    clsx: ^1.0.4
+    csstype: ^2.5.2
+    hoist-non-react-statics: ^3.3.2
+    jss: ^10.5.1
+    jss-plugin-camel-case: ^10.5.1
+    jss-plugin-default-unit: ^10.5.1
+    jss-plugin-global: ^10.5.1
+    jss-plugin-nested: ^10.5.1
+    jss-plugin-props-sort: ^10.5.1
+    jss-plugin-rule-value-function: ^10.5.1
+    jss-plugin-vendor-prefixer: ^10.5.1
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@types/react": ^16.8.6 || ^17.0.0
+    react: ^16.8.0 || ^17.0.0
+    react-dom: ^16.8.0 || ^17.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: ef9abc486c74943df28a69d095ee07d752b17e27e70d6adede6cc368f0811529260bc509c664dff995763f02b5324594c98cf71f5d8981ea98dd25c0e2c1dd39
+  languageName: node
+  linkType: hard
+
 "@material-ui/system@npm:^4.11.3":
   version: 4.11.3
   resolution: "@material-ui/system@npm:4.11.3"
@@ -2993,7 +3024,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/types@npm:^5.1.0":
+"@material-ui/types@npm:5.1.0, @material-ui/types@npm:^5.1.0":
   version: 5.1.0
   resolution: "@material-ui/types@npm:5.1.0"
   peerDependencies:
@@ -16426,7 +16457,7 @@ fsevents@~2.3.1:
     "@graphql-codegen/cli": 1.21.4
     "@graphql-codegen/typescript": 1.22.0
     "@graphql-codegen/typescript-operations": 1.17.16
-    "@material-ui/core": 4.11.3
+    "@material-ui/core": 4.11.4
     "@material-ui/icons": 4.11.2
     "@material-ui/lab": 4.0.0-alpha.57
     "@material-ui/styles": 4.11.3
