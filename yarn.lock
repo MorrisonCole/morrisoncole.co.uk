@@ -2922,9 +2922,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/lab@npm:4.0.0-alpha.57":
-  version: 4.0.0-alpha.57
-  resolution: "@material-ui/lab@npm:4.0.0-alpha.57"
+"@material-ui/lab@npm:4.0.0-alpha.58":
+  version: 4.0.0-alpha.58
+  resolution: "@material-ui/lab@npm:4.0.0-alpha.58"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/utils": ^4.11.2
@@ -2939,7 +2939,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 0bc8b35e4a96ea04fa3fd43a64ff9685bdea2ad6ed8baf4c8f5cbe1524101a87f33229f6d23638074a3626fc3c55ba15a38d2ab984777dda896e117d0cea5c0e
+  checksum: 39777028a72b8ef23a24926fbbc56cb4bef0f109e50c2711d546880b2918c8554fdf39b5eeaea8a0e4214302fd7d02788b91688ce4e26aac362e6cfe755030ac
   languageName: node
   linkType: hard
 
@@ -16428,7 +16428,7 @@ fsevents@~2.3.1:
     "@graphql-codegen/typescript-operations": 1.17.16
     "@material-ui/core": 4.11.3
     "@material-ui/icons": 4.11.2
-    "@material-ui/lab": 4.0.0-alpha.57
+    "@material-ui/lab": 4.0.0-alpha.58
     "@material-ui/styles": 4.11.3
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
