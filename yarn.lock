@@ -10807,22 +10807,22 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:3.3.0":
-  version: 3.3.0
-  resolution: "gatsby-plugin-feed@npm:3.3.0"
+"gatsby-plugin-feed@npm:3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-plugin-feed@npm:3.4.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.0
     fs-extra: ^9.1.0
-    gatsby-plugin-utils: ^1.3.0
+    gatsby-plugin-utils: ^1.4.0
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: d3c61559020ffd58aad600fad65ab5241601cd5dd0c23cf801b955b458fcb3a1f8447dd05c6b8af9f1879a48c20f70a6f43e8abb635fbde68410ae501176ea7f
+  checksum: 0921cc7da9f7e6fd1ea1088a01aaa863616cd1753a09e79fabbcade9631759ea036f24887d98beffa031590e2d269e2bce30a1adfe4bdedbaa802ab7063cbac9
   languageName: node
   linkType: hard
 
@@ -16619,7 +16619,7 @@ fsevents@~2.3.1:
     gatsby-legacy-polyfills: 1.4.0
     gatsby-link: 3.4.0
     gatsby-plugin-canonical-urls: 3.4.0
-    gatsby-plugin-feed: 3.3.0
+    gatsby-plugin-feed: 3.4.0
     gatsby-plugin-google-tagmanager: 3.3.0
     gatsby-plugin-image: 1.3.1
     gatsby-plugin-layout: 2.3.0
