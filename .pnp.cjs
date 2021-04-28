@@ -79,7 +79,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.25.0"],
             ["eslint-config-prettier", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.3.0"],
             ["eslint-plugin-react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:7.23.2"],
-            ["event-source-polyfill", "npm:1.0.22"],
+            ["event-source-polyfill", "npm:1.0.23"],
             ["express", "npm:4.17.1"],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
             ["gatsby-cli", "npm:3.4.0"],
@@ -15549,6 +15549,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["event-source-polyfill", "npm:1.0.22"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.23", {
+          "packageLocation": "./.yarn/cache/event-source-polyfill-npm-1.0.23-406a9c1e47-7bcea808f8.zip/node_modules/event-source-polyfill/",
+          "packageDependencies": [
+            ["event-source-polyfill", "npm:1.0.23"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["eventemitter3", [
@@ -16919,21 +16926,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/gatsby-core-utils-npm-2.2.0-2efde1e1c5-0810567a42.zip/node_modules/gatsby-core-utils/",
           "packageDependencies": [
             ["gatsby-core-utils", "npm:2.2.0"],
-            ["ci-info", "npm:2.0.0"],
-            ["configstore", "npm:5.0.1"],
-            ["file-type", "npm:16.3.0"],
-            ["fs-extra", "npm:8.1.0"],
-            ["node-object-hash", "npm:2.3.1"],
-            ["proper-lockfile", "npm:4.1.2"],
-            ["tmp", "npm:0.2.1"],
-            ["xdg-basedir", "npm:4.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/gatsby-core-utils-npm-2.3.0-e941291b06-7685112ef3.zip/node_modules/gatsby-core-utils/",
-          "packageDependencies": [
-            ["gatsby-core-utils", "npm:2.3.0"],
             ["ci-info", "npm:2.0.0"],
             ["configstore", "npm:5.0.1"],
             ["file-type", "npm:16.3.0"],
@@ -23782,7 +23774,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.25.0"],
             ["eslint-config-prettier", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.3.0"],
             ["eslint-plugin-react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:7.23.2"],
-            ["event-source-polyfill", "npm:1.0.22"],
+            ["event-source-polyfill", "npm:1.0.23"],
             ["express", "npm:4.17.1"],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
             ["gatsby-cli", "npm:3.4.0"],
