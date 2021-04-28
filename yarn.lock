@@ -9605,7 +9605,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"event-source-polyfill@npm:1.0.22, event-source-polyfill@npm:^1.0.15":
+"event-source-polyfill@npm:1.0.23":
+  version: 1.0.23
+  resolution: "event-source-polyfill@npm:1.0.23"
+  checksum: 7bcea808f8b7abb4377991cd2a0fc99f851aa46c12db67d0fb2fe2ebebe6e9591afac81637e99198f13137869a1e602c3710942b1f308d58ec77145418d13e98
+  languageName: node
+  linkType: hard
+
+"event-source-polyfill@npm:^1.0.15":
   version: 1.0.22
   resolution: "event-source-polyfill@npm:1.0.22"
   checksum: 65e99a6925b9618be59cce97e1bc75bb7bb37ff71379ba59df4320e32dac6c5ebfe340daacf98d77ddc3225a43c29f435f8c02ca6dbef8ce1f545d133fcebef2
@@ -10682,22 +10689,6 @@ fsevents@~2.3.1:
     tmp: ^0.2.1
     xdg-basedir: ^4.0.0
   checksum: 0810567a4231777603ba662edfdc06779bf5e774bf8fc57da9f2dced980f75f765ac2027500b530d0f55359fd143d1ccdf1672a054c7203c252c0a7ecd5ed85b
-  languageName: node
-  linkType: hard
-
-"gatsby-core-utils@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "gatsby-core-utils@npm:2.3.0"
-  dependencies:
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    file-type: ^16.2.0
-    fs-extra: ^8.1.0
-    node-object-hash: ^2.0.0
-    proper-lockfile: ^4.1.1
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 7685112ef3506405f6064f649a8eb824d10fe6ee316913cfd16834cc87258e60eec3ecb9839df876c64f81014c4c39f439254b3ac8a2f95ba012018c48e2bff9
   languageName: node
   linkType: hard
 
@@ -16568,7 +16559,7 @@ fsevents@~2.3.1:
     eslint: 7.25.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-react: 7.23.2
-    event-source-polyfill: 1.0.22
+    event-source-polyfill: 1.0.23
     express: 4.17.1
     gatsby: 3.4.0
     gatsby-cli: 3.4.0
