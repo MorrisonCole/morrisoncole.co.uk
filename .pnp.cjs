@@ -63,7 +63,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.3"],
             ["@types/react-helmet", "npm:6.1.1"],
             ["@types/react-is", "npm:17.0.0"],
-            ["@types/react-visibility-sensor", "npm:5.1.0"],
             ["@types/server", "npm:1.0.3"],
             ["@types/stack-trace", "npm:0.0.29"],
             ["@types/styled-components", "npm:5.1.9"],
@@ -116,7 +115,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-transformer-json", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
             ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
             ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
-            ["goodreads-api-node", "npm:0.0.12"],
             ["graphql", "npm:15.5.0"],
             ["graphql-import", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.0.2"],
             ["lodash", "npm:4.17.21"],
@@ -5364,11 +5362,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.get", "npm:4.4.2"],
             ["make-error", "npm:1.3.6"],
             ["ts-node", "virtual:ee39b37ed3ad15b9cadb8138ce384ab1ba46716de51ea8b5d82177d4f03500e5ca5485c5b40e5ae64ebed6c1357b213437801799e2289e7bd56a79c65df44812#npm:9.1.1"],
-            ["tslib", "npm:2.2.0"]
+            ["tslib", "npm:2.2.0"],
+            ["typescript", null]
           ],
           "packagePeers": [
             "@types/cosmiconfig",
-            "cosmiconfig"
+            "cosmiconfig",
+            "typescript"
           ],
           "linkType": "HARD",
         }]
@@ -8584,16 +8584,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["@types/react-visibility-sensor", [
-        ["npm:5.1.0", {
-          "packageLocation": "./.yarn/cache/@types-react-visibility-sensor-npm-5.1.0-c2b263116f-1cc04c445a.zip/node_modules/@types/react-visibility-sensor/",
-          "packageDependencies": [
-            ["@types/react-visibility-sensor", "npm:5.1.0"],
-            ["react-visibility-sensor", "virtual:c2b263116ff8f4af98c6262a5c9abf8f4865e960b43cf5c0f9b9b6453f60bb3fcfb786ec35658b100eda1d89e1affa8295d9f8a02d9c6da0761afe952f2168d8#npm:5.1.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["@types/readable-stream", [
         ["npm:2.3.9", {
           "packageLocation": "./.yarn/cache/@types-readable-stream-npm-2.3.9-506ceda8eb-62ad1c7cda.zip/node_modules/@types/readable-stream/",
@@ -10692,7 +10682,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/babel-plugin-remove-graphql-queries-virtual-4ab2b8095c/0/cache/babel-plugin-remove-graphql-queries-npm-3.4.0-b2ab1d1b60-9984d0d87b.zip/node_modules/babel-plugin-remove-graphql-queries/",
           "packageDependencies": [
             ["babel-plugin-remove-graphql-queries", "virtual:e3fbd2a1dc71072a88a2d33d8d08348d712a4008a7cf07cd3e8e6ef8dffbcade20d73068eed9496f19f7db3d5b68e1bd0fd1de5ce78714b8f2945a4ac5da0cac#npm:3.4.0"],
-            ["@babel/core", null],
+            ["@babel/core", "npm:7.14.0"],
             ["@types/babel__core", null],
             ["@types/gatsby", null],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"]
@@ -17154,6 +17144,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["gatsby-plugin-image", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.4.0"],
             ["@babel/code-frame", "npm:7.12.13"],
+            ["@babel/core", "npm:7.14.0"],
             ["@babel/parser", "npm:7.13.13"],
             ["@babel/traverse", "npm:7.13.13"],
             ["@types/gatsby", null],
@@ -17177,6 +17168,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"]
           ],
           "packagePeers": [
+            "@babel/core",
             "@types/gatsby-plugin-sharp",
             "@types/gatsby-source-filesystem",
             "@types/gatsby",
@@ -18579,19 +18571,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["good-listener", "npm:1.2.2"],
             ["delegate", "npm:3.2.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["goodreads-api-node", [
-        ["npm:0.0.12", {
-          "packageLocation": "./.yarn/cache/goodreads-api-node-npm-0.0.12-3923207689-08cf9e7d01.zip/node_modules/goodreads-api-node/",
-          "packageDependencies": [
-            ["goodreads-api-node", "npm:0.0.12"],
-            ["oauth", "npm:0.9.15"],
-            ["query-string", "npm:4.3.4"],
-            ["request", "npm:2.88.2"],
-            ["xml2js", "npm:0.4.23"]
           ],
           "linkType": "HARD",
         }]
@@ -23765,7 +23744,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.3"],
             ["@types/react-helmet", "npm:6.1.1"],
             ["@types/react-is", "npm:17.0.0"],
-            ["@types/react-visibility-sensor", "npm:5.1.0"],
             ["@types/server", "npm:1.0.3"],
             ["@types/stack-trace", "npm:0.0.29"],
             ["@types/styled-components", "npm:5.1.9"],
@@ -23818,7 +23796,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-transformer-json", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
             ["gatsby-transformer-remark", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
             ["gatsby-transformer-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
-            ["goodreads-api-node", "npm:0.0.12"],
             ["graphql", "npm:15.5.0"],
             ["graphql-import", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.0.2"],
             ["lodash", "npm:4.17.21"],
@@ -24467,15 +24444,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/number-is-nan-npm-1.0.1-845325a0fe-13656bc9aa.zip/node_modules/number-is-nan/",
           "packageDependencies": [
             ["number-is-nan", "npm:1.0.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["oauth", [
-        ["npm:0.9.15", {
-          "packageLocation": "./.yarn/cache/oauth-npm-0.9.15-a6aae972bc-957c0d8d85.zip/node_modules/oauth/",
-          "packageDependencies": [
-            ["oauth", "npm:0.9.15"]
           ],
           "linkType": "HARD",
         }]
@@ -27005,15 +26973,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["query-string", [
-        ["npm:4.3.4", {
-          "packageLocation": "./.yarn/cache/query-string-npm-4.3.4-58a0c63f6b-3b2bae6a84.zip/node_modules/query-string/",
-          "packageDependencies": [
-            ["query-string", "npm:4.3.4"],
-            ["object-assign", "npm:4.1.1"],
-            ["strict-uri-encode", "npm:1.1.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:5.1.1", {
           "packageLocation": "./.yarn/cache/query-string-npm-5.1.1-86edac70d6-4ac760d977.zip/node_modules/query-string/",
           "packageDependencies": [
@@ -27483,24 +27442,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prop-types", "npm:15.7.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"]
-          ],
-          "packagePeers": [
-            "@types/react-dom",
-            "@types/react",
-            "react-dom",
-            "react"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:c2b263116ff8f4af98c6262a5c9abf8f4865e960b43cf5c0f9b9b6453f60bb3fcfb786ec35658b100eda1d89e1affa8295d9f8a02d9c6da0761afe952f2168d8#npm:5.1.1", {
-          "packageLocation": "./.yarn/__virtual__/react-visibility-sensor-virtual-d438b16612/0/cache/react-visibility-sensor-npm-5.1.1-7aa966cf7a-ebce7bc743.zip/node_modules/react-visibility-sensor/",
-          "packageDependencies": [
-            ["react-visibility-sensor", "virtual:c2b263116ff8f4af98c6262a5c9abf8f4865e960b43cf5c0f9b9b6453f60bb3fcfb786ec35658b100eda1d89e1affa8295d9f8a02d9c6da0761afe952f2168d8#npm:5.1.1"],
-            ["@types/react", null],
-            ["@types/react-dom", null],
-            ["prop-types", "npm:15.7.2"],
-            ["react", null],
-            ["react-dom", null]
           ],
           "packagePeers": [
             "@types/react-dom",
