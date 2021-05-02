@@ -3887,15 +3887,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-visibility-sensor@npm:5.1.0":
-  version: 5.1.0
-  resolution: "@types/react-visibility-sensor@npm:5.1.0"
-  dependencies:
-    react-visibility-sensor: "*"
-  checksum: 1cc04c445a7df6a006bc55c5dfe33bbc4759c747930984f4bfb372a913a2672191a911de925750b2f1850c5fc493fad3d78efc5a520957638588310ab241b82d
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:*":
   version: 17.0.3
   resolution: "@types/react@npm:17.0.3"
@@ -12019,18 +12010,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"goodreads-api-node@npm:0.0.12":
-  version: 0.0.12
-  resolution: "goodreads-api-node@npm:0.0.12"
-  dependencies:
-    oauth: ^0.9.15
-    query-string: ^4.3.1
-    request: ^2.79.0
-    xml2js: ^0.4.17
-  checksum: 08cf9e7d01b6b69c73d457ceb94528132f8c00ff17786579d6e161e770fde8e9347efa8ea0501ee04442310ddeeb6e35249943304ed90374b2352817c996cdb6
-  languageName: node
-  linkType: hard
-
 "got@npm:8.3.2, got@npm:^8.3.1":
   version: 8.3.2
   resolution: "got@npm:8.3.2"
@@ -16550,7 +16529,6 @@ fsevents@~2.3.1:
     "@types/react-dom": 17.0.3
     "@types/react-helmet": 6.1.1
     "@types/react-is": 17.0.0
-    "@types/react-visibility-sensor": 5.1.0
     "@types/server": 1.0.3
     "@types/stack-trace": 0.0.29
     "@types/styled-components": 5.1.9
@@ -16603,7 +16581,6 @@ fsevents@~2.3.1:
     gatsby-transformer-json: 3.4.0
     gatsby-transformer-remark: 4.1.0
     gatsby-transformer-sharp: 3.4.0
-    goodreads-api-node: 0.0.12
     graphql: 15.5.0
     graphql-import: 1.0.2
     lodash: 4.17.21
@@ -17190,13 +17167,6 @@ fsevents@~2.3.1:
   version: 0.9.0
   resolution: "oauth-sign@npm:0.9.0"
   checksum: 8f5497a127967866a3c67094c21efd295e46013a94e6e828573c62220e9af568cc1d2d04b16865ba583e430510fa168baf821ea78f355146d8ed7e350fc44c64
-  languageName: node
-  linkType: hard
-
-"oauth@npm:^0.9.15":
-  version: 0.9.15
-  resolution: "oauth@npm:0.9.15"
-  checksum: 957c0d8d85300398dcb0e293953650c0fc3facc795bee8228238414f19f59cef5fd4ee8d17a972c142924c10c5f6ec50ef80f77f4a6cc6e3c98f9d22c027801c
   languageName: node
   linkType: hard
 
@@ -19415,16 +19385,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"query-string@npm:^4.3.1":
-  version: 4.3.4
-  resolution: "query-string@npm:4.3.4"
-  dependencies:
-    object-assign: ^4.1.0
-    strict-uri-encode: ^1.0.0
-  checksum: 3b2bae6a8454cf0edf11cf1aa4d1f920398bbdabc1c39222b9bb92147e746fcd97faf00e56f494728fb66b2961b495ba0fde699d5d3bd06b11472d664b36c6cf
-  languageName: node
-  linkType: hard
-
 "query-string@npm:^5.0.1":
   version: 5.1.1
   resolution: "query-string@npm:5.1.1"
@@ -19717,7 +19677,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-visibility-sensor@npm:*, react-visibility-sensor@npm:5.1.1":
+"react-visibility-sensor@npm:5.1.1":
   version: 5.1.1
   resolution: "react-visibility-sensor@npm:5.1.1"
   dependencies:
@@ -20419,7 +20379,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"request@npm:^2.45.0, request@npm:^2.79.0":
+"request@npm:^2.45.0":
   version: 2.88.2
   resolution: "request@npm:2.88.2"
   dependencies:
@@ -24517,7 +24477,7 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"xml2js@npm:0.4.23, xml2js@npm:^0.4.17, xml2js@npm:^0.4.5":
+"xml2js@npm:0.4.23, xml2js@npm:^0.4.5":
   version: 0.4.23
   resolution: "xml2js@npm:0.4.23"
   dependencies:

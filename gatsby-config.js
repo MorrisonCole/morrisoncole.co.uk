@@ -4,7 +4,13 @@ const { generateConfig } = require("gatsby-plugin-ts-config");
 
 module.exports = generateConfig({
   configDir: "src/gatsby",
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true
+  },
   babel: false,
   tsNode: {
     project: "./tsconfig.json",
