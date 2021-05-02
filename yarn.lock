@@ -9612,10 +9612,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"event-source-polyfill@npm:1.0.23":
-  version: 1.0.23
-  resolution: "event-source-polyfill@npm:1.0.23"
-  checksum: 7bcea808f8b7abb4377991cd2a0fc99f851aa46c12db67d0fb2fe2ebebe6e9591afac81637e99198f13137869a1e602c3710942b1f308d58ec77145418d13e98
+"event-source-polyfill@npm:1.0.24":
+  version: 1.0.24
+  resolution: "event-source-polyfill@npm:1.0.24"
+  checksum: 17cf23602fa2452690521e283a407052a2a05f05efbba5735b400bf813c23a222f24d27162dc4a62a32c6b88e4661c242f47d8fed4a216e9fca4c22c4e65cd17
   languageName: node
   linkType: hard
 
@@ -16566,7 +16566,7 @@ fsevents@~2.3.1:
     eslint: 7.25.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-react: 7.23.2
-    event-source-polyfill: 1.0.23
+    event-source-polyfill: 1.0.24
     express: 4.17.1
     gatsby: 3.4.0
     gatsby-cli: 3.4.0
