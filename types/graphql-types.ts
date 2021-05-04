@@ -162,11 +162,29 @@ export type DirectoryConnection = {
   nodes: Array<Directory>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<DirectoryGroupConnection>;
 };
 
 
 export type DirectoryConnectionDistinctArgs = {
+  field: DirectoryFieldsEnum;
+};
+
+
+export type DirectoryConnectionMaxArgs = {
+  field: DirectoryFieldsEnum;
+};
+
+
+export type DirectoryConnectionMinArgs = {
+  field: DirectoryFieldsEnum;
+};
+
+
+export type DirectoryConnectionSumArgs = {
   field: DirectoryFieldsEnum;
 };
 
@@ -487,11 +505,29 @@ export type FileConnection = {
   nodes: Array<File>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<FileGroupConnection>;
 };
 
 
 export type FileConnectionDistinctArgs = {
+  field: FileFieldsEnum;
+};
+
+
+export type FileConnectionMaxArgs = {
+  field: FileFieldsEnum;
+};
+
+
+export type FileConnectionMinArgs = {
+  field: FileFieldsEnum;
+};
+
+
+export type FileConnectionSumArgs = {
   field: FileFieldsEnum;
 };
 
@@ -1079,11 +1115,29 @@ export type GoodreadsAuthorConnection = {
   nodes: Array<GoodreadsAuthor>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<GoodreadsAuthorGroupConnection>;
 };
 
 
 export type GoodreadsAuthorConnectionDistinctArgs = {
+  field: GoodreadsAuthorFieldsEnum;
+};
+
+
+export type GoodreadsAuthorConnectionMaxArgs = {
+  field: GoodreadsAuthorFieldsEnum;
+};
+
+
+export type GoodreadsAuthorConnectionMinArgs = {
+  field: GoodreadsAuthorFieldsEnum;
+};
+
+
+export type GoodreadsAuthorConnectionSumArgs = {
   field: GoodreadsAuthorFieldsEnum;
 };
 
@@ -1463,11 +1517,29 @@ export type GoodreadsBookConnection = {
   nodes: Array<GoodreadsBook>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<GoodreadsBookGroupConnection>;
 };
 
 
 export type GoodreadsBookConnectionDistinctArgs = {
+  field: GoodreadsBookFieldsEnum;
+};
+
+
+export type GoodreadsBookConnectionMaxArgs = {
+  field: GoodreadsBookFieldsEnum;
+};
+
+
+export type GoodreadsBookConnectionMinArgs = {
+  field: GoodreadsBookFieldsEnum;
+};
+
+
+export type GoodreadsBookConnectionSumArgs = {
   field: GoodreadsBookFieldsEnum;
 };
 
@@ -1940,11 +2012,29 @@ export type GoodreadsReviewConnection = {
   nodes: Array<GoodreadsReview>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<GoodreadsReviewGroupConnection>;
 };
 
 
 export type GoodreadsReviewConnectionDistinctArgs = {
+  field: GoodreadsReviewFieldsEnum;
+};
+
+
+export type GoodreadsReviewConnectionMaxArgs = {
+  field: GoodreadsReviewFieldsEnum;
+};
+
+
+export type GoodreadsReviewConnectionMinArgs = {
+  field: GoodreadsReviewFieldsEnum;
+};
+
+
+export type GoodreadsReviewConnectionSumArgs = {
   field: GoodreadsReviewFieldsEnum;
 };
 
@@ -2304,11 +2394,29 @@ export type GoodreadsShelfConnection = {
   nodes: Array<GoodreadsShelf>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<GoodreadsShelfGroupConnection>;
 };
 
 
 export type GoodreadsShelfConnectionDistinctArgs = {
+  field: GoodreadsShelfFieldsEnum;
+};
+
+
+export type GoodreadsShelfConnectionMaxArgs = {
+  field: GoodreadsShelfFieldsEnum;
+};
+
+
+export type GoodreadsShelfConnectionMinArgs = {
+  field: GoodreadsShelfFieldsEnum;
+};
+
+
+export type GoodreadsShelfConnectionSumArgs = {
   field: GoodreadsShelfFieldsEnum;
 };
 
@@ -2741,11 +2849,29 @@ export type ImageSharpConnection = {
   nodes: Array<ImageSharp>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<ImageSharpGroupConnection>;
 };
 
 
 export type ImageSharpConnectionDistinctArgs = {
+  field: ImageSharpFieldsEnum;
+};
+
+
+export type ImageSharpConnectionMaxArgs = {
+  field: ImageSharpFieldsEnum;
+};
+
+
+export type ImageSharpConnectionMinArgs = {
+  field: ImageSharpFieldsEnum;
+};
+
+
+export type ImageSharpConnectionSumArgs = {
   field: ImageSharpFieldsEnum;
 };
 
@@ -3099,11 +3225,29 @@ export type MdxConnection = {
   nodes: Array<Mdx>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<MdxGroupConnection>;
 };
 
 
 export type MdxConnectionDistinctArgs = {
+  field: MdxFieldsEnum;
+};
+
+
+export type MdxConnectionMaxArgs = {
+  field: MdxFieldsEnum;
+};
+
+
+export type MdxConnectionMinArgs = {
+  field: MdxFieldsEnum;
+};
+
+
+export type MdxConnectionSumArgs = {
   field: MdxFieldsEnum;
 };
 
@@ -3474,6 +3618,8 @@ export type Query = {
   allDirectory: DirectoryConnection;
   site?: Maybe<Site>;
   allSite: SiteConnection;
+  siteFunction?: Maybe<SiteFunction>;
+  allSiteFunction: SiteFunctionConnection;
   sitePage?: Maybe<SitePage>;
   allSitePage: SitePageConnection;
   imageSharp?: Maybe<ImageSharp>;
@@ -3619,6 +3765,27 @@ export type QuerySiteArgs = {
 export type QueryAllSiteArgs = {
   filter?: Maybe<SiteFilterInput>;
   sort?: Maybe<SiteSortInput>;
+  skip?: Maybe<Scalars['Int']>;
+  limit?: Maybe<Scalars['Int']>;
+};
+
+
+export type QuerySiteFunctionArgs = {
+  apiRoute?: Maybe<StringQueryOperatorInput>;
+  originalFilePath?: Maybe<StringQueryOperatorInput>;
+  relativeCompiledFilePath?: Maybe<StringQueryOperatorInput>;
+  absoluteCompiledFilePath?: Maybe<StringQueryOperatorInput>;
+  matchPath?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+};
+
+
+export type QueryAllSiteFunctionArgs = {
+  filter?: Maybe<SiteFunctionFilterInput>;
+  sort?: Maybe<SiteFunctionSortInput>;
   skip?: Maybe<Scalars['Int']>;
   limit?: Maybe<Scalars['Int']>;
 };
@@ -3929,11 +4096,29 @@ export type SiteBuildMetadataConnection = {
   nodes: Array<SiteBuildMetadata>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<SiteBuildMetadataGroupConnection>;
 };
 
 
 export type SiteBuildMetadataConnectionDistinctArgs = {
+  field: SiteBuildMetadataFieldsEnum;
+};
+
+
+export type SiteBuildMetadataConnectionMaxArgs = {
+  field: SiteBuildMetadataFieldsEnum;
+};
+
+
+export type SiteBuildMetadataConnectionMinArgs = {
+  field: SiteBuildMetadataFieldsEnum;
+};
+
+
+export type SiteBuildMetadataConnectionSumArgs = {
   field: SiteBuildMetadataFieldsEnum;
 };
 
@@ -4071,11 +4256,29 @@ export type SiteConnection = {
   nodes: Array<Site>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<SiteGroupConnection>;
 };
 
 
 export type SiteConnectionDistinctArgs = {
+  field: SiteFieldsEnum;
+};
+
+
+export type SiteConnectionMaxArgs = {
+  field: SiteFieldsEnum;
+};
+
+
+export type SiteConnectionMinArgs = {
+  field: SiteFieldsEnum;
+};
+
+
+export type SiteConnectionSumArgs = {
   field: SiteFieldsEnum;
 };
 
@@ -4207,6 +4410,187 @@ export type SiteFilterInput = {
   internal?: Maybe<InternalFilterInput>;
 };
 
+export type SiteFunction = Node & {
+  __typename?: 'SiteFunction';
+  apiRoute: Scalars['String'];
+  originalFilePath: Scalars['String'];
+  relativeCompiledFilePath: Scalars['String'];
+  absoluteCompiledFilePath: Scalars['String'];
+  matchPath?: Maybe<Scalars['String']>;
+  id: Scalars['ID'];
+  parent?: Maybe<Node>;
+  children: Array<Node>;
+  internal: Internal;
+};
+
+export type SiteFunctionConnection = {
+  __typename?: 'SiteFunctionConnection';
+  totalCount: Scalars['Int'];
+  edges: Array<SiteFunctionEdge>;
+  nodes: Array<SiteFunction>;
+  pageInfo: PageInfo;
+  distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
+  group: Array<SiteFunctionGroupConnection>;
+};
+
+
+export type SiteFunctionConnectionDistinctArgs = {
+  field: SiteFunctionFieldsEnum;
+};
+
+
+export type SiteFunctionConnectionMaxArgs = {
+  field: SiteFunctionFieldsEnum;
+};
+
+
+export type SiteFunctionConnectionMinArgs = {
+  field: SiteFunctionFieldsEnum;
+};
+
+
+export type SiteFunctionConnectionSumArgs = {
+  field: SiteFunctionFieldsEnum;
+};
+
+
+export type SiteFunctionConnectionGroupArgs = {
+  skip?: Maybe<Scalars['Int']>;
+  limit?: Maybe<Scalars['Int']>;
+  field: SiteFunctionFieldsEnum;
+};
+
+export type SiteFunctionEdge = {
+  __typename?: 'SiteFunctionEdge';
+  next?: Maybe<SiteFunction>;
+  node: SiteFunction;
+  previous?: Maybe<SiteFunction>;
+};
+
+export enum SiteFunctionFieldsEnum {
+  ApiRoute = 'apiRoute',
+  OriginalFilePath = 'originalFilePath',
+  RelativeCompiledFilePath = 'relativeCompiledFilePath',
+  AbsoluteCompiledFilePath = 'absoluteCompiledFilePath',
+  MatchPath = 'matchPath',
+  Id = 'id',
+  ParentId = 'parent___id',
+  ParentParentId = 'parent___parent___id',
+  ParentParentParentId = 'parent___parent___parent___id',
+  ParentParentParentChildren = 'parent___parent___parent___children',
+  ParentParentChildren = 'parent___parent___children',
+  ParentParentChildrenId = 'parent___parent___children___id',
+  ParentParentChildrenChildren = 'parent___parent___children___children',
+  ParentParentInternalContent = 'parent___parent___internal___content',
+  ParentParentInternalContentDigest = 'parent___parent___internal___contentDigest',
+  ParentParentInternalDescription = 'parent___parent___internal___description',
+  ParentParentInternalFieldOwners = 'parent___parent___internal___fieldOwners',
+  ParentParentInternalIgnoreType = 'parent___parent___internal___ignoreType',
+  ParentParentInternalMediaType = 'parent___parent___internal___mediaType',
+  ParentParentInternalOwner = 'parent___parent___internal___owner',
+  ParentParentInternalType = 'parent___parent___internal___type',
+  ParentChildren = 'parent___children',
+  ParentChildrenId = 'parent___children___id',
+  ParentChildrenParentId = 'parent___children___parent___id',
+  ParentChildrenParentChildren = 'parent___children___parent___children',
+  ParentChildrenChildren = 'parent___children___children',
+  ParentChildrenChildrenId = 'parent___children___children___id',
+  ParentChildrenChildrenChildren = 'parent___children___children___children',
+  ParentChildrenInternalContent = 'parent___children___internal___content',
+  ParentChildrenInternalContentDigest = 'parent___children___internal___contentDigest',
+  ParentChildrenInternalDescription = 'parent___children___internal___description',
+  ParentChildrenInternalFieldOwners = 'parent___children___internal___fieldOwners',
+  ParentChildrenInternalIgnoreType = 'parent___children___internal___ignoreType',
+  ParentChildrenInternalMediaType = 'parent___children___internal___mediaType',
+  ParentChildrenInternalOwner = 'parent___children___internal___owner',
+  ParentChildrenInternalType = 'parent___children___internal___type',
+  ParentInternalContent = 'parent___internal___content',
+  ParentInternalContentDigest = 'parent___internal___contentDigest',
+  ParentInternalDescription = 'parent___internal___description',
+  ParentInternalFieldOwners = 'parent___internal___fieldOwners',
+  ParentInternalIgnoreType = 'parent___internal___ignoreType',
+  ParentInternalMediaType = 'parent___internal___mediaType',
+  ParentInternalOwner = 'parent___internal___owner',
+  ParentInternalType = 'parent___internal___type',
+  Children = 'children',
+  ChildrenId = 'children___id',
+  ChildrenParentId = 'children___parent___id',
+  ChildrenParentParentId = 'children___parent___parent___id',
+  ChildrenParentParentChildren = 'children___parent___parent___children',
+  ChildrenParentChildren = 'children___parent___children',
+  ChildrenParentChildrenId = 'children___parent___children___id',
+  ChildrenParentChildrenChildren = 'children___parent___children___children',
+  ChildrenParentInternalContent = 'children___parent___internal___content',
+  ChildrenParentInternalContentDigest = 'children___parent___internal___contentDigest',
+  ChildrenParentInternalDescription = 'children___parent___internal___description',
+  ChildrenParentInternalFieldOwners = 'children___parent___internal___fieldOwners',
+  ChildrenParentInternalIgnoreType = 'children___parent___internal___ignoreType',
+  ChildrenParentInternalMediaType = 'children___parent___internal___mediaType',
+  ChildrenParentInternalOwner = 'children___parent___internal___owner',
+  ChildrenParentInternalType = 'children___parent___internal___type',
+  ChildrenChildren = 'children___children',
+  ChildrenChildrenId = 'children___children___id',
+  ChildrenChildrenParentId = 'children___children___parent___id',
+  ChildrenChildrenParentChildren = 'children___children___parent___children',
+  ChildrenChildrenChildren = 'children___children___children',
+  ChildrenChildrenChildrenId = 'children___children___children___id',
+  ChildrenChildrenChildrenChildren = 'children___children___children___children',
+  ChildrenChildrenInternalContent = 'children___children___internal___content',
+  ChildrenChildrenInternalContentDigest = 'children___children___internal___contentDigest',
+  ChildrenChildrenInternalDescription = 'children___children___internal___description',
+  ChildrenChildrenInternalFieldOwners = 'children___children___internal___fieldOwners',
+  ChildrenChildrenInternalIgnoreType = 'children___children___internal___ignoreType',
+  ChildrenChildrenInternalMediaType = 'children___children___internal___mediaType',
+  ChildrenChildrenInternalOwner = 'children___children___internal___owner',
+  ChildrenChildrenInternalType = 'children___children___internal___type',
+  ChildrenInternalContent = 'children___internal___content',
+  ChildrenInternalContentDigest = 'children___internal___contentDigest',
+  ChildrenInternalDescription = 'children___internal___description',
+  ChildrenInternalFieldOwners = 'children___internal___fieldOwners',
+  ChildrenInternalIgnoreType = 'children___internal___ignoreType',
+  ChildrenInternalMediaType = 'children___internal___mediaType',
+  ChildrenInternalOwner = 'children___internal___owner',
+  ChildrenInternalType = 'children___internal___type',
+  InternalContent = 'internal___content',
+  InternalContentDigest = 'internal___contentDigest',
+  InternalDescription = 'internal___description',
+  InternalFieldOwners = 'internal___fieldOwners',
+  InternalIgnoreType = 'internal___ignoreType',
+  InternalMediaType = 'internal___mediaType',
+  InternalOwner = 'internal___owner',
+  InternalType = 'internal___type'
+}
+
+export type SiteFunctionFilterInput = {
+  apiRoute?: Maybe<StringQueryOperatorInput>;
+  originalFilePath?: Maybe<StringQueryOperatorInput>;
+  relativeCompiledFilePath?: Maybe<StringQueryOperatorInput>;
+  absoluteCompiledFilePath?: Maybe<StringQueryOperatorInput>;
+  matchPath?: Maybe<StringQueryOperatorInput>;
+  id?: Maybe<StringQueryOperatorInput>;
+  parent?: Maybe<NodeFilterInput>;
+  children?: Maybe<NodeFilterListInput>;
+  internal?: Maybe<InternalFilterInput>;
+};
+
+export type SiteFunctionGroupConnection = {
+  __typename?: 'SiteFunctionGroupConnection';
+  totalCount: Scalars['Int'];
+  edges: Array<SiteFunctionEdge>;
+  nodes: Array<SiteFunction>;
+  pageInfo: PageInfo;
+  field: Scalars['String'];
+  fieldValue?: Maybe<Scalars['String']>;
+};
+
+export type SiteFunctionSortInput = {
+  fields?: Maybe<Array<Maybe<SiteFunctionFieldsEnum>>>;
+  order?: Maybe<Array<Maybe<SortOrderEnum>>>;
+};
+
 export type SiteGroupConnection = {
   __typename?: 'SiteGroupConnection';
   totalCount: Scalars['Int'];
@@ -4242,11 +4626,29 @@ export type SitePageConnection = {
   nodes: Array<SitePage>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<SitePageGroupConnection>;
 };
 
 
 export type SitePageConnectionDistinctArgs = {
+  field: SitePageFieldsEnum;
+};
+
+
+export type SitePageConnectionMaxArgs = {
+  field: SitePageFieldsEnum;
+};
+
+
+export type SitePageConnectionMinArgs = {
+  field: SitePageFieldsEnum;
+};
+
+
+export type SitePageConnectionSumArgs = {
   field: SitePageFieldsEnum;
 };
 
@@ -4505,6 +4907,7 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsId = 'pluginCreator___pluginOptions___id',
   PluginCreatorPluginOptionsOutput = 'pluginCreator___pluginOptions___output',
   PluginCreatorPluginOptionsCreateLinkInHead = 'pluginCreator___pluginOptions___createLinkInHead',
+  PluginCreatorPluginOptionsEntryLimit = 'pluginCreator___pluginOptions___entryLimit',
   PluginCreatorPluginOptionsPath = 'pluginCreator___pluginOptions___path',
   PluginCreatorPluginOptionsName = 'pluginCreator___pluginOptions___name',
   PluginCreatorPluginOptionsDisplayName = 'pluginCreator___pluginOptions___displayName',
@@ -4547,7 +4950,11 @@ export enum SitePageFieldsEnum {
   PluginCreatorPluginOptionsProtocol = 'pluginCreator___pluginOptions___protocol',
   PluginCreatorPluginOptionsHostname = 'pluginCreator___pluginOptions___hostname',
   PluginCreatorPluginOptionsConfigDir = 'pluginCreator___pluginOptions___configDir',
+  PluginCreatorPluginOptionsFlagsDevSsr = 'pluginCreator___pluginOptions___flags___DEV_SSR',
+  PluginCreatorPluginOptionsFlagsFastDev = 'pluginCreator___pluginOptions___flags___FAST_DEV',
   PluginCreatorPluginOptionsFlagsPreserveWebpackCache = 'pluginCreator___pluginOptions___flags___PRESERVE_WEBPACK_CACHE',
+  PluginCreatorPluginOptionsFlagsPreserveFileDownloadCache = 'pluginCreator___pluginOptions___flags___PRESERVE_FILE_DOWNLOAD_CACHE',
+  PluginCreatorPluginOptionsFlagsParallelSourcing = 'pluginCreator___pluginOptions___flags___PARALLEL_SOURCING',
   PluginCreatorPluginOptionsBabel = 'pluginCreator___pluginOptions___babel',
   PluginCreatorPluginOptionsTsNodeProject = 'pluginCreator___pluginOptions___tsNode___project',
   PluginCreatorPluginOptionsPathCheck = 'pluginCreator___pluginOptions___pathCheck',
@@ -4630,11 +5037,29 @@ export type SitePluginConnection = {
   nodes: Array<SitePlugin>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<SitePluginGroupConnection>;
 };
 
 
 export type SitePluginConnectionDistinctArgs = {
+  field: SitePluginFieldsEnum;
+};
+
+
+export type SitePluginConnectionMaxArgs = {
+  field: SitePluginFieldsEnum;
+};
+
+
+export type SitePluginConnectionMinArgs = {
+  field: SitePluginFieldsEnum;
+};
+
+
+export type SitePluginConnectionSumArgs = {
   field: SitePluginFieldsEnum;
 };
 
@@ -4757,6 +5182,7 @@ export enum SitePluginFieldsEnum {
   PluginOptionsId = 'pluginOptions___id',
   PluginOptionsOutput = 'pluginOptions___output',
   PluginOptionsCreateLinkInHead = 'pluginOptions___createLinkInHead',
+  PluginOptionsEntryLimit = 'pluginOptions___entryLimit',
   PluginOptionsPath = 'pluginOptions___path',
   PluginOptionsName = 'pluginOptions___name',
   PluginOptionsDisplayName = 'pluginOptions___displayName',
@@ -4811,7 +5237,11 @@ export enum SitePluginFieldsEnum {
   PluginOptionsProtocol = 'pluginOptions___protocol',
   PluginOptionsHostname = 'pluginOptions___hostname',
   PluginOptionsConfigDir = 'pluginOptions___configDir',
+  PluginOptionsFlagsDevSsr = 'pluginOptions___flags___DEV_SSR',
+  PluginOptionsFlagsFastDev = 'pluginOptions___flags___FAST_DEV',
   PluginOptionsFlagsPreserveWebpackCache = 'pluginOptions___flags___PRESERVE_WEBPACK_CACHE',
+  PluginOptionsFlagsPreserveFileDownloadCache = 'pluginOptions___flags___PRESERVE_FILE_DOWNLOAD_CACHE',
+  PluginOptionsFlagsParallelSourcing = 'pluginOptions___flags___PARALLEL_SOURCING',
   PluginOptionsBabel = 'pluginOptions___babel',
   PluginOptionsTsNodeProject = 'pluginOptions___tsNode___project',
   PluginOptionsPathCheck = 'pluginOptions___pathCheck',
@@ -4943,6 +5373,7 @@ export type SitePluginPluginOptions = {
   id?: Maybe<Scalars['String']>;
   output?: Maybe<Scalars['String']>;
   createLinkInHead?: Maybe<Scalars['Boolean']>;
+  entryLimit?: Maybe<Scalars['Int']>;
   path?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
   displayName?: Maybe<Scalars['Boolean']>;
@@ -5052,6 +5483,7 @@ export type SitePluginPluginOptionsFilterInput = {
   id?: Maybe<StringQueryOperatorInput>;
   output?: Maybe<StringQueryOperatorInput>;
   createLinkInHead?: Maybe<BooleanQueryOperatorInput>;
+  entryLimit?: Maybe<IntQueryOperatorInput>;
   path?: Maybe<StringQueryOperatorInput>;
   name?: Maybe<StringQueryOperatorInput>;
   displayName?: Maybe<BooleanQueryOperatorInput>;
@@ -5101,11 +5533,19 @@ export type SitePluginPluginOptionsFilterInput = {
 
 export type SitePluginPluginOptionsFlags = {
   __typename?: 'SitePluginPluginOptionsFlags';
+  DEV_SSR?: Maybe<Scalars['Boolean']>;
+  FAST_DEV?: Maybe<Scalars['Boolean']>;
   PRESERVE_WEBPACK_CACHE?: Maybe<Scalars['Boolean']>;
+  PRESERVE_FILE_DOWNLOAD_CACHE?: Maybe<Scalars['Boolean']>;
+  PARALLEL_SOURCING?: Maybe<Scalars['Boolean']>;
 };
 
 export type SitePluginPluginOptionsFlagsFilterInput = {
+  DEV_SSR?: Maybe<BooleanQueryOperatorInput>;
+  FAST_DEV?: Maybe<BooleanQueryOperatorInput>;
   PRESERVE_WEBPACK_CACHE?: Maybe<BooleanQueryOperatorInput>;
+  PRESERVE_FILE_DOWNLOAD_CACHE?: Maybe<BooleanQueryOperatorInput>;
+  PARALLEL_SOURCING?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginPluginOptionsGatsbyRemarkPlugins = {
@@ -5227,11 +5667,29 @@ export type SoftwareJsonConnection = {
   nodes: Array<SoftwareJson>;
   pageInfo: PageInfo;
   distinct: Array<Scalars['String']>;
+  max?: Maybe<Scalars['Float']>;
+  min?: Maybe<Scalars['Float']>;
+  sum?: Maybe<Scalars['Float']>;
   group: Array<SoftwareJsonGroupConnection>;
 };
 
 
 export type SoftwareJsonConnectionDistinctArgs = {
+  field: SoftwareJsonFieldsEnum;
+};
+
+
+export type SoftwareJsonConnectionMaxArgs = {
+  field: SoftwareJsonFieldsEnum;
+};
+
+
+export type SoftwareJsonConnectionMinArgs = {
+  field: SoftwareJsonFieldsEnum;
+};
+
+
+export type SoftwareJsonConnectionSumArgs = {
   field: SoftwareJsonFieldsEnum;
 };
 
