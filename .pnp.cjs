@@ -138,7 +138,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-visibility-sensor", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.1"],
             ["reading-time", "npm:1.3.0"],
             ["remark-unwrap-images", "npm:2.0.0"],
-            ["server", "npm:1.0.32"],
+            ["server", "npm:1.0.33"],
             ["shallow-compare", "npm:1.2.2"],
             ["stack-trace", "npm:0.0.10"],
             ["styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.3.0"],
@@ -23819,7 +23819,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-visibility-sensor", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.1"],
             ["reading-time", "npm:1.3.0"],
             ["remark-unwrap-images", "npm:2.0.0"],
-            ["server", "npm:1.0.32"],
+            ["server", "npm:1.0.33"],
             ["shallow-compare", "npm:1.2.2"],
             ["stack-trace", "npm:0.0.10"],
             ["styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.3.0"],
@@ -28897,10 +28897,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["server", [
-        ["npm:1.0.32", {
-          "packageLocation": "./.yarn/cache/server-npm-1.0.32-0a97f9112c-025cfe0415.zip/node_modules/server/",
+        ["npm:1.0.33", {
+          "packageLocation": "./.yarn/cache/server-npm-1.0.33-c27aff8c3c-6cf639362b.zip/node_modules/server/",
           "packageDependencies": [
-            ["server", "npm:1.0.32"],
+            ["server", "npm:1.0.33"],
             ["body-parser", "npm:1.19.0"],
             ["compression", "npm:1.7.4"],
             ["connect-redis", "npm:3.4.2"],
