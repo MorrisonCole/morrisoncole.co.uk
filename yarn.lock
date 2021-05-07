@@ -11451,9 +11451,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby@npm:3.4.1":
-  version: 3.4.1
-  resolution: "gatsby@npm:3.4.1"
+"gatsby@npm:3.4.2":
+  version: 3.4.2
+  resolution: "gatsby@npm:3.4.2"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -11614,7 +11614,7 @@ fsevents@~2.3.1:
     react-dom: ^16.9.0 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: adabc2056a6b6c34e5b47e3cf9ddf6bae19681d18113c96359cb4bad95b92c4da8eddb050d59288088d671d275322882a619d8c4fc2a2875aee543df29904786
+  checksum: b88aff670531dcefe3c4ad300df11999f226d580f4d81f40615f5f89e00e6885c056fcb6c015920c90b9bf2244149e1d79e63a8bd596606bcfdeaef75e56d8ba
   languageName: node
   linkType: hard
 
@@ -16546,7 +16546,7 @@ fsevents@~2.3.1:
     eslint-plugin-react: 7.23.2
     event-source-polyfill: 1.0.24
     express: 4.17.1
-    gatsby: 3.4.1
+    gatsby: 3.4.2
     gatsby-cli: 3.4.1
     gatsby-image: 3.4.0
     gatsby-legacy-polyfills: 1.4.0
