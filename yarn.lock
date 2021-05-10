@@ -16629,7 +16629,7 @@ fsevents@~2.3.1:
     typeface-merriweather: 1.1.13
     typeface-montserrat: 1.1.13
     typescript: 4.2.4
-    typography: 0.16.19
+    typography: 0.16.21
     yaml: 1.10.2
   languageName: unknown
   linkType: soft
@@ -23149,9 +23149,9 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"typography@npm:0.16.19":
-  version: 0.16.19
-  resolution: "typography@npm:0.16.19"
+"typography@npm:0.16.21":
+  version: 0.16.21
+  resolution: "typography@npm:0.16.21"
   dependencies:
     compass-vertical-rhythm: ^1.4.5
     decamelize: ^1.2.0
@@ -23160,7 +23160,7 @@ typescript@4.2.4:
     modularscale: ^1.0.2
     object-assign: ^4.1.0
     typography-normalize: ^0.16.19
-  checksum: 83e96dc87b66f2edaf19117627893bc6070030487ed52fbd422a9edcf2a8c882197c5921628512af1b8be248a27ccd2490e8940b630c129a968a0956f921b250
+  checksum: cad1a696fcd22c104c2a48f7f940facc3d6b7ccde9253b72bf02ffe6350dcb2bb484da9d8934223bdbcec8e4d3b4d0a2badffc3695b74fdf997689e07d772643
   languageName: node
   linkType: hard
 
