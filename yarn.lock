@@ -3868,12 +3868,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.3":
-  version: 17.0.3
-  resolution: "@types/react-dom@npm:17.0.3"
+"@types/react-dom@npm:17.0.4":
+  version: 17.0.4
+  resolution: "@types/react-dom@npm:17.0.4"
   dependencies:
     "@types/react": "*"
-  checksum: 102a3ee9ecf96fdd82d37d90860d0b80e160a368117e4e84512c801f8c7f381d7a2b9305f155670f42eab4784d036375cbf16c9905839dd0857e7031ff966803
+  checksum: 871ffb0dbd2ee4b73023ae3f32bf9df69549ccfb0d47451769c476a495437c55f198128ecbee8417c41a8fa8762f2153e53f9d4eac1853de5b9ef7b02b9c07f9
   languageName: node
   linkType: hard
 
@@ -16543,7 +16543,7 @@ fsevents@~2.3.1:
     "@types/prismjs": 1.16.5
     "@types/prop-types": 15.7.3
     "@types/react": 17.0.5
-    "@types/react-dom": 17.0.3
+    "@types/react-dom": 17.0.4
     "@types/react-helmet": 6.1.1
     "@types/react-is": 17.0.0
     "@types/server": 1.0.3
