@@ -16617,7 +16617,7 @@ fsevents@~2.3.1:
     react-intersection-observer: 8.31.1
     react-is: 17.0.2
     react-live: 2.2.3
-    react-typography: 0.16.19
+    react-typography: 0.16.20
     react-visibility-sensor: 5.1.1
     reading-time: 1.3.0
     remark-unwrap-images: 2.0.0
@@ -19694,12 +19694,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-typography@npm:0.16.19":
-  version: 0.16.19
-  resolution: "react-typography@npm:0.16.19"
+"react-typography@npm:0.16.20":
+  version: 0.16.20
+  resolution: "react-typography@npm:0.16.20"
   peerDependencies:
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0
-  checksum: a56c77ee999ccc50a957ddd948ff9347f6fff9fb76fcb23af132d6e79f48cb34c0417c7382b33e7039e611c9eb4194b900f5500ed5fa71977112046962768de3
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: 610f59de95dda917d5c48668b829d2eea4f255f381258663a81717f7360f84574061362b68a1be1c3b519c6b0b1df9659262af07f9b4fe55a95a5b8d372a6234
   languageName: node
   linkType: hard
 
