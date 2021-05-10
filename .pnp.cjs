@@ -146,7 +146,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typeface-merriweather", "npm:1.1.13"],
             ["typeface-montserrat", "npm:1.1.13"],
             ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=34ad7d"],
-            ["typography", "npm:0.16.19"],
+            ["typography", "npm:0.16.21"],
             ["yaml", "npm:1.10.2"]
           ],
           "linkType": "SOFT",
@@ -17695,7 +17695,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"],
             ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
-            ["typography", "npm:0.16.19"]
+            ["typography", "npm:0.16.21"]
           ],
           "packagePeers": [
             "@types/gatsby",
@@ -23843,7 +23843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typeface-merriweather", "npm:1.1.13"],
             ["typeface-montserrat", "npm:1.1.13"],
             ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=34ad7d"],
-            ["typography", "npm:0.16.19"],
+            ["typography", "npm:0.16.21"],
             ["yaml", "npm:1.10.2"]
           ],
           "linkType": "SOFT",
@@ -31271,10 +31271,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typography", [
-        ["npm:0.16.19", {
-          "packageLocation": "./.yarn/cache/typography-npm-0.16.19-d785911664-83e96dc87b.zip/node_modules/typography/",
+        ["npm:0.16.21", {
+          "packageLocation": "./.yarn/cache/typography-npm-0.16.21-ecc9a1d6c6-cad1a696fc.zip/node_modules/typography/",
           "packageDependencies": [
-            ["typography", "npm:0.16.19"],
+            ["typography", "npm:0.16.21"],
             ["compass-vertical-rhythm", "npm:1.4.5"],
             ["decamelize", "npm:1.2.0"],
             ["gray-percentage", "npm:2.0.0"],
