@@ -134,7 +134,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.31.1"],
             ["react-is", "npm:17.0.2"],
             ["react-live", "npm:2.2.3"],
-            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.19"],
+            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
             ["react-visibility-sensor", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.1"],
             ["reading-time", "npm:1.3.0"],
             ["remark-unwrap-images", "npm:2.0.0"],
@@ -17694,7 +17694,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.2"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"],
-            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.19"],
+            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
             ["typography", "npm:0.16.19"]
           ],
           "packagePeers": [
@@ -23831,7 +23831,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.31.1"],
             ["react-is", "npm:17.0.2"],
             ["react-live", "npm:2.2.3"],
-            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.19"],
+            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
             ["react-visibility-sensor", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.1"],
             ["reading-time", "npm:1.3.0"],
             ["remark-unwrap-images", "npm:2.0.0"],
@@ -27427,17 +27427,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["react-typography", [
-        ["npm:0.16.19", {
-          "packageLocation": "./.yarn/cache/react-typography-npm-0.16.19-035a20c64b-a56c77ee99.zip/node_modules/react-typography/",
+        ["npm:0.16.20", {
+          "packageLocation": "./.yarn/cache/react-typography-npm-0.16.20-645a8294d5-610f59de95.zip/node_modules/react-typography/",
           "packageDependencies": [
-            ["react-typography", "npm:0.16.19"]
+            ["react-typography", "npm:0.16.20"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.19", {
-          "packageLocation": "./.yarn/__virtual__/react-typography-virtual-5ce083c19c/0/cache/react-typography-npm-0.16.19-035a20c64b-a56c77ee99.zip/node_modules/react-typography/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20", {
+          "packageLocation": "./.yarn/__virtual__/react-typography-virtual-2cbb24236b/0/cache/react-typography-npm-0.16.20-645a8294d5-610f59de95.zip/node_modules/react-typography/",
           "packageDependencies": [
-            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.19"],
+            ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
             ["@types/react", "npm:17.0.5"],
             ["react", "npm:17.0.2"]
           ],
