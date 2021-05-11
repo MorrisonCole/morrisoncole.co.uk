@@ -11337,9 +11337,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-autolink-headers@npm:4.1.0":
-  version: 4.1.0
-  resolution: "gatsby-remark-autolink-headers@npm:4.1.0"
+"gatsby-remark-autolink-headers@npm:4.2.0":
+  version: 4.2.0
+  resolution: "gatsby-remark-autolink-headers@npm:4.2.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     github-slugger: ^1.3.0
@@ -11350,7 +11350,7 @@ fsevents@~2.3.1:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: ec5603e87b12f5f39b8246b700addea86b53e471df4f03b17dd784dc1fc0f380aee9d8d070b30625407ee77ab9d1ecaf9d359ac3056dc687e3ea9931c14baaeb
+  checksum: fc5c1eedf1377f8b1678f7b071031fd6b2b6354fcf5b00048d33e95ee8132787774e7b62dcbee4f94a1b8f64ea9b7484a89db62487a83c2cede3b7fc37cad583
   languageName: node
   linkType: hard
 
@@ -16659,7 +16659,7 @@ fsevents@~2.3.1:
     gatsby-plugin-typography: 3.5.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.4.0
-    gatsby-remark-autolink-headers: 4.1.0
+    gatsby-remark-autolink-headers: 4.2.0
     gatsby-remark-copy-linked-files: 4.1.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.1.0
