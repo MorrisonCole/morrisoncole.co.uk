@@ -5462,16 +5462,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:3.4.0"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^3.0.0-next.0
-  checksum: 9984d0d87b9e1afe5bc4f504852b8a7f1aa1e1b0237716c6cb39725a646fae7874b55a85c90a1ffe49c3cfd9a4a53719539a5d4280d8e6d24f2158af4dae8a80
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^3.5.0":
   version: 3.5.0
   resolution: "babel-plugin-remove-graphql-queries@npm:3.5.0"
@@ -11553,9 +11543,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-transformer-sharp@npm:3.4.0"
+"gatsby-transformer-sharp@npm:3.5.0":
+  version: 3.5.0
+  resolution: "gatsby-transformer-sharp@npm:3.5.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     bluebird: ^3.7.2
@@ -11568,7 +11558,7 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 37b53199c7fb1df1fbcbfd6910fd9a2f5022c549beb294825121c1018e33ebc1358f5140b30d231f0ec7e8380dbd267438a3a39506206485d249541afd31304b
+  checksum: f4b2cc3fc79d89c381b81ac64b01b5e0c2646acd0fe5da4eae991930a71e88633c2c3fa637ff3f6bee4383a0141ba158b17d20fca891ea4018e9ed43a4348115
   languageName: node
   linkType: hard
 
@@ -16688,7 +16678,7 @@ fsevents@~2.3.1:
     gatsby-source-filesystem: 3.4.0
     gatsby-transformer-json: 3.5.0
     gatsby-transformer-remark: 4.2.0
-    gatsby-transformer-sharp: 3.4.0
+    gatsby-transformer-sharp: 3.5.0
     graphql: 15.5.0
     graphql-import: 1.0.2
     lodash: 4.17.21
