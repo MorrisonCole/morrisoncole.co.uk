@@ -108,7 +108,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-copy-linked-files", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-embed-video", "npm:3.1.1"],
-            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.0"],
+            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0"],
             ["gatsby-remark-responsive-iframe", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-smartypants", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],
@@ -10696,13 +10696,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["babel-plugin-remove-graphql-queries", [
-        ["npm:3.4.0", {
-          "packageLocation": "./.yarn/cache/babel-plugin-remove-graphql-queries-npm-3.4.0-b2ab1d1b60-9984d0d87b.zip/node_modules/babel-plugin-remove-graphql-queries/",
-          "packageDependencies": [
-            ["babel-plugin-remove-graphql-queries", "npm:3.4.0"]
-          ],
-          "linkType": "SOFT",
-        }],
         ["npm:3.5.0", {
           "packageLocation": "./.yarn/cache/babel-plugin-remove-graphql-queries-npm-3.5.0-99a4755060-8b3f6bea31.zip/node_modules/babel-plugin-remove-graphql-queries/",
           "packageDependencies": [
@@ -18055,24 +18048,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-remark-images", [
-        ["npm:5.1.0", {
-          "packageLocation": "./.yarn/cache/gatsby-remark-images-npm-5.1.0-ed6c08361e-22c1f88d89.zip/node_modules/gatsby-remark-images/",
+        ["npm:5.2.0", {
+          "packageLocation": "./.yarn/cache/gatsby-remark-images-npm-5.2.0-ffdbc6121c-3052b938c1.zip/node_modules/gatsby-remark-images/",
           "packageDependencies": [
-            ["gatsby-remark-images", "npm:5.1.0"]
+            ["gatsby-remark-images", "npm:5.2.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-remark-images-virtual-1cfb2e5d52/0/cache/gatsby-remark-images-npm-5.1.0-ed6c08361e-22c1f88d89.zip/node_modules/gatsby-remark-images/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-remark-images-virtual-44a72eee9f/0/cache/gatsby-remark-images-npm-5.2.0-ffdbc6121c-3052b938c1.zip/node_modules/gatsby-remark-images/",
           "packageDependencies": [
-            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.0"],
+            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0"],
             ["@babel/runtime", "npm:7.13.10"],
             ["@types/gatsby", null],
             ["@types/gatsby-plugin-sharp", null],
             ["chalk", "npm:4.1.0"],
             ["cheerio", "npm:1.0.0-rc.5"],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
-            ["gatsby-core-utils", "npm:2.4.0"],
+            ["gatsby-core-utils", "npm:2.5.0"],
             ["gatsby-plugin-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
             ["is-relative-url", "npm:3.0.0"],
             ["lodash", "npm:4.17.21"],
@@ -23923,7 +23916,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-copy-linked-files", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-embed-video", "npm:3.1.1"],
-            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.1.0"],
+            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0"],
             ["gatsby-remark-responsive-iframe", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-smartypants", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.4.0"],

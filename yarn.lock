@@ -5462,16 +5462,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:3.4.0"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^3.0.0-next.0
-  checksum: 9984d0d87b9e1afe5bc4f504852b8a7f1aa1e1b0237716c6cb39725a646fae7874b55a85c90a1ffe49c3cfd9a4a53719539a5d4280d8e6d24f2158af4dae8a80
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^3.5.0":
   version: 3.5.0
   resolution: "babel-plugin-remove-graphql-queries@npm:3.5.0"
@@ -11413,14 +11403,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:5.1.0":
-  version: 5.1.0
-  resolution: "gatsby-remark-images@npm:5.1.0"
+"gatsby-remark-images@npm:5.2.0":
+  version: 5.2.0
+  resolution: "gatsby-remark-images@npm:5.2.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     chalk: ^4.1.0
     cheerio: ^1.0.0-rc.3
-    gatsby-core-utils: ^2.4.0
+    gatsby-core-utils: ^2.5.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -11431,7 +11421,7 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 22c1f88d894c73a9cc7d7a4af85630ee6b6045a343632bd798073b5af2e26ade09fbe5aeb30cbd22500af88db56cc6c7f02c8b1bd55340b3c9c6d49f4686ee38
+  checksum: 3052b938c17a22323eabb19b1bff8b9414dcc2664c9933fd4cfa5880e91575c83b5c47f1051e862e11c36b5a66d19352558920aaf92d0a8cd14e0cce4e123c08
   languageName: node
   linkType: hard
 
@@ -16682,7 +16672,7 @@ fsevents@~2.3.1:
     gatsby-remark-autolink-headers: 4.2.0
     gatsby-remark-copy-linked-files: 4.2.0
     gatsby-remark-embed-video: 3.1.1
-    gatsby-remark-images: 5.1.0
+    gatsby-remark-images: 5.2.0
     gatsby-remark-responsive-iframe: 4.2.0
     gatsby-remark-smartypants: 4.2.0
     gatsby-source-filesystem: 3.4.0
