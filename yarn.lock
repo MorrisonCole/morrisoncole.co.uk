@@ -11501,15 +11501,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-json@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-transformer-json@npm:3.4.0"
+"gatsby-transformer-json@npm:3.5.0":
+  version: 3.5.0
+  resolution: "gatsby-transformer-json@npm:3.5.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     bluebird: ^3.7.2
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: cb57fd7dd9836bcd47695d9b8fa60b4b220df3a09b1eb72f1a82cbe964832c133706ae3273a6974fbc33f0851e8fe8cbfdb68f020b7e4d81b0eab684bcc80611
+  checksum: b637fb84d808716083e4ea08211d3d59369f63c85253b9ff484cc0d81ffb7916bb13a7b73c4dea21a6a97ea57f4b027de449ae5fc83d418f743280ba87e5b9a2
   languageName: node
   linkType: hard
 
@@ -16666,7 +16666,7 @@ fsevents@~2.3.1:
     gatsby-remark-responsive-iframe: 4.1.0
     gatsby-remark-smartypants: 4.2.0
     gatsby-source-filesystem: 3.4.0
-    gatsby-transformer-json: 3.4.0
+    gatsby-transformer-json: 3.5.0
     gatsby-transformer-remark: 4.1.0
     gatsby-transformer-sharp: 3.4.0
     graphql: 15.5.0
