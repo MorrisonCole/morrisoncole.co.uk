@@ -10816,14 +10816,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-canonical-urls@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-plugin-canonical-urls@npm:3.4.0"
+"gatsby-plugin-canonical-urls@npm:3.5.0":
+  version: 3.5.0
+  resolution: "gatsby-plugin-canonical-urls@npm:3.5.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 61a7b56d4a1dd566d7606a92795021df14cae47d0b2664c86e080cfda1cf78e103e4c1e3d8474a0727107c073deba35dc1df7227403461f9f917c98d3b2c2558
+  checksum: 761750c4140a0935ff3337f7ad80f3acf80fed8c52a4592af061f94155ba9e217d1bdac06952757571ebe48c72a3dc8918704ea4525d8edec9f7e3b0cca34d49
   languageName: node
   linkType: hard
 
@@ -16597,7 +16597,7 @@ fsevents@~2.3.1:
     gatsby-image: 3.5.0
     gatsby-legacy-polyfills: 1.5.0
     gatsby-link: 3.5.0
-    gatsby-plugin-canonical-urls: 3.4.0
+    gatsby-plugin-canonical-urls: 3.5.0
     gatsby-plugin-feed: 3.5.0
     gatsby-plugin-google-tagmanager: 3.4.0
     gatsby-plugin-image: 1.4.1
