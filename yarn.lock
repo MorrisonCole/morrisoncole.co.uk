@@ -5462,16 +5462,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:3.4.0"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^3.0.0-next.0
-  checksum: 9984d0d87b9e1afe5bc4f504852b8a7f1aa1e1b0237716c6cb39725a646fae7874b55a85c90a1ffe49c3cfd9a4a53719539a5d4280d8e6d24f2158af4dae8a80
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^3.5.0":
   version: 3.5.0
   resolution: "babel-plugin-remove-graphql-queries@npm:3.5.0"
@@ -11182,9 +11172,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:4.4.0":
-  version: 4.4.0
-  resolution: "gatsby-plugin-styled-components@npm:4.4.0"
+"gatsby-plugin-styled-components@npm:4.5.0":
+  version: 4.5.0
+  resolution: "gatsby-plugin-styled-components@npm:4.5.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
@@ -11193,7 +11183,7 @@ fsevents@~2.3.1:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
     styled-components: ">=2.0.0"
-  checksum: 48a4be40f67ed44d2a8b36bc7e562ed13e6eb321f08b48e35c80b2a7bf3f39f0357b83f5839f71d7b8aa0360801291689e31b5fe58f6764ba491f81473f0b7fd
+  checksum: d70341e91ffe2bf3513eac05bb39d89f14d098ad17752191bcc843bd39c5cf2e56bc690aac065841c77c8af9e2f6ffa307218fa727190ec58b6b5f334a32291f
   languageName: node
   linkType: hard
 
@@ -16673,7 +16663,7 @@ fsevents@~2.3.1:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.5.0
     gatsby-plugin-sitemap: 4.0.0
-    gatsby-plugin-styled-components: 4.4.0
+    gatsby-plugin-styled-components: 4.5.0
     gatsby-plugin-ts-config: 1.1.5
     gatsby-plugin-typescript: 3.5.0
     gatsby-plugin-typography: 3.5.0
