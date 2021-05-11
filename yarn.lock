@@ -10851,22 +10851,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-link@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-link@npm:3.4.0"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-    "@types/reach__router": ^1.3.7
-    prop-types: ^15.7.2
-  peerDependencies:
-    "@gatsbyjs/reach-router": ^1.3.5
-    react: ^16.9.0 || ^17.0.0
-    react-dom: ^16.9.0 || ^17.0.0
-  checksum: bbde6513956c8c37cd8c0c6ff72b50dd04dabe60cbfd9f075dc9c1577b566af4fd50c78d7f41d89930ecead21dce6be303fd885ac7094a8be09784f74184dafd
-  languageName: node
-  linkType: hard
-
-"gatsby-link@npm:^3.5.0":
+"gatsby-link@npm:3.5.0, gatsby-link@npm:^3.5.0":
   version: 3.5.0
   resolution: "gatsby-link@npm:3.5.0"
   dependencies:
@@ -16776,7 +16761,7 @@ fsevents@~2.3.1:
     gatsby-cli: 3.4.1
     gatsby-image: 3.5.0
     gatsby-legacy-polyfills: 1.4.0
-    gatsby-link: 3.4.0
+    gatsby-link: 3.5.0
     gatsby-plugin-canonical-urls: 3.4.0
     gatsby-plugin-feed: 3.4.0
     gatsby-plugin-google-tagmanager: 3.4.0
