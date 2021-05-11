@@ -11558,9 +11558,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-smartypants@npm:4.1.0":
-  version: 4.1.0
-  resolution: "gatsby-remark-smartypants@npm:4.1.0"
+"gatsby-remark-smartypants@npm:4.2.0":
+  version: 4.2.0
+  resolution: "gatsby-remark-smartypants@npm:4.2.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     retext: ^7.0.1
@@ -11568,7 +11568,7 @@ fsevents@~2.3.1:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 0c67bec41e18bc6c49e4404c3a0193e118d611f256dd5a453d70534d51943aa73acf6f923075988cb09d51b5dbdc409b794a7c45c546ac7204217da66e674b41
+  checksum: 0f73f9e44b8df66f9163dfbabebce06e68b8d96062eae9c7519beedbc62afcd689655bce8226d02f704bd17d7cc920de4a4fe693c89bb3468c628320e9667b92
   languageName: node
   linkType: hard
 
@@ -16802,7 +16802,7 @@ fsevents@~2.3.1:
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.1.0
     gatsby-remark-responsive-iframe: 4.1.0
-    gatsby-remark-smartypants: 4.1.0
+    gatsby-remark-smartypants: 4.2.0
     gatsby-source-filesystem: 3.4.0
     gatsby-transformer-json: 3.4.0
     gatsby-transformer-remark: 4.1.0
