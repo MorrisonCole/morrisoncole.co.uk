@@ -11155,24 +11155,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-plugin-typescript@npm:3.4.0"
-  dependencies:
-    "@babel/core": ^7.12.3
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.12.1
-    "@babel/plugin-proposal-numeric-separator": ^7.12.5
-    "@babel/plugin-proposal-optional-chaining": ^7.12.1
-    "@babel/preset-typescript": ^7.12.1
-    "@babel/runtime": ^7.12.5
-    babel-plugin-remove-graphql-queries: ^3.4.0
-  peerDependencies:
-    gatsby: ^3.0.0-next.0
-  checksum: a855da568b18ee00ecb9da81732617c595f8bad87beafb1161ce3f4bdbd1300948d179bbc0551a275eb6d95e67f385e9f12cdeb7e6c46c93254607123c447bc1
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-typescript@npm:^3.5.0":
+"gatsby-plugin-typescript@npm:3.5.0, gatsby-plugin-typescript@npm:^3.5.0":
   version: 3.5.0
   resolution: "gatsby-plugin-typescript@npm:3.5.0"
   dependencies:
@@ -16613,7 +16596,7 @@ fsevents@~2.3.1:
     gatsby-plugin-sitemap: 4.0.0
     gatsby-plugin-styled-components: 4.4.0
     gatsby-plugin-ts-config: 1.1.5
-    gatsby-plugin-typescript: 3.4.0
+    gatsby-plugin-typescript: 3.5.0
     gatsby-plugin-typography: 3.5.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.4.0
