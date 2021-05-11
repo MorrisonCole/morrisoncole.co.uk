@@ -10905,18 +10905,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-plugin-manifest@npm:3.4.0"
+"gatsby-plugin-manifest@npm:3.5.0":
+  version: 3.5.0
+  resolution: "gatsby-plugin-manifest@npm:3.5.0"
   dependencies:
     "@babel/runtime": ^7.12.5
-    gatsby-core-utils: ^2.4.0
-    gatsby-plugin-utils: ^1.4.0
-    semver: ^7.3.2
-    sharp: ^0.28.0
+    gatsby-core-utils: ^2.5.0
+    gatsby-plugin-utils: ^1.5.0
+    semver: ^7.3.5
+    sharp: ^0.28.1
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 9dfdb28609940be1b93700d66ac99a054cf8c49d20733ea7af8df93639d1ee6538f41885d641ee199d36fe51cc7f1feb277fab7c311eac4db76d8d001a30e292
+  checksum: c03a42c9b792bf7af353412ab8d505b19bf71d92f7537aef73cb91010e865d50d7f7c3fbb7cd53daa6cf2b1e7c4857b6e8368257cfe799698654b9bb2e92549e
   languageName: node
   linkType: hard
 
@@ -11210,17 +11210,6 @@ fsevents@~2.3.1:
     react-typography: ^0.16.1 || ^1.0.0-alpha.0
     typography: ^0.16.0 || ^1.0.0-alpha.0
   checksum: 12ca362e8bcfba2c8ce172d4f2466d45e0554f56e37165431a9943db2d231e2c4cf22a8b30de73d953dc2b12c9627e8d3bdbc832f9b5d2bea2b2093451093533
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "gatsby-plugin-utils@npm:1.4.0"
-  dependencies:
-    joi: ^17.2.1
-  peerDependencies:
-    gatsby: ^3.0.0-next.0
-  checksum: 45edb4f8aaa5ffeb30b4f886e869d794cbbef61e5495ca5f9ce6f85ef42636dd16d65368ddab378f1124f5327fdba8244fd7ac875363e70b76bbfab6dbfc4406
   languageName: node
   linkType: hard
 
@@ -16644,7 +16633,7 @@ fsevents@~2.3.1:
     gatsby-plugin-google-tagmanager: 3.4.0
     gatsby-plugin-image: 1.4.1
     gatsby-plugin-layout: 2.5.0
-    gatsby-plugin-manifest: 3.4.0
+    gatsby-plugin-manifest: 3.5.0
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.4.0
     gatsby-plugin-preconnect: 1.2.0
@@ -18991,6 +18980,30 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"prebuild-install@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "prebuild-install@npm:6.1.2"
+  dependencies:
+    detect-libc: ^1.0.3
+    expand-template: ^2.0.3
+    github-from-package: 0.0.0
+    minimist: ^1.2.3
+    mkdirp-classic: ^0.5.3
+    napi-build-utils: ^1.0.1
+    node-abi: ^2.21.0
+    noop-logger: ^0.1.1
+    npmlog: ^4.0.1
+    pump: ^3.0.0
+    rc: ^1.2.7
+    simple-get: ^3.0.3
+    tar-fs: ^2.0.0
+    tunnel-agent: ^0.6.0
+  bin:
+    prebuild-install: ./bin.js
+  checksum: db205c9f408cdfc13a6ad0dbc88bc7aeed76fb5ccb232f1eb515e6686da7f20f48831ca9142dcf38b2785f5906914371a95342032e54e421c08efa45785c80b6
+  languageName: node
+  linkType: hard
+
 "prelude-ls@npm:^1.2.1":
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
@@ -21280,6 +21293,23 @@ resolve@^2.0.0-next.3:
     tar-fs: ^2.1.1
     tunnel-agent: ^0.6.0
   checksum: fa0c0ad8116e461c85580c20c1dee98e89e5d5222abccb5377d27f02304e0d488a128b3a95ad36b7b3897fbf84197ea862312e12c9a3bb20f2a4383a13d35f02
+  languageName: node
+  linkType: hard
+
+"sharp@npm:^0.28.1":
+  version: 0.28.2
+  resolution: "sharp@npm:0.28.2"
+  dependencies:
+    color: ^3.1.3
+    detect-libc: ^1.0.3
+    node-addon-api: ^3.1.0
+    node-gyp: latest
+    prebuild-install: ^6.1.2
+    semver: ^7.3.5
+    simple-get: ^3.1.0
+    tar-fs: ^2.1.1
+    tunnel-agent: ^0.6.0
+  checksum: 24677f7444ae19781e205acd0219eb10f3eba81d9380766a3cc4ea0b768bbf18ce705b698f9af65d7c4996b7191509451c16ced4999443f9b11bb4a12b6ec655
   languageName: node
   linkType: hard
 
