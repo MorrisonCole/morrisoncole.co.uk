@@ -10855,16 +10855,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-tagmanager@npm:3.4.0":
-  version: 3.4.0
-  resolution: "gatsby-plugin-google-tagmanager@npm:3.4.0"
+"gatsby-plugin-google-tagmanager@npm:3.5.0":
+  version: 3.5.0
+  resolution: "gatsby-plugin-google-tagmanager@npm:3.5.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: ff7b424dd18c685d9d6f4ae0c08cef8bcadd761f15bb3b720a4b40127c0bc67ce56c927b2b4a21778b9a4690a10179ed1318299781ab9dba0de0ea416f74afe2
+  checksum: a01a0b3d7e630d4ae261d94c466f97aeb9d1fc1213b7e8a81a1423c80374502b11a8305cabd069609c7a6d7805b2c77a563c2da608a0e320df12d40b7034b499
   languageName: node
   linkType: hard
 
@@ -11454,28 +11454,6 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
   checksum: ddad2a5493467a4b20f7b6d7817666a333caac5c13d3ce73034fdd33c1bc901c28afac44da84d0644a8ba1962e874584182fcdb0f3483870e32cfabfb2275cd5
-  languageName: node
-  linkType: hard
-
-"gatsby-telemetry@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "gatsby-telemetry@npm:2.4.1"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@turist/fetch": ^7.1.7
-    "@turist/time": ^0.0.1
-    async-retry-ng: ^2.0.1
-    boxen: ^4.2.0
-    configstore: ^5.0.1
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.4.0
-    git-up: ^4.0.2
-    is-docker: ^2.1.1
-    lodash: ^4.17.21
-    node-fetch: ^2.6.1
-    uuid: 3.4.0
-  checksum: 1aabd69eb11ee9fe478a15184319ed3a7f9adb684cfb1379133a317627be66b723d8db5ea267216d7c5ce96ea12568170f542e63c5baff68808aeee9913ee05d
   languageName: node
   linkType: hard
 
@@ -16641,7 +16619,7 @@ fsevents@~2.3.1:
     gatsby-link: 3.5.0
     gatsby-plugin-canonical-urls: 3.4.0
     gatsby-plugin-feed: 3.5.0
-    gatsby-plugin-google-tagmanager: 3.4.0
+    gatsby-plugin-google-tagmanager: 3.5.0
     gatsby-plugin-image: 1.4.1
     gatsby-plugin-layout: 2.5.0
     gatsby-plugin-manifest: 3.4.0
