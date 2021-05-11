@@ -10767,12 +10767,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-legacy-polyfills@npm:1.4.0":
-  version: 1.4.0
-  resolution: "gatsby-legacy-polyfills@npm:1.4.0"
+"gatsby-legacy-polyfills@npm:1.5.0, gatsby-legacy-polyfills@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "gatsby-legacy-polyfills@npm:1.5.0"
   dependencies:
     core-js-compat: 3.9.0
-  checksum: 65462a9b46e10a96232c93b2594a4f27dad7daaa6b7f025ebe8a14d0e28b1f3050158127ce848ba3251e799c6cde62ba9026623cbd3a9a831fa836d9d97602e1
+  checksum: 7ff777a4064f432856f5529c12f6053f61546043cfae577668425d6c242f735ab9cc75d11b9f8943da95707687f49d72806096e02004e2f06adad832c906cb3c
   languageName: node
   linkType: hard
 
@@ -10782,15 +10782,6 @@ fsevents@~2.3.1:
   dependencies:
     core-js-compat: 3.9.0
   checksum: 1d1e2caddb727cbf0349ef7908d14de28ab7611a8df0d3c5c9f5a3abe7685c368d72306864113c811dabf1cea74207dd3edf192aefc924e49db7b5480bda06cf
-  languageName: node
-  linkType: hard
-
-"gatsby-legacy-polyfills@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "gatsby-legacy-polyfills@npm:1.5.0"
-  dependencies:
-    core-js-compat: 3.9.0
-  checksum: 7ff777a4064f432856f5529c12f6053f61546043cfae577668425d6c242f735ab9cc75d11b9f8943da95707687f49d72806096e02004e2f06adad832c906cb3c
   languageName: node
   linkType: hard
 
@@ -11443,28 +11434,6 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
   checksum: ddad2a5493467a4b20f7b6d7817666a333caac5c13d3ce73034fdd33c1bc901c28afac44da84d0644a8ba1962e874584182fcdb0f3483870e32cfabfb2275cd5
-  languageName: node
-  linkType: hard
-
-"gatsby-telemetry@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "gatsby-telemetry@npm:2.4.1"
-  dependencies:
-    "@babel/code-frame": ^7.10.4
-    "@babel/runtime": ^7.12.5
-    "@turist/fetch": ^7.1.7
-    "@turist/time": ^0.0.1
-    async-retry-ng: ^2.0.1
-    boxen: ^4.2.0
-    configstore: ^5.0.1
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.4.0
-    git-up: ^4.0.2
-    is-docker: ^2.1.1
-    lodash: ^4.17.21
-    node-fetch: ^2.6.1
-    uuid: 3.4.0
-  checksum: 1aabd69eb11ee9fe478a15184319ed3a7f9adb684cfb1379133a317627be66b723d8db5ea267216d7c5ce96ea12568170f542e63c5baff68808aeee9913ee05d
   languageName: node
   linkType: hard
 
@@ -16626,7 +16595,7 @@ fsevents@~2.3.1:
     gatsby: 3.5.0
     gatsby-cli: 3.5.0
     gatsby-image: 3.5.0
-    gatsby-legacy-polyfills: 1.4.0
+    gatsby-legacy-polyfills: 1.5.0
     gatsby-link: 3.5.0
     gatsby-plugin-canonical-urls: 3.4.0
     gatsby-plugin-feed: 3.5.0
