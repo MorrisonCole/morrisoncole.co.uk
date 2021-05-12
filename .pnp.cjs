@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/classnames", "npm:2.3.1"],
             ["@types/eslint", "npm:7.2.10"],
             ["@types/express", "npm:4.17.11"],
-            ["@types/lodash", "npm:4.14.168"],
+            ["@types/lodash", "npm:4.14.169"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:15.0.2"],
             ["@types/platform", "npm:1.3.3"],
@@ -8356,6 +8356,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.168-2d65abe211-3326966ee0.zip/node_modules/@types/lodash/",
           "packageDependencies": [
             ["@types/lodash", "npm:4.14.168"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.14.169", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.169-64630f427b-78c9e49f4c.zip/node_modules/@types/lodash/",
+          "packageDependencies": [
+            ["@types/lodash", "npm:4.14.169"]
           ],
           "linkType": "HARD",
         }]
@@ -17058,21 +17065,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.4.0", {
-          "packageLocation": "./.yarn/cache/gatsby-core-utils-npm-2.4.0-c4e6c4c401-c43d77099a.zip/node_modules/gatsby-core-utils/",
-          "packageDependencies": [
-            ["gatsby-core-utils", "npm:2.4.0"],
-            ["ci-info", "npm:2.0.0"],
-            ["configstore", "npm:5.0.1"],
-            ["file-type", "npm:16.3.0"],
-            ["fs-extra", "npm:8.1.0"],
-            ["node-object-hash", "npm:2.3.1"],
-            ["proper-lockfile", "npm:4.1.2"],
-            ["tmp", "npm:0.2.1"],
-            ["xdg-basedir", "npm:4.0.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:2.5.0", {
           "packageLocation": "./.yarn/cache/gatsby-core-utils-npm-2.5.0-cb4c1ec1f3-4fc29c95ed.zip/node_modules/gatsby-core-utils/",
           "packageDependencies": [
@@ -23860,7 +23852,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/classnames", "npm:2.3.1"],
             ["@types/eslint", "npm:7.2.10"],
             ["@types/express", "npm:4.17.11"],
-            ["@types/lodash", "npm:4.14.168"],
+            ["@types/lodash", "npm:4.14.169"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:15.0.2"],
             ["@types/platform", "npm:1.3.3"],
