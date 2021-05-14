@@ -131,7 +131,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"],
             ["react-helmet", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:6.1.0"],
-            ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.31.1"],
+            ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.32.0"],
             ["react-is", "npm:17.0.2"],
             ["react-live", "npm:2.2.3"],
             ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
@@ -23983,7 +23983,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"],
             ["react-helmet", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:6.1.0"],
-            ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.31.1"],
+            ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.32.0"],
             ["react-is", "npm:17.0.2"],
             ["react-live", "npm:2.2.3"],
             ["react-typography", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.16.20"],
@@ -27771,17 +27771,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["react-intersection-observer", [
-        ["npm:8.31.1", {
-          "packageLocation": "./.yarn/cache/react-intersection-observer-npm-8.31.1-fb9cf4012c-21bc879cc4.zip/node_modules/react-intersection-observer/",
+        ["npm:8.32.0", {
+          "packageLocation": "./.yarn/cache/react-intersection-observer-npm-8.32.0-f192ae1265-24eebbbc73.zip/node_modules/react-intersection-observer/",
           "packageDependencies": [
-            ["react-intersection-observer", "npm:8.31.1"]
+            ["react-intersection-observer", "npm:8.32.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.31.1", {
-          "packageLocation": "./.yarn/__virtual__/react-intersection-observer-virtual-f2bd5fe0a3/0/cache/react-intersection-observer-npm-8.31.1-fb9cf4012c-21bc879cc4.zip/node_modules/react-intersection-observer/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.32.0", {
+          "packageLocation": "./.yarn/__virtual__/react-intersection-observer-virtual-757bd1c7ba/0/cache/react-intersection-observer-npm-8.32.0-f192ae1265-24eebbbc73.zip/node_modules/react-intersection-observer/",
           "packageDependencies": [
-            ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.31.1"],
+            ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:8.32.0"],
             ["@types/react", "npm:17.0.5"],
             ["react", "npm:17.0.2"]
           ],
