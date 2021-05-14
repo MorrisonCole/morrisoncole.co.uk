@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/express", "npm:4.17.11"],
             ["@types/lodash", "npm:4.14.169"],
             ["@types/mdx-js__react", "npm:1.5.3"],
-            ["@types/node", "npm:15.0.3"],
+            ["@types/node", "npm:15.3.0"],
             ["@types/platform", "npm:1.3.3"],
             ["@types/prettier", "npm:2.2.3"],
             ["@types/prismjs", "npm:1.16.5"],
@@ -8489,10 +8489,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:15.0.3", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-15.0.3-c1e3679a3e-555d1ccfca.zip/node_modules/@types/node/",
+        ["npm:15.3.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-15.3.0-7ebc66d6bc-fb9d6c4e9b.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:15.0.3"]
+            ["@types/node", "npm:15.3.0"]
           ],
           "linkType": "HARD",
         }],
@@ -23906,7 +23906,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/express", "npm:4.17.11"],
             ["@types/lodash", "npm:4.14.169"],
             ["@types/mdx-js__react", "npm:1.5.3"],
-            ["@types/node", "npm:15.0.3"],
+            ["@types/node", "npm:15.3.0"],
             ["@types/platform", "npm:1.3.3"],
             ["@types/prettier", "npm:2.2.3"],
             ["@types/prismjs", "npm:1.16.5"],
