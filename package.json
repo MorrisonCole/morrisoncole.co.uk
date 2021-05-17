@@ -116,7 +116,7 @@
     "eslint-plugin-react": "7.23.2",
     "express": "4.17.1",
     "gatsby-plugin-ts-config": "1.1.5",
-    "open": "8.0.8",
+    "open": "8.0.9",
     "path": "0.12.7",
     "prettier": "2.3.0",
     "server": "1.0.33",
