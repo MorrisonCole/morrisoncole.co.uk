@@ -6706,7 +6706,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio@npm:^1.0.0-rc.8":
+"cheerio@npm:^1.0.0-rc.8, cheerio@npm:^1.0.0-rc.9":
   version: 1.0.0-rc.9
   resolution: "cheerio@npm:1.0.0-rc.9"
   dependencies:
@@ -11493,18 +11493,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-responsive-iframe@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-remark-responsive-iframe@npm:4.2.0"
+"gatsby-remark-responsive-iframe@npm:4.2.1":
+  version: 4.2.1
+  resolution: "gatsby-remark-responsive-iframe@npm:4.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
-    cheerio: ^1.0.0-rc.3
+    cheerio: ^1.0.0-rc.9
     common-tags: ^1.8.0
     lodash: ^4.17.21
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 02167ae1b113dbcb4985d9829a0c93fbdf63ca24610dd8f03634b0f0e02726b7e8f95c55324a6909299cdfb26615da449e6ccd37d45d3387fcbda0c899d1e97a
+  checksum: 5cee7f69622de8000e68d4b38bb289a903101d6d363465d985179b1ae385694d0ea4dde2e951912f6352f93d285e15af7982db3806d8b1ea3764498e1e41daa5
   languageName: node
   linkType: hard
 
@@ -16741,7 +16741,7 @@ fsevents@~2.3.1:
     gatsby-remark-copy-linked-files: 4.2.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.2.0
-    gatsby-remark-responsive-iframe: 4.2.0
+    gatsby-remark-responsive-iframe: 4.2.1
     gatsby-remark-smartypants: 4.2.0
     gatsby-source-filesystem: 3.5.0
     gatsby-transformer-json: 3.5.0
