@@ -6641,19 +6641,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cheerio-select-tmp@npm:^0.1.0":
-  version: 0.1.1
-  resolution: "cheerio-select-tmp@npm:0.1.1"
-  dependencies:
-    css-select: ^3.1.2
-    css-what: ^4.0.0
-    domelementtype: ^2.1.0
-    domhandler: ^4.0.0
-    domutils: ^2.4.4
-  checksum: 64f3c538b8a69bddac4ece5a1620f2f784f07cbfd4c6b171d7bcc5e7526ea139419a44a917f0d0b6bcb20485b14d35466802c04ed5b6d6b40533f0585a649f4b
-  languageName: node
-  linkType: hard
-
 "cheerio-select@npm:^1.4.0":
   version: 1.4.0
   resolution: "cheerio-select@npm:1.4.0"
@@ -6688,21 +6675,6 @@ __metadata:
     lodash.reject: ^4.4.0
     lodash.some: ^4.4.0
   checksum: b0a6cfa61eb7ae96e4cb8cfeeb14eb45bb790fa40098509268629c4cecca5b99124aabe6daa1154c497ac8def47bc3f9706cef5f0e8a6177a0c137d4bdaaf8b7
-  languageName: node
-  linkType: hard
-
-"cheerio@npm:^1.0.0-rc.3":
-  version: 1.0.0-rc.5
-  resolution: "cheerio@npm:1.0.0-rc.5"
-  dependencies:
-    cheerio-select-tmp: ^0.1.0
-    dom-serializer: ~1.2.0
-    domhandler: ^4.0.0
-    entities: ~2.1.0
-    htmlparser2: ^6.0.0
-    parse5: ^6.0.0
-    parse5-htmlparser2-tree-adapter: ^6.0.0
-  checksum: dcb0ee3102beb8b3bcc6a58333c987bd79d93e5d3ef18df21189e8663cbf955c8cd0accb8060ad7e30810db126bb6291f7ca62299536b3506d071c084f804755
   languageName: node
   linkType: hard
 
@@ -8678,7 +8650,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dom-serializer@npm:^1.0.1, dom-serializer@npm:~1.2.0":
+"dom-serializer@npm:^1.0.1":
   version: 1.2.0
   resolution: "dom-serializer@npm:1.2.0"
   dependencies:
@@ -8724,7 +8696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domelementtype@npm:^2.0.1, domelementtype@npm:^2.1.0, domelementtype@npm:^2.2.0":
+"domelementtype@npm:^2.0.1, domelementtype@npm:^2.2.0":
   version: 2.2.0
   resolution: "domelementtype@npm:2.2.0"
   checksum: 24cb386198640cd58aa36f8c987f2ea61859929106d06ffcc8f547e70cb2ed82a6dc56dcb8252b21fba1f1ea07df6e4356d60bfe57f77114ca1aed6828362629
@@ -8787,7 +8759,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"domutils@npm:^2.0.0, domutils@npm:^2.4.3, domutils@npm:^2.4.4":
+"domutils@npm:^2.0.0, domutils@npm:^2.4.3":
   version: 2.5.1
   resolution: "domutils@npm:2.5.1"
   dependencies:
@@ -9145,13 +9117,6 @@ __metadata:
   version: 2.2.0
   resolution: "entities@npm:2.2.0"
   checksum: 19010dacaf0912c895ea262b4f6128574f9ccf8d4b3b65c7e8334ad0079b3706376360e28d8843ff50a78aabcb8f08f0a32dbfacdc77e47ed77ca08b713669b3
-  languageName: node
-  linkType: hard
-
-"entities@npm:~2.1.0":
-  version: 2.1.0
-  resolution: "entities@npm:2.1.0"
-  checksum: a10a877e489586a3f6a691fe49bf3fc4e58f06c8e80522f08214a5150ba457e7017b447d4913a3fa041bda06ee4c92517baa4d8d75373eaa79369e9639225ffd
   languageName: node
   linkType: hard
 
@@ -11471,13 +11436,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:5.2.0":
-  version: 5.2.0
-  resolution: "gatsby-remark-images@npm:5.2.0"
+"gatsby-remark-images@npm:5.2.1":
+  version: 5.2.1
+  resolution: "gatsby-remark-images@npm:5.2.1"
   dependencies:
     "@babel/runtime": ^7.12.5
     chalk: ^4.1.0
-    cheerio: ^1.0.0-rc.3
+    cheerio: ^1.0.0-rc.9
     gatsby-core-utils: ^2.5.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
@@ -11489,7 +11454,7 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 3052b938c17a22323eabb19b1bff8b9414dcc2664c9933fd4cfa5880e91575c83b5c47f1051e862e11c36b5a66d19352558920aaf92d0a8cd14e0cce4e123c08
+  checksum: a84d8fcfcb8d2d12e36e03da08426ee5b2b5f6846339ce85aaf785d487c022c2d8aa3f0072df9470e067c7ece0f7ac1006348d69f4b48f9f2cf59e38e7b8d20a
   languageName: node
   linkType: hard
 
@@ -13009,18 +12974,6 @@ fsevents@~2.3.1:
     domutils: ^2.0.0
     entities: ^2.0.0
   checksum: 615fcf34ae74775eba9d2c7c54034201645ac4146dfe2889cda21939aa77806ad3aee27963ae72c5c2da23ce7b0b99b2533e1d9f327b74821cc11f755cc5153f
-  languageName: node
-  linkType: hard
-
-"htmlparser2@npm:^6.0.0":
-  version: 6.0.1
-  resolution: "htmlparser2@npm:6.0.1"
-  dependencies:
-    domelementtype: ^2.0.1
-    domhandler: ^4.0.0
-    domutils: ^2.4.4
-    entities: ^2.0.0
-  checksum: 2e270122d19ba108df4d9236033684d3d502153e90b70081790759823004f60b5e8157af405580f64d9fa39f3a032c0a4fac8f008c56ec818f13d4cbf2fa717a
   languageName: node
   linkType: hard
 
@@ -16740,7 +16693,7 @@ fsevents@~2.3.1:
     gatsby-remark-autolink-headers: 4.2.0
     gatsby-remark-copy-linked-files: 4.2.1
     gatsby-remark-embed-video: 3.1.1
-    gatsby-remark-images: 5.2.0
+    gatsby-remark-images: 5.2.1
     gatsby-remark-responsive-iframe: 4.2.1
     gatsby-remark-smartypants: 4.2.0
     gatsby-source-filesystem: 3.5.0
@@ -18158,7 +18111,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"parse5-htmlparser2-tree-adapter@npm:^6.0.0, parse5-htmlparser2-tree-adapter@npm:^6.0.1":
+"parse5-htmlparser2-tree-adapter@npm:^6.0.1":
   version: 6.0.1
   resolution: "parse5-htmlparser2-tree-adapter@npm:6.0.1"
   dependencies:
