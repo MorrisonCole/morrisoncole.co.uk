@@ -108,7 +108,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-copy-linked-files", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.1"],
             ["gatsby-remark-embed-video", "npm:3.1.1"],
-            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0"],
+            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.1"],
             ["gatsby-remark-responsive-iframe", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.1"],
             ["gatsby-remark-smartypants", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
@@ -12085,20 +12085,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:1.0.0-rc.5", {
-          "packageLocation": "./.yarn/cache/cheerio-npm-1.0.0-rc.5-da72015c1b-dcb0ee3102.zip/node_modules/cheerio/",
-          "packageDependencies": [
-            ["cheerio", "npm:1.0.0-rc.5"],
-            ["cheerio-select-tmp", "npm:0.1.1"],
-            ["dom-serializer", "npm:1.2.0"],
-            ["domhandler", "npm:4.1.0"],
-            ["entities", "npm:2.1.0"],
-            ["htmlparser2", "npm:6.0.1"],
-            ["parse5", "npm:6.0.1"],
-            ["parse5-htmlparser2-tree-adapter", "npm:6.0.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:1.0.0-rc.9", {
           "packageLocation": "./.yarn/cache/cheerio-npm-1.0.0-rc.9-64a9a8c425-de3a5991e0.zip/node_modules/cheerio/",
           "packageDependencies": [
@@ -12124,20 +12110,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["domelementtype", "npm:2.2.0"],
             ["domhandler", "npm:4.2.0"],
             ["domutils", "npm:2.6.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["cheerio-select-tmp", [
-        ["npm:0.1.1", {
-          "packageLocation": "./.yarn/cache/cheerio-select-tmp-npm-0.1.1-2607a8b286-64f3c538b8.zip/node_modules/cheerio-select-tmp/",
-          "packageDependencies": [
-            ["cheerio-select-tmp", "npm:0.1.1"],
-            ["css-select", "npm:3.1.2"],
-            ["css-what", "npm:4.0.0"],
-            ["domelementtype", "npm:2.2.0"],
-            ["domhandler", "npm:4.1.0"],
-            ["domutils", "npm:2.5.1"]
           ],
           "linkType": "HARD",
         }]
@@ -14906,13 +14878,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/entities-npm-1.1.2-78e77a4b6d-d537b02799.zip/node_modules/entities/",
           "packageDependencies": [
             ["entities", "npm:1.1.2"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:2.1.0", {
-          "packageLocation": "./.yarn/cache/entities-npm-2.1.0-b27b8aebc6-a10a877e48.zip/node_modules/entities/",
-          "packageDependencies": [
-            ["entities", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }],
@@ -18110,22 +18075,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-remark-images", [
-        ["npm:5.2.0", {
-          "packageLocation": "./.yarn/cache/gatsby-remark-images-npm-5.2.0-ffdbc6121c-3052b938c1.zip/node_modules/gatsby-remark-images/",
+        ["npm:5.2.1", {
+          "packageLocation": "./.yarn/cache/gatsby-remark-images-npm-5.2.1-095c920415-a84d8fcfcb.zip/node_modules/gatsby-remark-images/",
           "packageDependencies": [
-            ["gatsby-remark-images", "npm:5.2.0"]
+            ["gatsby-remark-images", "npm:5.2.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-remark-images-virtual-44a72eee9f/0/cache/gatsby-remark-images-npm-5.2.0-ffdbc6121c-3052b938c1.zip/node_modules/gatsby-remark-images/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.1", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-remark-images-virtual-0a1883f0f0/0/cache/gatsby-remark-images-npm-5.2.1-095c920415-a84d8fcfcb.zip/node_modules/gatsby-remark-images/",
           "packageDependencies": [
-            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0"],
+            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.1"],
             ["@babel/runtime", "npm:7.13.10"],
             ["@types/gatsby", null],
             ["@types/gatsby-plugin-sharp", null],
             ["chalk", "npm:4.1.0"],
-            ["cheerio", "npm:1.0.0-rc.5"],
+            ["cheerio", "npm:1.0.0-rc.9"],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.1"],
             ["gatsby-core-utils", "npm:2.5.0"],
             ["gatsby-plugin-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
@@ -19802,17 +19767,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["htmlparser2", "npm:4.1.0"],
             ["domelementtype", "npm:2.2.0"],
             ["domhandler", "npm:3.3.0"],
-            ["domutils", "npm:2.5.1"],
-            ["entities", "npm:2.2.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:6.0.1", {
-          "packageLocation": "./.yarn/cache/htmlparser2-npm-6.0.1-c42fd7e87d-2e270122d1.zip/node_modules/htmlparser2/",
-          "packageDependencies": [
-            ["htmlparser2", "npm:6.0.1"],
-            ["domelementtype", "npm:2.2.0"],
-            ["domhandler", "npm:4.1.0"],
             ["domutils", "npm:2.5.1"],
             ["entities", "npm:2.2.0"]
           ],
@@ -23978,7 +23932,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-autolink-headers", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-remark-copy-linked-files", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.1"],
             ["gatsby-remark-embed-video", "npm:3.1.1"],
-            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.0"],
+            ["gatsby-remark-images", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.2.1"],
             ["gatsby-remark-responsive-iframe", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.1"],
             ["gatsby-remark-smartypants", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-source-filesystem", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
