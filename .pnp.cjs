@@ -52,7 +52,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/classnames", "npm:2.3.1"],
             ["@types/eslint", "npm:7.2.11"],
             ["@types/express", "npm:4.17.11"],
-            ["@types/lodash", "npm:4.14.169"],
+            ["@types/lodash", "npm:4.14.170"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:15.3.1"],
             ["@types/platform", "npm:1.3.3"],
@@ -8429,10 +8429,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.14.169", {
-          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.169-64630f427b-78c9e49f4c.zip/node_modules/@types/lodash/",
+        ["npm:4.14.170", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.170-fd6a13e651-238a440804.zip/node_modules/@types/lodash/",
           "packageDependencies": [
-            ["@types/lodash", "npm:4.14.169"]
+            ["@types/lodash", "npm:4.14.170"]
           ],
           "linkType": "HARD",
         }]
@@ -23876,7 +23876,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/classnames", "npm:2.3.1"],
             ["@types/eslint", "npm:7.2.11"],
             ["@types/express", "npm:4.17.11"],
-            ["@types/lodash", "npm:4.14.169"],
+            ["@types/lodash", "npm:4.14.170"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:15.3.1"],
             ["@types/platform", "npm:1.3.3"],
