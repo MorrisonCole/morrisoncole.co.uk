@@ -120,7 +120,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["mdx-utils", "npm:0.2.0"],
             ["mitt", "npm:2.1.0"],
-            ["open", "npm:8.0.9"],
+            ["open", "npm:8.1.0"],
             ["path", "npm:0.12.7"],
             ["platform", "npm:1.3.6"],
             ["prettier", "npm:2.3.0"],
@@ -23946,7 +23946,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],
             ["mdx-utils", "npm:0.2.0"],
             ["mitt", "npm:2.1.0"],
-            ["open", "npm:8.0.9"],
+            ["open", "npm:8.1.0"],
             ["path", "npm:0.12.7"],
             ["platform", "npm:1.3.6"],
             ["prettier", "npm:2.3.0"],
@@ -24860,10 +24860,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.0.9", {
-          "packageLocation": "./.yarn/cache/open-npm-8.0.9-6c2e18db08-cafcfd2294.zip/node_modules/open/",
+        ["npm:8.1.0", {
+          "packageLocation": "./.yarn/cache/open-npm-8.1.0-9a4090dc19-b580354e11.zip/node_modules/open/",
           "packageDependencies": [
-            ["open", "npm:8.0.9"],
+            ["open", "npm:8.1.0"],
             ["define-lazy-prop", "npm:2.0.0"],
             ["is-docker", "npm:2.2.0"],
             ["is-wsl", "npm:2.2.0"]
