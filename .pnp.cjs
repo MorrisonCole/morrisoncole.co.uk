@@ -140,7 +140,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark-unwrap-images", "npm:2.0.0"],
             ["server", "npm:1.0.33"],
             ["shallow-compare", "npm:1.2.2"],
-            ["stack-trace", "npm:0.0.10"],
+            ["stack-trace", "npm:1.0.0-pre1"],
             ["styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.3.0"],
             ["tslib", "npm:2.2.0"],
             ["typeface-merriweather", "npm:1.1.13"],
@@ -12943,14 +12943,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:2.6.12", {
-          "packageLocation": "./.yarn/cache/core-js-npm-2.6.12-0b93d77d31-44fa9934a8.zip/node_modules/core-js/",
+          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-0b93d77d31/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:2.6.12"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.10.1", {
-          "packageLocation": "./.yarn/cache/core-js-npm-3.10.1-e4bd755b23-5a40a60391.zip/node_modules/core-js/",
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.10.1-e4bd755b23/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.10.1"]
           ],
@@ -12979,7 +12979,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js-pure", [
         ["npm:3.10.1", {
-          "packageLocation": "./.yarn/cache/core-js-pure-npm-3.10.1-6081fa70e9-3352d0613f.zip/node_modules/core-js-pure/",
+          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.10.1-6081fa70e9/node_modules/core-js-pure/",
           "packageDependencies": [
             ["core-js-pure", "npm:3.10.1"]
           ],
@@ -16862,14 +16862,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby", [
         ["npm:3.5.1", {
-          "packageLocation": "./.yarn/cache/gatsby-npm-3.5.1-f45e6490e9-5c493bd7f3.zip/node_modules/gatsby/",
+          "packageLocation": "./.yarn/unplugged/gatsby-virtual-f46f17fc76/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "npm:3.5.1"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.1", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-virtual-f46f17fc76/0/cache/gatsby-npm-3.5.1-f45e6490e9-5c493bd7f3.zip/node_modules/gatsby/",
+          "packageLocation": "./.yarn/unplugged/gatsby-virtual-f46f17fc76/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.1"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -17041,7 +17041,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-cli", [
         ["npm:3.5.0", {
-          "packageLocation": "./.yarn/cache/gatsby-cli-npm-3.5.0-53c3e4be93-f0cbea5313.zip/node_modules/gatsby-cli/",
+          "packageLocation": "./.yarn/unplugged/gatsby-cli-npm-3.5.0-53c3e4be93/node_modules/gatsby-cli/",
           "packageDependencies": [
             ["gatsby-cli", "npm:3.5.0"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -18203,7 +18203,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-telemetry", [
         ["npm:2.5.0", {
-          "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.5.0-fc23257062-c93f806aea.zip/node_modules/gatsby-telemetry/",
+          "packageLocation": "./.yarn/unplugged/gatsby-telemetry-npm-2.5.0-fc23257062/node_modules/gatsby-telemetry/",
           "packageDependencies": [
             ["gatsby-telemetry", "npm:2.5.0"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -18512,7 +18512,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["git-win", [
         ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/git-win-npm-2.3.0-b98f2b7122-c00bc4cd9a.zip/node_modules/git-win/",
+          "packageLocation": "./.yarn/unplugged/git-win-npm-2.3.0-b98f2b7122/node_modules/git-win/",
           "packageDependencies": [
             ["git-win", "npm:2.3.0"],
             ["@babel/runtime", "npm:7.13.10"],
@@ -23966,7 +23966,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark-unwrap-images", "npm:2.0.0"],
             ["server", "npm:1.0.33"],
             ["shallow-compare", "npm:1.2.2"],
-            ["stack-trace", "npm:0.0.10"],
+            ["stack-trace", "npm:1.0.0-pre1"],
             ["styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.3.0"],
             ["tslib", "npm:2.2.0"],
             ["typeface-merriweather", "npm:1.1.13"],
@@ -23980,7 +23980,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.0.0-b83d656810-cd8c63c39d.zip/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.0.0-b83d656810/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -25922,7 +25922,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-2f2600ce9e.zip/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -30292,6 +30292,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/stack-trace-npm-0.0.10-9460b173e1-473036ad32.zip/node_modules/stack-trace/",
           "packageDependencies": [
             ["stack-trace", "npm:0.0.10"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.0.0-pre1", {
+          "packageLocation": "./.yarn/cache/stack-trace-npm-1.0.0-pre1-ee0d387a2f-a97aad6b49.zip/node_modules/stack-trace/",
+          "packageDependencies": [
+            ["stack-trace", "npm:1.0.0-pre1"]
           ],
           "linkType": "HARD",
         }]
