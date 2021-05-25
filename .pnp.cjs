@@ -98,7 +98,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-remove-serviceworker", "npm:1.0.0"],
             ["gatsby-plugin-s3", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.3.8"],
             ["gatsby-plugin-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.6.0"],
-            ["gatsby-plugin-sitemap", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
+            ["gatsby-plugin-sitemap", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-plugin-styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.6.0"],
             ["gatsby-plugin-ts-config", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.1.5"],
             ["gatsby-plugin-typescript", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.6.0"],
@@ -8508,13 +8508,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-node-npm-14.14.37-6783f920bd-647e671ac3.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:14.14.37"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:14.14.43", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.43-cddd452ab7-a7c80f91fb.zip/node_modules/@types/node/",
-          "packageDependencies": [
-            ["@types/node", "npm:14.14.43"]
           ],
           "linkType": "HARD",
         }],
@@ -17820,17 +17813,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-plugin-sitemap", [
-        ["npm:4.1.0", {
-          "packageLocation": "./.yarn/cache/gatsby-plugin-sitemap-npm-4.1.0-dc1b3e187c-fde81d5bda.zip/node_modules/gatsby-plugin-sitemap/",
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/gatsby-plugin-sitemap-npm-4.2.0-57d7179453-f551ac0551.zip/node_modules/gatsby-plugin-sitemap/",
           "packageDependencies": [
-            ["gatsby-plugin-sitemap", "npm:4.1.0"]
+            ["gatsby-plugin-sitemap", "npm:4.2.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-sitemap-virtual-c4fc5a5a46/0/cache/gatsby-plugin-sitemap-npm-4.1.0-dc1b3e187c-fde81d5bda.zip/node_modules/gatsby-plugin-sitemap/",
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-sitemap-virtual-d054736c67/0/cache/gatsby-plugin-sitemap-npm-4.2.0-57d7179453-f551ac0551.zip/node_modules/gatsby-plugin-sitemap/",
           "packageDependencies": [
-            ["gatsby-plugin-sitemap", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
+            ["gatsby-plugin-sitemap", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["@babel/runtime", "npm:7.13.10"],
             ["@types/gatsby", null],
             ["@types/react", "npm:17.0.7"],
@@ -17840,7 +17833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimatch", "npm:3.0.4"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:17.0.2"],
-            ["sitemap", "npm:6.4.0"]
+            ["sitemap", "npm:7.0.0"]
           ],
           "packagePeers": [
             "@types/gatsby",
@@ -24229,7 +24222,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-remove-serviceworker", "npm:1.0.0"],
             ["gatsby-plugin-s3", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:0.3.8"],
             ["gatsby-plugin-sharp", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.6.0"],
-            ["gatsby-plugin-sitemap", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.1.0"],
+            ["gatsby-plugin-sitemap", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.2.0"],
             ["gatsby-plugin-styled-components", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:4.6.0"],
             ["gatsby-plugin-ts-config", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.1.5"],
             ["gatsby-plugin-typescript", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.6.0"],
@@ -29980,11 +29973,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sitemap", [
-        ["npm:6.4.0", {
-          "packageLocation": "./.yarn/cache/sitemap-npm-6.4.0-dcfc7132b4-499f6929cc.zip/node_modules/sitemap/",
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/sitemap-npm-7.0.0-5ee050432f-9dd62d8512.zip/node_modules/sitemap/",
           "packageDependencies": [
-            ["sitemap", "npm:6.4.0"],
-            ["@types/node", "npm:14.14.43"],
+            ["sitemap", "npm:7.0.0"],
+            ["@types/node", "npm:15.6.1"],
             ["@types/sax", "npm:1.2.1"],
             ["arg", "npm:5.0.0"],
             ["sax", "npm:1.2.4"]

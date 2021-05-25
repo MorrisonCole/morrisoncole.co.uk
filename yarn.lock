@@ -3871,7 +3871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:15.6.1":
+"@types/node@npm:15.6.1, @types/node@npm:^15.0.1":
   version: 15.6.1
   resolution: "@types/node@npm:15.6.1"
   checksum: 8ed16d4f7404203d3aade0b73e58c969fab4a721cfe637eff9b739f6b25a35e33dfe9e0961b9ac5994d629302faa977f8ee8931d09187a136875f966332cc552
@@ -3882,13 +3882,6 @@ __metadata:
   version: 12.20.7
   resolution: "@types/node@npm:12.20.7"
   checksum: 3147677ffac7e1e57b4e10db0cb90f2873b9f733eeaa01d063fead607e7a1a58672ae5e839e5e6941b27facf6b048a269c5400fc8f66d6354c0276f9c04f0edb
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^14.14.28":
-  version: 14.14.43
-  resolution: "@types/node@npm:14.14.43"
-  checksum: a7c80f91fb8a21dd590327561dd51042275f3190fbb167a9d4fad7b5f4f95ab5abbcc034e6791564c26081e4ad0568549355c4748bda68080b446cf274935dfd
   languageName: node
   linkType: hard
 
@@ -11310,19 +11303,19 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:4.1.0":
-  version: 4.1.0
-  resolution: "gatsby-plugin-sitemap@npm:4.1.0"
+"gatsby-plugin-sitemap@npm:4.2.0":
+  version: 4.2.0
+  resolution: "gatsby-plugin-sitemap@npm:4.2.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     common-tags: ^1.8.0
     minimatch: ^3.0.4
-    sitemap: ^6.3.0
+    sitemap: ^7.0.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: fde81d5bdaa37461955c9b4635e66590782d29ab05fc972cdd485e4baba2bede02e626401cbad285267268fa8e2611daf79e84a665be22f3ee3cdc60eb882d2c
+  checksum: f551ac055116e62cf0822596ab703b1ab8cda836a1d127e7de9dc2504f9c86e5199a0a7c0215898afdbfe3b959375bf86c681c2e44b3d0ab0b00fcbc6c36240c
   languageName: node
   linkType: hard
 
@@ -16933,7 +16926,7 @@ fsevents@~2.3.1:
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.6.0
-    gatsby-plugin-sitemap: 4.1.0
+    gatsby-plugin-sitemap: 4.2.0
     gatsby-plugin-styled-components: 4.6.0
     gatsby-plugin-ts-config: 1.1.5
     gatsby-plugin-typescript: 3.6.0
@@ -21730,17 +21723,17 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sitemap@npm:^6.3.0":
-  version: 6.4.0
-  resolution: "sitemap@npm:6.4.0"
+"sitemap@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "sitemap@npm:7.0.0"
   dependencies:
-    "@types/node": ^14.14.28
+    "@types/node": ^15.0.1
     "@types/sax": ^1.2.1
     arg: ^5.0.0
     sax: ^1.2.4
   bin:
     sitemap: dist/cli.js
-  checksum: 499f6929cc6faef45944509705e8c07b7062be0ea1643ecdc6e489b32652c7ca44da4949861fcac62b9044eb6c3ff3049478d06f27019a3c230409aca377c71a
+  checksum: 9dd62d8512835027074183172ced770b8f2b7c16d2c9682d6359fc11d982aa6d960570d1f01d457815a9e31957574d01c92c6b5991f2960cf2b417764b5b03a1
   languageName: node
   linkType: hard
 
