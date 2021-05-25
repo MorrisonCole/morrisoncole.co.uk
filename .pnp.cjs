@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.14"],
             ["@types/classnames", "npm:2.3.1"],
             ["@types/eslint", "npm:7.2.11"],
-            ["@types/express", "npm:4.17.11"],
+            ["@types/express", "npm:4.17.12"],
             ["@types/lodash", "npm:4.14.170"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:15.6.1"],
@@ -8196,6 +8196,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-express-npm-4.17.11-1b3f17f056-4f57fb2a3c.zip/node_modules/@types/express/",
           "packageDependencies": [
             ["@types/express", "npm:4.17.11"],
+            ["@types/body-parser", "npm:1.19.0"],
+            ["@types/express-serve-static-core", "npm:4.17.19"],
+            ["@types/qs", "npm:6.9.6"],
+            ["@types/serve-static", "npm:1.13.9"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.17.12", {
+          "packageLocation": "./.yarn/cache/@types-express-npm-4.17.12-d30bfc5b29-5869f575f6.zip/node_modules/@types/express/",
+          "packageDependencies": [
+            ["@types/express", "npm:4.17.12"],
             ["@types/body-parser", "npm:1.19.0"],
             ["@types/express-serve-static-core", "npm:4.17.19"],
             ["@types/qs", "npm:6.9.6"],
@@ -23877,7 +23888,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.14"],
             ["@types/classnames", "npm:2.3.1"],
             ["@types/eslint", "npm:7.2.11"],
-            ["@types/express", "npm:4.17.11"],
+            ["@types/express", "npm:4.17.12"],
             ["@types/lodash", "npm:4.14.170"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:15.6.1"],
