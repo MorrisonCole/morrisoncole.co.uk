@@ -11311,9 +11311,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:4.5.0":
-  version: 4.5.0
-  resolution: "gatsby-plugin-styled-components@npm:4.5.0"
+"gatsby-plugin-styled-components@npm:4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-plugin-styled-components@npm:4.6.0"
   dependencies:
     "@babel/runtime": ^7.12.5
   peerDependencies:
@@ -11322,7 +11322,7 @@ fsevents@~2.3.1:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
     styled-components: ">=2.0.0"
-  checksum: d70341e91ffe2bf3513eac05bb39d89f14d098ad17752191bcc843bd39c5cf2e56bc690aac065841c77c8af9e2f6ffa307218fa727190ec58b6b5f334a32291f
+  checksum: 204bc19f281149bdc97af7cf4bdcff34307512ac036d627ac0337c3c61da56dc2ac98c801cb5df00b6c72c625107cfad51eabd5d12b52980e77a3c3c035a68ea
   languageName: node
   linkType: hard
 
@@ -16906,7 +16906,7 @@ fsevents@~2.3.1:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.5.0
     gatsby-plugin-sitemap: 4.1.0
-    gatsby-plugin-styled-components: 4.5.0
+    gatsby-plugin-styled-components: 4.6.0
     gatsby-plugin-ts-config: 1.1.5
     gatsby-plugin-typescript: 3.6.0
     gatsby-plugin-typography: 3.5.0
