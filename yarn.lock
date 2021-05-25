@@ -5568,6 +5568,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:3.6.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^3.0.0-next.0
+  checksum: bcae8a918cb3d691072828a33d1f3545f8f575e619b8d0a35dad7bd912f140da4824596ead712511112d9e495ec7cf6e3561bbd2c6b6660940513c8224af963e
+  languageName: node
+  linkType: hard
+
 "babel-plugin-styled-components@npm:1.12.0, babel-plugin-styled-components@npm:>= 1.12.0":
   version: 1.12.0
   resolution: "babel-plugin-styled-components@npm:1.12.0"
@@ -11057,20 +11067,20 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:1.5.0":
-  version: 1.5.0
-  resolution: "gatsby-plugin-image@npm:1.5.0"
+"gatsby-plugin-image@npm:1.6.0":
+  version: 1.6.0
+  resolution: "gatsby-plugin-image@npm:1.6.0"
   dependencies:
     "@babel/code-frame": ^7.12.13
     "@babel/parser": ^7.12.5
     "@babel/traverse": ^7.12.5
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^3.5.0
+    babel-plugin-remove-graphql-queries: ^3.6.0
     camelcase: ^5.3.1
     chokidar: ^3.5.1
     common-tags: ^1.8.0
     fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.5.0
+    gatsby-core-utils: ^2.6.0
     objectFitPolyfill: ^2.3.0
     prop-types: ^15.7.2
   peerDependencies:
@@ -11080,7 +11090,7 @@ fsevents@~2.3.1:
     gatsby-source-filesystem: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: a92e8bd546ed7dd61f374edc310e94aab5a91a1626a23133e4d4f7204d1302f4bff7cabba40727001db52c3a57fdc1364726cbabff09ccb94ca96e4601eeff53
+  checksum: 5562101599a41e4aaf76e3436e22801c472dfd879cd965e301d564743e6933a6ca9b81154cce75ec7e24753497d14578e69a04e1be6b43bfd136bcfe5432a533
   languageName: node
   linkType: hard
 
@@ -16868,7 +16878,7 @@ fsevents@~2.3.1:
     gatsby-plugin-canonical-urls: 3.5.0
     gatsby-plugin-feed: 3.5.0
     gatsby-plugin-google-tagmanager: 3.5.0
-    gatsby-plugin-image: 1.5.0
+    gatsby-plugin-image: 1.6.0
     gatsby-plugin-layout: 2.6.0
     gatsby-plugin-manifest: 3.6.0
     gatsby-plugin-material-ui: 3.0.1
