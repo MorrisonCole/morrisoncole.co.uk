@@ -82,7 +82,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.17.1"],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.1"],
             ["gatsby-cli", "npm:3.5.0"],
-            ["gatsby-image", "npm:3.5.0"],
+            ["gatsby-image", "npm:3.6.0"],
             ["gatsby-legacy-polyfills", "npm:1.5.0"],
             ["gatsby-link", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
             ["gatsby-plugin-canonical-urls", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
@@ -17140,10 +17140,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-image", [
-        ["npm:3.5.0", {
-          "packageLocation": "./.yarn/cache/gatsby-image-npm-3.5.0-b8b012d2a6-476ea78ce1.zip/node_modules/gatsby-image/",
+        ["npm:3.6.0", {
+          "packageLocation": "./.yarn/cache/gatsby-image-npm-3.6.0-0da0feba65-8236b964db.zip/node_modules/gatsby-image/",
           "packageDependencies": [
-            ["gatsby-image", "npm:3.5.0"],
+            ["gatsby-image", "npm:3.6.0"],
             ["@babel/runtime", "npm:7.13.10"],
             ["object-fit-images", "npm:3.2.4"],
             ["prop-types", "npm:15.7.2"]
@@ -23919,7 +23919,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["express", "npm:4.17.1"],
             ["gatsby", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.1"],
             ["gatsby-cli", "npm:3.5.0"],
-            ["gatsby-image", "npm:3.5.0"],
+            ["gatsby-image", "npm:3.6.0"],
             ["gatsby-legacy-polyfills", "npm:1.5.0"],
             ["gatsby-link", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
             ["gatsby-plugin-canonical-urls", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.5.0"],
