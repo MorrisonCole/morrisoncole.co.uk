@@ -11794,12 +11794,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-remark@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-transformer-remark@npm:4.2.0"
+"gatsby-transformer-remark@npm:4.3.0":
+  version: 4.3.0
+  resolution: "gatsby-transformer-remark@npm:4.3.0"
   dependencies:
     "@babel/runtime": ^7.12.5
-    gatsby-core-utils: ^2.5.0
+    gatsby-core-utils: ^2.6.0
     gray-matter: ^4.0.2
     hast-util-raw: ^6.0.2
     hast-util-to-html: ^7.1.2
@@ -11822,7 +11822,7 @@ fsevents@~2.3.1:
     unist-util-visit: ^2.0.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: ffd921cb3f2606b6df315133f350dd85ad5d17ca813b506521c68ea975807fb698824ae27cd87cd94e203ffe002cb2df84297d200c4629947f0b5300cd3a6a6e
+  checksum: 9350d642373f61dd0bdf8c0ba9f93e744bf40991d57aa5cf116a277b298143ac402c22c8114d79415f16bb16288823ed954ddcd2686f6f2ee8c7a0fc4b202e93
   languageName: node
   linkType: hard
 
@@ -16948,7 +16948,7 @@ fsevents@~2.3.1:
     gatsby-remark-smartypants: 4.3.0
     gatsby-source-filesystem: 3.5.0
     gatsby-transformer-json: 3.6.0
-    gatsby-transformer-remark: 4.2.0
+    gatsby-transformer-remark: 4.3.0
     gatsby-transformer-sharp: 3.5.0
     graphql: 15.5.0
     graphql-import: 1.0.2
