@@ -10860,14 +10860,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-image@npm:3.5.0":
-  version: 3.5.0
-  resolution: "gatsby-image@npm:3.5.0"
+"gatsby-image@npm:3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-image@npm:3.6.0"
   dependencies:
     "@babel/runtime": ^7.12.5
     object-fit-images: ^3.2.4
     prop-types: ^15.7.2
-  checksum: 476ea78ce11eb9b9935413a10074c70a50d17d70627ffb9d1eaf32bade803e471d5df5204ed3a5987ee32547152dbe4494657c23c4bb436e0f5706f717bbf68f
+  checksum: 8236b964dbbd643da79fab68f4e73dbfaf782085322a78c830b929f164281b8c3df15f4cf39ffb7c7566f784afb378847eb10ff3c880e94689a21fc256623d7a
   languageName: node
   linkType: hard
 
@@ -16669,7 +16669,7 @@ fsevents@~2.3.1:
     express: 4.17.1
     gatsby: 3.5.1
     gatsby-cli: 3.5.0
-    gatsby-image: 3.5.0
+    gatsby-image: 3.6.0
     gatsby-legacy-polyfills: 1.5.0
     gatsby-link: 3.5.0
     gatsby-plugin-canonical-urls: 3.5.0
