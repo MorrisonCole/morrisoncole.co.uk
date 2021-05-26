@@ -60,7 +60,9 @@ function BlogPostTemplate({
         location={location}
         title={post.exports?.meta.title}
         description={post.exports?.meta.description ?? post.excerpt}
-        image={getSrc(post?.exports?.meta?.image)}
+        image={getSrc(
+          post?.exports?.meta?.image?.childImageSharp?.gatsbyImageData
+        )}
         imageAlt={post?.exports?.meta?.imageAlt}
         article
       />
