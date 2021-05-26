@@ -4011,14 +4011,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.7":
-  version: 17.0.7
-  resolution: "@types/react@npm:17.0.7"
+"@types/react@npm:17.0.8":
+  version: 17.0.8
+  resolution: "@types/react@npm:17.0.8"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: d376507e2bda4ff6c1194e88961b393dacad6f12061c8861f777208e0f34e17362f22b9b8a6bd2b51a7f05b574f832dc2e9047af480ab93af441f228a0cb2f77
+  checksum: 6398dc200623dbf213747f3a1cf9f3c3bcac29b519e49c9fcb81d2665dadb21155c485381cddbb04b483a5bf3ddddefaff1a1a6ef4fa5080b1b9b144c789673e
   languageName: node
   linkType: hard
 
@@ -16651,7 +16651,7 @@ fsevents@~2.3.1:
     "@types/prettier": 2.2.3
     "@types/prismjs": 1.16.5
     "@types/prop-types": 15.7.3
-    "@types/react": 17.0.7
+    "@types/react": 17.0.8
     "@types/react-dom": 17.0.5
     "@types/react-helmet": 6.1.1
     "@types/react-is": 17.0.0
