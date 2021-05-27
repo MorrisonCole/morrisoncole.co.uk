@@ -61,8 +61,7 @@ export function life(
       mainLink: "https://goo.gl/maps/7FFdpXCeUU3koAAv9",
       subtitle1: "Tokyo",
       subtitle2: "",
-      text:
-        "From Kobe to Tokyo, where I'm now working and teaching in the software industry 🙌",
+      text: "From Kobe to Tokyo, where I'm now working and teaching in the software industry 🙌",
       title: "Moved 🇯🇵",
     },
     {
@@ -106,8 +105,7 @@ export function life(
       mainLink: "https://www.crunchbase.com/organization/shazam",
       subtitle1: "Junior Software Engineer",
       subtitle2: "(Aqc. by Apple, 2018)",
-      text:
-        "After interning here during the final year of my degree, I joined the Android team full-time.",
+      text: "After interning here during the final year of my degree, I joined the Android team full-time.",
       title: "Shazam",
     },
     {
@@ -130,8 +128,7 @@ export function life(
       mainLink: "https://www.ucl.ac.uk/",
       subtitle1: "BSc Computer Science",
       subtitle2: "First-class Honours",
-      text:
-        "Rather than attend music College, I decided to get a degree in Computer Science. Graduated with 1st-class honours.",
+      text: "Rather than attend music College, I decided to get a degree in Computer Science. Graduated with 1st-class honours.",
       title: "University College London",
     },
     {
