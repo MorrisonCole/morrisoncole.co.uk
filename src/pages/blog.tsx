@@ -65,8 +65,8 @@ export default function Blog({
           node.exports?.meta?.description ?? node.excerpt ?? "";
         const link = node.fields?.slug ?? "";
         const linkText = node.exports?.meta?.linkText ?? "Continue to post...";
-        const image =
-          node.exports?.meta?.image?.childImageSharp?.gatsbyImageData as IGatsbyImageData;
+        const image = node.exports?.meta?.image?.childImageSharp
+          ?.gatsbyImageData as IGatsbyImageData;
 
         return (
           <CardActionArea key={title} component={Link} to={link}>
