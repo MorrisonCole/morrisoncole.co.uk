@@ -1,0 +1,7 @@
+{
+  "name": "goodreads",
+  "version": "1.0.0",
+  "description": "A local plugin for Goodreads",
+  "main": "index.js",
+  "license": "GPL-3.0"
+}
