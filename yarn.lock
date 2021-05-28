@@ -11679,9 +11679,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby@npm:3.6.0":
-  version: 3.6.0
-  resolution: "gatsby@npm:3.6.0"
+"gatsby@npm:3.6.1":
+  version: 3.6.1
+  resolution: "gatsby@npm:3.6.1"
   dependencies:
     "@babel/code-frame": ^7.10.4
     "@babel/core": ^7.12.3
@@ -11841,7 +11841,7 @@ fsevents@~2.3.1:
     react-dom: ^16.9.0 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: 66286985ad0f06f81d544e3ac768093972963e09b01455a91c42dc016ea7bd709f78467c01700d0460cf3fdb40052ce44413b6f45cdb0dd89ec8c45158d22fab
+  checksum: 8264d6fee086584c238080de2c76b1db5cb343b95e179b5e4246b8f23c94f6805899eba49d2c30f612f8685400859c9a35c1dfb200b632d99badd91ae3282d13
   languageName: node
   linkType: hard
 
@@ -16791,7 +16791,7 @@ fsevents@~2.3.1:
     eslint-plugin-react: 7.23.2
     event-source-polyfill: 1.0.24
     express: 4.17.1
-    gatsby: 3.6.0
+    gatsby: 3.6.1
     gatsby-cli: 3.6.0
     gatsby-legacy-polyfills: 1.6.0
     gatsby-link: 3.6.0
@@ -23476,11 +23476,11 @@ typescript@4.3.2:
 
 "typescript@patch:typescript@4.3.2#~builtin<compat/typescript>":
   version: 4.3.2
-  resolution: "typescript@patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=34ad7d"
+  resolution: "typescript@patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c71285d8bc17e0108ae1489a7e906ea606e951d7afc5d141c8889bbdc1c7548c0833b82716b1dd2099321c20b48604309c96c8454831cbcc939966190226d9a2
+  checksum: 3d3dec06ba6e5b05caa292355712ed9db813fa1c2377630b1f24b42e5ee8957f0bcdd5efd1500c970a11a6f684897f5728f5542ac822932227159a0611499a5e
   languageName: node
   linkType: hard
 
