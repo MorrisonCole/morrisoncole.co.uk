@@ -23,6 +23,7 @@ export const siteMetadata = {
 };
 
 export const plugins = [
+  "goodreads", // local Goodreads plugin (/plugins/goodreads)
   {
     resolve: `gatsby-plugin-feed`,
     options: {
