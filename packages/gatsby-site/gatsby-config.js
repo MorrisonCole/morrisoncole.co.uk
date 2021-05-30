@@ -30,6 +30,9 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: require.resolve(`../gatsby-plugin-goodreads`),
+    },
+    {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
