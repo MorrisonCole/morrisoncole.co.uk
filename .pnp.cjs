@@ -16041,7 +16041,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/gatsby-plugin-goodreads/",
           "packageDependencies": [
             ["gatsby-plugin-goodreads", "workspace:packages/gatsby-plugin-goodreads"],
-            ["axios", "npm:0.21.1"]
+            ["axios", "npm:0.21.1"],
+            ["xml2js", "npm:0.4.23"]
           ],
           "linkType": "SOFT",
         }]
