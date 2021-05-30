@@ -1,6 +1,6 @@
-.cache
-.circleci
-node_modules
-public
-types/graphql-types.ts
-scripts
+gatsby-site/.cache
+gatsby-site/.circleci
+gatsby-site/node_modules
+gatsby-site/public
+gatsby-site/types/graphql-types.ts
+gatsby-site/scripts

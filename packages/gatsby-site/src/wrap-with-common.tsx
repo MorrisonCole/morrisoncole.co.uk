@@ -4,10 +4,10 @@ import { ThemeProvider } from "./theme";
 import { Helmet } from "react-helmet";
 
 type Props = {
-  element: ReactNode;
+  children: ReactNode;
 };
 
-export default function WrapWithCommon({ element }: Props): JSX.Element {
+export default function WrapWithCommon({ children }: Props): JSX.Element {
   return (
     <ThemeProvider>
       <Helmet>
@@ -19,7 +19,7 @@ export default function WrapWithCommon({ element }: Props): JSX.Element {
         />
       </Helmet>
       <CssBaseline />
-      <React.Fragment>{element}</React.Fragment>
+      <React.Fragment>{children}</React.Fragment>
     </ThemeProvider>
   );
 }
