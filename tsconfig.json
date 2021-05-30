@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
@@ -13,8 +14,6 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": false,
-    "target": "esnext",
-    "typeRoots": ["./types", "./node_modules/@types"]
-  },
-  "exclude": [".cache", "./public", "./types/graphql-types"]
+    "target": "esnext"
+  }
 }

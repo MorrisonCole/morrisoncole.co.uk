@@ -1,21 +1,9 @@
-import path from "path";
-import { createFilePath } from "gatsby-source-filesystem";
-import {
-  CreateNodeArgs,
-  CreatePagesArgs,
-  CreateSchemaCustomizationArgs,
-} from "gatsby";
-import { BlogPagesQuery } from "../../types/graphql-types";
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
-export async function createPages({
-  graphql,
-  actions,
-}: CreatePagesArgs): Promise<void> {
+exports.createPages = async ({ graphql, actions }) => {
   const blogPostTemplate = path.resolve("src/templates/blog-post-template.tsx");
-  const result: {
-    errors?: unknown;
-    data?: BlogPagesQuery;
-  } = await graphql<BlogPagesQuery, unknown>(
+  const result = await graphql(
     `
       query BlogPages {
         allMdx(
@@ -60,9 +48,9 @@ export async function createPages({
       },
     });
   });
-}
+};
 
-export function onCreateNode({ node, actions, getNode }: CreateNodeArgs): void {
+exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === "Mdx") {
     const value = createFilePath({ node, getNode });
     actions.createNodeField({
@@ -71,11 +59,9 @@ export function onCreateNode({ node, actions, getNode }: CreateNodeArgs): void {
       value: `${value}`,
     });
   }
-}
+};
 
-export function createSchemaCustomization({
-  actions,
-}: CreateSchemaCustomizationArgs): void {
+exports.createSchemaCustomization = ({ actions }) => {
   const typeDefs = `
     type Site implements Node {
       siteMetadata: SiteSiteMetadata!
@@ -101,4 +87,4 @@ export function createSchemaCustomization({
     }
   `;
   actions.createTypes(typeDefs);
-}
+};
