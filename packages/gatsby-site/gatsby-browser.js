@@ -1,4 +1,7 @@
 import "./src/styles/global.css";
-import withWrapper from "./wrap-root-element";
+import React from "react";
+import WrapWithCommon from "./src/wrap-with-common";
 
-export const wrapRootElement = withWrapper;
+export const wrapRootElement = ({ element }) => (
+  <WrapWithCommon>{element}</WrapWithCommon>
+);
