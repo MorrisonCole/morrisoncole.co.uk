@@ -3599,13 +3599,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:7.2.12":
-  version: 7.2.12
-  resolution: "@types/eslint@npm:7.2.12"
+"@types/eslint@npm:7.2.13":
+  version: 7.2.13
+  resolution: "@types/eslint@npm:7.2.13"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: 734938208a147b65bf85f60f6b29a04888e51d304ce2d0b5cdd47030e469954e585a4fd6a140ab158330e51563fea23cb8d5dfa458c1fd229388b889684b6b6c
+  checksum: 6dac9f9d7d155c90a6eba104718e1adb43c3e4020ea75ab8f5094db8603617473a4ac6f7ddeb2c670822860b869a7e3871406a82425ec470965cdfc1f3dd3ad0
   languageName: node
   linkType: hard
 
@@ -16780,7 +16780,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "monorepo@workspace:."
   dependencies:
-    "@types/eslint": 7.2.12
+    "@types/eslint": 7.2.13
     "@types/prettier": 2.2.3
     "@typescript-eslint/eslint-plugin": 4.26.0
     "@typescript-eslint/parser": 4.25.0
