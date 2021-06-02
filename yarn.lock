@@ -4159,14 +4159,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.8":
-  version: 17.0.8
-  resolution: "@types/react@npm:17.0.8"
+"@types/react@npm:17.0.9":
+  version: 17.0.9
+  resolution: "@types/react@npm:17.0.9"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 6398dc200623dbf213747f3a1cf9f3c3bcac29b519e49c9fcb81d2665dadb21155c485381cddbb04b483a5bf3ddddefaff1a1a6ef4fa5080b1b9b144c789673e
+  checksum: c626e3ca42b6173b0617102af6c1c8c6068f69fafeba51f5d614962cabaf98a5706295081941ece93da04117268cb0aad471be87e76dde7e0d5f79a46280c586
   languageName: node
   linkType: hard
 
@@ -17416,7 +17416,7 @@ fsevents@~2.3.1:
     "@types/platform": 1.3.3
     "@types/prismjs": 1.16.5
     "@types/prop-types": 15.7.3
-    "@types/react": 17.0.8
+    "@types/react": 17.0.9
     "@types/react-dom": 17.0.5
     "@types/react-helmet": 6.1.1
     "@types/react-is": 17.0.0
@@ -17812,7 +17812,7 @@ fsevents@~2.3.1:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@types/node": 15.6.1
-    "@types/react": 17.0.8
+    "@types/react": 17.0.9
     next: 10.2.3
     react: 17.0.2
     react-dom: 17.0.2
