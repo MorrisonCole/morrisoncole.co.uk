@@ -3710,13 +3710,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:7.2.12":
-  version: 7.2.12
-  resolution: "@types/eslint@npm:7.2.12"
+"@types/eslint@npm:7.2.13":
+  version: 7.2.13
+  resolution: "@types/eslint@npm:7.2.13"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: 734938208a147b65bf85f60f6b29a04888e51d304ce2d0b5cdd47030e469954e585a4fd6a140ab158330e51563fea23cb8d5dfa458c1fd229388b889684b6b6c
+  checksum: 6dac9f9d7d155c90a6eba104718e1adb43c3e4020ea75ab8f5094db8603617473a4ac6f7ddeb2c670822860b869a7e3871406a82425ec470965cdfc1f3dd3ad0
   languageName: node
   linkType: hard
 
@@ -4019,7 +4019,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:15.6.1, @types/node@npm:^15.0.1, @types/node@npm:^15.6.1":
+"@types/node@npm:15.6.1, @types/node@npm:^15.0.1":
   version: 15.6.1
   resolution: "@types/node@npm:15.6.1"
   checksum: 8ed16d4f7404203d3aade0b73e58c969fab4a721cfe637eff9b739f6b25a35e33dfe9e0961b9ac5994d629302faa977f8ee8931d09187a136875f966332cc552
@@ -17378,7 +17378,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "monorepo@workspace:."
   dependencies:
-    "@types/eslint": 7.2.12
+    "@types/eslint": 7.2.13
     "@types/prettier": 2.2.3
     "@typescript-eslint/eslint-plugin": 4.26.0
     "@typescript-eslint/parser": 4.26.0
@@ -17811,7 +17811,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
-    "@types/node": ^15.6.1
+    "@types/node": 15.6.1
     "@types/react": 17.0.8
     next: 10.2.3
     react: 17.0.2
