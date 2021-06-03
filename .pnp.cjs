@@ -7417,17 +7417,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:15.12.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-15.12.0-409ea70119-c925713434.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:15.12.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:15.6.1", {
           "packageLocation": "./.yarn/cache/@types-node-npm-15.6.1-1a0b9c8653-8ed16d4f74.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:15.6.1"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:15.6.2", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-15.6.2-9d8f9d46a0-8035759447.zip/node_modules/@types/node/",
-          "packageDependencies": [
-            ["@types/node", "npm:15.6.2"]
           ],
           "linkType": "HARD",
         }],
@@ -23842,7 +23842,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/express", "npm:4.17.12"],
             ["@types/lodash", "npm:4.14.170"],
             ["@types/mdx-js__react", "npm:1.5.3"],
-            ["@types/node", "npm:15.6.2"],
+            ["@types/node", "npm:15.12.0"],
             ["@types/platform", "npm:1.3.3"],
             ["@types/prismjs", "npm:1.16.5"],
             ["@types/prop-types", "npm:15.7.3"],
@@ -24277,7 +24277,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/nextjs-site/",
           "packageDependencies": [
             ["nextjs-site", "workspace:packages/nextjs-site"],
-            ["@types/node", "npm:15.6.2"],
+            ["@types/node", "npm:15.12.0"],
             ["@types/react", "npm:17.0.9"],
             ["next", "virtual:9a592df1782921a0c2c3fb3224a3358686378d45bfd278af6560cd02db7f76c68be5e78d17b01a765bfd9bca4af37a396f7e6d509fa4025bbad31f42e4be95fd#npm:10.2.3"],
             ["react", "npm:17.0.2"],
