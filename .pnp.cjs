@@ -57,7 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.28.0"],
             ["eslint-config-prettier", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:8.3.0"],
             ["eslint-plugin-react", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:7.24.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"]
           ],
           "linkType": "SOFT",
@@ -12111,14 +12111,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:2.6.12", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-0b93d77d31/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-2.6.12-0b93d77d31-44fa9934a8.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:2.6.12"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.10.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.10.1-e4bd755b23/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.10.1-e4bd755b23-5a40a60391.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.10.1"]
           ],
@@ -12147,7 +12147,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js-pure", [
         ["npm:3.10.1", {
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.10.1-6081fa70e9/node_modules/core-js-pure/",
+          "packageLocation": "./.yarn/cache/core-js-pure-npm-3.10.1-6081fa70e9-3352d0613f.zip/node_modules/core-js-pure/",
           "packageDependencies": [
             ["core-js-pure", "npm:3.10.1"]
           ],
@@ -16292,14 +16292,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby", [
         ["npm:3.6.1", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-a8bad714b8/node_modules/gatsby/",
+          "packageLocation": "./.yarn/cache/gatsby-npm-3.6.1-b41d9a5c49-8264d6fee0.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "npm:3.6.1"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.6.1", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-a8bad714b8/node_modules/gatsby/",
+          "packageLocation": "./.yarn/__virtual__/gatsby-virtual-a8bad714b8/0/cache/gatsby-npm-3.6.1-b41d9a5c49-8264d6fee0.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.6.1"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -16474,7 +16474,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-cli", [
         ["npm:3.6.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-cli-npm-3.6.0-e4592ec6bd/node_modules/gatsby-cli/",
+          "packageLocation": "./.yarn/cache/gatsby-cli-npm-3.6.0-e4592ec6bd-789aaedd1d.zip/node_modules/gatsby-cli/",
           "packageDependencies": [
             ["gatsby-cli", "npm:3.6.0"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -17597,7 +17597,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-telemetry", [
         ["npm:2.6.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-telemetry-npm-2.6.0-1d0a27e69f/node_modules/gatsby-telemetry/",
+          "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.6.0-1d0a27e69f-feb350676f.zip/node_modules/gatsby-telemetry/",
           "packageDependencies": [
             ["gatsby-telemetry", "npm:2.6.0"],
             ["@babel/code-frame", "npm:7.12.13"],
@@ -23508,7 +23508,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:7.28.0"],
             ["eslint-config-prettier", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:8.3.0"],
             ["eslint-plugin-react", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:7.24.0"],
-            ["prettier", "npm:2.3.0"],
+            ["prettier", "npm:2.3.1"],
             ["typescript", "patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"]
           ],
           "linkType": "SOFT",
@@ -23628,7 +23628,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.0.0", {
-          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.0.0-b83d656810/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.0.0-b83d656810-cd8c63c39d.zip/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -25775,7 +25775,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-2f2600ce9e.zip/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -26792,10 +26792,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.3.0", {
-          "packageLocation": "./.yarn/cache/prettier-npm-2.3.0-29ef37e8b6-e8851a45f6.zip/node_modules/prettier/",
+        ["npm:2.3.1", {
+          "packageLocation": "./.yarn/cache/prettier-npm-2.3.1-f8593fac45-3b37731ff7.zip/node_modules/prettier/",
           "packageDependencies": [
-            ["prettier", "npm:2.3.0"]
+            ["prettier", "npm:2.3.1"]
           ],
           "linkType": "HARD",
         }]
