@@ -13,13 +13,17 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 1. Run `yarn`
 2. Run `yarn start`
 
+# Upgrade Yarn
+
+`yarn set version from sources`
+
+## Upgrade Editor SDKs
+
+`yarn dlx @yarnpkg/pnpify --sdk vscode`
+
 ## Upgrade Dependencies
 
 `yarn upgrade-interactive`
-
-## Update Editor SDKs
-
-`yarn dlx @yarnpkg/pnpify --sdk vscode`
 
 ## Terraform
 
