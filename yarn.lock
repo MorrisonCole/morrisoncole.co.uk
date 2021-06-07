@@ -3853,7 +3853,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:4.26.0, @typescript-eslint/parser@npm:^4.15.2":
+"@typescript-eslint/parser@npm:4.26.1":
+  version: 4.26.1
+  resolution: "@typescript-eslint/parser@npm:4.26.1"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.26.1
+    "@typescript-eslint/types": 4.26.1
+    "@typescript-eslint/typescript-estree": 4.26.1
+    debug: ^4.3.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 2085fafd1887584b6dd04e138b9c583da9f3a3f9b414595ed2d6c5207ce3f40d6c30cca9fab601648cb254ddcd6ebbe4d9af209eeb31a06f5509f83b9aa300ef
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^4.15.2":
   version: 4.26.0
   resolution: "@typescript-eslint/parser@npm:4.26.0"
   dependencies:
@@ -15638,7 +15655,7 @@ fsevents@~2.3.1:
     "@types/eslint": 7.2.13
     "@types/prettier": 2.2.3
     "@typescript-eslint/eslint-plugin": 4.26.1
-    "@typescript-eslint/parser": 4.26.0
+    "@typescript-eslint/parser": 4.26.1
     "@yarnpkg/pnpify": 3.0.0-rc.6
     eslint: 7.28.0
     eslint-config-prettier: 8.3.0
