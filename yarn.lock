@@ -105,7 +105,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.14.3, @babel/core@npm:^7.0.0, @babel/core@npm:^7.12.3":
+"@babel/core@npm:7.14.3, @babel/core@npm:^7.0.0, @babel/core@npm:^7.12.3, @babel/core@npm:^7.14.3":
   version: 7.14.3
   resolution: "@babel/core@npm:7.14.3"
   dependencies:
@@ -593,7 +593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-object-rest-spread@npm:^7.0.0, @babel/plugin-proposal-object-rest-spread@npm:^7.12.1, @babel/plugin-proposal-object-rest-spread@npm:^7.14.4":
+"@babel/plugin-proposal-object-rest-spread@npm:^7.0.0, @babel/plugin-proposal-object-rest-spread@npm:^7.14.4":
   version: 7.14.4
   resolution: "@babel/plugin-proposal-object-rest-spread@npm:7.14.4"
   dependencies:
@@ -1356,7 +1356,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.12.1":
+"@babel/preset-env@npm:^7.12.1, @babel/preset-env@npm:^7.14.4":
   version: 7.14.4
   resolution: "@babel/preset-env@npm:7.14.4"
   dependencies:
@@ -1454,7 +1454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-react@npm:^7.12.5":
+"@babel/preset-react@npm:^7.12.5, @babel/preset-react@npm:^7.13.13":
   version: 7.13.13
   resolution: "@babel/preset-react@npm:7.13.13"
   dependencies:
@@ -10360,6 +10360,22 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "gatsby-core-utils@npm:2.7.0"
+  dependencies:
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.2.0
+    fs-extra: ^8.1.0
+    node-object-hash: ^2.0.0
+    proper-lockfile: ^4.1.1
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: c28ff05a2597162e4d94db02dfe29f13d62075c9cd20464304bd11e8e728b8b6d7e5d082aafc6c45ecdc99a8f6543df88b489fe331abc747b4f097b21dc8f282
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^1.6.0":
   version: 1.6.0
   resolution: "gatsby-graphiql-explorer@npm:1.6.0"
@@ -10520,17 +10536,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:2.6.0":
-  version: 2.6.0
-  resolution: "gatsby-plugin-mdx@npm:2.6.0"
+"gatsby-plugin-mdx@npm:2.7.0":
+  version: 2.7.0
+  resolution: "gatsby-plugin-mdx@npm:2.7.0"
   dependencies:
-    "@babel/core": ^7.12.3
-    "@babel/generator": ^7.12.5
-    "@babel/helper-plugin-utils": ^7.10.4
-    "@babel/plugin-proposal-object-rest-spread": ^7.12.1
-    "@babel/preset-env": ^7.12.1
-    "@babel/preset-react": ^7.12.5
-    "@babel/types": ^7.12.6
+    "@babel/core": ^7.14.3
+    "@babel/generator": ^7.14.3
+    "@babel/helper-plugin-utils": ^7.13.0
+    "@babel/plugin-proposal-object-rest-spread": ^7.14.4
+    "@babel/preset-env": ^7.14.4
+    "@babel/preset-react": ^7.13.13
+    "@babel/types": ^7.14.4
     camelcase-css: ^2.0.1
     change-case: ^3.1.0
     core-js: ^3.6.5
@@ -10539,7 +10555,7 @@ fsevents@~2.3.1:
     escape-string-regexp: ^1.0.5
     eval: ^0.1.4
     fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.6.0
+    gatsby-core-utils: ^2.7.0
     gray-matter: ^4.0.2
     json5: ^2.1.3
     loader-utils: ^1.4.0
@@ -10565,7 +10581,7 @@ fsevents@~2.3.1:
     "@mdx-js/react": ^1.0.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: f7f9e085bb9a2fe5702d380defb0cf506abd73a93bef890a31385b4fbe02da497e66c60ea484e89f32a90db19037c4c792716f06b1eda474483f158680a98d46
+  checksum: 95fd9c3f8ca218150c114d7b4354e8cc79164b431c7dc4b99d0859e3ff6d7f0463f5ee3c60d1e9e6777ebda6b87122a2493f69ceb6144601f5fb82184aaba852
   languageName: node
   linkType: hard
 
@@ -15732,7 +15748,7 @@ fsevents@~2.3.1:
     gatsby-plugin-layout: 2.6.0
     gatsby-plugin-manifest: 3.6.0
     gatsby-plugin-material-ui: 3.0.1
-    gatsby-plugin-mdx: 2.6.0
+    gatsby-plugin-mdx: 2.7.0
     gatsby-plugin-preconnect: 1.2.0
     gatsby-plugin-react-helmet: 4.6.0
     gatsby-plugin-remove-serviceworker: 1.0.0
