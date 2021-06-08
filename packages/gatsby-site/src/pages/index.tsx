@@ -113,7 +113,10 @@ export const pageQuery = graphql`
         node {
           name
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              sizes: "(min-width: 960px) 320px, (min-width: 600px) 500px, (min-width: 400px) 300px, (min-width: 200px) 150px, (min-width: 0px) 40px, 100vw"
+            )
           }
         }
       }
