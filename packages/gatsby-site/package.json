@@ -25,7 +25,7 @@
     "gatsby": "3.6.2",
     "gatsby-cli": "3.6.0",
     "gatsby-legacy-polyfills": "1.6.0",
-    "gatsby-link": "3.6.0",
+    "gatsby-link": "3.7.0",
     "gatsby-plugin-canonical-urls": "3.6.0",
     "gatsby-plugin-feed": "3.6.0",
     "gatsby-plugin-google-tagmanager": "3.6.0",
