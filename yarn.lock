@@ -1502,7 +1502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.14.0, @babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.3, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:7.14.0, @babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.11.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.0, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.4.3, @babel/runtime@npm:^7.4.4, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.14.0
   resolution: "@babel/runtime@npm:7.14.0"
   dependencies:
@@ -10696,18 +10696,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:4.6.0":
-  version: 4.6.0
-  resolution: "gatsby-plugin-styled-components@npm:4.6.0"
+"gatsby-plugin-styled-components@npm:4.7.0":
+  version: 4.7.0
+  resolution: "gatsby-plugin-styled-components@npm:4.7.0"
   dependencies:
-    "@babel/runtime": ^7.12.5
+    "@babel/runtime": ^7.14.0
   peerDependencies:
     babel-plugin-styled-components: ">1.5.0"
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
     styled-components: ">=2.0.0"
-  checksum: 204bc19f281149bdc97af7cf4bdcff34307512ac036d627ac0337c3c61da56dc2ac98c801cb5df00b6c72c625107cfad51eabd5d12b52980e77a3c3c035a68ea
+  checksum: d2d227325ebbbeaaf824e22c387b55da6e58b5a0c9dd131d90c2ab1906773cc00d2581d58ec609e1575223941cc9e48725624c77628fc20d07ef28569d451134
   languageName: node
   linkType: hard
 
@@ -15726,7 +15726,7 @@ fsevents@~2.3.1:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.6.0
     gatsby-plugin-sitemap: 4.2.0
-    gatsby-plugin-styled-components: 4.6.0
+    gatsby-plugin-styled-components: 4.7.0
     gatsby-plugin-typescript: 3.6.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.6.0
