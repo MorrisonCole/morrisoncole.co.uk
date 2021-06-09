@@ -5894,10 +5894,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/styled-components", [
-        ["npm:5.1.9", {
-          "packageLocation": "./.yarn/cache/@types-styled-components-npm-5.1.9-21434b5cd5-99b5e069a0.zip/node_modules/@types/styled-components/",
+        ["npm:5.1.10", {
+          "packageLocation": "./.yarn/cache/@types-styled-components-npm-5.1.10-af755949bf-87b3bc1798.zip/node_modules/@types/styled-components/",
           "packageDependencies": [
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.10"],
             ["@types/hoist-non-react-statics", "npm:3.3.1"],
             ["@types/react", "npm:17.0.9"],
             ["csstype", "npm:3.0.8"]
@@ -7963,7 +7963,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-styled-components", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.12.0"],
             ["@babel/helper-annotate-as-pure", "npm:7.12.13"],
             ["@babel/helper-module-imports", "npm:7.13.12"],
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.10"],
             ["babel-plugin-syntax-jsx", "npm:6.18.0"],
             ["lodash", "npm:4.17.21"],
             ["react", "npm:17.0.2"],
@@ -14802,7 +14802,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/gatsby", null],
             ["@types/react", "npm:17.0.9"],
             ["@types/react-dom", "npm:17.0.7"],
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.10"],
             ["babel-plugin-styled-components", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.12.0"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.6.2"],
             ["react", "npm:17.0.2"],
@@ -20453,7 +20453,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.7"],
             ["@types/react-helmet", "npm:6.1.1"],
             ["@types/stack-trace", "npm:0.0.29"],
-            ["@types/styled-components", "npm:5.1.9"],
+            ["@types/styled-components", "npm:5.1.10"],
             ["anser", "npm:2.0.1"],
             ["babel-plugin-styled-components", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.12.0"],
             ["classnames", "npm:2.3.1"],
