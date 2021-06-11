@@ -3962,10 +3962,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:2.2.3":
-  version: 2.2.3
-  resolution: "@types/prettier@npm:2.2.3"
-  checksum: 78f1d731f9db92467596d3e2116efc402343a72ee69fa6444368317a2caf7d21ffe7d748637656ebef97ab65087867375089e743f0b9a378557cf979e5a9ac29
+"@types/prettier@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@types/prettier@npm:2.3.0"
+  checksum: 8dd9b5263fd91001d72ca4e2ff89fb0d1ba23a450bd723b4478eb651755a2f1151af14ab90c4f7dadba607142757b340c1d7271ae56806563c76719d3321ec20
   languageName: node
   linkType: hard
 
@@ -16602,7 +16602,7 @@ fsevents@~2.3.1:
   resolution: "monorepo@workspace:."
   dependencies:
     "@types/eslint": 7.2.13
-    "@types/prettier": 2.2.3
+    "@types/prettier": 2.3.0
     "@typescript-eslint/eslint-plugin": 4.26.1
     "@typescript-eslint/parser": 4.26.1
     "@yarnpkg/pnpify": 3.0.0-rc.6
