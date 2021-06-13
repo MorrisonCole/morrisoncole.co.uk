@@ -16692,7 +16692,7 @@ fsevents@~2.3.1:
     react-intersection-observer: 8.32.0
     react-live: 2.2.3
     reading-time: 1.3.0
-    remark-unwrap-images: 2.0.0
+    remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
     socket.io-client: 4.1.2
     stack-trace: 1.0.0-pre1
@@ -20280,13 +20280,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"remark-unwrap-images@npm:2.0.0":
-  version: 2.0.0
-  resolution: "remark-unwrap-images@npm:2.0.0"
+"remark-unwrap-images@npm:2.1.0":
+  version: 2.1.0
+  resolution: "remark-unwrap-images@npm:2.1.0"
   dependencies:
     hast-util-whitespace: ^1.0.0
     unist-util-visit: ^2.0.0
-  checksum: 499e17ab8f93c3d09bd7770d9c3879a3871e5168141e1a232a3cec3b1420948750e20787c0a00227d709d00da6fff651ee2777273a994df7f64f932cf8f715a2
+  checksum: 7c662c536f076f4cfe3c871875f15d321a5a460e1ddbe171321835d49f4c37584e476d079564d3e6f0a63f07724758c8ec4945856438e9032579ae0e471d59d7
   languageName: node
   linkType: hard
 
