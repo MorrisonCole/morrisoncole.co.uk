@@ -16872,7 +16872,7 @@ fsevents@~2.3.1:
     eslint-config-prettier: 8.3.0
     eslint-plugin-react: 7.24.0
     prettier: 2.3.1
-    typescript: 3.9.10
+    typescript: 4.3.3
   languageName: unknown
   linkType: soft
 
@@ -17258,7 +17258,7 @@ fsevents@~2.3.1:
     next: 11.0.0
     react: 17.0.2
     react-dom: 17.0.2
-    typescript: 3.9.10
+    typescript: 4.3.3
   languageName: unknown
   linkType: soft
 
@@ -23382,13 +23382,13 @@ typescript@*:
   languageName: node
   linkType: hard
 
-typescript@3.9.10:
-  version: 3.9.10
-  resolution: "typescript@npm:3.9.10"
+typescript@4.3.3:
+  version: 4.3.3
+  resolution: "typescript@npm:4.3.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 46c842e2cd4797b88b66ef06c9c41dd21da48b95787072ccf39d5f2aa3124361bc4c966aa1c7f709fae0509614d76751455b5231b12dbb72eb97a31369e1ff92
+  checksum: a9611281390443fa7b2933802f6deb45204dc2481c085fb6b2d0654e98d81233e8c683812abe8e0cf22ab7c516fc31d25dd763ae0345461c97bb9f24ed6c884f
   languageName: node
   linkType: hard
 
@@ -23402,13 +23402,13 @@ typescript@3.9.10:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@3.9.10#~builtin<compat/typescript>":
-  version: 3.9.10
-  resolution: "typescript@patch:typescript@npm%3A3.9.10#~builtin<compat/typescript>::version=3.9.10&hash=d8b4e7"
+"typescript@patch:typescript@4.3.3#~builtin<compat/typescript>":
+  version: 4.3.3
+  resolution: "typescript@patch:typescript@npm%3A4.3.3#~builtin<compat/typescript>::version=4.3.3&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8dcd46a8a2cb81198497f00c7721a34c914bf6b3241bf9687b868bdec9e59f1f44da41e7917cfc1dcabee4595229c73bab047f2d85c1aedacc0d1b526cc81534
+  checksum: 4d6ca2ba48932bbac77253ccfc3fd431151703f30a2e4bbd2cf292c92b96957b6d2a5e4794cf1f9410a74700e4ac485b3a247d18730eba364cc2c98ddc1a4a1e
   languageName: node
   linkType: hard
 
