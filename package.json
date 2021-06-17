@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "yarn workspace morrisoncole.co.uk start",
+    "start-next": "yarn workspace nextjs-site dev",
     "build": "yarn workspace morrisoncole.co.uk build",
     "serve": "yarn workspace morrisoncole.co.uk serve",
     "deploy": "yarn workspace morrisoncole.co.uk deploy",
