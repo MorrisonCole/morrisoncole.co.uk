@@ -128,3 +128,13 @@ resource "aws_route53_record" "a_www_morrisoncole_co_uk" {
     zone_id                = aws_cloudfront_distribution.www_morrisoncole_co_uk.hosted_zone_id
   }
 }
+
+resource "aws_route53_record" "vercel_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "alpha.${local.uk_root_domain}"
+  type    = "A"
+  records = ["76.76.21.21"]
+  ttl     = 300
+}
