@@ -1,7 +1,7 @@
 locals {
-  morrisoncole_co_uk_origin_id = "S3-morrisoncole.co.uk"
-  morrisoncole_com_origin_id   = "S3-Website-morrisoncole.com.s3-website-ap-northeast-1.amazonaws.com"
-  www_morrisoncole_com_origin_id   = "S3-Website-www.morrisoncole.com.s3-website-ap-northeast-1.amazonaws.com"
+  morrisoncole_co_uk_origin_id   = "S3-morrisoncole.co.uk"
+  morrisoncole_com_origin_id     = "S3-Website-morrisoncole.com.s3-website-ap-northeast-1.amazonaws.com"
+  www_morrisoncole_com_origin_id = "S3-Website-www.morrisoncole.com.s3-website-ap-northeast-1.amazonaws.com"
 }
 
 resource "aws_cloudfront_distribution" "base" {
