@@ -54,7 +54,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:8.3.0"],
             ["eslint-plugin-react", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:7.24.0"],
             ["prettier", "npm:2.3.1"],
-            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"]
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"],
+            ["vercel", "npm:23.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -8556,6 +8557,54 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/visitor-keys", "npm:4.27.0"],
             ["@typescript-eslint/types", "npm:4.27.0"],
             ["eslint-visitor-keys", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/build-utils", [
+        ["npm:2.11.1", {
+          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.11.1-f62a7c8788-e8424eb450.zip/node_modules/@vercel/build-utils/",
+          "packageDependencies": [
+            ["@vercel/build-utils", "npm:2.11.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/go", [
+        ["npm:1.2.2", {
+          "packageLocation": "./.yarn/cache/@vercel-go-npm-1.2.2-c7bb44b0ac-0212f69e14.zip/node_modules/@vercel/go/",
+          "packageDependencies": [
+            ["@vercel/go", "npm:1.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/node", [
+        ["npm:1.11.1", {
+          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.11.1-ed79858bc5-60b025c56d.zip/node_modules/@vercel/node/",
+          "packageDependencies": [
+            ["@vercel/node", "npm:1.11.1"],
+            ["@types/node", "npm:15.12.1"],
+            ["ts-node", "virtual:ed79858bc5a59b29ee00836cb97fab4e58940d89aff152364cef067a2b68d6d2d2017eb865ffcd062d5655999ecf2858cd8692eae2b4430d54211e2de2731d0d#npm:8.9.1"],
+            ["typescript", "patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/python", [
+        ["npm:2.0.4", {
+          "packageLocation": "./.yarn/cache/@vercel-python-npm-2.0.4-07d29a6d56-3d32defa06.zip/node_modules/@vercel/python/",
+          "packageDependencies": [
+            ["@vercel/python", "npm:2.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@vercel/ruby", [
+        ["npm:1.2.6", {
+          "packageLocation": "./.yarn/cache/@vercel-ruby-npm-1.2.6-2ed8b51a66-f96d887d2d.zip/node_modules/@vercel/ruby/",
+          "packageDependencies": [
+            ["@vercel/ruby", "npm:1.2.6"]
           ],
           "linkType": "HARD",
         }]
@@ -17816,7 +17865,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["git-win", [
         ["npm:2.3.0", {
-          "packageLocation": "./.yarn/unplugged/git-win-npm-2.3.0-b98f2b7122/node_modules/git-win/",
+          "packageLocation": "./.yarn/cache/git-win-npm-2.3.0-b98f2b7122-c00bc4cd9a.zip/node_modules/git-win/",
           "packageDependencies": [
             ["git-win", "npm:2.3.0"],
             ["@babel/runtime", "npm:7.14.0"],
@@ -23042,7 +23091,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-prettier", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:8.3.0"],
             ["eslint-plugin-react", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:7.24.0"],
             ["prettier", "npm:2.3.1"],
-            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"]
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"],
+            ["vercel", "npm:23.0.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -30657,12 +30707,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-node", [
+        ["npm:8.9.1", {
+          "packageLocation": "./.yarn/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "npm:8.9.1"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["npm:9.1.1", {
           "packageLocation": "./.yarn/cache/ts-node-npm-9.1.1-4ad31da228-356e2647b8.zip/node_modules/ts-node/",
           "packageDependencies": [
             ["ts-node", "npm:9.1.1"]
           ],
           "linkType": "SOFT",
+        }],
+        ["virtual:ed79858bc5a59b29ee00836cb97fab4e58940d89aff152364cef067a2b68d6d2d2017eb865ffcd062d5655999ecf2858cd8692eae2b4430d54211e2de2731d0d#npm:8.9.1", {
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-330f37c590/0/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
+          "packageDependencies": [
+            ["ts-node", "virtual:ed79858bc5a59b29ee00836cb97fab4e58940d89aff152364cef067a2b68d6d2d2017eb865ffcd062d5655999ecf2858cd8692eae2b4430d54211e2de2731d0d#npm:8.9.1"],
+            ["@types/typescript", null],
+            ["arg", "npm:4.1.3"],
+            ["diff", "npm:4.0.2"],
+            ["make-error", "npm:1.3.6"],
+            ["source-map-support", "npm:0.5.19"],
+            ["typescript", "patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"],
+            ["yn", "npm:3.1.1"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
         }],
         ["virtual:f4c34c3ab1a7e6b5450f902fd0033121949a7198d078e3ded1f12a767be285cf4ee63390ca317610ad1cf87ffd7fa35c8615ff25c5cffde2325f46b2cbd10e70#npm:9.1.1", {
           "packageLocation": "./.yarn/__virtual__/ts-node-virtual-fa72297d8f/0/cache/ts-node-npm-9.1.1-4ad31da228-356e2647b8.zip/node_modules/ts-node/",
@@ -30976,6 +31051,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typescript", [
+        ["patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7", {
+          "packageLocation": "./.yarn/cache/typescript-patch-0be26eb740-de97cb641a.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"]
+          ],
+          "linkType": "HARD",
+        }],
         ["patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7", {
           "packageLocation": "./.yarn/cache/typescript-patch-6b7c9f6752-3d3dec06ba.zip/node_modules/typescript/",
           "packageDependencies": [
@@ -31500,6 +31582,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:4.1.0", {
+          "packageLocation": "./.yarn/cache/update-notifier-npm-4.1.0-b35ff2fd87-c5f839ab1b.zip/node_modules/update-notifier/",
+          "packageDependencies": [
+            ["update-notifier", "npm:4.1.0"],
+            ["boxen", "npm:4.2.0"],
+            ["chalk", "npm:3.0.0"],
+            ["configstore", "npm:5.0.1"],
+            ["has-yarn", "npm:2.1.0"],
+            ["import-lazy", "npm:2.1.0"],
+            ["is-ci", "npm:2.0.0"],
+            ["is-installed-globally", "npm:0.3.2"],
+            ["is-npm", "npm:4.0.0"],
+            ["is-yarn-global", "npm:0.3.0"],
+            ["latest-version", "npm:5.1.0"],
+            ["pupa", "npm:2.1.1"],
+            ["semver-diff", "npm:3.1.1"],
+            ["xdg-basedir", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:4.1.3", {
           "packageLocation": "./.yarn/cache/update-notifier-npm-4.1.3-837e724aca-67652056e6.zip/node_modules/update-notifier/",
           "packageDependencies": [
@@ -31896,6 +31998,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/vendors-npm-1.0.4-d3a9d2c62c-4b16e0bc18.zip/node_modules/vendors/",
           "packageDependencies": [
             ["vendors", "npm:1.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["vercel", [
+        ["npm:23.0.1", {
+          "packageLocation": "./.yarn/unplugged/vercel-npm-23.0.1-6350a7bd5b/node_modules/vercel/",
+          "packageDependencies": [
+            ["vercel", "npm:23.0.1"],
+            ["@vercel/build-utils", "npm:2.11.1"],
+            ["@vercel/go", "npm:1.2.2"],
+            ["@vercel/node", "npm:1.11.1"],
+            ["@vercel/python", "npm:2.0.4"],
+            ["@vercel/ruby", "npm:1.2.6"],
+            ["esprima", "npm:4.0.1"],
+            ["update-notifier", "npm:4.1.0"]
           ],
           "linkType": "HARD",
         }]
