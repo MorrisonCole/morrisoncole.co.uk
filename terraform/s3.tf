@@ -10,18 +10,6 @@ resource "aws_s3_bucket" "morrisoncole_co_uk" {
   }
 }
 
-resource "aws_s3_bucket" "alpha_morrisoncole_co_uk" {
-  provider = aws.ap-northeast-1
-
-  bucket = local.alpha_uk_root_domain
-  acl    = "public-read"
-
-  website {
-    error_document = "404.html"
-    index_document = "index.html"
-  }
-}
-
 resource "aws_s3_bucket" "www_morrisoncole_co_uk" {
   provider = aws.us-west-2
 
