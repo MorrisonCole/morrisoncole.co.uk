@@ -2,21 +2,20 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
-  version     = "3.44.0"
-  constraints = "3.44.0"
+  version     = "3.46.0"
+  constraints = "3.46.0"
   hashes = [
-    "h1:VOVZWybe1x0E4qyawTwt7jXVBRUplTrzVFHim217DqI=",
-    "h1:hxQ8n9SHHfAIXd/FtfAqxokFYWBedzZf7xqQZWJajUs=",
-    "zh:0680315b29a140e9b7e4f5aeed3f2445abdfab31fc9237f34dcad06de4f410df",
-    "zh:13811322a205fb4a0ee617f0ae51ec94176befdf569235d0c7064db911f0acc7",
-    "zh:25e427a1cfcb1d411bc12040cf0684158d094416ecf18889a41196bacc761729",
-    "zh:40cd6acd24b060823f8d116355d8f844461a11925796b1757eb2ee18abc0bc7c",
-    "zh:94e2463eef555c388cd27f6e85ad803692d6d80ffa621bdc382ab119001d4de4",
-    "zh:aadc3bc216b14839e85b463f07b8507920ace5f202a608e4a835df23711c8a0d",
-    "zh:ab50dc1242af5a8fcdb18cf89beeaf2b2146b51ecfcecdbea033913a5f4c1c14",
-    "zh:ad48bbf4af66b5d48ca07c5c558d2f5724311db4dd943c1c98a7f3f107e03311",
-    "zh:ad76796c2145a7aaec1970a5244f5c0a9d200556121e2c5b382f296597b1a03c",
-    "zh:cf0a2181356598f8a2abfeaf0cdf385bdeea7f2e52821c850a2a08b60c26b9f6",
-    "zh:f76801af6bc34fe4a5bf1c63fa0204e24b81691049efecd6baa1526593f03935",
+    "h1:sNDpXH+7Ay7efB1MSdd5Pb5WL/Ww5EHvLFsqCD5ceD0=",
+    "zh:3ec89dba1d9ed494c5a8069b98d230289c736f5d7abb0d47d6d657d1c9a22a38",
+    "zh:47dd0ba54897a43aa22a9009d9eddec30d2e656a6153219335af23c5be609e47",
+    "zh:482164d6d7782d574d6ef3740d02a3b3566c9e3f03021b497675aa4aa6855ef9",
+    "zh:5b068dd406e0989cb1b1ce390b8dc33eb77997a594b500dea3d39595e67086b3",
+    "zh:7bb6dbe99cd483db05d28e0e3109dac6be233961f816b1145035f0f49b30bbde",
+    "zh:7c245831b5e062b0207b988821d6ed674516c78b81afe0fc015a58e40b973d05",
+    "zh:7f3fb2457ff59c6e3795acd0995cb3ec3b0f22fce5ab8b261e8480bc752787a6",
+    "zh:8dcbb64802f38dc20fccedaf93dbfbf367859eba81fe7fa4dc734323f287cf4a",
+    "zh:da6c412927a514e46ff81e4044ce29617b7c11d33db99ff959a761f97ca09fce",
+    "zh:e670cda0e9ffcd791d94bb1822c26e2a1d26cb0e7a7b655019f4375a14e04e90",
+    "zh:ebf9c5ef3eceebc1c21bcd31e535e5c323c3bf6ca5918959e297e9a6617d8094",
   ]
 }
