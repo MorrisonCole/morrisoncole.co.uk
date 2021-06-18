@@ -40,7 +40,9 @@ provider "aws" {
 }
 
 locals {
-  domain_name    = "morrisoncole"
-  uk_root_domain = "${local.domain_name}.co.uk"
-  us_root_domain = "${local.domain_name}.com"
+  domain_name          = "morrisoncole"
+  alpha_domain_name    = "alpha.morrisoncole"
+  alpha_uk_root_domain = "${local.alpha_domain_name}.co.uk"
+  uk_root_domain       = "${local.domain_name}.co.uk"
+  us_root_domain       = "${local.domain_name}.com"
 }
