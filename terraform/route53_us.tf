@@ -1,11 +1,3 @@
-resource "aws_route53_zone" "morrisoncole_co_uk" {
-  provider = aws.ap-northeast-1
-
-  name          = local.uk_root_domain
-  comment       = "Managed by Terraform"
-  force_destroy = false
-}
-
 resource "aws_route53_zone" "morrisoncole_com" {
   provider = aws.ap-northeast-1
 
@@ -78,4 +70,17 @@ resource "aws_route53_record" "www_morrisoncole_com" {
     name                   = aws_cloudfront_distribution.www_morrisoncole_com.domain_name
     zone_id                = aws_cloudfront_distribution.www_morrisoncole_com.hosted_zone_id
   }
+}
+
+resource "aws_route53_record" "cname_morrisoncole_com" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_com.zone_id
+  name    = "_98180eb7ff16ec5fb3427ee9b0e95b6f.${local.us_root_domain}"
+  type    = "CNAME"
+
+  records = [
+    "_5bfa58c73be7d9227cb4a27ccc610470.auiqqraehs.acm-validations.aws.",
+  ]
+  ttl = 300
 }
