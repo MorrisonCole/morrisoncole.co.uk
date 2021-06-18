@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "main" {
   provider = aws.us-west-2
 
-  bucket = "morrisoncole.co.uk"
+  bucket = local.uk_root_domain
   acl    = "public-read"
 
   website {
@@ -13,34 +13,34 @@ resource "aws_s3_bucket" "main" {
 resource "aws_s3_bucket" "www_morrisoncole_co_uk" {
   provider = aws.us-west-2
 
-  bucket = "www.morrisoncole.co.uk"
+  bucket = "www.${local.uk_root_domain}"
   acl    = "private"
 
   website {
-    redirect_all_requests_to = "https://morrisoncole.co.uk"
+    redirect_all_requests_to = "https://${local.uk_root_domain}"
   }
 }
 
 resource "aws_s3_bucket" "morrisoncole_com" {
   provider = aws.ap-northeast-1
 
-  bucket        = "morrisoncole.com"
+  bucket        = local.us_root_domain
   acl           = "private"
   force_destroy = false
 
   website {
-    redirect_all_requests_to = "https://morrisoncole.co.uk"
+    redirect_all_requests_to = "https://${local.uk_root_domain}"
   }
 }
 
 resource "aws_s3_bucket" "www_morrisoncole_com" {
   provider = aws.ap-northeast-1
 
-  bucket        = "www.morrisoncole.com"
+  bucket        = "www.${local.us_root_domain}"
   acl           = "private"
   force_destroy = false
 
   website {
-    redirect_all_requests_to = "https://morrisoncole.co.uk"
+    redirect_all_requests_to = "https://${local.uk_root_domain}"
   }
 }

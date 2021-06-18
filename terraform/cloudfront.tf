@@ -31,7 +31,7 @@ resource "aws_cloudfront_distribution" "base" {
   is_ipv6_enabled = true
   price_class     = "PriceClass_All"
 
-  aliases = ["morrisoncole.co.uk"]
+  aliases = [local.uk_root_domain]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -126,7 +126,7 @@ resource "aws_cloudfront_distribution" "morrisoncole_com" {
   is_ipv6_enabled = true
   price_class     = "PriceClass_All"
 
-  aliases = ["morrisoncole.com"]
+  aliases = [local.us_root_domain]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -189,7 +189,7 @@ resource "aws_cloudfront_distribution" "www_morrisoncole_com" {
   is_ipv6_enabled = true
   price_class     = "PriceClass_All"
 
-  aliases = ["www.morrisoncole.com"]
+  aliases = ["www.${local.us_root_domain}"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]

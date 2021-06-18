@@ -1,9 +1,9 @@
 resource "aws_acm_certificate" "morrisoncole_co_uk" {
   provider = aws.us-east-1
 
-  domain_name = "*.morrisoncole.co.uk"
+  domain_name = "*.${local.uk_root_domain}"
   subject_alternative_names = [
-    "morrisoncole.co.uk"
+    local.uk_root_domain
   ]
   validation_method = "EMAIL"
 
@@ -20,9 +20,9 @@ resource "aws_acm_certificate" "morrisoncole_co_uk" {
 resource "aws_acm_certificate" "morrisoncole_com" {
   provider = aws.us-east-1
 
-  domain_name = "*.morrisoncole.com"
+  domain_name = "*.${local.us_root_domain}"
   subject_alternative_names = [
-    "morrisoncole.com"
+    local.us_root_domain
   ]
   validation_method = "DNS"
 
