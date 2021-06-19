@@ -48,6 +48,7 @@ jobs:
           vercel_project_id: 'personal-website'
       - name: Run Lighthouse CI
         run: |
+          yarn install --immutable --immutable-cache
           yarn workspace nextjs-site test:lighthouse --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }}
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
