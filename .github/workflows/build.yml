@@ -29,17 +29,17 @@ jobs:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  - name: Capture Vercel preview URL
+    id: vercel_preview_url
+    uses: aaron-binary/vercel-preview-url-action@v0.0.3
+    with:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   lhci:
     name: lighthouse
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: npm install, build
-        run: |
-          yarn install --immutable --immutable-cache
-          yarn workspace nextjs-site build
       - name: Run Lighthouse CI
         run: |
-          yarn workspace nextjs-site test:lighthouse
+          yarn workspace nextjs-site test:lighthouse --collect.url=${{ steps.vercel_preview_url.outputs.vercel_preview_url }}
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
