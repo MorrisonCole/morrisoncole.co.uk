@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build
     if: github.ref != 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
@@ -17,6 +18,7 @@ jobs:
         env:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
   deploy:
+    name: Deploy Gatsby Site
     if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
@@ -29,15 +31,15 @@ jobs:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  - name: Capture Vercel preview URL
-    id: vercel_preview_url
-    uses: aaron-binary/vercel-preview-url-action@v0.0.3
-    with:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   lhci:
-    name: lighthouse
+    name: Lighthouse
     runs-on: ubuntu-latest
     steps:
+      - name: Capture Vercel Preview URL
+        id: vercel_preview_url
+        uses: aaron-binary/vercel-preview-url-action@v0.0.3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run Lighthouse CI
         run: |
           yarn workspace nextjs-site test:lighthouse --collect.url=${{ steps.vercel_preview_url.outputs.vercel_preview_url }}
