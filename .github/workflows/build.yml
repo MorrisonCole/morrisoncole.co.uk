@@ -35,6 +35,7 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Wait for 2 minutes
         run: sleep 120
       - name: Wait for Vercel Preview URL
@@ -46,7 +47,6 @@ jobs:
           vercel_team_id: ''
           vercel_project_id: 'personal-website'
       - name: Run Lighthouse CI
-        uses: actions/checkout@v2
         run: |
           yarn workspace nextjs-site test:lighthouse --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }}
         env:
