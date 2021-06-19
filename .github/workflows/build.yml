@@ -38,12 +38,12 @@ jobs:
       - name: Wait for 2 minutes
         run: sleep 120
       - name: Wait for Vercel Preview URL
-        uses: zentered/vercel-preview-url@v1.0.0
+        uses: zentered/vercel-preview-url@v1.0.1
         id: vercel_preview_url
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
-          vercel_team_id: null
+          vercel_team_id: ''
           vercel_project_id: 'personal-website'
       - name: Run Lighthouse CI
         uses: actions/checkout@v2
