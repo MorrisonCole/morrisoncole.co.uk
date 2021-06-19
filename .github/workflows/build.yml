@@ -45,6 +45,7 @@ jobs:
           vercel_team_id: null
           vercel_project_id: 'personal-website'
       - name: Run Lighthouse CI
+        uses: actions/checkout@v2
         run: |
           yarn workspace nextjs-site test:lighthouse --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }}
         env:
