@@ -4699,10 +4699,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:15.12.2":
-  version: 15.12.2
-  resolution: "@types/node@npm:15.12.2"
-  checksum: 0dff080f306e4d5cd968bd43315238a227b1f54f4bb59fa9cee976535678f00755834c0288315029ae12f78b3db43efb5bfb700cf8aae882f184eb700229f974
+"@types/node@npm:15.12.4":
+  version: 15.12.4
+  resolution: "@types/node@npm:15.12.4"
+  checksum: 1731c610eb87d2051d32d0f64f2b14b4e75443ab40ab4882e50fdaa4e5e1013240a6d249213bec1f83b2c3ba24f6d5233159a4deac0bb51751809f5cb6082735
   languageName: node
   linkType: hard
 
@@ -17360,7 +17360,7 @@ fsevents@~2.3.1:
     "@types/babel__core": 7.1.14
     "@types/lodash": 4.14.170
     "@types/mdx-js__react": 1.5.3
-    "@types/node": 15.12.2
+    "@types/node": 15.12.4
     "@types/platform": 1.3.3
     "@types/prop-types": 15.7.3
     "@types/reach__router": 1.3.8
@@ -17716,7 +17716,7 @@ fsevents@~2.3.1:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
-    "@types/node": 15.12.2
+    "@types/node": 15.12.4
     "@types/react": 17.0.11
     "@typescript-eslint/eslint-plugin": 4.27.0
     "@typescript-eslint/parser": 4.27.0
