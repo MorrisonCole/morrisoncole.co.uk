@@ -35,13 +35,17 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - name: Capture Vercel Preview URL
+      - run: sleep 120
+      - name: Wait for Vercel Preview URL
+        uses: zentered/vercel-preview-url@v1.0.0
         id: vercel_preview_url
-        uses: aaron-binary/vercel-preview-url-action@v0.0.3
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          vercel_team_id: null
+          vercel_project_id: 'personal-website'
       - name: Run Lighthouse CI
         run: |
-          yarn workspace nextjs-site test:lighthouse --collect.url=${{ steps.vercel_preview_url.outputs.vercel_preview_url }}
+          yarn workspace nextjs-site test:lighthouse --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }}
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
