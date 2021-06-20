@@ -18,11 +18,14 @@
     "vercel": "23.0.1"
   },
   "scripts": {
-    "start": "yarn workspace morrisoncole.co.uk start",
-    "start-next": "yarn workspace nextjs-site dev",
-    "build": "yarn workspace morrisoncole.co.uk build",
-    "serve": "yarn workspace morrisoncole.co.uk serve",
-    "deploy": "yarn workspace morrisoncole.co.uk deploy",
+    "start:gatsby": "yarn workspace morrisoncole.co.uk start",
+    "start:next": "yarn workspace nextjs-site dev",
+    "build:gatsby": "yarn workspace morrisoncole.co.uk build",
+    "build:next": "yarn workspace nextjs-site build",
+    "serve:gatsby": "yarn workspace morrisoncole.co.uk serve",
+    "serve:next": "yarn workspace nextjs-site start",
+    "deploy:gatsby": "yarn workspace morrisoncole.co.uk deploy",
+    "test:next": "yarn workspace nextjs-site test:lighthouse",
     "upgrade": "yarn set version from sources && yarn dlx @yarnpkg/pnpify --sdk vscode"
   }
 }
