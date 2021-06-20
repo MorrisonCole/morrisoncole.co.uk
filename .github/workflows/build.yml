@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           yarn install --immutable --immutable-cache
-          yarn build
+          yarn build:gatsby
         env:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
   deploy:
@@ -25,8 +25,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           yarn install --immutable --immutable-cache
-          yarn build
-          yarn deploy
+          yarn build:gatsby
+          yarn deploy:gatsby
         env:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -44,11 +44,11 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
-          vercel_team_id: ''
-          vercel_project_id: 'personal-website'
+          vercel_team_id: ""
+          vercel_project_id: "personal-website"
       - name: Run Lighthouse CI
         run: |
           yarn install --immutable --immutable-cache
-          yarn workspace nextjs-site test:lighthouse --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }}
+          yarn test:next --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }} --collect.numberOfRuns=3
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

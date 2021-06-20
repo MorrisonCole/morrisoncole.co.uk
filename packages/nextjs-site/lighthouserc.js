@@ -2,11 +2,9 @@ module.exports = {
   ci: {
     collect: {
       url: ["http://localhost:3000/"],
-      startServerCommand: "yarn workspace nextjs-site start",
+      startServerCommand: "yarn serve:next",
       startServerReadyPattern: "ready - started server",
-      settings: {
-        chromeFlags: "--no-sandbox",
-      },
+      numberOfRuns: 1,
     },
     upload: {
       target: "temporary-public-storage",
