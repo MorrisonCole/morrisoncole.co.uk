@@ -23768,7 +23768,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["platform", "npm:1.3.6"],
             ["prism-react-renderer", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.2.1"],
             ["prop-types", "npm:15.7.2"],
-            ["query-string", "npm:7.0.0"],
+            ["query-string", "npm:7.0.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:17.0.2"],
             ["react-helmet", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:6.1.0"],
@@ -27420,10 +27420,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:7.0.0", {
-          "packageLocation": "./.yarn/cache/query-string-npm-7.0.0-66b737faa8-6e3c4376ff.zip/node_modules/query-string/",
+        ["npm:7.0.1", {
+          "packageLocation": "./.yarn/cache/query-string-npm-7.0.1-4631368591-2eb990c0ea.zip/node_modules/query-string/",
           "packageDependencies": [
-            ["query-string", "npm:7.0.0"],
+            ["query-string", "npm:7.0.1"],
             ["decode-uri-component", "npm:0.2.0"],
             ["filter-obj", "npm:1.1.0"],
             ["split-on-first", "npm:1.1.0"],
