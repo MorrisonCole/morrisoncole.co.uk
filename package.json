@@ -8,7 +8,7 @@
     "@types/eslint": "7.2.13",
     "@types/prettier": "2.3.0",
     "@typescript-eslint/eslint-plugin": "4.28.0",
-    "@typescript-eslint/parser": "4.27.0",
+    "@typescript-eslint/parser": "4.28.0",
     "@yarnpkg/pnpify": "3.0.0-rc.6",
     "eslint": "7.29.0",
     "eslint-config-prettier": "8.3.0",
