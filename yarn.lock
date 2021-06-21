@@ -5071,20 +5071,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:4.27.0, @typescript-eslint/parser@npm:^4.20.0":
-  version: 4.27.0
-  resolution: "@typescript-eslint/parser@npm:4.27.0"
+"@typescript-eslint/parser@npm:4.28.0":
+  version: 4.28.0
+  resolution: "@typescript-eslint/parser@npm:4.28.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 4.27.0
-    "@typescript-eslint/types": 4.27.0
-    "@typescript-eslint/typescript-estree": 4.27.0
+    "@typescript-eslint/scope-manager": 4.28.0
+    "@typescript-eslint/types": 4.28.0
+    "@typescript-eslint/typescript-estree": 4.28.0
     debug: ^4.3.1
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a8ff9e0e9e6eeebea8f80c2c72aec129b9407bd388d0b78c784167973bc560476a7d186304b445cd6917cca4eaf1ad4afb8bb2202426d26fc82dcde1181dbba1
+  checksum: 08c167db5c36776a638afe52130e0bf20bfc94598da3f178171cfafb72703fc508b17667b4584cd6bea4c8c6d6922af8f7a45e9a7d6419f83fe2f6c893845d96
   languageName: node
   linkType: hard
 
@@ -5102,6 +5102,23 @@ __metadata:
     typescript:
       optional: true
   checksum: ae1655c18f7f3e806ac0f293a45945691c67eaf8bbea56fbec486aaa2f2545cd7340bbe997fe31fcb82031b94c2363a92b4c51f9607e633deb2b7eea347d7512
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^4.20.0":
+  version: 4.27.0
+  resolution: "@typescript-eslint/parser@npm:4.27.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.27.0
+    "@typescript-eslint/types": 4.27.0
+    "@typescript-eslint/typescript-estree": 4.27.0
+    debug: ^4.3.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: a8ff9e0e9e6eeebea8f80c2c72aec129b9407bd388d0b78c784167973bc560476a7d186304b445cd6917cca4eaf1ad4afb8bb2202426d26fc82dcde1181dbba1
   languageName: node
   linkType: hard
 
@@ -17575,7 +17592,7 @@ fsevents@~2.3.1:
     "@types/eslint": 7.2.13
     "@types/prettier": 2.3.0
     "@typescript-eslint/eslint-plugin": 4.28.0
-    "@typescript-eslint/parser": 4.27.0
+    "@typescript-eslint/parser": 4.28.0
     "@yarnpkg/pnpify": 3.0.0-rc.6
     eslint: 7.29.0
     eslint-config-prettier: 8.3.0
@@ -17968,7 +17985,7 @@ fsevents@~2.3.1:
     "@types/react": 17.0.11
     "@types/tailwindcss": ^2
     "@typescript-eslint/eslint-plugin": 4.28.0
-    "@typescript-eslint/parser": 4.27.0
+    "@typescript-eslint/parser": 4.28.0
     add: 2.0.6
     autoprefixer: 10.2.6
     eslint: 7.29.0
