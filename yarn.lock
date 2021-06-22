@@ -12577,9 +12577,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:3.7.1":
-  version: 3.7.1
-  resolution: "gatsby-transformer-sharp@npm:3.7.1"
+"gatsby-transformer-sharp@npm:3.8.0":
+  version: 3.8.0
+  resolution: "gatsby-transformer-sharp@npm:3.8.0"
   dependencies:
     "@babel/runtime": ^7.14.0
     bluebird: ^3.7.2
@@ -12592,7 +12592,7 @@ fsevents@~2.3.1:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 316cd3e1c16f557c205f1c3659b05c6fe509196e857c03e4e673631582139abb618dca0e5f0281f6a39f2d1e3103e41168bf8a90c1af19d36b7cced02d9c7965
+  checksum: 678c355d931fb5e09e90165c7b058e01104c4032e10f9aee41fc23dc56bf03e7f4a2fb6ee6138bc779266086c18dc39af5f80e63e96cc7454f61e8669b7d6bdb
   languageName: node
   linkType: hard
 
@@ -17666,7 +17666,7 @@ fsevents@~2.3.1:
     gatsby-remark-images: 5.4.1
     gatsby-source-filesystem: 3.7.1
     gatsby-transformer-json: 3.7.1
-    gatsby-transformer-sharp: 3.7.1
+    gatsby-transformer-sharp: 3.8.0
     graphql: 15.5.1
     lodash: 4.17.21
     mdx-utils: 0.2.0
