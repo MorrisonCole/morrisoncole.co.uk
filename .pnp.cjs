@@ -17361,6 +17361,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["core-js-compat", "npm:3.9.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.8.0", {
+          "packageLocation": "./.yarn/cache/gatsby-legacy-polyfills-npm-1.8.0-d0347c5652-4af4233ebb.zip/node_modules/gatsby-legacy-polyfills/",
+          "packageDependencies": [
+            ["gatsby-legacy-polyfills", "npm:1.8.0"],
+            ["core-js-compat", "npm:3.9.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["gatsby-link", [
@@ -23994,7 +24002,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["event-source-polyfill", "npm:1.0.24"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.7.2"],
             ["gatsby-cli", "npm:3.8.0"],
-            ["gatsby-legacy-polyfills", "npm:1.7.0"],
+            ["gatsby-legacy-polyfills", "npm:1.8.0"],
             ["gatsby-link", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.7.1"],
             ["gatsby-plugin-canonical-urls", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.7.1"],
             ["gatsby-plugin-feed", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.7.1"],
