@@ -13,7 +13,6 @@ module.exports = {
       preset: "lighthouse:no-pwa",
       assertions: {
         "csp-xss": "warn",
-        "html-has-lang": "warn",
         "is-crawlable": "warn",
       },
     },
