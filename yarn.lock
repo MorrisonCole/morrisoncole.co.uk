@@ -4915,7 +4915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/tailwindcss@npm:^2":
+"@types/tailwindcss@npm:^2.0.6":
   version: 2.0.6
   resolution: "@types/tailwindcss@npm:2.0.6"
   checksum: 28daadf271d317d0d99823c86414848c135f4767d188279b7d701a4b5c7e35b74b8dc85e35577f1640a1dca70c8063f2652da7470e1f40fa759c56cd5b44958e
@@ -17983,7 +17983,7 @@ fsevents@~2.3.1:
     "@lhci/cli": 0.8.0
     "@types/node": 15.12.4
     "@types/react": 17.0.11
-    "@types/tailwindcss": ^2
+    "@types/tailwindcss": ^2.0.6
     "@typescript-eslint/eslint-plugin": 4.28.0
     "@typescript-eslint/parser": 4.28.0
     add: 2.0.6
