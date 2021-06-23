@@ -23807,10 +23807,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:2.1.0", {
-          "packageLocation": "./.yarn/cache/mitt-npm-2.1.0-77f3c96db4-5b0f698cbf.zip/node_modules/mitt/",
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/mitt-npm-3.0.0-ea651563b7-f7be5049d2.zip/node_modules/mitt/",
           "packageDependencies": [
-            ["mitt", "npm:2.1.0"]
+            ["mitt", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -23958,7 +23958,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["graphql", "npm:15.5.1"],
             ["lodash", "npm:4.17.21"],
             ["mdx-utils", "npm:0.2.0"],
-            ["mitt", "npm:2.1.0"],
+            ["mitt", "npm:3.0.0"],
             ["platform", "npm:1.3.6"],
             ["prism-react-renderer", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.2.1"],
             ["prop-types", "npm:15.7.2"],
