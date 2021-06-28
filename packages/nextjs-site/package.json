@@ -20,7 +20,7 @@
     "@types/react": "17.0.11",
     "@types/tailwindcss": "^2.2.0",
     "@typescript-eslint/eslint-plugin": "4.28.1",
-    "@typescript-eslint/parser": "4.28.0",
+    "@typescript-eslint/parser": "4.28.1",
     "add": "2.0.6",
     "autoprefixer": "10.2.6",
     "eslint": "7.29.0",
