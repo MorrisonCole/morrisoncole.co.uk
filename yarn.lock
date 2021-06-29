@@ -6567,9 +6567,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-styled-components@npm:1.12.1":
-  version: 1.12.1
-  resolution: "babel-plugin-styled-components@npm:1.12.1"
+"babel-plugin-styled-components@npm:1.13.0":
+  version: 1.13.0
+  resolution: "babel-plugin-styled-components@npm:1.13.0"
   dependencies:
     "@babel/helper-annotate-as-pure": ^7.0.0
     "@babel/helper-module-imports": ^7.0.0
@@ -6577,7 +6577,7 @@ __metadata:
     lodash: ^4.17.11
   peerDependencies:
     styled-components: ">= 2"
-  checksum: 3a4950805002f200cfadf016b0b94b53fa80378cb0620acdda21bd79e98703c16c7751ffe701d4e8a77b2d539e72fde4a46755ed9f464cb8ac27c8c7cb0e6076
+  checksum: 87b3a0e9c89c51c9556143a34f84a1eb87441540db4a4293350b00b8f7d244cba01a8bdbd3a6d66fab4ada96b85af4721e8de6553cecc85a5efcc82697182305
   languageName: node
   linkType: hard
 
@@ -17702,7 +17702,7 @@ fsevents@^1.2.7:
     "@types/stack-trace": 0.0.29
     "@types/styled-components": 5.1.10
     anser: 2.0.1
-    babel-plugin-styled-components: 1.12.1
+    babel-plugin-styled-components: 1.13.0
     classnames: 2.3.1
     css.escape: 1.5.1
     event-source-polyfill: 1.0.24
