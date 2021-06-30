@@ -2928,22 +2928,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-operations@npm:1.18.2":
-  version: 1.18.2
-  resolution: "@graphql-codegen/typescript-operations@npm:1.18.2"
+"@graphql-codegen/typescript-operations@npm:1.18.3":
+  version: 1.18.3
+  resolution: "@graphql-codegen/typescript-operations@npm:1.18.3"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^1.18.7
-    "@graphql-codegen/typescript": ^1.22.3
-    "@graphql-codegen/visitor-plugin-common": 1.21.2
+    "@graphql-codegen/typescript": ^1.22.4
+    "@graphql-codegen/visitor-plugin-common": 1.21.3
     auto-bind: ~4.0.0
     tslib: ~2.3.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 810f268e56f9b7ecc701131423d0a1f5342aea21ff6a89a1d7b2141af8a3831ceae285709c2410bed4ebed870947d11dcf838a64c492ded8ee13971dfbf61f3e
+  checksum: 44392f9e75ff0694fa88eafa1e9bb756e6c9e77d13c38185823e1aaa315bcb97ea906f9047ebb9535bd7ebb3bc6cc84f2cde8d8d79b6fadd86899b482c3eda9d
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript@npm:1.22.4":
+"@graphql-codegen/typescript@npm:1.22.4, @graphql-codegen/typescript@npm:^1.22.4":
   version: 1.22.4
   resolution: "@graphql-codegen/typescript@npm:1.22.4"
   dependencies:
@@ -2954,40 +2954,6 @@ __metadata:
   peerDependencies:
     graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: 3e9b9eef35ff326dd39998aa44073456a6b84c4fb8d1ab5b55517edf76e607bac622949b59e89eabbba4ceba588427d24f6ba36dd547ae48f6d2751f3e524d85
-  languageName: node
-  linkType: hard
-
-"@graphql-codegen/typescript@npm:^1.22.3":
-  version: 1.22.3
-  resolution: "@graphql-codegen/typescript@npm:1.22.3"
-  dependencies:
-    "@graphql-codegen/plugin-helpers": ^1.18.7
-    "@graphql-codegen/visitor-plugin-common": 1.21.2
-    auto-bind: ~4.0.0
-    tslib: ~2.3.0
-  peerDependencies:
-    graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 128e18231fa8186bfe2fcf74c0cee19e7b685a04a4df76e3bd710ad5cc5ef16769ad49f2db0115e7f9a2aef42939af5f04347f159e062d4cf5daf48ea8b24d13
-  languageName: node
-  linkType: hard
-
-"@graphql-codegen/visitor-plugin-common@npm:1.21.2":
-  version: 1.21.2
-  resolution: "@graphql-codegen/visitor-plugin-common@npm:1.21.2"
-  dependencies:
-    "@graphql-codegen/plugin-helpers": ^1.18.7
-    "@graphql-tools/optimize": ^1.0.1
-    "@graphql-tools/relay-operation-optimizer": ^6.3.0
-    array.prototype.flatmap: ^1.2.4
-    auto-bind: ~4.0.0
-    change-case-all: 1.0.14
-    dependency-graph: ^0.11.0
-    graphql-tag: ^2.11.0
-    parse-filepath: ^1.0.2
-    tslib: ~2.3.0
-  peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 34a39d913b36711fc0e0b4de2be1fa805e9ba94ea5f00ff7189cd74ef70c8e74dfa8387f8783d887e5120ef774cc30f89c12f3efe72ef5472ff27910d1519c07
   languageName: node
   linkType: hard
 
@@ -4416,15 +4382,6 @@ __metadata:
   dependencies:
     "@babel/types": ^7.3.0
   checksum: 7bcf7fd0c88687929467d8be08460a7b216b2df5080338bc0575f1b9dbc51ba467b44063802ebbbea1249d5e2a87fed1f02d18b36c1723cd4d957cca70d3a89b
-  languageName: node
-  linkType: hard
-
-"@types/buble@npm:^0.20.0":
-  version: 0.20.0
-  resolution: "@types/buble@npm:0.20.0"
-  dependencies:
-    magic-string: ^0.25.0
-  checksum: 5e1d474e508edf988a4db124cb2379e3c2309f1de49934fd098c98d6676b08a111002c234d8b4bb9931ba38f6239312fd4c2554a1816547f8aa5f90b7a8c068d
   languageName: node
   linkType: hard
 
@@ -8630,17 +8587,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^2.4.0, core-js@npm:^2.6.5":
+"core-js@npm:^2.4.0, core-js@npm:^2.4.1, core-js@npm:^2.6.5":
   version: 2.6.12
   resolution: "core-js@npm:2.6.12"
   checksum: 44fa9934a85f8c78d61e0c8b7b22436330471ffe59ec5076fe7f324d6e8cf7f824b14b1c81ca73608b13bdb0fef035bd820989bf059767ad6fa13123bb8bd016
-  languageName: node
-  linkType: hard
-
-"core-js@npm:^3.14.0":
-  version: 3.15.2
-  resolution: "core-js@npm:3.15.2"
-  checksum: f8f61569c4c3bdf50679226f5a1045551192a2f4bc3fa46a873b6fa834cff6d1634ee138a6e4bae3eea99f1b1db2d588fa693de74640447476292b41f595a4c3
   languageName: node
   linkType: hard
 
@@ -16822,7 +16772,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.25.0, magic-string@npm:^0.25.1":
+"magic-string@npm:^0.25.1":
   version: 0.25.7
   resolution: "magic-string@npm:0.25.7"
   dependencies:
@@ -17729,7 +17679,7 @@ fsevents@^1.2.7:
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 1.21.6
     "@graphql-codegen/typescript": 1.22.4
-    "@graphql-codegen/typescript-operations": 1.18.2
+    "@graphql-codegen/typescript-operations": 1.18.3
     "@material-ui/core": 4.11.4
     "@material-ui/icons": 4.11.2
     "@material-ui/lab": 4.0.0-alpha.58
@@ -17796,7 +17746,7 @@ fsevents@^1.2.7:
     react-dom: 17.0.2
     react-helmet: 6.1.0
     react-intersection-observer: 8.32.0
-    react-live: 2.3.0
+    react-live: 2.2.3
     reading-time: 1.3.0
     remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
@@ -20370,7 +20320,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prism-react-renderer@npm:1.2.1, prism-react-renderer@npm:^1.2.1":
+"prism-react-renderer@npm:1.2.1, prism-react-renderer@npm:^1.0.1":
   version: 1.2.1
   resolution: "prism-react-renderer@npm:1.2.1"
   peerDependencies:
@@ -20486,7 +20436,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.5.8, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -20982,19 +20932,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-live@npm:2.3.0":
-  version: 2.3.0
-  resolution: "react-live@npm:2.3.0"
+"react-live@npm:2.2.3":
+  version: 2.2.3
+  resolution: "react-live@npm:2.2.3"
   dependencies:
-    "@types/buble": ^0.20.0
     buble: 0.19.6
-    core-js: ^3.14.0
+    core-js: ^2.4.1
     dom-iterator: ^1.0.0
-    prism-react-renderer: ^1.2.1
-    prop-types: ^15.7.2
-    react-simple-code-editor: ^0.11.0
+    prism-react-renderer: ^1.0.1
+    prop-types: ^15.5.8
+    react-simple-code-editor: ^0.10.0
     unescape: ^1.0.1
-  checksum: c390df78312e5264692b0ac8f745c64294d433546a60eb5992f19fdc517ac6f726a91b7f726e71a79c24db6d16d8ee8a1e927064bec57b52dae488fe6741a93f
+  checksum: 2fbba62ac0647e18be7664a8e483d7bfede8c206e173e36042ff5dadbfd0359ae7d54d479dc1c25631cf531f99c03932749311ee6fd2a9d417ec18e5d63e6ec9
   languageName: node
   linkType: hard
 
@@ -21021,13 +20970,13 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-simple-code-editor@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "react-simple-code-editor@npm:0.11.0"
+"react-simple-code-editor@npm:^0.10.0":
+  version: 0.10.0
+  resolution: "react-simple-code-editor@npm:0.10.0"
   peerDependencies:
     react: ^16.0.0
     react-dom: ^16.0.0
-  checksum: 20d9381c77c7a7ef256e2d871e1b0ab95cc0b025b3933467840f6608ce37835f98785d50b6709df7e4daf75889f3c95a0d80b1809f8399b2361ec282a063196b
+  checksum: d9f448c5d1ba1b630ad6d9d775b5fa651ad1144eb5850fed3831b97d9da6da1daced37301c09946ff3a586f1f0f488f314cc81b744a1b60a343f30517c0767e9
   languageName: node
   linkType: hard
 
