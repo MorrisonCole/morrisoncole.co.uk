@@ -4834,14 +4834,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.11":
-  version: 17.0.11
-  resolution: "@types/react@npm:17.0.11"
+"@types/react@npm:17.0.12":
+  version: 17.0.12
+  resolution: "@types/react@npm:17.0.12"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 89e80ee8e08988abca0266e5e131f57b2e18f326bebfa0ed0a06b0bca29621a5a8202d617254a053f659b9c18090c52cae0aa475a6c6036b8858030f1d448e47
+  checksum: 50250b6adc14f8aa22eb5db2dd3b756ff9f30bb9d67b596423a1bc8f854dc320442cb4238c0f17272527881ff586c3861b3a223706b9f8bdb8a3ddb0150f6019
   languageName: node
   linkType: hard
 
@@ -17696,7 +17696,7 @@ fsevents@^1.2.7:
     "@types/platform": 1.3.3
     "@types/prop-types": 15.7.3
     "@types/reach__router": 1.3.8
-    "@types/react": 17.0.11
+    "@types/react": 17.0.12
     "@types/react-dom": 17.0.8
     "@types/react-helmet": 6.1.1
     "@types/stack-trace": 0.0.29
@@ -18049,7 +18049,7 @@ fsevents@^1.2.7:
   dependencies:
     "@lhci/cli": 0.8.0
     "@types/node": 15.12.5
-    "@types/react": 17.0.11
+    "@types/react": 17.0.12
     "@types/tailwindcss": ^2.2.0
     "@typescript-eslint/eslint-plugin": 4.28.1
     "@typescript-eslint/parser": 4.28.1
