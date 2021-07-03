@@ -4728,10 +4728,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:15.14.0":
-  version: 15.14.0
-  resolution: "@types/node@npm:15.14.0"
-  checksum: 94bdbf5e92b915b439478c421b1a9554e3411a6770cb01af2703356c1ea46c202e10fb486264a19fbddf028a6b0e260f21cd970b719e6e8b81dd7c64cc9f69c8
+"@types/node@npm:15.14.1":
+  version: 15.14.1
+  resolution: "@types/node@npm:15.14.1"
+  checksum: efcc7e52a2d4d2e64c9e80ec72e3a08271a8536a713ffbfaa8391bd2a34bce599b8c2926eddc2f060a32df1c5dbd6a5d58be20ef4ac3fc6a45920622d4c87707
   languageName: node
   linkType: hard
 
@@ -17711,7 +17711,7 @@ fsevents@^1.2.7:
     "@types/babel__core": 7.1.14
     "@types/lodash": 4.14.170
     "@types/mdx-js__react": 1.5.3
-    "@types/node": 15.14.0
+    "@types/node": 15.14.1
     "@types/platform": 1.3.3
     "@types/prop-types": 15.7.3
     "@types/reach__router": 1.3.8
@@ -18067,7 +18067,7 @@ fsevents@^1.2.7:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
-    "@types/node": 15.14.0
+    "@types/node": 15.14.1
     "@types/react": 17.0.13
     "@types/tailwindcss": ^2.2.1
     "@typescript-eslint/eslint-plugin": 4.28.1
