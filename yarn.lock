@@ -6570,16 +6570,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:3.8.0"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^3.0.0-next.0
-  checksum: 2aa96aa74f4d64e943ba9506119f8253d92f7e72186f30faddfd9e1d5f8a385fef2c68a80fb8d28f5a29c3db71d591a4d92a9a17c6f6e7fc7382dbb88489c989
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^3.9.0":
   version: 3.9.0
   resolution: "babel-plugin-remove-graphql-queries@npm:3.9.0"
@@ -12301,20 +12291,20 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:1.8.0":
-  version: 1.8.0
-  resolution: "gatsby-plugin-image@npm:1.8.0"
+"gatsby-plugin-image@npm:1.9.0":
+  version: 1.9.0
+  resolution: "gatsby-plugin-image@npm:1.9.0"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.14.0
     "@babel/traverse": ^7.14.0
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^3.8.0
+    babel-plugin-remove-graphql-queries: ^3.9.0
     camelcase: ^5.3.1
     chokidar: ^3.5.1
     common-tags: ^1.8.0
     fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.8.0
+    gatsby-core-utils: ^2.9.0
     objectFitPolyfill: ^2.3.0
     prop-types: ^15.7.2
   peerDependencies:
@@ -12324,7 +12314,7 @@ fsevents@^1.2.7:
     gatsby-source-filesystem: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: b3b2221ea541cf585abce912eac80da665c2d98986a653e6e24aa002a1cb7635b1f63b9d8056e771c9914a165ae0e266d736d905b64c77950845e9f44d4c1c8d
+  checksum: 9b3f5ed22dbab04e830a5010cefd2a71bfaeed10cfb15ea51041832725f5a691397a0ffebbdf075d1dcb31077e48d70ebf714ad41ee3aca80115139663a7cc65
   languageName: node
   linkType: hard
 
@@ -17980,7 +17970,7 @@ fsevents@^1.2.7:
     gatsby-plugin-canonical-urls: 3.8.0
     gatsby-plugin-feed: 3.8.0
     gatsby-plugin-google-tagmanager: 3.8.0
-    gatsby-plugin-image: 1.8.0
+    gatsby-plugin-image: 1.9.0
     gatsby-plugin-layout: 2.8.0
     gatsby-plugin-manifest: 3.8.0
     gatsby-plugin-material-ui: 3.0.1
