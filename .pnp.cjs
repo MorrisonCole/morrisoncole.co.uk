@@ -17156,7 +17156,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-link", "virtual:3f7459a36c03d960aa169c83a3c2403c74d2ac194ed3e186a5700debbc8cf07c64ab9e62182a62deea6ccb5cd09f7ceefe81d32db5d140eaf4f5bc263094e9cc#npm:3.9.0"],
             ["gatsby-plugin-page-creator", "virtual:3f7459a36c03d960aa169c83a3c2403c74d2ac194ed3e186a5700debbc8cf07c64ab9e62182a62deea6ccb5cd09f7ceefe81d32db5d140eaf4f5bc263094e9cc#npm:3.9.0"],
             ["gatsby-plugin-typescript", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
-            ["gatsby-plugin-utils", "virtual:3f7459a36c03d960aa169c83a3c2403c74d2ac194ed3e186a5700debbc8cf07c64ab9e62182a62deea6ccb5cd09f7ceefe81d32db5d140eaf4f5bc263094e9cc#npm:1.9.0"],
+            ["gatsby-plugin-utils", "virtual:e8bdfa88285cb458ba3d091986ace6f0e63bf2b0c77a08163517eedea3c24b23f0c33e73cf41c8e516e172bd0ad03d64851110f8c6533d44d66a14240f6da1f4#npm:1.9.0"],
             ["gatsby-react-router-scroll", "virtual:3f7459a36c03d960aa169c83a3c2403c74d2ac194ed3e186a5700debbc8cf07c64ab9e62182a62deea6ccb5cd09f7ceefe81d32db5d140eaf4f5bc263094e9cc#npm:4.9.0"],
             ["gatsby-telemetry", "npm:2.9.0"],
             ["gatsby-worker", "npm:0.0.0"],
@@ -17582,7 +17582,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:8.1.0"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["gatsby-core-utils", "npm:2.9.0"],
-            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
+            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["gatsby-source-filesystem", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
             ["objectFitPolyfill", "npm:2.3.5"],
             ["prop-types", "npm:15.7.2"],
@@ -17726,7 +17726,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:8.1.0"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["gatsby-core-utils", "npm:2.8.0"],
-            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
+            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["gatsby-remark-autolink-headers", "virtual:b7097b1537689d56aace6869540b00903c2cab10bac318512a73d10d218788daa5ef75bc0c9f7d9c9b203039e631c92e6ec83c06efcb7263c386441005a03f6f#npm:4.4.1"],
             ["gatsby-remark-embed-video", "npm:3.1.1"],
             ["gatsby-remark-images", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:5.5.0"],
@@ -17903,17 +17903,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-plugin-sharp", [
-        ["npm:3.8.0", {
-          "packageLocation": "./.yarn/cache/gatsby-plugin-sharp-npm-3.8.0-49a8e66378-ff1e35ee9b.zip/node_modules/gatsby-plugin-sharp/",
+        ["npm:3.9.0", {
+          "packageLocation": "./.yarn/cache/gatsby-plugin-sharp-npm-3.9.0-f6c9f71e6a-45d4ac8867.zip/node_modules/gatsby-plugin-sharp/",
           "packageDependencies": [
-            ["gatsby-plugin-sharp", "npm:3.8.0"]
+            ["gatsby-plugin-sharp", "npm:3.9.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-sharp-virtual-bf3bd69762/0/cache/gatsby-plugin-sharp-npm-3.8.0-49a8e66378-ff1e35ee9b.zip/node_modules/gatsby-plugin-sharp/",
+        ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-sharp-virtual-e8bdfa8828/0/cache/gatsby-plugin-sharp-npm-3.9.0-f6c9f71e6a-45d4ac8867.zip/node_modules/gatsby-plugin-sharp/",
           "packageDependencies": [
-            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
+            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@types/gatsby", null],
             ["async", "npm:3.2.0"],
@@ -17922,8 +17922,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["filenamify", "npm:4.3.0"],
             ["fs-extra", "npm:9.1.0"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
-            ["gatsby-core-utils", "npm:2.8.0"],
-            ["gatsby-telemetry", "npm:2.8.0"],
+            ["gatsby-core-utils", "npm:2.9.0"],
+            ["gatsby-plugin-utils", "virtual:e8bdfa88285cb458ba3d091986ace6f0e63bf2b0c77a08163517eedea3c24b23f0c33e73cf41c8e516e172bd0ad03d64851110f8c6533d44d66a14240f6da1f4#npm:1.9.0"],
+            ["gatsby-telemetry", "npm:2.9.0"],
             ["got", "npm:10.7.0"],
             ["imagemin", "npm:7.0.1"],
             ["imagemin-mozjpeg", "npm:9.0.0"],
@@ -18062,10 +18063,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:3f7459a36c03d960aa169c83a3c2403c74d2ac194ed3e186a5700debbc8cf07c64ab9e62182a62deea6ccb5cd09f7ceefe81d32db5d140eaf4f5bc263094e9cc#npm:1.9.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-utils-virtual-776b4fc2ab/0/cache/gatsby-plugin-utils-npm-1.9.0-9164b04096-6f774c9460.zip/node_modules/gatsby-plugin-utils/",
+        ["virtual:9d851a4af182f49287906ff769f0795be740a5aa0c5fcf0f9f4c681f297c228d41c35cd9d48e475d5ac395bae683f45174ac07ab6acc419402068e90a4224cef#npm:1.8.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-utils-virtual-366c6fa09f/0/cache/gatsby-plugin-utils-npm-1.8.0-9f2be7e867-8d75099389.zip/node_modules/gatsby-plugin-utils/",
           "packageDependencies": [
-            ["gatsby-plugin-utils", "virtual:3f7459a36c03d960aa169c83a3c2403c74d2ac194ed3e186a5700debbc8cf07c64ab9e62182a62deea6ccb5cd09f7ceefe81d32db5d140eaf4f5bc263094e9cc#npm:1.9.0"],
+            ["gatsby-plugin-utils", "virtual:9d851a4af182f49287906ff769f0795be740a5aa0c5fcf0f9f4c681f297c228d41c35cd9d48e475d5ac395bae683f45174ac07ab6acc419402068e90a4224cef#npm:1.8.0"],
             ["@types/gatsby", null],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["joi", "npm:17.4.0"]
@@ -18076,10 +18077,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:9d851a4af182f49287906ff769f0795be740a5aa0c5fcf0f9f4c681f297c228d41c35cd9d48e475d5ac395bae683f45174ac07ab6acc419402068e90a4224cef#npm:1.8.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-utils-virtual-366c6fa09f/0/cache/gatsby-plugin-utils-npm-1.8.0-9f2be7e867-8d75099389.zip/node_modules/gatsby-plugin-utils/",
+        ["virtual:e8bdfa88285cb458ba3d091986ace6f0e63bf2b0c77a08163517eedea3c24b23f0c33e73cf41c8e516e172bd0ad03d64851110f8c6533d44d66a14240f6da1f4#npm:1.9.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-utils-virtual-5aa737eaeb/0/cache/gatsby-plugin-utils-npm-1.9.0-9164b04096-6f774c9460.zip/node_modules/gatsby-plugin-utils/",
           "packageDependencies": [
-            ["gatsby-plugin-utils", "virtual:9d851a4af182f49287906ff769f0795be740a5aa0c5fcf0f9f4c681f297c228d41c35cd9d48e475d5ac395bae683f45174ac07ab6acc419402068e90a4224cef#npm:1.8.0"],
+            ["gatsby-plugin-utils", "virtual:e8bdfa88285cb458ba3d091986ace6f0e63bf2b0c77a08163517eedea3c24b23f0c33e73cf41c8e516e172bd0ad03d64851110f8c6533d44d66a14240f6da1f4#npm:1.9.0"],
             ["@types/gatsby", null],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["joi", "npm:17.4.0"]
@@ -18330,7 +18331,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cheerio", "npm:1.0.0-rc.9"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["gatsby-core-utils", "npm:2.8.0"],
-            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
+            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["is-relative-url", "npm:3.0.0"],
             ["lodash", "npm:4.17.21"],
             ["mdast-util-definitions", "npm:4.0.0"],
@@ -18384,27 +18385,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["gatsby-telemetry", [
-        ["npm:2.8.0", {
-          "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.8.0-5814d7cf74-d089e56589.zip/node_modules/gatsby-telemetry/",
-          "packageDependencies": [
-            ["gatsby-telemetry", "npm:2.8.0"],
-            ["@babel/code-frame", "npm:7.14.5"],
-            ["@babel/runtime", "npm:7.14.0"],
-            ["@turist/fetch", "virtual:9b058ac36c879467ece3b2dca5ac90aabd77d14d31af2fb6af08ac39dca770a56bddbb33a2aa2bd88fa12993a7bfb15cf7e9f8e67a2ec799180fdb054fff643b#npm:7.1.7"],
-            ["@turist/time", "npm:0.0.1"],
-            ["async-retry-ng", "npm:2.0.1"],
-            ["boxen", "npm:4.2.0"],
-            ["configstore", "npm:5.0.1"],
-            ["fs-extra", "npm:8.1.0"],
-            ["gatsby-core-utils", "npm:2.8.0"],
-            ["git-up", "npm:4.0.2"],
-            ["is-docker", "npm:2.2.1"],
-            ["lodash", "npm:4.17.21"],
-            ["node-fetch", "npm:2.6.1"],
-            ["uuid", "npm:3.4.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:2.9.0", {
           "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.9.0-9b058ac36c-1cb02e9c42.zip/node_modules/gatsby-telemetry/",
           "packageDependencies": [
@@ -18470,7 +18450,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["common-tags", "npm:1.8.0"],
             ["fs-extra", "npm:9.1.0"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
-            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
+            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["potrace", "npm:2.1.8"],
             ["probe-image-size", "npm:6.0.0"],
             ["semver", "npm:7.3.5"],
@@ -24076,7 +24056,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-react-helmet", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.8.0"],
             ["gatsby-plugin-remove-serviceworker", "npm:1.0.0"],
             ["gatsby-plugin-s3", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:0.3.8"],
-            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.0"],
+            ["gatsby-plugin-sharp", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["gatsby-plugin-sitemap", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.4.0"],
             ["gatsby-plugin-styled-components", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.9.0"],
             ["gatsby-plugin-typescript", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
