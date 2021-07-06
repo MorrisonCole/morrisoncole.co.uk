@@ -12812,14 +12812,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:5.5.0":
-  version: 5.5.0
-  resolution: "gatsby-remark-images@npm:5.5.0"
+"gatsby-remark-images@npm:5.6.0":
+  version: 5.6.0
+  resolution: "gatsby-remark-images@npm:5.6.0"
   dependencies:
     "@babel/runtime": ^7.14.0
     chalk: ^4.1.0
     cheerio: ^1.0.0-rc.9
-    gatsby-core-utils: ^2.8.0
+    gatsby-core-utils: ^2.9.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -12830,7 +12830,7 @@ fsevents@^1.2.7:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 9ed798d34c915e9629438e50185611810588f1019426bf4d1745d8918a16c0129602aa597dd655e1670316d945ec5414012580d5c357c3f4a0bd747b155e6e27
+  checksum: 5c70ea0cd3fae1b34655f073b8d556c716b4b284657d9dc1eafbe51186f89a65ab04979705f829c0099e9b4bad5d1560cd2de7fa4b468d47f6fa5fff36fe8a54
   languageName: node
   linkType: hard
 
@@ -17997,7 +17997,7 @@ fsevents@^1.2.7:
     gatsby-react-router-scroll: 4.8.0
     gatsby-remark-autolink-headers: 4.5.0
     gatsby-remark-embed-video: 3.1.1
-    gatsby-remark-images: 5.5.0
+    gatsby-remark-images: 5.6.0
     gatsby-source-filesystem: 3.8.0
     gatsby-transformer-json: 3.8.0
     gatsby-transformer-sharp: 3.8.0
