@@ -3890,9 +3890,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/lab@npm:4.0.0-alpha.58":
-  version: 4.0.0-alpha.58
-  resolution: "@material-ui/lab@npm:4.0.0-alpha.58"
+"@material-ui/lab@npm:4.0.0-alpha.59":
+  version: 4.0.0-alpha.59
+  resolution: "@material-ui/lab@npm:4.0.0-alpha.59"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/utils": ^4.11.2
@@ -3900,14 +3900,14 @@ __metadata:
     prop-types: ^15.7.2
     react-is: ^16.8.0 || ^17.0.0
   peerDependencies:
-    "@material-ui/core": ^4.9.10
+    "@material-ui/core": ^4.12.0
     "@types/react": ^16.8.6 || ^17.0.0
     react: ^16.8.0 || ^17.0.0
     react-dom: ^16.8.0 || ^17.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 39777028a72b8ef23a24926fbbc56cb4bef0f109e50c2711d546880b2918c8554fdf39b5eeaea8a0e4214302fd7d02788b91688ce4e26aac362e6cfe755030ac
+  checksum: e0f9d7f20718375980bdf908aaf0cd58c74538bb8c14b417226c9b4e55cd299328ad72764d59d5ff11983e07747374183fc617a31dae35cd1b30376c4eb19c18
   languageName: node
   linkType: hard
 
@@ -17717,7 +17717,7 @@ fsevents@^1.2.7:
     "@graphql-codegen/typescript-operations": 1.18.3
     "@material-ui/core": 4.12.0
     "@material-ui/icons": 4.11.2
-    "@material-ui/lab": 4.0.0-alpha.58
+    "@material-ui/lab": 4.0.0-alpha.59
     "@material-ui/styles": 4.11.4
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
