@@ -12247,14 +12247,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-layout@npm:2.8.0":
-  version: 2.8.0
-  resolution: "gatsby-plugin-layout@npm:2.8.0"
+"gatsby-plugin-layout@npm:2.9.0":
+  version: 2.9.0
+  resolution: "gatsby-plugin-layout@npm:2.9.0"
   dependencies:
     "@babel/runtime": ^7.14.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: ab4e338b25195db484fec010890dcc467e9fcd90868e96400f3c28b2201cc4e4068139da35ca1de67f0821dba08a529aaea68efb7150101d065131feb8b1b80f
+  checksum: f04af35550fb89d991b69111cf25517461a256fcdb99de07a690b1e46218432f9f0e4c03ff0740b375113e0ef914ff3f80ac1e8ee74afc4274f3e9680bcdc913
   languageName: node
   linkType: hard
 
@@ -17834,7 +17834,7 @@ fsevents@^1.2.7:
     gatsby-plugin-feed: 3.8.0
     gatsby-plugin-google-tagmanager: 3.8.0
     gatsby-plugin-image: 1.9.0
-    gatsby-plugin-layout: 2.8.0
+    gatsby-plugin-layout: 2.9.0
     gatsby-plugin-manifest: 3.8.0
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.8.0
