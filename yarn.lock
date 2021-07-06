@@ -12626,20 +12626,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-react-router-scroll@npm:4.8.0":
-  version: 4.8.0
-  resolution: "gatsby-react-router-scroll@npm:4.8.0"
-  dependencies:
-    "@babel/runtime": ^7.14.0
-  peerDependencies:
-    "@gatsbyjs/reach-router": ^1.3.5
-    react: ^16.9.0 || ^17.0.0
-    react-dom: ^16.9.0 || ^17.0.0
-  checksum: 0445f624c762be0937096c0bb866eea95d44b7b29ee811633aac0d86592f5c007b4aa1de3462dc923614261b6dea6b4dba21bae985f43d5d84f05194e540e95b
-  languageName: node
-  linkType: hard
-
-"gatsby-react-router-scroll@npm:^4.9.0":
+"gatsby-react-router-scroll@npm:4.9.0, gatsby-react-router-scroll@npm:^4.9.0":
   version: 4.9.0
   resolution: "gatsby-react-router-scroll@npm:4.9.0"
   dependencies:
@@ -18011,7 +17998,7 @@ fsevents@^1.2.7:
     gatsby-plugin-styled-components: 4.8.0
     gatsby-plugin-typescript: 3.8.0
     gatsby-plugin-web-font-loader: 1.0.4
-    gatsby-react-router-scroll: 4.8.0
+    gatsby-react-router-scroll: 4.9.0
     gatsby-remark-autolink-headers: 4.5.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.5.0
