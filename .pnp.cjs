@@ -7675,10 +7675,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/babel__core", [
-        ["npm:7.1.14", {
-          "packageLocation": "./.yarn/cache/@types-babel__core-npm-7.1.14-a93ee22530-de4a1a4905.zip/node_modules/@types/babel__core/",
+        ["npm:7.1.15", {
+          "packageLocation": "./.yarn/cache/@types-babel__core-npm-7.1.15-317a2aada0-3ea0163696.zip/node_modules/@types/babel__core/",
           "packageDependencies": [
-            ["@types/babel__core", "npm:7.1.14"],
+            ["@types/babel__core", "npm:7.1.15"],
             ["@babel/parser", "npm:7.14.4"],
             ["@babel/types", "npm:7.14.4"],
             ["@types/babel__generator", "npm:7.6.2"],
@@ -10560,7 +10560,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["babel-plugin-remove-graphql-queries", "virtual:a5c60e82833c61f5f5889b66dac5f88f7b0dc015c9abde251545d42dfa3c12255d4e24df19f4501dc0fa5d05598d6285062a0b4b51ae0108f093019d8e7f87e0#npm:3.8.0"],
             ["@babel/core", "npm:7.14.6"],
-            ["@types/babel__core", "npm:7.1.14"],
+            ["@types/babel__core", "npm:7.1.15"],
             ["@types/gatsby", null],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.8.1"]
           ],
@@ -17514,7 +17514,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.14.6"],
             ["@babel/parser", "npm:7.14.6"],
             ["@babel/traverse", "npm:7.14.2"],
-            ["@types/babel__core", "npm:7.1.14"],
+            ["@types/babel__core", "npm:7.1.15"],
             ["@types/gatsby", null],
             ["@types/gatsby-plugin-sharp", null],
             ["@types/gatsby-source-filesystem", null],
@@ -23916,7 +23916,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mikaelkristiansson/domready", "npm:1.0.11"],
             ["@morrisoncole/gatsby-source-goodreads", "npm:0.1.2"],
             ["@reach/router", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.3.4"],
-            ["@types/babel__core", "npm:7.1.14"],
+            ["@types/babel__core", "npm:7.1.15"],
             ["@types/lodash", "npm:4.14.170"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:16.0.0"],
