@@ -8700,15 +8700,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-gatsby@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "create-gatsby@npm:1.8.0"
-  bin:
-    create-gatsby: cli.js
-  checksum: 1b4202de21b4bd7e3e1382347d20b60d8b193c6d5a9889d9b72bf00c1b493354b6779c85fd479a5a51ba2877781872fdc891f673a970a1bbfc81e8e1ee11c26f
-  languageName: node
-  linkType: hard
-
 "create-gatsby@npm:^1.9.0":
   version: 1.9.0
   resolution: "create-gatsby@npm:1.9.0"
@@ -11209,20 +11200,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"express-graphql@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "express-graphql@npm:0.9.0"
-  dependencies:
-    accepts: ^1.3.7
-    content-type: ^1.0.4
-    http-errors: ^1.7.3
-    raw-body: ^2.4.1
-  peerDependencies:
-    graphql: ^14.4.1
-  checksum: 700f13721cce4a8abd76a4ae5cc853e3bd9322d6a405c86e0a48f867623cea83783744a68c2f276f40146e210f031f1bbdcb134f2104407538f4942ff8edb5a1
-  languageName: node
-  linkType: hard
-
 "express@npm:^4.17.1":
   version: 4.17.1
   resolution: "express@npm:4.17.1"
@@ -12031,55 +12008,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:3.8.0":
-  version: 3.8.0
-  resolution: "gatsby-cli@npm:3.8.0"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@types/common-tags": ^1.8.0
-    better-opn: ^2.0.0
-    chalk: ^4.1.0
-    clipboardy: ^2.3.0
-    common-tags: ^1.8.0
-    configstore: ^5.0.1
-    convert-hrtime: ^3.0.0
-    create-gatsby: ^1.8.0
-    envinfo: ^7.7.3
-    execa: ^3.4.0
-    fs-exists-cached: ^1.0.0
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.8.0
-    gatsby-recipes: ^0.19.0
-    gatsby-telemetry: ^2.8.0
-    hosted-git-info: ^3.0.6
-    is-valid-path: ^0.1.1
-    joi: ^17.4.0
-    lodash: ^4.17.21
-    meant: ^1.0.2
-    node-fetch: ^2.6.1
-    opentracing: ^0.14.4
-    pretty-error: ^2.1.1
-    progress: ^2.0.3
-    prompts: ^2.3.2
-    redux: ^4.0.5
-    resolve-cwd: ^3.0.0
-    semver: ^7.3.2
-    signal-exit: ^3.0.3
-    source-map: 0.7.3
-    stack-trace: ^0.0.10
-    strip-ansi: ^5.2.0
-    update-notifier: ^5.0.1
-    uuid: 3.4.0
-    yargs: ^15.4.1
-    yoga-layout-prebuilt: ^1.9.6
-    yurnalist: ^2.1.0
-  bin:
-    gatsby: cli.js
-  checksum: 9a724277b36b7c318b6eb9d5bbef53618fc6ebb11f0c11e7168b4a0d5f7b28e110f987083135cd1e5e0a47387337df49ec2602b4cf424cf811e314950a53d2c0
-  languageName: node
-  linkType: hard
-
-"gatsby-cli@npm:^3.9.0":
+"gatsby-cli@npm:3.9.0, gatsby-cli@npm:^3.9.0":
   version: 3.9.0
   resolution: "gatsby-cli@npm:3.9.0"
   dependencies:
@@ -12632,72 +12561,6 @@ fsevents@^1.2.7:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
   checksum: 9442fb174e59bc270e793bf5e1ece09e0a1301fb4f1d98c0bf7e70b39c9503a3952c3283c225295996ed3b727b694244a4962b099378505df8df9ab4f8734ded
-  languageName: node
-  linkType: hard
-
-"gatsby-recipes@npm:^0.19.0":
-  version: 0.19.0
-  resolution: "gatsby-recipes@npm:0.19.0"
-  dependencies:
-    "@babel/core": ^7.14.0
-    "@babel/generator": ^7.14.0
-    "@babel/helper-plugin-utils": ^7.14.0
-    "@babel/plugin-proposal-optional-chaining": ^7.14.0
-    "@babel/plugin-transform-react-jsx": ^7.14.0
-    "@babel/standalone": ^7.14.0
-    "@babel/template": ^7.14.0
-    "@babel/types": ^7.14.0
-    "@graphql-tools/schema": ^7.0.0
-    "@graphql-tools/utils": ^7.0.2
-    "@hapi/hoek": 8.x.x
-    "@hapi/joi": ^15.1.1
-    better-queue: ^3.8.10
-    chokidar: ^3.4.2
-    contentful-management: ^7.5.1
-    cors: ^2.8.5
-    debug: ^4.3.1
-    detect-port: ^1.3.0
-    dotenv: ^8.2.0
-    execa: ^4.0.2
-    express: ^4.17.1
-    express-graphql: ^0.9.0
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.8.0
-    gatsby-telemetry: ^2.8.0
-    glob: ^7.1.6
-    graphql: ^15.4.0
-    graphql-compose: ~7.25.0
-    graphql-subscriptions: ^1.1.0
-    graphql-type-json: ^0.3.2
-    hicat: ^0.8.0
-    is-binary-path: ^2.1.0
-    is-url: ^1.2.4
-    jest-diff: ^25.5.0
-    lock: ^1.0.0
-    lodash: ^4.17.21
-    mitt: ^1.2.0
-    mkdirp: ^0.5.1
-    node-fetch: ^2.5.0
-    pkg-dir: ^4.2.0
-    prettier: ^2.0.5
-    prop-types: ^15.6.1
-    remark-mdx: ^2.0.0-next.4
-    remark-mdxjs: ^2.0.0-next.4
-    remark-parse: ^6.0.3
-    remark-stringify: ^8.1.0
-    resolve-from: ^5.0.0
-    semver: ^7.3.2
-    single-trailing-newline: ^1.0.0
-    strip-ansi: ^6.0.0
-    style-to-object: ^0.3.0
-    unified: ^8.4.2
-    unist-util-remove: ^2.0.0
-    unist-util-visit: ^2.0.2
-    uuid: 3.4.0
-    ws: ^7.3.0
-    xstate: ^4.9.1
-    yoga-layout-prebuilt: ^1.9.6
-  checksum: 3d0e485a6e89dde9a0e2141d9448c56ee087b1126a01fec038c80614967aa19e3bcd5ee41098cbbf216e7f0d32d52d48b61f192453e6c7781853f415e5242832
   languageName: node
   linkType: hard
 
@@ -14248,7 +14111,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"http-errors@npm:1.8.0, http-errors@npm:^1.7.3":
+"http-errors@npm:1.8.0":
   version: 1.8.0
   resolution: "http-errors@npm:1.8.0"
   dependencies:
@@ -17974,7 +17837,7 @@ fsevents@^1.2.7:
     css.escape: 1.5.1
     event-source-polyfill: 1.0.24
     gatsby: 3.9.0
-    gatsby-cli: 3.8.0
+    gatsby-cli: 3.9.0
     gatsby-legacy-polyfills: 1.8.0
     gatsby-link: 3.8.0
     gatsby-plugin-canonical-urls: 3.8.0
