@@ -8264,10 +8264,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/react-helmet", [
-        ["npm:6.1.1", {
-          "packageLocation": "./.yarn/cache/@types-react-helmet-npm-6.1.1-f72de1cba3-bc962f7e37.zip/node_modules/@types/react-helmet/",
+        ["npm:6.1.2", {
+          "packageLocation": "./.yarn/cache/@types-react-helmet-npm-6.1.2-0cdeedab9b-ee66a7b950.zip/node_modules/@types/react-helmet/",
           "packageDependencies": [
-            ["@types/react-helmet", "npm:6.1.1"],
+            ["@types/react-helmet", "npm:6.1.2"],
             ["@types/react", "npm:17.0.9"]
           ],
           "linkType": "HARD",
@@ -17798,7 +17798,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-react-helmet", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.9.0"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@types/gatsby", null],
-            ["@types/react-helmet", "npm:6.1.1"],
+            ["@types/react-helmet", "npm:6.1.2"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.0"],
             ["react-helmet", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:6.1.0"]
           ],
@@ -23941,7 +23941,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/reach__router", "npm:1.3.9"],
             ["@types/react", "npm:17.0.13"],
             ["@types/react-dom", "npm:17.0.9"],
-            ["@types/react-helmet", "npm:6.1.1"],
+            ["@types/react-helmet", "npm:6.1.2"],
             ["@types/stack-trace", "npm:0.0.29"],
             ["@types/styled-components", "npm:5.1.11"],
             ["anser", "npm:2.0.1"],
