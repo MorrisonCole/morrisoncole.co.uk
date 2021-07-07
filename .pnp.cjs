@@ -8050,6 +8050,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/lodash", "npm:4.14.170"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.14.171", {
+          "packageLocation": "./.yarn/cache/@types-lodash-npm-4.14.171-b4c768e142-d093d8ff8b.zip/node_modules/@types/lodash/",
+          "packageDependencies": [
+            ["@types/lodash", "npm:4.14.171"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@types/mdast", [
@@ -24044,7 +24051,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@morrisoncole/gatsby-source-goodreads", "npm:0.1.2"],
             ["@reach/router", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.3.4"],
             ["@types/babel__core", "npm:7.1.15"],
-            ["@types/lodash", "npm:4.14.170"],
+            ["@types/lodash", "npm:4.14.171"],
             ["@types/mdx-js__react", "npm:1.5.3"],
             ["@types/node", "npm:16.0.0"],
             ["@types/platform", "npm:1.3.3"],
