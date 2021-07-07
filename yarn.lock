@@ -3987,6 +3987,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdx-js/loader@npm:1.6.22":
+  version: 1.6.22
+  resolution: "@mdx-js/loader@npm:1.6.22"
+  dependencies:
+    "@mdx-js/mdx": 1.6.22
+    "@mdx-js/react": 1.6.22
+    loader-utils: 2.0.0
+  checksum: 5ce4b92824555c6dd06c12ee7b9fc036e41499a5026218597316236d62253b6ff6417a416445a71f685716b57bbfc45593f156373252d1f53510b9ef9666334a
+  languageName: node
+  linkType: hard
+
 "@mdx-js/mdx@npm:1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/mdx@npm:1.6.22"
@@ -4073,6 +4084,16 @@ __metadata:
   version: 11.0.1
   resolution: "@next/eslint-plugin-next@npm:11.0.1"
   checksum: 8b1c99780cabe7e941f034a3fc1e492d4f42d45065d1016b2c730649e4757ed293c71c2b36da650ddc7b317b42d9f8f7fa600c4a698946e57bd26d5d56f4ffff
+  languageName: node
+  linkType: hard
+
+"@next/mdx@npm:11.0.1":
+  version: 11.0.1
+  resolution: "@next/mdx@npm:11.0.1"
+  peerDependencies:
+    "@mdx-js/loader": ">=0.15.0"
+    "@mdx-js/react": "*"
+  checksum: 7407975a52171216aa754a728c2a9acecb4472074acf27477edc732ef7a35f50f1d568f1daccb742cdd50d014273e1069145baed5a91f60afad0e4adc9acb62d
   languageName: node
   linkType: hard
 
@@ -18100,6 +18121,10 @@ fsevents@^1.2.7:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
+    "@mdx-js/loader": 1.6.22
+    "@mdx-js/react": 1.6.22
+    "@next/mdx": 11.0.1
+    "@types/mdx-js__react": 1.5.3
     "@types/node": 16.0.1
     "@types/react": 17.0.14
     "@types/tailwindcss": 2.2.1
