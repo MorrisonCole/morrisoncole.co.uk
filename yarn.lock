@@ -3846,13 +3846,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/core@npm:4.12.0":
-  version: 4.12.0
-  resolution: "@material-ui/core@npm:4.12.0"
+"@material-ui/core@npm:4.12.1":
+  version: 4.12.1
+  resolution: "@material-ui/core@npm:4.12.1"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/styles": ^4.11.4
-    "@material-ui/system": ^4.12.0
+    "@material-ui/system": ^4.12.1
     "@material-ui/types": 5.1.0
     "@material-ui/utils": ^4.11.2
     "@types/react-transition-group": ^4.2.0
@@ -3869,7 +3869,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: fb4a00eda52e91f528614ceff27152acda1b19c284cdc4a1ca67067d90ea26ab9a799dee236466b40802d5547c474b0b14260f2511c94463eedf5de1101ec776
+  checksum: 6f612bbb75c18a9ef6746361d0736c5777c4a3a52f85bc4d0d1f6f49b2e1982dd4afc85cba1d66057f5e5d9b52ce1c6d2a9803d71592c50d96fadd74e4170201
   languageName: node
   linkType: hard
 
@@ -3942,9 +3942,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/system@npm:^4.12.0":
-  version: 4.12.0
-  resolution: "@material-ui/system@npm:4.12.0"
+"@material-ui/system@npm:^4.12.1":
+  version: 4.12.1
+  resolution: "@material-ui/system@npm:4.12.1"
   dependencies:
     "@babel/runtime": ^7.4.4
     "@material-ui/utils": ^4.11.2
@@ -3957,7 +3957,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: ca47a5cf6f2ac877726d9499e116d1362fc09031e59b9f891f05f97f774a233503848de91049324319c876b141e2d688f5f867bb862dd26beb5b05d30126b762
+  checksum: 2acf20b43090c381530899e2fa85b0a774fc4dfe08aa97a55c8fd58f833175fd1cb17374ecc403f722c2db3b3caffd1fadd5dffe146a08d036bc6031d676659b
   languageName: node
   linkType: hard
 
@@ -17807,7 +17807,7 @@ fsevents@^1.2.7:
     "@graphql-codegen/cli": 1.21.6
     "@graphql-codegen/typescript": 1.22.4
     "@graphql-codegen/typescript-operations": 1.18.3
-    "@material-ui/core": 4.12.0
+    "@material-ui/core": 4.12.1
     "@material-ui/icons": 4.11.2
     "@material-ui/lab": 4.0.0-alpha.59
     "@material-ui/styles": 4.11.4
