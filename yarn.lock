@@ -4766,10 +4766,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.0.2":
-  version: 16.0.2
-  resolution: "@types/node@npm:16.0.2"
-  checksum: 76b1336dfae0c89f22018d5b699bd25b5a8f4a95a3b6e9bdd35076c756c136a21c84f88e7f46f00a9a098c9158ea49aacb1eb81eb174036ddd6dbd45e7079851
+"@types/node@npm:16.0.3":
+  version: 16.0.3
+  resolution: "@types/node@npm:16.0.3"
+  checksum: b91ee69dbcf2c4b8a3c421439c5045a9903236506dae056d098587eec18770b867692018bb21ed8c911105c575670d88b8797f0a7fbca53e0899e2f3ad28d826
   languageName: node
   linkType: hard
 
@@ -17765,7 +17765,7 @@ fsevents@^1.2.7:
     "@types/babel__core": 7.1.15
     "@types/lodash": 4.14.171
     "@types/mdx-js__react": 1.5.4
-    "@types/node": 16.0.2
+    "@types/node": 16.0.3
     "@types/platform": 1.3.4
     "@types/prop-types": 15.7.4
     "@types/reach__router": 1.3.9
@@ -18125,7 +18125,7 @@ fsevents@^1.2.7:
     "@mdx-js/react": 1.6.22
     "@next/mdx": 11.0.1
     "@types/mdx-js__react": 1.5.4
-    "@types/node": 16.0.2
+    "@types/node": 16.0.3
     "@types/react": 17.0.14
     "@types/tailwindcss": 2.2.1
     "@typescript-eslint/eslint-plugin": 4.28.2
