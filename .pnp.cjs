@@ -8177,10 +8177,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:16.3.0", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.3.0-7c8ffa306d-f0a7353347.zip/node_modules/@types/node/",
+        ["npm:16.3.1", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.3.1-c090cf2395-2a9d69db32.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:16.3.0"]
+            ["@types/node", "npm:16.3.1"]
           ],
           "linkType": "HARD",
         }],
@@ -23986,7 +23986,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.15"],
             ["@types/lodash", "npm:4.14.171"],
             ["@types/mdx-js__react", "npm:1.5.4"],
-            ["@types/node", "npm:16.3.0"],
+            ["@types/node", "npm:16.3.1"],
             ["@types/platform", "npm:1.3.4"],
             ["@types/prop-types", "npm:15.7.4"],
             ["@types/reach__router", "npm:1.3.9"],
@@ -24383,7 +24383,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mdx-js/react", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.6.22"],
             ["@next/mdx", "virtual:9a592df1782921a0c2c3fb3224a3358686378d45bfd278af6560cd02db7f76c68be5e78d17b01a765bfd9bca4af37a396f7e6d509fa4025bbad31f42e4be95fd#npm:11.0.1"],
             ["@types/mdx-js__react", "npm:1.5.4"],
-            ["@types/node", "npm:16.3.0"],
+            ["@types/node", "npm:16.3.1"],
             ["@types/react", "npm:17.0.14"],
             ["@types/tailwindcss", "npm:2.2.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:9a592df1782921a0c2c3fb3224a3358686378d45bfd278af6560cd02db7f76c68be5e78d17b01a765bfd9bca4af37a396f7e6d509fa4025bbad31f42e4be95fd#npm:4.28.2"],
