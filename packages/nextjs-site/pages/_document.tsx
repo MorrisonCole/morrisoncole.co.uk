@@ -40,6 +40,12 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=optional"
+            as="style"
+            crossOrigin="anonymous"
+          />
+          <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=optional"
             rel="stylesheet"
           />
