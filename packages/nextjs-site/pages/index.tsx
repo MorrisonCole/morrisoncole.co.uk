@@ -12,10 +12,21 @@ const Title = styled.h1`
   font-size: 3em;
 `;
 
-const Description = styled.p`
+const Bold = styled.span`
  color: black;
  font-weight: bold;
 `
+
+const Italic = styled.span`
+  color: black;
+  font-style: italic;
+`;
+
+const BoldItalic = styled.span`
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+`;
 
 export default function Home() {
   return (
@@ -28,7 +39,15 @@ export default function Home() {
 
       <Content>
         <Title>Hello, world.</Title>
-        <Description>Exciting text.</Description>
+        <p>
+          I&apos;m <Bold>bold.</Bold>
+        </p>
+        <p>
+          I&apos;m <Italic>italic.</Italic>
+        </p>
+        <p>
+          I&apos;m <BoldItalic>both!</BoldItalic>
+        </p>
       </Content>
     </Layout>
   );
