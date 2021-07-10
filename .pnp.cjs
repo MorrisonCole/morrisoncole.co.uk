@@ -10254,7 +10254,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["aws-sdk", [
         ["npm:2.922.0", {
-          "packageLocation": "./.yarn/unplugged/aws-sdk-npm-2.922.0-41afe00e6f/node_modules/aws-sdk/",
+          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.922.0-41afe00e6f-72922e1b12.zip/node_modules/aws-sdk/",
           "packageDependencies": [
             ["aws-sdk", "npm:2.922.0"],
             ["buffer", "npm:4.9.2"],
@@ -12921,21 +12921,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:2.6.12", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-0b93d77d31/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-2.6.12-0b93d77d31-44fa9934a8.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:2.6.12"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.14.0", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.14.0-29d8f94441/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.14.0-29d8f94441-a450089e57.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.14.0"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.15.2", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.15.2-6825052e10/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.15.2-6825052e10-f8f61569c4.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.15.2"]
           ],
@@ -12964,7 +12964,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js-pure", [
         ["npm:3.14.0", {
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.14.0-9a85e5a133/node_modules/core-js-pure/",
+          "packageLocation": "./.yarn/cache/core-js-pure-npm-3.14.0-9a85e5a133-800628e536.zip/node_modules/core-js-pure/",
           "packageDependencies": [
             ["core-js-pure", "npm:3.14.0"]
           ],
@@ -14844,10 +14844,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:5.1.1", {
-          "packageLocation": "./.yarn/cache/engine.io-client-npm-5.1.1-35188532ad-5689dd0cb7.zip/node_modules/engine.io-client/",
+        ["npm:5.1.2", {
+          "packageLocation": "./.yarn/cache/engine.io-client-npm-5.1.2-22422fcd8f-910456281c.zip/node_modules/engine.io-client/",
           "packageDependencies": [
-            ["engine.io-client", "npm:5.1.1"],
+            ["engine.io-client", "npm:5.1.2"],
             ["base64-arraybuffer", "npm:0.1.4"],
             ["component-emitter", "npm:1.3.0"],
             ["debug", "virtual:f8b688e6542ef635eefae684748f7db5410cd1803b0f43b02ae3ebd860a79349e9ae07146ce05bdfb5fca9536ad9dbe230ed7f4c2f2ffe26893f1f1b0b8700e7#npm:4.3.2"],
@@ -17056,14 +17056,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby", [
         ["npm:3.9.1", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-f6a188d6f7/node_modules/gatsby/",
+          "packageLocation": "./.yarn/cache/gatsby-npm-3.9.1-48209a41f3-cfb5f92037.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "npm:3.9.1"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.1", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-f6a188d6f7/node_modules/gatsby/",
+          "packageLocation": "./.yarn/__virtual__/gatsby-virtual-f6a188d6f7/0/cache/gatsby-npm-3.9.1-48209a41f3-cfb5f92037.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.9.1"],
             ["@babel/code-frame", "npm:7.14.5"],
@@ -17237,7 +17237,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-cli", [
         ["npm:3.9.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-cli-npm-3.9.0-fbb0867935/node_modules/gatsby-cli/",
+          "packageLocation": "./.yarn/cache/gatsby-cli-npm-3.9.0-fbb0867935-9f1565bb01.zip/node_modules/gatsby-cli/",
           "packageDependencies": [
             ["gatsby-cli", "npm:3.9.0"],
             ["@babel/code-frame", "npm:7.14.5"],
@@ -18267,7 +18267,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-telemetry", [
         ["npm:2.9.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-telemetry-npm-2.9.0-9b058ac36c/node_modules/gatsby-telemetry/",
+          "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.9.0-9b058ac36c-1cb02e9c42.zip/node_modules/gatsby-telemetry/",
           "packageDependencies": [
             ["gatsby-telemetry", "npm:2.9.0"],
             ["@babel/code-frame", "npm:7.14.5"],
@@ -23902,7 +23902,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reading-time", "npm:1.3.0"],
             ["remark-unwrap-images", "npm:2.1.0"],
             ["shallow-compare", "npm:1.2.2"],
-            ["socket.io-client", "npm:4.1.2"],
+            ["socket.io-client", "npm:4.1.3"],
             ["stack-trace", "npm:1.0.0-pre1"],
             ["styled-components", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:5.3.0"]
           ],
@@ -23911,7 +23911,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.1.0", {
-          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.1.0-3d2b5cce2a/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.1.0-3d2b5cce2a-a5f149e501.zip/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.1.0"],
             ["bin-build", "npm:3.0.0"],
@@ -26008,7 +26008,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-2f2600ce9e.zip/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -29624,15 +29624,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.1.2", {
-          "packageLocation": "./.yarn/cache/socket.io-client-npm-4.1.2-33b9c3b5ba-c9815738c1.zip/node_modules/socket.io-client/",
+        ["npm:4.1.3", {
+          "packageLocation": "./.yarn/cache/socket.io-client-npm-4.1.3-cc71d631f3-5750783767.zip/node_modules/socket.io-client/",
           "packageDependencies": [
-            ["socket.io-client", "npm:4.1.2"],
+            ["socket.io-client", "npm:4.1.3"],
             ["@types/component-emitter", "npm:1.2.10"],
             ["backo2", "npm:1.0.2"],
             ["component-emitter", "npm:1.3.0"],
             ["debug", "virtual:f8b688e6542ef635eefae684748f7db5410cd1803b0f43b02ae3ebd860a79349e9ae07146ce05bdfb5fca9536ad9dbe230ed7f4c2f2ffe26893f1f1b0b8700e7#npm:4.3.2"],
-            ["engine.io-client", "npm:5.1.1"],
+            ["engine.io-client", "npm:5.1.2"],
             ["parseuri", "npm:0.0.6"],
             ["socket.io-parser", "npm:4.0.4"]
           ],
@@ -33884,7 +33884,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["yarn", [
         ["npm:1.22.10", {
-          "packageLocation": "./.yarn/unplugged/yarn-npm-1.22.10-b1a926d20f/node_modules/yarn/",
+          "packageLocation": "./.yarn/cache/yarn-npm-1.22.10-b1a926d20f-bc7ebba3d9.zip/node_modules/yarn/",
           "packageDependencies": [
             ["yarn", "npm:1.22.10"]
           ],

@@ -10217,9 +10217,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"engine.io-client@npm:~5.1.1":
-  version: 5.1.1
-  resolution: "engine.io-client@npm:5.1.1"
+"engine.io-client@npm:~5.1.2":
+  version: 5.1.2
+  resolution: "engine.io-client@npm:5.1.2"
   dependencies:
     base64-arraybuffer: 0.1.4
     component-emitter: ~1.3.0
@@ -10230,7 +10230,7 @@ __metadata:
     parseuri: 0.0.6
     ws: ~7.4.2
     yeast: 0.1.2
-  checksum: 5689dd0cb703a35ecc94f0a6dcee366eb4f30a4521df58e44424dcbe59375ee65c957cc574c34a0ff22e86c0f5618f8078e67cff65af46898c53332956954ac7
+  checksum: 910456281c62fd3e4805dea833163c043c53f10643b57de54bc9537d4d50e3b3ffec4b8903fcd921ce29e68f027803c54ea28018dda9a4dd41f06bf76f060f05
   languageName: node
   linkType: hard
 
@@ -17693,7 +17693,7 @@ fsevents@^1.2.7:
     reading-time: 1.3.0
     remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
-    socket.io-client: 4.1.2
+    socket.io-client: 4.1.3
     stack-trace: 1.0.0-pre1
     styled-components: 5.3.0
   languageName: unknown
@@ -22413,18 +22413,18 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"socket.io-client@npm:4.1.2":
-  version: 4.1.2
-  resolution: "socket.io-client@npm:4.1.2"
+"socket.io-client@npm:4.1.3":
+  version: 4.1.3
+  resolution: "socket.io-client@npm:4.1.3"
   dependencies:
     "@types/component-emitter": ^1.2.10
     backo2: ~1.0.2
     component-emitter: ~1.3.0
     debug: ~4.3.1
-    engine.io-client: ~5.1.1
+    engine.io-client: ~5.1.2
     parseuri: 0.0.6
     socket.io-parser: ~4.0.4
-  checksum: c9815738c1cb8c05b9921f7ebf89bd1231f8c84ce664a90e45581550360c392f7f1893959c5e05ff89f9cf786eda8bbd79992967873818cf65d6091c66e30a51
+  checksum: 5750783767bd4436dad67ffcd9a46478c8660b581d919a069bde1b0aa17370a7c90e87df60c47836ae18bf5022240850fec2f68add4f4f3761dc8b00147540ef
   languageName: node
   linkType: hard
 
