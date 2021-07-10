@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import React from "react";
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  color: black;
+  font-size: 40px;
+`;
 
 export default function Home() {
   return (
@@ -10,10 +16,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="grid grid-cols-content">
-        <div className="col-start-3 col-end-4 text-gray-900 dark:text-white">
+      <div>
+        <Title>
           Hello, world.
-        </div>
+        </Title>
       </div>
     </>
   );
