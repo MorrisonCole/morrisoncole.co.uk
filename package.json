@@ -27,5 +27,6 @@
     "deploy:gatsby": "yarn workspace morrisoncole.co.uk deploy",
     "test:next": "yarn workspace nextjs-site test:lighthouse",
     "upgrade": "yarn set version from sources && yarn dlx @yarnpkg/pnpify --sdk vscode"
-  }
+  },
+  "packageManager": "yarn@sources"
 }
