@@ -3,14 +3,19 @@ import React from "react";
 import styled from "styled-components";
 import Layout from "../components/layout";
 
-const Title = styled.h1`
-  color: black;
-  font-size: 40px;
-`;
-
 const Content = styled.span`
   grid-area: content;
 `;
+
+const Title = styled.h1`
+  color: grey;
+  font-size: 3em;
+`;
+
+const Description = styled.p`
+ color: black;
+ font-weight: bold;
+`
 
 export default function Home() {
   return (
@@ -23,6 +28,7 @@ export default function Home() {
 
       <Content>
         <Title>Hello, world.</Title>
+        <Description>Exciting text.</Description>
       </Content>
     </Layout>
   );
