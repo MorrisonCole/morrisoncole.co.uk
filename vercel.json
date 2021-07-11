@@ -1,10 +1,10 @@
 {
   "headers": [
     {
-      "source": "/fonts/(.*)",
+      "source": "/fonts/:font",
       "headers": [
         {
-          "key": "Cache-Control",
+          "key": "cache-control",
           "value": "public, max-age=31536000, immutable"
         }
       ]
