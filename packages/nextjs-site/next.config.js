@@ -10,4 +10,15 @@ module.exports = withMDX({
     locales: ["en-GB"],
     defaultLocale: "en-GB",
   },
+  headers: [
+    {
+      source: "/fonts/:font",
+      headers: [
+        {
+          key: "Cache-Control",
+          value: "public, max-age=31536000, immutable",
+        },
+      ],
+    },
+  ],
 });
