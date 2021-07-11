@@ -1,6 +1,8 @@
+.yarn
 gatsby-site/.cache
 gatsby-site/.circleci
 gatsby-site/.terraform
 gatsby-site/.yarn
 gatsby-site/node_modules
 gatsby-site/public
+nextjs-site/.next

@@ -26,7 +26,8 @@
     "serve:next": "yarn workspace nextjs-site start",
     "deploy:gatsby": "yarn workspace morrisoncole.co.uk deploy",
     "test:next": "yarn workspace nextjs-site test:lighthouse",
-    "upgrade": "yarn set version from sources && yarn dlx @yarnpkg/pnpify --sdk vscode"
+    "upgrade": "yarn set version from sources && yarn dlx @yarnpkg/pnpify --sdk vscode",
+    "prettier:fix": "yarn prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write"
   },
   "packageManager": "yarn@sources"
 }
