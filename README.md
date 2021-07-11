@@ -43,3 +43,9 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 ## Terraform
 
 `terraform init -backend-config="access_key=access_key" -backend-config="secret_key=secret_key"`
+
+## Fonts
+
+Fonts are originally pulled from https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap.
+
+In order to control pre-loading for performance, self-hosting is [much easier](https://leerob.io/blog/fonts).

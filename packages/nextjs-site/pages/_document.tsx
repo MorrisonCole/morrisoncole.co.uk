@@ -41,20 +41,31 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=optional"
-            as="style"
+            href="/fonts/roboto-regular-400-latin.woff2"
+            as="font"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=optional"
-            media="print"
-            //@ts-ignore
-            onLoad="this.media='all'"
+            rel="preload"
+            href="/fonts/roboto-regular-400-italic-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=optional"
-            rel="stylesheet"
+            rel="preload"
+            href="/fonts/roboto-regular-700-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/roboto-regular-700-italic-latin.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
           />
         </Head>
         <body>
