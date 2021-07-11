@@ -4884,7 +4884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-is@npm:^17":
+"@types/react-is@npm:17.0.1":
   version: 17.0.1
   resolution: "@types/react-is@npm:17.0.1"
   dependencies:
@@ -17997,7 +17997,7 @@ fsevents@^1.2.7:
     "@types/mdx-js__react": 1.5.4
     "@types/node": 16.3.1
     "@types/react": 17.0.14
-    "@types/react-is": ^17
+    "@types/react-is": 17.0.1
     "@types/styled-components": 5.1.11
     "@typescript-eslint/eslint-plugin": 4.28.2
     "@typescript-eslint/parser": 4.28.2
