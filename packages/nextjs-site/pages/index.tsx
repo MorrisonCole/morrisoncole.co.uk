@@ -13,9 +13,9 @@ const Title = styled.h1`
 `;
 
 const Bold = styled.span`
- color: black;
- font-weight: bold;
-`
+  color: black;
+  font-weight: bold;
+`;
 
 const Italic = styled.span`
   color: black;

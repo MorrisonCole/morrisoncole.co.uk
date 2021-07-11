@@ -2,13 +2,13 @@
 
 My personal website(s).
 
-Production [morrisoncole.co.uk](https://morrisoncole.co.uk)
-is from `packages/gatsby-site`. Alpha
+Production [morrisoncole.co.uk](https://morrisoncole.co.uk) is from
+`packages/gatsby-site`. Alpha
 [alpha.morrisoncole.co.uk](https://alpha.morrisoncole.co.uk) is from
-`packages/nextjs-site`. 
+`packages/nextjs-site`.
 
-I'm currently writing a new version in the latter package,
-so it's likely the former won't really be updated anymore.
+I'm currently writing a new version in the latter package, so it's likely the
+former won't really be updated anymore.
 
 # Development
 
