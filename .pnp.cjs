@@ -8337,10 +8337,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/react-is", [
-        ["npm:17.0.1", {
-          "packageLocation": "./.yarn/cache/@types-react-is-npm-17.0.1-7cf6ecb473-81437cb5f7.zip/node_modules/@types/react-is/",
+        ["npm:17.0.2", {
+          "packageLocation": "./.yarn/cache/@types-react-is-npm-17.0.2-99f4e4e980-ecd4f59e66.zip/node_modules/@types/react-is/",
           "packageDependencies": [
-            ["@types/react-is", "npm:17.0.1"],
+            ["@types/react-is", "npm:17.0.2"],
             ["@types/react", "npm:17.0.9"]
           ],
           "linkType": "HARD",
@@ -24275,7 +24275,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mdx-js__react", "npm:1.5.4"],
             ["@types/node", "npm:16.3.1"],
             ["@types/react", "npm:17.0.14"],
-            ["@types/react-is", "npm:17.0.1"],
+            ["@types/react-is", "npm:17.0.2"],
             ["@types/styled-components", "npm:5.1.11"],
             ["@typescript-eslint/eslint-plugin", "virtual:9a592df1782921a0c2c3fb3224a3358686378d45bfd278af6560cd02db7f76c68be5e78d17b01a765bfd9bca4af37a396f7e6d509fa4025bbad31f42e4be95fd#npm:4.28.3"],
             ["@typescript-eslint/parser", "virtual:9a592df1782921a0c2c3fb3224a3358686378d45bfd278af6560cd02db7f76c68be5e78d17b01a765bfd9bca4af37a396f7e6d509fa4025bbad31f42e4be95fd#npm:4.28.3"],
@@ -30641,7 +30641,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/unitless", "npm:0.7.5"],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", null],
-            ["@types/react-is", "npm:17.0.1"],
+            ["@types/react-is", "npm:17.0.2"],
             ["babel-plugin-styled-components", "virtual:2f20e0e4cb39caf7ead35aa3de935d91ae7b400acd7ebdd9c16fd9945a257e2ea12445e6eff5a6d72582582769f11e0c37f3197b527525591c33b066ddaa3ba9#npm:1.12.0"],
             ["css-to-react-native", "npm:3.0.0"],
             ["hoist-non-react-statics", "npm:3.3.2"],
