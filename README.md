@@ -1,4 +1,4 @@
-# morrisoncole.co.uk [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# morrisoncole.co.uk [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/MorrisonCole/morrisoncole.co.uk)
 
 My personal website(s).
 
