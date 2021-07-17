@@ -2809,6 +2809,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/eslintrc@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "@eslint/eslintrc@npm:0.4.3"
+  dependencies:
+    ajv: ^6.12.4
+    debug: ^4.1.1
+    espree: ^7.3.0
+    globals: ^13.9.0
+    ignore: ^4.0.6
+    import-fresh: ^3.2.1
+    js-yaml: ^3.13.1
+    minimatch: ^3.0.4
+    strip-json-comments: ^3.1.1
+  checksum: 03a7704150b868c318aab6a94d87a33d30dc2ec579d27374575014f06237ba1370ae11178db772f985ef680d469dc237e7b16a1c5d8edaaeb8c3733e7a95a6d3
+  languageName: node
+  linkType: hard
+
 "@gatsbyjs/reach-router@npm:1.3.6, @gatsbyjs/reach-router@npm:^1.3.6":
   version: 1.3.6
   resolution: "@gatsbyjs/reach-router@npm:1.3.6"
@@ -10845,12 +10862,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:7.30.0":
-  version: 7.30.0
-  resolution: "eslint@npm:7.30.0"
+"eslint@npm:7.31.0":
+  version: 7.31.0
+  resolution: "eslint@npm:7.31.0"
   dependencies:
     "@babel/code-frame": 7.12.11
-    "@eslint/eslintrc": ^0.4.2
+    "@eslint/eslintrc": ^0.4.3
     "@humanwhocodes/config-array": ^0.5.0
     ajv: ^6.10.0
     chalk: ^4.0.0
@@ -10891,7 +10908,7 @@ __metadata:
     v8-compile-cache: ^2.0.3
   bin:
     eslint: bin/eslint.js
-  checksum: 872f90844b164dd61ec1bb949d2e33e7fbd189e0652fabe2cbbd0bdce1e4cd7ed08e72fa213795a453ae39fe24460771800608e765febb9e778deb28b9db3cc1
+  checksum: fd73d07ce0b73e5ea950b295a6eaf8d45914b4e56cba4ef49e55a36dc7e965a4865f63f618c0a096a01d089752d9e44180b80ba8657039b8e631dd40e0af1663
   languageName: node
   linkType: hard
 
@@ -17626,7 +17643,7 @@ fsevents@^1.2.7:
     "@typescript-eslint/eslint-plugin": 4.28.3
     "@typescript-eslint/parser": 4.28.3
     "@yarnpkg/pnpify": 3.0.0-rc.10
-    eslint: 7.30.0
+    eslint: 7.31.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-react: 7.24.0
     prettier: 2.3.2
@@ -18024,7 +18041,7 @@ fsevents@^1.2.7:
     "@typescript-eslint/eslint-plugin": 4.28.3
     "@typescript-eslint/parser": 4.28.3
     babel-plugin-styled-components: 1.13.2
-    eslint: 7.30.0
+    eslint: 7.31.0
     eslint-config-next: 11.0.1
     next: 11.0.1
     react: 17.0.2
