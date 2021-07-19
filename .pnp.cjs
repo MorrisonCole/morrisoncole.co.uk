@@ -6962,22 +6962,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@material-ui/core", [
-        ["npm:4.12.1", {
-          "packageLocation": "./.yarn/cache/@material-ui-core-npm-4.12.1-2a31bb5fd6-6f612bbb75.zip/node_modules/@material-ui/core/",
+        ["npm:4.12.2", {
+          "packageLocation": "./.yarn/cache/@material-ui-core-npm-4.12.2-f5d47905ee-daecbf8126.zip/node_modules/@material-ui/core/",
           "packageDependencies": [
-            ["@material-ui/core", "npm:4.12.1"]
+            ["@material-ui/core", "npm:4.12.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.1", {
-          "packageLocation": "./.yarn/__virtual__/@material-ui-core-virtual-63f0c79b04/0/cache/@material-ui-core-npm-4.12.1-2a31bb5fd6-6f612bbb75.zip/node_modules/@material-ui/core/",
+        ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.2", {
+          "packageLocation": "./.yarn/__virtual__/@material-ui-core-virtual-f42c74e20c/0/cache/@material-ui-core-npm-4.12.2-f5d47905ee-daecbf8126.zip/node_modules/@material-ui/core/",
           "packageDependencies": [
-            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.1"],
+            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.2"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@material-ui/styles", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.11.4"],
-            ["@material-ui/system", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.12.1"],
-            ["@material-ui/types", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:5.1.0"],
-            ["@material-ui/utils", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.11.2"],
+            ["@material-ui/system", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.12.1"],
+            ["@material-ui/types", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:5.1.0"],
+            ["@material-ui/utils", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.11.2"],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
             ["@types/react-transition-group", "npm:4.4.1"],
@@ -6988,7 +6988,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:17.0.2"],
             ["react-is", "npm:17.0.2"],
-            ["react-transition-group", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.4.2"]
+            ["react-transition-group", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.4.2"]
           ],
           "packagePeers": [
             "@types/react-dom",
@@ -7012,7 +7012,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@material-ui/icons", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.11.2"],
             ["@babel/runtime", "npm:7.14.0"],
-            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.1"],
+            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.2"],
             ["@types/material-ui__core", null],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
@@ -7043,8 +7043,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@material-ui/lab", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.0.0-alpha.60"],
             ["@babel/runtime", "npm:7.14.0"],
-            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.1"],
-            ["@material-ui/utils", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.11.2"],
+            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.2"],
+            ["@material-ui/utils", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.11.2"],
             ["@types/material-ui__core", null],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
@@ -7079,8 +7079,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@material-ui/styles", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.11.4"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@emotion/hash", "npm:0.8.0"],
-            ["@material-ui/types", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:5.1.0"],
-            ["@material-ui/utils", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.11.2"],
+            ["@material-ui/types", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:5.1.0"],
+            ["@material-ui/utils", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.11.2"],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
             ["clsx", "npm:1.1.1"],
@@ -7115,12 +7115,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.12.1", {
-          "packageLocation": "./.yarn/__virtual__/@material-ui-system-virtual-15912f38ee/0/cache/@material-ui-system-npm-4.12.1-d9fe61b73a-2acf20b430.zip/node_modules/@material-ui/system/",
+        ["virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.12.1", {
+          "packageLocation": "./.yarn/__virtual__/@material-ui-system-virtual-c666520175/0/cache/@material-ui-system-npm-4.12.1-d9fe61b73a-2acf20b430.zip/node_modules/@material-ui/system/",
           "packageDependencies": [
-            ["@material-ui/system", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.12.1"],
+            ["@material-ui/system", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.12.1"],
             ["@babel/runtime", "npm:7.14.0"],
-            ["@material-ui/utils", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.11.2"],
+            ["@material-ui/utils", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.11.2"],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
             ["csstype", "npm:2.6.17"],
@@ -7145,10 +7145,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:5.1.0", {
-          "packageLocation": "./.yarn/__virtual__/@material-ui-types-virtual-d39a4b0fe9/0/cache/@material-ui-types-npm-5.1.0-19cb52ee2a-64ac0938ee.zip/node_modules/@material-ui/types/",
+        ["virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:5.1.0", {
+          "packageLocation": "./.yarn/__virtual__/@material-ui-types-virtual-a314e97894/0/cache/@material-ui-types-npm-5.1.0-19cb52ee2a-64ac0938ee.zip/node_modules/@material-ui/types/",
           "packageDependencies": [
-            ["@material-ui/types", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:5.1.0"],
+            ["@material-ui/types", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:5.1.0"],
             ["@types/react", "npm:17.0.14"]
           ],
           "packagePeers": [
@@ -7165,10 +7165,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.11.2", {
-          "packageLocation": "./.yarn/__virtual__/@material-ui-utils-virtual-58dbba3a8b/0/cache/@material-ui-utils-npm-4.11.2-cb079a0929-30e15b197c.zip/node_modules/@material-ui/utils/",
+        ["virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.11.2", {
+          "packageLocation": "./.yarn/__virtual__/@material-ui-utils-virtual-248127dce1/0/cache/@material-ui-utils-npm-4.11.2-cb079a0929-30e15b197c.zip/node_modules/@material-ui/utils/",
           "packageDependencies": [
-            ["@material-ui/utils", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.11.2"],
+            ["@material-ui/utils", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.11.2"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
@@ -23880,7 +23880,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/cli", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.21.7"],
             ["@graphql-codegen/typescript", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.23.0"],
             ["@graphql-codegen/typescript-operations", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.18.4"],
-            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.1"],
+            ["@material-ui/core", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.12.2"],
             ["@material-ui/icons", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.11.2"],
             ["@material-ui/lab", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.0.0-alpha.60"],
             ["@material-ui/styles", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:4.11.4"],
@@ -27957,10 +27957,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.4.2", {
-          "packageLocation": "./.yarn/__virtual__/react-transition-group-virtual-8e3a076f76/0/cache/react-transition-group-npm-4.4.2-5052c30656-b67bf5b3e8.zip/node_modules/react-transition-group/",
+        ["virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.4.2", {
+          "packageLocation": "./.yarn/__virtual__/react-transition-group-virtual-8f24fa7a03/0/cache/react-transition-group-npm-4.4.2-5052c30656-b67bf5b3e8.zip/node_modules/react-transition-group/",
           "packageDependencies": [
-            ["react-transition-group", "virtual:63f0c79b04edb8fca2e658710f5e47d6e072b16c67b778484cf398214726e78ddb6b6dce60ea153464d11e18e598736d4987ea025cf1f2ffa64dd875ac9e9303#npm:4.4.2"],
+            ["react-transition-group", "virtual:f42c74e20c3430d258950c50e7882558c2e5b31c6b9c878c86ca2331584c3a76562d75a4aa2aa6a4a831c07f7aea0348b348ee3bad5b98ae929e42cbca611b6f#npm:4.4.2"],
             ["@babel/runtime", "npm:7.14.0"],
             ["@types/react", "npm:17.0.14"],
             ["@types/react-dom", "npm:17.0.9"],
@@ -38387,7 +38387,6 @@ var external_fs_ = __webpack_require__(747);
 var external_fs_default = /*#__PURE__*/__webpack_require__.n(external_fs_);
 ;// CONCATENATED MODULE: external "os"
 const external_os_namespaceObject = require("os");;
-var external_os_default = /*#__PURE__*/__webpack_require__.n(external_os_namespaceObject);
 // EXTERNAL MODULE: external "path"
 var external_path_ = __webpack_require__(622);
 var external_path_default = /*#__PURE__*/__webpack_require__.n(external_path_);
@@ -41800,11 +41799,18 @@ const DOT_ZIP = `.zip`;
  */
 
 const getArchivePart = path => {
-  const idx = path.indexOf(DOT_ZIP);
-  if (idx <= 0) return null; // Disallow files named ".zip"
+  let idx = path.indexOf(DOT_ZIP);
+  if (idx <= 0) return null;
+  let nextCharIdx = idx;
 
-  if (path[idx - 1] === ppath.sep) return null;
-  const nextCharIdx = idx + DOT_ZIP.length; // The path either has to end in ".zip" or contain an archive subpath (".zip/...")
+  while (idx >= 0) {
+    nextCharIdx = idx + DOT_ZIP.length;
+    if (path[nextCharIdx] === ppath.sep) break; // Disallow files named ".zip"
+
+    if (path[idx - 1] === ppath.sep) return null;
+    idx = path.indexOf(DOT_ZIP, nextCharIdx);
+  } // The path either has to end in ".zip" or contain an archive subpath (".zip/...")
+
 
   if (path.length > nextCharIdx && path[nextCharIdx] !== ppath.sep) return null;
   return path.slice(0, nextCharIdx);
@@ -44542,6 +44548,21 @@ function makeApi(runtimeState, opts) {
       return ppath.normalize(qualifiedPath);
     } else {
       const unqualifiedPathForDisplay = getPathForDisplay(unqualifiedPath);
+      const containingPackage = findPackageLocator(unqualifiedPath);
+
+      if (containingPackage) {
+        const {
+          packageLocation
+        } = getPackageInformationSafe(containingPackage);
+
+        if (!opts.fakeFs.existsSync(packageLocation)) {
+          const errorMessage = packageLocation.includes(`/unplugged/`) ? `Required unplugged package missing from disk. This may happen when switching branches without running installs (unplugged packages must be fully materialized on disk to work).` : `Required package missing from disk. If you keep your packages inside your repository then restarting the Node process may be enough. Otherwise, try to run an install first.`;
+          throw internalTools_makeError(ErrorCode.QUALIFIED_PATH_RESOLUTION_FAILED, `${errorMessage}\n\nMissing package: ${containingPackage.name}@${containingPackage.reference}\nExpected package location: ${packageLocation}\n`, {
+            unqualifiedPath: unqualifiedPathForDisplay
+          });
+        }
+      }
+
       throw internalTools_makeError(ErrorCode.QUALIFIED_PATH_RESOLUTION_FAILED, `Qualified path resolution failed - none of those files can be found on the disk.\n\nSource path: ${unqualifiedPathForDisplay}\n${candidates.map(candidate => `Not found: ${getPathForDisplay(candidate)}\n`).join(``)}`, {
         unqualifiedPath: unqualifiedPathForDisplay
       });
@@ -44657,132 +44678,6 @@ function makeApi(runtimeState, opts) {
     })
   };
 }
-;// CONCATENATED MODULE: ../yarnpkg-fslib/sources/xfs.ts
-
-
-
-
-function getTempName(prefix) {
-  const tmpdir = npath.toPortablePath(external_os_default().tmpdir());
-  const hash = Math.ceil(Math.random() * 0x100000000).toString(16).padStart(8, `0`);
-  return ppath.join(tmpdir, `${prefix}${hash}`);
-}
-
-const tmpdirs = new Set();
-let cleanExitRegistered = false;
-
-function registerCleanExit() {
-  if (cleanExitRegistered) return;
-  cleanExitRegistered = true;
-  process.once(`exit`, () => {
-    xfs.rmtempSync();
-  });
-}
-
-const xfs = Object.assign(new NodeFS(), {
-  detachTemp(p) {
-    tmpdirs.delete(p);
-  },
-
-  mktempSync(cb) {
-    registerCleanExit();
-
-    while (true) {
-      const p = getTempName(`xfs-`);
-
-      try {
-        this.mkdirSync(p);
-      } catch (error) {
-        if (error.code === `EEXIST`) {
-          continue;
-        } else {
-          throw error;
-        }
-      }
-
-      const realP = this.realpathSync(p);
-      tmpdirs.add(realP);
-
-      if (typeof cb !== `undefined`) {
-        try {
-          return cb(realP);
-        } finally {
-          if (tmpdirs.has(realP)) {
-            tmpdirs.delete(realP);
-
-            try {
-              this.removeSync(realP);
-            } catch (_a) {// Too bad if there's an error
-            }
-          }
-        }
-      } else {
-        return realP;
-      }
-    }
-  },
-
-  async mktempPromise(cb) {
-    registerCleanExit();
-
-    while (true) {
-      const p = getTempName(`xfs-`);
-
-      try {
-        await this.mkdirPromise(p);
-      } catch (error) {
-        if (error.code === `EEXIST`) {
-          continue;
-        } else {
-          throw error;
-        }
-      }
-
-      const realP = await this.realpathPromise(p);
-      tmpdirs.add(realP);
-
-      if (typeof cb !== `undefined`) {
-        try {
-          return await cb(realP);
-        } finally {
-          if (tmpdirs.has(realP)) {
-            tmpdirs.delete(realP);
-
-            try {
-              await this.removePromise(realP);
-            } catch (_a) {// Too bad if there's an error
-            }
-          }
-        }
-      } else {
-        return realP;
-      }
-    }
-  },
-
-  async rmtempPromise() {
-    await Promise.all(Array.from(tmpdirs.values()).map(async p => {
-      try {
-        await xfs.removePromise(p, {
-          maxRetries: 0
-        });
-        tmpdirs.delete(p);
-      } catch (_a) {// Too bad if there's an error
-      }
-    }));
-  },
-
-  rmtempSync() {
-    for (const p of tmpdirs) {
-      try {
-        xfs.removeSync(p);
-        tmpdirs.delete(p);
-      } catch (_a) {// Too bad if there's an error
-      }
-    }
-  }
-
-});
 ;// CONCATENATED MODULE: ./sources/loader/makeManager.ts
 
 
@@ -44854,23 +44749,34 @@ function makeManager(pnpapi, opts) {
   }
 
   function findApiPathFor(modulePath) {
-    const controlledBy = [];
+    let bestCandidate = null;
 
     for (const [apiPath, apiEntry] of apiMetadata) {
       const locator = apiEntry.instance.findPackageLocator(modulePath);
+      if (!locator) continue; // No need to go the slow way when there's a single API
 
-      if (locator) {
-        if (apiMetadata.size === 1) {
-          return apiPath;
-        } else {
-          controlledBy.push(apiPath);
-        }
+      if (apiMetadata.size === 1) return apiPath;
+      const packageInformation = apiEntry.instance.getPackageInformation(locator);
+      if (!packageInformation) throw new Error(`Assertion failed: Couldn't get package information for '${modulePath}'`);
+      if (!bestCandidate) bestCandidate = {
+        packageLocation: packageInformation.packageLocation,
+        apiPaths: []
+      };
+
+      if (packageInformation.packageLocation === bestCandidate.packageLocation) {
+        bestCandidate.apiPaths.push(apiPath);
+      } else if (packageInformation.packageLocation.length > bestCandidate.packageLocation.length) {
+        bestCandidate = {
+          packageLocation: packageInformation.packageLocation,
+          apiPaths: [apiPath]
+        };
       }
     }
 
-    if (controlledBy.length !== 0) {
-      if (controlledBy.length === 1) return controlledBy[0];
-      throw new Error(`Unable to locate pnpapi, the module '${modulePath}' is controlled by multiple pnpapi instances.\nThis is usually caused by using the global cache (enableGlobalCache: true)\n\nControlled by:\n${controlledBy.map(pnpPath => `  ${npath.fromPortablePath(pnpPath)}`).join(`\n`)}`);
+    if (bestCandidate) {
+      if (bestCandidate.apiPaths.length === 1) return bestCandidate.apiPaths[0];
+      const controlSegment = bestCandidate.apiPaths.map(apiPath => `  ${npath.fromPortablePath(apiPath)}`).join(`\n`);
+      throw new Error(`Unable to locate pnpapi, the module '${modulePath}' is controlled by multiple pnpapi instances.\nThis is usually caused by using the global cache (enableGlobalCache: true)\n\nControlled by:\n${controlSegment}\n`);
     }
 
     const start = ppath.resolve(npath.toPortablePath(modulePath));
@@ -44882,11 +44788,11 @@ function makeManager(pnpapi, opts) {
       const cached = findApiPathCache.get(curr);
       if (cached !== undefined) return addToCacheAndReturn(start, curr, cached);
       const cjsCandidate = ppath.join(curr, Filename.pnpCjs);
-      if (xfs.existsSync(cjsCandidate) && xfs.statSync(cjsCandidate).isFile()) return addToCacheAndReturn(start, curr, cjsCandidate); // We still support .pnp.js files to improve multi-project compatibility.
+      if (opts.fakeFs.existsSync(cjsCandidate) && opts.fakeFs.statSync(cjsCandidate).isFile()) return addToCacheAndReturn(start, curr, cjsCandidate); // We still support .pnp.js files to improve multi-project compatibility.
       // TODO: Remove support for .pnp.js files after they stop being used.
 
       const legacyCjsCandidate = ppath.join(curr, Filename.pnpJs);
-      if (xfs.existsSync(legacyCjsCandidate) && xfs.statSync(legacyCjsCandidate).isFile()) return addToCacheAndReturn(start, curr, legacyCjsCandidate);
+      if (opts.fakeFs.existsSync(legacyCjsCandidate) && opts.fakeFs.statSync(legacyCjsCandidate).isFile()) return addToCacheAndReturn(start, curr, legacyCjsCandidate);
       next = ppath.dirname(curr);
     } while (curr !== PortablePath.root);
 
