@@ -1,7 +1,7 @@
 import { PaletteType, useMediaQuery } from "@material-ui/core";
 import {
   ThemeProvider as MuiThemeProvider,
-  createMuiTheme,
+  createTheme,
 } from "@material-ui/core/styles";
 import React from "react";
 
@@ -33,10 +33,10 @@ export function ThemeProvider({ children }: Props): JSX.Element {
     };
   }, [paletteType, setPaletteType]);
 
-  const defaultTheme = createMuiTheme();
+  const defaultTheme = createTheme();
   const theme = React.useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         typography: {
           fontFamily: "Roboto,Helvetica,Arial,sans-serif",
           fontSize: 14,
