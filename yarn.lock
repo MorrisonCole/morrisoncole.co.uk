@@ -825,21 +825,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.14.0, @babel/parser@npm:^7.14.6":
-  version: 7.14.6
-  resolution: "@babel/parser@npm:7.14.6"
-  bin:
-    parser: ./bin/babel-parser.js
-  checksum: 104482e07971a78a3d68a0c329b1303981a272f55a510d39c93dac3c293f207ec863329046abc5d8bb86db58c49670cc607654793470a87ccd386544c2ccf298
-  languageName: node
-  linkType: hard
-
 "@babel/parser@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/parser@npm:7.14.5"
   bin:
     parser: ./bin/babel-parser.js
   checksum: 9fdcf174d9e9ab76b242a837307d5c513dc530f6080d0dd1b93d5e0338e80f0b8d71cc6afebd33f9ac22cf51d0427709efab8f3377757be56d5e58fe0b9d68ef
+  languageName: node
+  linkType: hard
+
+"@babel/parser@npm:^7.14.6":
+  version: 7.14.6
+  resolution: "@babel/parser@npm:7.14.6"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 104482e07971a78a3d68a0c329b1303981a272f55a510d39c93dac3c293f207ec863329046abc5d8bb86db58c49670cc607654793470a87ccd386544c2ccf298
   languageName: node
   linkType: hard
 
@@ -12408,20 +12408,20 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:1.9.0":
-  version: 1.9.0
-  resolution: "gatsby-plugin-image@npm:1.9.0"
+"gatsby-plugin-image@npm:1.10.0":
+  version: 1.10.0
+  resolution: "gatsby-plugin-image@npm:1.10.0"
   dependencies:
     "@babel/code-frame": ^7.14.0
-    "@babel/parser": ^7.14.0
-    "@babel/traverse": ^7.14.0
+    "@babel/parser": ^7.14.7
+    "@babel/traverse": ^7.14.7
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^3.9.0
+    babel-plugin-remove-graphql-queries: ^3.10.0
     camelcase: ^5.3.1
     chokidar: ^3.5.1
     common-tags: ^1.8.0
     fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.9.0
+    gatsby-core-utils: ^2.10.0
     objectFitPolyfill: ^2.3.0
     prop-types: ^15.7.2
   peerDependencies:
@@ -12431,7 +12431,7 @@ fsevents@^1.2.7:
     gatsby-source-filesystem: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 9b3f5ed22dbab04e830a5010cefd2a71bfaeed10cfb15ea51041832725f5a691397a0ffebbdf075d1dcb31077e48d70ebf714ad41ee3aca80115139663a7cc65
+  checksum: 8c7ded42d437ff3d6dcb74b7e78466d0b039c9e253a1076dcb9468aba87787f86d4f2e4165baedceaa1ba1b2a95b97d78e546dd65fd5a3f9b5eb923386d12853
   languageName: node
   linkType: hard
 
@@ -18000,7 +18000,7 @@ fsevents@^1.2.7:
     gatsby-plugin-canonical-urls: 3.10.0
     gatsby-plugin-feed: 3.9.0
     gatsby-plugin-google-tagmanager: 3.10.0
-    gatsby-plugin-image: 1.9.0
+    gatsby-plugin-image: 1.10.0
     gatsby-plugin-layout: 2.9.0
     gatsby-plugin-manifest: 3.9.0
     gatsby-plugin-material-ui: 3.0.1
