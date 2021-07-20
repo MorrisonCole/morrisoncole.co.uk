@@ -1084,7 +1084,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.14.0, @babel/plugin-proposal-nullish-coalescing-operator@npm:^7.14.5":
+"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/plugin-proposal-nullish-coalescing-operator@npm:7.14.5"
   dependencies:
@@ -1093,18 +1093,6 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 033d9483c2feb74928fbb83a73948eb1179c8852d2ae507fbfc37752d2dbf702c9ad0daaf1eaa029f81b12b7e2470061b4f611db88b7293f0e9a71eba288a430
-  languageName: node
-  linkType: hard
-
-"@babel/plugin-proposal-numeric-separator@npm:^7.14.0, @babel/plugin-proposal-numeric-separator@npm:^7.14.5":
-  version: 7.14.5
-  resolution: "@babel/plugin-proposal-numeric-separator@npm:7.14.5"
-  dependencies:
-    "@babel/helper-plugin-utils": ^7.14.5
-    "@babel/plugin-syntax-numeric-separator": ^7.10.4
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-  checksum: 22093297ec9aed3938b39f4efa1b518252fe7b0835902c3066f0ae6a864ac253b986a4a21a6092aa068d0702d7b09bed74e56cf39f2da8b4f3f43e0747bffb62
   languageName: node
   linkType: hard
 
@@ -1117,6 +1105,18 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: 19d0bc6e2942b427864d8e15ec9a14d3d450f3982f42ab5de5fa106b2feb9a49b0103eacbfd25c04754b6b8e7c478c4e8ee289349686f71d22f9794fb3e408cb
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-proposal-numeric-separator@npm:^7.14.5":
+  version: 7.14.5
+  resolution: "@babel/plugin-proposal-numeric-separator@npm:7.14.5"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.14.5
+    "@babel/plugin-syntax-numeric-separator": ^7.10.4
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 22093297ec9aed3938b39f4efa1b518252fe7b0835902c3066f0ae6a864ac253b986a4a21a6092aa068d0702d7b09bed74e56cf39f2da8b4f3f43e0747bffb62
   languageName: node
   linkType: hard
 
@@ -1228,7 +1228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-optional-chaining@npm:^7.14.0, @babel/plugin-proposal-optional-chaining@npm:^7.14.5":
+"@babel/plugin-proposal-optional-chaining@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/plugin-proposal-optional-chaining@npm:7.14.5"
   dependencies:
@@ -6817,16 +6817,6 @@ __metadata:
     "@babel/core": ^7.0.0
     gatsby: ^3.0.0-next.0
   checksum: dcdf5abcee587990ef0ca691500e852ac1632c962a27d842981c353f667ecfc35bce7c8396683c23ef55d53a3435e0a0b2a6d8bef27170b9120261db7986d36e
-  languageName: node
-  linkType: hard
-
-"babel-plugin-remove-graphql-queries@npm:^3.9.0":
-  version: 3.9.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:3.9.0"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^3.0.0-next.0
-  checksum: 7b9b1a7fd337f6735ccfbef1dfef2e7c16b01eda9fd9e5bb6320e19161f893dec65edc76175726b448dd06cee8b63f86a3f248ef373865225c37a98375cf3fa2
   languageName: node
   linkType: hard
 
@@ -12668,24 +12658,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:3.9.0":
-  version: 3.9.0
-  resolution: "gatsby-plugin-typescript@npm:3.9.0"
-  dependencies:
-    "@babel/core": ^7.14.0
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.14.0
-    "@babel/plugin-proposal-numeric-separator": ^7.14.0
-    "@babel/plugin-proposal-optional-chaining": ^7.14.0
-    "@babel/preset-typescript": ^7.14.0
-    "@babel/runtime": ^7.14.0
-    babel-plugin-remove-graphql-queries: ^3.9.0
-  peerDependencies:
-    gatsby: ^3.0.0-next.0
-  checksum: 4c66eb81ae2ecd70ada183105abdc54ed7ad966a05ab5e88b6073b5c2c877db4d0b7e456e52ecd906be913e275b8bd48b34e4072c8905b575dd977fc1c4c2c59
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-typescript@npm:^3.10.0":
+"gatsby-plugin-typescript@npm:3.10.0, gatsby-plugin-typescript@npm:^3.10.0":
   version: 3.10.0
   resolution: "gatsby-plugin-typescript@npm:3.10.0"
   dependencies:
@@ -18012,7 +17985,7 @@ fsevents@^1.2.7:
     gatsby-plugin-sharp: 3.9.0
     gatsby-plugin-sitemap: 4.5.0
     gatsby-plugin-styled-components: 4.9.0
-    gatsby-plugin-typescript: 3.9.0
+    gatsby-plugin-typescript: 3.10.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.9.0
     gatsby-remark-autolink-headers: 4.6.0
