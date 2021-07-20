@@ -23,7 +23,7 @@
     "css.escape": "1.5.1",
     "event-source-polyfill": "1.0.24",
     "gatsby": "3.10.0",
-    "gatsby-cli": "3.9.0",
+    "gatsby-cli": "3.10.0",
     "gatsby-legacy-polyfills": "1.9.0",
     "gatsby-link": "3.9.0",
     "gatsby-plugin-canonical-urls": "3.10.0",
