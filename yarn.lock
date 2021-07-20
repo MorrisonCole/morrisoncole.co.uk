@@ -2602,7 +2602,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.14.6":
+"@babel/runtime@npm:7.14.6, @babel/runtime@npm:^7.14.6":
   version: 7.14.6
   resolution: "@babel/runtime@npm:7.14.6"
   dependencies:
@@ -12662,22 +12662,22 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:3.9.0":
-  version: 3.9.0
-  resolution: "gatsby-transformer-sharp@npm:3.9.0"
+"gatsby-transformer-sharp@npm:3.10.0":
+  version: 3.10.0
+  resolution: "gatsby-transformer-sharp@npm:3.10.0"
   dependencies:
-    "@babel/runtime": ^7.14.0
+    "@babel/runtime": ^7.14.6
     bluebird: ^3.7.2
     common-tags: ^1.8.0
     fs-extra: ^9.1.0
     potrace: ^2.1.8
     probe-image-size: ^6.0.0
     semver: ^7.3.4
-    sharp: ^0.28.0
+    sharp: ^0.28.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 78a0dbf09502cfdadc37a315f5133aa2cf2f94748b1e32c6f8433090e8c73e8afdf498294e2f35259fd21d4b620f00c98ee81ccbe9827bd9cb06d600e0d7511d
+  checksum: 2559152746ed7740ef5885ae54f476b7f3feb392c5e3bb633926c67fd7d2e5b92458232f07194976cbc6579e033b03a7c77d11b6f9755d0eb9c21575765dc2cc
   languageName: node
   linkType: hard
 
@@ -17696,7 +17696,7 @@ fsevents@^1.2.7:
     gatsby-remark-images: 5.6.0
     gatsby-source-filesystem: 3.9.0
     gatsby-transformer-json: 3.9.0
-    gatsby-transformer-sharp: 3.9.0
+    gatsby-transformer-sharp: 3.10.0
     graphql: 15.5.1
     lodash: 4.17.21
     mdx-utils: 0.2.0
@@ -22170,7 +22170,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.28.0, sharp@npm:^0.28.1":
+"sharp@npm:^0.28.0, sharp@npm:^0.28.1, sharp@npm:^0.28.3":
   version: 0.28.3
   resolution: "sharp@npm:0.28.3"
   dependencies:
