@@ -12225,9 +12225,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:1.10.0":
-  version: 1.10.0
-  resolution: "gatsby-plugin-image@npm:1.10.0"
+"gatsby-plugin-image@npm:1.10.1":
+  version: 1.10.1
+  resolution: "gatsby-plugin-image@npm:1.10.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.14.7
@@ -12248,7 +12248,7 @@ fsevents@^1.2.7:
     gatsby-source-filesystem: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 8c7ded42d437ff3d6dcb74b7e78466d0b039c9e253a1076dcb9468aba87787f86d4f2e4165baedceaa1ba1b2a95b97d78e546dd65fd5a3f9b5eb923386d12853
+  checksum: 8ebd8a12e80930fbad2020f497e200ae11fe83811a5c43e86f721ee4ea8dfbe8e22988b8c188b6f1325df7a34ceed55347ab7d4f6d0a282c471cea9f5a856653
   languageName: node
   linkType: hard
 
@@ -17754,7 +17754,7 @@ fsevents@^1.2.7:
     gatsby-plugin-canonical-urls: 3.10.0
     gatsby-plugin-feed: 3.10.0
     gatsby-plugin-google-tagmanager: 3.10.0
-    gatsby-plugin-image: 1.10.0
+    gatsby-plugin-image: 1.10.1
     gatsby-plugin-layout: 2.10.0
     gatsby-plugin-manifest: 3.10.0
     gatsby-plugin-material-ui: 3.0.1
