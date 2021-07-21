@@ -12423,9 +12423,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:3.10.0":
-  version: 3.10.0
-  resolution: "gatsby-plugin-sharp@npm:3.10.0"
+"gatsby-plugin-sharp@npm:3.10.1":
+  version: 3.10.1
+  resolution: "gatsby-plugin-sharp@npm:3.10.1"
   dependencies:
     "@babel/runtime": ^7.14.6
     async: ^3.2.0
@@ -12450,7 +12450,7 @@ fsevents@^1.2.7:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 51efb86e56f8cb211c9803a1c5ff7af90337c717051b2cc81ce964f32bcf47748773b59e020c8018c392b2d7736957f1a72b3c23ce0f1c927e8e7e8703eae0d1
+  checksum: 8db5d86976ba8f2b10fe6a59782362cfaaeb4c6333ef5604b2ac04db42e2ed17fc14002ecaee9640ef21f64cad4c029efc5b78a56631d57aca36ce2c6515623b
   languageName: node
   linkType: hard
 
@@ -17763,7 +17763,7 @@ fsevents@^1.2.7:
     gatsby-plugin-react-helmet: 4.10.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 3.10.0
+    gatsby-plugin-sharp: 3.10.1
     gatsby-plugin-sitemap: 4.6.0
     gatsby-plugin-styled-components: 4.10.0
     gatsby-plugin-typescript: 3.10.0
