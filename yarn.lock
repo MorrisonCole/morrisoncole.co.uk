@@ -4163,18 +4163,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/loader@npm:1.6.22":
-  version: 1.6.22
-  resolution: "@mdx-js/loader@npm:1.6.22"
-  dependencies:
-    "@mdx-js/mdx": 1.6.22
-    "@mdx-js/react": 1.6.22
-    loader-utils: 2.0.0
-  checksum: 5ce4b92824555c6dd06c12ee7b9fc036e41499a5026218597316236d62253b6ff6417a416445a71f685716b57bbfc45593f156373252d1f53510b9ef9666334a
-  languageName: node
-  linkType: hard
-
-"@mdx-js/mdx@npm:1.6.22":
+"@mdx-js/mdx@npm:1.6.22, @mdx-js/mdx@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/mdx@npm:1.6.22"
   dependencies:
@@ -4201,7 +4190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:1.6.22":
+"@mdx-js/react@npm:1.6.22, @mdx-js/react@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/react@npm:1.6.22"
   peerDependencies:
@@ -4260,16 +4249,6 @@ __metadata:
   version: 11.0.1
   resolution: "@next/eslint-plugin-next@npm:11.0.1"
   checksum: 8b1c99780cabe7e941f034a3fc1e492d4f42d45065d1016b2c730649e4757ed293c71c2b36da650ddc7b317b42d9f8f7fa600c4a698946e57bd26d5d56f4ffff
-  languageName: node
-  linkType: hard
-
-"@next/mdx@npm:11.0.1":
-  version: 11.0.1
-  resolution: "@next/mdx@npm:11.0.1"
-  peerDependencies:
-    "@mdx-js/loader": ">=0.15.0"
-    "@mdx-js/react": "*"
-  checksum: 7407975a52171216aa754a728c2a9acecb4472074acf27477edc732ef7a35f50f1d568f1daccb742cdd50d014273e1069145baed5a91f60afad0e4adc9acb62d
   languageName: node
   linkType: hard
 
@@ -10544,6 +10523,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esbuild@npm:^0.12.9":
+  version: 0.12.15
+  resolution: "esbuild@npm:0.12.15"
+  bin:
+    esbuild: bin/esbuild
+  checksum: 7d496cb355d6612506639002224a48469d3bff546cbb3acababfdb84dd5a927973e8b9646ef4af8716647113d4dd25ae6309b7b8956251f73749f7e59c005cb6
+  languageName: node
+  linkType: hard
+
 "escalade@npm:^3.0.2, escalade@npm:^3.1.1":
   version: 3.1.1
   resolution: "escalade@npm:3.1.1"
@@ -11741,6 +11729,16 @@ __metadata:
   dependencies:
     locate-path: ^3.0.0
   checksum: 38eba3fe7a66e4bc7f0f5a1366dc25508b7cfc349f852640e3678d26ad9a6d7e2c43eff0a472287de4a9753ef58f066a0ea892a256fa3636ad51b3fe1e17fae9
+  languageName: node
+  linkType: hard
+
+"find-up@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "find-up@npm:5.0.0"
+  dependencies:
+    locate-path: ^6.0.0
+    path-exists: ^4.0.0
+  checksum: 07955e357348f34660bde7920783204ff5a26ac2cafcaa28bace494027158a97b9f56faaf2d89a6106211a8174db650dd9f503f9c0d526b1202d5554a00b9095
   languageName: node
   linkType: hard
 
@@ -13541,7 +13539,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gray-matter@npm:^4.0.2":
+"gray-matter@npm:4.0.3, gray-matter@npm:^4.0.2":
   version: 4.0.3
   resolution: "gray-matter@npm:4.0.3"
   dependencies:
@@ -16361,6 +16359,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"locate-path@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "locate-path@npm:6.0.0"
+  dependencies:
+    p-locate: ^5.0.0
+  checksum: 72eb661788a0368c099a184c59d2fee760b3831c9c1c33955e8a19ae4a21b4116e53fa736dc086cdeb9fce9f7cc508f2f92d2d3aae516f133e16a2bb59a39f5a
+  languageName: node
+  linkType: hard
+
 "lock@npm:^1.0.0":
   version: 1.1.0
   resolution: "lock@npm:1.1.0"
@@ -17997,6 +18004,21 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"next-mdx-remote@npm:3.0.4":
+  version: 3.0.4
+  resolution: "next-mdx-remote@npm:3.0.4"
+  dependencies:
+    "@mdx-js/mdx": ^1.6.22
+    "@mdx-js/react": ^1.6.22
+    esbuild: ^0.12.9
+    pkg-dir: ^5.0.0
+  peerDependencies:
+    react: ">=16.x <=17.x"
+    react-dom: ">=16.x <=17.x"
+  checksum: d62be3ff915caabd09e911a0d686317b810c077f6508afe939ce2e976a49281911d7775274d4f216dcb176e949b955790e48a9387d4aaebc9a50d6d0c26a780d
+  languageName: node
+  linkType: hard
+
 "next-tick@npm:1, next-tick@npm:^1.1.0":
   version: 1.1.0
   resolution: "next-tick@npm:1.1.0"
@@ -18089,10 +18111,6 @@ fsevents@^1.2.7:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
-    "@mdx-js/loader": 1.6.22
-    "@mdx-js/react": 1.6.22
-    "@next/mdx": 11.0.1
-    "@types/mdx-js__react": 1.5.4
     "@types/node": 16.4.0
     "@types/react": 17.0.14
     "@types/react-is": 17.0.2
@@ -18102,7 +18120,9 @@ fsevents@^1.2.7:
     babel-plugin-styled-components: 1.13.2
     eslint: 7.31.0
     eslint-config-next: 11.0.1
+    gray-matter: 4.0.3
     next: 11.0.1
+    next-mdx-remote: 3.0.4
     react: 17.0.2
     react-dom: 17.0.2
     react-is: 17.0.2
@@ -18937,6 +18957,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"p-locate@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "p-locate@npm:5.0.0"
+  dependencies:
+    p-limit: ^3.0.2
+  checksum: 1623088f36cf1cbca58e9b61c4e62bf0c60a07af5ae1ca99a720837356b5b6c5ba3eb1b2127e47a06865fee59dd0453cad7cc844cda9d5a62ac1a5a51b7c86d3
+  languageName: node
+  linkType: hard
+
 "p-map-series@npm:^1.0.0":
   version: 1.0.0
   resolution: "p-map-series@npm:1.0.0"
@@ -19638,6 +19667,15 @@ fsevents@^1.2.7:
   dependencies:
     find-up: ^4.0.0
   checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
+  languageName: node
+  linkType: hard
+
+"pkg-dir@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "pkg-dir@npm:5.0.0"
+  dependencies:
+    find-up: ^5.0.0
+  checksum: b167bb8dac7bbf22b1d5e30ec223e6b064b84b63010c9d49384619a36734caf95ed23ad23d4f9bd975e8e8082b60a83395f43a89bb192df53a7c25a38ecb57d9
   languageName: node
   linkType: hard
 
