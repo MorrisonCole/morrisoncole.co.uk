@@ -1,9 +1,18 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-
 import Button from "../components/button";
+import { ReactNode } from "react";
+import styled from "styled-components";
 
-const components = { Button };
+const H1 = styled.h1`
+  color: grey;
+  font-size: 3em;
+`;
+
+const mdxComponents: Record<string, ReactNode> = {
+  Button,
+  h1: H1
+};
 
 export default function TestPage({
   source,
@@ -12,13 +21,13 @@ export default function TestPage({
 }) {
   return (
     <div className="wrapper">
-      <MDXRemote {...source} components={components} />
+      <MDXRemote {...source} components={mdxComponents} />
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const source = `
+  const sourceMdx = `
 import Button from "../components/button";
 
 # MDX Test
@@ -27,6 +36,7 @@ It's a button!
 
 <Button>Hello, world 👋</Button>
   `;
-  const mdxSource = await serialize(source);
-  return { props: { source: mdxSource } };
+
+  const serializedSource = await serialize(sourceMdx);
+  return { props: { source: serializedSource } };
 }
