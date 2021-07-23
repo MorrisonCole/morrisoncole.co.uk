@@ -8,7 +8,7 @@ import matter from "gray-matter";
 import Button from "../../components/button";
 import Image from "next/image";
 import {
-  postFilePaths,
+  ALL_POST_PATHS,
   POSTS_PATH,
 } from "packages/nextjs-site/utils/mdx-utils";
 import { GetStaticPropsContext } from "next";
@@ -59,7 +59,7 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
 };
 
 export const getStaticPaths = async () => {
-  const paths = postFilePaths
+  const paths = ALL_POST_PATHS
     .map((path) => path.replace(/\.mdx?$/, ""))
     .map((slug) => ({ params: { slug } }));
 
