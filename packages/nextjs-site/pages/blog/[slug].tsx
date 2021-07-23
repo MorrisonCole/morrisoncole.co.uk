@@ -6,6 +6,7 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 import Button from "../../components/button";
+import Image from "next/image";
 import {
   postFilePaths,
   POSTS_PATH,
@@ -19,6 +20,7 @@ const H1 = styled.h1`
 
 const mdxComponents: Record<string, ReactNode> = {
   Button,
+  Image,
   h1: H1,
 };
 
