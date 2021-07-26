@@ -7,9 +7,9 @@
   "devDependencies": {
     "@types/eslint": "7.28.0",
     "@types/prettier": "2.3.2",
-    "@typescript-eslint/eslint-plugin": "4.28.4",
-    "@typescript-eslint/parser": "4.28.4",
-    "@yarnpkg/pnpify": "3.0.0-rc.13",
+    "@typescript-eslint/eslint-plugin": "4.28.5",
+    "@typescript-eslint/parser": "4.28.5",
+    "@yarnpkg/pnpify": "3.0.0-rc.14",
     "eslint": "7.31.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-react": "7.24.0",
@@ -26,8 +26,8 @@
     "serve:next": "yarn workspace nextjs-site start",
     "deploy:gatsby": "yarn workspace morrisoncole.co.uk deploy",
     "test:next": "yarn workspace nextjs-site test:lighthouse",
-    "upgrade": "yarn set version from sources && yarn dlx @yarnpkg/sdks vscode",
+    "upgrade": "yarn set version latest && yarn dlx @yarnpkg/sdks vscode",
     "prettier:fix": "yarn prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write"
   },
-  "packageManager": "yarn@sources"
+  "packageManager": "yarn@3.0.0"
 }
