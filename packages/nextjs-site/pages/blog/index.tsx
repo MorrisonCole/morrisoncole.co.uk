@@ -7,7 +7,15 @@ import {
 } from "packages/nextjs-site/utils/mdx-utils";
 import path from "path";
 
-export default function Index({ posts }) {
+type Post = {
+  content: string;
+  data: {
+    [key: string]: any;
+  };
+  filePath: string;
+};
+
+export default function Index({ posts }: { posts: Post[] }) {
   return (
     <>
       <h1>Home Page</h1>
