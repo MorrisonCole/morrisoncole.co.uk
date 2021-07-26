@@ -12291,9 +12291,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:2.10.0":
-  version: 2.10.0
-  resolution: "gatsby-plugin-mdx@npm:2.10.0"
+"gatsby-plugin-mdx@npm:2.10.1":
+  version: 2.10.1
+  resolution: "gatsby-plugin-mdx@npm:2.10.1"
   dependencies:
     "@babel/core": ^7.14.6
     "@babel/generator": ^7.14.5
@@ -12336,7 +12336,7 @@ fsevents@^1.2.7:
     "@mdx-js/react": ^1.0.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 8d2ddf184ff20834668a56361224d7a0d174e60e2674d62f0b5d985ecf7056f8f993aa4eb46845073f0471148ceab8a34af38fccc67cc64d9519932259f444f2
+  checksum: 44085db647c8e9f37462d5396961114c780e15906345643f1d36aadd37fc07b3cecbd564dd1355d4c7bd99c8dcaa1259faa77c2b64844e8fc0089d4e4c84c318
   languageName: node
   linkType: hard
 
@@ -17765,7 +17765,7 @@ fsevents@^1.2.7:
     gatsby-plugin-layout: 2.10.0
     gatsby-plugin-manifest: 3.10.0
     gatsby-plugin-material-ui: 3.0.1
-    gatsby-plugin-mdx: 2.10.0
+    gatsby-plugin-mdx: 2.10.1
     gatsby-plugin-preconnect: 1.2.0
     gatsby-plugin-react-helmet: 4.10.0
     gatsby-plugin-remove-serviceworker: 1.0.0
