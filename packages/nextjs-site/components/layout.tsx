@@ -16,6 +16,10 @@ const Header = styled.div`
   grid-area: header;
 `;
 
+const Content = styled.div`
+  grid-area: content;
+`;
+
 const Footer = styled.div`
   grid-area: footer;
 `;
@@ -24,7 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Grid>
       <Header />
-      {children}
+      <Content>{children}</Content>
       <Footer>Morrison Cole</Footer>
     </Grid>
   );
