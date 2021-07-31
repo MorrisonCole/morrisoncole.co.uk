@@ -4930,10 +4930,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.4.8":
-  version: 16.4.8
-  resolution: "@types/node@npm:16.4.8"
-  checksum: 1d4a421b95ac4d7671de17c56969bf95943c252c410dbe33c380e97a8afdfa7c2e5dcda0063a5c24fcc5538f40ef33c2582ae37f004c3c666da3758d8c8eecfc
+"@types/node@npm:16.4.9":
+  version: 16.4.9
+  resolution: "@types/node@npm:16.4.9"
+  checksum: e51629cd7ad9b24d8b590a6b06044cbd34c421818d16dd6c8f108537c10aab41af5f715ec8c5aad071a1be6ea4189006b6dab8ba5e8967e887083acc7024c1d5
   languageName: node
   linkType: hard
 
@@ -17839,7 +17839,7 @@ fsevents@^1.2.7:
     "@types/babel__core": 7.1.15
     "@types/lodash": 4.14.171
     "@types/mdx-js__react": 1.5.4
-    "@types/node": 16.4.8
+    "@types/node": 16.4.9
     "@types/platform": 1.3.4
     "@types/prop-types": 15.7.4
     "@types/reach__router": 1.3.9
@@ -18210,7 +18210,7 @@ fsevents@^1.2.7:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
-    "@types/node": 16.4.8
+    "@types/node": 16.4.9
     "@types/react": 17.0.15
     "@types/react-is": 17.0.2
     "@types/styled-components": 5.1.11
