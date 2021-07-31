@@ -37,18 +37,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Content>
-        <Title>Hello, world.</Title>
-        <p>
-          I&apos;m <Bold>bold.</Bold>
-        </p>
-        <p>
-          I&apos;m <Italic>italic.</Italic>
-        </p>
-        <p>
-          I&apos;m <BoldItalic>both!</BoldItalic>
-        </p>
-      </Content>
+      <Title>Hello, world.</Title>
+      <p>
+        I&apos;m <Bold>bold.</Bold>
+      </p>
+      <p>
+        I&apos;m <Italic>italic.</Italic>
+      </p>
+      <p>
+        I&apos;m <BoldItalic>both!</BoldItalic>
+      </p>
     </Layout>
   );
 }

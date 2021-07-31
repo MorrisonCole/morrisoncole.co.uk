@@ -1,6 +1,6 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import styled from "styled-components";
 import path from "path";
 import fs from "fs";
@@ -12,16 +12,22 @@ import {
   POSTS_PATH,
 } from "packages/nextjs-site/utils/mdx-utils";
 import { GetStaticPropsContext } from "next";
+import { FrontMatter } from ".";
+import Layout from "packages/nextjs-site/components/layout";
 
-const H1 = styled.h1`
+const h1 = styled.h1`
   color: grey;
   font-size: 3em;
+`;
+
+const p = styled.p`
 `;
 
 const mdxComponents: Record<string, ReactNode> = {
   Button,
   Image,
-  h1: H1,
+  h1,
+  p,
 };
 
 export default function PostPage({
@@ -30,17 +36,15 @@ export default function PostPage({
   source: MDXRemoteSerializeResult<Record<string, unknown>>;
 }) {
   return (
-    <div className="wrapper">
+    <Layout>
       <MDXRemote {...source} components={mdxComponents} />
-    </div>
+    </Layout>
   );
 }
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
-  const postFilePath = path.join(POSTS_PATH, `${params!.slug}.mdx`);
-  const source = fs.readFileSync(postFilePath);
-
-  const { content, data } = matter(source);
+  const sourceFile = path.join(POSTS_PATH, `${params!.slug}.mdx`);
+  const { content, data } = matter.read(sourceFile);
 
   const mdxSource = await serialize(content, {
     mdxOptions: {
@@ -53,15 +57,15 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   return {
     props: {
       source: mdxSource,
-      frontMatter: data,
+      frontMatter: data as FrontMatter,
     },
   };
 };
 
 export const getStaticPaths = async () => {
-  const paths = ALL_POST_PATHS
-    .map((path) => path.replace(/\.mdx?$/, ""))
-    .map((slug) => ({ params: { slug } }));
+  const paths = ALL_POST_PATHS.map((path) => path.replace(/\.mdx?$/, "")).map(
+    (slug) => ({ params: { slug } })
+  );
 
   return {
     paths,
