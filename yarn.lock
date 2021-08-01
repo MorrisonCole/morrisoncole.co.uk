@@ -12458,14 +12458,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-preconnect@npm:1.2.0":
-  version: 1.2.0
-  resolution: "gatsby-plugin-preconnect@npm:1.2.0"
+"gatsby-plugin-preconnect@npm:1.2.1":
+  version: 1.2.1
+  resolution: "gatsby-plugin-preconnect@npm:1.2.1"
   dependencies:
     "@babel/runtime": ^7.4.3
   peerDependencies:
-    gatsby: ">=2.0.0"
-  checksum: ed9137cb0fc94dc79984ddce6c49c0f5227ee04f3236307f23126b6706149e9bacfff64252b8f81cd29ef755867b643540f15ee010aa11ee54cbdbc657be7051
+    gatsby: ^2.0.0 || ^3.0.0
+  checksum: b8d6b863baf5d1c794efb3e66a969432810ef64df8c466f78358490fb4ddddcfc646ceef26aedcbd7577a0068009876a34ef9a78b867182423356c52ad92554a
   languageName: node
   linkType: hard
 
@@ -17865,7 +17865,7 @@ fsevents@^1.2.7:
     gatsby-plugin-manifest: 3.10.0
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.10.1
-    gatsby-plugin-preconnect: 1.2.0
+    gatsby-plugin-preconnect: 1.2.1
     gatsby-plugin-react-helmet: 4.10.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
