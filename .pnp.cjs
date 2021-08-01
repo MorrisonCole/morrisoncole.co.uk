@@ -8570,10 +8570,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:16.4.9", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.4.9-297764b306-e51629cd7a.zip/node_modules/@types/node/",
+        ["npm:16.4.10", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.4.10-7fcafea653-b2b550c233.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:16.4.9"]
+            ["@types/node", "npm:16.4.10"]
           ],
           "linkType": "HARD",
         }],
@@ -24319,7 +24319,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.15"],
             ["@types/lodash", "npm:4.14.171"],
             ["@types/mdx-js__react", "npm:1.5.4"],
-            ["@types/node", "npm:16.4.9"],
+            ["@types/node", "npm:16.4.10"],
             ["@types/platform", "npm:1.3.4"],
             ["@types/prop-types", "npm:15.7.4"],
             ["@types/reach__router", "npm:1.3.9"],
@@ -24742,7 +24742,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["nextjs-site", "workspace:packages/nextjs-site"],
             ["@lhci/cli", "npm:0.8.0"],
-            ["@types/node", "npm:16.4.9"],
+            ["@types/node", "npm:16.4.10"],
             ["@types/react", "npm:17.0.15"],
             ["@types/react-is", "npm:17.0.2"],
             ["@types/styled-components", "npm:5.1.11"],
