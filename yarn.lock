@@ -12337,6 +12337,22 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^2.11.0":
+  version: 2.11.0
+  resolution: "gatsby-core-utils@npm:2.11.0"
+  dependencies:
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.2.0
+    fs-extra: ^8.1.0
+    node-object-hash: ^2.0.0
+    proper-lockfile: ^4.1.1
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: be15aa53e3f9f00259de6b1d858eceed5327547e2cfe2a632a6a779146bc45c4de7179bfefc5897f4a1bbc8b194851ccc94c956a82f730162084e60d86c1f39a
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^2.6.0":
   version: 2.6.0
   resolution: "gatsby-core-utils@npm:2.6.0"
@@ -12925,16 +12941,16 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:3.10.0":
-  version: 3.10.0
-  resolution: "gatsby-source-filesystem@npm:3.10.0"
+"gatsby-source-filesystem@npm:3.11.0":
+  version: 3.11.0
+  resolution: "gatsby-source-filesystem@npm:3.11.0"
   dependencies:
     "@babel/runtime": ^7.14.6
     better-queue: ^3.8.10
     chokidar: ^3.4.3
     file-type: ^16.0.0
     fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.10.0
+    gatsby-core-utils: ^2.11.0
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.4.6
@@ -12944,7 +12960,7 @@ fsevents@^1.2.7:
     xstate: ^4.14.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: bcd965251e4a018d5a6fcca97fe29c50f7fd2d274c44b3908323f98be1f9f09bcae4e7385632746c45ca701913327a289a61a1628ec604722a4e23e3c4861c2a
+  checksum: 5d02135e2075709fd73d138d9468f76568bb34e74436b1e1eac56fd1e8f34a849b01c84b09af2c6426f4d74a4722b21f72683ae4724548ac6befd211e60e4183
   languageName: node
   linkType: hard
 
@@ -18081,7 +18097,7 @@ fsevents@^1.2.7:
     gatsby-remark-autolink-headers: 4.7.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.7.0
-    gatsby-source-filesystem: 3.10.0
+    gatsby-source-filesystem: 3.11.0
     gatsby-transformer-json: 3.10.0
     gatsby-transformer-sharp: 3.10.0
     graphql: 15.5.1
