@@ -40,7 +40,7 @@
     "gatsby-plugin-s3": "0.3.8",
     "gatsby-plugin-sharp": "3.11.0",
     "gatsby-plugin-sitemap": "4.7.0",
-    "gatsby-plugin-styled-components": "4.10.0",
+    "gatsby-plugin-styled-components": "4.11.0",
     "gatsby-plugin-typescript": "3.11.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-react-router-scroll": "4.10.0",
