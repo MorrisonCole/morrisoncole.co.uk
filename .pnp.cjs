@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:7.24.0"],
             ["prettier", "npm:2.3.2"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["vercel", "npm:23.0.1"]
+            ["vercel", "npm:23.1.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -9496,49 +9496,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@vercel/build-utils", [
-        ["npm:2.11.1", {
-          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.11.1-f62a7c8788-e8424eb450.zip/node_modules/@vercel/build-utils/",
+        ["npm:2.12.0", {
+          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.12.0-66b1382c8b-03b7cb4d9c.zip/node_modules/@vercel/build-utils/",
           "packageDependencies": [
-            ["@vercel/build-utils", "npm:2.11.1"]
+            ["@vercel/build-utils", "npm:2.12.0"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@vercel/go", [
-        ["npm:1.2.2", {
-          "packageLocation": "./.yarn/cache/@vercel-go-npm-1.2.2-c7bb44b0ac-0212f69e14.zip/node_modules/@vercel/go/",
+        ["npm:1.2.3", {
+          "packageLocation": "./.yarn/cache/@vercel-go-npm-1.2.3-53383efdde-44bfb31625.zip/node_modules/@vercel/go/",
           "packageDependencies": [
-            ["@vercel/go", "npm:1.2.2"]
+            ["@vercel/go", "npm:1.2.3"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@vercel/node", [
-        ["npm:1.11.1", {
-          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.11.1-ed79858bc5-60b025c56d.zip/node_modules/@vercel/node/",
+        ["npm:1.12.0", {
+          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.12.0-a14376b9f5-4e38084bb1.zip/node_modules/@vercel/node/",
           "packageDependencies": [
-            ["@vercel/node", "npm:1.11.1"],
+            ["@vercel/node", "npm:1.12.0"],
             ["@types/node", "npm:15.12.1"],
-            ["ts-node", "virtual:ed79858bc5a59b29ee00836cb97fab4e58940d89aff152364cef067a2b68d6d2d2017eb865ffcd062d5655999ecf2858cd8692eae2b4430d54211e2de2731d0d#npm:8.9.1"],
-            ["typescript", "patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"]
+            ["ts-node", "virtual:a14376b9f58e9c6988563457821c32a393565914ea2e23f2cb6fbdb4a9788edf66e00592bf13eeafe06871683afd2ac6baad42c12d33f87d3a7e0e92be890804#npm:8.9.1"],
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@vercel/python", [
-        ["npm:2.0.4", {
-          "packageLocation": "./.yarn/cache/@vercel-python-npm-2.0.4-07d29a6d56-3d32defa06.zip/node_modules/@vercel/python/",
+        ["npm:2.0.5", {
+          "packageLocation": "./.yarn/cache/@vercel-python-npm-2.0.5-98d9f0e72c-72edfb727e.zip/node_modules/@vercel/python/",
           "packageDependencies": [
-            ["@vercel/python", "npm:2.0.4"]
+            ["@vercel/python", "npm:2.0.5"]
           ],
           "linkType": "HARD",
         }]
       ]],
       ["@vercel/ruby", [
-        ["npm:1.2.6", {
-          "packageLocation": "./.yarn/cache/@vercel-ruby-npm-1.2.6-2ed8b51a66-f96d887d2d.zip/node_modules/@vercel/ruby/",
+        ["npm:1.2.7", {
+          "packageLocation": "./.yarn/cache/@vercel-ruby-npm-1.2.7-3d65b2e379-95c347d66a.zip/node_modules/@vercel/ruby/",
           "packageDependencies": [
-            ["@vercel/ruby", "npm:1.2.6"]
+            ["@vercel/ruby", "npm:1.2.7"]
           ],
           "linkType": "HARD",
         }]
@@ -10780,7 +10780,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["aws-sdk", [
         ["npm:2.922.0", {
-          "packageLocation": "./.yarn/unplugged/aws-sdk-npm-2.922.0-41afe00e6f/node_modules/aws-sdk/",
+          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.922.0-41afe00e6f-72922e1b12.zip/node_modules/aws-sdk/",
           "packageDependencies": [
             ["aws-sdk", "npm:2.922.0"],
             ["buffer", "npm:4.9.2"],
@@ -13479,21 +13479,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js", [
         ["npm:2.6.12", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-0b93d77d31/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-2.6.12-0b93d77d31-44fa9934a8.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:2.6.12"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.14.0", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.14.0-29d8f94441/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.14.0-29d8f94441-a450089e57.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.14.0"]
           ],
           "linkType": "HARD",
         }],
         ["npm:3.15.2", {
-          "packageLocation": "./.yarn/unplugged/core-js-npm-3.15.2-6825052e10/node_modules/core-js/",
+          "packageLocation": "./.yarn/cache/core-js-npm-3.15.2-6825052e10-f8f61569c4.zip/node_modules/core-js/",
           "packageDependencies": [
             ["core-js", "npm:3.15.2"]
           ],
@@ -13531,7 +13531,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["core-js-pure", [
         ["npm:3.14.0", {
-          "packageLocation": "./.yarn/unplugged/core-js-pure-npm-3.14.0-9a85e5a133/node_modules/core-js-pure/",
+          "packageLocation": "./.yarn/cache/core-js-pure-npm-3.14.0-9a85e5a133-800628e536.zip/node_modules/core-js-pure/",
           "packageDependencies": [
             ["core-js-pure", "npm:3.14.0"]
           ],
@@ -15664,7 +15664,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["esbuild", [
         ["npm:0.12.15", {
-          "packageLocation": "./.yarn/unplugged/esbuild-npm-0.12.15-7493c7de7f/node_modules/esbuild/",
+          "packageLocation": "./.yarn/cache/esbuild-npm-0.12.15-7493c7de7f-7d496cb355.zip/node_modules/esbuild/",
           "packageDependencies": [
             ["esbuild", "npm:0.12.15"]
           ],
@@ -17653,14 +17653,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby", [
         ["npm:3.11.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-010c830fb2/node_modules/gatsby/",
+          "packageLocation": "./.yarn/cache/gatsby-npm-3.11.0-30c5113414-55063cee17.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "npm:3.11.0"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.11.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-virtual-010c830fb2/node_modules/gatsby/",
+          "packageLocation": "./.yarn/__virtual__/gatsby-virtual-010c830fb2/0/cache/gatsby-npm-3.11.0-30c5113414-55063cee17.zip/node_modules/gatsby/",
           "packageDependencies": [
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.11.0"],
             ["@babel/code-frame", "npm:7.14.5"],
@@ -17834,7 +17834,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-cli", [
         ["npm:3.11.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-cli-npm-3.11.0-79d0c50228/node_modules/gatsby-cli/",
+          "packageLocation": "./.yarn/cache/gatsby-cli-npm-3.11.0-79d0c50228-0249ebb94e.zip/node_modules/gatsby-cli/",
           "packageDependencies": [
             ["gatsby-cli", "npm:3.11.0"],
             ["@babel/code-frame", "npm:7.14.5"],
@@ -18864,7 +18864,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["gatsby-telemetry", [
         ["npm:2.11.0", {
-          "packageLocation": "./.yarn/unplugged/gatsby-telemetry-npm-2.11.0-17b7e48726/node_modules/gatsby-telemetry/",
+          "packageLocation": "./.yarn/cache/gatsby-telemetry-npm-2.11.0-17b7e48726-c6548ad5c8.zip/node_modules/gatsby-telemetry/",
           "packageDependencies": [
             ["gatsby-telemetry", "npm:2.11.0"],
             ["@babel/code-frame", "npm:7.14.5"],
@@ -24473,7 +24473,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:7.24.0"],
             ["prettier", "npm:2.3.2"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["vercel", "npm:23.0.1"]
+            ["vercel", "npm:23.1.0"]
           ],
           "linkType": "SOFT",
         }]
@@ -24568,7 +24568,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["mozjpeg", [
         ["npm:7.1.0", {
-          "packageLocation": "./.yarn/unplugged/mozjpeg-npm-7.1.0-3d2b5cce2a/node_modules/mozjpeg/",
+          "packageLocation": "./.yarn/cache/mozjpeg-npm-7.1.0-3d2b5cce2a-a5f149e501.zip/node_modules/mozjpeg/",
           "packageDependencies": [
             ["mozjpeg", "npm:7.1.0"],
             ["bin-build", "npm:3.0.0"],
@@ -26702,7 +26702,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["pngquant-bin", [
         ["npm:6.0.0", {
-          "packageLocation": "./.yarn/unplugged/pngquant-bin-npm-6.0.0-8966f037b7/node_modules/pngquant-bin/",
+          "packageLocation": "./.yarn/cache/pngquant-bin-npm-6.0.0-8966f037b7-2f2600ce9e.zip/node_modules/pngquant-bin/",
           "packageDependencies": [
             ["pngquant-bin", "npm:6.0.0"],
             ["bin-build", "npm:3.0.0"],
@@ -32246,16 +32246,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:ed79858bc5a59b29ee00836cb97fab4e58940d89aff152364cef067a2b68d6d2d2017eb865ffcd062d5655999ecf2858cd8692eae2b4430d54211e2de2731d0d#npm:8.9.1", {
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-330f37c590/0/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
+        ["virtual:a14376b9f58e9c6988563457821c32a393565914ea2e23f2cb6fbdb4a9788edf66e00592bf13eeafe06871683afd2ac6baad42c12d33f87d3a7e0e92be890804#npm:8.9.1", {
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-0067cb2f77/0/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:ed79858bc5a59b29ee00836cb97fab4e58940d89aff152364cef067a2b68d6d2d2017eb865ffcd062d5655999ecf2858cd8692eae2b4430d54211e2de2731d0d#npm:8.9.1"],
+            ["ts-node", "virtual:a14376b9f58e9c6988563457821c32a393565914ea2e23f2cb6fbdb4a9788edf66e00592bf13eeafe06871683afd2ac6baad42c12d33f87d3a7e0e92be890804#npm:8.9.1"],
             ["@types/typescript", null],
             ["arg", "npm:4.1.3"],
             ["diff", "npm:4.0.2"],
             ["make-error", "npm:1.3.6"],
             ["source-map-support", "npm:0.5.19"],
-            ["typescript", "patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"],
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"],
             ["yn", "npm:3.1.1"]
           ],
           "packagePeers": [
@@ -32564,17 +32564,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["typescript", [
-        ["patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7", {
-          "packageLocation": "./.yarn/cache/typescript-patch-0be26eb740-de97cb641a.zip/node_modules/typescript/",
-          "packageDependencies": [
-            ["typescript", "patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"]
-          ],
-          "linkType": "HARD",
-        }],
         ["patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7", {
           "packageLocation": "./.yarn/cache/typescript-patch-6b7c9f6752-3d3dec06ba.zip/node_modules/typescript/",
           "packageDependencies": [
             ["typescript", "patch:typescript@npm%3A4.3.2#~builtin<compat/typescript>::version=4.3.2&hash=d8b4e7"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7", {
+          "packageLocation": "./.yarn/cache/typescript-patch-6ebc233943-a6b1a3674b.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"]
           ],
           "linkType": "HARD",
         }],
@@ -33523,15 +33523,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["vercel", [
-        ["npm:23.0.1", {
-          "packageLocation": "./.yarn/unplugged/vercel-npm-23.0.1-6350a7bd5b/node_modules/vercel/",
+        ["npm:23.1.0", {
+          "packageLocation": "./.yarn/unplugged/vercel-npm-23.1.0-7199e2d96a/node_modules/vercel/",
           "packageDependencies": [
-            ["vercel", "npm:23.0.1"],
-            ["@vercel/build-utils", "npm:2.11.1"],
-            ["@vercel/go", "npm:1.2.2"],
-            ["@vercel/node", "npm:1.11.1"],
-            ["@vercel/python", "npm:2.0.4"],
-            ["@vercel/ruby", "npm:1.2.6"],
+            ["vercel", "npm:23.1.0"],
+            ["@vercel/build-utils", "npm:2.12.0"],
+            ["@vercel/go", "npm:1.2.3"],
+            ["@vercel/node", "npm:1.12.0"],
+            ["@vercel/python", "npm:2.0.5"],
+            ["@vercel/ruby", "npm:1.2.7"],
             ["esprima", "npm:4.0.1"],
             ["update-notifier", "npm:4.1.0"]
           ],
@@ -34648,7 +34648,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["yarn", [
         ["npm:1.22.11", {
-          "packageLocation": "./.yarn/unplugged/yarn-npm-1.22.11-bc59c5b649/node_modules/yarn/",
+          "packageLocation": "./.yarn/cache/yarn-npm-1.22.11-bc59c5b649-315198d97a.zip/node_modules/yarn/",
           "packageDependencies": [
             ["yarn", "npm:1.22.11"]
           ],
