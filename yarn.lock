@@ -5718,42 +5718,42 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:2.11.1":
-  version: 2.11.1
-  resolution: "@vercel/build-utils@npm:2.11.1"
-  checksum: e8424eb4503b9759b981300353656e71edc980b161f1a56e65c131f57ee2e068d69b1d799fad4add79f802ba8fb3f41199175c37c57005982eeead9c10632768
+"@vercel/build-utils@npm:2.12.0":
+  version: 2.12.0
+  resolution: "@vercel/build-utils@npm:2.12.0"
+  checksum: 03b7cb4d9c66b99ff22317cfde125ebb40f02c9b19c074ed207234d50967bafc8460a67a187c1b4ac514ff2481a3d4de6043b3bbcbc570aecf92c343913a666c
   languageName: node
   linkType: hard
 
-"@vercel/go@npm:1.2.2":
-  version: 1.2.2
-  resolution: "@vercel/go@npm:1.2.2"
-  checksum: 0212f69e143041e71765fe257f69897e718c03c29cbcd46e5e650c23152caf681f4f9936a672967b6b821d51841f3f16d063d57ecbff86ee471ea66af615a5d2
+"@vercel/go@npm:1.2.3":
+  version: 1.2.3
+  resolution: "@vercel/go@npm:1.2.3"
+  checksum: 44bfb316253aa706c4008f3292c113d540f4eaef5b2601a6ee0077b5c8814ccb9612f61ef4d8743d95d1ed8db8925d44ff5716e38e2fcc9edeb6a993f40c8e7e
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:1.11.1":
-  version: 1.11.1
-  resolution: "@vercel/node@npm:1.11.1"
+"@vercel/node@npm:1.12.0":
+  version: 1.12.0
+  resolution: "@vercel/node@npm:1.12.0"
   dependencies:
     "@types/node": "*"
     ts-node: 8.9.1
-    typescript: 3.9.3
-  checksum: 60b025c56d8fbbd3a573261dfef47ae44fe8a9a5cfd4223d64c50e80117ac552e5329ea8cf10551a89870dbdac00c58f8b108f9ef604e84c731fa33bf357e09b
+    typescript: 4.3.4
+  checksum: 4e38084bb1d4f7946d8df62df84e2224a0c3645547ea165f0294aa1aa06d7ecd35ebeace9821280f4949bf9e31e65af6e46c7cb0904286013f6607882ce62ccc
   languageName: node
   linkType: hard
 
-"@vercel/python@npm:2.0.4":
-  version: 2.0.4
-  resolution: "@vercel/python@npm:2.0.4"
-  checksum: 3d32defa061e247a9a06804d4071aaa73babb3e47aefe1509fe57b4ee4d5173d8109009c72cef2b32bea9d0da901923c982b1c086e7e322545b7862d011ad800
+"@vercel/python@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@vercel/python@npm:2.0.5"
+  checksum: 72edfb727e45b240bf6993cd1893bc4c2d3accd58728d484ff6748734c7860681aba72706fc31cb0278cc3a5544378c144b7a5cd55469a3e17593289d4c4ff6f
   languageName: node
   linkType: hard
 
-"@vercel/ruby@npm:1.2.6":
-  version: 1.2.6
-  resolution: "@vercel/ruby@npm:1.2.6"
-  checksum: f96d887d2d4c87429a5643dac57262e135c0fb14b5b58cbafe7a7bd3805734c332a631545eb60a66006647db9b53bd084e9e9e3a83f8d049c1aae90f6d4d496b
+"@vercel/ruby@npm:1.2.7":
+  version: 1.2.7
+  resolution: "@vercel/ruby@npm:1.2.7"
+  checksum: 95c347d66a10cfc7114cf45bd6c1c0348d18fcb443d314097563649e344701e4e884a85da89b295a144b16b0debfdddf8935e7dc413e74040e5ab04411d595cd
   languageName: node
   linkType: hard
 
@@ -18093,7 +18093,7 @@ fsevents@^1.2.7:
     eslint-plugin-react: 7.24.0
     prettier: 2.3.2
     typescript: 4.3.5
-    vercel: 23.0.1
+    vercel: 23.1.0
   languageName: unknown
   linkType: soft
 
@@ -24802,13 +24802,13 @@ typescript@*:
   languageName: node
   linkType: hard
 
-typescript@3.9.3:
-  version: 3.9.3
-  resolution: "typescript@npm:3.9.3"
+typescript@4.3.4:
+  version: 4.3.4
+  resolution: "typescript@npm:4.3.4"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 8545da47e0d19aeabcce4a3eca41cc1b88cb136088e58eba1c00e425722dcb137b29cab9ebf8b53dd3be49e74cfb3372259255061c05dd46b9f6cc2f764be83c
+  checksum: 75e1f2769c7ff38c718523d05eaf1c2611dbf92c0ab0f85f603ead9bb23416af2009a5dac46e76ef6a207a8508fa53f51b43a41f2a91b1241b53cd744c16128c
   languageName: node
   linkType: hard
 
@@ -24832,13 +24832,13 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@3.9.3#~builtin<compat/typescript>":
-  version: 3.9.3
-  resolution: "typescript@patch:typescript@npm%3A3.9.3#~builtin<compat/typescript>::version=3.9.3&hash=d8b4e7"
+"typescript@patch:typescript@4.3.4#~builtin<compat/typescript>":
+  version: 4.3.4
+  resolution: "typescript@patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: de97cb641a5b83626eeccac9810c22013fc60ec25eb9a90815249a893ebfe83b9a1a93bccd2b574fd196020d55c2312406275ecf540daa44f184bf1e16d8c303
+  checksum: a6b1a3674b60971691b89fa8187a4905e132cb8061724b4bd485e5d5441caa61166fe3bcf2b47aa679a6d860cae823022ca51db713cc3446296274c005dd02e5
   languageName: node
   linkType: hard
 
@@ -25698,20 +25698,20 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"vercel@npm:23.0.1":
-  version: 23.0.1
-  resolution: "vercel@npm:23.0.1"
+"vercel@npm:23.1.0":
+  version: 23.1.0
+  resolution: "vercel@npm:23.1.0"
   dependencies:
-    "@vercel/build-utils": 2.11.1
-    "@vercel/go": 1.2.2
-    "@vercel/node": 1.11.1
-    "@vercel/python": 2.0.4
-    "@vercel/ruby": 1.2.6
+    "@vercel/build-utils": 2.12.0
+    "@vercel/go": 1.2.3
+    "@vercel/node": 1.12.0
+    "@vercel/python": 2.0.5
+    "@vercel/ruby": 1.2.7
     update-notifier: 4.1.0
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 6209688dab3aa27f50494cb46fbb4ec7b847e95d7d591f178283abea4564e2e7be4f2a7f6cf9e9711399fbc2b57dbdb2cdf9e0669e8ba6834d4d86d64ce2beca
+  checksum: fe6187221a9329e26657de894f9c2c25993bf48639f96ddcb82152694ea486fef6ab25d8ed5670a7146d500248e35e5659866f66bc2ac427fa3ce75c717e66a4
   languageName: node
   linkType: hard
 
