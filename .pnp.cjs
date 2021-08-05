@@ -16452,6 +16452,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["event-source-polyfill", "npm:1.0.24"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:1.0.25", {
+          "packageLocation": "./.yarn/cache/event-source-polyfill-npm-1.0.25-98ef60921d-ed30428cc8.zip/node_modules/event-source-polyfill/",
+          "packageDependencies": [
+            ["event-source-polyfill", "npm:1.0.25"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["event-target-shim", [
@@ -24454,7 +24461,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-styled-components", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:1.13.2"],
             ["classnames", "npm:2.3.1"],
             ["css.escape", "npm:1.5.1"],
-            ["event-source-polyfill", "npm:1.0.24"],
+            ["event-source-polyfill", "npm:1.0.25"],
             ["gatsby", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:3.11.0"],
             ["gatsby-cli", "npm:3.11.0"],
             ["gatsby-legacy-polyfills", "npm:1.11.0"],
