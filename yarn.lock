@@ -11281,7 +11281,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"event-source-polyfill@npm:1.0.24, event-source-polyfill@npm:^1.0.15":
+"event-source-polyfill@npm:1.0.25":
+  version: 1.0.25
+  resolution: "event-source-polyfill@npm:1.0.25"
+  checksum: ed30428cc80eadfd693d267ba4a72dceaae938174cd116081ce38ad62bfd95f199430be7e8341e6f8f1e29489bbd5cfd4b3f6c8d6d463435623f7f91ae5f71b1
+  languageName: node
+  linkType: hard
+
+"event-source-polyfill@npm:^1.0.15":
   version: 1.0.24
   resolution: "event-source-polyfill@npm:1.0.24"
   checksum: 17cf23602fa2452690521e283a407052a2a05f05efbba5735b400bf813c23a222f24d27162dc4a62a32c6b88e4661c242f47d8fed4a216e9fca4c22c4e65cd17
@@ -18042,7 +18049,7 @@ fsevents@^1.2.7:
     babel-plugin-styled-components: 1.13.2
     classnames: 2.3.1
     css.escape: 1.5.1
-    event-source-polyfill: 1.0.24
+    event-source-polyfill: 1.0.25
     gatsby: 3.11.0
     gatsby-cli: 3.11.0
     gatsby-legacy-polyfills: 1.11.0
