@@ -1,0 +1,63 @@
+---
+{
+  title: "Fonts",
+  date: "2021-08-07",
+  updated: null,
+  description: "Everything I never intended to learn about the web and fonts.",
+  category: "Software",
+  image: "/static/images/fonts/font.jpg",
+  imageAlt: "A font",
+  linkText: "Read...",
+  draft: false,
+}
+---
+
+# Fonts
+
+When I decided to build this website, I wanted to write my performance tests
+first.
+
+For years I've had a personal website. It gets a really small amount of traffic,
+but it's fun as a learning tool and keeps me engaged on rainy days. The software
+engineering I get paid for has almost never included anything that could be
+considered frontend, so there's that too.
+
+So, naively following the advice of some random blogposts, I self-hosted my
+fonts! Everything seemed great, and lighthouse-ci seemed very happy. Things were
+fast!
+
+Then I tried to introduce a Japanese font.
+
+https://github.com/MorrisonCole/morrisoncole.co.uk/commit/93eafdf2fd19caff51256326860b8e19b5c7bb1a
+
+Oh no:
+
+```
+  ✘  total-byte-weight failure for minScore assertion
+       Avoid enormous network payloads
+       https://web.dev/total-byte-weight/
+
+        expected: >=0.9
+           found: 0.67
+      all values: 0.67, 0.67, 0.67
+```
+
+OK, so the woff2 I used contains just about every character under the sun, and
+it's _huge_. 1.7MB! This font is over 100x larger than my latin character set.
+
+By they way, I wrote about testing performance first before, but the truth is I
+probably wouldn't have even noticed this if my tests hadn't started failing
+right away.
+
+- Performance tests in CI are fantastic.
+- Don't blindly preload everything. Really consider what you need to prioritise.
+- Google Fonts has some really cool features for font compatability and speed,
+  so I'd recommend using it by default, but if you do have the time and
+  patience, it's going to be faster to host the fonts yourself.
+
+## Further reading
+
+- https://www.tunetheweb.com/blog/should-you-self-host-google-fonts/
+- https://markoskon.com/creating-font-subsets/
+- https://leerob.io/blog/fonts
+- https://github.com/GoogleChrome/lighthouse/releases/tag/v8.1.0
