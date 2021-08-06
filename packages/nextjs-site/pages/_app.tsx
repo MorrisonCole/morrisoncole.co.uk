@@ -35,25 +35,9 @@ const GlobalStyle = createGlobalStyle`
     src: local(''), url('/fonts/noto-sans-v14-latin-700italic.woff2') format('woff2');
   }
 
-  @font-face {
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    font-weight: 400;
-    font-display: optional;
-    src: local(''), url('/fonts/noto-sans-jp-v28-japanese-regular.woff2') format('woff2');
-  }
-
-  @font-face {
-    font-family: 'Noto Sans JP';
-    font-style: normal;
-    font-weight: 700;
-    font-display: optional;
-    src: local(''), url('/fonts/noto-sans-jp-v28-japanese-700.woff2') format('woff2');
-  }
-
   body {
     margin: 0;
-    font-family: 'Noto Sans', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 `;
 
