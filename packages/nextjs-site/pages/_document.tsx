@@ -41,28 +41,42 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/roboto-regular-400-latin.woff2"
+            href="/fonts/noto-sans-v14-latin-regular.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/roboto-regular-400-italic-latin.woff2"
+            href="/fonts/noto-sans-v14-latin-700.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/roboto-regular-700-latin.woff2"
+            href="/fonts/noto-sans-v14-latin-italic.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/roboto-regular-700-italic-latin.woff2"
+            href="/fonts/noto-sans-v14-latin-700italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/noto-sans-jp-v28-japanese-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/noto-sans-jp-v28-japanese-700.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
