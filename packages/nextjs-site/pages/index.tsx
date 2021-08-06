@@ -28,6 +28,11 @@ const BoldItalic = styled.span`
   font-style: italic;
 `;
 
+const Japanese = styled.p`
+  font-size: 1em;
+  font-weight: regular;
+`;
+
 export default function Home() {
   return (
     <Layout>
@@ -47,6 +52,7 @@ export default function Home() {
       <p>
         I&apos;m <BoldItalic>both!</BoldItalic>
       </p>
+      <Japanese>日本語で書いてます。</Japanese>
     </Layout>
   );
 }
