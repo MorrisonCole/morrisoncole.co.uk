@@ -21,7 +21,7 @@
   "devDependencies": {
     "@lhci/cli": "0.8.0",
     "@types/node": "16.4.13",
-    "@types/react": "17.0.15",
+    "@types/react": "17.0.16",
     "@types/react-is": "17.0.2",
     "@types/styled-components": "5.1.12",
     "@typescript-eslint/eslint-plugin": "4.29.0",
