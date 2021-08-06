@@ -10,10 +10,13 @@
     "@typescript-eslint/eslint-plugin": "4.29.0",
     "@typescript-eslint/parser": "4.29.0",
     "@yarnpkg/pnpify": "3.0.0-rc.14",
+    "axios": "0.21.1",
+    "css": "3.0.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-react": "7.24.0",
     "prettier": "2.3.2",
+    "ts-node": "10.1.0",
     "typescript": "4.3.5",
     "vercel": "23.1.0"
   },
@@ -27,7 +30,8 @@
     "deploy:gatsby": "yarn workspace morrisoncole.co.uk deploy",
     "test:next": "yarn workspace nextjs-site test:lighthouse",
     "upgrade": "yarn set version latest && yarn dlx @yarnpkg/sdks vscode",
-    "prettier:fix": "yarn prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write"
+    "prettier:fix": "yarn prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write",
+    "get-fonts": "ts-node -T scripts/get-fonts.ts"
   },
   "packageManager": "yarn@3.0.0"
 }
