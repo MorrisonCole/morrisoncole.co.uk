@@ -5145,10 +5145,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.4.12":
-  version: 16.4.12
-  resolution: "@types/node@npm:16.4.12"
-  checksum: 1489aeba890629ca2ed9b8f04fb77f185123810afd3d518cf87c2a18a43a43f7d954550ae3572f3dac7e634f7db67e259ceb7ca25cb584ba0bcc023b0bfca2c9
+"@types/node@npm:16.4.13":
+  version: 16.4.13
+  resolution: "@types/node@npm:16.4.13"
+  checksum: 071e86a1d196cf72928a7109e99769dffed93db481032b9ca2f52e6f3ced432e2a179849c85e587e67409202e1ed37bffd0c7a31d38adf35a385d327dfe8bd72
   languageName: node
   linkType: hard
 
@@ -18119,7 +18119,7 @@ fsevents@^1.2.7:
     "@types/babel__core": 7.1.15
     "@types/lodash": 4.14.172
     "@types/mdx-js__react": 1.5.4
-    "@types/node": 16.4.12
+    "@types/node": 16.4.13
     "@types/platform": 1.3.4
     "@types/prop-types": 15.7.4
     "@types/reach__router": 1.3.9
@@ -18173,7 +18173,7 @@ fsevents@^1.2.7:
     react-dom: 17.0.2
     react-helmet: 6.1.0
     react-intersection-observer: 8.32.0
-    react-live: 2.3.0
+    react-live: 2.4.0
     reading-time: 1.3.0
     remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
@@ -18490,7 +18490,7 @@ fsevents@^1.2.7:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
-    "@types/node": 16.4.12
+    "@types/node": 16.4.13
     "@types/react": 17.0.15
     "@types/react-is": 17.0.2
     "@types/styled-components": 5.1.12
@@ -21286,9 +21286,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-live@npm:2.3.0":
-  version: 2.3.0
-  resolution: "react-live@npm:2.3.0"
+"react-live@npm:2.4.0":
+  version: 2.4.0
+  resolution: "react-live@npm:2.4.0"
   dependencies:
     "@types/buble": ^0.20.0
     buble: 0.19.6
@@ -21298,7 +21298,7 @@ fsevents@^1.2.7:
     prop-types: ^15.7.2
     react-simple-code-editor: ^0.11.0
     unescape: ^1.0.1
-  checksum: c390df78312e5264692b0ac8f745c64294d433546a60eb5992f19fdc517ac6f726a91b7f726e71a79c24db6d16d8ee8a1e927064bec57b52dae488fe6741a93f
+  checksum: f85fe4df12ee89aa3f6cb664507faed53b31825376b6ce4f299cb7c0e977962078e13d181ae5639eee87b70b1d1c9e1c4e4b822a32cd0b8b08982a6fdc37e53a
   languageName: node
   linkType: hard
 
