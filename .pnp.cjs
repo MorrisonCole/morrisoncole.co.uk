@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["ts-node", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:10.2.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["vercel", "npm:23.1.1"]
+            ["vercel", "npm:23.1.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -9554,10 +9554,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@vercel/build-utils", [
-        ["npm:2.12.1", {
-          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.12.1-30102cd39b-094ece9885.zip/node_modules/@vercel/build-utils/",
+        ["npm:2.12.2", {
+          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.12.2-eea64c7adc-3519e2f531.zip/node_modules/@vercel/build-utils/",
           "packageDependencies": [
-            ["@vercel/build-utils", "npm:2.12.1"]
+            ["@vercel/build-utils", "npm:2.12.2"]
           ],
           "linkType": "HARD",
         }]
@@ -9572,12 +9572,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@vercel/node", [
-        ["npm:1.12.0", {
-          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.12.0-a14376b9f5-4e38084bb1.zip/node_modules/@vercel/node/",
+        ["npm:1.12.1", {
+          "packageLocation": "./.yarn/cache/@vercel-node-npm-1.12.1-44bf2c70c0-15a0bae4af.zip/node_modules/@vercel/node/",
           "packageDependencies": [
-            ["@vercel/node", "npm:1.12.0"],
+            ["@vercel/node", "npm:1.12.1"],
             ["@types/node", "npm:15.12.1"],
-            ["ts-node", "virtual:a14376b9f58e9c6988563457821c32a393565914ea2e23f2cb6fbdb4a9788edf66e00592bf13eeafe06871683afd2ac6baad42c12d33f87d3a7e0e92be890804#npm:8.9.1"],
+            ["ts-node", "virtual:44bf2c70c05f1f77fc69c7c44ce992701d25380af653002c546a859e483c42080749e589ab25ed839ca056807f9aac941cc4bb39929559ab3d2ef9fb18f5b483#npm:8.9.1"],
             ["typescript", "patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=d8b4e7"]
           ],
           "linkType": "HARD",
@@ -24562,7 +24562,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["ts-node", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:10.2.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["vercel", "npm:23.1.1"]
+            ["vercel", "npm:23.1.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -32386,10 +32386,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:a14376b9f58e9c6988563457821c32a393565914ea2e23f2cb6fbdb4a9788edf66e00592bf13eeafe06871683afd2ac6baad42c12d33f87d3a7e0e92be890804#npm:8.9.1", {
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-0067cb2f77/0/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
+        ["virtual:44bf2c70c05f1f77fc69c7c44ce992701d25380af653002c546a859e483c42080749e589ab25ed839ca056807f9aac941cc4bb39929559ab3d2ef9fb18f5b483#npm:8.9.1", {
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-de1c5a4392/0/cache/ts-node-npm-8.9.1-aebcfc876f-59997e32cf.zip/node_modules/ts-node/",
           "packageDependencies": [
-            ["ts-node", "virtual:a14376b9f58e9c6988563457821c32a393565914ea2e23f2cb6fbdb4a9788edf66e00592bf13eeafe06871683afd2ac6baad42c12d33f87d3a7e0e92be890804#npm:8.9.1"],
+            ["ts-node", "virtual:44bf2c70c05f1f77fc69c7c44ce992701d25380af653002c546a859e483c42080749e589ab25ed839ca056807f9aac941cc4bb39929559ab3d2ef9fb18f5b483#npm:8.9.1"],
             ["@types/typescript", null],
             ["arg", "npm:4.1.3"],
             ["diff", "npm:4.0.2"],
@@ -33663,13 +33663,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["vercel", [
-        ["npm:23.1.1", {
-          "packageLocation": "./.yarn/unplugged/vercel-npm-23.1.1-6a15c9b613/node_modules/vercel/",
+        ["npm:23.1.2", {
+          "packageLocation": "./.yarn/unplugged/vercel-npm-23.1.2-35c8695308/node_modules/vercel/",
           "packageDependencies": [
-            ["vercel", "npm:23.1.1"],
-            ["@vercel/build-utils", "npm:2.12.1"],
+            ["vercel", "npm:23.1.2"],
+            ["@vercel/build-utils", "npm:2.12.2"],
             ["@vercel/go", "npm:1.2.3"],
-            ["@vercel/node", "npm:1.12.0"],
+            ["@vercel/node", "npm:1.12.1"],
             ["@vercel/python", "npm:2.0.5"],
             ["@vercel/ruby", "npm:1.2.7"],
             ["esprima", "npm:4.0.1"],
