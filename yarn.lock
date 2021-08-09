@@ -5762,10 +5762,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:2.12.0":
-  version: 2.12.0
-  resolution: "@vercel/build-utils@npm:2.12.0"
-  checksum: 03b7cb4d9c66b99ff22317cfde125ebb40f02c9b19c074ed207234d50967bafc8460a67a187c1b4ac514ff2481a3d4de6043b3bbcbc570aecf92c343913a666c
+"@vercel/build-utils@npm:2.12.1":
+  version: 2.12.1
+  resolution: "@vercel/build-utils@npm:2.12.1"
+  checksum: 094ece98850cd0e42cfc073d6f78d7a872ab3c6f966bd6e73f2549425d3810b5b751265614307b877e5f73d47273164378f95e617c008731695f3fe86c55ee16
   languageName: node
   linkType: hard
 
@@ -18167,7 +18167,7 @@ fsevents@^1.2.7:
     prettier: 2.3.2
     ts-node: 10.2.0
     typescript: 4.3.5
-    vercel: 23.1.0
+    vercel: 23.1.1
   languageName: unknown
   linkType: soft
 
@@ -25818,11 +25818,11 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"vercel@npm:23.1.0":
-  version: 23.1.0
-  resolution: "vercel@npm:23.1.0"
+"vercel@npm:23.1.1":
+  version: 23.1.1
+  resolution: "vercel@npm:23.1.1"
   dependencies:
-    "@vercel/build-utils": 2.12.0
+    "@vercel/build-utils": 2.12.1
     "@vercel/go": 1.2.3
     "@vercel/node": 1.12.0
     "@vercel/python": 2.0.5
@@ -25831,7 +25831,7 @@ typescript@4.3.5:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: fe6187221a9329e26657de894f9c2c25993bf48639f96ddcb82152694ea486fef6ab25d8ed5670a7146d500248e35e5659866f66bc2ac427fa3ce75c717e66a4
+  checksum: 89d4eee92fe55e6ccd8c218fc17df720a6ca039399f926037ae0209d44ee6dbddd493a9bd177dea45f51e6385c07f31abbd3583dd35cf4f06145d2db6d4efaaf
   languageName: node
   linkType: hard
 
