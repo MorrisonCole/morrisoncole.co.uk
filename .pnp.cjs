@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["ts-node", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:10.2.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["vercel", "npm:23.1.0"]
+            ["vercel", "npm:23.1.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -9554,10 +9554,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@vercel/build-utils", [
-        ["npm:2.12.0", {
-          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.12.0-66b1382c8b-03b7cb4d9c.zip/node_modules/@vercel/build-utils/",
+        ["npm:2.12.1", {
+          "packageLocation": "./.yarn/cache/@vercel-build-utils-npm-2.12.1-30102cd39b-094ece9885.zip/node_modules/@vercel/build-utils/",
           "packageDependencies": [
-            ["@vercel/build-utils", "npm:2.12.0"]
+            ["@vercel/build-utils", "npm:2.12.1"]
           ],
           "linkType": "HARD",
         }]
@@ -24562,7 +24562,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.3.2"],
             ["ts-node", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:10.2.0"],
             ["typescript", "patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=d8b4e7"],
-            ["vercel", "npm:23.1.0"]
+            ["vercel", "npm:23.1.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -33663,11 +33663,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["vercel", [
-        ["npm:23.1.0", {
-          "packageLocation": "./.yarn/unplugged/vercel-npm-23.1.0-7199e2d96a/node_modules/vercel/",
+        ["npm:23.1.1", {
+          "packageLocation": "./.yarn/unplugged/vercel-npm-23.1.1-6a15c9b613/node_modules/vercel/",
           "packageDependencies": [
-            ["vercel", "npm:23.1.0"],
-            ["@vercel/build-utils", "npm:2.12.0"],
+            ["vercel", "npm:23.1.1"],
+            ["@vercel/build-utils", "npm:2.12.1"],
             ["@vercel/go", "npm:1.2.3"],
             ["@vercel/node", "npm:1.12.0"],
             ["@vercel/python", "npm:2.0.5"],
