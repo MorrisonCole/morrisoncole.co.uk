@@ -4485,10 +4485,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:11.0.1":
-  version: 11.0.1
-  resolution: "@next/eslint-plugin-next@npm:11.0.1"
-  checksum: 8b1c99780cabe7e941f034a3fc1e492d4f42d45065d1016b2c730649e4757ed293c71c2b36da650ddc7b317b42d9f8f7fa600c4a698946e57bd26d5d56f4ffff
+"@next/eslint-plugin-next@npm:11.1.0":
+  version: 11.1.0
+  resolution: "@next/eslint-plugin-next@npm:11.1.0"
+  dependencies:
+    glob: 7.1.7
+  checksum: 27ac35a84aa8a9887a4bfc993f496d912092b361d75ae1110b326883732a3edf71d8523ea275964daa6fa61f2a63d3259a0d9b9d53425137e925dbc41e12273a
   languageName: node
   linkType: hard
 
@@ -11002,11 +11004,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:11.0.1":
-  version: 11.0.1
-  resolution: "eslint-config-next@npm:11.0.1"
+"eslint-config-next@npm:11.1.0":
+  version: 11.1.0
+  resolution: "eslint-config-next@npm:11.1.0"
   dependencies:
-    "@next/eslint-plugin-next": 11.0.1
+    "@next/eslint-plugin-next": 11.1.0
     "@rushstack/eslint-patch": ^1.0.6
     "@typescript-eslint/parser": ^4.20.0
     eslint-import-resolver-node: ^0.3.4
@@ -11022,7 +11024,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: bfdf32e2c6adfeb0d1da24bd73e119cca2424d41b2e102e7e7c4b8641d57ca89164a21805bbe0ca32018a835b028bf855a3a6e8d4dffc46b0f59d91340bf1a28
+  checksum: 763dd4fc7d7062c518069c7a94a5bc3119af5c358f410eaa969446b03465a584fe0a19876ecf3b13a8e490ee047e4ca272a87729a4df30373386a4c5d147b2a7
   languageName: node
   linkType: hard
 
@@ -13576,7 +13578,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.0.3, glob@npm:^7.0.5, glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
+"glob@npm:7.1.7, glob@npm:^7.0.3, glob@npm:^7.0.5, glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
   dependencies:
@@ -18596,7 +18598,7 @@ fsevents@^1.2.7:
     "@typescript-eslint/parser": 4.29.1
     babel-plugin-styled-components: 1.13.2
     eslint: 7.32.0
-    eslint-config-next: 11.0.1
+    eslint-config-next: 11.1.0
     gray-matter: 4.0.3
     next: 11.0.1
     next-mdx-remote: 3.0.4
