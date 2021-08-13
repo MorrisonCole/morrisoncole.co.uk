@@ -4910,6 +4910,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/css@npm:0.0.33":
+  version: 0.0.33
+  resolution: "@types/css@npm:0.0.33"
+  checksum: 2dd93e3638a0f1c0cbd143188ce760efb2fedfe74cbc16b1848f202fd047ba55f2fc33de085777910228abe4e9221b7b30aaec83ff7128bce2f0a0966435dd4b
+  languageName: node
+  linkType: hard
+
 "@types/debug@npm:^0.0.30":
   version: 0.0.30
   resolution: "@types/debug@npm:0.0.30"
@@ -18188,6 +18195,7 @@ fsevents@^1.2.7:
   version: 0.0.0-use.local
   resolution: "monorepo@workspace:."
   dependencies:
+    "@types/css": 0.0.33
     "@types/eslint": 7.28.0
     "@types/prettier": 2.3.2
     "@typescript-eslint/eslint-plugin": 4.29.1

@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/css", "npm:0.0.33"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/prettier", "npm:2.3.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:4.29.1"],
@@ -8430,6 +8431,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-cors-npm-2.8.10-53b686e0da-f87e2f7bb6.zip/node_modules/@types/cors/",
           "packageDependencies": [
             ["@types/cors", "npm:2.8.10"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/css", [
+        ["npm:0.0.33", {
+          "packageLocation": "./.yarn/cache/@types-css-npm-0.0.33-0698ab3fed-2dd93e3638.zip/node_modules/@types/css/",
+          "packageDependencies": [
+            ["@types/css", "npm:0.0.33"]
           ],
           "linkType": "HARD",
         }]
@@ -24596,6 +24606,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["monorepo", "workspace:."],
+            ["@types/css", "npm:0.0.33"],
             ["@types/eslint", "npm:7.28.0"],
             ["@types/prettier", "npm:2.3.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:4.29.1"],
