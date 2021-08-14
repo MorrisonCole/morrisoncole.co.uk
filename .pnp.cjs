@@ -11590,13 +11590,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bail", "npm:1.0.5"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:2.0.1", {
-          "packageLocation": "./.yarn/cache/bail-npm-2.0.1-faf99b7186-5e80e3d71c.zip/node_modules/bail/",
-          "packageDependencies": [
-            ["bail", "npm:2.0.1"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["balanced-match", [
@@ -20227,10 +20220,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["hast-util-whitespace", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/hast-util-whitespace-npm-2.0.0-ca41487059-abeb538607.zip/node_modules/hast-util-whitespace/",
+        ["npm:1.0.4", {
+          "packageLocation": "./.yarn/cache/hast-util-whitespace-npm-1.0.4-43bb1ff3d0-b7f4a1942b.zip/node_modules/hast-util-whitespace/",
           "packageDependencies": [
-            ["hast-util-whitespace", "npm:2.0.0"]
+            ["hast-util-whitespace", "npm:1.0.4"]
           ],
           "linkType": "HARD",
         }]
@@ -21768,13 +21761,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/is-plain-obj-npm-2.1.0-8dffd7ae9c-cec9100678.zip/node_modules/is-plain-obj/",
           "packageDependencies": [
             ["is-plain-obj", "npm:2.1.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/is-plain-obj-npm-4.0.0-5401ea0d12-a6bb55a906.zip/node_modules/is-plain-obj/",
-          "packageDependencies": [
-            ["is-plain-obj", "npm:4.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -24704,7 +24690,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-intersection-observer", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:8.32.0"],
             ["react-live", "virtual:d22e67360d86f7dc0511ab3a66850be1b8dc52d32b44c1ce6f3429a08eaa81cfaf796fd891341f3d837bebc39b9904ecbba6295258d29447c35c1a4402b12345#npm:2.4.0"],
             ["reading-time", "npm:1.3.0"],
-            ["remark-unwrap-images", "npm:3.0.0"],
+            ["remark-unwrap-images", "npm:2.1.0"],
             ["shallow-compare", "npm:1.2.2"],
             ["socket.io-client", "npm:4.1.3"],
             ["stack-trace", "npm:1.0.0-pre1"],
@@ -29330,14 +29316,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["remark-unwrap-images", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/remark-unwrap-images-npm-3.0.0-76a4454519-9634d4f41e.zip/node_modules/remark-unwrap-images/",
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/remark-unwrap-images-npm-2.1.0-c9e55b8a04-7c662c536f.zip/node_modules/remark-unwrap-images/",
           "packageDependencies": [
-            ["remark-unwrap-images", "npm:3.0.0"],
-            ["@types/mdast", "npm:3.0.3"],
-            ["hast-util-whitespace", "npm:2.0.0"],
-            ["unified", "npm:10.1.0"],
-            ["unist-util-visit", "npm:4.0.0"]
+            ["remark-unwrap-images", "npm:2.1.0"],
+            ["hast-util-whitespace", "npm:1.0.4"],
+            ["unist-util-visit", "npm:2.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -32350,13 +32334,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["trough", "npm:1.0.5"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:2.0.2", {
-          "packageLocation": "./.yarn/cache/trough-npm-2.0.2-8482cac42b-e0c18f3fb4.zip/node_modules/trough/",
-          "packageDependencies": [
-            ["trough", "npm:2.0.2"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["true-case-path", [
@@ -32915,20 +32892,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["unified", [
-        ["npm:10.1.0", {
-          "packageLocation": "./.yarn/cache/unified-npm-10.1.0-d9f1f63894-b7e1d8dcf6.zip/node_modules/unified/",
-          "packageDependencies": [
-            ["unified", "npm:10.1.0"],
-            ["@types/unist", "npm:2.0.3"],
-            ["bail", "npm:2.0.1"],
-            ["extend", "npm:3.0.2"],
-            ["is-buffer", "npm:2.0.5"],
-            ["is-plain-obj", "npm:4.0.0"],
-            ["trough", "npm:2.0.2"],
-            ["vfile", "npm:5.0.2"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:7.1.0", {
           "packageLocation": "./.yarn/cache/unified-npm-7.1.0-ccc1aad814-cbe9ed4534.zip/node_modules/unified/",
           "packageDependencies": [
@@ -33069,13 +33032,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unist-util-is", "npm:4.1.0"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:5.1.1", {
-          "packageLocation": "./.yarn/cache/unist-util-is-npm-5.1.1-eeef3df35f-e8743a19a3.zip/node_modules/unist-util-is/",
-          "packageDependencies": [
-            ["unist-util-is", "npm:5.1.1"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["unist-util-map", [
@@ -33180,14 +33136,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/unist", "npm:2.0.3"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/unist-util-stringify-position-npm-3.0.0-c58b9a941e-460d5e1606.zip/node_modules/unist-util-stringify-position/",
-          "packageDependencies": [
-            ["unist-util-stringify-position", "npm:3.0.0"],
-            ["@types/unist", "npm:2.0.3"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["unist-util-visit", [
@@ -33206,16 +33154,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/unist", "npm:2.0.3"],
             ["unist-util-is", "npm:4.1.0"],
             ["unist-util-visit-parents", "npm:3.1.1"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:4.0.0", {
-          "packageLocation": "./.yarn/cache/unist-util-visit-npm-4.0.0-05ac4dc6e4-398ae7e45d.zip/node_modules/unist-util-visit/",
-          "packageDependencies": [
-            ["unist-util-visit", "npm:4.0.0"],
-            ["@types/unist", "npm:2.0.3"],
-            ["unist-util-is", "npm:5.1.1"],
-            ["unist-util-visit-parents", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -33244,15 +33182,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["unist-util-visit-parents", "npm:3.1.1"],
             ["@types/unist", "npm:2.0.3"],
             ["unist-util-is", "npm:4.1.0"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:5.0.0", {
-          "packageLocation": "./.yarn/cache/unist-util-visit-parents-npm-5.0.0-c23c30f436-867bc66748.zip/node_modules/unist-util-visit-parents/",
-          "packageDependencies": [
-            ["unist-util-visit-parents", "npm:5.0.0"],
-            ["@types/unist", "npm:2.0.3"],
-            ["unist-util-is", "npm:5.1.1"]
           ],
           "linkType": "HARD",
         }]
@@ -33827,17 +33756,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vfile-message", "npm:2.0.4"]
           ],
           "linkType": "HARD",
-        }],
-        ["npm:5.0.2", {
-          "packageLocation": "./.yarn/cache/vfile-npm-5.0.2-83f9cc86db-613c3d3fcd.zip/node_modules/vfile/",
-          "packageDependencies": [
-            ["vfile", "npm:5.0.2"],
-            ["@types/unist", "npm:2.0.3"],
-            ["is-buffer", "npm:2.0.5"],
-            ["unist-util-stringify-position", "npm:3.0.0"],
-            ["vfile-message", "npm:3.0.1"]
-          ],
-          "linkType": "HARD",
         }]
       ]],
       ["vfile-location", [
@@ -33871,15 +33789,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vfile-message", "npm:2.0.4"],
             ["@types/unist", "npm:2.0.3"],
             ["unist-util-stringify-position", "npm:2.0.3"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:3.0.1", {
-          "packageLocation": "./.yarn/cache/vfile-message-npm-3.0.1-9f1323a329-8b41b25826.zip/node_modules/vfile-message/",
-          "packageDependencies": [
-            ["vfile-message", "npm:3.0.1"],
-            ["@types/unist", "npm:2.0.3"],
-            ["unist-util-stringify-position", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
