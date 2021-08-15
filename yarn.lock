@@ -18183,6 +18183,7 @@ fsevents@^1.2.7:
   dependencies:
     "@types/css": 0.0.33
     "@types/eslint": 7.28.0
+    "@types/node": 16.6.1
     "@types/prettier": 2.3.2
     "@typescript-eslint/eslint-plugin": 4.29.1
     "@typescript-eslint/parser": 4.29.1
