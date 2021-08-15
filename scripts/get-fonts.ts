@@ -2,9 +2,17 @@ import css, { AtRule, Declaration, Rule, Stylesheet } from "css";
 import axios, { AxiosResponse } from "axios";
 import path from "path";
 import fs from "fs";
-import { debug } from "console";
 
-const base = "https://fonts.googleapis.com/css2";
+interface Font {
+  "font-family": string;
+  "font-style": string;
+  "font-weight": number;
+  "font-display": string;
+  "unicode-range": string;
+  url: string;
+  filename: string;
+}
+
 const source =
   "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=optional";
 
@@ -24,20 +32,41 @@ async function getFonts() {
   const stylesheet: Stylesheet = css.parse(data);
   const rules: Array<Rule | Comment | AtRule> = stylesheet.stylesheet.rules;
 
-  const urls: string[] = rules
-    .filter((rule: Rule | Comment | AtRule) => isRule(rule))
+  const urls: Font[] = rules
+    .filter(
+      (rule: Rule | Comment | AtRule) =>
+        isRule(rule) && rule.type == "font-face"
+    )
     .flatMap((rule: Rule) => {
-      return rule.declarations
-        .filter((declaration: Declaration) => declaration.property === "src")
-        .flatMap((declaration: Declaration) => {
-          return /url\(([^)]+)\)/.exec(declaration.value)[1];
-        });
+      console.log(rule.declarations);
+
+      const font: Font = Object.fromEntries(
+        rule.declarations.flatMap((declaration: Declaration) => {
+          if (declaration.property === "src") {
+            const url = /url\(([^)]+)\)/.exec(declaration.value)[1];
+            const filename = url.substring(url.lastIndexOf("/") + 1);
+            return [
+              ["url", url],
+              ["filename", filename],
+            ];
+          }
+
+          return [[declaration.property, declaration.value]];
+        })
+      );
+
+      return font;
     });
 
-  await Promise.all(urls.map(async (url: string) => downloadFont(url)));
+  await Promise.all(
+    urls.map(async (font: Font) => {
+      console.log(createStyles(font));
+      return downloadFont(font);
+    })
+  );
 }
 
-async function downloadFont(url: string) {
+async function downloadFont(font: Font) {
   const dir: string = path.join(__dirname, "fonts");
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
@@ -48,10 +77,10 @@ async function downloadFont(url: string) {
     });
   }
 
-  const file: string = path.join(dir, url.substring(url.lastIndexOf("/")));
+  const file: string = path.join(dir, font.filename);
   const writer = fs.createWriteStream(file);
 
-  const response = await axios.get(url, { responseType: "stream" });
+  const response = await axios.get(font.url, { responseType: "stream" });
 
   response.data.pipe(writer);
 
@@ -59,6 +88,19 @@ async function downloadFont(url: string) {
     writer.on("finish", resolve);
     writer.on("error", reject);
   });
+}
+
+function createStyles(font: Font): string {
+  return `
+    @font-face {
+      font-family: ${font["font-family"]};
+      font-style: ${font["font-style"]};
+      font-weight: ${font["font-weight"]};
+      font-display: ${font["font-display"]};
+      src: local(''), url('/fonts/${font.filename}') format('woff2');
+      unicode-range: ${font["unicode-range"]};
+    }
+  `;
 }
 
 void getFonts();
