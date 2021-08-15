@@ -14,7 +14,7 @@ interface Font {
 }
 
 const source =
-  "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=optional";
+  "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
 
 function isRule(obj: unknown): obj is Rule {
   return (obj as Rule).declarations !== undefined;
