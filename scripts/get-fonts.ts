@@ -38,8 +38,6 @@ async function getFonts() {
         isRule(rule) && rule.type == "font-face"
     )
     .flatMap((rule: Rule) => {
-      console.log(rule.declarations);
-
       const font: Font = Object.fromEntries(
         rule.declarations.flatMap((declaration: Declaration) => {
           if (declaration.property === "src") {
@@ -60,9 +58,20 @@ async function getFonts() {
 
   await Promise.all(
     urls.map(async (font: Font) => {
-      console.log(createStyles(font));
       return downloadFont(font);
     })
+  );
+
+  const styles = urls.map(createStyles).join("");
+  const filePath = path.join(__dirname, "generated.ts");
+  fs.writeFileSync(
+    filePath,
+    `import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle\`
+${styles}
+\`
+`
   );
 }
 
@@ -91,16 +100,16 @@ async function downloadFont(font: Font) {
 }
 
 function createStyles(font: Font): string {
-  return `
-    @font-face {
-      font-family: ${font["font-family"]};
-      font-style: ${font["font-style"]};
-      font-weight: ${font["font-weight"]};
-      font-display: ${font["font-display"]};
-      src: local(''), url('/fonts/${font.filename}') format('woff2');
-      unicode-range: ${font["unicode-range"]};
-    }
-  `;
+  return `  @font-face {
+    font-family: ${font["font-family"]};
+    font-style: ${font["font-style"]};
+    font-weight: ${font["font-weight"]};
+    font-display: ${font["font-display"]};
+    src: local(''), url('/fonts/${font.filename}') format('woff2');
+    unicode-range: ${font["unicode-range"]};
+  }
+
+`;
 }
 
 void getFonts();
