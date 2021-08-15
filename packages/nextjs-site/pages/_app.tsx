@@ -2453,7 +2453,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Noto Sans', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 `;
 
