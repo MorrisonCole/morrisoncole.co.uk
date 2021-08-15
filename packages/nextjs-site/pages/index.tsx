@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Layout from "../components/layout";
 
 const Content = styled.span`
@@ -31,6 +31,8 @@ const BoldItalic = styled.span`
 const Japanese = styled.p`
   font-size: 1em;
   font-weight: regular;
+  font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; ;
 `;
 
 export default function Home() {

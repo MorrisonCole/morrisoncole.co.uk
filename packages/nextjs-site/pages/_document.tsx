@@ -41,28 +41,28 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/o-0IIpQlx3QUlC5A4PNr5TRA.woff2"
+            href="/fonts/NotoSans-Regular-subset.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/o-0NIpQlx3QUlC5A4PNjXhFVZNyB.woff2"
+            href="/fonts/NotoSans-Bold-subset.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/o-0OIpQlx3QUlC5A4PNr4ARCQ_k.woff2"
+            href="/fonts/NotoSans-Italic-subset.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
           <link
             rel="preload"
-            href="/fonts/o-0TIpQlx3QUlC5A4PNr4Az5ZuyDzW0.woff2"
+            href="/fonts/NotoSans-BoldItalic-subset.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
