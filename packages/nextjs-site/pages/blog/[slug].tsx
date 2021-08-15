@@ -3,7 +3,6 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import React, { ReactNode } from "react";
 import styled from "styled-components";
 import path from "path";
-import fs from "fs";
 import matter from "gray-matter";
 import Button from "../../components/button";
 import Image from "next/image";
