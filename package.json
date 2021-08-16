@@ -9,7 +9,7 @@
     "@types/eslint": "7.28.0",
     "@types/node": "16.6.1",
     "@types/prettier": "2.3.2",
-    "@typescript-eslint/eslint-plugin": "4.29.1",
+    "@typescript-eslint/eslint-plugin": "4.29.2",
     "@typescript-eslint/parser": "4.29.1",
     "@yarnpkg/pnpify": "3.0.1",
     "axios": "0.21.1",
