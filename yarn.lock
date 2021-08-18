@@ -13455,11 +13455,11 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:4.7.0":
-  version: 4.7.0
-  resolution: "gatsby-plugin-sitemap@npm:4.7.0"
+"gatsby-plugin-sitemap@npm:4.8.0":
+  version: 4.8.0
+  resolution: "gatsby-plugin-sitemap@npm:4.8.0"
   dependencies:
-    "@babel/runtime": ^7.14.6
+    "@babel/runtime": ^7.14.8
     common-tags: ^1.8.0
     minimatch: ^3.0.4
     sitemap: ^7.0.0
@@ -13467,7 +13467,7 @@ fsevents@^1.2.7:
     gatsby: ^3.0.0-next.0
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 7156d57e1a22fd45dbb25a56f7a19cbe78e7d4829d423fb75ff2ea95d4489224f1d0c12c19ed8609fc12d9e9c90009cf43f878a424960a0ef443454f8902b6c8
+  checksum: 96c7e7ffc5cca51807c5ceff2b94f07dc0f2c5aa8be12ab595cdcedb5e08b24eac4452c6ed196319b17d11012065124b4d4d9b577f211eff1cdf45862b12d0c2
   languageName: node
   linkType: hard
 
@@ -19048,7 +19048,7 @@ fsevents@^1.2.7:
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.12.0
-    gatsby-plugin-sitemap: 4.7.0
+    gatsby-plugin-sitemap: 4.8.0
     gatsby-plugin-styled-components: 4.11.0
     gatsby-plugin-typescript: 3.11.0
     gatsby-plugin-web-font-loader: 1.0.4
