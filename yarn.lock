@@ -13238,18 +13238,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:3.11.0":
-  version: 3.11.0
-  resolution: "gatsby-plugin-manifest@npm:3.11.0"
+"gatsby-plugin-manifest@npm:3.12.0":
+  version: 3.12.0
+  resolution: "gatsby-plugin-manifest@npm:3.12.0"
   dependencies:
-    "@babel/runtime": ^7.14.6
-    gatsby-core-utils: ^2.11.0
-    gatsby-plugin-utils: ^1.11.0
+    "@babel/runtime": ^7.14.8
+    gatsby-core-utils: ^2.12.0
+    gatsby-plugin-utils: ^1.12.0
     semver: ^7.3.5
     sharp: ^0.28.3
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 22048f94f00e4fe0535a7233f087d578134bae69e2b88ab49f1590fc59f5f67f280962b34c1d3339e2bd7c840e6828a3c60099522bba18ba69a1f210661c21b9
+  checksum: e5c6212d8bad7aabafebafcc73ba5b6a69b04d4679e831410e3ffe9dfe2a9f633f879f755f2aab0cf11064663678baeaef6f02462ca7ba100c195bf4db94c8bf
   languageName: node
   linkType: hard
 
@@ -13491,17 +13491,6 @@ fsevents@^1.2.7:
   peerDependencies:
     gatsby: ^3.0.0-next.0
   checksum: c8aba1d76637d2e4055976ad1134499aef4ba2aba5fcc164e969730bf49689e5f0cf953331434b46937801eba1b185bf7f28b39c4fcbeefaa4b0a25516808aff
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "gatsby-plugin-utils@npm:1.11.0"
-  dependencies:
-    joi: ^17.2.1
-  peerDependencies:
-    gatsby: ^3.0.0-next.0
-  checksum: 7a84034f5998f44b2d0c459f9187521e4d917f8124fc07c3041d92b660c70e5470f0d3484eec5fbbfdb11712620b4ee131e98c789fec66d077c8e7b357388072
   languageName: node
   linkType: hard
 
@@ -19014,7 +19003,7 @@ fsevents@^1.2.7:
     gatsby-plugin-google-tagmanager: 3.11.0
     gatsby-plugin-image: 1.12.0
     gatsby-plugin-layout: 2.12.0
-    gatsby-plugin-manifest: 3.11.0
+    gatsby-plugin-manifest: 3.12.0
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.11.0
     gatsby-plugin-preconnect: 1.2.1
