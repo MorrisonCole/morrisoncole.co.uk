@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/css", "npm:0.0.33"],
             ["@types/eslint", "npm:7.28.0"],
-            ["@types/node", "npm:16.6.2"],
+            ["@types/node", "npm:16.7.0"],
             ["@types/prettier", "npm:2.3.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:4.29.2"],
             ["@typescript-eslint/parser", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:4.29.2"],
@@ -8753,10 +8753,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:16.6.2", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.6.2-0e6fd0fd1a-2245e50058.zip/node_modules/@types/node/",
+        ["npm:16.7.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.7.0-9aeab9c04b-8fa8e04a12.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:16.6.2"]
+            ["@types/node", "npm:16.7.0"]
           ],
           "linkType": "HARD",
         }],
@@ -24824,7 +24824,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["monorepo", "workspace:."],
             ["@types/css", "npm:0.0.33"],
             ["@types/eslint", "npm:7.28.0"],
-            ["@types/node", "npm:16.6.2"],
+            ["@types/node", "npm:16.7.0"],
             ["@types/prettier", "npm:2.3.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:4.29.2"],
             ["@typescript-eslint/parser", "virtual:153feba997cc61a3cf2b119c73f0a46150f4475b2449b54a9c09ded230a7e59552f9ddaa3d6273b9d60d464227c04336d4b04595bea51827334f0e7840915565#npm:4.29.2"],
@@ -24865,7 +24865,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.15"],
             ["@types/lodash", "npm:4.14.172"],
             ["@types/mdx-js__react", "npm:1.5.4"],
-            ["@types/node", "npm:16.6.2"],
+            ["@types/node", "npm:16.7.0"],
             ["@types/platform", "npm:1.3.4"],
             ["@types/prop-types", "npm:15.7.4"],
             ["@types/reach__router", "npm:1.3.9"],
@@ -25288,7 +25288,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["nextjs-site", "workspace:packages/nextjs-site"],
             ["@lhci/cli", "npm:0.8.0"],
-            ["@types/node", "npm:16.6.2"],
+            ["@types/node", "npm:16.7.0"],
             ["@types/react", "npm:17.0.19"],
             ["@types/react-is", "npm:17.0.2"],
             ["@types/styled-components", "npm:5.1.12"],
@@ -32856,7 +32856,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:16.6.2"],
+            ["@types/node", "npm:16.7.0"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
