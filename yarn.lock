@@ -5312,10 +5312,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.7.0":
-  version: 16.7.0
-  resolution: "@types/node@npm:16.7.0"
-  checksum: 8fa8e04a12a09ce6fe89a20bc304489b88734395d4b1bce7885e74d3f630e5eac55be301555330648f48061326b0ae79d27abf9affb74ae287658560147688dd
+"@types/node@npm:16.7.1":
+  version: 16.7.1
+  resolution: "@types/node@npm:16.7.1"
+  checksum: fcf1a2c7b1f19c2201574b2110176b49c6efd824a39b2ed8ac3e6688740e2a35bef95a3334dfa345f4bd4873fd8b79d8ac8cfcc9fcd3d2f4f8f993c2c37ce4ab
   languageName: node
   linkType: hard
 
@@ -18639,7 +18639,7 @@ fsevents@^1.2.7:
   dependencies:
     "@types/css": 0.0.33
     "@types/eslint": 7.28.0
-    "@types/node": 16.7.0
+    "@types/node": 16.7.1
     "@types/prettier": 2.3.2
     "@typescript-eslint/eslint-plugin": 4.29.2
     "@typescript-eslint/parser": 4.29.2
@@ -18678,7 +18678,7 @@ fsevents@^1.2.7:
     "@types/babel__core": 7.1.15
     "@types/lodash": 4.14.172
     "@types/mdx-js__react": 1.5.4
-    "@types/node": 16.7.0
+    "@types/node": 16.7.1
     "@types/platform": 1.3.4
     "@types/prop-types": 15.7.4
     "@types/reach__router": 1.3.9
@@ -19049,7 +19049,7 @@ fsevents@^1.2.7:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.8.0
-    "@types/node": 16.7.0
+    "@types/node": 16.7.1
     "@types/react": 17.0.19
     "@types/react-is": 17.0.2
     "@types/styled-components": 5.1.12
