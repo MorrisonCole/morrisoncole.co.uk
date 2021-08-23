@@ -10,7 +10,7 @@
     "@types/node": "16.7.1",
     "@types/prettier": "2.3.2",
     "@typescript-eslint/eslint-plugin": "4.29.3",
-    "@typescript-eslint/parser": "4.29.2",
+    "@typescript-eslint/parser": "4.29.3",
     "@yarnpkg/pnpify": "3.0.1",
     "axios": "0.21.1",
     "css": "3.0.0",
