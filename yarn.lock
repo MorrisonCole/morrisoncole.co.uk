@@ -13582,9 +13582,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby@npm:3.12.0":
-  version: 3.12.0
-  resolution: "gatsby@npm:3.12.0"
+"gatsby@npm:3.12.1":
+  version: 3.12.1
+  resolution: "gatsby@npm:3.12.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.14.8
@@ -13743,7 +13743,7 @@ fsevents@^1.2.7:
     react-dom: ^16.9.0 || ^17.0.0
   bin:
     gatsby: ./cli.js
-  checksum: 23a4cfdcffda154f59c3f11fbe5967f59a490953bceab6c596e325fcc43ee48de226b7055c29b9f8ad493814786f8a0fa05389e43f1914ef39f4cf03364d81f7
+  checksum: 35c3a96598c16cec7ffb7d914233ab49948ce40b5d8326889b7f9c2a488cb34ae4ffa2a315530cbbd82bc48d8b0b061606a510332a40f33dfdfcfdfd5228e6e5
   languageName: node
   linkType: hard
 
@@ -18719,7 +18719,7 @@ fsevents@^1.2.7:
     classnames: 2.3.1
     css.escape: 1.5.1
     event-source-polyfill: 1.0.25
-    gatsby: 3.12.0
+    gatsby: 3.12.1
     gatsby-cli: 3.12.0
     gatsby-legacy-polyfills: 1.12.0
     gatsby-link: 3.12.0
