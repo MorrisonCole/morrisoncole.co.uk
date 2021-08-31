@@ -13341,9 +13341,9 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:4.12.0":
-  version: 4.12.0
-  resolution: "gatsby-plugin-styled-components@npm:4.12.0"
+"gatsby-plugin-styled-components@npm:4.13.0":
+  version: 4.13.0
+  resolution: "gatsby-plugin-styled-components@npm:4.13.0"
   dependencies:
     "@babel/runtime": ^7.14.8
   peerDependencies:
@@ -13352,7 +13352,7 @@ fsevents@^1.2.7:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
     styled-components: ">=2.0.0"
-  checksum: b22ff0f9a7b851cebf46b487021cf5fa21718f1d09515ed6459ae6ce5bd61572abbfe4501087e7dad8621ca732c193d44982fb7bcdf5d7266df370bf5b046eb5
+  checksum: e7db7e718d2a16dc2d01d0a13af99f28a7cf98037d0b6c4c2e0a71451976c6d27d5e179d6786e1ad9998884efab19e91a897fa2287edf0bfb9ad73d2734ef4c6
   languageName: node
   linkType: hard
 
@@ -18780,7 +18780,7 @@ fsevents@^1.2.7:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.12.0
     gatsby-plugin-sitemap: 4.8.0
-    gatsby-plugin-styled-components: 4.12.0
+    gatsby-plugin-styled-components: 4.13.0
     gatsby-plugin-typescript: 3.12.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.12.0
