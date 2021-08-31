@@ -12978,6 +12978,22 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^2.13.0":
+  version: 2.13.0
+  resolution: "gatsby-core-utils@npm:2.13.0"
+  dependencies:
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^8.1.0
+    node-object-hash: ^2.3.8
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: d2dc8c5a89f030316a716ea0076114dd9b9c2eed1f69839764e8bc949acf2d6598ccd7ec50f704c01a795eab2308bf166280d322ed0296e276afe201ec19cd64
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^2.6.0":
   version: 2.6.0
   resolution: "gatsby-core-utils@npm:2.6.0"
@@ -13518,14 +13534,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:5.9.0":
-  version: 5.9.0
-  resolution: "gatsby-remark-images@npm:5.9.0"
+"gatsby-remark-images@npm:5.10.0":
+  version: 5.10.0
+  resolution: "gatsby-remark-images@npm:5.10.0"
   dependencies:
     "@babel/runtime": ^7.14.8
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^2.12.0
+    gatsby-core-utils: ^2.13.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -13536,7 +13552,7 @@ fsevents@^1.2.7:
   peerDependencies:
     gatsby: ^3.0.0-next.0
     gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 6cde5f2d1ed3203ecbd3be1971e7ba53987eac45ab886b350ee21a5304299453f2c8053c65e93dcaf619a5dbf989ac547253830f18cd434fb78f2de8d1964f5d
+  checksum: 2c9e6f21026d9b485533861b81230315e9b209e7a90e41f4cf7ab3815e6e469319f3124273a13182aa8dc3e8e2dd833eed2c1a62b93228fadc0627f9e3df50e6
   languageName: node
   linkType: hard
 
@@ -18786,7 +18802,7 @@ fsevents@^1.2.7:
     gatsby-react-router-scroll: 4.12.0
     gatsby-remark-autolink-headers: 4.9.0
     gatsby-remark-embed-video: 3.1.1
-    gatsby-remark-images: 5.9.0
+    gatsby-remark-images: 5.10.0
     gatsby-source-filesystem: 3.12.0
     gatsby-transformer-json: 3.12.0
     gatsby-transformer-sharp: 3.12.0
