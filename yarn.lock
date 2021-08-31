@@ -13243,15 +13243,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-react-helmet@npm:4.12.0":
-  version: 4.12.0
-  resolution: "gatsby-plugin-react-helmet@npm:4.12.0"
+"gatsby-plugin-react-helmet@npm:4.13.0":
+  version: 4.13.0
+  resolution: "gatsby-plugin-react-helmet@npm:4.13.0"
   dependencies:
     "@babel/runtime": ^7.14.8
   peerDependencies:
     gatsby: ^3.0.0-next.0
     react-helmet: ^5.1.3 || ^6.0.0
-  checksum: 1bf12c4be9ac6f3f03b3d166464f49fb32c4add7704c79ae48c70414eb078bbb6c659a06a1265fe678151a330ab56cef01454f084775f1d17f6f1aa8f2a24ede
+  checksum: 54f97f77f2dc5c30ec7f72a8cbc8c932a54f8491e0b67179c6209ee20e9d355be6dddb4a47f32c4b2543c08f879023548f4fb62017fde8afb85559a4d5c951cb
   languageName: node
   linkType: hard
 
@@ -18775,7 +18775,7 @@ fsevents@^1.2.7:
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.12.0
     gatsby-plugin-preconnect: 1.2.1
-    gatsby-plugin-react-helmet: 4.12.0
+    gatsby-plugin-react-helmet: 4.13.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 3.12.0
