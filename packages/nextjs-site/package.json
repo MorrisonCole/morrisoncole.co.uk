@@ -24,7 +24,7 @@
     "@types/node": "16.7.8",
     "@types/react": "17.0.19",
     "@types/react-is": "17.0.2",
-    "@types/styled-components": "5.1.13",
+    "@types/styled-components": "5.1.14",
     "@typescript-eslint/eslint-plugin": "4.30.0",
     "@typescript-eslint/parser": "4.30.0",
     "babel-plugin-styled-components": "1.13.2",
