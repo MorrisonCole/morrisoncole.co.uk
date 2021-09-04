@@ -12,7 +12,7 @@
     "@typescript-eslint/eslint-plugin": "4.30.0",
     "@typescript-eslint/parser": "4.30.0",
     "@yarnpkg/pnpify": "3.0.1",
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "css": "3.0.0",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
