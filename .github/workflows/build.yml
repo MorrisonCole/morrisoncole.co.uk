@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          yarn install --immutable --immutable-cache
+          yarn install --immutable
           yarn build:gatsby
         env:
           GOODREADS_KEY: ${{ secrets.GOODREADS_KEY }}
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          yarn install --immutable --immutable-cache
+          yarn install --immutable
           yarn build:gatsby
           yarn deploy:gatsby
         env:
@@ -48,7 +48,7 @@ jobs:
           vercel_project_id: "personal-website"
       - name: Run Lighthouse CI
         run: |
-          yarn install --immutable --immutable-cache
+          yarn install --immutable
           yarn test:next --collect.url=https://${{ steps.vercel_preview_url.outputs.preview_url }} --collect.numberOfRuns=3
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
