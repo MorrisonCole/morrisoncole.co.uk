@@ -5918,20 +5918,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:4.30.0, @typescript-eslint/parser@npm:^4.29.3":
-  version: 4.30.0
-  resolution: "@typescript-eslint/parser@npm:4.30.0"
+"@typescript-eslint/parser@npm:4.31.0":
+  version: 4.31.0
+  resolution: "@typescript-eslint/parser@npm:4.31.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 4.30.0
-    "@typescript-eslint/types": 4.30.0
-    "@typescript-eslint/typescript-estree": 4.30.0
+    "@typescript-eslint/scope-manager": 4.31.0
+    "@typescript-eslint/types": 4.31.0
+    "@typescript-eslint/typescript-estree": 4.31.0
     debug: ^4.3.1
   peerDependencies:
     eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: aed2048c5eade38a57db50f551245b72cd460c3f8c38f51f3b62ce7715d43b691a91bf277b0a4f5b5e0383fb5d8a93ff0501187e2454eb6d128da34ef802e3ab
+  checksum: 368856dc10ab8ea01f8cd670b48832e20216393a9153b92ee53d4ebba9e1832dfcf1d15b69d76978147f5ac667095bc841eb6211ec71e5a615fbda2a2a689ad4
   languageName: node
   linkType: hard
 
@@ -5949,6 +5949,23 @@ __metadata:
     typescript:
       optional: true
   checksum: a8ff9e0e9e6eeebea8f80c2c72aec129b9407bd388d0b78c784167973bc560476a7d186304b445cd6917cca4eaf1ad4afb8bb2202426d26fc82dcde1181dbba1
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^4.29.3":
+  version: 4.30.0
+  resolution: "@typescript-eslint/parser@npm:4.30.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 4.30.0
+    "@typescript-eslint/types": 4.30.0
+    "@typescript-eslint/typescript-estree": 4.30.0
+    debug: ^4.3.1
+  peerDependencies:
+    eslint: ^5.0.0 || ^6.0.0 || ^7.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: aed2048c5eade38a57db50f551245b72cd460c3f8c38f51f3b62ce7715d43b691a91bf277b0a4f5b5e0383fb5d8a93ff0501187e2454eb6d128da34ef802e3ab
   languageName: node
   linkType: hard
 
@@ -17690,7 +17707,7 @@ __metadata:
     "@types/node": 16.7.10
     "@types/prettier": 2.3.2
     "@typescript-eslint/eslint-plugin": 4.31.0
-    "@typescript-eslint/parser": 4.30.0
+    "@typescript-eslint/parser": 4.31.0
     axios: 0.21.4
     css: 3.0.0
     eslint: 7.32.0
@@ -18066,7 +18083,7 @@ __metadata:
     "@types/react-is": 17.0.2
     "@types/styled-components": 5.1.14
     "@typescript-eslint/eslint-plugin": 4.31.0
-    "@typescript-eslint/parser": 4.30.0
+    "@typescript-eslint/parser": 4.31.0
     babel-plugin-styled-components: 1.13.2
     eslint: 7.32.0
     eslint-config-next: 11.1.2
