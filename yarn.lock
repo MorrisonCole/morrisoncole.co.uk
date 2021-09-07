@@ -6526,7 +6526,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anser@npm:2.0.1, anser@npm:^2.0.1":
+"anser@npm:2.0.2":
+  version: 2.0.2
+  resolution: "anser@npm:2.0.2"
+  checksum: 4263572b5180d09f1aa8552f6442f3a41d5e11b872718c3dccab14db77e580b29511e081d66fe67b621794c3bdf7d4cda145705b145d0908637704a59626f9e9
+  languageName: node
+  linkType: hard
+
+"anser@npm:^2.0.1":
   version: 2.0.1
   resolution: "anser@npm:2.0.1"
   checksum: d48c93737a207687cc05e2cdb35338c13aefcf5b0aa969e5998d4828738fef6e52da01b0eab76a4e2fc57b61ba129f6469d06425e209edd5309613e43f464d44
@@ -17751,7 +17758,7 @@ __metadata:
     "@types/react-helmet": 6.1.2
     "@types/stack-trace": 0.0.29
     "@types/styled-components": 5.1.14
-    anser: 2.0.1
+    anser: 2.0.2
     babel-plugin-styled-components: 1.13.2
     classnames: 2.3.1
     css.escape: 1.5.1
