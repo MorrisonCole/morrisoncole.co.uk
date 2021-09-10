@@ -17855,7 +17855,7 @@ __metadata:
     react-helmet: 6.1.0
     react-intersection-observer: 8.32.1
     react-live: 2.4.0
-    reading-time: 1.4.0
+    reading-time: 1.5.0
     remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
     socket.io-client: 4.2.0
@@ -20981,10 +20981,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reading-time@npm:1.4.0":
-  version: 1.4.0
-  resolution: "reading-time@npm:1.4.0"
-  checksum: 9eb2acd7492b7432f26e9cfc62eb704a488ce0b1f0c3cd96d9df8f5ee92cbf367a0212736f4660e898e983fc22cd1b5a3be78664f0ff1d34485e0292573c8e94
+"reading-time@npm:1.5.0":
+  version: 1.5.0
+  resolution: "reading-time@npm:1.5.0"
+  checksum: e27bc5a70ba0f4ac337896b18531b914d38f4bee67cbad48029d0c11dd0a7a847b2a6bba895ab7ce2ad3e7ecb86912bdc477d8fa2d48405a3deda964be54d09b
   languageName: node
   linkType: hard
 
