@@ -10520,6 +10520,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"emitter-component@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "emitter-component@npm:1.1.1"
+  checksum: 10e907f507a8c16a318e07595119e58b5c3267528d4e3b962ee9b14fd83c97599e7931ccb983ec551a8de8116955c1d6ae7d213c5b0c920b62c02b7cb8d7a4d7
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:>=6.0.0 <=6.1.1":
   version: 6.1.1
   resolution: "emoji-regex@npm:6.1.1"
@@ -16335,6 +16342,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lmdb-store@npm:1.6.8":
+  version: 1.6.8
+  resolution: "lmdb-store@npm:1.6.8"
+  dependencies:
+    mkdirp: ^1.0.4
+    msgpackr: ^1.3.7
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.0.0
+    weak-lru-cache: ^1.0.0
+  dependenciesMeta:
+    msgpackr:
+      optional: true
+  checksum: d34f93274ca30a28577c25fd31632826b7be7ad169241df0eb39487bce78e476cae601e9c1c3e92788351b0174739d96a3abf395fcb04600f559a859f8446709
+  languageName: node
+  linkType: hard
+
 "load-bmfont@npm:^1.3.1, load-bmfont@npm:^1.4.0":
   version: 1.4.1
   resolution: "load-bmfont@npm:1.4.1"
@@ -17818,6 +17843,7 @@ __metadata:
     gatsby-transformer-json: 3.13.0
     gatsby-transformer-sharp: 3.13.0
     graphql: 15.5.3
+    lmdb-store: 1.6.8
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 3.0.0
@@ -17830,11 +17856,12 @@ __metadata:
     react-helmet: 6.1.0
     react-intersection-observer: 8.32.1
     react-live: 2.4.0
-    reading-time: 1.4.0
+    reading-time: 1.5.0
     remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
     socket.io-client: 4.2.0
     stack-trace: 1.0.0-pre1
+    stream: 0.0.2
     styled-components: 5.3.1
   languageName: unknown
   linkType: soft
@@ -17867,6 +17894,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"msgpackr-extract@npm:^1.0.13":
+  version: 1.0.14
+  resolution: "msgpackr-extract@npm:1.0.14"
+  dependencies:
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+  checksum: 985e55fa3b25c156622ecc10556ddb943609694680f8ccb0b88e96bf2f4eb8cc5cb475daf9908278107febe916a848a748e8fdbeec4dc23810601865e6b9a1de
+  languageName: node
+  linkType: hard
+
+"msgpackr@npm:^1.3.7":
+  version: 1.4.3
+  resolution: "msgpackr@npm:1.4.3"
+  dependencies:
+    msgpackr-extract: ^1.0.13
+  dependenciesMeta:
+    msgpackr-extract:
+      optional: true
+  checksum: 695941da09923842b37f94f2a84d4171fe920df411b94abae0ff73235cd6c7ef21acee5018d213bd6ca39e5643b78cb7046677513973c1412ee47edc6aa1747d
+  languageName: node
+  linkType: hard
+
 "multer@npm:^1.4.2":
   version: 1.4.2
   resolution: "multer@npm:1.4.2"
@@ -17894,6 +17944,15 @@ __metadata:
   version: 0.0.8
   resolution: "mute-stream@npm:0.0.8"
   checksum: ff48d251fc3f827e5b1206cda0ffdaec885e56057ee86a3155e1951bc940fd5f33531774b1cc8414d7668c10a8907f863f6561875ee6e8768931a62121a531a1
+  languageName: node
+  linkType: hard
+
+"nan@npm:^2.14.2":
+  version: 2.15.0
+  resolution: "nan@npm:2.15.0"
+  dependencies:
+    node-gyp: latest
+  checksum: 33e1bb4dfca447fe37d4bb5889be55de154828632c8d38646db67293a21afd61ed9909cdf1b886214a64707d935926c4e60e2b09de9edfc2ad58de31d6ce8f39
   languageName: node
   linkType: hard
 
@@ -18195,6 +18254,17 @@ __metadata:
   version: 2.6.1
   resolution: "node-fetch@npm:2.6.1"
   checksum: 91075bedd57879117e310fbcc36983ad5d699e522edb1ebcdc4ee5294c982843982652925c3532729fdc86b2d64a8a827797a745f332040d91823c8752ee4d7c
+  languageName: node
+  linkType: hard
+
+"node-gyp-build@npm:^4.2.3":
+  version: 4.3.0
+  resolution: "node-gyp-build@npm:4.3.0"
+  bin:
+    node-gyp-build: bin.js
+    node-gyp-build-optional: optional.js
+    node-gyp-build-test: build-test.js
+  checksum: 1ecab16d9f275174d516e223f60f65ebe07540347d5c04a6a7d6921060b7f2e3af4f19463d9d1dcedc452e275c2ae71354a99405e55ebd5b655bb2f38025c728
   languageName: node
   linkType: hard
 
@@ -18745,6 +18815,13 @@ __metadata:
     strip-ansi: ^5.2.0
     wcwidth: ^1.0.1
   checksum: f1f8e7f290b766276dcd19ddf2159a1971b1ec37eec4a5556b8f5e4afbe513a965ed65c183d38956724263b6a20989b3d8fb71b95ac4a2d6a01db2f1ed8899e4
+  languageName: node
+  linkType: hard
+
+"ordered-binary@npm:^1.0.0":
+  version: 1.1.3
+  resolution: "ordered-binary@npm:1.1.3"
+  checksum: 0e56b067919a60d1178c31da2844c8f76e5e854883a7ff0362a72a8a69eaed32c6af9ab5312faafef60dfb0317c478df776d1929e9f9982f7460d1bff87849f7
   languageName: node
   linkType: hard
 
@@ -20956,10 +21033,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reading-time@npm:1.4.0":
-  version: 1.4.0
-  resolution: "reading-time@npm:1.4.0"
-  checksum: 9eb2acd7492b7432f26e9cfc62eb704a488ce0b1f0c3cd96d9df8f5ee92cbf367a0212736f4660e898e983fc22cd1b5a3be78664f0ff1d34485e0292573c8e94
+"reading-time@npm:1.5.0":
+  version: 1.5.0
+  resolution: "reading-time@npm:1.5.0"
+  checksum: e27bc5a70ba0f4ac337896b18531b914d38f4bee67cbad48029d0c11dd0a7a847b2a6bba895ab7ce2ad3e7ecb86912bdc477d8fa2d48405a3deda964be54d09b
   languageName: node
   linkType: hard
 
@@ -22801,6 +22878,15 @@ resolve@^2.0.0-next.3:
     end-of-stream: ~1.1.0
     stream-to-array: ~2.3.0
   checksum: 2c9ddb69c34d10ad27eb06197abc93fd1b1cd5f9597ead28ade4d6c57f4110d948a2ef14530f2f7b3b967f74f3554b57c38a4501b72a13b27fc8745bd7190d1d
+  languageName: node
+  linkType: hard
+
+"stream@npm:0.0.2":
+  version: 0.0.2
+  resolution: "stream@npm:0.0.2"
+  dependencies:
+    emitter-component: ^1.1.1
+  checksum: 43d89e176c282234d452754f9b55a82c74ea68345bf6176af32c4c213801f88df7984c83ec5a735457705dddf4668373edb9f0ec270a7491e1d881631a763978
   languageName: node
   linkType: hard
 
@@ -25137,6 +25223,13 @@ typescript@4.4.3:
   dependencies:
     defaults: ^1.0.3
   checksum: 814e9d1ddcc9798f7377ffa448a5a3892232b9275ebb30a41b529607691c0491de47cba426e917a4d08ded3ee7e9ba2f3fe32e62ee3cd9c7d3bafb7754bd553c
+  languageName: node
+  linkType: hard
+
+"weak-lru-cache@npm:^1.0.0":
+  version: 1.1.2
+  resolution: "weak-lru-cache@npm:1.1.2"
+  checksum: 1d70c36d09c477db9481c182698e9f9260ffeba8b3b7b2afc64a6792c71e68711411b0e5fc47c0a1f6e8e3ae16f0dda962ac1d32cf3abe82f5b3caa66428dc57
   languageName: node
   linkType: hard
 
