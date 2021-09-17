@@ -2904,7 +2904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.15.4, @babel/runtime@npm:^7.15.3":
+"@babel/runtime@npm:7.15.4, @babel/runtime@npm:^7.15.3, @babel/runtime@npm:^7.15.4":
   version: 7.15.4
   resolution: "@babel/runtime@npm:7.15.4"
   dependencies:
@@ -12482,14 +12482,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-canonical-urls@npm:3.13.0":
-  version: 3.13.0
-  resolution: "gatsby-plugin-canonical-urls@npm:3.13.0"
+"gatsby-plugin-canonical-urls@npm:3.14.0":
+  version: 3.14.0
+  resolution: "gatsby-plugin-canonical-urls@npm:3.14.0"
   dependencies:
-    "@babel/runtime": ^7.14.8
+    "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: d3da9d70a99b655eb508badcc7523c28977ff6c4617e890b143e0614069dd78a7a122e6da7737463e3116b00c1588905879d0a0326652423702cceefa64b2755
+  checksum: 525a1fdde797054fbdbab3e8b565b0c28f2b91f9b3547c36170c647f0a454b74f0862758aa1ad724f9e148405f4b72309138d3acead5fb96f9d08ab686397fda
   languageName: node
   linkType: hard
 
@@ -17818,7 +17818,7 @@ __metadata:
     gatsby-cli: 3.13.0
     gatsby-legacy-polyfills: 1.13.0
     gatsby-link: 3.13.0
-    gatsby-plugin-canonical-urls: 3.13.0
+    gatsby-plugin-canonical-urls: 3.14.0
     gatsby-plugin-feed: 3.13.0
     gatsby-plugin-google-tagmanager: 3.13.0
     gatsby-plugin-image: 1.13.0
