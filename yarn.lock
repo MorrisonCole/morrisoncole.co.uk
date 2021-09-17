@@ -2904,7 +2904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.15.4, @babel/runtime@npm:^7.15.3":
+"@babel/runtime@npm:7.15.4, @babel/runtime@npm:^7.15.3, @babel/runtime@npm:^7.15.4":
   version: 7.15.4
   resolution: "@babel/runtime@npm:7.15.4"
   dependencies:
@@ -12553,14 +12553,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-layout@npm:2.13.0":
-  version: 2.13.0
-  resolution: "gatsby-plugin-layout@npm:2.13.0"
+"gatsby-plugin-layout@npm:2.14.0":
+  version: 2.14.0
+  resolution: "gatsby-plugin-layout@npm:2.14.0"
   dependencies:
-    "@babel/runtime": ^7.14.8
+    "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 0f1753e98580daa154b4cd17df6f4cf1ce3ebe79deef1b917bf1969d417667000f3b651d81216b298030b5e81c7fee950d9284fb49100311a491f6042b33f6ee
+  checksum: c1d3743d8ceb89c159fd1854894a055b4cf747c337e4e65ee57a807b1bb357fcab18859016e4bc70d6fd74e2a25e75c2e04f0177e9fa951c91f57f49b9f460da
   languageName: node
   linkType: hard
 
@@ -17822,7 +17822,7 @@ __metadata:
     gatsby-plugin-feed: 3.13.0
     gatsby-plugin-google-tagmanager: 3.13.0
     gatsby-plugin-image: 1.13.0
-    gatsby-plugin-layout: 2.13.0
+    gatsby-plugin-layout: 2.14.0
     gatsby-plugin-manifest: 3.13.0
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.13.0
