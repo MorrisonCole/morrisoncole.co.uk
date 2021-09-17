@@ -13026,18 +13026,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:3.13.0":
-  version: 3.13.0
-  resolution: "gatsby-plugin-manifest@npm:3.13.0"
+"gatsby-plugin-manifest@npm:3.14.0":
+  version: 3.14.0
+  resolution: "gatsby-plugin-manifest@npm:3.14.0"
   dependencies:
-    "@babel/runtime": ^7.14.8
-    gatsby-core-utils: ^2.13.0
-    gatsby-plugin-utils: ^1.13.0
+    "@babel/runtime": ^7.15.4
+    gatsby-core-utils: ^2.14.0
+    gatsby-plugin-utils: ^1.14.0
     semver: ^7.3.5
     sharp: ^0.29.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: a2c42fd2b78503da793b37fbb5e538150c233c43c4206bd24edce6924d89d88acabc55ac612c4eaebadfd451b79ef05c8e90d4d4bba16d50a77399527d9c7c7b
+  checksum: 4abbfe8953b95c062491b6d1523d70b7c32766b5b2cdad36eb09e7452acef0a18c5dd7ce519ad03aae218998d1446bedb8d6ef2cfbd14e37f4a00117e1d538c9
   languageName: node
   linkType: hard
 
@@ -18382,7 +18382,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 3.13.0
     gatsby-plugin-image: 1.13.0
     gatsby-plugin-layout: 2.14.0
-    gatsby-plugin-manifest: 3.13.0
+    gatsby-plugin-manifest: 3.14.0
     gatsby-plugin-material-ui: 3.0.1
     gatsby-plugin-mdx: 2.13.0
     gatsby-plugin-preconnect: 1.2.1
