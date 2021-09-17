@@ -5385,13 +5385,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sindresorhus/is@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "@sindresorhus/is@npm:2.1.1"
-  checksum: cbae604a29931dd33a0ecb77ef50e7ac6f4b626939aad84e4d4da06ace624902f294bd652268939b94596c725ed1905a73c453a5574b8504010296f5619e44cc
-  languageName: node
-  linkType: hard
-
 "@sindresorhus/is@npm:^4.0.0":
   version: 4.2.0
   resolution: "@sindresorhus/is@npm:4.2.0"
@@ -5425,15 +5418,6 @@ __metadata:
   dependencies:
     defer-to-connect: ^1.0.1
   checksum: 4d9158061c5f397c57b4988cde33a163244e4f02df16364f103971957a32886beb104d6180902cbe8b38cb940e234d9f98a4e486200deca621923f62f50a06fe
-  languageName: node
-  linkType: hard
-
-"@szmarczak/http-timer@npm:^4.0.0":
-  version: 4.0.5
-  resolution: "@szmarczak/http-timer@npm:4.0.5"
-  dependencies:
-    defer-to-connect: ^2.0.0
-  checksum: 27b713859bc7d370f81631eea99879a9d496e1def5d33752fccd6c80dba32cde2094f378c8d07d56f236b08afb4b3621fbf6254faaca52b1a8146ece1eba8428
   languageName: node
   linkType: hard
 
@@ -7347,10 +7331,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "async@npm:3.2.0"
-  checksum: 6739fae769e6c9f76b272558f118ef041d45c979c573a8fe93f8cfbc32eb9c92da032e9effe6bbcc9b1131292cde6c4a9e61a442894aa06a262addd8dd3adda1
+"async@npm:^3.2.1":
+  version: 3.2.1
+  resolution: "async@npm:3.2.1"
+  checksum: fcd6dc73d36bdb0e5bf978ea27832136cc8116cef15e0a2dc9a5c63f362c5f82363996a349bf3046d590587b7f30614ac340a4f3db6d48780a07f40f81941e0c
   languageName: node
   linkType: hard
 
@@ -8344,16 +8328,6 @@ __metadata:
     lodash.clonedeep: 4.5.0
     lru-cache: 4.0.0
   checksum: 1f4c2a5ee5c34636791ac0187e025f25bf656e4ea91a9984c73d91f8d1b4f904156ad5c77333a643b22e1becf80cdf37f7b87f611b3a9fcf4ff5fbe356c0755c
-  languageName: node
-  linkType: hard
-
-"cacheable-lookup@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "cacheable-lookup@npm:2.0.1"
-  dependencies:
-    "@types/keyv": ^3.1.1
-    keyv: ^4.0.0
-  checksum: 6c2d0ca045aa6d9ffca54ace4ec8e9856678dcc55fd4506ad4078a3aab82fa2592f0c9316abbd6ddfabd1a785f34f289ccdcf4a565f329cd4aae55912b5ec1f8
   languageName: node
   linkType: hard
 
@@ -10259,15 +10233,6 @@ __metadata:
   dependencies:
     mimic-response: ^2.0.0
   checksum: 4e783ca4dfe9417354d61349750fe05236f565a4415a6ca20983a311be2371debaedd9104c0b0e7b36e5f167aeaae04f84f1a0b3f8be4162f1d7d15598b8fdba
-  languageName: node
-  linkType: hard
-
-"decompress-response@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "decompress-response@npm:5.0.0"
-  dependencies:
-    mimic-response: ^2.0.0
-  checksum: b46fe6c275b410e6dbf354083b42122b18eb6010c25aa19134f61934110269f715b2dfaf0089e3ef4e2acf5eb477193f8f5d42dbe3cc38adfc43fd090510c765
   languageName: node
   linkType: hard
 
@@ -13125,31 +13090,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:3.13.0":
-  version: 3.13.0
-  resolution: "gatsby-plugin-sharp@npm:3.13.0"
+"gatsby-plugin-sharp@npm:3.14.0":
+  version: 3.14.0
+  resolution: "gatsby-plugin-sharp@npm:3.14.0"
   dependencies:
-    "@babel/runtime": ^7.14.8
-    async: ^3.2.0
+    "@babel/runtime": ^7.15.4
+    async: ^3.2.1
     bluebird: ^3.7.2
     filenamify: ^4.3.0
-    fs-extra: ^9.1.0
-    gatsby-core-utils: ^2.13.0
-    gatsby-plugin-utils: ^1.13.0
-    gatsby-telemetry: ^2.13.0
-    got: ^10.7.0
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^2.14.0
+    gatsby-plugin-utils: ^1.14.0
+    gatsby-telemetry: ^2.14.0
+    got: ^11.8.2
     lodash: ^4.17.21
     mini-svg-data-uri: ^1.3.3
     potrace: ^2.1.8
     probe-image-size: ^6.0.0
     progress: ^2.0.3
-    semver: ^7.3.4
+    semver: ^7.3.5
     sharp: ^0.29.0
     svgo: 1.3.2
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: aadd217db1e0636207635cd354dd9c03d3c7b0bfc858147133197fdb2b7c65c5e6606b5ec229b1d6dd7b704f8ecc1ef29c89d5aedfbf205b9831442417632d5e
+  checksum: f34984940e2c6feea9771453697b0bccf044ae5a988137e0c8584f69d60cb9ba824cc6f8afcba0fb55c5ed665623ad86733dfd1961adcb00f22e9e576aa4f124
   languageName: node
   linkType: hard
 
@@ -13431,28 +13396,6 @@ __metadata:
   peerDependencies:
     gatsby: ^3.0.0-next.0
   checksum: 1e5d92b017b99433931eb91c5e053c2f3d62a236c0d4d56b264dd9df11653216435f27b525f2cd12288bf545da69a51b11cb36fa2f8c239a1e6481bcf4610d30
-  languageName: node
-  linkType: hard
-
-"gatsby-telemetry@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "gatsby-telemetry@npm:2.13.0"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@babel/runtime": ^7.14.8
-    "@turist/fetch": ^7.1.7
-    "@turist/time": ^0.0.2
-    async-retry-ng: ^2.0.1
-    boxen: ^4.2.0
-    configstore: ^5.0.1
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.13.0
-    git-up: ^4.0.5
-    is-docker: ^2.2.1
-    lodash: ^4.17.21
-    node-fetch: ^2.6.1
-    uuid: 3.4.0
-  checksum: 35ba1b66a6cd81f63c5734f99e74a6c9025cdf0907150058f8748028556086e0317c851cd23e9e25c6a6abe91ac7af3fcd40fe1801ee391b4167bf1bbc9d8498
   languageName: node
   linkType: hard
 
@@ -13774,7 +13717,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-stream@npm:^5.0.0, get-stream@npm:^5.1.0":
+"get-stream@npm:^5.1.0":
   version: 5.2.0
   resolution: "get-stream@npm:5.2.0"
   dependencies:
@@ -14060,29 +14003,6 @@ __metadata:
   bin:
     glyphhanger: cmd.js
   checksum: 5007450ecab027b8f224ac153b202e99384ee744a61aac29d63e13767cedbf9f6190458d5583ed51e54042bd5a53deeb4dc1eaae231bc451fde753b9d3eb039e
-  languageName: node
-  linkType: hard
-
-"got@npm:^10.7.0":
-  version: 10.7.0
-  resolution: "got@npm:10.7.0"
-  dependencies:
-    "@sindresorhus/is": ^2.0.0
-    "@szmarczak/http-timer": ^4.0.0
-    "@types/cacheable-request": ^6.0.1
-    cacheable-lookup: ^2.0.0
-    cacheable-request: ^7.0.1
-    decompress-response: ^5.0.0
-    duplexer3: ^0.1.4
-    get-stream: ^5.0.0
-    lowercase-keys: ^2.0.0
-    mimic-response: ^2.1.0
-    p-cancelable: ^2.0.0
-    p-event: ^4.0.0
-    responselike: ^2.0.0
-    to-readable-stream: ^2.0.0
-    type-fest: ^0.10.0
-  checksum: 66feaec071b2dac412bfff3786a67d144a4bf615115ef70ac7e1db1e2a640bd02dcfbc60c55de11c8ee00f069df06f1de9d462446e56b09e4ade332ca2db7cd0
   languageName: node
   linkType: hard
 
@@ -17976,7 +17896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mimic-response@npm:^2.0.0, mimic-response@npm:^2.1.0":
+"mimic-response@npm:^2.0.0":
   version: 2.1.0
   resolution: "mimic-response@npm:2.1.0"
   checksum: 014fad6ab936657e5f2f48bd87af62a8e928ebe84472aaf9e14fec4fcb31257a5edff77324d8ac13ddc6685ba5135cf16e381efac324e5f174fb4ddbf902bf07
@@ -18260,7 +18180,7 @@ __metadata:
     gatsby-plugin-react-helmet: 4.13.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 3.13.0
+    gatsby-plugin-sharp: 3.14.0
     gatsby-plugin-sitemap: 4.10.0
     gatsby-plugin-styled-components: 4.14.0
     gatsby-plugin-typescript: 3.13.0
@@ -19300,15 +19220,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-event@npm:^4.0.0":
-  version: 4.2.0
-  resolution: "p-event@npm:4.2.0"
-  dependencies:
-    p-timeout: ^3.1.0
-  checksum: 8a3588f7a816a20726a3262dfeee70a631e3997e4773d23219176333eda55cce9a76219e3d2b441b331eb746e14fdb381eb2694ab9ff2fcf87c846462696fe89
-  languageName: node
-  linkType: hard
-
 "p-finally@npm:^1.0.0":
   version: 1.0.0
   resolution: "p-finally@npm:1.0.0"
@@ -19421,7 +19332,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-timeout@npm:^3.1.0, p-timeout@npm:^3.2.0":
+"p-timeout@npm:^3.2.0":
   version: 3.2.0
   resolution: "p-timeout@npm:3.2.0"
   dependencies:
@@ -24173,13 +24084,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"to-readable-stream@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "to-readable-stream@npm:2.1.0"
-  checksum: 42039fb968a56af99a7201fe01debb0bc55a585a2ab0b1746e322c339c50f91043b1269cedcc6350d2a5f81ceaa6cff7960704f748a59542d1f2c50aca5ea7b9
-  languageName: node
-  linkType: hard
-
 "to-regex-range@npm:^2.1.0":
   version: 2.1.1
   resolution: "to-regex-range@npm:2.1.1"
@@ -24530,13 +24434,6 @@ resolve@^2.0.0-next.3:
   dependencies:
     prelude-ls: ~1.1.2
   checksum: dd3b1495642731bc0e1fc40abe5e977e0263005551ac83342ecb6f4f89551d106b368ec32ad3fb2da19b3bd7b2d1f64330da2ea9176d8ddbfe389fb286eb5124
-  languageName: node
-  linkType: hard
-
-"type-fest@npm:^0.10.0":
-  version: 0.10.0
-  resolution: "type-fest@npm:0.10.0"
-  checksum: 83411824cac9aa3b130704ea53de8ab3a0607e20eca3590a73a4bb79a5a1eaccc502181b86916e9d1965d48dfc8343a2fe373c2262322d1d8e00f65c14bab506
   languageName: node
   linkType: hard
 
