@@ -8756,7 +8756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:3.5.1, chokidar@npm:^3.4.3":
+"chokidar@npm:3.5.1":
   version: 3.5.1
   resolution: "chokidar@npm:3.5.1"
   dependencies:
@@ -12218,6 +12218,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fastq@npm:^1.11.1":
+  version: 1.13.0
+  resolution: "fastq@npm:1.13.0"
+  dependencies:
+    reusify: ^1.0.4
+  checksum: 32cf15c29afe622af187d12fc9cd93e160a0cb7c31a3bb6ace86b7dea3b28e7b72acde89c882663f307b2184e14782c6c664fa315973c03626c7d4bff070bb0b
+  languageName: node
+  linkType: hard
+
 "fb-watchman@npm:^2.0.0":
   version: 2.0.1
   resolution: "fb-watchman@npm:2.0.1"
@@ -12314,7 +12323,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-type@npm:^16.0.0, file-type@npm:^16.2.0":
+"file-type@npm:^16.2.0":
   version: 16.5.0
   resolution: "file-type@npm:16.5.0"
   dependencies:
@@ -13460,16 +13469,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:3.13.0":
-  version: 3.13.0
-  resolution: "gatsby-source-filesystem@npm:3.13.0"
+"gatsby-source-filesystem@npm:3.14.0":
+  version: 3.14.0
+  resolution: "gatsby-source-filesystem@npm:3.14.0"
   dependencies:
-    "@babel/runtime": ^7.14.8
-    better-queue: ^3.8.10
-    chokidar: ^3.4.3
-    file-type: ^16.0.0
-    fs-extra: ^8.1.0
-    gatsby-core-utils: ^2.13.0
+    "@babel/runtime": ^7.15.4
+    chokidar: ^3.5.2
+    fastq: ^1.11.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^2.14.0
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.5.2
@@ -13479,7 +13488,7 @@ __metadata:
     xstate: ^4.14.0
   peerDependencies:
     gatsby: ^3.0.0-next.0
-  checksum: 1e5d92b017b99433931eb91c5e053c2f3d62a236c0d4d56b264dd9df11653216435f27b525f2cd12288bf545da69a51b11cb36fa2f8c239a1e6481bcf4610d30
+  checksum: c7b2d6b7aede12f5e59cec78753cc88e8a7eef6453e32953d36ec415140e53f64928424c82f5cf69b5658fb286da90d3bb76179f4cdf82ac5daebc32af0c61bc
   languageName: node
   linkType: hard
 
@@ -18363,7 +18372,7 @@ __metadata:
     gatsby-remark-autolink-headers: 4.10.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.10.0
-    gatsby-source-filesystem: 3.13.0
+    gatsby-source-filesystem: 3.14.0
     gatsby-transformer-json: 3.14.0
     gatsby-transformer-sharp: 3.14.0
     graphql: 15.6.0
