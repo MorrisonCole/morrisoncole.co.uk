@@ -4047,11 +4047,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lhci/cli@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@lhci/cli@npm:0.8.1"
+"@lhci/cli@npm:0.8.2":
+  version: 0.8.2
+  resolution: "@lhci/cli@npm:0.8.2"
   dependencies:
-    "@lhci/utils": 0.8.1
+    "@lhci/utils": 0.8.2
     chrome-launcher: ^0.13.4
     compression: ^1.7.4
     debug: ^4.3.1
@@ -4068,20 +4068,20 @@ __metadata:
     yargs-parser: ^13.1.2
   bin:
     lhci: ./src/cli.js
-  checksum: 8828005336b5a62fd43af22e4d0e5623a068e28b64f050fc4c9d73e8f1b506376a99daaa407b31f311b4059d396ecf1262d7c43813c27a5547afeff4490ea664
+  checksum: 5a3bf083d9e5c5a9831877e71a68542160b65b5e2dad61499f37a81efd7c6c1985476b9e1ae58a530a0376791081adc540a2af5d2bac740a8d654cdedce9c94c
   languageName: node
   linkType: hard
 
-"@lhci/utils@npm:0.8.1":
-  version: 0.8.1
-  resolution: "@lhci/utils@npm:0.8.1"
+"@lhci/utils@npm:0.8.2":
+  version: 0.8.2
+  resolution: "@lhci/utils@npm:0.8.2"
   dependencies:
     debug: ^4.3.1
     isomorphic-fetch: ^3.0.0
     js-yaml: ^3.13.1
     lighthouse: 8.0.0
     tree-kill: ^1.2.1
-  checksum: af0d1615665c6cac5704325ddb5168bbe6d1245d2734dfef6b46aa46610c9b0091f811a8fc3a9e4954ec7cd61e81bbe0b14cbc01b1ffb0e9c493de9ed58fb55e
+  checksum: 043a89d34c31c5ff2660d4360b2afa079b0d2377aa834dcc8f1c1a4d7cfa80a628e27446731de03f2c38e18ea9725659da4e07f0bb45bfe6d4b2d357a445116d
   languageName: node
   linkType: hard
 
@@ -17653,7 +17653,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
-    "@lhci/cli": 0.8.1
+    "@lhci/cli": 0.8.2
     "@types/node": 16.10.1
     "@types/react": 17.0.24
     "@types/react-is": 17.0.2
