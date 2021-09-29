@@ -17672,7 +17672,7 @@ __metadata:
     react-is: 17.0.2
     styled-components: 5.3.1
     typescript: 4.4.3
-    yarn: 1.22.11
+    yarn: 1.22.13
   languageName: unknown
   linkType: soft
 
@@ -25390,13 +25390,13 @@ typescript@4.4.3:
   languageName: node
   linkType: hard
 
-"yarn@npm:1.22.11":
-  version: 1.22.11
-  resolution: "yarn@npm:1.22.11"
+"yarn@npm:1.22.13":
+  version: 1.22.13
+  resolution: "yarn@npm:1.22.13"
   bin:
-    yarn: ./bin/yarn.js
-    yarnpkg: ./bin/yarn.js
-  checksum: 315198d97a1bd31e8b2e78ba1c69a5243a96fe39bea078dfd8dc7d1fc1f4a2d4af0015feac9d7d419300fa30b670fd16e8b0ee43bcc0f9246305ecb5cf83d413
+    yarn: bin/yarn.js
+    yarnpkg: bin/yarn.js
+  checksum: 3e928a3c07d63747d7ef861e3bf2664af202f5d3edeee0030d42853a62226b3cbee12a021ae86d01024a9f63ca7efccbbff4a946558dce8e60b5fa0a394546eb
   languageName: node
   linkType: hard
 
