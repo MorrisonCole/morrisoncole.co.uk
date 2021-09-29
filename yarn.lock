@@ -2812,9 +2812,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-operations@npm:2.1.4":
-  version: 2.1.4
-  resolution: "@graphql-codegen/typescript-operations@npm:2.1.4"
+"@graphql-codegen/typescript-operations@npm:2.1.5":
+  version: 2.1.5
+  resolution: "@graphql-codegen/typescript-operations@npm:2.1.5"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^2.1.1
     "@graphql-codegen/typescript": ^2.2.2
@@ -2823,7 +2823,7 @@ __metadata:
     tslib: ~2.3.0
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
-  checksum: 3cc90a44ab638c6f7801af69d78bf80646f54692c755bfed1a5318ac588ae19e0f0928d67495f83eb0315bff68524d112481054c7f7548f0c47b4d0ea054191d
+  checksum: 0b7ace7840abbe688df792c241cc86fa9d55fe396d57ecc4110febb3b47187a4938acb46ebc09f5fc5b7e6a3d61b4c28cee3c4449d27e4d511c9248e8225430b
   languageName: node
   linkType: hard
 
@@ -17261,7 +17261,7 @@ __metadata:
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 2.2.0
     "@graphql-codegen/typescript": 2.2.2
-    "@graphql-codegen/typescript-operations": 2.1.4
+    "@graphql-codegen/typescript-operations": 2.1.5
     "@material-ui/core": 4.12.3
     "@material-ui/icons": 4.11.2
     "@material-ui/lab": 4.0.0-alpha.60
@@ -17672,7 +17672,6 @@ __metadata:
     react-is: 17.0.2
     styled-components: 5.3.1
     typescript: 4.4.3
-    yarn: 1.22.13
   languageName: unknown
   linkType: soft
 
@@ -25387,16 +25386,6 @@ typescript@4.4.3:
     y18n: ^5.0.5
     yargs-parser: ^20.2.2
   checksum: 4ffffa5a82647e5d07840b64bed88c365b901d3d4a4c51745dddb10d177902d85014026d7224aae18c42df9ca3f75a41c5aff556e5342e2f8ffc5177d149cd17
-  languageName: node
-  linkType: hard
-
-"yarn@npm:1.22.13":
-  version: 1.22.13
-  resolution: "yarn@npm:1.22.13"
-  bin:
-    yarn: bin/yarn.js
-    yarnpkg: bin/yarn.js
-  checksum: 3e928a3c07d63747d7ef861e3bf2664af202f5d3edeee0030d42853a62226b3cbee12a021ae86d01024a9f63ca7efccbbff4a946558dce8e60b5fa0a394546eb
   languageName: node
   linkType: hard
 
