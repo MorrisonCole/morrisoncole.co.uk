@@ -13260,10 +13260,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:15.6.0":
-  version: 15.6.0
-  resolution: "graphql@npm:15.6.0"
-  checksum: 439959514665bc03ba86d6e55d8fb81d4c1e8ba3fc7f5114878b0ba794147e7ef57f368e40dadbb3f94d7c5f6685d15599bebb3a124cee2a1a8871a797d5ae81
+"graphql@npm:15.6.1":
+  version: 15.6.1
+  resolution: "graphql@npm:15.6.1"
+  checksum: 4c6dcf385f7a87a5103fcb7640394244ae8d1d4ede521085192a1cf1e60115c4f6285d783961575d908709f7ee3e4cdd16b3f7c54eb37499c0420c6301e98968
   languageName: node
   linkType: hard
 
@@ -17316,7 +17316,7 @@ __metadata:
     gatsby-source-filesystem: 3.14.0
     gatsby-transformer-json: 3.14.0
     gatsby-transformer-sharp: 3.14.0
-    graphql: 15.6.0
+    graphql: 15.6.1
     lmdb-store: 1.6.8
     lodash: 4.17.21
     mdx-utils: 0.2.0
