@@ -7,7 +7,7 @@
   "devDependencies": {
     "@types/css": "0.0.33",
     "@types/eslint": "7.28.0",
-    "@types/node": "16.10.2",
+    "@types/node": "16.10.3",
     "@types/prettier": "2.4.1",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
