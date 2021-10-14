@@ -2903,7 +2903,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript@npm:2.2.3, @graphql-codegen/typescript@npm:^2.2.3":
+"@graphql-codegen/typescript@npm:2.2.4":
+  version: 2.2.4
+  resolution: "@graphql-codegen/typescript@npm:2.2.4"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.2.0
+    "@graphql-codegen/visitor-plugin-common": 2.4.0
+    auto-bind: ~4.0.0
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 5f111c7738ba81191b99e663c58ee01363b9a2297a6625e067e8bbc0eddffa0ecadf9932bac09900767cbe57939947f119c55de6c8464f4477c394f10913e957
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript@npm:^2.2.3":
   version: 2.2.3
   resolution: "@graphql-codegen/typescript@npm:2.2.3"
   dependencies:
@@ -2934,6 +2948,26 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
   checksum: fcd612514fd93de3f6da1f709630f978fcaac1f334d8849aea24c567447c8c421c4bf06d2e34c8a6e540ee80e7ad144f3179965a38197262d87307ce6f4bc9be
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/visitor-plugin-common@npm:2.4.0":
+  version: 2.4.0
+  resolution: "@graphql-codegen/visitor-plugin-common@npm:2.4.0"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.2.0
+    "@graphql-tools/optimize": ^1.0.1
+    "@graphql-tools/relay-operation-optimizer": ^6.3.7
+    "@graphql-tools/utils": ^8.3.0
+    auto-bind: ~4.0.0
+    change-case-all: 1.0.14
+    dependency-graph: ^0.11.0
+    graphql-tag: ^2.11.0
+    parse-filepath: ^1.0.2
+    tslib: ~2.3.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0
+  checksum: 961416df8175784512b3e4419e418efdad0c8c4b1d9979a66f411f9255ed46c600b9bd6f8a18e7fa049e998a46ba241dbc4b7d2a4107ac0ae0a0598385e24cd2
   languageName: node
   linkType: hard
 
@@ -17623,7 +17657,7 @@ __metadata:
     "@emotion/react": 11.4.1
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 2.2.1
-    "@graphql-codegen/typescript": 2.2.3
+    "@graphql-codegen/typescript": 2.2.4
     "@graphql-codegen/typescript-operations": 2.1.7
     "@material-ui/core": 4.12.3
     "@material-ui/icons": 4.11.2
