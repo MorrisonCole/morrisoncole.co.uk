@@ -13102,9 +13102,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:3.14.0":
-  version: 3.14.0
-  resolution: "gatsby-transformer-sharp@npm:3.14.0"
+"gatsby-transformer-sharp@npm:4.0.0":
+  version: 4.0.0
+  resolution: "gatsby-transformer-sharp@npm:4.0.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     bluebird: ^3.7.2
@@ -13113,11 +13113,11 @@ __metadata:
     potrace: ^2.1.8
     probe-image-size: ^6.0.0
     semver: ^7.3.5
-    sharp: ^0.29.0
+    sharp: ^0.29.1
   peerDependencies:
-    gatsby: ^3.0.0-next.0
-    gatsby-plugin-sharp: ^3.0.0-next.0
-  checksum: 5c8758ff27f1d7bc3e571c211e02f42803d4882c8a93f3930683bb87dfeee12f6e296fafa0f8c123ddb6b867b965a0f36a283f064cb8e2ceb95673dc3a163e51
+    gatsby: ^4.0.0-next
+    gatsby-plugin-sharp: ^4.0.0-next
+  checksum: d6ac8137c5e6700498528193e8f4d1dc06cc73acb04eb43551774fc196f4b13d5b0ed0f23aca6bb72d37be9ba685809474e5379b7096ba3e7434aaab56473279
   languageName: node
   linkType: hard
 
@@ -17937,7 +17937,7 @@ __metadata:
     gatsby-remark-images: 5.11.0
     gatsby-source-filesystem: 3.14.0
     gatsby-transformer-json: 4.0.0
-    gatsby-transformer-sharp: 3.14.0
+    gatsby-transformer-sharp: 4.0.0
     graphql: 15.6.1
     lmdb-store: 1.6.10
     lodash: 4.17.21
