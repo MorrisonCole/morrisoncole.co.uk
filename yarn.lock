@@ -6898,6 +6898,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:4.0.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    gatsby-core-utils: ^3.0.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^4.0.0-next
+  checksum: 749aff7336b41055869b7b90795625c56bcb10046cb5013c046e58b12778f4eef24b9dae16a17ef1cc2fe8a8f08cd60c6ad0412def7b1276670be3400c7ddba8
+  languageName: node
+  linkType: hard
+
 "babel-plugin-styled-components@npm:*, babel-plugin-styled-components@npm:>= 1.12.0":
   version: 1.12.0
   resolution: "babel-plugin-styled-components@npm:1.12.0"
@@ -12287,6 +12300,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "gatsby-core-utils@npm:3.0.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.2
+    node-object-hash: ^2.3.9
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 4bda4cbbf6d6729a78eecbd675ab85c47cd9840df9f0b7fcfae5ef17f26e1601f8f9b0557271f1f4933d607e3019b7df7ab921a640e9e30b5f483d4fe9c95270
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^1.14.0":
   version: 1.14.0
   resolution: "gatsby-graphiql-explorer@npm:1.14.0"
@@ -12640,7 +12671,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:3.14.0, gatsby-plugin-typescript@npm:^3.14.0":
+"gatsby-plugin-typescript@npm:4.0.0":
+  version: 4.0.0
+  resolution: "gatsby-plugin-typescript@npm:4.0.0"
+  dependencies:
+    "@babel/core": ^7.15.5
+    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.14.5
+    "@babel/plugin-proposal-numeric-separator": ^7.14.5
+    "@babel/plugin-proposal-optional-chaining": ^7.14.5
+    "@babel/preset-typescript": ^7.15.0
+    "@babel/runtime": ^7.15.4
+    babel-plugin-remove-graphql-queries: ^4.0.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 008a6e4c063244cb35c815b6fa02419e48118cb900aa0aba8484ff57e15d1842b4787d503beab9afa55d9b9edffa02ea6313debf468fa9c3694ae407ece06b7c
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-typescript@npm:^3.14.0":
   version: 3.14.0
   resolution: "gatsby-plugin-typescript@npm:3.14.0"
   dependencies:
@@ -17710,7 +17758,7 @@ __metadata:
     gatsby-plugin-sharp: 3.14.1
     gatsby-plugin-sitemap: 4.10.0
     gatsby-plugin-styled-components: 4.14.0
-    gatsby-plugin-typescript: 3.14.0
+    gatsby-plugin-typescript: 4.0.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 4.14.0
     gatsby-remark-autolink-headers: 4.11.0
