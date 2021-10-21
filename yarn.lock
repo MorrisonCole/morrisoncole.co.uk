@@ -6912,6 +6912,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:4.0.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    gatsby-core-utils: ^3.0.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^4.0.0-next
+  checksum: 749aff7336b41055869b7b90795625c56bcb10046cb5013c046e58b12778f4eef24b9dae16a17ef1cc2fe8a8f08cd60c6ad0412def7b1276670be3400c7ddba8
+  languageName: node
+  linkType: hard
+
 "babel-plugin-styled-components@npm:*, babel-plugin-styled-components@npm:>= 1.12.0":
   version: 1.12.0
   resolution: "babel-plugin-styled-components@npm:1.12.0"
@@ -12500,31 +12513,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:1.14.1":
-  version: 1.14.1
-  resolution: "gatsby-plugin-image@npm:1.14.1"
+"gatsby-plugin-image@npm:2.0.0":
+  version: 2.0.0
+  resolution: "gatsby-plugin-image@npm:2.0.0"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.15.5
     "@babel/runtime": ^7.15.4
     "@babel/traverse": ^7.15.4
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^3.14.0
+    babel-plugin-remove-graphql-queries: ^4.0.0
     camelcase: ^5.3.1
     chokidar: ^3.5.2
     common-tags: ^1.8.0
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^2.14.0
+    gatsby-core-utils: ^3.0.0
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.7.2
   peerDependencies:
     "@babel/core": ^7.12.3
-    gatsby: ^3.0.0-next.0
-    gatsby-plugin-sharp: ^3.0.0-next.0
-    gatsby-source-filesystem: ^3.0.0-next.0
+    gatsby: ^4.0.0-next
+    gatsby-plugin-sharp: ^4.0.0-next
+    gatsby-source-filesystem: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 2cfc7b34e43968d100dde3d1b477e7456bb3394fe36a6003572cf0c535e5ec489812238f68bcc916180dd81537e399fcfabd9292721e710f3083e4c3814fb80c
+  checksum: c182f004d067899290c8e0ac17984d701c77cfc5b08ace2aba3245c8a38da5ab87aa5cdf8eb60533c520c9a8d6e9d9d262e01ec93248fda7740143db60849807
   languageName: node
   linkType: hard
 
@@ -17917,7 +17930,7 @@ __metadata:
     gatsby-plugin-canonical-urls: 3.14.0
     gatsby-plugin-feed: 4.0.0
     gatsby-plugin-google-tagmanager: 3.14.0
-    gatsby-plugin-image: 1.14.1
+    gatsby-plugin-image: 2.0.0
     gatsby-plugin-layout: 3.0.0
     gatsby-plugin-manifest: 4.0.0
     gatsby-plugin-material-ui: 4.0.3
