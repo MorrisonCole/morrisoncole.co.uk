@@ -13024,16 +13024,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:3.14.0":
-  version: 3.14.0
-  resolution: "gatsby-source-filesystem@npm:3.14.0"
+"gatsby-source-filesystem@npm:4.0.0":
+  version: 4.0.0
+  resolution: "gatsby-source-filesystem@npm:4.0.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     chokidar: ^3.5.2
     fastq: ^1.11.1
     file-type: ^16.5.3
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^2.14.0
+    gatsby-core-utils: ^3.0.0
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.5.2
@@ -13042,8 +13042,8 @@ __metadata:
     valid-url: ^1.0.9
     xstate: ^4.14.0
   peerDependencies:
-    gatsby: ^3.0.0-next.0
-  checksum: c7b2d6b7aede12f5e59cec78753cc88e8a7eef6453e32953d36ec415140e53f64928424c82f5cf69b5658fb286da90d3bb76179f4cdf82ac5daebc32af0c61bc
+    gatsby: ^4.0.0-next
+  checksum: 4c50e01562b475e84af7d58dee395a6264c7d2af59b467a0616e8abee65d719f9f3ac354670a239ccad3b325dee5479491055c5bd4e5abb5c9b499534c065cc5
   languageName: node
   linkType: hard
 
@@ -17935,7 +17935,7 @@ __metadata:
     gatsby-remark-autolink-headers: 4.11.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 5.11.0
-    gatsby-source-filesystem: 3.14.0
+    gatsby-source-filesystem: 4.0.0
     gatsby-transformer-json: 4.0.0
     gatsby-transformer-sharp: 3.14.0
     graphql: 15.6.1
