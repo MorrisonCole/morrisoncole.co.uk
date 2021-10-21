@@ -16219,9 +16219,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb-store@npm:1.6.9":
-  version: 1.6.9
-  resolution: "lmdb-store@npm:1.6.9"
+"lmdb-store@npm:1.6.10":
+  version: 1.6.10
+  resolution: "lmdb-store@npm:1.6.10"
   dependencies:
     msgpackr: ^1.4.7
     nan: ^2.14.2
@@ -16232,7 +16232,7 @@ __metadata:
   dependenciesMeta:
     msgpackr:
       optional: true
-  checksum: 7030e58ca08374e7d56894e5351d620342031b1719abc404157694ff71ec4b1a321482287b42abf823d41e623f694c6ee6768ad5f2c592a2169fb28fb5f804b3
+  checksum: bec1dcce55cd457d4039644b47372be4e1664665132beb257be0ba1e882a72f98927bcb4efe7af6820f820c73464231b0b1067bcc79a73b96ae7ff4fb8c387e7
   languageName: node
   linkType: hard
 
@@ -17720,7 +17720,7 @@ __metadata:
     gatsby-transformer-json: 3.14.0
     gatsby-transformer-sharp: 3.14.0
     graphql: 15.6.1
-    lmdb-store: 1.6.9
+    lmdb-store: 1.6.10
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 3.0.0
