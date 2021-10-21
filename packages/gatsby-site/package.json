@@ -89,7 +89,7 @@
     "@types/react-helmet": "6.1.4",
     "@types/stack-trace": "0.0.29",
     "@types/styled-components": "5.1.15",
-    "lmdb-store": "1.6.9",
+    "lmdb-store": "1.6.10",
     "query-string": "7.0.1",
     "socket.io-client": "4.3.1"
   },
