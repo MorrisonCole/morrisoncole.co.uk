@@ -5282,12 +5282,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-is@npm:17.0.2":
-  version: 17.0.2
-  resolution: "@types/react-is@npm:17.0.2"
+"@types/react-is@npm:17.0.3":
+  version: 17.0.3
+  resolution: "@types/react-is@npm:17.0.3"
   dependencies:
     "@types/react": "*"
-  checksum: ecd4f59e66858ebf13988c13de32e0f1753e9f0ec9a330bbf99c7c8ec75d3b52ad01965a7912c463615c0498965c1f17ea8a1a06606cf8edeb4b723f7ab74879
+  checksum: 6abb7c47d54f012272650df8a962a28bd82f219291e5ef8b4dfa7fe0bb98ae243b060bf9fbe8ceff6213141794855a006db194b490b00ffd15842ae19d0ce1f0
   languageName: node
   linkType: hard
 
@@ -18306,7 +18306,7 @@ __metadata:
     "@lhci/cli": 0.8.2
     "@types/node": 16.11.2
     "@types/react": 17.0.31
-    "@types/react-is": 17.0.2
+    "@types/react-is": 17.0.3
     "@types/styled-components": 5.1.15
     "@typescript-eslint/eslint-plugin": 5.0.0
     "@typescript-eslint/parser": 5.0.0
