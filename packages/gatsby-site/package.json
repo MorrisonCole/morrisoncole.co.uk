@@ -39,7 +39,7 @@
     "gatsby-plugin-react-helmet": "5.0.0",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
     "gatsby-plugin-s3": "0.3.8",
-    "gatsby-plugin-sharp": "4.0.1",
+    "gatsby-plugin-sharp": "4.1.0",
     "gatsby-plugin-sitemap": "5.0.0",
     "gatsby-plugin-styled-components": "5.0.0",
     "gatsby-plugin-typescript": "4.0.0",
