@@ -16350,7 +16350,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb-store@npm:1.6.11, lmdb-store@npm:^1.6.8":
+"lmdb-store@npm:1.6.12":
+  version: 1.6.12
+  resolution: "lmdb-store@npm:1.6.12"
+  dependencies:
+    msgpackr: ^1.4.7
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.0.0
+    weak-lru-cache: ^1.0.0
+  dependenciesMeta:
+    msgpackr:
+      optional: true
+  checksum: a987f292ad27f0321fe02f336d6a913d6f35aae79d10e8bd0bf7878957523e3364ad502e318c50dc9d7f0c0f309f4adbf26961f6a307a790187f5d4628e014fa
+  languageName: node
+  linkType: hard
+
+"lmdb-store@npm:^1.6.8":
   version: 1.6.11
   resolution: "lmdb-store@npm:1.6.11"
   dependencies:
@@ -17851,7 +17868,7 @@ __metadata:
     gatsby-transformer-json: 4.0.0
     gatsby-transformer-sharp: 4.0.0
     graphql: 16.0.1
-    lmdb-store: 1.6.11
+    lmdb-store: 1.6.12
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 3.0.0
