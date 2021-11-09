@@ -12729,9 +12729,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:4.1.0":
-  version: 4.1.0
-  resolution: "gatsby-plugin-sharp@npm:4.1.0"
+"gatsby-plugin-sharp@npm:4.1.1":
+  version: 4.1.1
+  resolution: "gatsby-plugin-sharp@npm:4.1.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     async: ^3.2.1
@@ -12739,7 +12739,7 @@ __metadata:
     filenamify: ^4.3.0
     fs-extra: ^10.0.0
     gatsby-core-utils: ^3.1.0
-    gatsby-plugin-utils: ^2.1.0
+    gatsby-plugin-utils: ^2.1.1
     gatsby-telemetry: ^3.1.0
     got: ^11.8.2
     lodash: ^4.17.21
@@ -12753,7 +12753,7 @@ __metadata:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: fcb2c6d0cf82aee8b99f42985928f740c3a0165d2cb1315b9fa6ee86dcda5acac7ebc4adca256ca12065ca35b31afe5cc389ea0506dce4d872c20c70490ea83f
+  checksum: 314fb7dbec896510fe929940130cfc62e0222e4424cd1c6081310f80a4f61170c023497cbb9af07373bf20c9dfff88d47869e41811fb17c07c96044621696b6f
   languageName: node
   linkType: hard
 
@@ -12814,6 +12814,18 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: fdf4a50963b2799e448757856e2151bad10f3c242645b326c19cced82d1e395ee901168c13d6c35a5208bb592707173697bb835f5ca8974a902faa5c38d8c599
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "gatsby-plugin-utils@npm:2.1.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    joi: ^17.4.2
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: d049be84f14651ca7eeef6a1cd7d9b9dc2f8beb056f7565eb2881201906729b27f879afe98636092af868061b3d86dd82532514d291bc300bc7ebebeeee9c8a0
   languageName: node
   linkType: hard
 
@@ -17874,7 +17886,7 @@ __metadata:
     gatsby-plugin-react-helmet: 5.1.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 4.1.0
+    gatsby-plugin-sharp: 4.1.1
     gatsby-plugin-sitemap: 5.1.0
     gatsby-plugin-styled-components: 5.1.0
     gatsby-plugin-typescript: 4.1.0
