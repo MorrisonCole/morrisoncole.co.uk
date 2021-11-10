@@ -12641,21 +12641,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:2.1.0":
-  version: 2.1.0
-  resolution: "gatsby-plugin-image@npm:2.1.0"
+"gatsby-plugin-image@npm:2.1.1":
+  version: 2.1.1
+  resolution: "gatsby-plugin-image@npm:2.1.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.15.5
     "@babel/runtime": ^7.15.4
     "@babel/traverse": ^7.15.4
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^4.1.0
+    babel-plugin-remove-graphql-queries: ^4.1.1
     camelcase: ^5.3.1
     chokidar: ^3.5.2
     common-tags: ^1.8.0
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.1.0
+    gatsby-core-utils: ^3.1.1
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.7.2
   peerDependencies:
@@ -12665,7 +12665,7 @@ __metadata:
     gatsby-source-filesystem: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 8751d10ca8821fe5755819378fcd6d7b916df901468b69a139bd7a9dfbedcb5b962d53edad6bd3dd087a44288c65baac6230fba3238ba2167b5b774709eae740
+  checksum: 1c65f5a90458e48a6a9225197aa1e57106ae68aad7902660dcf6f21aaf7a65e14ed8c6013303135dfbed6c3512a98888e59827012e67ba5020b3df90d0b27ea2
   languageName: node
   linkType: hard
 
@@ -18045,7 +18045,7 @@ __metadata:
     gatsby-plugin-canonical-urls: 4.1.0
     gatsby-plugin-feed: 4.1.1
     gatsby-plugin-google-tagmanager: 4.1.0
-    gatsby-plugin-image: 2.1.0
+    gatsby-plugin-image: 2.1.1
     gatsby-plugin-layout: 3.1.0
     gatsby-plugin-manifest: 4.1.0
     gatsby-plugin-material-ui: 4.0.3
