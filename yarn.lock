@@ -12547,6 +12547,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "gatsby-core-utils@npm:3.1.3"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.2
+    node-object-hash: ^2.3.9
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 90d3407a9f190a9346f74fac4d83f25cb5dcebf5ac99924b6256f5ffc394c8be8cacce8b7f081d990e6f428de0b55c11f2c52d07d0d19a7f4f42f3fa34a29a54
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^2.1.0":
   version: 2.1.0
   resolution: "gatsby-graphiql-explorer@npm:2.1.0"
@@ -12680,18 +12698,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:4.1.3":
-  version: 4.1.3
-  resolution: "gatsby-plugin-manifest@npm:4.1.3"
+"gatsby-plugin-manifest@npm:4.1.4":
+  version: 4.1.4
+  resolution: "gatsby-plugin-manifest@npm:4.1.4"
   dependencies:
     "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.1.2
+    gatsby-core-utils: ^3.1.3
     gatsby-plugin-utils: ^2.1.1
     semver: ^7.3.5
     sharp: ^0.29.1
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: e5c4d69d5394498b397ac1a689f835fe5d058c93edb4e5eee14020d1efb572538c073376ec4348151a074e509f3c51fbdcf7e98ef32016f970e8e568fc427dba
+  checksum: dbb1ddc0c2c5a31125a5de26730329e911c05e0906d21b944c4a1f53dd959829dcdbdad2c0a64b9846ce67f58c6cb2bba2d495134114f9ea701d7251678cc08e
   languageName: node
   linkType: hard
 
@@ -17997,7 +18015,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 4.1.1
     gatsby-plugin-image: 2.1.1
     gatsby-plugin-layout: 3.1.0
-    gatsby-plugin-manifest: 4.1.3
+    gatsby-plugin-manifest: 4.1.4
     gatsby-plugin-material-ui: 4.0.3
     gatsby-plugin-mdx: 3.1.2
     gatsby-plugin-preconnect: 1.3.0
