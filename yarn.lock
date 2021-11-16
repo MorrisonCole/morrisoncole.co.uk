@@ -12943,9 +12943,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-styled-components@npm:5.1.0":
-  version: 5.1.0
-  resolution: "gatsby-plugin-styled-components@npm:5.1.0"
+"gatsby-plugin-styled-components@npm:5.2.0":
+  version: 5.2.0
+  resolution: "gatsby-plugin-styled-components@npm:5.2.0"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
@@ -12954,7 +12954,7 @@ __metadata:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
     styled-components: ">=2.0.0"
-  checksum: c23c4f5f06b2103ee4cf04c20a4f1bf912b100fe8fc2393e48a862fc7aa8f8e2a82576ac78678b65e2066d1800b48f5a16593640af4ddb08814edbe0c3bcbd1e
+  checksum: c0f3685025a654a5c29ab4f598a801e2dc09d176dbc5d446e51b1791591bd4469fd25b0d316c74bc5b5ae4e44325f81709ede93990ca6a3b972e22965ce2291f
   languageName: node
   linkType: hard
 
@@ -18112,7 +18112,7 @@ __metadata:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 4.2.0
     gatsby-plugin-sitemap: 5.1.1
-    gatsby-plugin-styled-components: 5.1.0
+    gatsby-plugin-styled-components: 5.2.0
     gatsby-plugin-typescript: 4.2.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.1.0
