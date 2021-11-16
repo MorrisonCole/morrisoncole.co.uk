@@ -3103,9 +3103,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript@npm:2.3.1":
-  version: 2.3.1
-  resolution: "@graphql-codegen/typescript@npm:2.3.1"
+"@graphql-codegen/typescript@npm:2.4.0":
+  version: 2.4.0
+  resolution: "@graphql-codegen/typescript@npm:2.4.0"
   dependencies:
     "@graphql-codegen/plugin-helpers": ^2.3.0
     "@graphql-codegen/schema-ast": ^2.4.0
@@ -3114,7 +3114,7 @@ __metadata:
     tslib: ~2.3.0
   peerDependencies:
     graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 5130f4630bf9521f05f81a013ecb9953cd32faeca0f6dc924664304d91027369bca1a5b65f5b8e8061a908bc5db1120f1bffa64168c919593bec2f1d7384810a
+  checksum: ce100a2e89fe3e7b181deb9f2e34f77c03b87fa9f30f808d8c074b4d476df6f4f060fafb752e545aa94b7fb05a1c90cb5fa33348d8051ab8d63d7173afccda2e
   languageName: node
   linkType: hard
 
@@ -18144,7 +18144,7 @@ __metadata:
     "@emotion/react": 11.6.0
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 2.3.0
-    "@graphql-codegen/typescript": 2.3.1
+    "@graphql-codegen/typescript": 2.4.0
     "@graphql-codegen/typescript-operations": 2.2.0
     "@material-ui/core": 4.12.3
     "@material-ui/icons": 4.11.2
