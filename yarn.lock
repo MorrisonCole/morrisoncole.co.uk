@@ -13238,15 +13238,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-json@npm:4.1.0":
-  version: 4.1.0
-  resolution: "gatsby-transformer-json@npm:4.1.0"
+"gatsby-transformer-json@npm:4.2.0":
+  version: 4.2.0
+  resolution: "gatsby-transformer-json@npm:4.2.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     bluebird: ^3.7.2
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 86bbbc6819d7951cabb9398ada45b3762e22928cd1174f4e9bb8492357c9268544c3e5dd2b0351828a7ea5aba3e05be47e184cfabdabeb04e663722430fa0651
+  checksum: d462650e3ebfbbcefa8658cae8262ad0a0fbc3a9662728cae5cf3bbb41937a53525a5f5096da7e80055c19a0c36e95ea96d38202db7da8cd1a21aefa3c8c049e
   languageName: node
   linkType: hard
 
@@ -18120,7 +18120,7 @@ __metadata:
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 6.1.4
     gatsby-source-filesystem: 4.1.3
-    gatsby-transformer-json: 4.1.0
+    gatsby-transformer-json: 4.2.0
     gatsby-transformer-sharp: 4.2.0
     graphql: 16.0.1
     lmdb-store: 1.6.13
