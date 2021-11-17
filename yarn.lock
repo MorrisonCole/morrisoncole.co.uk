@@ -7231,19 +7231,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "babel-plugin-remove-graphql-queries@npm:4.1.1"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.1.1
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^4.0.0-next
-  checksum: 5d7a9edb08dbcce031eec120ef627e4ef0f617ba5697f57141bc61bd4da92aac3220c0f4009052721b10406bf1070fa80eef88d20fc6cff33505fc26203d1abe
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^4.1.3":
   version: 4.1.3
   resolution: "babel-plugin-remove-graphql-queries@npm:4.1.3"
@@ -12584,24 +12571,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "gatsby-core-utils@npm:3.1.1"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    file-type: ^16.5.3
-    fs-extra: ^10.0.0
-    got: ^11.8.2
-    node-object-hash: ^2.3.9
-    proper-lockfile: ^4.1.2
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 26e746a37220371af5392304f2b8e51aabce2edf08c31f529fa00171f580007dcaa13fd34d2f1e2dffceef35c4d0ecbe18c405fb80cbd4da07be633dda8334ed
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^3.1.3":
   version: 3.1.3
   resolution: "gatsby-core-utils@npm:3.1.3"
@@ -12757,21 +12726,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:2.1.1":
-  version: 2.1.1
-  resolution: "gatsby-plugin-image@npm:2.1.1"
+"gatsby-plugin-image@npm:2.2.0":
+  version: 2.2.0
+  resolution: "gatsby-plugin-image@npm:2.2.0"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.15.5
     "@babel/runtime": ^7.15.4
     "@babel/traverse": ^7.15.4
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^4.1.1
+    babel-plugin-remove-graphql-queries: ^4.2.0
     camelcase: ^5.3.1
     chokidar: ^3.5.2
     common-tags: ^1.8.0
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.1.1
+    gatsby-core-utils: ^3.2.0
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.7.2
   peerDependencies:
@@ -12781,7 +12750,7 @@ __metadata:
     gatsby-source-filesystem: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 1c65f5a90458e48a6a9225197aa1e57106ae68aad7902660dcf6f21aaf7a65e14ed8c6013303135dfbed6c3512a98888e59827012e67ba5020b3df90d0b27ea2
+  checksum: 3099c17def169387786b70fa76f4e3a9b1d5c0d41d50b47be39f89c647b2436590b60b013c8a01ff271b7c6f0cdfb2896667e39f21938b4698050cac141fd411
   languageName: node
   linkType: hard
 
@@ -18179,7 +18148,7 @@ __metadata:
     gatsby-plugin-canonical-urls: 4.2.0
     gatsby-plugin-feed: 4.2.0
     gatsby-plugin-google-tagmanager: 4.2.0
-    gatsby-plugin-image: 2.1.1
+    gatsby-plugin-image: 2.2.0
     gatsby-plugin-layout: 3.1.0
     gatsby-plugin-manifest: 4.1.4
     gatsby-plugin-material-ui: 4.0.3
