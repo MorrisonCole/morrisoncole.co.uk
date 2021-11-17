@@ -12752,16 +12752,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-material-ui@npm:4.0.3":
-  version: 4.0.3
-  resolution: "gatsby-plugin-material-ui@npm:4.0.3"
+"gatsby-plugin-material-ui@npm:4.1.0":
+  version: 4.1.0
+  resolution: "gatsby-plugin-material-ui@npm:4.1.0"
   dependencies:
     "@emotion/cache": ^11.4.0
     "@emotion/server": ^11.4.0
   peerDependencies:
     "@emotion/react": ^11.4.0
-    gatsby: ^3.0.0
-  checksum: b624fb9a51ff01662cf998b45bb4820ef6742a11713be81a5f7656f61a26e9ee10caca0cdb5ee109282708e8fd59776d1ec68ebdfa93147611c36b6a9b682847
+    gatsby: ^3.0.0 || ^4.0.0
+  checksum: f1d38d2e50251628c60f04a9d73f87ce74931bf0e507e9cddf8224fdf2dcb1ee3c47cabb4e57d0d8e7efa47fd362205af92c7743d9dab89e7668eee8c1bc55ad
   languageName: node
   linkType: hard
 
@@ -18081,7 +18081,7 @@ __metadata:
     gatsby-plugin-image: 2.2.0
     gatsby-plugin-layout: 3.2.0
     gatsby-plugin-manifest: 4.1.4
-    gatsby-plugin-material-ui: 4.0.3
+    gatsby-plugin-material-ui: 4.1.0
     gatsby-plugin-mdx: 3.2.0
     gatsby-plugin-preconnect: 1.3.0
     gatsby-plugin-react-helmet: 5.1.0
