@@ -9896,15 +9896,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"decompress-response@npm:^4.2.0":
-  version: 4.2.1
-  resolution: "decompress-response@npm:4.2.1"
-  dependencies:
-    mimic-response: ^2.0.0
-  checksum: 4e783ca4dfe9417354d61349750fe05236f565a4415a6ca20983a311be2371debaedd9104c0b0e7b36e5f167aeaae04f84f1a0b3f8be4162f1d7d15598b8fdba
-  languageName: node
-  linkType: hard
-
 "decompress-response@npm:^6.0.0":
   version: 6.0.0
   resolution: "decompress-response@npm:6.0.0"
@@ -12737,18 +12728,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-manifest@npm:4.1.4":
-  version: 4.1.4
-  resolution: "gatsby-plugin-manifest@npm:4.1.4"
+"gatsby-plugin-manifest@npm:4.2.0":
+  version: 4.2.0
+  resolution: "gatsby-plugin-manifest@npm:4.2.0"
   dependencies:
     "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.1.3
-    gatsby-plugin-utils: ^2.1.1
+    gatsby-core-utils: ^3.2.0
+    gatsby-plugin-utils: ^2.2.0
     semver: ^7.3.5
-    sharp: ^0.29.1
+    sharp: ^0.29.2
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: dbb1ddc0c2c5a31125a5de26730329e911c05e0906d21b944c4a1f53dd959829dcdbdad2c0a64b9846ce67f58c6cb2bba2d495134114f9ea701d7251678cc08e
+  checksum: 50256634bab88a2372150324d47af9871239bf9a95daa4ae63b555756e3d9ebdf843bd9ee9bb529556342af2729e810c52d133e414218af7e52d5814ccd191b7
   languageName: node
   linkType: hard
 
@@ -12973,18 +12964,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: c178d936749f78971185f6e8cf6586590403fc5a2142c8936d01cad41d596c5b7289644f9907aa5d84e28509430226fe35d510b37f801d745669e8f7cb2b1cdc
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "gatsby-plugin-utils@npm:2.1.1"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    joi: ^17.4.2
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: d049be84f14651ca7eeef6a1cd7d9b9dc2f8beb056f7565eb2881201906729b27f879afe98636092af868061b3d86dd82532514d291bc300bc7ebebeeee9c8a0
   languageName: node
   linkType: hard
 
@@ -17802,13 +17781,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mimic-response@npm:^2.0.0":
-  version: 2.1.0
-  resolution: "mimic-response@npm:2.1.0"
-  checksum: 014fad6ab936657e5f2f48bd87af62a8e928ebe84472aaf9e14fec4fcb31257a5edff77324d8ac13ddc6685ba5135cf16e381efac324e5f174fb4ddbf902bf07
-  languageName: node
-  linkType: hard
-
 "mimic-response@npm:^3.1.0":
   version: 3.1.0
   resolution: "mimic-response@npm:3.1.0"
@@ -18080,7 +18052,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 4.2.0
     gatsby-plugin-image: 2.2.0
     gatsby-plugin-layout: 3.2.0
-    gatsby-plugin-manifest: 4.1.4
+    gatsby-plugin-manifest: 4.2.0
     gatsby-plugin-material-ui: 4.1.0
     gatsby-plugin-mdx: 3.2.0
     gatsby-plugin-preconnect: 1.3.0
@@ -18508,15 +18480,6 @@ __metadata:
     lower-case: ^2.0.2
     tslib: ^2.0.3
   checksum: 0b2ebc113dfcf737d48dde49cfebf3ad2d82a8c3188e7100c6f375e30eafbef9e9124aadc3becef237b042fd5eb0aad2fd78669c20972d045bbe7fea8ba0be5c
-  languageName: node
-  linkType: hard
-
-"node-abi@npm:^2.21.0":
-  version: 2.30.0
-  resolution: "node-abi@npm:2.30.0"
-  dependencies:
-    semver: ^5.4.1
-  checksum: 4394c12de62bd532b304adc087ad76f1b24d0633ff3edefc2b412426a714cb413e3ec75c8c48a9f802a537def6377387eb4213a979f0f2b1b341edc26d6d7938
   languageName: node
   linkType: hard
 
@@ -20428,29 +20391,6 @@ __metadata:
   dependencies:
     jimp: ^0.14.0
   checksum: 8b7168218058d7638cbced8bb9db2a87a754ec2e6b21b2332921b54c7124cfd5ee19db4bcb3faab9ead7994e4ca9e04012d5e4c67d8e4b300c2eb21b8b2b1c49
-  languageName: node
-  linkType: hard
-
-"prebuild-install@npm:^6.1.4":
-  version: 6.1.4
-  resolution: "prebuild-install@npm:6.1.4"
-  dependencies:
-    detect-libc: ^1.0.3
-    expand-template: ^2.0.3
-    github-from-package: 0.0.0
-    minimist: ^1.2.3
-    mkdirp-classic: ^0.5.3
-    napi-build-utils: ^1.0.1
-    node-abi: ^2.21.0
-    npmlog: ^4.0.1
-    pump: ^3.0.0
-    rc: ^1.2.7
-    simple-get: ^3.0.3
-    tar-fs: ^2.0.0
-    tunnel-agent: ^0.6.0
-  bin:
-    prebuild-install: bin.js
-  checksum: de4313eda821305912af922700a2db04bb8e77fe8aa9c2788550f1000c026cbefc82da468ec0c0a37764c5417bd8169dbd540928535fb38d00bb9bbd673dd217
   languageName: node
   linkType: hard
 
@@ -22460,23 +22400,6 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.29.1":
-  version: 0.29.2
-  resolution: "sharp@npm:0.29.2"
-  dependencies:
-    color: ^4.0.1
-    detect-libc: ^1.0.3
-    node-addon-api: ^4.2.0
-    node-gyp: latest
-    prebuild-install: ^6.1.4
-    semver: ^7.3.5
-    simple-get: ^3.1.0
-    tar-fs: ^2.1.1
-    tunnel-agent: ^0.6.0
-  checksum: 08d241c63bcf2f9eaf6130bf4c264ddf112ab66d02685879cb8d9df1fff571c8fd50fe4e6c046ce82dadb7e5edfd0eaaa3a21e35e84785b8bd9a20e2b1b7ff8c
-  languageName: node
-  linkType: hard
-
 "sharp@npm:^0.29.2":
   version: 0.29.3
   resolution: "sharp@npm:0.29.3"
@@ -22589,17 +22512,6 @@ resolve@^2.0.0-next.3:
   version: 1.0.1
   resolution: "simple-concat@npm:1.0.1"
   checksum: 4d211042cc3d73a718c21ac6c4e7d7a0363e184be6a5ad25c8a1502e49df6d0a0253979e3d50dbdd3f60ef6c6c58d756b5d66ac1e05cda9cacd2e9fc59e3876a
-  languageName: node
-  linkType: hard
-
-"simple-get@npm:^3.0.3, simple-get@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "simple-get@npm:3.1.0"
-  dependencies:
-    decompress-response: ^4.2.0
-    once: ^1.3.1
-    simple-concat: ^1.0.0
-  checksum: cca91a9ab2b532fa8d367757c196b54e2dfe3325aab0298d66a3e2a45a29a9d335d1a3fb41f036dad14000f78baddd4170fbf9621d72869791d2912baf9469aa
   languageName: node
   linkType: hard
 
