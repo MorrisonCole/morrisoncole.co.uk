@@ -16564,7 +16564,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb-store@npm:1.6.13, lmdb-store@npm:^1.6.11":
+"lmdb-store@npm:1.6.14":
+  version: 1.6.14
+  resolution: "lmdb-store@npm:1.6.14"
+  dependencies:
+    msgpackr: ^1.5.0
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.0.0
+    weak-lru-cache: ^1.0.0
+  checksum: ba5fbed286efc981fcb0de523e4637d9ef62ebfa96da5ba537b26b74bc60b6eec75b9d8029f5450049c5371cb99be0a8781969491bdf386e5a509b1224ddd6b0
+  languageName: node
+  linkType: hard
+
+"lmdb-store@npm:^1.6.11":
   version: 1.6.13
   resolution: "lmdb-store@npm:1.6.13"
   dependencies:
@@ -18058,7 +18072,7 @@ __metadata:
     gatsby-transformer-json: 4.1.0
     gatsby-transformer-sharp: 4.2.0
     graphql: 16.0.1
-    lmdb-store: 1.6.13
+    lmdb-store: 1.6.14
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 3.0.0
@@ -18129,6 +18143,18 @@ __metadata:
     msgpackr-extract:
       optional: true
   checksum: 317c589c99c1e5aa2c38552af0dedc8ed68cd2a5bc53db792bdbddb33ccb813d885699a337ad7c0d29de85bb73235490e869fd53a860422eaeaf0b44f704cd4d
+  languageName: node
+  linkType: hard
+
+"msgpackr@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "msgpackr@npm:1.5.0"
+  dependencies:
+    msgpackr-extract: ^1.0.14
+  dependenciesMeta:
+    msgpackr-extract:
+      optional: true
+  checksum: 21da36a2cc0ee2d2cacf15f7196449916c98d290fc2f6f135c2b0558caac3f8751197bcb929ddccb749a90e810590b544997d090bb441fca809ed293a7f6b02f
   languageName: node
   linkType: hard
 
