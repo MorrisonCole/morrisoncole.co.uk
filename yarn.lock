@@ -6281,7 +6281,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn-jsx@npm:^5.0.0, acorn-jsx@npm:^5.3.1":
+"acorn-jsx@npm:^5.3.1":
   version: 5.3.1
   resolution: "acorn-jsx@npm:5.3.1"
   peerDependencies:
@@ -6328,15 +6328,6 @@ __metadata:
   bin:
     acorn: bin/acorn
   checksum: 1860f23c2107c910c6177b7b7be71be350db9e1080d814493fae143ae37605189504152d1ba8743ba3178d0b37269ce1ffc42b101547fdc1827078f82671e407
-  languageName: node
-  linkType: hard
-
-"acorn@npm:^8.0.0":
-  version: 8.3.0
-  resolution: "acorn@npm:8.3.0"
-  bin:
-    acorn: bin/acorn
-  checksum: 9217542382451ea95902c650e0d03c661abaf39c41f3c797347b61f2950b0f03c5f77ef93b9f702dc8112907cf40812e3cb5f1e62b3054f017ebeb07ed267587
   languageName: node
   linkType: hard
 
@@ -9156,17 +9147,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-gatsby@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "create-gatsby@npm:2.2.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-  bin:
-    create-gatsby: cli.js
-  checksum: 4071ede15e3e8725514cc22a86876f2e06ce8ba1435f49a1972099aaf826176fe755f2ae27c019e23a02788fd5a639fff1debede1c51b53f7c15f48c33a119c4
-  languageName: node
-  linkType: hard
-
 "create-gatsby@npm:^2.3.0":
   version: 2.3.0
   resolution: "create-gatsby@npm:2.3.0"
@@ -9823,7 +9803,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:~4.3.1, debug@npm:~4.3.2":
+"debug@npm:4, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:~4.3.1, debug@npm:~4.3.2":
   version: 4.3.2
   resolution: "debug@npm:4.3.2"
   dependencies:
@@ -11587,13 +11567,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"estree-util-is-identifier-name@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "estree-util-is-identifier-name@npm:1.1.0"
-  checksum: ec55a74708b2fdac7de8d5a1dd82caf36783993608f11b8bc0dcd3b426746ccf21ee7da86ab94e4500c292dc1dde48b7ce65e5dc41f3dc4363a499ea15db32cc
-  languageName: node
-  linkType: hard
-
 "esutils@npm:^2.0.2":
   version: 2.0.3
   resolution: "esutils@npm:2.0.3"
@@ -12510,57 +12483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-cli@npm:4.2.0"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@babel/runtime": ^7.15.4
-    "@types/common-tags": ^1.8.1
-    better-opn: ^2.1.1
-    boxen: ^5.1.2
-    chalk: ^4.1.2
-    clipboardy: ^2.3.0
-    common-tags: ^1.8.0
-    configstore: ^5.0.1
-    convert-hrtime: ^3.0.0
-    create-gatsby: ^2.2.0
-    envinfo: ^7.8.1
-    execa: ^5.1.1
-    fs-exists-cached: ^1.0.0
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.2.0
-    gatsby-recipes: ^1.2.0
-    gatsby-telemetry: ^3.2.0
-    hosted-git-info: ^3.0.8
-    is-valid-path: ^0.1.1
-    joi: ^17.4.2
-    lodash: ^4.17.21
-    meant: ^1.0.3
-    node-fetch: ^2.6.6
-    opentracing: ^0.14.5
-    pretty-error: ^2.1.2
-    progress: ^2.0.3
-    prompts: ^2.4.2
-    redux: 4.1.2
-    resolve-cwd: ^3.0.0
-    semver: ^7.3.5
-    signal-exit: ^3.0.5
-    source-map: 0.7.3
-    stack-trace: ^0.0.10
-    strip-ansi: ^5.2.0
-    update-notifier: ^5.1.0
-    uuid: 3.4.0
-    yargs: ^15.4.1
-    yoga-layout-prebuilt: ^1.10.0
-    yurnalist: ^2.1.0
-  bin:
-    gatsby: cli.js
-  checksum: c142b6b3e32731d715a45ab189ead0ced74e77757cf96f7c02b315a9166a938d92c585a559645613a4cb595fb69689d411e5f5fb4e065359b38f2cbae6dfde0e
-  languageName: node
-  linkType: hard
-
-"gatsby-cli@npm:^4.3.0":
+"gatsby-cli@npm:4.3.0, gatsby-cli@npm:^4.3.0":
   version: 4.3.0
   resolution: "gatsby-cli@npm:4.3.0"
   dependencies:
@@ -13117,73 +13040,6 @@ __metadata:
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
   checksum: 5aca1756a1183fe40a6feca71f81058bf3106ddf282a6e1ea1c6be10015d0d293a15d67b2beb1e65298aefd851bb76a174c5fffaa3c2ea871ca48f9e95ba8a4b
-  languageName: node
-  linkType: hard
-
-"gatsby-recipes@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "gatsby-recipes@npm:1.2.0"
-  dependencies:
-    "@babel/core": ^7.15.5
-    "@babel/generator": ^7.15.4
-    "@babel/helper-plugin-utils": ^7.14.0
-    "@babel/plugin-proposal-optional-chaining": ^7.14.5
-    "@babel/plugin-transform-react-jsx": ^7.14.9
-    "@babel/runtime": ^7.15.4
-    "@babel/standalone": ^7.15.5
-    "@babel/template": ^7.15.4
-    "@babel/types": ^7.15.4
-    "@graphql-tools/schema": ^7.0.0
-    "@graphql-tools/utils": ^7.0.2
-    "@hapi/hoek": 8.x.x
-    "@hapi/joi": ^15.1.1
-    better-queue: ^3.8.10
-    chokidar: ^3.5.2
-    contentful-management: ^7.5.1
-    cors: ^2.8.5
-    debug: ^4.3.1
-    detect-port: ^1.3.0
-    dotenv: ^8.2.0
-    execa: ^5.1.1
-    express: ^4.17.1
-    express-graphql: ^0.12.0
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.2.0
-    gatsby-telemetry: ^3.2.0
-    glob: ^7.1.6
-    graphql: ^15.4.0
-    graphql-compose: ~7.25.0
-    graphql-subscriptions: ^1.1.0
-    graphql-type-json: ^0.3.2
-    hicat: ^0.8.0
-    is-binary-path: ^2.1.0
-    is-url: ^1.2.4
-    jest-diff: ^25.5.0
-    lock: ^1.0.0
-    lodash: ^4.17.21
-    mitt: ^1.2.0
-    mkdirp: ^0.5.1
-    node-fetch: ^2.5.0
-    pkg-dir: ^4.2.0
-    prettier: ^2.4.1
-    prop-types: ^15.6.1
-    remark-mdx: ^2.0.0-next.4
-    remark-mdxjs: ^2.0.0-next.4
-    remark-parse: ^6.0.3
-    remark-stringify: ^8.1.0
-    resolve-from: ^5.0.0
-    semver: ^7.3.5
-    single-trailing-newline: ^1.0.0
-    strip-ansi: ^6.0.0
-    style-to-object: ^0.3.0
-    unified: ^8.4.2
-    unist-util-remove: ^2.0.0
-    unist-util-visit: ^2.0.2
-    uuid: 3.4.0
-    ws: ^7.3.0
-    xstate: ^4.9.1
-    yoga-layout-prebuilt: ^1.9.6
-  checksum: ab8aa12b3227420bdac84c61c0ddc7ed1729aee10a5cd8095b27ac0ed47ef7ffd8624b80733999e4595e8d23435fc4eb0ef24f643d69bef7e95b190701584951
   languageName: node
   linkType: hard
 
@@ -17205,7 +17061,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"longest-streak@npm:^2.0.0, longest-streak@npm:^2.0.1":
+"longest-streak@npm:^2.0.1":
   version: 2.0.4
   resolution: "longest-streak@npm:2.0.4"
   checksum: 28b8234a14963002c5c71035dee13a0a11e9e9d18ffa320fdc8796ed7437399204495702ed69cd2a7087b0af041a2a8b562829b7c1e2042e73a3374d1ecf6580
@@ -17521,48 +17377,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mdast-util-mdx-expression@npm:~0.1.0":
-  version: 0.1.1
-  resolution: "mdast-util-mdx-expression@npm:0.1.1"
-  dependencies:
-    strip-indent: ^3.0.0
-  checksum: cf9ec95fb664d8627ea6d929d8002f80c422ddd771f1cbb536cedb1c694ecbc43cb5786a947bd6c69434703becb3f88bb365c48dc0d7fa390977b6f66fb41a7b
-  languageName: node
-  linkType: hard
-
-"mdast-util-mdx-jsx@npm:~0.1.0":
-  version: 0.1.4
-  resolution: "mdast-util-mdx-jsx@npm:0.1.4"
-  dependencies:
-    mdast-util-to-markdown: ^0.6.0
-    parse-entities: ^2.0.0
-    stringify-entities: ^3.1.0
-    unist-util-remove-position: ^3.0.0
-    unist-util-stringify-position: ^2.0.0
-    vfile-message: ^2.0.0
-  checksum: 84fababf6a000dc06687a9c8a82a28e89eab5dbb89440b91e2e20b7bfdabacc7c7468a8a286d461a182d57dd02ff5f6bac5ca0d814bb83089fe63804a338f132
-  languageName: node
-  linkType: hard
-
-"mdast-util-mdx@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "mdast-util-mdx@npm:0.1.1"
-  dependencies:
-    mdast-util-mdx-expression: ~0.1.0
-    mdast-util-mdx-jsx: ~0.1.0
-    mdast-util-mdxjs-esm: ~0.1.0
-    mdast-util-to-markdown: ^0.6.1
-  checksum: fcd7764c5eadce7bad00481f0d386d569852a713f76d19f3eabb4ffdbc7016cec67de43ff4b200ad525d2f47a8fc530cf5120788259ab318b7e6a8b6068b9697
-  languageName: node
-  linkType: hard
-
-"mdast-util-mdxjs-esm@npm:~0.1.0":
-  version: 0.1.1
-  resolution: "mdast-util-mdxjs-esm@npm:0.1.1"
-  checksum: bab958939d8b93bb2cd6e9043afad361c8babbcd8263081ea8d4a5785e43804c5e75a1155f00cfb9ea76fca44c7e236e561261f57c7fb69b232175e2dc0220aa
-  languageName: node
-  linkType: hard
-
 "mdast-util-to-hast@npm:10.0.1":
   version: 10.0.1
   resolution: "mdast-util-to-hast@npm:10.0.1"
@@ -17576,20 +17390,6 @@ __metadata:
     unist-util-position: ^3.0.0
     unist-util-visit: ^2.0.0
   checksum: e5f385757df7e9b37db4d6f326bf7b4fc1b40f9ad01fc335686578f44abe0ba46d3e60af4d5e5b763556d02e65069ef9a09c49db049b52659203a43e7fa9084d
-  languageName: node
-  linkType: hard
-
-"mdast-util-to-markdown@npm:^0.6.0, mdast-util-to-markdown@npm:^0.6.1":
-  version: 0.6.5
-  resolution: "mdast-util-to-markdown@npm:0.6.5"
-  dependencies:
-    "@types/unist": ^2.0.0
-    longest-streak: ^2.0.0
-    mdast-util-to-string: ^2.0.0
-    parse-entities: ^2.0.0
-    repeat-string: ^1.0.0
-    zwitch: ^1.0.0
-  checksum: 7ebc47533bff6e8669f85ae124dc521ea570e9df41c0d9e4f0f43c19ef4a8c9928d741f3e4afa62fcca1927479b714582ff5fd684ef240d84ee5b75ab9d863cf
   languageName: node
   linkType: hard
 
@@ -17787,83 +17587,6 @@ __metadata:
   version: 0.1.1
   resolution: "microevent.ts@npm:0.1.1"
   checksum: 7874fcdb3f0dfa4e996d3ea63b3b9882874ae7d22be28d51ae20da24c712e9e28e5011d988095c27dd2b32e37c0ad7425342a71b89adb8e808ec7194fadf4a7a
-  languageName: node
-  linkType: hard
-
-"micromark-extension-mdx-expression@npm:^0.3.0, micromark-extension-mdx-expression@npm:^0.3.2, micromark-extension-mdx-expression@npm:~0.3.0":
-  version: 0.3.2
-  resolution: "micromark-extension-mdx-expression@npm:0.3.2"
-  dependencies:
-    micromark: ~2.11.0
-    vfile-message: ^2.0.0
-  checksum: 4f87a6af35fba415a6b27463d23e9f7517be08be945e74539885c16a5a7888b061e2d2653d2110fa674ec5c237379df93c64afd8cd863e6e3499fa419403d909
-  languageName: node
-  linkType: hard
-
-"micromark-extension-mdx-jsx@npm:~0.3.0":
-  version: 0.3.3
-  resolution: "micromark-extension-mdx-jsx@npm:0.3.3"
-  dependencies:
-    estree-util-is-identifier-name: ^1.0.0
-    micromark: ~2.11.0
-    micromark-extension-mdx-expression: ^0.3.2
-    vfile-message: ^2.0.0
-  checksum: b5fdf2226afff8d22bc6b16fb7b7f714633052d5ffe5ef9d29f4ac5ea326280631b251ce6e2113121274931af8d732f27ea7444e774521b7813d652a4d1e7edd
-  languageName: node
-  linkType: hard
-
-"micromark-extension-mdx-md@npm:~0.1.0":
-  version: 0.1.1
-  resolution: "micromark-extension-mdx-md@npm:0.1.1"
-  checksum: 455ab43115f791305dab21b05ffc8f49833f877dfb2e5a8d0281f93b72c1fb63550e55840196add3fdeffc5cee8b16fbd8584d1d74e907da5495535c4c754950
-  languageName: node
-  linkType: hard
-
-"micromark-extension-mdx@npm:^0.2.0":
-  version: 0.2.1
-  resolution: "micromark-extension-mdx@npm:0.2.1"
-  dependencies:
-    micromark: ~2.11.0
-    micromark-extension-mdx-expression: ~0.3.0
-    micromark-extension-mdx-jsx: ~0.3.0
-    micromark-extension-mdx-md: ~0.1.0
-  checksum: 66893e2d3fccd42112dd69de546a518468d811b073c83c537f1a5a8edbeabf4172af2ce21702a25e1019c92bf96708eca8e545be51f13792858c33f5048698af
-  languageName: node
-  linkType: hard
-
-"micromark-extension-mdxjs-esm@npm:~0.3.0":
-  version: 0.3.1
-  resolution: "micromark-extension-mdxjs-esm@npm:0.3.1"
-  dependencies:
-    micromark: ~2.11.0
-    micromark-extension-mdx-expression: ^0.3.0
-    vfile-message: ^2.0.0
-  checksum: 941f01f85cb87cfacdc5b96b03ba76fcd2511bcf2bd4f284ebaa41103039920914b77c62e2deeadc28f51f118a8a5bbe40f4b5ee325f3bc65ffdfe83143dffc1
-  languageName: node
-  linkType: hard
-
-"micromark-extension-mdxjs@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "micromark-extension-mdxjs@npm:0.3.0"
-  dependencies:
-    acorn: ^8.0.0
-    acorn-jsx: ^5.0.0
-    micromark: ~2.11.0
-    micromark-extension-mdx-expression: ~0.3.0
-    micromark-extension-mdx-jsx: ~0.3.0
-    micromark-extension-mdx-md: ~0.1.0
-    micromark-extension-mdxjs-esm: ~0.3.0
-  checksum: 92de0fb4e2f4fecf13c0252855c6da325c2dd0b134acfd6a55a25abace6880f510437e8c805ba6917e71fdf849f21b1e4020521ae28169935f9c07699a214940
-  languageName: node
-  linkType: hard
-
-"micromark@npm:~2.11.0":
-  version: 2.11.4
-  resolution: "micromark@npm:2.11.4"
-  dependencies:
-    debug: ^4.0.0
-    parse-entities: ^2.0.0
-  checksum: f8a5477d394908a5d770227aea71657a76423d420227c67ea0699e659a5f62eb39d504c1f7d69ec525a6af5aaeb6a7bffcdba95614968c03d41d3851edecb0d6
   languageName: node
   linkType: hard
 
@@ -18251,7 +17974,7 @@ __metadata:
     css.escape: 1.5.1
     event-source-polyfill: 1.0.25
     gatsby: 4.3.0
-    gatsby-cli: 4.2.0
+    gatsby-cli: 4.3.0
     gatsby-legacy-polyfills: 2.2.0
     gatsby-link: 4.2.0
     gatsby-plugin-canonical-urls: 4.2.0
@@ -21772,17 +21495,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-mdx@npm:^2.0.0-next.4":
-  version: 2.0.0-next.9
-  resolution: "remark-mdx@npm:2.0.0-next.9"
-  dependencies:
-    mdast-util-mdx: ^0.1.1
-    micromark-extension-mdx: ^0.2.0
-    micromark-extension-mdxjs: ^0.3.0
-  checksum: 30d71c8a3d1d98519cbb2aebffc0c68b24a79e0ce20e378ae0c517b230d78d76730f889181aa95f6297e671bf74f4d1ee4943f5b1bb2013a98a966e0b824658d
-  languageName: node
-  linkType: hard
-
 "remark-mdxjs@npm:^2.0.0-next.4":
   version: 2.0.0-next.8
   resolution: "remark-mdxjs@npm:2.0.0-next.8"
@@ -23618,7 +23330,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"stringify-entities@npm:^3.0.0, stringify-entities@npm:^3.0.1, stringify-entities@npm:^3.1.0":
+"stringify-entities@npm:^3.0.0, stringify-entities@npm:^3.0.1":
   version: 3.1.0
   resolution: "stringify-entities@npm:3.1.0"
   dependencies:
@@ -25141,15 +24853,6 @@ typescript@4.3.4:
   dependencies:
     unist-util-visit: ^2.0.0
   checksum: 4149294969f1a78a367b5d03eb0a138aa8320a39e1b15686647a2bec5945af3df27f2936a1e9752ecbb4a82dc23bd86f7e5a0ee048e5eeaedc2deb9237872795
-  languageName: node
-  linkType: hard
-
-"unist-util-remove-position@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "unist-util-remove-position@npm:3.0.0"
-  dependencies:
-    unist-util-visit: ^2.0.0
-  checksum: 66518939287cb83b456d18736effbfdb8dcf027f6a60f1a9e0545f80d079d2fc631953f778362dfda7000a36a1f52e70de7330c88fcc816b10e9be81b52b21b2
   languageName: node
   linkType: hard
 
