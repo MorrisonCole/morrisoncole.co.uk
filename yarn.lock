@@ -5825,20 +5825,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:5.5.0, @typescript-eslint/parser@npm:^5.0.0":
-  version: 5.5.0
-  resolution: "@typescript-eslint/parser@npm:5.5.0"
+"@typescript-eslint/parser@npm:5.6.0":
+  version: 5.6.0
+  resolution: "@typescript-eslint/parser@npm:5.6.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 5.5.0
-    "@typescript-eslint/types": 5.5.0
-    "@typescript-eslint/typescript-estree": 5.5.0
+    "@typescript-eslint/scope-manager": 5.6.0
+    "@typescript-eslint/types": 5.6.0
+    "@typescript-eslint/typescript-estree": 5.6.0
     debug: ^4.3.2
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 971640eea5bb02c86bc993b2035842c85d6d9f500f1846ce7e3f616e78ad99224a114ada75b0cb2401ba773932895230748953518658724d5500a5f9d79861c6
+  checksum: 7d703cfe6b0a33b35139f509bcc16065f234a11603244cee4f55e193112d93ed9cd4a6db4bcf57c6b766e8a4d602b4f2400cb8d52ea02b3fc2cdfb64e5b88a3e
   languageName: node
   linkType: hard
 
@@ -5856,6 +5856,23 @@ __metadata:
     typescript:
       optional: true
   checksum: 102457eae1acd516211098fea081c8a2ed728522bbda7f5a557b6ef23d88970514f9a0f6285d53fca134d3d4d7d17822b5d5e12438d5918df4d1f89cc9e67d57
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/parser@npm:^5.0.0":
+  version: 5.5.0
+  resolution: "@typescript-eslint/parser@npm:5.5.0"
+  dependencies:
+    "@typescript-eslint/scope-manager": 5.5.0
+    "@typescript-eslint/types": 5.5.0
+    "@typescript-eslint/typescript-estree": 5.5.0
+    debug: ^4.3.2
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 971640eea5bb02c86bc993b2035842c85d6d9f500f1846ce7e3f616e78ad99224a114ada75b0cb2401ba773932895230748953518658724d5500a5f9d79861c6
   languageName: node
   linkType: hard
 
@@ -17825,7 +17842,7 @@ __metadata:
     "@types/node": 16.11.11
     "@types/prettier": 2.4.2
     "@typescript-eslint/eslint-plugin": 5.6.0
-    "@typescript-eslint/parser": 5.5.0
+    "@typescript-eslint/parser": 5.6.0
     axios: 0.24.0
     css: 3.0.0
     eslint: 8.4.0
@@ -18278,7 +18295,7 @@ __metadata:
     "@types/react-is": 17.0.3
     "@types/styled-components": 5.1.17
     "@typescript-eslint/eslint-plugin": 5.6.0
-    "@typescript-eslint/parser": 5.5.0
+    "@typescript-eslint/parser": 5.6.0
     babel-plugin-styled-components: 2.0.2
     eslint: 8.4.0
     eslint-config-next: 12.0.7
