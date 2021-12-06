@@ -5644,14 +5644,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components@npm:5.1.16":
-  version: 5.1.16
-  resolution: "@types/styled-components@npm:5.1.16"
+"@types/styled-components@npm:5.1.17":
+  version: 5.1.17
+  resolution: "@types/styled-components@npm:5.1.17"
   dependencies:
     "@types/hoist-non-react-statics": "*"
     "@types/react": "*"
     csstype: ^3.0.2
-  checksum: 573a55f4bd2f054e7b0239eae1b9ab3e541bb7c607f23c01bd5035639c1fbe84431a616fc53513416427005e85a7b0fe360391ea51bf11c0ac09b543d825865d
+  checksum: 2392a07259a099a6e59bdce00f0abcccf41f49d24feb4d028e2df7067b569c2a6eea13c8909effe6e62e3c5d9c584009e0eadbe217671c0058def39ebff760a6
   languageName: node
   linkType: hard
 
@@ -17831,7 +17831,7 @@ __metadata:
     "@types/react-dom": 17.0.11
     "@types/react-helmet": 6.1.4
     "@types/stack-trace": 0.0.29
-    "@types/styled-components": 5.1.16
+    "@types/styled-components": 5.1.17
     anser: 2.1.0
     babel-plugin-styled-components: 2.0.2
     classnames: 2.3.1
@@ -18238,7 +18238,7 @@ __metadata:
     "@types/node": 16.11.11
     "@types/react": 17.0.37
     "@types/react-is": 17.0.3
-    "@types/styled-components": 5.1.16
+    "@types/styled-components": 5.1.17
     "@typescript-eslint/eslint-plugin": 5.5.0
     "@typescript-eslint/parser": 5.5.0
     babel-plugin-styled-components: 2.0.2
