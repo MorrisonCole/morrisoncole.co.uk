@@ -12649,14 +12649,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-layout@npm:3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-plugin-layout@npm:3.2.0"
+"gatsby-plugin-layout@npm:3.4.0":
+  version: 3.4.0
+  resolution: "gatsby-plugin-layout@npm:3.4.0"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: b423e20128912a6569c77f5b915de1d6981adde6e8f8212db6e1553221053b0b83ab668ad7fc38109ee127f309147a358d84ec8f9be152b1bc33249aa8dbfbb1
+  checksum: b58f40b2a362b43fea4d244019bbbf4bc5a8ee557200903666c25f1259b92371a06a490c4c9d0f16e4eb4d31d8a72313bebb61a8f84dcca50351f7ef8876ab6f
   languageName: node
   linkType: hard
 
@@ -17898,7 +17898,7 @@ __metadata:
     gatsby-plugin-feed: 4.3.0
     gatsby-plugin-google-tagmanager: 4.2.0
     gatsby-plugin-image: 2.2.0
-    gatsby-plugin-layout: 3.2.0
+    gatsby-plugin-layout: 3.4.0
     gatsby-plugin-manifest: 4.2.0
     gatsby-plugin-material-ui: 4.1.0
     gatsby-plugin-mdx: 3.2.0
