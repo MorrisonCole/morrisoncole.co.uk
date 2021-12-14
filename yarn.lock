@@ -12860,31 +12860,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-plugin-sharp@npm:4.2.0"
+"gatsby-plugin-sharp@npm:4.4.0":
+  version: 4.4.0
+  resolution: "gatsby-plugin-sharp@npm:4.4.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     async: ^3.2.2
     bluebird: ^3.7.2
     filenamify: ^4.3.0
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.2.0
-    gatsby-plugin-utils: ^2.2.0
-    gatsby-telemetry: ^3.2.0
-    got: ^11.8.2
+    gatsby-core-utils: ^3.4.0
+    gatsby-plugin-utils: ^2.4.0
+    gatsby-telemetry: ^3.4.0
+    got: ^11.8.3
     lodash: ^4.17.21
     mini-svg-data-uri: ^1.4.3
     potrace: ^2.1.8
     probe-image-size: ^6.0.0
     progress: ^2.0.3
     semver: ^7.3.5
-    sharp: ^0.29.2
+    sharp: ^0.29.3
     svgo: 1.3.2
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: d40086504277ae4328db2756b128a36dd9909a7f64fb720e4c2161a2594b075e8f7d126b6fc0c998697c678db84cbe9c1b5d895f7485d0a1034f628918579f4b
+  checksum: 2b0f90b71aa566bec68c1a73f1ee1e831017f0a78896550fd2c85378443a33b8820535112c98045c5f81fdf3ae5ca1cdb757f2d534c899b216562154e78ea5a4
   languageName: node
   linkType: hard
 
@@ -13246,27 +13246,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 44d0500715cf850eee207843975dcda84d6a0418f869f4daaec92411f239de23d5c99b030cda113452ecddd13eedc1585f8d372dab8b195ee8188d99df60abd3
-  languageName: node
-  linkType: hard
-
-"gatsby-telemetry@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-telemetry@npm:3.2.0"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@babel/runtime": ^7.15.4
-    "@turist/fetch": ^7.1.7
-    "@turist/time": ^0.0.2
-    async-retry-ng: ^2.0.1
-    boxen: ^4.2.0
-    configstore: ^5.0.1
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.2.0
-    git-up: ^4.0.5
-    is-docker: ^2.2.1
-    lodash: ^4.17.21
-    node-fetch: ^2.6.6
-  checksum: 2d52c1ec7e3c3ff14d0db365f31c42c817df40cbffd85e34557e6af8676f03b35e912f35b4ee665a1635abb4cb8f4dd89f5678deb06927c891828584d381e8dd
   languageName: node
   linkType: hard
 
@@ -18086,7 +18065,7 @@ __metadata:
     gatsby-plugin-react-helmet: 5.2.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 4.2.0
+    gatsby-plugin-sharp: 4.4.0
     gatsby-plugin-sitemap: 5.4.0
     gatsby-plugin-styled-components: 5.4.0
     gatsby-plugin-typescript: 4.2.0
@@ -22368,7 +22347,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.29.2":
+"sharp@npm:^0.29.2, sharp@npm:^0.29.3":
   version: 0.29.3
   resolution: "sharp@npm:0.29.3"
   dependencies:
