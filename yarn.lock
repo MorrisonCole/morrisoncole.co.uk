@@ -13070,26 +13070,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:4.2.0":
-  version: 4.2.0
-  resolution: "gatsby-source-filesystem@npm:4.2.0"
+"gatsby-source-filesystem@npm:4.4.0":
+  version: 4.4.0
+  resolution: "gatsby-source-filesystem@npm:4.4.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     chokidar: ^3.5.2
     fastq: ^1.13.0
     file-type: ^16.5.3
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.2.0
+    gatsby-core-utils: ^3.4.0
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.5.2
     pretty-bytes: ^5.4.1
     progress: ^2.0.3
     valid-url: ^1.0.9
-    xstate: ^4.25.0
+    xstate: ^4.26.1
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 44d0500715cf850eee207843975dcda84d6a0418f869f4daaec92411f239de23d5c99b030cda113452ecddd13eedc1585f8d372dab8b195ee8188d99df60abd3
+  checksum: 6ca190fdcfeb1b0ce17c1c3d38ac4b951f71adb7ec4ea110212de52dcb40006dc043775ed5bc8f4ee336c25a1d378ee0f2ba618163ed756e77ce75f97602993a
   languageName: node
   linkType: hard
 
@@ -17897,7 +17897,7 @@ __metadata:
     gatsby-remark-autolink-headers: 5.3.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 6.4.0
-    gatsby-source-filesystem: 4.2.0
+    gatsby-source-filesystem: 4.4.0
     gatsby-transformer-json: 4.4.0
     gatsby-transformer-sharp: 4.4.0
     graphql: 16.2.0
@@ -25883,17 +25883,17 @@ typescript@4.3.4:
   languageName: node
   linkType: hard
 
-"xstate@npm:^4.25.0":
-  version: 4.26.1
-  resolution: "xstate@npm:4.26.1"
-  checksum: b31a0f2033ec5c9d50f5e15682b3a0b8977f972a02ab33c22f29e3b3d931d07eda75e5c823377bd6a32b46d4467ec8eee4e711d2d2948330ae73bbd828e12920
-  languageName: node
-  linkType: hard
-
 "xstate@npm:^4.26.0":
   version: 4.26.0
   resolution: "xstate@npm:4.26.0"
   checksum: f27eedcd785b21a77bd040d035533d97bac803cf1a59962dcd839b52a3f628c40766c027a2d6c1ff7c3c4148151eb61c6c006009084c1d861ab311f60813918d
+  languageName: node
+  linkType: hard
+
+"xstate@npm:^4.26.1":
+  version: 4.26.1
+  resolution: "xstate@npm:4.26.1"
+  checksum: b31a0f2033ec5c9d50f5e15682b3a0b8977f972a02ab33c22f29e3b3d931d07eda75e5c823377bd6a32b46d4467ec8eee4e711d2d2948330ae73bbd828e12920
   languageName: node
   linkType: hard
 
