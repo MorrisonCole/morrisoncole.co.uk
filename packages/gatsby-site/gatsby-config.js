@@ -159,7 +159,7 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-material-ui",
+    "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-source-filesystem",
       options: {

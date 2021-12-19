@@ -9,7 +9,7 @@ type Props = {
 
 export default function WrapWithCommon({ children }: Props): JSX.Element {
   return (
-    <ThemeProvider>
+    <>
       <Helmet>
         <link
           rel="alternate"
@@ -18,8 +18,10 @@ export default function WrapWithCommon({ children }: Props): JSX.Element {
           href="/rss.xml"
         />
       </Helmet>
-      <CssBaseline />
-      <React.Fragment>{children}</React.Fragment>
-    </ThemeProvider>
+      <ThemeProvider>
+        <CssBaseline />
+        <>{children}</>
+      </ThemeProvider>
+    </>
   );
 }
