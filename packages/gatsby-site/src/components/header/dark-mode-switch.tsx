@@ -1,19 +1,19 @@
-import { Switch } from "@material-ui/core";
+import { Switch } from "@mui/material";
 import React from "react";
 import { ThemeContext } from "../../theme";
 
 export default function DarkModeSwitch(): JSX.Element {
-  const { paletteType, setPaletteType } = React.useContext(ThemeContext);
+  const { paletteMode, setPaletteMode } = React.useContext(ThemeContext);
 
   const handleDarkModeChange = (
     event: React.ChangeEvent<HTMLInputElement>
   ): void => {
-    setPaletteType(event.target.checked ? "light" : "dark");
+    setPaletteMode(event.target.checked ? "light" : "dark");
   };
 
   return (
     <Switch
-      checked={paletteType === "light"}
+      checked={paletteMode === "light"}
       onChange={handleDarkModeChange}
       inputProps={{ "aria-label": "Toggle Dark Mode" }}
     />

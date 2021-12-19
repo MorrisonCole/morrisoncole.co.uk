@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { Link as GatsbyLink } from "gatsby";
-import Link from "@material-ui/core/Link";
+import Link from "@mui/material/Link";
 
 interface LinkProps {
   href: string;

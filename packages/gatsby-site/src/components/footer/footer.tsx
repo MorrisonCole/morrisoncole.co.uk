@@ -1,5 +1,6 @@
-import { Typography, createStyles, Theme } from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { Typography, Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import classNames from "classnames";
 import React from "react";
 
@@ -17,7 +18,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     footerBackground: {
       backgroundColor:
-        theme.palette.type === "light"
+        theme.palette.mode === "light"
           ? theme.palette.grey[200]
           : theme.palette.grey[800],
       fontSize: "0.9em",

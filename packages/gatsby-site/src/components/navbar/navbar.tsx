@@ -1,7 +1,8 @@
-import { createStyles, Theme } from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import Tab from "@material-ui/core/Tab";
-import Tabs from "@material-ui/core/Tabs";
+import { Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Tab from "@mui/material/Tab";
+import Tabs from "@mui/material/Tabs";
 import { Link } from "gatsby";
 import React from "react";
 

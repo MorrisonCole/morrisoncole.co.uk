@@ -1,12 +1,7 @@
-import {
-  createStyles,
-  Theme,
-  Typography,
-  WithStyles,
-  withStyles,
-  Divider,
-  Link,
-} from "@material-ui/core";
+import { Theme, Typography, Divider, Link } from "@mui/material";
+import { WithStyles, StyleRules } from '@mui/styles';
+import createStyles from '@mui/styles/createStyles';
+import withStyles from '@mui/styles/withStyles';
 import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
@@ -14,7 +9,6 @@ import {
   BlogPostBySlugQuery,
   SitePageContext,
 } from "../../types/graphql-types";
-import { StyleRules } from "@material-ui/core/styles/withStyles";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
 import MDXLayout from "../components/blog/mdx-layout";

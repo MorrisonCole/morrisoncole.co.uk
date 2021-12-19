@@ -4,7 +4,9 @@ import vsDark from "prism-react-renderer/themes/vsDark";
 import gitHub from "prism-react-renderer/themes/github";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { ThemeContext } from "../../theme";
-import { createStyles, makeStyles, Paper, Theme } from "@material-ui/core";
+import { Paper, Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import classNames from "classnames";
 
 const useStyles = makeStyles((theme: Theme) =>

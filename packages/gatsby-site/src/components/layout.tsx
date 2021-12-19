@@ -1,4 +1,6 @@
-import { createStyles, makeStyles, Theme } from "@material-ui/core";
+import { Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import React from "react";
 import Footer from "./footer/footer";
 import Header from "./header/header";
@@ -18,14 +20,14 @@ const useStyles = makeStyles((theme: Theme) =>
     `,
     },
     header: {
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down('sm')]: {
         paddingLeft: theme.spacing(1),
         paddingRight: theme.spacing(1),
       },
     },
     content: {
       gridArea: "content",
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down('sm')]: {
         paddingLeft: theme.spacing(1),
         paddingRight: theme.spacing(1),
       },

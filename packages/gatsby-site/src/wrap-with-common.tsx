@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import CssBaseline from "@mui/material/CssBaseline";
 import { ThemeProvider } from "./theme";
 import { Helmet } from "react-helmet";
 

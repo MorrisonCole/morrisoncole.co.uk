@@ -1,17 +1,24 @@
-import { PaletteType, useMediaQuery } from "@material-ui/core";
+import { useMediaQuery, PaletteMode } from "@mui/material";
 import {
   ThemeProvider as MuiThemeProvider,
+  Theme,
+  StyledEngineProvider,
   createTheme,
-} from "@material-ui/core/styles";
+} from "@mui/material/styles";
 import React from "react";
+
+declare module "@mui/styles/defaultTheme" {
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  interface DefaultTheme extends Theme {}
+}
 
 interface Props {
   children: JSX.Element[];
 }
 
 interface ThemeContext {
-  paletteType: PaletteType;
-  setPaletteType: (paletteType: PaletteType) => void;
+  paletteMode: PaletteMode;
+  setPaletteMode: (paletteMode: PaletteMode) => void;
 }
 
 export const ThemeContext = React.createContext<ThemeContext>(undefined);
@@ -20,18 +27,18 @@ export function ThemeProvider({ children }: Props): JSX.Element {
   const prefersDarkMode: boolean = useMediaQuery(
     "(prefers-color-scheme: dark)"
   );
-  const [paletteType, setPaletteType] = React.useState<PaletteType>("light");
+  const [paletteMode, setPaletteMode] = React.useState<PaletteMode>("light");
 
   React.useEffect(() => {
-    setPaletteType(prefersDarkMode ? "dark" : "light");
+    setPaletteMode(prefersDarkMode ? "dark" : "light");
   }, [prefersDarkMode]);
 
   const contextValue = React.useMemo(() => {
     return {
-      paletteType,
-      setPaletteType,
+      paletteMode,
+      setPaletteMode,
     };
-  }, [paletteType, setPaletteType]);
+  }, [paletteMode, setPaletteMode]);
 
   const defaultTheme = createTheme();
   const theme = React.useMemo(
@@ -51,15 +58,15 @@ export function ThemeProvider({ children }: Props): JSX.Element {
           },
         },
         palette: {
-          type: paletteType,
+          mode: paletteMode,
           primary: {
-            main: paletteType === "dark" ? "#ff7043" : "#0070f2",
+            main: paletteMode === "dark" ? "#ff7043" : "#0070f2",
           },
           secondary: {
-            main: paletteType === "dark" ? "#0070f2" : "#ff7043",
+            main: paletteMode === "dark" ? "#0070f2" : "#ff7043",
           },
         },
-        overrides: {
+        components: {
           MuiTimelineItem: {
             missingOppositeContent: {
               [defaultTheme.breakpoints.only("xs")]: {
@@ -73,12 +80,14 @@ export function ThemeProvider({ children }: Props): JSX.Element {
           },
         },
       }),
-    [paletteType]
+    [paletteMode]
   );
 
   return (
     <ThemeContext.Provider value={contextValue}>
-      <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
+      <StyledEngineProvider injectFirst>
+        <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
+      </StyledEngineProvider>
     </ThemeContext.Provider>
   );
 }

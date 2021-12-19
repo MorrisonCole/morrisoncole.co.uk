@@ -1,12 +1,7 @@
-import {
-  Button,
-  createStyles,
-  makeStyles,
-  Paper,
-  Theme,
-  Typography,
-} from "@material-ui/core";
-import { GetApp } from "@material-ui/icons";
+import { Button, Paper, Theme, Typography } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import { GetApp } from "@mui/icons-material";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
@@ -21,7 +16,7 @@ const styles = makeStyles((theme: Theme) =>
     timelineGrid: {
       display: "grid",
       gridTemplateColumns: "1fr 1.4fr 1fr",
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down('sm')]: {
         gridTemplateColumns: "1fr 6fr 1fr",
       },
       gridTemplateRows: "auto auto",

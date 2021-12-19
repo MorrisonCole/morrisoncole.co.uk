@@ -1,6 +1,7 @@
-import { createStyles, Theme } from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import SvgIcon, { SvgIconProps } from "@material-ui/core/SvgIcon";
+import { Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 import React from "react";
 import SocialIcon from "./social-icon";
 
@@ -8,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     icon: {
       fontSize: "3.5rem",
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: "2.5rem",
       },
       color: "#1da1f2",
