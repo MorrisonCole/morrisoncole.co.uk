@@ -1,21 +1,6 @@
-import { Theme } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 import React from "react";
 import SocialIcon from "./social-icon";
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    icon: {
-      fontSize: "3.5rem",
-      [theme.breakpoints.down('md')]: {
-        fontSize: "2.5rem",
-      },
-      color: "#1da1f2",
-    },
-  })
-);
 
 function TwitterIcon(props: SvgIconProps): JSX.Element {
   return (
@@ -26,13 +11,21 @@ function TwitterIcon(props: SvgIconProps): JSX.Element {
 }
 
 export default function TwitterSocialIcon(): JSX.Element {
-  const classes = useStyles();
-
   return (
     <SocialIcon
       ariaLabel="Twitter"
       href="https://twitter.com/morrisoncole"
-      icon={<TwitterIcon className={classes.icon} />}
+      icon={
+        <TwitterIcon
+          sx={(theme) => ({
+            fontSize: "3.5rem",
+            [theme.breakpoints.down("md")]: {
+              fontSize: "2.5rem",
+            },
+            color: "#1da1f2",
+          })}
+        />
+      }
     />
   );
 }

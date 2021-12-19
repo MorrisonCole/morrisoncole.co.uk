@@ -1,7 +1,4 @@
-import { Theme, Typography, Divider, Link } from "@mui/material";
-import { WithStyles, StyleRules } from '@mui/styles';
-import createStyles from '@mui/styles/createStyles';
-import withStyles from '@mui/styles/withStyles';
+import { Typography, Divider, Link, Box } from "@mui/material";
 import { graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
@@ -16,31 +13,13 @@ import { WindowLocation } from "@reach/router";
 import readingTime from "reading-time";
 import { getSrc } from "gatsby-plugin-image";
 
-const styles = ({ spacing }: Theme): StyleRules =>
-  createStyles({
-    blogPostContainer: {
-      marginTop: spacing(6),
-    },
-    blogContent: {
-      display: "grid",
-      gridTemplateColumns: "3fr 1fr min(85ch, 100%) 1fr 3fr",
-      "& *": {
-        gridColumn: "3 / 4",
-      },
-    },
-    breadcrumbContainer: {
-      paddingBottom: spacing(2),
-    },
-  });
-
-interface BlogPostTemplateProps extends WithStyles<typeof styles> {
+interface BlogPostTemplateProps {
   location: WindowLocation;
   data: BlogPostBySlugQuery;
   pageContext: SitePageContext;
 }
 
 function BlogPostTemplate({
-  classes,
   location,
   data,
   pageContext,
@@ -49,7 +28,11 @@ function BlogPostTemplate({
   const { previous, next } = pageContext;
 
   return (
-    <div className={classes.blogPostContainer}>
+    <Box
+      sx={{
+        marginTop: ({ spacing }) => spacing(6),
+      }}
+    >
       <SEO
         location={location}
         title={post.exports?.meta.title}
@@ -61,11 +44,15 @@ function BlogPostTemplate({
         article
       />
 
-      <div className={classes.breadcrumbContainer}>
+      <Box
+        sx={{
+          paddingBottom: ({ spacing }) => spacing(2),
+        }}
+      >
         <SimpleBreadcrumbs
           location={post?.exports?.meta?.category ?? "Unknown"}
         />
-      </div>
+      </Box>
 
       <article>
         <header>
@@ -77,10 +64,20 @@ function BlogPostTemplate({
             {readingTime(post.body).text}
           </Typography>
         </header>
-        <section className={classes.blogContent}>
-          <MDXLayout>
-            <MDXRenderer data={data}>{post.body}</MDXRenderer>
-          </MDXLayout>
+        <section>
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "3fr 1fr min(85ch, 100%) 1fr 3fr",
+              "& *": {
+                gridColumn: "3 / 4",
+              },
+            }}
+          >
+            <MDXLayout>
+              <MDXRenderer data={data}>{post.body}</MDXRenderer>
+            </MDXLayout>
+          </Box>
         </section>
         <Divider />
       </article>
@@ -119,11 +116,11 @@ function BlogPostTemplate({
           </li>
         </ul>
       </nav>
-    </div>
+    </Box>
   );
 }
 
-export default withStyles(styles)(BlogPostTemplate);
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
