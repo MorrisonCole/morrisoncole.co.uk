@@ -5,7 +5,7 @@ import {
   StyledEngineProvider,
   createTheme,
 } from "@mui/material/styles";
-import React from "react";
+import React, { createContext, useEffect, useMemo, useState } from "react";
 
 declare module "@mui/styles/defaultTheme" {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -21,19 +21,19 @@ interface ThemeContext {
   setPaletteMode: (paletteMode: PaletteMode) => void;
 }
 
-export const ThemeContext = React.createContext<ThemeContext>(undefined);
+export const ThemeContext = createContext<ThemeContext>(undefined);
 
 export function ThemeProvider({ children }: Props): JSX.Element {
   const prefersDarkMode: boolean = useMediaQuery(
     "(prefers-color-scheme: dark)"
   );
-  const [paletteMode, setPaletteMode] = React.useState<PaletteMode>("light");
+  const [paletteMode, setPaletteMode] = useState<PaletteMode>("light");
 
-  React.useEffect(() => {
+  useEffect(() => {
     setPaletteMode(prefersDarkMode ? "dark" : "light");
   }, [prefersDarkMode]);
 
-  const contextValue = React.useMemo(() => {
+  const contextValue = useMemo(() => {
     return {
       paletteMode,
       setPaletteMode,
@@ -41,7 +41,7 @@ export function ThemeProvider({ children }: Props): JSX.Element {
   }, [paletteMode, setPaletteMode]);
 
   const defaultTheme = createTheme();
-  const theme = React.useMemo(
+  const theme = useMemo(
     () =>
       createTheme({
         typography: {

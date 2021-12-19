@@ -1,9 +1,9 @@
 import { Switch } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../../theme";
 
 export default function DarkModeSwitch(): JSX.Element {
-  const { paletteMode, setPaletteMode } = React.useContext(ThemeContext);
+  const { paletteMode, setPaletteMode } = useContext(ThemeContext);
 
   const handleDarkModeChange = (
     event: React.ChangeEvent<HTMLInputElement>
