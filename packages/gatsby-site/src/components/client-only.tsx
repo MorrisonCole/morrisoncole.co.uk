@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 
 export default function ClientOnly({
   children,
@@ -6,9 +6,9 @@ export default function ClientOnly({
 }: {
   children: JSX.Element;
 }): ReactNode {
-  const [hasMounted, setHasMounted] = React.useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setHasMounted(true);
   }, []);
 
@@ -20,9 +20,9 @@ export default function ClientOnly({
 }
 
 export function useHasMounted(): boolean {
-  const [hasMounted, setHasMounted] = React.useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setHasMounted(true);
   }, []);
 
