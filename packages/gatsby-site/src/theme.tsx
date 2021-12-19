@@ -1,7 +1,6 @@
 import { useMediaQuery, PaletteMode } from "@mui/material";
 import {
   ThemeProvider as MuiThemeProvider,
-  StyledEngineProvider,
   createTheme,
 } from "@mui/material/styles";
 import React, { createContext, useEffect, useMemo, useState } from "react";
@@ -79,9 +78,7 @@ export function ThemeProvider({ children }: Props): JSX.Element {
 
   return (
     <ThemeContext.Provider value={contextValue}>
-      <StyledEngineProvider injectFirst>
-        <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
-      </StyledEngineProvider>
+      <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>
     </ThemeContext.Provider>
   );
 }
