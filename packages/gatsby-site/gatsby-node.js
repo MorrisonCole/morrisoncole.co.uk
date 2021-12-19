@@ -62,7 +62,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const typeDefs = `
+  const { createTypes, printTypeDefinitions } = actions;
+
+  createTypes(`
     type Site implements Node {
       siteMetadata: SiteSiteMetadata!
     }
@@ -85,6 +87,27 @@ exports.createSchemaCustomization = ({ actions }) => {
       _2019: [String!]!
       _2020: [String!]!
     }
-  `;
-  actions.createTypes(typeDefs);
+
+    type Mdx implements Node {
+      exports: MdxExports
+    }
+
+    type MdxExports @derivedTypes {
+      meta: MdxExportsMeta
+    }
+    
+    type MdxExportsMeta @dontInfer {
+      title: String!
+      date: Date! @dateformat
+      updated: Date @dateformat
+      description: String!
+      category: String
+      image: File! @fileByRelativePath
+      imageAlt: String!
+      linkText: String
+      draft: Boolean!
+    }
+  `);
+
+  // printTypeDefinitions({ path: "./typeDefs.txt" });
 };

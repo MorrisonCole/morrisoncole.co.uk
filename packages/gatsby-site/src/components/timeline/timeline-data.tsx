@@ -1,6 +1,6 @@
-import { ChildFriendly, Home, School, Work } from "@material-ui/icons/";
+import { ChildFriendly, Home, School, Work } from "@mui/icons-material/";
 import React from "react";
-import { CSSProperties } from "@material-ui/core/styles/withStyles";
+import { CSSProperties } from '@mui/material/styles';
 import { ImageSharp, ImageSharpFluid } from "../../../types/graphql-types";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 

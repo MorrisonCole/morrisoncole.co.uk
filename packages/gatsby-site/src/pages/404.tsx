@@ -1,13 +1,9 @@
 import React from "react";
 import SEO from "../components/seo";
-import {
-  Paper,
-  Typography,
-  makeStyles,
-  Theme,
-  createStyles,
-} from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert";
+import { Paper, Typography, Theme } from "@mui/material";
+import makeStyles from '@mui/styles/makeStyles';
+import createStyles from '@mui/styles/createStyles';
+import Alert from '@mui/material/Alert';
 import { PageProps } from "gatsby";
 
 const styles = makeStyles((theme: Theme) =>
