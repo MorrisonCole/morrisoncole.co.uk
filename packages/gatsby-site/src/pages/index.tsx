@@ -1,6 +1,4 @@
-import { Button, Paper, Theme, Typography } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import { Button, Paper, Typography } from "@mui/material";
 import { GetApp } from "@mui/icons-material";
 import { graphql, PageProps } from "gatsby";
 import React from "react";
@@ -10,42 +8,7 @@ import { life, TimelineEntryData } from "../components/timeline/timeline-data";
 import { TimelineIndexQuery } from "../../types/graphql-types";
 import CustomizedTimeline from "../components/timeline/timeline";
 import { getImage } from "gatsby-plugin-image";
-
-const styles = makeStyles((theme: Theme) =>
-  createStyles({
-    timelineGrid: {
-      display: "grid",
-      gridTemplateColumns: "1fr 1.4fr 1fr",
-      [theme.breakpoints.down('sm')]: {
-        gridTemplateColumns: "1fr 6fr 1fr",
-      },
-      gridTemplateRows: "auto auto",
-      justifyContent: "center",
-    },
-    introContainer: {
-      gridColumn: "2 / 3",
-      gridRow: 1,
-    },
-    timeline: {
-      gridRow: 2,
-      gridColumn: "1 / 4",
-    },
-    introTextPaper: {
-      display: "grid",
-      justifyItems: "center",
-      padding: theme.spacing(2.5),
-    },
-    introTextBody: {
-      marginTop: theme.spacing(1),
-    },
-    rightIcon: {
-      marginLeft: theme.spacing(1),
-    },
-    button: {
-      marginTop: theme.spacing(1),
-    },
-  })
-);
+import { Box } from "@mui/system";
 
 interface TimelineIndexProps {
   data: TimelineIndexQuery;
@@ -55,26 +18,47 @@ export default function TimelineIndex({
   data,
   location,
 }: TimelineIndexProps & PageProps): JSX.Element {
-  const classes = styles();
-
   const imageFiles = data.allFile.edges.map((edge) => edge.node);
   const lifeEvents: TimelineEntryData[] = life(
     new Map(imageFiles.map((i) => [i.name, getImage(i)]))
   );
 
   return (
-    <React.Fragment>
+    <>
       <SEO title="Timeline" location={location} />
-      <div className={classes.timelineGrid}>
-        <div className={classes.introContainer}>
-          <Paper className={classes.introTextPaper}>
+      <Box
+        sx={(theme) => ({
+          display: "grid",
+          gridTemplateColumns: "1fr 1.4fr 1fr",
+          [theme.breakpoints.down("sm")]: {
+            gridTemplateColumns: "1fr 6fr 1fr",
+          },
+          gridTemplateRows: "auto auto",
+          justifyContent: "center",
+        })}
+      >
+        <Box
+          sx={{
+            gridColumn: "2 / 3",
+            gridRow: 1,
+          }}
+        >
+          <Paper
+            sx={{
+              display: "grid",
+              justifyItems: "center",
+              padding: ({ spacing }) => spacing(2.5),
+            }}
+          >
             <Typography variant="h5" align="center">
               Hello! 👋
             </Typography>
             <Typography
               variant="body2"
               align="center"
-              className={classes.introTextBody}
+              sx={{
+                marginTop: ({ spacing }) => spacing(1),
+              }}
             >
               I&apos;m a software engineer, product manager, and (occasional)
               musician working in Tokyo.
@@ -83,21 +67,32 @@ export default function TimelineIndex({
               variant="contained"
               color="primary"
               size="medium"
-              className={classes.button}
               href={cvPdf}
               download="cv-morrison-cole.pdf"
+              sx={{
+                marginTop: ({ spacing }) => spacing(1),
+              }}
             >
               CV (.pdf)
-              <GetApp className={classes.rightIcon} />
+              <GetApp
+                sx={{
+                  marginLeft: ({ spacing }) => spacing(1),
+                }}
+              />
             </Button>
           </Paper>
-        </div>
+        </Box>
 
-        <div className={classes.timeline}>
+        <Box
+          sx={{
+            gridRow: 2,
+            gridColumn: "1 / 4",
+          }}
+        >
           <CustomizedTimeline timelineEntries={lifeEvents} />
-        </div>
-      </div>
-    </React.Fragment>
+        </Box>
+      </Box>
+    </>
   );
 }
 

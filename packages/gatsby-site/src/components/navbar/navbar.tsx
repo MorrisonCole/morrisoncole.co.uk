@@ -22,8 +22,7 @@ export default function NavBar({ location }: NavBarProps): JSX.Element {
         onChange={() => {}}
         indicatorColor="primary"
         textColor="primary"
-        variant="scrollable"
-        scrollButtons="auto"
+        variant="fullWidth"
       >
         <Tab label="Timeline" value="" component={Link} to="/" />
         <Tab label="Blog" value="blog" component={Link} to="/blog/" />

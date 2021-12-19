@@ -1,31 +1,10 @@
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
-import { Typography, Divider, Paper, Theme } from "@mui/material";
-import { StyleRules } from "@mui/styles";
-import createStyles from "@mui/styles/createStyles";
-import withStyles from "@mui/styles/withStyles";
+import { Typography, Divider, Paper, Box } from "@mui/material";
 import CustomLink from "./link";
 import { preToCodeBlock } from "mdx-utils";
 import { Code } from "./code";
 import "./mdx-layout.css";
-
-const styles = ({ spacing }: Theme): StyleRules =>
-  createStyles({
-    blockquoteContainer: {
-      padding: spacing(3),
-      gridColumn: "3 / 4",
-    },
-    blockquote: {
-      padding: spacing(3),
-    },
-    divider: {
-      marginTop: spacing(2),
-      marginBottom: spacing(2),
-    },
-    ol: {
-      marginBottom: spacing(2),
-    },
-  });
 
 interface Props {
   children: JSX.Element;
@@ -84,20 +63,50 @@ export default function MDXLayout({ children }: Props): JSX.Element {
           />
         ),
         p: (props): JSX.Element => <Typography {...props} paragraph={true} />,
-        ul: withStyles(styles)(({ classes, ...props }) => (
-          <Typography className={classes.ol} {...props} component="ul" />
-        )),
-        ol: withStyles(styles)(({ classes, ...props }) => (
-          <Typography className={classes.ol} {...props} component="ol" />
-        )),
-        hr: withStyles(styles)(({ classes, ...props }) => (
-          <Divider className={classes.divider} {...props} variant="middle" />
-        )),
-        blockquote: withStyles(styles)(({ classes, ...props }) => (
-          <div className={classes.blockquoteContainer}>
-            <Paper className={classes.blockquote} elevation={3} {...props} />
-          </div>
-        )),
+        ul: ({ ...props }) => (
+          <Typography
+            {...props}
+            component="ul"
+            sx={{
+              marginBottom: ({ spacing }) => spacing(2),
+            }}
+          />
+        ),
+        ol: ({ ...props }) => (
+          <Typography
+            {...props}
+            component="ol"
+            sx={{
+              marginBottom: ({ spacing }) => spacing(2),
+            }}
+          />
+        ),
+        hr: ({ ...props }) => (
+          <Divider
+            {...props}
+            variant="middle"
+            sx={{
+              marginTop: ({ spacing }) => spacing(2),
+              marginBottom: ({ spacing }) => spacing(2),
+            }}
+          />
+        ),
+        blockquote: ({ ...props }) => (
+          <Box
+            sx={{
+              padding: ({ spacing }) => spacing(3),
+              gridColumn: "3 / 4",
+            }}
+          >
+            <Paper
+              {...props}
+              elevation={3}
+              sx={{
+                padding: ({ spacing }) => spacing(3),
+              }}
+            />
+          </Box>
+        ),
         a: (props): JSX.Element => <CustomLink {...props}></CustomLink>,
         pre: (preProps) => {
           const props = preToCodeBlock(preProps);

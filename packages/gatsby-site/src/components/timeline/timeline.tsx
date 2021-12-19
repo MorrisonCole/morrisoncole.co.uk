@@ -1,12 +1,4 @@
-import {
-  Breakpoint,
-  Theme,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
-import createStyles from "@mui/styles/createStyles";
-import makeStyles from "@mui/styles/makeStyles";
+import { Breakpoint, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Star } from "@mui/icons-material";
 import React from "react";
 import {
@@ -21,18 +13,6 @@ import {
 import TimelineImageCardRaw from "./timeline-image-card";
 import { TimelineEntryData } from "./timeline-data";
 
-const styles = makeStyles((theme: Theme) =>
-  createStyles({
-    timeline: {
-      padding: 0,
-    },
-    timelineSeparator: {
-      marginLeft: theme.spacing(2),
-      marginRight: theme.spacing(2),
-    },
-  })
-);
-
 export default CustomizedTimeline;
 
 interface Props {
@@ -45,15 +25,10 @@ function useIsWidthUp(breakpoint: number | Breakpoint) {
 }
 
 function CustomizedTimeline({ timelineEntries }: Props): JSX.Element {
-  const classes = styles();
-
   const isSmUp = useIsWidthUp("sm");
 
   const listItems = timelineEntries.map((item) => (
-    <TimelineItem
-      key={item.title + item.subtitle1}
-      className={classes.missingOppositeContent}
-    >
+    <TimelineItem key={item.title + item.subtitle1}>
       {isSmUp && (
         <TimelineOppositeContent>
           <Typography variant="h5" color="textSecondary">
@@ -61,7 +36,12 @@ function CustomizedTimeline({ timelineEntries }: Props): JSX.Element {
           </Typography>
         </TimelineOppositeContent>
       )}
-      <TimelineSeparator className={classes.timelineSeparator}>
+      <TimelineSeparator
+        sx={{
+          marginLeft: ({ spacing }) => spacing(2),
+          marginRight: ({ spacing }) => spacing(2),
+        }}
+      >
         <TimelineDot color="primary">{item.icon.icon}</TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
@@ -79,13 +59,20 @@ function CustomizedTimeline({ timelineEntries }: Props): JSX.Element {
 
   return (
     <Timeline
-      className={classes.timeline}
+      sx={{
+        padding: 0,
+      }}
       position={isSmUp ? "alternate" : "left"}
     >
       {listItems}
 
       <TimelineItem>
-        <TimelineSeparator className={classes.timelineSeparator}>
+        <TimelineSeparator
+          sx={{
+            marginLeft: ({ spacing }) => spacing(2),
+            marginRight: ({ spacing }) => spacing(2),
+          }}
+        >
           <TimelineDot color="secondary">
             <Star />
           </TimelineDot>

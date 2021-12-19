@@ -5,7 +5,7 @@ import gitHub from "prism-react-renderer/themes/github";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { ThemeContext } from "../../theme";
 import { Paper } from "@mui/material";
-import { useTheme } from "@mui/styles";
+import { useTheme } from "@mui/system";
 
 interface Props {
   codeString: string;

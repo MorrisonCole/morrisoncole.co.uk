@@ -5750,11 +5750,6 @@ export type BioQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type BioQuery = { __typename?: 'Query', avatar?: { __typename?: 'File', childImageSharp?: { __typename?: 'ImageSharp', gatsbyImageData: any } | null | undefined } | null | undefined };
 
-export type HeaderQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type HeaderQuery = { __typename?: 'Query', avatar?: { __typename?: 'File', childImageSharp?: { __typename?: 'ImageSharp', gatsbyImageData: any } | null | undefined } | null | undefined };
-
 export type SiteMetadataQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -5763,7 +5758,7 @@ export type SiteMetadataQuery = { __typename?: 'Query', site?: { __typename?: 'S
 export type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BlogIndexQuery = { __typename?: 'Query', allMdx: { __typename?: 'MdxConnection', edges: Array<{ __typename?: 'MdxEdge', node: { __typename?: 'Mdx', fields?: { __typename?: 'MdxFields', slug?: string | null | undefined } | null | undefined, exports?: { __typename?: 'MdxExports', meta?: { __typename?: 'MdxExportsMeta', draft: boolean, title: string, date: any, description: string, category?: string | null | undefined, linkText?: string | null | undefined, image: { __typename?: 'File', childImageSharp?: { __typename?: 'ImageSharp', gatsbyImageData: any } | null | undefined } } | null | undefined } | null | undefined } }> } };
+export type BlogIndexQuery = { __typename?: 'Query', allMdx: { __typename?: 'MdxConnection', edges: Array<{ __typename?: 'MdxEdge', node: { __typename?: 'Mdx', excerpt: string, fields?: { __typename?: 'MdxFields', slug?: string | null | undefined } | null | undefined, exports?: { __typename?: 'MdxExports', meta?: { __typename?: 'MdxExportsMeta', draft: boolean, title: string, date: any, description: string, category?: string | null | undefined, linkText?: string | null | undefined, image: { __typename?: 'File', childImageSharp?: { __typename?: 'ImageSharp', gatsbyImageData: any } | null | undefined } } | null | undefined } | null | undefined } }> } };
 
 export type TimelineIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
