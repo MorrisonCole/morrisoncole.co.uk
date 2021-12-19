@@ -1,10 +1,9 @@
-/* eslint-disable react/display-name */
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 import { Typography, Divider, Paper, Theme } from "@mui/material";
-import { StyleRules } from '@mui/styles';
-import createStyles from '@mui/styles/createStyles';
-import withStyles from '@mui/styles/withStyles';
+import { StyleRules } from "@mui/styles";
+import createStyles from "@mui/styles/createStyles";
+import withStyles from "@mui/styles/withStyles";
 import CustomLink from "./link";
 import { preToCodeBlock } from "mdx-utils";
 import { Code } from "./code";

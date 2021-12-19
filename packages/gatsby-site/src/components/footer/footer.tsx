@@ -1,57 +1,38 @@
-import { Typography, Theme } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
-import classNames from "classnames";
+import { Typography, Box } from "@mui/material";
 import React from "react";
 
 function currentYear(): number {
   return new Date().getFullYear();
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    footer: {
-      gridArea: "footer",
-    },
-    container: {
-      padding: 0,
-    },
-    footerBackground: {
-      backgroundColor:
-        theme.palette.mode === "light"
-          ? theme.palette.grey[200]
-          : theme.palette.grey[800],
-      fontSize: "0.9em",
-      marginTop: theme.spacing(4),
-      padding: theme.spacing(4, 2),
-    },
-    footerText: {
-      paddingLeft: "5%",
-    },
-    fade: {
-      opacity: 0.6,
-    },
-  })
-);
-
 export default function Footer(): JSX.Element {
-  const classes = useStyles();
-
   return (
-    <footer className={classes.footer}>
-      <div className={classes.container}>
-        <div className={classes.footerBackground}>
-          <Typography variant="body2" className={classes.footerText}>
-            Handcrafted with TypeScript, React, Material-UI, and Gatsby ♥
-          </Typography>
-          <Typography
-            variant="caption"
-            className={classNames(classes.footerText, classes.fade)}
+    <Box sx={{ gridArea: "footer" }}>
+      <footer>
+        <Box sx={{ padding: 0 }}>
+          <Box
+            sx={{
+              backgroundColor: ({ palette }) =>
+                palette.mode === "light"
+                  ? palette.grey[200]
+                  : palette.grey[800],
+              fontSize: "0.9em",
+              marginTop: (theme) => theme.spacing(4),
+              padding: (theme) => theme.spacing(4, 2),
+            }}
           >
-            &copy; Morrison Cole {currentYear()}
-          </Typography>
-        </div>
-      </div>
-    </footer>
+            <Typography variant="body2" sx={{ paddingLeft: "5%" }}>
+              Handcrafted with TypeScript, React, Material-UI, and Gatsby ♥
+            </Typography>
+            <Typography
+              variant="caption"
+              sx={{ paddingLeft: "5%", opacity: 0.6 }}
+            >
+              &copy; Morrison Cole {currentYear()}
+            </Typography>
+          </Box>
+        </Box>
+      </footer>
+    </Box>
   );
 }

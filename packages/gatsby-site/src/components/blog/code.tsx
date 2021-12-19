@@ -5,19 +5,12 @@ import gitHub from "prism-react-renderer/themes/github";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { ThemeContext } from "../../theme";
 import { Paper, Theme } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import createStyles from "@mui/styles/createStyles";
+import makeStyles from "@mui/styles/makeStyles";
 import classNames from "classnames";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    codePaper: {
-      width: "100%",
-      justifySelf: "center",
-      gridColumn: "2 / 5 !important",
-      marginBottom: theme.spacing(2),
-      backgroundColor: "transparent",
-    },
     code: {
       padding: theme.spacing(2),
       fontSize: "16px",
@@ -36,7 +29,7 @@ interface Props {
 
 export function Code({ codeString, language, ...props }: Props): JSX.Element {
   const classes = useStyles();
-  const { paletteType } = React.useContext(ThemeContext);
+  const { paletteMode } = React.useContext(ThemeContext);
 
   if (props["react-live"]) {
     return (
@@ -48,12 +41,21 @@ export function Code({ codeString, language, ...props }: Props): JSX.Element {
     );
   } else {
     return (
-      <Paper className={classes.codePaper} elevation={3}>
+      <Paper
+        sx={{
+          width: "100%",
+          justifySelf: "center",
+          gridColumn: "2 / 5 !important",
+          marginBottom: (theme) => theme.spacing(2),
+          backgroundColor: "transparent",
+        }}
+        elevation={3}
+      >
         <Highlight
           {...defaultProps}
           code={codeString}
           language={language}
-          theme={paletteType === "dark" ? vsDark : gitHub}
+          theme={paletteMode === "dark" ? vsDark : gitHub}
         >
           {({ className, style, tokens, getLineProps, getTokenProps }) => (
             <pre className={classNames(className, classes.code)} style={style}>
