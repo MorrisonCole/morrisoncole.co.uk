@@ -1,6 +1,7 @@
-import { createStyles, Theme } from "@material-ui/core";
-import IconButton from "@material-ui/core/IconButton";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import IconButton from "@mui/material/IconButton";
+import makeStyles from '@mui/styles/makeStyles';
 import React from "react";
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -32,7 +33,7 @@ export default function SocialIcon({
       target="_blank"
       rel="noopener"
       className={classes.iconButton}
-    >
+      size="large">
       {icon}
     </IconButton>
   );

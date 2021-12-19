@@ -1,5 +1,6 @@
-import { createStyles, Theme } from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import React from "react";
@@ -13,7 +14,7 @@ import { HeaderQuery } from "../../../types/graphql-types";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     header: {
-      [theme.breakpoints.down("xs")]: {
+      [theme.breakpoints.down('sm')]: {
         paddingLeft: theme.spacing(1),
         paddingRight: theme.spacing(1),
       },

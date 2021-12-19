@@ -1,5 +1,6 @@
-import { createStyles, lighten, Theme } from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
+import { lighten, Theme } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
 import React from "react";
 
 const lightenCoefficient = 0.15;
@@ -14,25 +15,25 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     two: {
       fill:
-        theme.palette.type === "light"
+        theme.palette.mode === "light"
           ? "#6580a4"
           : lighten("#6580a4", lightenCoefficient),
     },
     three: {
       fill:
-        theme.palette.type === "light"
+        theme.palette.mode === "light"
           ? "#a8a56b"
           : lighten("#a8a56b", lightenCoefficient),
     },
     four: {
       fill:
-        theme.palette.type === "light"
+        theme.palette.mode === "light"
           ? "#404049"
           : lighten("#404049", lightenCoefficient),
     },
     five: {
       fill:
-        theme.palette.type === "light"
+        theme.palette.mode === "light"
           ? "#546273"
           : lighten("#546273", lightenCoefficient),
     },

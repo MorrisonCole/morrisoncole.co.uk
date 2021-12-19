@@ -160,7 +160,6 @@ module.exports = {
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-material-ui",
-    "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -248,7 +247,7 @@ module.exports = {
         name: "Morrison Cole Blog",
         short_name: "MorrisonCole",
         start_url: "/",
-        background_color: "#ffffff",
+        background_color: "#303030",
         theme_color: "#663399",
         display: "minimal-ui",
         icon: "./content/assets/favicon.ico",

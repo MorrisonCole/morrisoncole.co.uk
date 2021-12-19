@@ -1,13 +1,13 @@
 import {
-  createStyles,
-  isWidthUp,
-  makeStyles,
+  Breakpoint,
   Theme,
   Typography,
-  WithWidth,
-  withWidth,
-} from "@material-ui/core";
-import { Star } from "@material-ui/icons";
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
+import createStyles from "@mui/styles/createStyles";
+import makeStyles from "@mui/styles/makeStyles";
+import { Star } from "@mui/icons-material";
 import React from "react";
 import {
   Timeline,
@@ -17,7 +17,7 @@ import {
   TimelineItem,
   TimelineOppositeContent,
   TimelineSeparator,
-} from "@material-ui/lab";
+} from "@mui/lab";
 import TimelineImageCardRaw from "./timeline-image-card";
 import { TimelineEntryData } from "./timeline-data";
 
@@ -33,24 +33,28 @@ const styles = makeStyles((theme: Theme) =>
   })
 );
 
-export default withWidth()(CustomizedTimeline);
+export default CustomizedTimeline;
 
 interface Props {
   timelineEntries: TimelineEntryData[];
 }
 
-function CustomizedTimeline({
-  timelineEntries,
-  width,
-}: Props | WithWidth): JSX.Element {
+function useIsWidthUp(breakpoint: number | Breakpoint) {
+  const theme = useTheme();
+  return useMediaQuery(theme.breakpoints.up(breakpoint));
+}
+
+function CustomizedTimeline({ timelineEntries }: Props): JSX.Element {
   const classes = styles();
+
+  const isSmUp = useIsWidthUp("sm");
 
   const listItems = timelineEntries.map((item) => (
     <TimelineItem
       key={item.title + item.subtitle1}
       className={classes.missingOppositeContent}
     >
-      {isWidthUp("sm", width) && (
+      {isSmUp && (
         <TimelineOppositeContent>
           <Typography variant="h5" color="textSecondary">
             {item.date}
@@ -76,7 +80,7 @@ function CustomizedTimeline({
   return (
     <Timeline
       className={classes.timeline}
-      align={isWidthUp("sm", width) ? "alternate" : "left"}
+      position={isSmUp ? "alternate" : "left"}
     >
       {listItems}
 

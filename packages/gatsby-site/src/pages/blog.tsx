@@ -1,13 +1,7 @@
-import {
-  createStyles,
-  Theme,
-  CardActionArea,
-  Card,
-  CardContent,
-  CardMedia,
-} from "@material-ui/core";
-import makeStyles from "@material-ui/core/styles/makeStyles";
-import Typography from "@material-ui/core/Typography";
+import { Theme, CardActionArea, Card, CardContent, CardMedia } from "@mui/material";
+import createStyles from '@mui/styles/createStyles';
+import makeStyles from '@mui/styles/makeStyles';
+import Typography from "@mui/material/Typography";
 import { graphql, Link, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
