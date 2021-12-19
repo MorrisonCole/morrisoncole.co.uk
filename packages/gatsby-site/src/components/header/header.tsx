@@ -1,106 +1,88 @@
-import { Theme } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
-import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { Box } from "@mui/material";
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import GitHubSocialIcon from "./github-social-icon";
 import LinkedInSocialIcon from "./linked-in-social-icon";
 import TwitterSocialIcon from "./twitter-social-icon";
 import DarkModeSwitch from "./dark-mode-switch";
 import Logo from "./logo";
-import { HeaderQuery } from "../../../types/graphql-types";
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    header: {
-      [theme.breakpoints.down('sm')]: {
-        paddingLeft: theme.spacing(1),
-        paddingRight: theme.spacing(1),
-      },
-      gridArea: "header",
-      marginTop: theme.spacing(2),
-    },
-    container: {
-      display: "grid",
-      gridTemplateRows:
-        "minmax(min-content, 70%) minmax(min-content, max-content)",
-      gridTemplateColumns: "75% 25%",
-    },
-    logo: {
-      alignSelf: "center",
-      justifySelf: "stretch",
-      gridRow: "1 / span 2",
-      gridColumn: "1 / span 1",
-    },
-    avatar: {
-      alignSelf: "center",
-      gridRow: "1 / span 1",
-      gridColumn: "2 / span 1",
-      paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2),
-    },
-    switch: {
-      justifySelf: "center",
-      gridRow: "2 / span 1",
-      gridColumn: "2 / span 1",
-    },
-    profilePicture: {
-      borderRadius: "50%",
-      height: "100%",
-      width: "auto",
-    },
-    socialIconGrid: {
-      display: "grid",
-      justifyContent: "center",
-      gridTemplateColumns: "repeat(3, min-content)",
-      marginBottom: theme.spacing(1),
-    },
-  })
-);
 
 export default function Header(): JSX.Element {
-  const classes = useStyles();
-
-  const data: HeaderQuery = useStaticQuery<HeaderQuery>(graphql`
-    query Header {
-      avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            sizes: "(max-width: 50px) 30px, (max-width: 400px) 70px, (max-width: 600px) 120px, 200px"
-          )
-        }
-      }
-    }
-  `);
-
   return (
-    <header className={classes.header}>
-      <div className={classes.container}>
-        <div className={classes.logo}>
-          <Logo />
-        </div>
+    <Box
+      sx={(theme) => ({
+        [theme.breakpoints.down("sm")]: {
+          paddingLeft: theme.spacing(1),
+          paddingRight: theme.spacing(1),
+        },
+        gridArea: "header",
+        marginTop: theme.spacing(2),
+      })}
+    >
+      <header>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateRows:
+              "minmax(min-content, 70%) minmax(min-content, max-content)",
+            gridTemplateColumns: "75% 25%",
+          }}
+        >
+          <Box
+            sx={{
+              alignSelf: "center",
+              justifySelf: "stretch",
+              gridRow: "1 / span 2",
+              gridColumn: "1 / span 1",
+            }}
+          >
+            <Logo />
+          </Box>
 
-        <div className={classes.avatar}>
-          <GatsbyImage
-            image={data.avatar.childImageSharp.gatsbyImageData}
-            alt="Morrison Cole"
-            className={classes.profilePicture}
-            loading="eager"
-          />
-        </div>
+          <Box
+            sx={{
+              alignSelf: "center",
+              gridRow: "1 / span 1",
+              gridColumn: "2 / span 1",
+              paddingLeft: ({ spacing }) => spacing(2),
+              paddingRight: ({ spacing }) => spacing(2),
+            }}
+          >
+            <StaticImage
+              src={"../../../static/morrison-cole.jpg"}
+              alt="Morrison Cole"
+              loading="eager"
+              style={{
+                borderRadius: "50%",
+              }}
+              layout="constrained"
+            />
+          </Box>
 
-        <div className={classes.switch}>
-          <DarkModeSwitch />
-        </div>
-      </div>
+          <Box
+            sx={{
+              justifySelf: "center",
+              gridRow: "2 / span 1",
+              gridColumn: "2 / span 1",
+            }}
+          >
+            <DarkModeSwitch />
+          </Box>
+        </Box>
 
-      <div className={classes.socialIconGrid}>
-        <GitHubSocialIcon />
-        <LinkedInSocialIcon />
-        <TwitterSocialIcon />
-      </div>
-    </header>
+        <Box
+          sx={{
+            display: "grid",
+            justifyContent: "center",
+            gridTemplateColumns: "repeat(3, min-content)",
+            marginBottom: ({ spacing }) => spacing(1),
+          }}
+        >
+          <GitHubSocialIcon />
+          <LinkedInSocialIcon />
+          <TwitterSocialIcon />
+        </Box>
+      </header>
+    </Box>
   );
 }
