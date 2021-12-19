@@ -1,21 +1,6 @@
-import { Theme } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
 import SvgIcon, { SvgIconProps } from "@mui/material/SvgIcon";
 import React from "react";
 import SocialIcon from "./social-icon";
-
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    icon: {
-      fontSize: "3.5rem",
-      [theme.breakpoints.down('md')]: {
-        fontSize: "2.5rem",
-      },
-      color: "#0077b5",
-    },
-  })
-);
 
 function LinkedInIcon(props: SvgIconProps): JSX.Element {
   return (
@@ -26,13 +11,21 @@ function LinkedInIcon(props: SvgIconProps): JSX.Element {
 }
 
 export default function LinkedInSocialIcon(): JSX.Element {
-  const classes = useStyles();
-
   return (
     <SocialIcon
       ariaLabel="LinkedIn"
       href="https://www.linkedin.com/in/morrisoncole/"
-      icon={<LinkedInIcon className={classes.icon} />}
+      icon={
+        <LinkedInIcon
+          sx={(theme) => ({
+            fontSize: "3.5rem",
+            [theme.breakpoints.down("md")]: {
+              fontSize: "2.5rem",
+            },
+            color: "#0077b5",
+          })}
+        />
+      }
     />
   );
 }

@@ -1,16 +1,10 @@
 import { useMediaQuery, PaletteMode } from "@mui/material";
 import {
   ThemeProvider as MuiThemeProvider,
-  Theme,
   StyledEngineProvider,
   createTheme,
 } from "@mui/material/styles";
 import React, { createContext, useEffect, useMemo, useState } from "react";
-
-declare module "@mui/styles/defaultTheme" {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface DefaultTheme extends Theme {}
-}
 
 interface Props {
   children: JSX.Element[];

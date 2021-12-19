@@ -1,42 +1,37 @@
 import React from "react";
 import SEO from "../components/seo";
-import { Paper, Typography, Theme } from "@mui/material";
-import makeStyles from '@mui/styles/makeStyles';
-import createStyles from '@mui/styles/createStyles';
-import Alert from '@mui/material/Alert';
+import { Paper, Typography, Box } from "@mui/material";
+import Alert from "@mui/material/Alert";
 import { PageProps } from "gatsby";
 
-const styles = makeStyles((theme: Theme) =>
-  createStyles({
-    container: {
-      marginTop: theme.spacing(8),
-    },
-    alert: {
-      marginTop: theme.spacing(2),
-    },
-    announcement: {
-      padding: theme.spacing(2),
-    },
-  })
-);
-
 export default function NotFoundPage({ location }: PageProps): JSX.Element {
-  const classes = styles();
-
   return (
-    <React.Fragment>
+    <>
       <SEO title="404: Not Found" location={location} />
-      <div className={classes.container}>
-        <Paper className={classes.announcement}>
+      <Box
+        sx={{
+          marginTop: ({ spacing }) => spacing(8),
+        }}
+      >
+        <Paper
+          sx={{
+            padding: ({ spacing }) => spacing(2),
+          }}
+        >
           <Typography variant="h5" align="center">
             404: Not Found 🚷
           </Typography>
-          <Alert severity="error" className={classes.alert}>
+          <Alert
+            severity="error"
+            sx={{
+              marginTop: ({ spacing }) => spacing(2),
+            }}
+          >
             Oh you explorer you! Unfortunately, there&apos;s no page at
             {` ${location.pathname}`}
           </Alert>
         </Paper>
-      </div>
-    </React.Fragment>
+      </Box>
+    </>
   );
 }

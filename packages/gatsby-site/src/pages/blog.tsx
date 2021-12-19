@@ -1,6 +1,10 @@
-import { Theme, CardActionArea, Card, CardContent, CardMedia } from "@mui/material";
-import createStyles from '@mui/styles/createStyles';
-import makeStyles from '@mui/styles/makeStyles';
+import {
+  CardActionArea,
+  Card,
+  CardContent,
+  CardMedia,
+  Box,
+} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { graphql, Link, PageProps } from "gatsby";
 import React from "react";
@@ -8,34 +12,6 @@ import SEO from "../components/seo";
 import { BlogIndexQuery } from "../../types/graphql-types";
 import ComposableGatsbyImage from "../components/composable/composable-gatsby-image";
 import { IGatsbyImageData } from "gatsby-plugin-image";
-
-const styles = makeStyles((theme: Theme) =>
-  createStyles({
-    postGrid: {
-      display: "grid",
-      gridAutoRows: "repeat(auto-fill, minmax(auto, 1fr))",
-      [theme.breakpoints.up("sm")]: {
-        gridTemplateColumns: "repeat(2, 1fr)",
-      },
-      gridGap: theme.spacing(4),
-    },
-    body: {
-      marginTop: theme.spacing(2),
-    },
-    card: {
-      display: "flex",
-      [theme.breakpoints.up("md")]: {
-        height: 220,
-      },
-    },
-    cardDetails: {
-      flex: 1,
-    },
-    cardMedia: {
-      flex: 0.66,
-    },
-  })
-);
 
 interface BlogProps {
   data: BlogIndexQuery;
@@ -45,11 +21,19 @@ export default function Blog({
   data,
   location,
 }: BlogProps & PageProps): JSX.Element {
-  const classes = styles();
   const posts = data.allMdx.edges;
 
   return (
-    <div className={classes.postGrid}>
+    <Box
+      sx={(theme) => ({
+        display: "grid",
+        gridAutoRows: "repeat(auto-fill, minmax(auto, 1fr))",
+        [theme.breakpoints.up("sm")]: {
+          gridTemplateColumns: "repeat(2, 1fr)",
+        },
+        gridGap: theme.spacing(4),
+      })}
+    >
       <SEO title="Blog" location={location} />
 
       {posts.map(({ node }) => {
@@ -64,8 +48,19 @@ export default function Blog({
 
         return (
           <CardActionArea key={title} component={Link} to={link}>
-            <Card className={classes.card}>
-              <div className={classes.cardDetails}>
+            <Card
+              sx={(theme) => ({
+                display: "flex",
+                [theme.breakpoints.up("md")]: {
+                  height: 220,
+                },
+              })}
+            >
+              <Box
+                sx={{
+                  flex: 1,
+                }}
+              >
                 <CardContent>
                   <Typography component="h2" variant="h5">
                     {title}
@@ -80,21 +75,23 @@ export default function Blog({
                     {linkText}
                   </Typography>
                 </CardContent>
-              </div>
+              </Box>
               {image && (
                 <CardMedia
-                  className={classes.cardMedia}
                   component={ComposableGatsbyImage}
                   imageSrc={image}
                   title={title}
                   src="" // TODO: avoid passing
+                  sx={{
+                    flex: 0.66,
+                  }}
                 />
               )}
             </Card>
           </CardActionArea>
         );
       })}
-    </div>
+    </Box>
   );
 }
 
@@ -106,6 +103,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          excerpt
           fields {
             slug
           }
