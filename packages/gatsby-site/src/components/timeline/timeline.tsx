@@ -59,9 +59,18 @@ function CustomizedTimeline({ timelineEntries }: Props): JSX.Element {
 
   return (
     <Timeline
-      sx={{
+      sx={({ breakpoints }) => ({
         padding: 0,
-      }}
+        "& .MuiTimelineItem-missingOppositeContent": {
+          [breakpoints.only("xs")]: {
+            "&:before": {
+              content: '""',
+              flex: 0,
+              padding: 0,
+            },
+          },
+        },
+      })}
       position={isSmUp ? "alternate" : "left"}
     >
       {listItems}
