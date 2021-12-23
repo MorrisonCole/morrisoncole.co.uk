@@ -33,7 +33,6 @@ export function ThemeProvider({ children }: Props): JSX.Element {
     };
   }, [paletteMode, setPaletteMode]);
 
-  const defaultTheme = createTheme();
   const theme = useMemo(
     () =>
       createTheme({
@@ -57,19 +56,6 @@ export function ThemeProvider({ children }: Props): JSX.Element {
           },
           secondary: {
             main: paletteMode === "dark" ? "#0070f2" : "#ff7043",
-          },
-        },
-        components: {
-          MuiTimelineItem: {
-            missingOppositeContent: {
-              [defaultTheme.breakpoints.only("xs")]: {
-                "&:before": {
-                  content: '""',
-                  flex: 0,
-                  padding: 0,
-                },
-              },
-            },
           },
         },
       }),
