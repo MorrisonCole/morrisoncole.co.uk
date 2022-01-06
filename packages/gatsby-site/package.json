@@ -86,7 +86,7 @@
     "@types/react-helmet": "6.1.5",
     "@types/stack-trace": "0.0.29",
     "lmdb-store": "1.6.14",
-    "query-string": "7.0.1",
+    "query-string": "7.1.0",
     "socket.io-client": "4.4.1"
   },
   "homepage": "https://github.com/MorrisonCole/morrisoncole.co.uk#readme",
