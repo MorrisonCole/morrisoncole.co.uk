@@ -6224,7 +6224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-styled-components@npm:2.0.2, babel-plugin-styled-components@npm:>= 1.12.0":
+"babel-plugin-styled-components@npm:>= 1.12.0":
   version: 2.0.2
   resolution: "babel-plugin-styled-components@npm:2.0.2"
   dependencies:
@@ -16786,7 +16786,6 @@ __metadata:
     "@types/styled-components": 5.1.19
     "@typescript-eslint/eslint-plugin": 5.9.0
     "@typescript-eslint/parser": 5.9.0
-    babel-plugin-styled-components: 2.0.2
     eslint: 8.6.0
     eslint-config-next: 12.0.7
     glyphhanger: 5.0.0
