@@ -9,4 +9,7 @@ module.exports = {
     locales: ["en-GB"],
     defaultLocale: "en-GB",
   },
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
 };
