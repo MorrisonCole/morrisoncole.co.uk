@@ -1,4 +1,7 @@
 module.exports = {
+  experimental: {
+    styledComponents: true,
+  },
   pageExtensions: ["js", "jsx", "ts", "tsx"],
   reactStrictMode: true,
   poweredByHeader: false,
