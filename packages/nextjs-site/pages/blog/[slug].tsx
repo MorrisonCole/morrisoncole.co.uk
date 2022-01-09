@@ -4,7 +4,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import path from "path";
 import matter from "gray-matter";
-import Button from "../../components/button";
+import { Button } from "../../components/button";
 import Image from "next/image";
 import {
   ALL_POST_PATHS,
@@ -12,15 +12,14 @@ import {
 } from "packages/nextjs-site/utils/mdx-utils";
 import { GetStaticPropsContext } from "next";
 import { FrontMatter } from ".";
-import Layout from "packages/nextjs-site/components/layout";
+import { Layout } from "packages/nextjs-site/components/layout";
 
 const h1 = styled.h1`
   color: grey;
   font-size: 3em;
 `;
 
-const p = styled.p`
-`;
+const p = styled.p``;
 
 const mdxComponents: Record<string, ReactNode> = {
   Button,

@@ -1,29 +1,21 @@
 import Head from "next/head";
 import React from "react";
-import styled, { css } from "styled-components";
-import Layout from "../components/layout";
-
-const Content = styled.span`
-  grid-area: content;
-`;
+import styled from "styled-components";
+import { Layout } from "../components/layout";
 
 const Title = styled.h1`
-  color: grey;
   font-size: 3em;
 `;
 
 const Bold = styled.span`
-  color: black;
   font-weight: bold;
 `;
 
 const Italic = styled.span`
-  color: black;
   font-style: italic;
 `;
 
 const BoldItalic = styled.span`
-  color: black;
   font-weight: bold;
   font-style: italic;
 `;

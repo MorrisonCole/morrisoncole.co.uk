@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Footer } from "./footer";
 
 const Grid = styled.span`
   height: 100vh;
@@ -20,16 +21,12 @@ const Content = styled.div`
   grid-area: content;
 `;
 
-const Footer = styled.div`
-  grid-area: footer;
-`;
-
-export default function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <Grid>
       <Header />
       <Content>{children}</Content>
-      <Footer>Morrison Cole</Footer>
+      <Footer />
     </Grid>
   );
 }
