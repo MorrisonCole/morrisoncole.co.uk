@@ -1,5 +1,23 @@
 import type { AppProps } from "next/app";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+
+const theme = {
+  spacing: [
+    "0.25rem",
+    "0.5rem",
+    "0.75rem",
+    "1rem",
+    "1.5rem",
+    "2rem",
+    "3rem",
+    "4rem",
+    "6rem",
+    "8rem",
+    "12rem",
+    "16rem",
+    "24rem",
+  ],
+};
 
 // From: https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=optional
 const GlobalStyle = createGlobalStyle`
@@ -42,15 +60,17 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: rgb(16, 16, 16);
+    color: white;
   }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
 
