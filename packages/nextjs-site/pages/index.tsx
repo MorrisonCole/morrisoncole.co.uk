@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
 import { Layout } from "../components/layout";
+import { SwitchLocaleButton } from "../components/switch-locale-button";
 
 const Title = styled.h1`
   font-size: 3em;
@@ -47,6 +48,7 @@ export default function Home() {
         I&apos;m <BoldItalic>both!</BoldItalic>
       </p>
       <Japanese>日本語で書いてます。</Japanese>
+      <SwitchLocaleButton />
     </Layout>
   );
 }
