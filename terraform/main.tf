@@ -43,6 +43,8 @@ locals {
   domain_name          = "morrisoncole"
   alpha_domain_name    = "alpha.morrisoncole"
   alpha_uk_root_domain = "${local.alpha_domain_name}.co.uk"
+  alpha_jp_root_domain = "${local.alpha_domain_name}.jp"
   uk_root_domain       = "${local.domain_name}.co.uk"
   us_root_domain       = "${local.domain_name}.com"
+  jp_root_domain       = "${local.domain_name}.jp"
 }
