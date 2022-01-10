@@ -133,7 +133,7 @@ resource "aws_route53_record" "vercel_morrisoncole_co_uk" {
   provider = aws.ap-northeast-1
 
   zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
-  name    = "alpha.${local.uk_root_domain}"
+  name    = local.alpha_uk_root_domain
   type    = "A"
   records = ["76.76.21.21"]
   ttl     = 300
