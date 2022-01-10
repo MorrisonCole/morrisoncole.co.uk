@@ -32,3 +32,13 @@ resource "aws_route53_record" "soa_morrisoncole_jp" {
   ]
   ttl = 900
 }
+
+resource "aws_route53_record" "vercel_morrisoncole_jp" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_jp.zone_id
+  name    = "alpha"
+  type    = "CNAME"
+  records = ["cname.vercel-dns.com"]
+  ttl     = 300
+}
