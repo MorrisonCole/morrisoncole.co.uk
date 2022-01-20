@@ -19,7 +19,7 @@ export const SwitchLocaleButton = () => {
   const router = useRouter();
   const { pathname, asPath, query } = router;
 
-  const targetLocale = router.locale === "ja_JP" ? "en_GB" : "ja_JP";
+  const targetLocale = router.locale === "ja-JP" ? "en-GB" : "ja-JP";
 
   const handleClick = () => {
     router.push({ pathname, query }, asPath, { locale: targetLocale });
