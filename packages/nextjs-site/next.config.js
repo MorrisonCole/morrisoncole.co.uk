@@ -7,16 +7,16 @@ module.exports = {
   poweredByHeader: false,
   i18n: {
     localeDetection: false,
-    locales: ["en_GB", "ja_JP"],
-    defaultLocale: "en_GB",
+    locales: ["en-GB", "ja-JP"],
+    defaultLocale: "en-GB",
     domains: [
       {
         domain: "alpha.morrisoncole.co.uk",
-        defaultLocale: "en_GB",
+        defaultLocale: "en-GB",
       },
       {
         domain: "alpha.morrisoncole.jp",
-        defaultLocale: "ja_JP",
+        defaultLocale: "ja-JP",
       },
     ],
   },
