@@ -61,9 +61,12 @@ export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
 };
 
 export const getStaticPaths = async () => {
-  const paths = ALL_POST_PATHS.map((path) => path.replace(/\.mdx?$/, "")).map(
-    (slug) => ({ params: { slug } })
-  );
+  const paths = ALL_POST_PATHS.map((path) =>
+    path.replace(/\.mdx?$/, "")
+  ).flatMap((slug) => [
+    { params: { slug }, locale: "en-GB" },
+    { params: { slug }, locale: "ja-JP" },
+  ]);
 
   return {
     paths,

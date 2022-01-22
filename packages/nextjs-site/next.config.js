@@ -7,8 +7,8 @@ module.exports = {
   poweredByHeader: false,
   i18n: {
     localeDetection: false,
-    locales: ["en-GB", "ja-JP"],
-    defaultLocale: "en-GB",
+    locales: ["default", "en-GB", "ja-JP"],
+    defaultLocale: "default",
     domains: [
       {
         domain: "alpha.morrisoncole.co.uk",
