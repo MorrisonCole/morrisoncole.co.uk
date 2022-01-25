@@ -10715,6 +10715,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-core-utils@npm:3.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 01d6daf7839f58e1e26dd7b6b27e7a16540de1b7ef5da43c78c9b517ef0204a5b41180c9ea901946f4310a93e4c2b3df4f145e7e3d938c9c046798250c1052cc
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^2.5.0":
   version: 2.5.0
   resolution: "gatsby-graphiql-explorer@npm:2.5.0"
@@ -11139,14 +11158,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:6.5.2":
-  version: 6.5.2
-  resolution: "gatsby-remark-images@npm:6.5.2"
+"gatsby-remark-images@npm:6.6.0":
+  version: 6.6.0
+  resolution: "gatsby-remark-images@npm:6.6.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^3.5.2
+    gatsby-core-utils: ^3.6.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -11157,7 +11176,7 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 661e993da01c5f32f0027af3b90cb28505595622bc5377e60a1e8b7394a7f2940e953195abd359638e66cf138fc454698b3c138c1ec6c091848a7b6ba4e9bc25
+  checksum: 367520e4cae3d6ed9527c56a4ff9418bce1a2d3842648b0cd31434da9d77d4e64fe359d51cbd8e614c552e81059df2d4033b2f187da1c87bd000026759480dac
   languageName: node
   linkType: hard
 
@@ -15609,7 +15628,7 @@ __metadata:
     gatsby-react-router-scroll: 5.5.0
     gatsby-remark-autolink-headers: 5.5.0
     gatsby-remark-embed-video: 3.1.1
-    gatsby-remark-images: 6.5.2
+    gatsby-remark-images: 6.6.0
     gatsby-source-filesystem: 4.5.2
     gatsby-transformer-json: 4.5.0
     gatsby-transformer-sharp: 4.5.0
