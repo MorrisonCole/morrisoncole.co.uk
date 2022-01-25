@@ -10734,7 +10734,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-link@npm:4.5.0, gatsby-link@npm:^4.5.0":
+"gatsby-link@npm:4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-link@npm:4.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    "@types/reach__router": ^1.3.9
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@gatsbyjs/reach-router": ^1.3.5
+    react: ^16.9.0 || ^17.0.0
+    react-dom: ^16.9.0 || ^17.0.0
+  checksum: 5b5112435c60a236b9ddc2ff44d2ea86f580a8c5b4dfcfad6b05b3f77e2a168b7dd438851b5ad63b0c1a82b051d468a64d1a622b4269ddab5d29bdeba2d03466
+  languageName: node
+  linkType: hard
+
+"gatsby-link@npm:^4.5.0":
   version: 4.5.0
   resolution: "gatsby-link@npm:4.5.0"
   dependencies:
@@ -15590,7 +15605,7 @@ __metadata:
     gatsby: 4.5.4
     gatsby-cli: 4.5.2
     gatsby-legacy-polyfills: 2.5.0
-    gatsby-link: 4.5.0
+    gatsby-link: 4.6.0
     gatsby-plugin-canonical-urls: 4.5.0
     gatsby-plugin-feed: 4.5.0
     gatsby-plugin-google-tagmanager: 4.5.0
