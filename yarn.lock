@@ -6048,6 +6048,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:4.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    gatsby-core-utils: ^3.6.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^4.0.0-next
+  checksum: feac143f836c5f0d44432978becf3e2f3df8f9162725257c22eceb3912dae01c20e598e23911498e8db2c65b1044a2755bb875a8652896de8529e8379a3276d1
+  languageName: node
+  linkType: hard
+
 "babel-plugin-styled-components@npm:>= 1.12.0":
   version: 2.0.2
   resolution: "babel-plugin-styled-components@npm:2.0.2"
@@ -10715,6 +10728,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-core-utils@npm:3.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 01d6daf7839f58e1e26dd7b6b27e7a16540de1b7ef5da43c78c9b517ef0204a5b41180c9ea901946f4310a93e4c2b3df4f145e7e3d938c9c046798250c1052cc
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^2.5.0":
   version: 2.5.0
   resolution: "gatsby-graphiql-explorer@npm:2.5.0"
@@ -11042,7 +11074,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:4.5.2, gatsby-plugin-typescript@npm:^4.5.2":
+"gatsby-plugin-typescript@npm:4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-plugin-typescript@npm:4.6.0"
+  dependencies:
+    "@babel/core": ^7.15.5
+    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.14.5
+    "@babel/plugin-proposal-numeric-separator": ^7.14.5
+    "@babel/plugin-proposal-optional-chaining": ^7.14.5
+    "@babel/preset-typescript": ^7.15.0
+    "@babel/runtime": ^7.15.4
+    babel-plugin-remove-graphql-queries: ^4.6.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 834b574c384e400d6e8a1bb174c4e8b4f37af225309960bb0c63e4369e85b0f8cf7e056b33e1be1a15710343c207779499e2f4918155f4a7292a982bbfcf1bc2
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-typescript@npm:^4.5.2":
   version: 4.5.2
   resolution: "gatsby-plugin-typescript@npm:4.5.2"
   dependencies:
@@ -15604,7 +15653,7 @@ __metadata:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 4.5.2
     gatsby-plugin-sitemap: 5.5.0
-    gatsby-plugin-typescript: 4.5.2
+    gatsby-plugin-typescript: 4.6.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.5.0
     gatsby-remark-autolink-headers: 5.5.0
