@@ -10715,6 +10715,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-core-utils@npm:3.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 01d6daf7839f58e1e26dd7b6b27e7a16540de1b7ef5da43c78c9b517ef0204a5b41180c9ea901946f4310a93e4c2b3df4f145e7e3d938c9c046798250c1052cc
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^2.5.0":
   version: 2.5.0
   resolution: "gatsby-graphiql-explorer@npm:2.5.0"
@@ -11161,16 +11180,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:4.5.2":
-  version: 4.5.2
-  resolution: "gatsby-source-filesystem@npm:4.5.2"
+"gatsby-source-filesystem@npm:4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-source-filesystem@npm:4.6.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     chokidar: ^3.5.2
     fastq: ^1.13.0
     file-type: ^16.5.3
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.5.2
+    gatsby-core-utils: ^3.6.0
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.5.2
@@ -11180,7 +11199,7 @@ __metadata:
     xstate: ^4.26.1
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 63b8a34d0d1557ab071e1f4fccd3120db8219388a2eb0c9aec63d7f60bf6c94fd60cf5d523b0225a6fcc0740d4e3f17160f5d9a76d1ae0cecca186ca015b57ac
+  checksum: 0046645e7efdaa27a0ae3be25a4ccb16093c15d873a295311576cbb99ccefec298adf45b511247f8235ddabb2e7e923556645c99e537b17cf90c3c17335e564b
   languageName: node
   linkType: hard
 
@@ -15610,7 +15629,7 @@ __metadata:
     gatsby-remark-autolink-headers: 5.5.0
     gatsby-remark-embed-video: 3.1.1
     gatsby-remark-images: 6.5.2
-    gatsby-source-filesystem: 4.5.2
+    gatsby-source-filesystem: 4.6.0
     gatsby-transformer-json: 4.5.0
     gatsby-transformer-sharp: 4.5.0
     graphql: 16.2.0
