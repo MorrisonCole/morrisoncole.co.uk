@@ -7683,6 +7683,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-gatsby@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "create-gatsby@npm:2.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+  bin:
+    create-gatsby: cli.js
+  checksum: eda54f4509d8b84507d9a9569fba160f74e4dc4dcfecb61c5c18b59807812d74d4e9d010a97877643aba9bb54d78a13dfa0e51c267c45c26213a3ad3e0231c17
+  languageName: node
+  linkType: hard
+
 "create-react-context@npm:0.3.0":
   version: 0.3.0
   resolution: "create-react-context@npm:0.3.0"
@@ -10642,7 +10653,61 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:4.5.2, gatsby-cli@npm:^4.5.2":
+"gatsby-cli@npm:4.6.0":
+  version: 4.6.0
+  resolution: "gatsby-cli@npm:4.6.0"
+  dependencies:
+    "@babel/code-frame": ^7.14.0
+    "@babel/core": ^7.15.5
+    "@babel/generator": ^7.16.8
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/runtime": ^7.15.4
+    "@babel/template": ^7.16.7
+    "@babel/types": ^7.16.8
+    "@types/common-tags": ^1.8.1
+    better-opn: ^2.1.1
+    boxen: ^5.1.2
+    chalk: ^4.1.2
+    clipboardy: ^2.3.0
+    common-tags: ^1.8.2
+    configstore: ^5.0.1
+    convert-hrtime: ^3.0.0
+    create-gatsby: ^2.6.0
+    envinfo: ^7.8.1
+    execa: ^5.1.1
+    fs-exists-cached: ^1.0.0
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.6.0
+    gatsby-telemetry: ^3.6.0
+    hosted-git-info: ^3.0.8
+    is-valid-path: ^0.1.1
+    joi: ^17.4.2
+    lodash: ^4.17.21
+    meant: ^1.0.3
+    node-fetch: ^2.6.6
+    opentracing: ^0.14.5
+    pretty-error: ^2.1.2
+    progress: ^2.0.3
+    prompts: ^2.4.2
+    redux: 4.1.2
+    resolve-cwd: ^3.0.0
+    semver: ^7.3.5
+    signal-exit: ^3.0.6
+    source-map: 0.7.3
+    stack-trace: ^0.0.10
+    strip-ansi: ^6.0.1
+    update-notifier: ^5.1.0
+    uuid: 3.4.0
+    yargs: ^15.4.1
+    yoga-layout-prebuilt: ^1.10.0
+    yurnalist: ^2.1.0
+  bin:
+    gatsby: cli.js
+  checksum: 660e87d7bd49c3e7194bc61e7a5a152f1bb3d28efcf44f1d890a162e42e7479bc44816eafb3c744c1a986e0c0b9185f62a3165e57e45ca1698bad80ba059e38e
+  languageName: node
+  linkType: hard
+
+"gatsby-cli@npm:^4.5.2":
   version: 4.5.2
   resolution: "gatsby-cli@npm:4.5.2"
   dependencies:
@@ -10712,6 +10777,25 @@ __metadata:
     tmp: ^0.2.1
     xdg-basedir: ^4.0.0
   checksum: 90a578c4bbdedd6ae75864df119298f23462357184cbf68a4e70da39b829f1eb344e5cbda5f0f5b499994652b2a4c5d256784d53d08ef747fc277535dacfc7ce
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-core-utils@npm:3.6.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 01d6daf7839f58e1e26dd7b6b27e7a16540de1b7ef5da43c78c9b517ef0204a5b41180c9ea901946f4310a93e4c2b3df4f145e7e3d938c9c046798250c1052cc
   languageName: node
   linkType: hard
 
@@ -11202,6 +11286,27 @@ __metadata:
     lodash: ^4.17.21
     node-fetch: ^2.6.6
   checksum: f57d8eb327a580c5364a6c6f4487ebc35ab95739a76a778c0a8d017f31ec9b6a0ba10faadde86b07ccd82d129d894352e4f6bc3afdf5e89940e881b833532d87
+  languageName: node
+  linkType: hard
+
+"gatsby-telemetry@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "gatsby-telemetry@npm:3.6.0"
+  dependencies:
+    "@babel/code-frame": ^7.14.0
+    "@babel/runtime": ^7.15.4
+    "@turist/fetch": ^7.1.7
+    "@turist/time": ^0.0.2
+    async-retry-ng: ^2.0.1
+    boxen: ^4.2.0
+    configstore: ^5.0.1
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.6.0
+    git-up: ^4.0.5
+    is-docker: ^2.2.1
+    lodash: ^4.17.21
+    node-fetch: ^2.6.6
+  checksum: 1750816458d7125853d7b3870726ca91dd2bb5372eb6e69d5f7a68253a3fb00de5aa166ba52bc6d80fd7ebfa7933ff29235a2032573c534bcde35c22c4e9051a
   languageName: node
   linkType: hard
 
@@ -15588,7 +15693,7 @@ __metadata:
     css.escape: 1.5.1
     event-source-polyfill: 1.0.25
     gatsby: 4.5.4
-    gatsby-cli: 4.5.2
+    gatsby-cli: 4.6.0
     gatsby-legacy-polyfills: 2.5.0
     gatsby-link: 4.5.0
     gatsby-plugin-canonical-urls: 4.5.0
