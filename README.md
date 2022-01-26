@@ -2,15 +2,16 @@
 
 My personal website(s).
 
-Production [morrisoncole.co.uk](https://morrisoncole.co.uk) is from
-`packages/gatsby-site`. Alpha
-[alpha.morrisoncole.co.uk](https://alpha.morrisoncole.co.uk) is from
-`packages/nextjs-site`.
-
-I'm currently writing a new version in the latter package, so it's likely the
-former won't really be updated anymore.
+Alpha [alpha.morrisoncole.co.uk](https://alpha.morrisoncole.co.uk) is from
+`packages/nextjs-site`. Production
+[morrisoncole.co.uk](https://morrisoncole.co.uk) is from `packages/gatsby-site`.
 
 # Development
+
+## NextJS Site
+
+1. Run `yarn install`
+2. Run `yarn start:next`
 
 ## Gatsby Site
 
@@ -21,20 +22,11 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 1. Run `yarn install`
 2. Run `yarn start:gatsby`
 
-## NextJS Site
-
-1. Run `yarn install`
-2. Run `yarn start:next`
-
 ## Yarn
 
 ### Upgrade Yarn
 
-`yarn set version from sources`
-
-### Upgrade Editor SDKs
-
-`yarn dlx @yarnpkg/pnpify --sdk vscode`
+`yarn upgrade`
 
 ### Upgrade Dependencies
 
