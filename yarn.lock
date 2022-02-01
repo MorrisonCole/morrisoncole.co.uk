@@ -3306,18 +3306,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lhci/cli@npm:0.8.2":
-  version: 0.8.2
-  resolution: "@lhci/cli@npm:0.8.2"
+"@lhci/cli@npm:0.9.0":
+  version: 0.9.0
+  resolution: "@lhci/cli@npm:0.9.0"
   dependencies:
-    "@lhci/utils": 0.8.2
+    "@lhci/utils": 0.9.0
     chrome-launcher: ^0.13.4
     compression: ^1.7.4
     debug: ^4.3.1
     express: ^4.17.1
     inquirer: ^6.3.1
     isomorphic-fetch: ^3.0.0
-    lighthouse: 8.0.0
+    lighthouse: 9.3.0
     lighthouse-logger: 1.2.0
     open: ^7.1.0
     tmp: ^0.1.0
@@ -3327,20 +3327,20 @@ __metadata:
     yargs-parser: ^13.1.2
   bin:
     lhci: ./src/cli.js
-  checksum: 5a3bf083d9e5c5a9831877e71a68542160b65b5e2dad61499f37a81efd7c6c1985476b9e1ae58a530a0376791081adc540a2af5d2bac740a8d654cdedce9c94c
+  checksum: 80d9c127734d89baaf5fbec366e4c83e806988b2fa7d06b92096399dc389fcc940f4f6fe1d62f41bf0c3916857345442daad95476ce822d7dd85b7a52037c173
   languageName: node
   linkType: hard
 
-"@lhci/utils@npm:0.8.2":
-  version: 0.8.2
-  resolution: "@lhci/utils@npm:0.8.2"
+"@lhci/utils@npm:0.9.0":
+  version: 0.9.0
+  resolution: "@lhci/utils@npm:0.9.0"
   dependencies:
     debug: ^4.3.1
     isomorphic-fetch: ^3.0.0
     js-yaml: ^3.13.1
-    lighthouse: 8.0.0
+    lighthouse: 9.3.0
     tree-kill: ^1.2.1
-  checksum: 043a89d34c31c5ff2660d4360b2afa079b0d2377aa834dcc8f1c1a4d7cfa80a628e27446731de03f2c38e18ea9725659da4e07f0bb45bfe6d4b2d357a445116d
+  checksum: 87cf5a0de67103da7766585052daab79f8f3cf04d5da4408ec7689d9e7509ebcd5f2df425451380a5a6af9ce18d222f01cf3cac50e35874ff949166c61d7fbaa
   languageName: node
   linkType: hard
 
@@ -5729,13 +5729,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async-limiter@npm:~1.0.0":
-  version: 1.0.1
-  resolution: "async-limiter@npm:1.0.1"
-  checksum: 2b849695b465d93ad44c116220dee29a5aeb63adac16c1088983c339b0de57d76e82533e8e364a93a9f997f28bbfc6a92948cefc120652bd07f3b59f8d75cf2b
-  languageName: node
-  linkType: hard
-
 "async-retry-ng@npm:^2.0.1":
   version: 2.0.1
   resolution: "async-retry-ng@npm:2.0.1"
@@ -5845,14 +5838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axe-core@npm:4.2.1":
-  version: 4.2.1
-  resolution: "axe-core@npm:4.2.1"
-  checksum: 0a9b6104b091836277e0d3a725bf740ab0e90e413d7833dad0d9390b59213cb9456f4a3aaf712d735e63d68963696f3daa39d517cc5f87609424e7ab1c913370
-  languageName: node
-  linkType: hard
-
-"axe-core@npm:^4.3.5":
+"axe-core@npm:4.3.5, axe-core@npm:^4.3.5":
   version: 4.3.5
   resolution: "axe-core@npm:4.3.5"
   checksum: 973c6a80f0aaa663820b209d4202de7a0c240a2dea2f3cff168b09c0f221b27179b1f0988f00ad11ed63cbc50535920f8ca779de1c60dc82090ab2d275f71fdd
@@ -6992,15 +6978,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chrome-launcher@npm:^0.14.0":
-  version: 0.14.2
-  resolution: "chrome-launcher@npm:0.14.2"
+"chrome-launcher@npm:^0.15.0":
+  version: 0.15.0
+  resolution: "chrome-launcher@npm:0.15.0"
   dependencies:
     "@types/node": "*"
     escape-string-regexp: ^4.0.0
     is-wsl: ^2.2.0
     lighthouse-logger: ^1.0.0
-  checksum: 12187a96025b05ed3782c18bd43a3ba83cc5b85e7c654691bca2a2e82854349f5659922f99b24d737d6f0faa23118375decf07c47ef574dd91080967c8d7de12
+  bin:
+    print-chrome-path: bin/print-chrome-path.js
+  checksum: a86e2b3873cac291e632662a36891dd61ffa0d4a0ec31a9167658bc22c10c38ae243cb68c4ef0977f7c6266fbf2410f5cc5f0a6182958682d04a6ed9ba7089b1
   languageName: node
   linkType: hard
 
@@ -7768,7 +7756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csp_evaluator@npm:^1.0.1":
+"csp_evaluator@npm:1.1.0":
   version: 1.1.0
   resolution: "csp_evaluator@npm:1.1.0"
   checksum: d7f024dfa9d8418c95619ded8f3872339d39f7edd39b70bd095bedd40b06b9f1f8dd639c493090a0b1fafa1dc8d646fc3bd90268d844ed64f1f0874a59c95de5
@@ -8294,6 +8282,13 @@ __metadata:
   version: 2.0.1
   resolution: "defer-to-connect@npm:2.0.1"
   checksum: 8a9b50d2f25446c0bfefb55a48e90afd58f85b21bcf78e9207cd7b804354f6409032a1705c2491686e202e64fc05f147aa5aa45f9aa82627563f045937f5791b
+  languageName: node
+  linkType: hard
+
+"define-lazy-prop@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "define-lazy-prop@npm:2.0.0"
+  checksum: 0115fdb065e0490918ba271d7339c42453d209d4cb619dfe635870d906731eff3e1ade8028bb461ea27ce8264ec5e22c6980612d332895977e89c1bbc80fcee2
   languageName: node
   linkType: hard
 
@@ -13063,7 +13058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-docker@npm:^2.0.0, is-docker@npm:^2.2.1":
+"is-docker@npm:^2.0.0, is-docker@npm:^2.1.1, is-docker@npm:^2.2.1":
   version: 2.2.1
   resolution: "is-docker@npm:2.2.1"
   bin:
@@ -13727,7 +13722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jpeg-js@npm:^0.4.0, jpeg-js@npm:^0.4.1":
+"jpeg-js@npm:^0.4.0, jpeg-js@npm:^0.4.1, jpeg-js@npm:^0.4.3":
   version: 0.4.3
   resolution: "jpeg-js@npm:0.4.3"
   checksum: 9e5bacc9135efa7da340b62e81fa56fab0c8516ef617228758132af5b7d31b516cc6e1500cdffb82d3161629be341be980099f2b37eb76b81e26db6e3e848c77
@@ -14167,7 +14162,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lighthouse-logger@npm:^1.0.0, lighthouse-logger@npm:^1.2.0":
+"lighthouse-logger@npm:^1.0.0, lighthouse-logger@npm:^1.3.0":
   version: 1.3.0
   resolution: "lighthouse-logger@npm:1.3.0"
   dependencies:
@@ -14177,52 +14172,51 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lighthouse-stack-packs@npm:^1.5.0":
-  version: 1.6.0
-  resolution: "lighthouse-stack-packs@npm:1.6.0"
-  checksum: d358d64c32493f8150a90e21cabb84f7ce2720f549e7ae86fc9fbdeb8b5298cfc950a9a546b150589eedb37758c3b9c2859b4885745fa68d61c0edc65d7bc1f4
+"lighthouse-stack-packs@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "lighthouse-stack-packs@npm:1.7.0"
+  checksum: b9b0d02bb70ee1514623edbd988a43d8dfc710906a29f589dd4387e2ade70661173f1013127c54ca3132b90cf952dd4429d740023be0b52354ca39cb65bbb5d5
   languageName: node
   linkType: hard
 
-"lighthouse@npm:8.0.0":
-  version: 8.0.0
-  resolution: "lighthouse@npm:8.0.0"
+"lighthouse@npm:9.3.0":
+  version: 9.3.0
+  resolution: "lighthouse@npm:9.3.0"
   dependencies:
-    axe-core: 4.2.1
-    chrome-launcher: ^0.14.0
+    axe-core: 4.3.5
+    chrome-launcher: ^0.15.0
     configstore: ^5.0.1
-    csp_evaluator: ^1.0.1
+    csp_evaluator: 1.1.0
     cssstyle: 1.2.1
     enquirer: ^2.3.6
     http-link-header: ^0.8.0
     intl-messageformat: ^4.4.0
-    jpeg-js: ^0.4.1
+    jpeg-js: ^0.4.3
     js-library-detector: ^6.4.0
-    lighthouse-logger: ^1.2.0
-    lighthouse-stack-packs: ^1.5.0
+    lighthouse-logger: ^1.3.0
+    lighthouse-stack-packs: ^1.7.0
     lodash.clonedeep: ^4.5.0
     lodash.get: ^4.4.2
     lodash.isequal: ^4.5.0
     lodash.set: ^4.3.2
-    lookup-closest-locale: 6.0.4
+    lookup-closest-locale: 6.2.0
     metaviewport-parser: 0.2.0
-    open: ^6.4.0
+    open: ^8.4.0
     parse-cache-control: 1.0.1
-    ps-list: ^7.2.0
+    ps-list: ^8.0.0
     raven: ^2.2.1
-    robots-parser: ^2.0.1
+    robots-parser: ^3.0.0
     semver: ^5.3.0
     speedline-core: ^1.4.3
-    third-party-web: ^0.12.2
-    update-notifier: ^4.1.0
-    ws: 3.3.2
-    yargs: ^16.1.1
-    yargs-parser: ^20.2.4
+    third-party-web: ^0.12.7
+    ws: ^7.0.0
+    yargs: ^17.3.1
+    yargs-parser: ^21.0.0
   bin:
-    chrome-debug: ./lighthouse-core/scripts/manual-chrome-launcher.js
-    lighthouse: ./lighthouse-cli/index.js
-    smokehouse: ./lighthouse-cli/test/smokehouse/frontends/smokehouse-bin.js
-  checksum: 0c885545a50a4c22330fc4d605ff2959c23146564b82415c02007a862fa55dfdc4152beb5d5f903872b77cf589915799a11de9f09581e3ed052ab8713c512982
+    chrome-debug: lighthouse-core/scripts/manual-chrome-launcher.js
+    lighthouse: lighthouse-cli/index.js
+    smokehouse: lighthouse-cli/test/smokehouse/frontends/smokehouse-bin.js
+  checksum: 59e89e93c0c6b5c7f6be690fe2435e55a60aea3ef217cdd08a97bede54eaf94f6e4fb1e9a7010729cf75cd72524660d1b105e872dfed29e06c6cf8c0889e1758
   languageName: node
   linkType: hard
 
@@ -14706,10 +14700,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lookup-closest-locale@npm:6.0.4":
-  version: 6.0.4
-  resolution: "lookup-closest-locale@npm:6.0.4"
-  checksum: bad5704d20451d8bcf914f34ac9f1d26335e1df32fd1f089551cd95370d87ba3f53d728966eabf25d0da2570c347b17b10741b416959e3b7748c73c0bc128f02
+"lookup-closest-locale@npm:6.2.0":
+  version: 6.2.0
+  resolution: "lookup-closest-locale@npm:6.2.0"
+  checksum: 5ef9a8d48c14ff36dce324a88c2660ce4f04ecf51d2db406b6f0c32ac62634713764e9e7008e16a2f7da58419ff5d9f7fb7eada46ec3e1ba1209947b72ee9edc
   languageName: node
   linkType: hard
 
@@ -15872,7 +15866,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
-    "@lhci/cli": 0.8.2
+    "@lhci/cli": 0.9.0
     "@types/node": 17.0.14
     "@types/react": 17.0.38
     "@types/styled-components": 5.1.21
@@ -16421,15 +16415,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open@npm:^6.4.0":
-  version: 6.4.0
-  resolution: "open@npm:6.4.0"
-  dependencies:
-    is-wsl: ^1.1.0
-  checksum: e5037facf3e03ed777537db3e2511ada37f351c4394e1dadccf9cac11d63b28447ae8b495b7b138659910fd78d918bafed546e47163673c4a4e43dbb5ac53c5d
-  languageName: node
-  linkType: hard
-
 "open@npm:^7.0.2, open@npm:^7.0.3, open@npm:^7.1.0":
   version: 7.4.2
   resolution: "open@npm:7.4.2"
@@ -16437,6 +16422,17 @@ __metadata:
     is-docker: ^2.0.0
     is-wsl: ^2.1.1
   checksum: 3333900ec0e420d64c23b831bc3467e57031461d843c801f569b2204a1acc3cd7b3ec3c7897afc9dde86491dfa289708eb92bba164093d8bd88fb2c231843c91
+  languageName: node
+  linkType: hard
+
+"open@npm:^8.4.0":
+  version: 8.4.0
+  resolution: "open@npm:8.4.0"
+  dependencies:
+    define-lazy-prop: ^2.0.0
+    is-docker: ^2.1.1
+    is-wsl: ^2.2.0
+  checksum: e9545bec64cdbf30a0c35c1bdc310344adf8428a117f7d8df3c0af0a0a24c513b304916a6d9b11db0190ff7225c2d578885080b761ed46a3d5f6f1eebb98b63c
   languageName: node
   linkType: hard
 
@@ -17947,10 +17943,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ps-list@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "ps-list@npm:7.2.0"
-  checksum: 38969f4fb86e2b88bac4b033ff63dcf98e9490d4fa40d94feb369d79f9aa6a04efccbc3338c49eeeb2f0890cada80d74daee28584f0902c4cba0928f6e394c37
+"ps-list@npm:^8.0.0":
+  version: 8.1.0
+  resolution: "ps-list@npm:8.1.0"
+  checksum: afaa24953f2b1beba3245423c0af78957b1d1e70107cb445a439a2b2d74ba5aec615450dd0770db797975ce8a45fc331c161f079b86602d82d1e677cb58a5e94
   languageName: node
   linkType: hard
 
@@ -19161,10 +19157,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"robots-parser@npm:^2.0.1":
-  version: 2.3.0
-  resolution: "robots-parser@npm:2.3.0"
-  checksum: cb91144ad861381a2bb0286344142c616940e8fb43827d3613a52401bb4f4e8b1df869ef59371dd392e2fc1c601eaa57603d3cbc89c398bfb4b589f2e3b0188c
+"robots-parser@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "robots-parser@npm:3.0.0"
+  checksum: e4dc6a33cb8ab838b993e6b844a8a2f0b80203f4ca00917935724486c6a4a4fec03717ed0ee54dfc977d8e0730034f13999329d5b332878de33d3d980798585a
   languageName: node
   linkType: hard
 
@@ -20856,7 +20852,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"third-party-web@npm:^0.12.2":
+"third-party-web@npm:^0.12.7":
   version: 0.12.7
   resolution: "third-party-web@npm:0.12.7"
   checksum: 65af50cab714c84cf3c0bcb4a60e091f9d27b4f4ce93963229ac16b225390b63e311d608819da07df711a3220aa71a98807743f8ede0ee68ffa4d66fd8978d4f
@@ -21474,13 +21470,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ultron@npm:~1.1.0":
-  version: 1.1.1
-  resolution: "ultron@npm:1.1.1"
-  checksum: aa7b5ebb1b6e33287b9d873c6756c4b7aa6d1b23d7162ff25b0c0ce5c3c7e26e2ab141a5dc6e96c10ac4d00a372e682ce298d784f06ffcd520936590b4bc0653
-  languageName: node
-  linkType: hard
-
 "unbox-primitive@npm:^1.0.1":
   version: 1.0.1
   resolution: "unbox-primitive@npm:1.0.1"
@@ -21924,27 +21913,6 @@ __metadata:
     semver-diff: ^2.0.0
     xdg-basedir: ^3.0.0
   checksum: d22671b3a303d86ea25054ef0649b4cabcf8799420b148b523612e45281bf076c572b724e186d48bbfe62e679756aad2dcc405942660feb982e762e1d671ed45
-  languageName: node
-  linkType: hard
-
-"update-notifier@npm:^4.1.0":
-  version: 4.1.3
-  resolution: "update-notifier@npm:4.1.3"
-  dependencies:
-    boxen: ^4.2.0
-    chalk: ^3.0.0
-    configstore: ^5.0.1
-    has-yarn: ^2.1.0
-    import-lazy: ^2.1.0
-    is-ci: ^2.0.0
-    is-installed-globally: ^0.3.1
-    is-npm: ^4.0.0
-    is-yarn-global: ^0.3.0
-    latest-version: ^5.0.0
-    pupa: ^2.0.1
-    semver-diff: ^3.1.1
-    xdg-basedir: ^4.0.0
-  checksum: 67652056e6a2634881e67ac91be4524262bd0bcba98ef71107289adec33e21b72cca0a1a5fbcd9b546f40dff20fa38ebd36ef846629a7f8d97c602221ae4cfc1
   languageName: node
   linkType: hard
 
@@ -22719,17 +22687,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ws@npm:3.3.2":
-  version: 3.3.2
-  resolution: "ws@npm:3.3.2"
-  dependencies:
-    async-limiter: ~1.0.0
-    safe-buffer: ~5.1.0
-    ultron: ~1.1.0
-  checksum: e6cce82c8b64acfaaf733da8c239305a05e065d3383dc2c6c0245aafd06d2ba0c941877452630f8c1acd899f26d35cd5fc2dd7788ada2491a7f0a6408d841643
-  languageName: node
-  linkType: hard
-
 "ws@npm:7.4.5":
   version: 7.4.5
   resolution: "ws@npm:7.4.5"
@@ -23035,13 +22992,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs-parser@npm:^20.2.2, yargs-parser@npm:^20.2.4":
-  version: 20.2.9
-  resolution: "yargs-parser@npm:20.2.9"
-  checksum: 8bb69015f2b0ff9e17b2c8e6bfe224ab463dd00ca211eece72a4cd8a906224d2703fb8a326d36fdd0e68701e201b2a60ed7cf81ce0fd9b3799f9fe7745977ae3
-  languageName: node
-  linkType: hard
-
 "yargs-parser@npm:^21.0.0":
   version: 21.0.0
   resolution: "yargs-parser@npm:21.0.0"
@@ -23068,21 +23018,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^16.1.1":
-  version: 16.2.0
-  resolution: "yargs@npm:16.2.0"
-  dependencies:
-    cliui: ^7.0.2
-    escalade: ^3.1.1
-    get-caller-file: ^2.0.5
-    require-directory: ^2.1.1
-    string-width: ^4.2.0
-    y18n: ^5.0.5
-    yargs-parser: ^20.2.2
-  checksum: b14afbb51e3251a204d81937c86a7e9d4bdbf9a2bcee38226c900d00f522969ab675703bee2a6f99f8e20103f608382936034e64d921b74df82b63c07c5e8f59
-  languageName: node
-  linkType: hard
-
 "yargs@npm:^17.0.0":
   version: 17.3.0
   resolution: "yargs@npm:17.3.0"
@@ -23095,6 +23030,21 @@ __metadata:
     y18n: ^5.0.5
     yargs-parser: ^21.0.0
   checksum: 2b687338684bf9645e9389ffdbe813fc5a2ddfede299d46fbe5ac80eb9a391e558b97861ba44d2256936ebe9d7f8135f6a38af1c76a5685eac4061008b2df57a
+  languageName: node
+  linkType: hard
+
+"yargs@npm:^17.3.1":
+  version: 17.3.1
+  resolution: "yargs@npm:17.3.1"
+  dependencies:
+    cliui: ^7.0.2
+    escalade: ^3.1.1
+    get-caller-file: ^2.0.5
+    require-directory: ^2.1.1
+    string-width: ^4.2.3
+    y18n: ^5.0.5
+    yargs-parser: ^21.0.0
+  checksum: 64fc2e32c56739f1d14d2d24acd17a6944c3c8e3e3558f09fc1953ac112e868cc16013d282886b9d5be22187f8b9ed4f60741a6b1011f595ce2718805a656852
   languageName: node
   linkType: hard
 
