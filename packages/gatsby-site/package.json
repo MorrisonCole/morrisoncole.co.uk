@@ -19,7 +19,7 @@
     "@mui/icons-material": "5.3.1",
     "@mui/lab": "5.0.0-alpha.67",
     "@mui/material": "5.4.0",
-    "anser": "2.1.0",
+    "anser": "2.1.1",
     "classnames": "2.3.1",
     "css.escape": "1.5.1",
     "event-source-polyfill": "1.0.25",
