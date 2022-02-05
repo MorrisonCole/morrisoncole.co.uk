@@ -56,6 +56,7 @@ export default function Header(): JSX.Element {
                 borderRadius: "50%",
               }}
               layout="constrained"
+              aspectRatio={1}
             />
           </Box>
 
