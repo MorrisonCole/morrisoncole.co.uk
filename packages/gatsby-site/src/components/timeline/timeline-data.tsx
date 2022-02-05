@@ -58,7 +58,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       mainLink: "https://unity.com/",
       subtitle1: "Senior Software Engineer",
       subtitle2: "",
-      text: "Building new tools to democratize game development 🛠",
+      text: "Full-stack development on an unannounced project.",
       title: "Unity",
     },
     {

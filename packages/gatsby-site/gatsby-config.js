@@ -17,7 +17,7 @@ module.exports = {
   siteMetadata: {
     title: "Morrison Cole",
     author: "Morrison Cole",
-    description: `I'm a senior software engineer at Unity based in Tokyo, Japan. I love start-ups, and previously worked for Shazam & Improbable.`,
+    description: `I'm a senior software engineer at Unity based in Tokyo, Japan. I love start-ups and previously worked for Shazam & Improbable.`,
     siteUrl: rawUrl,
     social: {
       twitter: "@morrisoncole",
