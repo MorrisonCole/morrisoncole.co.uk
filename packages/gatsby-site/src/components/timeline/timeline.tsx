@@ -11,12 +11,12 @@ import {
   TimelineSeparator,
 } from "@mui/lab";
 import TimelineImageCardRaw from "./timeline-image-card";
-import { TimelineEntryData } from "./timeline-data";
+import { TimelineEntry } from "./timeline-data";
 
 export default CustomizedTimeline;
 
 interface Props {
-  timelineEntries: TimelineEntryData[];
+  timelineEntries: TimelineEntry[];
 }
 
 function useIsWidthUp(breakpoint: number | Breakpoint) {

@@ -1,27 +1,18 @@
 import { Button, Paper, Typography } from "@mui/material";
 import { GetApp } from "@mui/icons-material";
-import { graphql, PageProps } from "gatsby";
+import { PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import cvPdf from "../downloads/cv.pdf";
-import { life, TimelineEntryData } from "../components/timeline/timeline-data";
-import { TimelineIndexQuery } from "../../types/graphql-types";
+import {
+  getTimelineEntries,
+  TimelineEntry,
+} from "../components/timeline/timeline-data";
 import CustomizedTimeline from "../components/timeline/timeline";
-import { getImage } from "gatsby-plugin-image";
 import { Box } from "@mui/system";
 
-interface TimelineIndexProps {
-  data: TimelineIndexQuery;
-}
-
-export default function TimelineIndex({
-  data,
-  location,
-}: TimelineIndexProps & PageProps): JSX.Element {
-  const imageFiles = data.allFile.edges.map((edge) => edge.node);
-  const lifeEvents: TimelineEntryData[] = life(
-    new Map(imageFiles.map((i) => [i.name, getImage(i)]))
-  );
+export default function TimelineIndex({ location }: PageProps): JSX.Element {
+  const lifeEvents: TimelineEntry[] = getTimelineEntries();
 
   return (
     <>
@@ -95,21 +86,3 @@ export default function TimelineIndex({
     </>
   );
 }
-
-export const pageQuery = graphql`
-  query TimelineIndex {
-    allFile(filter: { absolutePath: { regex: "/timeline/.*/" } }) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              sizes: "(min-width: 960px) 320px, (min-width: 600px) 500px, (min-width: 400px) 300px, (min-width: 200px) 150px, (min-width: 0px) 40px, 100vw"
-            )
-          }
-        }
-      }
-    }
-  }
-`;

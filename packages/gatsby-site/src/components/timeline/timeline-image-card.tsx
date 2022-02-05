@@ -2,17 +2,14 @@ import { Grow } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import { useInView } from "react-intersection-observer";
-import ComposableGatsbyImage from "../composable/composable-gatsby-image";
 
 interface TimelineImageCardProps {
   title: string;
   mainLink: string;
-  image: IGatsbyImageData;
+  image: JSX.Element;
   subtitle1: string;
   text: string;
 }
@@ -46,15 +43,7 @@ export default function TimelineImageCardRaw({
     >
       <Card>
         <CardActionArea href={mainLink} target="_blank" rel="noopener">
-          <CardMedia
-            component={ComposableGatsbyImage}
-            imageSrc={image}
-            title={title}
-            src=""
-            sx={{
-              maxHeight: 200,
-            }}
-          />
+          {image}
           <CardContent>
             <Typography variant="h5" component="h2">
               {title}

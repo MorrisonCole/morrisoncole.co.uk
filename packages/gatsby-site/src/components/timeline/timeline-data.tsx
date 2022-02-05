@@ -1,11 +1,10 @@
 import { ChildFriendly, Home, School, Work } from "@mui/icons-material/";
 import React from "react";
-import { CSSProperties } from '@mui/material/styles';
-import { ImageSharp, ImageSharpFluid } from "../../../types/graphql-types";
-import { IGatsbyImageData } from "gatsby-plugin-image";
+import { CSSObject, useTheme } from "@mui/material/styles";
+import { StaticImage } from "gatsby-plugin-image";
 
 interface TimelineIcon {
-  background: CSSProperties;
+  background: CSSObject;
   icon: JSX.Element;
 }
 
@@ -29,10 +28,10 @@ class WorkIcon implements TimelineIcon {
   icon = (<Work />);
 }
 
-export interface TimelineEntryData {
+export interface TimelineEntry {
   date: string;
   icon: TimelineIcon;
-  image: IGatsbyImageData;
+  image: JSX.Element;
   mainLink: string;
   subtitle1: string;
   subtitle2: string;
@@ -40,14 +39,22 @@ export interface TimelineEntryData {
   title: string;
 }
 
-export function life(
-  imageFiles: Map<string, IGatsbyImageData>
-): TimelineEntryData[] {
+export function getTimelineEntries(): TimelineEntry[] {
+  const theme = useTheme();
+
+  const unityLight = (
+    <StaticImage src="./images/unity-white.png" alt="Unity Logo" />
+  );
+
+  const unityDark = (
+    <StaticImage src="./images/unity-black.png" alt="Unity Logo" />
+  );
+
   return [
     {
       date: "2020 - Now",
       icon: new WorkIcon(),
-      image: imageFiles.get("unity"),
+      image: theme.palette.mode === "dark" ? unityLight : unityDark,
       mainLink: "https://unity.com/",
       subtitle1: "Senior Software Engineer",
       subtitle2: "",
@@ -57,7 +64,7 @@ export function life(
     {
       date: "2019",
       icon: new HomeIcon(),
-      image: imageFiles.get("tokyo"),
+      image: <StaticImage src="./images/tokyo.jpg" alt="Tokyo at night" />,
       mainLink: "https://goo.gl/maps/7FFdpXCeUU3koAAv9",
       subtitle1: "Tokyo",
       subtitle2: "",
@@ -67,7 +74,7 @@ export function life(
     {
       date: "2019 - 2020",
       icon: new WorkIcon(),
-      image: imageFiles.get("medmain"),
+      image: <StaticImage src="./images/medmain.png" alt="Medmain logo" />,
       mainLink: "https://medmain.com/",
       subtitle1: "Software Engineer, Server",
       subtitle2: "",
@@ -77,7 +84,7 @@ export function life(
     {
       date: "2019",
       icon: new HomeIcon(),
-      image: imageFiles.get("kobe"),
+      image: <StaticImage src="./images/kobe.jpg" alt="Kobe cityscape" />,
       mainLink: "https://goo.gl/maps/hURywEujBbYCqqbA6",
       subtitle1: "Kobe, Hyogo",
       subtitle2: "",
@@ -87,7 +94,9 @@ export function life(
     {
       date: "2015 - 2019",
       icon: new WorkIcon(),
-      image: imageFiles.get("improbable"),
+      image: (
+        <StaticImage src="./images/improbable.png" alt="Improbable logo" />
+      ),
       mainLink: "https://www.crunchbase.com/organization/improbable",
       subtitle1: "Software Engineer & Product Manager",
       subtitle2: "",
@@ -101,7 +110,7 @@ export function life(
     {
       date: "2013 - 2015",
       icon: new WorkIcon(),
-      image: imageFiles.get("shazam"),
+      image: <StaticImage src="./images/shazam.png" alt="Shazam logo" />,
       mainLink: "https://www.crunchbase.com/organization/shazam",
       subtitle1: "Junior Software Engineer",
       subtitle2: "(Aqc. by Apple, 2018)",
@@ -111,7 +120,9 @@ export function life(
     {
       date: "2013",
       icon: new WorkIcon(),
-      image: imageFiles.get("thirdnerve"),
+      image: (
+        <StaticImage src="./images/thirdnerve.png" alt="Third Nerve logo" />
+      ),
       mainLink:
         "https://steamcommunity.com/sharedfiles/filedetails/?id=92967778",
       subtitle1: "Founder",
@@ -124,7 +135,7 @@ export function life(
     {
       date: "2010 - 2014",
       icon: new SchoolIcon(),
-      image: imageFiles.get("ucl"),
+      image: <StaticImage src="./images/ucl.jpg" alt="UCL quad" />,
       mainLink: "https://www.ucl.ac.uk/",
       subtitle1: "BSc Computer Science",
       subtitle2: "First-class Honours",
@@ -134,7 +145,7 @@ export function life(
     {
       date: "2010",
       icon: new HomeIcon(),
-      image: imageFiles.get("london"),
+      image: <StaticImage src="./images/london.jpg" alt="London cityscape" />,
       mainLink: "https://goo.gl/maps/QoKpM98YJtjERNmY8",
       subtitle1: "London, UK",
       subtitle2: "",
@@ -144,7 +155,12 @@ export function life(
     {
       date: "2006 - 2010",
       icon: new SchoolIcon(),
-      image: imageFiles.get("wcs"),
+      image: (
+        <StaticImage
+          src="./images/wcs.jpg"
+          alt="Wells Cathedral School alleyway"
+        />
+      ),
       mainLink: "https://wells.cathedral.school/",
       subtitle1: "Specialist Musician",
       subtitle2: "3 A-Levels (A*-A), 6 GCSEs (A*-A)",
@@ -154,7 +170,9 @@ export function life(
     {
       date: "1992",
       icon: new BornIcon(),
-      image: imageFiles.get("falmouth"),
+      image: (
+        <StaticImage src="./images/falmouth.jpg" alt="Falmouth townscape" />
+      ),
       mainLink: "https://goo.gl/maps/w7SRynhttGuu4Nst7",
       subtitle1: "Falmouth, Cornwall",
       subtitle2: "",
