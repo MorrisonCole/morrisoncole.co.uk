@@ -1,15 +1,14 @@
-import { Button, Paper, Typography } from "@mui/material";
-import { GetApp } from "@mui/icons-material";
+import { Paper, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import { PageProps } from "gatsby";
 import React from "react";
+import DownloadCVButton from "../components/download-cv-button";
 import SEO from "../components/seo";
-import cvPdf from "../downloads/cv.pdf";
+import CustomizedTimeline from "../components/timeline/timeline";
 import {
   getTimelineEntries,
   TimelineEntry,
 } from "../components/timeline/timeline-data";
-import CustomizedTimeline from "../components/timeline/timeline";
-import { Box } from "@mui/system";
 
 export default function TimelineIndex({ location }: PageProps): JSX.Element {
   const lifeEvents: TimelineEntry[] = getTimelineEntries();
@@ -54,23 +53,7 @@ export default function TimelineIndex({ location }: PageProps): JSX.Element {
               I&apos;m a software engineer, product manager, and (occasional)
               musician working in Tokyo.
             </Typography>
-            <Button
-              variant="contained"
-              color="primary"
-              size="medium"
-              href={cvPdf}
-              download="cv-morrison-cole.pdf"
-              sx={{
-                marginTop: ({ spacing }) => spacing(1),
-              }}
-            >
-              CV (.pdf)
-              <GetApp
-                sx={{
-                  marginLeft: ({ spacing }) => spacing(1),
-                }}
-              />
-            </Button>
+            <DownloadCVButton />
           </Paper>
         </Box>
 
