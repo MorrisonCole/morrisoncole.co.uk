@@ -1,8 +1,8 @@
 .yarn
-gatsby-site/.cache
-gatsby-site/.circleci
-gatsby-site/.terraform
-gatsby-site/.yarn
-gatsby-site/node_modules
-gatsby-site/public
-nextjs-site/.next
+packages/gatsby-site/.cache
+packages/gatsby-site/.circleci
+packages/gatsby-site/.terraform
+packages/gatsby-site/.yarn
+packages/gatsby-site/node_modules
+packages/gatsby-site/public
+packages/nextjs-site/.next
