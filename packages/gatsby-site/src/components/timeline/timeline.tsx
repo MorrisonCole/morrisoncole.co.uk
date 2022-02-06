@@ -71,7 +71,7 @@ function CustomizedTimeline({ timelineEntries }: Props): JSX.Element {
           },
         },
       })}
-      position={isSmUp ? "alternate" : "left"}
+      position={isSmUp ? "alternate" : "right"}
     >
       {listItems}
 
