@@ -47,7 +47,7 @@
     "gatsby-remark-embed-video": "3.1.1",
     "gatsby-remark-images": "6.6.0",
     "gatsby-source-filesystem": "4.7.0",
-    "gatsby-transformer-json": "4.6.0",
+    "gatsby-transformer-json": "4.7.0",
     "gatsby-transformer-sharp": "4.6.0",
     "graphql": "16.3.0",
     "lodash": "4.17.21",
