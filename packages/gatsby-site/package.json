@@ -70,7 +70,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.2",
-    "@graphql-codegen/cli": "2.5.0",
+    "@graphql-codegen/cli": "2.6.0",
     "@graphql-codegen/typescript": "2.4.2",
     "@graphql-codegen/typescript-operations": "2.3.0",
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
