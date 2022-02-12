@@ -40,7 +40,7 @@ export default function TimelineIndex({ location }: PageProps): JSX.Element {
               padding: ({ spacing }) => spacing(2.5),
             }}
           >
-            <Typography variant="h5" align="center">
+            <Typography variant="h4" align="center">
               Hello! 👋
             </Typography>
             <Typography

@@ -52,7 +52,7 @@ export default function Blog({
               sx={(theme) => ({
                 display: "flex",
                 [theme.breakpoints.up("md")]: {
-                  height: 220,
+                  height: "20rem",
                 },
               })}
             >

@@ -58,7 +58,7 @@ export default function DownloadCVButton(): JSX.Element {
         ref={anchorRef}
         aria-label="split button"
         sx={{
-          marginTop: ({ spacing }) => spacing(1),
+          marginTop: ({ spacing }) => spacing(2),
         }}
       >
         <Button onClick={handleClick}>{options[selectedIndex]}</Button>
