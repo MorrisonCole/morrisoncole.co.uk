@@ -2,6 +2,7 @@ import { useMediaQuery, PaletteMode } from "@mui/material";
 import {
   ThemeProvider as MuiThemeProvider,
   createTheme,
+  responsiveFontSizes,
 } from "@mui/material/styles";
 import React, { createContext, useEffect, useMemo, useState } from "react";
 
@@ -35,30 +36,32 @@ export function ThemeProvider({ children }: Props): JSX.Element {
 
   const theme = useMemo(
     () =>
-      createTheme({
-        typography: {
-          fontFamily: "Roboto,Helvetica,Arial,sans-serif",
-          fontSize: 14,
-          h1: {
-            fontSize: "2.6rem",
+      responsiveFontSizes(
+        createTheme({
+          typography: {
+            fontFamily: "Roboto,Helvetica,Arial,sans-serif",
+            fontSize: 19,
+            h1: {
+              fontSize: "2.6rem",
+            },
+            h2: {
+              fontSize: "2.3rem",
+            },
+            h3: {
+              fontSize: "2rem",
+            },
           },
-          h2: {
-            fontSize: "2.3rem",
+          palette: {
+            mode: paletteMode,
+            primary: {
+              main: paletteMode === "dark" ? "#ff7043" : "#0070f2",
+            },
+            secondary: {
+              main: paletteMode === "dark" ? "#0070f2" : "#ff7043",
+            },
           },
-          h3: {
-            fontSize: "2rem",
-          },
-        },
-        palette: {
-          mode: paletteMode,
-          primary: {
-            main: paletteMode === "dark" ? "#ff7043" : "#0070f2",
-          },
-          secondary: {
-            main: paletteMode === "dark" ? "#0070f2" : "#ff7043",
-          },
-        },
-      }),
+        })
+      ),
     [paletteMode]
   );
 

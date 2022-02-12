@@ -45,10 +45,9 @@ export default function TimelineImageCardRaw({
         <CardActionArea href={mainLink} target="_blank" rel="noopener">
           {image}
           <CardContent>
-            <Typography variant="h5" component="h2">
-              {title}
-            </Typography>
+            <Typography variant="h4">{title}</Typography>
             <Typography
+              variant="h6"
               color="textSecondary"
               sx={{
                 marginBottom: "12px",
@@ -56,9 +55,7 @@ export default function TimelineImageCardRaw({
             >
               {subtitle1}
             </Typography>
-            <Typography variant="body2" component="p">
-              {text}
-            </Typography>
+            <Typography variant="body2">{text}</Typography>
           </CardContent>
         </CardActionArea>
       </Card>
