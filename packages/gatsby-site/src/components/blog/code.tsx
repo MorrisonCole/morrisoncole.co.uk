@@ -47,7 +47,7 @@ export function Code({ codeString, language, ...props }: Props): JSX.Element {
               className={className}
               style={{
                 padding: theme.spacing(2),
-                fontSize: "16px",
+                fontSize: "1rem",
                 whiteSpace: "pre-wrap",
                 wordBreak: "break-word",
                 margin: 0,
