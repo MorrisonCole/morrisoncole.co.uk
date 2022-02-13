@@ -184,8 +184,8 @@ module.exports = {
                   aria-hidden="true"
                   version="1.1"
                   viewBox="0 0 16 16"
-                  width="0.7em"
-                  height="0.7em"
+                  width="0.7rem"
+                  height="0.7rem"
                   focusable="false"
                   fill="currentColor"
                 >
@@ -196,21 +196,14 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-embed-video",
-            options: {
-              width: 800,
-              ratio: 16 / 9,
-              related: false,
-              noIframeBorder: true,
-            },
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
               wrapperStyle: `width: 100%; grid-column: 1 / 6; margin-bottom: 16px;`,
               linkImagesToOriginal: false,
               withAvif: true,
+              withWebp: true,
+              srcSetBreakpoints: [600, 900, 1200],
             },
           },
         ],
@@ -222,7 +215,7 @@ module.exports = {
       options: {
         defaults: {
           formats: ["auto", "webp", "avif"],
-          breakpoints: [20, 40, 80, 160, 320, 640, 1280],
+          breakpoints: [600, 900, 1200],
         },
       },
     },
@@ -238,18 +231,6 @@ module.exports = {
         },
 
         routeChangeEventName: "route-change",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "Morrison Cole Blog",
-        short_name: "MorrisonCole",
-        start_url: "/",
-        background_color: "#303030",
-        theme_color: "#663399",
-        display: "minimal-ui",
-        icon: "./content/assets/favicon.ico",
       },
     },
     "gatsby-plugin-typescript",
