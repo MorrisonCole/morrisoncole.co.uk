@@ -6,8 +6,8 @@ const Button = styled.button`
   border-radius: 3px;
   padding: 0.5rem 0;
   width: 10rem;
-  background: rgba(64, 64, 64, 60);
-  color: white;
+  background: hsla(0, 0%, 25%, 0.6);
+  color: hsl(0, 0%, 100%);
   border: 2px solid white;
 
   &:hover {

@@ -60,8 +60,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: rgb(16, 16, 16);
-    color: white;
+    background-color: hsl(0, 0%, 6%);
+    color: hsl(0, 0%, 100%);
   }
 
   // Reset from https://courses.joshwcomeau.com/css-for-js/treasure-trove/010-global-styles

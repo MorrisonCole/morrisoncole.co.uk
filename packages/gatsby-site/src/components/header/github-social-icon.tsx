@@ -24,7 +24,9 @@ export default function GitHubSocialIcon(): JSX.Element {
               fontSize: "2.5rem",
             },
             color: ({ palette }) =>
-              palette.mode === "light" ? "#333" : lighten("#333", 0.8),
+              palette.mode === "light"
+                ? "hsl(0, 0%, 20%)"
+                : lighten("hsl(0, 0%, 20%)", 0.8),
           })}
         />
       }
