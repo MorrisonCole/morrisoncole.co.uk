@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FooterContainer = styled.footer`
   grid-area: footer;
-  background-color: rgb(66, 66, 66);
+  background-color: hsl(0, 0%, 26%);
   padding: ${(props) => props.theme.spacing[6]};
 `;
 

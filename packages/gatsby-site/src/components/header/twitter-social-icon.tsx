@@ -22,7 +22,7 @@ export default function TwitterSocialIcon(): JSX.Element {
             [theme.breakpoints.down("md")]: {
               fontSize: "2.5rem",
             },
-            color: "#1da1f2",
+            color: "hsl(202, 89%, 53%)",
           })}
         />
       }
