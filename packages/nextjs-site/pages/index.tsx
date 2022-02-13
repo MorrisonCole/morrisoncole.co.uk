@@ -5,7 +5,7 @@ import { Layout } from "../components/layout";
 import { SwitchLocaleButton } from "../components/switch-locale-button";
 
 const Title = styled.h1`
-  font-size: 3em;
+  font-size: 4rem;
 `;
 
 const Bold = styled.span`
@@ -22,8 +22,7 @@ const BoldItalic = styled.span`
 `;
 
 const Japanese = styled.p`
-  font-size: 1em;
-  font-weight: regular;
+  font-size: 1rem;
   font-family: "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; ;
 `;
