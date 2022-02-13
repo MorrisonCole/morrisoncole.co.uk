@@ -47,7 +47,7 @@ export default function TimelineImageCardRaw({
           <CardContent>
             <Typography variant="h4">{title}</Typography>
             <Typography
-              variant="h6"
+              variant="subtitle1"
               color="textSecondary"
               sx={{
                 marginBottom: "12px",
