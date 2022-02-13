@@ -9,22 +9,22 @@ interface TimelineIcon {
 }
 
 class BornIcon implements TimelineIcon {
-  background = { background: "rgb(33, 150, 243)", color: "#fff" };
+  background = { background: "hsl(206, 89%, 54%)", color: "hsl(0, 0%, 100%)" };
   icon = (<ChildFriendly />);
 }
 
 class HomeIcon implements TimelineIcon {
-  background = { background: "rgb(233, 30, 99)", color: "#fff" };
+  background = { background: "hsl(339, 82%, 51%)", color: "hsl(0, 0%, 100%)" };
   icon = (<Home />);
 }
 
 class SchoolIcon implements TimelineIcon {
-  background = { background: "rgb(233, 30, 99)", color: "#fff" };
+  background = { background: "hsl(339, 82%, 51%)", color: "hsl(0, 0%, 100%)" };
   icon = (<School />);
 }
 
 class WorkIcon implements TimelineIcon {
-  background = { background: "rgb(233, 30, 99)", color: "#fff" };
+  background = { background: "hsl(339, 82%, 51%)", color: "hsl(0, 0%, 100%)" };
   icon = (<Work />);
 }
 

@@ -15,7 +15,7 @@ import { FrontMatter } from ".";
 import { Layout } from "packages/nextjs-site/components/layout";
 
 const h1 = styled.h1`
-  color: grey;
+  color: hsl(0, 0%, 50%);
   font-size: 3em;
 `;
 

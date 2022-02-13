@@ -22,7 +22,7 @@ export default function LinkedInSocialIcon(): JSX.Element {
             [theme.breakpoints.down("md")]: {
               fontSize: "2.5rem",
             },
-            color: "#0077b5",
+            color: "hsl(200, 100%, 35%)",
           })}
         />
       }

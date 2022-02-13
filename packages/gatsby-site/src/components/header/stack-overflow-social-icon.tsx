@@ -22,7 +22,7 @@ export default function StackOverflowSocialIcon(): JSX.Element {
             [theme.breakpoints.down("md")]: {
               fontSize: "2.5rem",
             },
-            color: "#f48024",
+            color: "hsl(26, 90%, 54%)",
           })}
         />
       }
