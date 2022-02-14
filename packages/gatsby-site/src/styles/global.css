@@ -4,11 +4,9 @@ body {
 
 .anchor {
   padding: 0 8px;
-  display: inline-block;
   vertical-align: middle;
-  color: hsla(0, 0%, 0%, 0.54);
 }
 
 .anchor:hover {
-  color: hsla(0, 0%, 0%, 0.87);
+  filter: hue-rotate(180deg);
 }

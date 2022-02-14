@@ -184,8 +184,8 @@ module.exports = {
                   aria-hidden="true"
                   version="1.1"
                   viewBox="0 0 16 16"
-                  width="0.7rem"
-                  height="0.7rem"
+                  width="0.7em"
+                  height="0.7em"
                   focusable="false"
                   fill="currentColor"
                 >
