@@ -1988,28 +1988,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.7.1":
-  version: 11.7.2
-  resolution: "@emotion/babel-plugin@npm:11.7.2"
-  dependencies:
-    "@babel/helper-module-imports": ^7.12.13
-    "@babel/plugin-syntax-jsx": ^7.12.13
-    "@babel/runtime": ^7.13.10
-    "@emotion/hash": ^0.8.0
-    "@emotion/memoize": ^0.7.5
-    "@emotion/serialize": ^1.0.2
-    babel-plugin-macros: ^2.6.1
-    convert-source-map: ^1.5.0
-    escape-string-regexp: ^4.0.0
-    find-root: ^1.1.0
-    source-map: ^0.5.7
-    stylis: 4.0.13
-  peerDependencies:
-    "@babel/core": ^7.0.0
-  checksum: eb9607356663c3e158b91ae7b8fde7335c74e6302d1671da1ca0b34142f762e1354bac8cb0bdf5baedf1278912eeea01e103b8f5c59ee107746d1b03f56aa664
-  languageName: node
-  linkType: hard
-
 "@emotion/cache@npm:^11.7.1":
   version: 11.7.1
   resolution: "@emotion/cache@npm:11.7.1"
@@ -2132,9 +2110,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:11.8.0":
-  version: 11.8.0
-  resolution: "@emotion/styled@npm:11.8.0"
+"@emotion/styled@npm:11.8.1":
+  version: 11.8.1
+  resolution: "@emotion/styled@npm:11.8.1"
   dependencies:
     "@babel/runtime": ^7.13.10
     "@emotion/babel-plugin": ^11.7.1
@@ -2150,7 +2128,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 21e6bad9339fb087c5214cfba861fd5db20d429a6b6981d944aa5df1da571baa9f176455588c063a274b670ecbf12d7b9100d80186e1b8f8911fa0b4502d04bd
+  checksum: 67150fa788785c34e285b90acecc91fe7a63babceaefbeffd053bed0fa31f72a05bfeeb9d15620766e543e007b9ccac2e836812eec2e791f962ec4e52731ae4c
   languageName: node
   linkType: hard
 
@@ -15713,7 +15691,7 @@ __metadata:
     "@babel/runtime": 7.17.2
     "@emotion/react": 11.8.0
     "@emotion/server": 11.4.0
-    "@emotion/styled": 11.8.0
+    "@emotion/styled": 11.8.1
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 2.6.2
     "@graphql-codegen/typescript": 2.4.5
