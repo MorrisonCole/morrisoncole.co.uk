@@ -6161,19 +6161,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:4.7.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.7.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^4.0.0-next
-  checksum: 124cdb66d014f45016f6d54db33110cc25978d56699f7a1d3f0758baccccb940f5b9412ba8dc9fa8f858bd8d2ecd23c2b20028a7e97208e16980ad25af91b09e
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^4.8.0":
   version: 4.8.0
   resolution: "babel-plugin-remove-graphql-queries@npm:4.8.0"
@@ -10982,14 +10969,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-canonical-urls@npm:4.7.0":
-  version: 4.7.0
-  resolution: "gatsby-plugin-canonical-urls@npm:4.7.0"
+"gatsby-plugin-canonical-urls@npm:4.8.0":
+  version: 4.8.0
+  resolution: "gatsby-plugin-canonical-urls@npm:4.8.0"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 7f29282cb547228c44dbc23a3b4a1757f4d8a2e93a9ce25d823ac55f40fd2e0f43405ec0a46d26f9fe15e0d71441508b13e2b9ae31fca2b333f7180c2b59ac0a
+  checksum: b97a2f47631c4797bc316c66eba8873ea492bdf1778921076dc20c98931d988fbdfc43d4c692d8cb989d82fcbb41e4a75a897909be71dd14d09fa86ce4bc22f4
   languageName: node
   linkType: hard
 
@@ -15851,7 +15838,7 @@ __metadata:
     gatsby-cli: 4.8.0
     gatsby-legacy-polyfills: 2.8.0
     gatsby-link: 4.8.0
-    gatsby-plugin-canonical-urls: 4.7.0
+    gatsby-plugin-canonical-urls: 4.8.0
     gatsby-plugin-feed: 4.8.0
     gatsby-plugin-google-tagmanager: 4.8.0
     gatsby-plugin-image: 2.8.0
