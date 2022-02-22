@@ -7414,6 +7414,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"color@npm:^4.2.0":
+  version: 4.2.1
+  resolution: "color@npm:4.2.1"
+  dependencies:
+    color-convert: ^2.0.1
+    color-string: ^1.9.0
+  checksum: 03fb3100a8ba457b45f3f9828f64e982d683f48c841e3d26a619bd88924fcc47f1124b2fdf3e4ae518c4129e9885c19052244ba1ea0b06d86beffc5f5e551d62
+  languageName: node
+  linkType: hard
+
 "colord@npm:^2.9.1":
   version: 2.9.2
   resolution: "colord@npm:2.9.2"
@@ -8569,6 +8579,13 @@ __metadata:
   bin:
     detect-libc: ./bin/detect-libc.js
   checksum: daaaed925ffa7889bd91d56e9624e6c8033911bb60f3a50a74a87500680652969dbaab9526d1e200a4c94acf80fc862a22131841145a0a8482d60a99c24f4a3e
+  languageName: node
+  linkType: hard
+
+"detect-libc@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "detect-libc@npm:2.0.1"
+  checksum: ccb05fcabbb555beb544d48080179c18523a343face9ee4e1a86605a8715b4169f94d663c21a03c310ac824592f2ba9a5270218819bb411ad7be578a527593d7
   languageName: node
   linkType: hard
 
@@ -11366,9 +11383,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:4.7.0":
-  version: 4.7.0
-  resolution: "gatsby-transformer-sharp@npm:4.7.0"
+"gatsby-transformer-sharp@npm:4.8.0":
+  version: 4.8.0
+  resolution: "gatsby-transformer-sharp@npm:4.8.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     bluebird: ^3.7.2
@@ -11377,11 +11394,11 @@ __metadata:
     potrace: ^2.1.8
     probe-image-size: ^6.0.0
     semver: ^7.3.5
-    sharp: ^0.29.3
+    sharp: ^0.30.1
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: eb18d224e1c60cae9722dfc03832ec31c0c68d3de279a8a50f1533e5138a748856caf907aec566de39abc268b3c8e65814a7d71bb443f2b48868502bd7483ecf
+  checksum: eed21635214c6bb650f98de282ddcadb93dfbdfd8e271b11b5aa8e11dcaaea767d15b1b2a7bb24037bc6efd49376ea9048c4bcb86e738a633e4b31f10fe8281b
   languageName: node
   linkType: hard
 
@@ -15742,7 +15759,7 @@ __metadata:
     gatsby-remark-images: 6.7.0
     gatsby-source-filesystem: 4.7.0
     gatsby-transformer-json: 4.7.0
-    gatsby-transformer-sharp: 4.7.0
+    gatsby-transformer-sharp: 4.8.0
     graphql: 16.3.0
     lmdb-store: 1.6.14
     lodash: 4.17.21
@@ -16108,6 +16125,15 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 52ea6ff01a882766ceec74a0752c0cf9571fa72559a7a3e8969779fa5ae113a2d63cb54dd267fa83a533ab2b7617131d4a6996114701f4ca27246d2513b0e5a5
+  languageName: node
+  linkType: hard
+
+"node-addon-api@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "node-addon-api@npm:4.3.0"
+  dependencies:
+    node-gyp: latest
+  checksum: 3de396e23cc209f539c704583e8e99c148850226f6e389a641b92e8967953713228109f919765abc1f4355e801e8f41842f96210b8d61c7dcc10a477002dcf00
   languageName: node
   linkType: hard
 
@@ -17883,6 +17909,29 @@ __metadata:
   bin:
     prebuild-install: bin.js
   checksum: 413783f74677a9691c286f3302ef37a9d4d6121b85bb38064d286931dfc57961da6066bfe02e7c411ee828c2ee40b0ba467575e7197178582db8385dd8402d5f
+  languageName: node
+  linkType: hard
+
+"prebuild-install@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "prebuild-install@npm:7.0.1"
+  dependencies:
+    detect-libc: ^2.0.0
+    expand-template: ^2.0.3
+    github-from-package: 0.0.0
+    minimist: ^1.2.3
+    mkdirp-classic: ^0.5.3
+    napi-build-utils: ^1.0.1
+    node-abi: ^3.3.0
+    npmlog: ^4.0.1
+    pump: ^3.0.0
+    rc: ^1.2.7
+    simple-get: ^4.0.0
+    tar-fs: ^2.0.0
+    tunnel-agent: ^0.6.0
+  bin:
+    prebuild-install: bin.js
+  checksum: 117c8966f221242633bbf245755fb469dabc7085909f5e3db83359d6281a88dedbdada7e839315805a192c74b7cce3ed1a86c1382a8d950c1ea60a9d5d8e7bf0
   languageName: node
   linkType: hard
 
@@ -19694,6 +19743,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sharp@npm:^0.30.1":
+  version: 0.30.1
+  resolution: "sharp@npm:0.30.1"
+  dependencies:
+    color: ^4.2.0
+    detect-libc: ^2.0.0
+    node-addon-api: ^4.3.0
+    node-gyp: latest
+    prebuild-install: ^7.0.1
+    semver: ^7.3.5
+    simple-get: ^4.0.1
+    tar-fs: ^2.1.1
+    tunnel-agent: ^0.6.0
+  checksum: 4297d9819936500656cd06fdeb13b164318d7f90cfe19896adfa1f7373c5ac39f2f11c43872a15f5931b9dfa14df90c0cb498f9b46086e1d00522680e9c9b3ef
+  languageName: node
+  linkType: hard
+
 "shebang-command@npm:^1.2.0":
   version: 1.2.0
   resolution: "shebang-command@npm:1.2.0"
@@ -19786,6 +19852,17 @@ __metadata:
     once: ^1.3.1
     simple-concat: ^1.0.0
   checksum: 8af4fb788be27af3586395857a1617be133391a7356b007a76379f5eb2ad1c19ea6a13ba9467b0fe790b9e468f9fb124639779b62eb21e6d3ab2cb9b2850cb8d
+  languageName: node
+  linkType: hard
+
+"simple-get@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "simple-get@npm:4.0.1"
+  dependencies:
+    decompress-response: ^6.0.0
+    once: ^1.3.1
+    simple-concat: ^1.0.0
+  checksum: e4132fd27cf7af230d853fa45c1b8ce900cb430dd0a3c6d3829649fe4f2b26574c803698076c4006450efb0fad2ba8c5455fbb5755d4b0a5ec42d4f12b31d27e
   languageName: node
   linkType: hard
 
