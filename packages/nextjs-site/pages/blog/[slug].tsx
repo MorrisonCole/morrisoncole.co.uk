@@ -1,9 +1,9 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
-import React, { ReactNode } from "react";
+import React from "react";
 import styled from "styled-components";
+import fs from "fs/promises";
 import path from "path";
-import matter from "gray-matter";
 import { Button } from "../../components/button";
 import Image from "next/image";
 import {
@@ -11,7 +11,6 @@ import {
   POSTS_PATH,
 } from "packages/nextjs-site/utils/mdx-utils";
 import { GetStaticPropsContext } from "next";
-import { FrontMatter } from ".";
 import { Layout } from "packages/nextjs-site/components/layout";
 
 const h1 = styled.h1`
@@ -21,11 +20,11 @@ const h1 = styled.h1`
 
 const p = styled.p``;
 
-const mdxComponents: Record<string, ReactNode> = {
-  Button,
-  Image,
-  h1,
-  p,
+const mdxComponents = {
+  Button: Button,
+  Image: Image,
+  h1: h1,
+  p: p,
 };
 
 export default function PostPage({
@@ -42,20 +41,20 @@ export default function PostPage({
 
 export const getStaticProps = async ({ params }: GetStaticPropsContext) => {
   const sourceFile = path.join(POSTS_PATH, `${params!.slug}.mdx`);
-  const { content, data } = matter.read(sourceFile);
+  const source = (await fs.readFile(sourceFile)).toString();
 
-  const mdxSource = await serialize(content, {
+  const mdxSerializeResult = await serialize(source, {
     mdxOptions: {
       remarkPlugins: [],
       rehypePlugins: [],
     },
-    scope: data,
+    parseFrontmatter: true,
   });
 
   return {
     props: {
-      source: mdxSource,
-      frontMatter: data as FrontMatter,
+      source: mdxSerializeResult,
+      frontMatter: mdxSerializeResult.frontmatter,
     },
   };
 };
