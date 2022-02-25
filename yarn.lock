@@ -11101,6 +11101,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.8.1":
+  version: 3.8.1
+  resolution: "gatsby-core-utils@npm:3.8.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    import-from: ^4.0.0
+    lmdb: ^2.1.7
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 562272db59349e4c907b6982f2995eab7d0beaa69283c70842ab88892fa3f942e57046570c7da8d0185c05797fc43b9c07e1be91ad7dcb578f37ed2a7d43f39f
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^2.8.0":
   version: 2.8.0
   resolution: "gatsby-graphiql-explorer@npm:2.8.0"
@@ -11235,9 +11258,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:3.8.0":
-  version: 3.8.0
-  resolution: "gatsby-plugin-mdx@npm:3.8.0"
+"gatsby-plugin-mdx@npm:3.8.1":
+  version: 3.8.1
+  resolution: "gatsby-plugin-mdx@npm:3.8.1"
   dependencies:
     "@babel/core": ^7.15.5
     "@babel/generator": ^7.15.4
@@ -11255,7 +11278,7 @@ __metadata:
     escape-string-regexp: ^1.0.5
     eval: ^0.1.4
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.8.0
+    gatsby-core-utils: ^3.8.1
     gray-matter: ^4.0.2
     json5: ^2.1.3
     loader-utils: ^1.4.0
@@ -11283,7 +11306,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: e967983214a6f3650dcdcd3e86e21f3bc234efb46c0d3c719158ece082a59b23a37a4a8c4b66060d8004b72cd722b1214bef6f5af5af316b5166d84111b12589
+  checksum: 7a86d926a930f4872e0136c4ae2ee64ad3065de999a958c0ba71c7e8ea43740b8db76e556544f7f3c79827b6bc36cea35f234323ae57d8ecab0a0e9e93e1f092
   languageName: node
   linkType: hard
 
@@ -16542,7 +16565,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 4.8.0
     gatsby-plugin-image: 2.8.0
     gatsby-plugin-layout: 3.8.0
-    gatsby-plugin-mdx: 3.8.0
+    gatsby-plugin-mdx: 3.8.1
     gatsby-plugin-preconnect: 1.3.0
     gatsby-plugin-react-helmet: 5.8.0
     gatsby-plugin-remove-serviceworker: 1.0.0
