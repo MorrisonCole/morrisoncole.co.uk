@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
+import { Centered } from "../components/centered";
 import { Layout } from "../components/layout";
 import { SwitchLocaleButton } from "../components/switch-locale-button";
 
@@ -46,8 +47,12 @@ export default function Home() {
       <p>
         I&apos;m <BoldItalic>both!</BoldItalic>
       </p>
+
       <Japanese>日本語で書いてます。</Japanese>
-      <SwitchLocaleButton />
+
+      <Centered>
+        <SwitchLocaleButton />
+      </Centered>
     </Layout>
   );
 }
