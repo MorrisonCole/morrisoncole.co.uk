@@ -1709,7 +1709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.17.2":
+"@babel/runtime@npm:7.17.2, @babel/runtime@npm:^7.17.2":
   version: 7.17.2
   resolution: "@babel/runtime@npm:7.17.2"
   dependencies:
@@ -3629,11 +3629,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:5.4.2":
-  version: 5.4.2
-  resolution: "@mui/icons-material@npm:5.4.2"
+"@mui/icons-material@npm:5.4.4":
+  version: 5.4.4
+  resolution: "@mui/icons-material@npm:5.4.4"
   dependencies:
-    "@babel/runtime": ^7.17.0
+    "@babel/runtime": ^7.17.2
   peerDependencies:
     "@mui/material": ^5.0.0
     "@types/react": ^16.8.6 || ^17.0.0
@@ -3641,7 +3641,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 7db675c77bb25a18b48166491a4ec421281cc93b083467715139458e25ceaa5c7d4384cac8627977065704963e1aeda5428821a059db006020c150f2f69f8cf3
+  checksum: c8207018a28a32b6447c682705ab0235e6250046c726bfb5bd9b65f81d633e02bdda8c0efa09906b52b2b31bea8c34a06465a60332c6b6057134c874e1ac600a
   languageName: node
   linkType: hard
 
@@ -16521,7 +16521,7 @@ __metadata:
     "@mdx-js/react": 1.6.22
     "@mikaelkristiansson/domready": 1.0.11
     "@morrisoncole/gatsby-source-goodreads": 0.1.2
-    "@mui/icons-material": 5.4.2
+    "@mui/icons-material": 5.4.4
     "@mui/lab": 5.0.0-alpha.70
     "@mui/material": 5.4.3
     "@reach/router": 1.3.4
