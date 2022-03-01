@@ -11893,17 +11893,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-legacy-polyfills@npm:2.8.0":
-  version: 2.8.0
-  resolution: "gatsby-legacy-polyfills@npm:2.8.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    core-js-compat: 3.9.0
-  checksum: 389c7f407bc8942922759b023f7cf8d388f5f29b5d5d0e8f45430fa23443a3b972efc6877ca6111d95e7862133b4dc6209381191b8d37c9112a6e8c6f88d6460
-  languageName: node
-  linkType: hard
-
-"gatsby-legacy-polyfills@npm:^2.9.0":
+"gatsby-legacy-polyfills@npm:2.9.0, gatsby-legacy-polyfills@npm:^2.9.0":
   version: 2.9.0
   resolution: "gatsby-legacy-polyfills@npm:2.9.0"
   dependencies:
@@ -17483,7 +17473,7 @@ __metadata:
     event-source-polyfill: 1.0.25
     gatsby: 4.9.0
     gatsby-cli: 4.8.1
-    gatsby-legacy-polyfills: 2.8.0
+    gatsby-legacy-polyfills: 2.9.0
     gatsby-link: 4.8.1
     gatsby-plugin-canonical-urls: 4.9.0
     gatsby-plugin-feed: 4.8.0
