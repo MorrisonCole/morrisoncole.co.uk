@@ -6877,19 +6877,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^4.8.2":
-  version: 4.8.2
-  resolution: "babel-plugin-remove-graphql-queries@npm:4.8.2"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.8.2
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^4.0.0-next
-  checksum: 3463bd2b788334bf9f79f311ae35235bd586fd47e93a8c6e95b64cb70811941e34ea999d32a9d6bf3e618bf0e9b632d2be107dd4db057c31fd1063328e3086b1
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^4.9.0":
   version: 4.9.0
   resolution: "babel-plugin-remove-graphql-queries@npm:4.9.0"
@@ -11973,21 +11960,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:2.8.2":
-  version: 2.8.2
-  resolution: "gatsby-plugin-image@npm:2.8.2"
+"gatsby-plugin-image@npm:2.9.0":
+  version: 2.9.0
+  resolution: "gatsby-plugin-image@npm:2.9.0"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.15.5
     "@babel/runtime": ^7.15.4
     "@babel/traverse": ^7.15.4
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^4.8.2
+    babel-plugin-remove-graphql-queries: ^4.9.0
     camelcase: ^5.3.1
     chokidar: ^3.5.2
     common-tags: ^1.8.2
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.8.2
+    gatsby-core-utils: ^3.9.0
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.7.2
   peerDependencies:
@@ -11997,7 +11984,7 @@ __metadata:
     gatsby-source-filesystem: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 89794a21e7036de3787c9edc4a635973706371f072cd3cab55ad35dfdd7583a208fe5d7444fa51056a4be8ef99f3a3cac0317e18d34c0c2cbaa745b6866bd562
+  checksum: 5a5f4c69eea75ca6b9ecf6f4c9071a7e9b16bf2660a05c967c5cb40246d2248ccb2c4fccfa03681ec0a1040e00a48701ef68757f1313631031acd4aa6f38646c
   languageName: node
   linkType: hard
 
@@ -12373,27 +12360,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 2dafbd29ba05d1f14eb10ee566cfebbf20efb33fe8b1aafaa95aab3eb03084b0f8a5b13607eef4fde6054bccaaac818031426282e09e31baba5eca0a900d6381
-  languageName: node
-  linkType: hard
-
-"gatsby-telemetry@npm:^3.8.1":
-  version: 3.8.1
-  resolution: "gatsby-telemetry@npm:3.8.1"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@babel/runtime": ^7.15.4
-    "@turist/fetch": ^7.1.7
-    "@turist/time": ^0.0.2
-    async-retry-ng: ^2.0.1
-    boxen: ^4.2.0
-    configstore: ^5.0.1
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.8.1
-    git-up: ^4.0.5
-    is-docker: ^2.2.1
-    lodash: ^4.17.21
-    node-fetch: ^2.6.7
-  checksum: aaf68a7069813a5de5750bb84750b99122fe13d19e04c5678de036bd36d246ea55e4787e20187672dc511df045fc726c780c37d72051c2f1c3657c7188651619
   languageName: node
   linkType: hard
 
@@ -17413,7 +17379,7 @@ __metadata:
     gatsby-plugin-canonical-urls: 4.9.0
     gatsby-plugin-feed: 4.8.0
     gatsby-plugin-google-tagmanager: 4.8.0
-    gatsby-plugin-image: 2.8.2
+    gatsby-plugin-image: 2.9.0
     gatsby-plugin-layout: 3.9.0
     gatsby-plugin-mdx: 3.9.0
     gatsby-plugin-preconnect: 1.3.0
