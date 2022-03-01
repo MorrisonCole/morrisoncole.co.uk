@@ -44,7 +44,7 @@
     "gatsby-react-router-scroll": "5.8.0",
     "gatsby-remark-autolink-headers": "5.8.0",
     "gatsby-remark-images": "6.8.1",
-    "gatsby-source-filesystem": "4.8.2",
+    "gatsby-source-filesystem": "4.9.0",
     "gatsby-transformer-json": "4.9.0",
     "gatsby-transformer-sharp": "4.9.0",
     "graphql": "16.3.0",
