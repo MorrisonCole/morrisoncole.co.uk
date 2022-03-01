@@ -11927,22 +11927,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:4.8.0":
-  version: 4.8.0
-  resolution: "gatsby-plugin-feed@npm:4.8.0"
+"gatsby-plugin-feed@npm:4.9.0":
+  version: 4.9.0
+  resolution: "gatsby-plugin-feed@npm:4.9.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.2
     fs-extra: ^10.0.0
-    gatsby-plugin-utils: ^3.2.0
+    gatsby-plugin-utils: ^3.3.0
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 272d105a55c6c05a6c984cad68b87f00ec7efa333fc3dc9ffb6ec71e4e9836c8d5d00f63d3f06ca9d2f1cc3b3d6d03aa6795e05f23cb085ce6087cbfd43bdb64
+  checksum: 3c7f00685279046c1dbf9472992960afff17f167f8c1ce0a2ed4c957f2720f94b5cb4771f5928998a0009dd7ed27ac005a7ea5faee25649cbe3f5e2d7848bcf3
   languageName: node
   linkType: hard
 
@@ -12210,18 +12210,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: a25a0cf9dce41b25a284adfba801fce05bafb6fd03e018ddfe3b55deea2f477579e2defbc2fe5921dc5f4e6edd5d939b7aef4489b7d9f9ee67722972b3284cdf
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-utils@npm:^3.2.0":
-  version: 3.2.0
-  resolution: "gatsby-plugin-utils@npm:3.2.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    joi: ^17.4.2
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: 5c71fd91099b295128877a421874e671723c3cdb66cb12c3657600b6cfa85552d208f239c928c87088147fabe90e1a43052e42c2a69022f3d3dbbcb4f7975145
   languageName: node
   linkType: hard
 
@@ -17377,7 +17365,7 @@ __metadata:
     gatsby-legacy-polyfills: 2.9.0
     gatsby-link: 4.8.1
     gatsby-plugin-canonical-urls: 4.9.0
-    gatsby-plugin-feed: 4.8.0
+    gatsby-plugin-feed: 4.9.0
     gatsby-plugin-google-tagmanager: 4.9.0
     gatsby-plugin-image: 2.9.0
     gatsby-plugin-layout: 3.9.0
