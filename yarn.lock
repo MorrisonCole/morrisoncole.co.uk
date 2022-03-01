@@ -12222,9 +12222,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:4.8.1":
-  version: 4.8.1
-  resolution: "gatsby-plugin-sharp@npm:4.8.1"
+"gatsby-plugin-sharp@npm:4.9.0":
+  version: 4.9.0
+  resolution: "gatsby-plugin-sharp@npm:4.9.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     async: ^3.2.3
@@ -12232,9 +12232,9 @@ __metadata:
     debug: ^4.3.3
     filenamify: ^4.3.0
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.8.1
-    gatsby-plugin-utils: ^3.2.0
-    gatsby-telemetry: ^3.8.1
+    gatsby-core-utils: ^3.9.0
+    gatsby-plugin-utils: ^3.3.0
+    gatsby-telemetry: ^3.9.0
     got: ^11.8.3
     lodash: ^4.17.21
     mini-svg-data-uri: ^1.4.3
@@ -12247,7 +12247,7 @@ __metadata:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 154867fee2bf1f82da56ae0e661e52a04ad9ef134fe63a2131154163cb46a69f907a4e76415f2734960ab8544936e595dff7f1dc18f955b11ea23acfe86f9353
+  checksum: 375fd1ba330371018b052637897d6e4740a03265cbb31fc05e00a134e713920950509fa050074e0554ec907fe17513710dea342374fad3cda04c9859d26e7317
   languageName: node
   linkType: hard
 
@@ -17495,7 +17495,7 @@ __metadata:
     gatsby-plugin-react-helmet: 5.8.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 4.8.1
+    gatsby-plugin-sharp: 4.9.0
     gatsby-plugin-sitemap: 5.8.0
     gatsby-plugin-typescript: 4.8.1
     gatsby-plugin-web-font-loader: 1.0.4
