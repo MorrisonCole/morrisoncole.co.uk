@@ -11,7 +11,7 @@ jobs:
     if: github.ref != 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: |
           yarn install --immutable
           yarn build:gatsby
@@ -22,7 +22,7 @@ jobs:
     if: github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: |
           yarn install --immutable
           yarn build:gatsby
@@ -35,7 +35,7 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Wait for 2 minutes
         run: sleep 120
       - name: Wait for Vercel Preview URL
