@@ -15,7 +15,7 @@
     "css": "3.0.0",
     "eslint": "8.11.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-react": "7.29.3",
+    "eslint-plugin-react": "7.29.4",
     "prettier": "2.5.1",
     "ts-node": "10.7.0",
     "typescript": "4.6.2",
