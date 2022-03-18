@@ -12109,9 +12109,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:3.10.0":
-  version: 3.10.0
-  resolution: "gatsby-plugin-mdx@npm:3.10.0"
+"gatsby-plugin-mdx@npm:3.10.1":
+  version: 3.10.1
+  resolution: "gatsby-plugin-mdx@npm:3.10.1"
   dependencies:
     "@babel/core": ^7.15.5
     "@babel/generator": ^7.15.4
@@ -12157,7 +12157,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 5aa16b5c07dbb1a7d84769d91f482a0571f4ef51eaa5277c644b4f22ef31b6864d0533a1769c14414aff20e74e42f30e3c612c8cb0102b652bd7109cccc7aabd
+  checksum: fa2cff9c24a7aa2c752fe5df3f7a1f44a1053a5483b1ad0600d76453087f51a797bc354ee2bf51c6fc015335cb8297a7d06986b7605b92f5551ea01a309e92a4
   languageName: node
   linkType: hard
 
@@ -17494,7 +17494,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 4.10.0
     gatsby-plugin-image: 2.10.0
     gatsby-plugin-layout: 3.10.0
-    gatsby-plugin-mdx: 3.10.0
+    gatsby-plugin-mdx: 3.10.1
     gatsby-plugin-preconnect: 1.3.0
     gatsby-plugin-react-helmet: 5.10.0
     gatsby-plugin-remove-serviceworker: 1.0.0
