@@ -11971,22 +11971,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:4.10.0":
-  version: 4.10.0
-  resolution: "gatsby-plugin-feed@npm:4.10.0"
+"gatsby-plugin-feed@npm:4.10.1":
+  version: 4.10.1
+  resolution: "gatsby-plugin-feed@npm:4.10.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.2
     fs-extra: ^10.0.0
-    gatsby-plugin-utils: ^3.4.0
+    gatsby-plugin-utils: ^3.4.1
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 2e080433d8d504e0912c3bc78c53d7c8802ca4830598fa3a6d1c9093d0417008ad4254121e43127d1e9b17aea8dbb18d6d3ef54ed3edb9618c86b89ca84b113d
+  checksum: 7ae94376ac8913d429e9d11aebd973ed31dc125be752c01f425d592c9bcd402cc4413009c81572f243ec545097fb9d46f90eccf0f7a39054e477eab846c66f92
   languageName: node
   linkType: hard
 
@@ -12254,6 +12254,24 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 6579c23976039ebae08509316d649cee6eae8227d588251aacb659f54c80b884ae5c18a75f80641d8deae1983a363af11cf626c61b98552dc28415d17c802573
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "gatsby-plugin-utils@npm:3.4.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.10.0
+    gatsby-sharp: ^0.4.0
+    graphql-compose: ^9.0.7
+    import-from: ^4.0.0
+    joi: ^17.4.2
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 1ae820c15e16db2717f1c71526de2fc7ef5091baf0475fbca4d329aa118f0496759a15dd85c4a4c8ae940b709a439a49b23cb3c916ada5eee160ed507125a3eb
   languageName: node
   linkType: hard
 
@@ -17406,7 +17424,7 @@ __metadata:
     gatsby-legacy-polyfills: 2.10.0
     gatsby-link: 4.10.0
     gatsby-plugin-canonical-urls: 4.10.0
-    gatsby-plugin-feed: 4.10.0
+    gatsby-plugin-feed: 4.10.1
     gatsby-plugin-google-tagmanager: 4.10.0
     gatsby-plugin-image: 2.10.0
     gatsby-plugin-layout: 3.10.0
