@@ -12285,9 +12285,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:4.10.1":
-  version: 4.10.1
-  resolution: "gatsby-plugin-sharp@npm:4.10.1"
+"gatsby-plugin-sharp@npm:4.10.2":
+  version: 4.10.2
+  resolution: "gatsby-plugin-sharp@npm:4.10.2"
   dependencies:
     "@babel/runtime": ^7.15.4
     async: ^3.2.3
@@ -12295,9 +12295,9 @@ __metadata:
     debug: ^4.3.3
     filenamify: ^4.3.0
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.10.0
-    gatsby-plugin-utils: ^3.4.1
-    gatsby-telemetry: ^3.10.0
+    gatsby-core-utils: ^3.10.1
+    gatsby-plugin-utils: ^3.4.2
+    gatsby-telemetry: ^3.10.1
     got: ^11.8.3
     lodash: ^4.17.21
     mini-svg-data-uri: ^1.4.3
@@ -12310,7 +12310,7 @@ __metadata:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: f9c7b25c5262c7dc0ab2823f525c4fb5384c1789940c7b7fabe34ecfe8dac03ba503745ea8ce82fc80c9e48338ee0b22d244f8ba4b579013e6336eda1e4ad893
+  checksum: 17011c32d38af594ffd716dff82b0b4b5fa48dcffbf23f913c726bcf40587b7356adbd95a230b2af920010cda1e9676ca3196c494363202065431b5a1ef52d4e
   languageName: node
   linkType: hard
 
@@ -12379,6 +12379,24 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 1ae820c15e16db2717f1c71526de2fc7ef5091baf0475fbca4d329aa118f0496759a15dd85c4a4c8ae940b709a439a49b23cb3c916ada5eee160ed507125a3eb
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "gatsby-plugin-utils@npm:3.4.2"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.10.1
+    gatsby-sharp: ^0.4.0
+    graphql-compose: ^9.0.7
+    import-from: ^4.0.0
+    joi: ^17.4.2
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 34e0ee922939d3c556e72978524c303eca73ec88171d7d2dadb14a3bf15c86a678f86934e96f2a4381ff8de5684e657931c62b60ab92dd8631007d60041b7f82
   languageName: node
   linkType: hard
 
@@ -17552,7 +17570,7 @@ __metadata:
     gatsby-plugin-react-helmet: 5.10.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 4.10.1
+    gatsby-plugin-sharp: 4.10.2
     gatsby-plugin-sitemap: 5.10.1
     gatsby-plugin-typescript: 4.10.1
     gatsby-plugin-web-font-loader: 1.0.4
