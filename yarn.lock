@@ -8673,6 +8673,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"create-gatsby@npm:^2.10.2":
+  version: 2.10.2
+  resolution: "create-gatsby@npm:2.10.2"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+  bin:
+    create-gatsby: cli.js
+  checksum: 6b08345b1bfdc02f53dbaa70aa9f838e84146c7ac7b906538aea87236ad211cb3aab801702a84e69360eece3b9d853eb13544554d8bd1008e519c043d7a4ddf8
+  languageName: node
+  linkType: hard
+
 "create-react-context@npm:0.3.0":
   version: 0.3.0
   resolution: "create-react-context@npm:0.3.0"
@@ -11786,7 +11797,62 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:4.10.1, gatsby-cli@npm:^4.10.1":
+"gatsby-cli@npm:4.10.2":
+  version: 4.10.2
+  resolution: "gatsby-cli@npm:4.10.2"
+  dependencies:
+    "@babel/code-frame": ^7.14.0
+    "@babel/core": ^7.15.5
+    "@babel/generator": ^7.16.8
+    "@babel/helper-plugin-utils": ^7.16.7
+    "@babel/preset-typescript": ^7.16.7
+    "@babel/runtime": ^7.15.4
+    "@babel/template": ^7.16.7
+    "@babel/types": ^7.16.8
+    "@types/common-tags": ^1.8.1
+    better-opn: ^2.1.1
+    boxen: ^5.1.2
+    chalk: ^4.1.2
+    clipboardy: ^2.3.0
+    common-tags: ^1.8.2
+    configstore: ^5.0.1
+    convert-hrtime: ^3.0.0
+    create-gatsby: ^2.10.2
+    envinfo: ^7.8.1
+    execa: ^5.1.1
+    fs-exists-cached: ^1.0.0
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.10.1
+    gatsby-telemetry: ^3.10.1
+    hosted-git-info: ^3.0.8
+    is-valid-path: ^0.1.1
+    joi: ^17.4.2
+    lodash: ^4.17.21
+    meant: ^1.0.3
+    node-fetch: ^2.6.6
+    opentracing: ^0.14.5
+    pretty-error: ^2.1.2
+    progress: ^2.0.3
+    prompts: ^2.4.2
+    redux: 4.1.2
+    resolve-cwd: ^3.0.0
+    semver: ^7.3.5
+    signal-exit: ^3.0.6
+    source-map: 0.7.3
+    stack-trace: ^0.0.10
+    strip-ansi: ^6.0.1
+    update-notifier: ^5.1.0
+    uuid: 3.4.0
+    yargs: ^15.4.1
+    yoga-layout-prebuilt: ^1.10.0
+    yurnalist: ^2.1.0
+  bin:
+    gatsby: cli.js
+  checksum: c7bb8618ac48d435132575a2dc758980d5e15f6ab69b81b6b1b49fd4eb3544625df1e04d879bc5fd9c625a7645054ab0ab138e6a199a9b8c7e190308f489a7fe
+  languageName: node
+  linkType: hard
+
+"gatsby-cli@npm:^4.10.1":
   version: 4.10.1
   resolution: "gatsby-cli@npm:4.10.1"
   dependencies:
@@ -11861,6 +11927,29 @@ __metadata:
     tmp: ^0.2.1
     xdg-basedir: ^4.0.0
   checksum: 0328b730df1ad2d2f1d60fc17692e9afdd4378b66dcba46f31f32d0afe198ebd3698c83c9503a12a7cb17190575a52c3532647a2816a7fb436705d8937d105a0
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^3.10.1":
+  version: 3.10.1
+  resolution: "gatsby-core-utils@npm:3.10.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    import-from: ^4.0.0
+    lmdb: ^2.2.4
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: bb8686f07b52bfc11e7b2428fadbed0d97c89205c00d19d53b8d959f7bac7c633fa9367026f41173adb1b93f89ca3fc2c805a3f51d4993ad9bc9c30e086f662f
   languageName: node
   linkType: hard
 
@@ -12393,6 +12482,27 @@ __metadata:
     lodash: ^4.17.21
     node-fetch: ^2.6.7
   checksum: e0cfb78352537c022acf47231b8dea9339c9b1565594a211cf07a1b84b4f71ce80e279681977a34e45926e11990aae3d4b75ff3e5841b40d8e60ee966fb1a30c
+  languageName: node
+  linkType: hard
+
+"gatsby-telemetry@npm:^3.10.1":
+  version: 3.10.1
+  resolution: "gatsby-telemetry@npm:3.10.1"
+  dependencies:
+    "@babel/code-frame": ^7.14.0
+    "@babel/runtime": ^7.15.4
+    "@turist/fetch": ^7.1.7
+    "@turist/time": ^0.0.2
+    async-retry-ng: ^2.0.1
+    boxen: ^4.2.0
+    configstore: ^5.0.1
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.10.1
+    git-up: ^4.0.5
+    is-docker: ^2.2.1
+    lodash: ^4.17.21
+    node-fetch: ^2.6.7
+  checksum: 454fd62fac02f2c0f94e82646566fbc9afc093445484e48a86cc35129d6ba554bf2c6ae73006b739543cc4639719fa73f264215da42da4cb38080107b5e842ed
   languageName: node
   linkType: hard
 
@@ -17399,7 +17509,7 @@ __metadata:
     css.escape: 1.5.1
     event-source-polyfill: 1.0.26
     gatsby: 4.10.2
-    gatsby-cli: 4.10.1
+    gatsby-cli: 4.10.2
     gatsby-legacy-polyfills: 2.10.0
     gatsby-link: 4.10.0
     gatsby-plugin-canonical-urls: 4.10.0
