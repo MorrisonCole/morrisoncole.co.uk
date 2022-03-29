@@ -12280,7 +12280,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-react-router-scroll@npm:5.10.0, gatsby-react-router-scroll@npm:^5.10.0":
+"gatsby-react-router-scroll@npm:5.11.0":
+  version: 5.11.0
+  resolution: "gatsby-react-router-scroll@npm:5.11.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@gatsbyjs/reach-router": ^1.3.5
+    react: ^16.9.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
+  checksum: bf5ade86b633578d7433b2172e34bfbff8be9fe85f8a7d57bdad061af8d7d07c5771cf77504950013f0150f29075da9be59f5de1096f66f5b1ae585e12967abc
+  languageName: node
+  linkType: hard
+
+"gatsby-react-router-scroll@npm:^5.10.0":
   version: 5.10.0
   resolution: "gatsby-react-router-scroll@npm:5.10.0"
   dependencies:
@@ -17432,7 +17446,7 @@ __metadata:
     gatsby-plugin-sitemap: 5.10.2
     gatsby-plugin-typescript: 4.10.1
     gatsby-plugin-web-font-loader: 1.0.4
-    gatsby-react-router-scroll: 5.10.0
+    gatsby-react-router-scroll: 5.11.0
     gatsby-remark-autolink-headers: 5.10.2
     gatsby-remark-images: 6.10.2
     gatsby-source-filesystem: 4.10.1
