@@ -1,4 +1,4 @@
-# morrisoncole.co.uk [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/MorrisonCole/morrisoncole.co.uk)
+# morrisoncole.co.uk [![Open in Visual Studio Code](https://img.shields.io/badge/open%20in-vscode.dev-blue)](https://open.vscode.dev/MorrisonCole/morrisoncole.co.uk)
 
 My personal website(s).
 
