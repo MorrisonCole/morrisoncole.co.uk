@@ -11871,6 +11871,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.11.1":
+  version: 3.11.1
+  resolution: "gatsby-core-utils@npm:3.11.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    import-from: ^4.0.0
+    lmdb: ^2.2.4
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 93f3492a924bcf8fd25508ea6f4ba0396baa8d9f4b9ec303f59d55fc2a761d2da4b932f7be6b7e708d96ea07d98fd0dc2e7783c8b8ac03bb05ad006ca90f1858
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^3.8.2":
   version: 3.8.2
   resolution: "gatsby-core-utils@npm:3.8.2"
@@ -11983,22 +12006,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:4.11.0":
-  version: 4.11.0
-  resolution: "gatsby-plugin-feed@npm:4.11.0"
+"gatsby-plugin-feed@npm:4.11.1":
+  version: 4.11.1
+  resolution: "gatsby-plugin-feed@npm:4.11.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.2
     fs-extra: ^10.0.0
-    gatsby-plugin-utils: ^3.5.0
+    gatsby-plugin-utils: ^3.5.1
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: f77cff77d4ae0016ff3a292a5df0ec42708fdfc182f9e5e1bafda3d1e5cacbffce176d8504936747fd73ad51f208a7e347d456c359ad71a3deb5beea4d506a57
+  checksum: cbf13c27858446b7fb3560b6719e95c737467e7ba45e6fddc75756364b57d58882ff4b8713207f4bdd85846a5b39936a99739b785d2117a9800f70148a72e17e
   languageName: node
   linkType: hard
 
@@ -12267,6 +12290,24 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: 192e302f77c44366c0dc9b461627a384f0d4a72cd983810c6f30b6e0b5708aa9d1683492514cdf51c8846b053d03bf22f8a73c068369f8e990eee62751cf3ec6
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^3.5.1":
+  version: 3.5.1
+  resolution: "gatsby-plugin-utils@npm:3.5.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    fs-extra: ^10.0.0
+    gatsby-core-utils: ^3.11.1
+    gatsby-sharp: ^0.5.0
+    graphql-compose: ^9.0.7
+    import-from: ^4.0.0
+    joi: ^17.4.2
+    mime: ^3.0.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: dd1a386fb3f4c4d6f8d12c213814e1b384f7673cbb243493377fafa7a0ee284037685d1e3413ee909aaf604a14619e3f5e4a3bc56be64f48696d5b65091c76e0
   languageName: node
   linkType: hard
 
@@ -17419,7 +17460,7 @@ __metadata:
     gatsby-legacy-polyfills: 2.11.0
     gatsby-link: 4.11.0
     gatsby-plugin-canonical-urls: 4.11.0
-    gatsby-plugin-feed: 4.11.0
+    gatsby-plugin-feed: 4.11.1
     gatsby-plugin-google-tagmanager: 4.11.0
     gatsby-plugin-image: 2.11.0
     gatsby-plugin-layout: 3.11.0
