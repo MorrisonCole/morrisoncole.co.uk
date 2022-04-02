@@ -11871,6 +11871,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^3.11.1":
+  version: 3.11.1
+  resolution: "gatsby-core-utils@npm:3.11.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.13.0
+    file-type: ^16.5.3
+    fs-extra: ^10.0.0
+    got: ^11.8.3
+    import-from: ^4.0.0
+    lmdb: ^2.2.4
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: 93f3492a924bcf8fd25508ea6f4ba0396baa8d9f4b9ec303f59d55fc2a761d2da4b932f7be6b7e708d96ea07d98fd0dc2e7783c8b8ac03bb05ad006ca90f1858
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^3.8.2":
   version: 3.8.2
   resolution: "gatsby-core-utils@npm:3.8.2"
@@ -12360,15 +12383,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-source-filesystem@npm:4.11.0":
-  version: 4.11.0
-  resolution: "gatsby-source-filesystem@npm:4.11.0"
+"gatsby-source-filesystem@npm:4.11.1":
+  version: 4.11.1
+  resolution: "gatsby-source-filesystem@npm:4.11.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     chokidar: ^3.5.2
     file-type: ^16.5.3
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.11.0
+    gatsby-core-utils: ^3.11.1
     got: ^9.6.0
     md5-file: ^5.0.0
     mime: ^2.5.2
@@ -12378,7 +12401,7 @@ __metadata:
     xstate: ^4.26.1
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: ee133c98a54aef614bc66e4cf62b6b4ee6b9727aa041364ba6a7586923209065e0a70e3db924a71d6620ab784c293b081f5ed4a31934f92c79b8d95eb8690b3d
+  checksum: 9c5173f488f3b59e2245e5995da04cfdf55a4dd137b2860bd3a468dc4de5555051d364b930f5b839e214229d078e633175a36050551dd4fe479628df75a18a5a
   languageName: node
   linkType: hard
 
@@ -17435,7 +17458,7 @@ __metadata:
     gatsby-react-router-scroll: 5.11.0
     gatsby-remark-autolink-headers: 5.11.0
     gatsby-remark-images: 6.11.0
-    gatsby-source-filesystem: 4.11.0
+    gatsby-source-filesystem: 4.11.1
     gatsby-transformer-json: 4.11.0
     gatsby-transformer-sharp: 4.11.0
     graphql: 16.3.0
