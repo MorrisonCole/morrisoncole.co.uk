@@ -5425,12 +5425,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.15":
-  version: 17.0.15
-  resolution: "@types/react-dom@npm:17.0.15"
+"@types/react-dom@npm:18.0.0":
+  version: 18.0.0
+  resolution: "@types/react-dom@npm:18.0.0"
   dependencies:
-    "@types/react": ^17
-  checksum: 7b90372bd7207d3860e1043ebfe10fd21fbd9ec3417a29593ca14359774830c888ba4ebb25cf0510628607496f8d35b09d23d329ea709b9311f5866185c5fd67
+    "@types/react": "*"
+  checksum: 0d8c9cb3e72aefe0dd2b58a49845a200369f01ae92f3f11f642e04efc95dfd1c9380b6592d4273dd6113fb8707947d15b66d56c75c41f39f28bd897f0c08dfa9
   languageName: node
   linkType: hard
 
@@ -5472,7 +5472,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.44, @types/react@npm:^17":
+"@types/react@npm:17.0.44":
   version: 17.0.44
   resolution: "@types/react@npm:17.0.44"
   dependencies:
@@ -17509,7 +17509,7 @@ __metadata:
     "@types/prop-types": 15.7.5
     "@types/reach__router": 1.3.10
     "@types/react": 17.0.44
-    "@types/react-dom": 17.0.15
+    "@types/react-dom": 18.0.0
     "@types/react-helmet": 6.1.5
     "@types/stack-trace": 0.0.29
     anser: 2.1.1
