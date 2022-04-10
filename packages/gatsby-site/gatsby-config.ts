@@ -1,3 +1,6 @@
+import type { GatsbyConfig } from "gatsby";
+import path from "path";
+
 const unwrapImages = require("remark-unwrap-images");
 
 const rawUrl = "https://morrisoncole.co.uk";
@@ -8,7 +11,7 @@ if (goodreadsKey == null) {
   throw new Error("Environment variable 'GOODREADS_KEY' must be set.");
 }
 
-module.exports = {
+const config: GatsbyConfig = {
   flags: {
     FAST_DEV: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
@@ -153,7 +156,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/data/`,
+        path: path.resolve(`data`),
         name: "data",
       },
     },
@@ -162,7 +165,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/content/`,
+        path: path.resolve(`content`),
         name: "content",
       },
     },
@@ -237,7 +240,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-layout",
       options: {
-        component: require.resolve("./src/components/layout.tsx"),
+        component: path.resolve("./src/components/layout.tsx"),
       },
     },
     {
@@ -251,3 +254,5 @@ module.exports = {
     "gatsby-plugin-remove-serviceworker",
   ],
 };
+
+export default config;
