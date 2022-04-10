@@ -1,7 +1,12 @@
+import type { GatsbyNode } from "gatsby";
+
 const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 
-exports.createPages = async ({ graphql, actions }) => {
+export const createPages: GatsbyNode["createPages"] = async ({
+  graphql,
+  actions,
+}) => {
   const blogPostTemplate = path.resolve("src/templates/blog-post-template.tsx");
   const result = await graphql(
     `
@@ -50,7 +55,11 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+export const onCreateNode: GatsbyNode["onCreateNode"] = ({
+  node,
+  actions,
+  getNode,
+}) => {
   if (node.internal.type === "Mdx") {
     const value = createFilePath({ node, getNode });
     actions.createNodeField({
@@ -61,10 +70,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 };
 
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes, printTypeDefinitions } = actions;
+export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
+  ({ actions }) => {
+    const { createTypes, printTypeDefinitions } = actions;
 
-  createTypes(`
+    createTypes(`
     type Site implements Node {
       siteMetadata: SiteSiteMetadata!
     }
@@ -109,5 +119,5 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `);
 
-  // printTypeDefinitions({ path: "./typeDefs.txt" });
-};
+    // printTypeDefinitions({ path: "./typeDefs.txt" });
+  };
