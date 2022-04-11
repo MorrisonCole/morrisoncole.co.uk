@@ -3728,19 +3728,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:5.6.0":
-  version: 5.6.0
-  resolution: "@mui/icons-material@npm:5.6.0"
+"@mui/icons-material@npm:5.6.1":
+  version: 5.6.1
+  resolution: "@mui/icons-material@npm:5.6.1"
   dependencies:
     "@babel/runtime": ^7.17.2
   peerDependencies:
     "@mui/material": ^5.0.0
-    "@types/react": ^16.8.6 || ^17.0.0 || ^18.0.0
+    "@types/react": ^17.0.0 || ^18.0.0
     react: ^17.0.0 || ^18.0.0
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 8f28db4a83900296f5d89da8747a04f3728d9d4c1823be34508efab65a69aa9b918893206ac580efe150a0c0435a008bba71b876c5ff51f78db84587cbf7deb9
+  checksum: 5bb1dade531eea1e1debd0ccdecc1f6deb4fb08f4807e26b69696d37081ec31980ae69607197dec3fd85b2384792338584af77d22eadb83e6516ea07bb1dad21
   languageName: node
   linkType: hard
 
@@ -17483,7 +17483,7 @@ __metadata:
     "@mdx-js/react": 1.6.22
     "@mikaelkristiansson/domready": 1.0.11
     "@morrisoncole/gatsby-source-goodreads": 0.1.2
-    "@mui/icons-material": 5.6.0
+    "@mui/icons-material": 5.6.1
     "@mui/lab": 5.0.0-alpha.76
     "@mui/material": 5.6.0
     "@reach/router": 1.3.4
