@@ -12538,9 +12538,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.11.2":
-  version: 4.11.2
-  resolution: "gatsby@npm:4.11.2"
+"gatsby@npm:4.11.3":
+  version: 4.11.3
+  resolution: "gatsby@npm:4.11.3"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -12638,7 +12638,7 @@ __metadata:
     joi: ^17.4.2
     json-loader: ^0.5.7
     latest-version: 5.1.0
-    lmdb: ^2.2.3
+    lmdb: ~2.2.3
     lodash: ^4.17.21
     md5-file: ^5.0.0
     meant: ^1.0.3
@@ -12703,7 +12703,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 2d2a14e17385f19c47114425347b86d392849c078415582c9beb66aa7fa08b7223dcd649c33f732d559cbbb91aa2192af5575b696657caf4d5d557f29c457b5c
+  checksum: be6f975200e03821312c6136b646930335ef23ca41e29cf96b626fec2b3088ad357ffc492af6ca7782475786493f9d650eec556aa4bdab52c6a4be3889f67a4a
   languageName: node
   linkType: hard
 
@@ -15722,7 +15722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb@npm:2.2.4, lmdb@npm:^2.2.3":
+"lmdb@npm:2.2.4":
   version: 2.2.4
   resolution: "lmdb@npm:2.2.4"
   dependencies:
@@ -15775,6 +15775,20 @@ __metadata:
     ordered-binary: ^1.2.4
     weak-lru-cache: ^1.2.2
   checksum: 739d85ea99729831ff339c98d6d10b8570fd18a8bce90142a3e7f5bcbfa397f6335f099cd19b5d026904c4c7c6e2fc0165ccfeafa8514a1bf6f9c0870116466e
+  languageName: node
+  linkType: hard
+
+"lmdb@npm:~2.2.3":
+  version: 2.2.6
+  resolution: "lmdb@npm:2.2.6"
+  dependencies:
+    msgpackr: ^1.5.4
+    nan: ^2.14.2
+    node-gyp: latest
+    node-gyp-build: ^4.2.3
+    ordered-binary: ^1.2.4
+    weak-lru-cache: ^1.2.2
+  checksum: 8df512625293e82472e93b9c092b05a736b128c5fdb1798a5ef15f1a271c53be410bb113f3dd07a991d9605f9e452fb04fa1efe5d6e8dce3ffca178dbb88a980
   languageName: node
   linkType: hard
 
@@ -17517,7 +17531,7 @@ __metadata:
     classnames: 2.3.1
     css.escape: 1.5.1
     event-source-polyfill: 1.0.26
-    gatsby: 4.11.2
+    gatsby: 4.11.3
     gatsby-cli: 4.11.2
     gatsby-legacy-polyfills: 2.11.0
     gatsby-link: 4.11.1
