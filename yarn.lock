@@ -12549,9 +12549,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-autolink-headers@npm:5.11.1":
-  version: 5.11.1
-  resolution: "gatsby-remark-autolink-headers@npm:5.11.1"
+"gatsby-remark-autolink-headers@npm:5.12.1":
+  version: 5.12.1
+  resolution: "gatsby-remark-autolink-headers@npm:5.12.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     github-slugger: ^1.3.0
@@ -12562,7 +12562,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 036afa145ba0ae6966ab64a1e739ab3c611cddac254c17b0f902acf5e0814b3420556f78e4e842cdb1fea68432373dfeda8a7a712275802a2e6de0c112250505
+  checksum: 9d200aaeeec8e233be06b8bc4765e85cf3d6218648fe350d2d875cb819c1974f38e317af163533ce9a1df7ec788444e58cdf4c69ce2d51bb93d1fb1987c76bd6
   languageName: node
   linkType: hard
 
@@ -17801,7 +17801,7 @@ __metadata:
     gatsby-plugin-typescript: 4.11.1
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.11.0
-    gatsby-remark-autolink-headers: 5.11.1
+    gatsby-remark-autolink-headers: 5.12.1
     gatsby-remark-images: 6.11.1
     gatsby-source-filesystem: 4.11.1
     gatsby-transformer-json: 4.12.0
