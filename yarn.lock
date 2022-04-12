@@ -12054,29 +12054,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^3.12.1":
-  version: 3.12.1
-  resolution: "gatsby-core-utils@npm:3.12.1"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.13.0
-    file-type: ^16.5.3
-    fs-extra: ^10.0.0
-    got: ^11.8.3
-    import-from: ^4.0.0
-    lmdb: ^2.2.6
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 32165b00d27ff348ec2e6fb86d3603bd7fa7f0811c1a5137c5703bcad6cb06342d2118a3766ae04d5ec109d4ea8a8d1b240aa114445c6f5bf5ba0f4cafb1cc1d
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^3.8.2":
   version: 3.8.2
   resolution: "gatsby-core-utils@npm:3.8.2"
@@ -12210,14 +12187,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-canonical-urls@npm:4.11.0":
-  version: 4.11.0
-  resolution: "gatsby-plugin-canonical-urls@npm:4.11.0"
+"gatsby-plugin-canonical-urls@npm:4.12.1":
+  version: 4.12.1
+  resolution: "gatsby-plugin-canonical-urls@npm:4.12.1"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: 856ab31d22e7ece88f3fccf2b253391b88d9d25caedc3690cec951a5c564ab8a4d1ca0febe134035f9b13422a385c1c395e75e0944e0dd8f70d2d67872e4c844
+  checksum: 5693f39128f394fed04b9715ffd2e9e32cdd09c47dc0cd0a9eabd07d028cef38d4642fcf3092712ad00a8746ecf86d37eb7f0e431d7e3df96f43e04046c6a1ae
   languageName: node
   linkType: hard
 
@@ -17786,7 +17763,7 @@ __metadata:
     gatsby-cli: 4.12.1
     gatsby-legacy-polyfills: 2.11.0
     gatsby-link: 4.12.1
-    gatsby-plugin-canonical-urls: 4.11.0
+    gatsby-plugin-canonical-urls: 4.12.1
     gatsby-plugin-feed: 4.11.1
     gatsby-plugin-google-tagmanager: 4.11.1
     gatsby-plugin-image: 2.11.1
