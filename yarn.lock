@@ -12138,14 +12138,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-layout@npm:3.11.0":
-  version: 3.11.0
-  resolution: "gatsby-plugin-layout@npm:3.11.0"
+"gatsby-plugin-layout@npm:3.12.0":
+  version: 3.12.0
+  resolution: "gatsby-plugin-layout@npm:3.12.0"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: e4c2744d79e6ada6d11cb6a168db355e233c90398b498d817d78e371499947a8b7ec02aa374e9ff9c9f367413ed59e6bbe0766b35f3c13a5b2e06181418e4fb8
+  checksum: 77ee7e925c918dfe8d691c9d520db21d0549808f564bb6b259fc70e0421c940a612752a82c7ffc62dbb0ffa89fb7add83efdc2280b3287d8d08a61cfc9b84a55
   languageName: node
   linkType: hard
 
@@ -17539,7 +17539,7 @@ __metadata:
     gatsby-plugin-feed: 4.11.1
     gatsby-plugin-google-tagmanager: 4.11.1
     gatsby-plugin-image: 2.11.1
-    gatsby-plugin-layout: 3.11.0
+    gatsby-plugin-layout: 3.12.0
     gatsby-plugin-mdx: 3.11.1
     gatsby-plugin-preconnect: 1.3.0
     gatsby-plugin-react-helmet: 5.11.0
