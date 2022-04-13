@@ -12598,22 +12598,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:4.11.0":
-  version: 4.11.0
-  resolution: "gatsby-transformer-sharp@npm:4.11.0"
+"gatsby-transformer-sharp@npm:4.12.1":
+  version: 4.12.1
+  resolution: "gatsby-transformer-sharp@npm:4.12.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^10.0.0
     potrace: ^2.1.8
-    probe-image-size: ^7.0.0
+    probe-image-size: ^7.2.3
     semver: ^7.3.5
-    sharp: ^0.30.1
+    sharp: ^0.30.3
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: f4e09696d7adf84e5611a00a666b6434eb2bd45e85d7ea52a47780dd5fd29c9b445a5f830251033b878c9b9763b4bc7e9349b8121cf32cc37082f4f2beb29e91
+  checksum: 65161290844d72482a7e9027b2c4f6493d4a5ca848cbb888cc5782eac56e078bdd26ea28946fd50e0fc005d7d43fd52184b61c9ff92cc2d41fb1ef32d6864197
   languageName: node
   linkType: hard
 
@@ -17729,7 +17729,7 @@ __metadata:
     gatsby-remark-images: 6.11.1
     gatsby-source-filesystem: 4.12.1
     gatsby-transformer-json: 4.12.1
-    gatsby-transformer-sharp: 4.11.0
+    gatsby-transformer-sharp: 4.12.1
     graphql: 16.3.0
     lmdb-store: 1.6.14
     lodash: 4.17.21
@@ -20002,7 +20002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"probe-image-size@npm:^7.0.0":
+"probe-image-size@npm:^7.0.0, probe-image-size@npm:^7.2.3":
   version: 7.2.3
   resolution: "probe-image-size@npm:7.2.3"
   dependencies:
