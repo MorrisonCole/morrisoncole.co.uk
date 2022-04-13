@@ -12369,24 +12369,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:4.11.1":
-  version: 4.11.1
-  resolution: "gatsby-plugin-typescript@npm:4.11.1"
-  dependencies:
-    "@babel/core": ^7.15.5
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.14.5
-    "@babel/plugin-proposal-numeric-separator": ^7.14.5
-    "@babel/plugin-proposal-optional-chaining": ^7.14.5
-    "@babel/preset-typescript": ^7.15.0
-    "@babel/runtime": ^7.15.4
-    babel-plugin-remove-graphql-queries: ^4.11.1
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: 0d1221589a2414e38f63fb3de408d41e5c0a71b34b1d7598f779e0bc9a22410e99844c550c4b79917ebdc5011093f49449fa76504231a3a4b9b8bc064aeb82bc
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-typescript@npm:^4.12.1":
+"gatsby-plugin-typescript@npm:4.12.1, gatsby-plugin-typescript@npm:^4.12.1":
   version: 4.12.1
   resolution: "gatsby-plugin-typescript@npm:4.12.1"
   dependencies:
@@ -17739,7 +17722,7 @@ __metadata:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 4.11.1
     gatsby-plugin-sitemap: 5.11.1
-    gatsby-plugin-typescript: 4.11.1
+    gatsby-plugin-typescript: 4.12.1
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.12.1
     gatsby-remark-autolink-headers: 5.12.1
