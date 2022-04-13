@@ -12480,14 +12480,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:6.11.1":
-  version: 6.11.1
-  resolution: "gatsby-remark-images@npm:6.11.1"
+"gatsby-remark-images@npm:6.12.1":
+  version: 6.12.1
+  resolution: "gatsby-remark-images@npm:6.12.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^3.11.1
+    gatsby-core-utils: ^3.12.1
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -12498,7 +12498,7 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 0788a87d8e2d7be68e9fa95970add48e4c56b3dedb849371de492549873ebe2a137c201268ff72b8c53c6d999f63f4a9b227542cd09c47bf04b5f58d5324bfbe
+  checksum: 2e1160e5be7099330ab56f844fef47c266c6a7e5147216fc84d4759653bfcd23ebacea21f473dac94e97e5a6f204c042340247e30bbb13c4ad77ebc13dbd514e
   languageName: node
   linkType: hard
 
@@ -17726,7 +17726,7 @@ __metadata:
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.12.1
     gatsby-remark-autolink-headers: 5.12.1
-    gatsby-remark-images: 6.11.1
+    gatsby-remark-images: 6.12.1
     gatsby-source-filesystem: 4.12.1
     gatsby-transformer-json: 4.12.1
     gatsby-transformer-sharp: 4.11.0
