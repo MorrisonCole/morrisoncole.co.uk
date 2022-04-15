@@ -98,6 +98,7 @@ const GlobalStyle = createGlobalStyle`
     9. Create a root stacking context
   */
   #root, #__next {
+    height: 100%;
     isolation: isolate;
   }
 `;
