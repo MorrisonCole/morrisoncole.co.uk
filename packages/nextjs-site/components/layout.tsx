@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Footer } from "./footer";
 
 const Grid = styled.span`
-  height: 100vh;
+  min-height: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr min(85ch, 100%) 1fr 3fr;
   grid-template-rows: auto 1fr auto;
