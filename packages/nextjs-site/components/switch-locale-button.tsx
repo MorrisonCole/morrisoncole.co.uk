@@ -2,10 +2,9 @@ import { useRouter } from "next/router";
 import styled from "styled-components";
 
 const Button = styled.button`
-  display: inline-block;
   border-radius: 3px;
   padding: 0.5rem 0;
-  width: 10rem;
+  width: 100%;
   background: hsla(0, 0%, 25%, 0.6);
   color: hsl(0, 0%, 100%);
   border: 2px solid white;
