@@ -5539,10 +5539,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/stack-trace@npm:0.0.29":
-  version: 0.0.29
-  resolution: "@types/stack-trace@npm:0.0.29"
-  checksum: 2dcfdf8f10e250a76e43efe6d3e05a463b4e22ca290dbb423ec14fa21f57f94ef0cc8ba19ed3394c448218d9ddd9f7cd9adea131fb6572aa2d484b1cf7f043aa
+"@types/stack-trace@npm:0.0.30":
+  version: 0.0.30
+  resolution: "@types/stack-trace@npm:0.0.30"
+  checksum: d159283af8671b58959f318cb860bfb74079941860e8167dd8bc58621773ae8315f7de84ca816e107692880a13dafd6c097a06fd7d812e7fbc0983634ed0d65a
   languageName: node
   linkType: hard
 
@@ -17595,7 +17595,7 @@ __metadata:
     "@types/react": 17.0.44
     "@types/react-dom": 17.0.15
     "@types/react-helmet": 6.1.5
-    "@types/stack-trace": 0.0.29
+    "@types/stack-trace": 0.0.30
     anser: 2.1.1
     classnames: 2.3.1
     css.escape: 1.5.1
