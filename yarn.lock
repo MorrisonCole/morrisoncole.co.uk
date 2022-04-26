@@ -12227,15 +12227,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-react-helmet@npm:5.12.1":
-  version: 5.12.1
-  resolution: "gatsby-plugin-react-helmet@npm:5.12.1"
+"gatsby-plugin-react-helmet@npm:5.13.0":
+  version: 5.13.0
+  resolution: "gatsby-plugin-react-helmet@npm:5.13.0"
   dependencies:
     "@babel/runtime": ^7.15.4
   peerDependencies:
     gatsby: ^4.0.0-next
     react-helmet: ^5.1.3 || ^6.0.0
-  checksum: 5f57fd5f3c7a6ad6cba9981968917fdbec820e622095b7131d50d758b4b1c94d7e348f74bab793fc07b43bded932322cbd7b7f9735de68ca928708e38dc552e7
+  checksum: 29ed011c87eadaac7fb61efad8c0c341881c95f54612b805f7c78cb7c6666ba3241d25badd52f6d1310b38481e74cecbd1d0421ac3c53cef3dfcf63c9bafde4c
   languageName: node
   linkType: hard
 
@@ -17608,7 +17608,7 @@ __metadata:
     gatsby-plugin-layout: 3.12.1
     gatsby-plugin-mdx: 3.12.1
     gatsby-plugin-preconnect: 1.3.0
-    gatsby-plugin-react-helmet: 5.12.1
+    gatsby-plugin-react-helmet: 5.13.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 4.12.1
