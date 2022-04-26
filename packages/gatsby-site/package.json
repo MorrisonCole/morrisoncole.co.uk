@@ -25,7 +25,7 @@
     "event-source-polyfill": "1.0.26",
     "gatsby": "4.12.1",
     "gatsby-cli": "4.12.1",
-    "gatsby-legacy-polyfills": "2.12.1",
+    "gatsby-legacy-polyfills": "2.13.0",
     "gatsby-link": "4.12.1",
     "gatsby-plugin-canonical-urls": "4.12.1",
     "gatsby-plugin-feed": "4.12.1",
