@@ -46,7 +46,7 @@
     "gatsby-remark-images": "6.13.0",
     "gatsby-source-filesystem": "4.13.0",
     "gatsby-transformer-json": "4.13.0",
-    "gatsby-transformer-sharp": "4.12.1",
+    "gatsby-transformer-sharp": "4.13.0",
     "graphql": "16.4.0",
     "lodash": "4.17.21",
     "mdx-utils": "0.2.0",
