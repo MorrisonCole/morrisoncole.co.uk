@@ -7501,6 +7501,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^4.13.0":
+  version: 4.13.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:4.13.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    gatsby-core-utils: ^3.13.0
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^4.0.0-next
+  checksum: 5e52778bbfbde94df929db427f03d4d7e882ce2f6b9c0a6e37ddc30e73cb05cb309bc2c3fea705903f24183006ee2a0b9a4fdf32af77bed40b5b55e1b15b753d
+  languageName: node
+  linkType: hard
+
 "babel-plugin-styled-components@npm:>= 1.12.0":
   version: 2.0.2
   resolution: "babel-plugin-styled-components@npm:2.0.2"
@@ -12570,21 +12583,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-image@npm:2.12.1":
-  version: 2.12.1
-  resolution: "gatsby-plugin-image@npm:2.12.1"
+"gatsby-plugin-image@npm:2.13.0":
+  version: 2.13.0
+  resolution: "gatsby-plugin-image@npm:2.13.0"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/parser": ^7.15.5
     "@babel/runtime": ^7.15.4
     "@babel/traverse": ^7.15.4
     babel-jsx-utils: ^1.1.0
-    babel-plugin-remove-graphql-queries: ^4.12.1
+    babel-plugin-remove-graphql-queries: ^4.13.0
     camelcase: ^5.3.1
     chokidar: ^3.5.2
     common-tags: ^1.8.2
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.12.1
+    gatsby-core-utils: ^3.13.0
     objectFitPolyfill: ^2.3.5
     prop-types: ^15.8.1
   peerDependencies:
@@ -12594,7 +12607,7 @@ __metadata:
     gatsby-source-filesystem: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: f12008e18c2fb5e5f02c1c6171ecac2dc44ff0be3052b8269df6b63a3f072631d50500683b02de9b97563904faaa759ba2d7737db2cc791c80e76206c0e8041d
+  checksum: 1fba1449f8d6c3c079dbdcde85bb47b7d7ac5ba78bb8c031013dce53cb723e217356c548e83fad79d3f7196c1e80b691f6cbaf8457321d9298faaa97c130890e
   languageName: node
   linkType: hard
 
@@ -18135,7 +18148,7 @@ __metadata:
     gatsby-plugin-canonical-urls: 4.12.1
     gatsby-plugin-feed: 4.13.0
     gatsby-plugin-google-tagmanager: 4.12.1
-    gatsby-plugin-image: 2.12.1
+    gatsby-plugin-image: 2.13.0
     gatsby-plugin-layout: 3.13.0
     gatsby-plugin-mdx: 3.12.1
     gatsby-plugin-preconnect: 1.3.0
