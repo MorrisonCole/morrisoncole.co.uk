@@ -17995,7 +17995,7 @@ __metadata:
     next-mdx-remote: 4.0.1
     react: 18.0.0
     react-dom: 18.0.0
-    react-is: 18.0.0
+    react-is: 18.1.0
     styled-components: 5.3.5
     typescript: 4.6.3
   languageName: unknown
@@ -20461,10 +20461,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:18.0.0":
-  version: 18.0.0
-  resolution: "react-is@npm:18.0.0"
-  checksum: d38f6afee4d8d791cdd69c715841c01a503c9b06da6158e0893447cea6ba50cd262dca9bde84127720cf44fd05c58185eafc32accace4bb2deb03b3cdbeb6b6b
+"react-is@npm:18.1.0":
+  version: 18.1.0
+  resolution: "react-is@npm:18.1.0"
+  checksum: d206a0fe6790851bff168727bfb896de02c5591695afb0c441163e8630136a3e13ee1a7ddd59fdccddcc93968b4721ae112c10f790b194b03b35a3dc13a355ef
   languageName: node
   linkType: hard
 
