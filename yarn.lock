@@ -2564,7 +2564,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript@npm:2.4.9, @graphql-codegen/typescript@npm:^2.4.9":
+"@graphql-codegen/typescript@npm:2.4.10":
+  version: 2.4.10
+  resolution: "@graphql-codegen/typescript@npm:2.4.10"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.4.0
+    "@graphql-codegen/schema-ast": ^2.4.1
+    "@graphql-codegen/visitor-plugin-common": 2.7.6
+    auto-bind: ~4.0.0
+    tslib: ~2.4.0
+  peerDependencies:
+    graphql: ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: f491e9770185d7b8ed22ec3e2c6fca08d81f9518fd7154e2a7acc144f5df226d00f46cb03aaebac32a02a810eff0cd7480e47c968863d0edc42688db55d03173
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/typescript@npm:^2.4.9":
   version: 2.4.9
   resolution: "@graphql-codegen/typescript@npm:2.4.9"
   dependencies:
@@ -2596,6 +2611,26 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
   checksum: 443a4225104ecac0ef4880a0a42b4e84df49480028196ea990511b01cf4aab42af397212c0e9a87d87a81b7edd2b3f202ce4a8145195c337c3efe3b99d4464b1
+  languageName: node
+  linkType: hard
+
+"@graphql-codegen/visitor-plugin-common@npm:2.7.6":
+  version: 2.7.6
+  resolution: "@graphql-codegen/visitor-plugin-common@npm:2.7.6"
+  dependencies:
+    "@graphql-codegen/plugin-helpers": ^2.4.0
+    "@graphql-tools/optimize": ^1.0.1
+    "@graphql-tools/relay-operation-optimizer": ^6.3.7
+    "@graphql-tools/utils": ^8.3.0
+    auto-bind: ~4.0.0
+    change-case-all: 1.0.14
+    dependency-graph: ^0.11.0
+    graphql-tag: ^2.11.0
+    parse-filepath: ^1.0.2
+    tslib: ~2.4.0
+  peerDependencies:
+    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
+  checksum: 03e82ee7f669409c8e66d06115aedd41f1669a7f35779b4f502edabba7562120456b6c6683aef275fde8f9d21072b000d236e69093d433d1efb5cc67728c0f94
   languageName: node
   linkType: hard
 
@@ -17612,7 +17647,7 @@ __metadata:
     "@emotion/styled": 11.8.1
     "@gatsbyjs/reach-router": 1.3.6
     "@graphql-codegen/cli": 2.6.2
-    "@graphql-codegen/typescript": 2.4.9
+    "@graphql-codegen/typescript": 2.4.10
     "@graphql-codegen/typescript-operations": 2.3.6
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
