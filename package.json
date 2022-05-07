@@ -13,7 +13,7 @@
     "@typescript-eslint/parser": "5.22.0",
     "axios": "0.27.2",
     "css": "3.0.0",
-    "eslint": "8.14.0",
+    "eslint": "8.15.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-react": "7.29.4",
     "prettier": "2.6.2",
