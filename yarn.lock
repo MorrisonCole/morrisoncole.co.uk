@@ -8783,6 +8783,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.22.3":
+  version: 3.22.5
+  resolution: "core-js@npm:3.22.5"
+  checksum: d3d7495d7cdde01cf9ac3debc5087afc3c8dd56baa4953d9ccbb46b1a80872c79d14c1e6343c664c9c0fade288ab44c70b54dd34f879a71e6eff6fffeab84e00
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:1.0.2":
   version: 1.0.2
   resolution: "core-util-is@npm:1.0.2"
@@ -12306,9 +12313,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:3.13.0":
-  version: 3.13.0
-  resolution: "gatsby-plugin-mdx@npm:3.13.0"
+"gatsby-plugin-mdx@npm:3.14.0":
+  version: 3.14.0
+  resolution: "gatsby-plugin-mdx@npm:3.14.0"
   dependencies:
     "@babel/core": ^7.15.5
     "@babel/generator": ^7.15.4
@@ -12320,13 +12327,13 @@ __metadata:
     "@babel/types": ^7.15.4
     camelcase-css: ^2.0.1
     change-case: ^3.1.0
-    core-js: ^3.17.2
+    core-js: ^3.22.3
     dataloader: ^1.4.0
     debug: ^4.3.1
     escape-string-regexp: ^1.0.5
     eval: ^0.1.4
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.13.0
+    fs-extra: ^10.1.0
+    gatsby-core-utils: ^3.14.0
     gray-matter: ^4.0.2
     json5: ^2.1.3
     loader-utils: ^1.4.0
@@ -12354,7 +12361,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 18a1bb23be0e3dd4c8c02a7db38761e4493c7990bb475b573a59f1ec949a1b4f809b320bd8bdc04055e69c8cc3f2dc51c59363e6e6f07bfde8d8b3de0a6417bb
+  checksum: 0c05d6e0b5c7020212c81e8f1eef971e29cf9d09a84bcbe27445202c9cf394aa0579e70e52776ff4234b64d62030347ef0ec5431ac06a845c26901a0ce178150
   languageName: node
   linkType: hard
 
@@ -17821,7 +17828,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 4.14.0
     gatsby-plugin-image: 2.13.0
     gatsby-plugin-layout: 3.14.0
-    gatsby-plugin-mdx: 3.13.0
+    gatsby-plugin-mdx: 3.14.0
     gatsby-plugin-preconnect: 1.3.0
     gatsby-plugin-react-helmet: 5.13.0
     gatsby-plugin-remove-serviceworker: 1.0.0
