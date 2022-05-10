@@ -12040,17 +12040,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-legacy-polyfills@npm:2.13.0":
-  version: 2.13.0
-  resolution: "gatsby-legacy-polyfills@npm:2.13.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    core-js-compat: 3.9.0
-  checksum: 0a0548c7b65e4329cf0009464c7e8cd73044f928b58b77f0c5e0bbc7fbf0461ad5d0bd3d4bfccce42483ea0e34937a00ff579c977f34cb462f9bcde76a0117e8
-  languageName: node
-  linkType: hard
-
-"gatsby-legacy-polyfills@npm:^2.14.0":
+"gatsby-legacy-polyfills@npm:2.14.0, gatsby-legacy-polyfills@npm:^2.14.0":
   version: 2.14.0
   resolution: "gatsby-legacy-polyfills@npm:2.14.0"
   dependencies:
@@ -12448,27 +12438,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "gatsby-plugin-utils@npm:3.7.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    "@gatsbyjs/potrace": ^2.2.0
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.13.0
-    gatsby-sharp: ^0.7.0
-    graphql-compose: ^9.0.7
-    import-from: ^4.0.0
-    joi: ^17.4.2
-    mime: ^3.0.0
-    mini-svg-data-uri: ^1.4.4
-    svgo: ^2.8.0
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: d80f10aa8d9ca872252b751313042c16eb6f3b011ee240585d376666f6f263e2536e1a69aeb02960988416c280d4057028b5c58f5db08e2cbd837a83ffc667d5
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^3.8.0":
   version: 3.8.0
   resolution: "gatsby-plugin-utils@npm:3.8.0"
@@ -12567,16 +12536,6 @@ __metadata:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
   checksum: 606cda538200a07f1b828eec49fb03c01d58c3d9b7772c5af21c9247754081d5df180c94d9ba3adc44384ecd421ed41c7c68f7a2d6bebe6b6406afa96a077281
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "gatsby-sharp@npm:0.7.0"
-  dependencies:
-    "@types/sharp": ^0.30.0
-    sharp: ^0.30.3
-  checksum: 57278aab193daa25017d681521a153b452e7521fe8e1ebfaf4804df12c8fd3b5d11daa03db43ed237c91a028a9003ca5d8d4a649c7d5d4a2b434298adcfe031a
   languageName: node
   linkType: hard
 
@@ -17558,7 +17517,7 @@ __metadata:
     event-source-polyfill: 1.0.26
     gatsby: 4.14.0
     gatsby-cli: 4.14.0
-    gatsby-legacy-polyfills: 2.13.0
+    gatsby-legacy-polyfills: 2.14.0
     gatsby-link: 4.13.0
     gatsby-plugin-canonical-urls: 4.14.0
     gatsby-plugin-feed: 4.14.0
