@@ -12050,23 +12050,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-link@npm:4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-link@npm:4.13.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    "@types/reach__router": ^1.3.10
-    gatsby-page-utils: ^2.13.0
-    prop-types: ^15.7.2
-  peerDependencies:
-    "@gatsbyjs/reach-router": ^1.3.5
-    react: ^16.9.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 99a64d0c0a7e343e8fc667422429ec6f51e7189d87619979124b85c02e3a945b5744731f454a43b8d60abe7951011560d68295847afb6c66e28983a85162aa30
-  languageName: node
-  linkType: hard
-
-"gatsby-link@npm:^4.14.0":
+"gatsby-link@npm:4.14.0, gatsby-link@npm:^4.14.0":
   version: 4.14.0
   resolution: "gatsby-link@npm:4.14.0"
   dependencies:
@@ -12079,22 +12063,6 @@ __metadata:
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
   checksum: 5e80da9c11246c120eebd895bbfe7af89d7fd43c07339da76e3fd0e41f5f2e3238749ed319a650d267ba1bc8d5cd2361b2c5f2d5dfab963c5007b67d0ea050c9
-  languageName: node
-  linkType: hard
-
-"gatsby-page-utils@npm:^2.13.0":
-  version: 2.13.0
-  resolution: "gatsby-page-utils@npm:2.13.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    bluebird: ^3.7.2
-    chokidar: ^3.5.2
-    fs-exists-cached: ^1.0.0
-    gatsby-core-utils: ^3.13.0
-    glob: ^7.2.0
-    lodash: ^4.17.21
-    micromatch: ^4.0.5
-  checksum: 6392847697381d43a77a2c2554783dfe1ecab72d3bb615471d4665aa2a37bd7f83467061c9dbc9efaa8ec57778901c048a3c04a1fb0f9daa2cea3bad1ff43e75
   languageName: node
   linkType: hard
 
@@ -17518,7 +17486,7 @@ __metadata:
     gatsby: 4.14.0
     gatsby-cli: 4.14.0
     gatsby-legacy-polyfills: 2.14.0
-    gatsby-link: 4.13.0
+    gatsby-link: 4.14.0
     gatsby-plugin-canonical-urls: 4.14.0
     gatsby-plugin-feed: 4.14.0
     gatsby-plugin-google-tagmanager: 4.14.0
