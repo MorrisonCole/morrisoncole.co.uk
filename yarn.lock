@@ -11855,6 +11855,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fs-extra@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "fs-extra@npm:10.1.0"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^7.0.1":
   version: 7.0.1
   resolution: "fs-extra@npm:7.0.1"
@@ -12569,22 +12580,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-transformer-sharp@npm:4.13.0"
+"gatsby-transformer-sharp@npm:4.14.0":
+  version: 4.14.0
+  resolution: "gatsby-transformer-sharp@npm:4.14.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@gatsbyjs/potrace": ^2.2.0
     bluebird: ^3.7.2
     common-tags: ^1.8.2
-    fs-extra: ^10.0.0
+    fs-extra: ^10.1.0
     probe-image-size: ^7.2.3
-    semver: ^7.3.5
+    semver: ^7.3.7
     sharp: ^0.30.3
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 0575e89976e1c4d6f5e7ddec4071a4c291296a25d2b918fd2bf91a0452c46105f33529cde9ea57100dad57e9de80f1e5745134e7a7710de4f1e1cc1654b498be
+  checksum: aed0688af0e35eb655015c952fefd2099ebddf29623d632070ade4bb6d372472447e082e93706d83066d42ffe7813ab81320f92cfbce97942b5b1495c6e17882
   languageName: node
   linkType: hard
 
@@ -17700,7 +17711,7 @@ __metadata:
     gatsby-remark-images: 6.13.0
     gatsby-source-filesystem: 4.13.0
     gatsby-transformer-json: 4.13.0
-    gatsby-transformer-sharp: 4.13.0
+    gatsby-transformer-sharp: 4.14.0
     graphql: 16.5.0
     lmdb-store: 1.6.14
     lodash: 4.17.21
@@ -21666,6 +21677,17 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 5eafe6102bea2a7439897c1856362e31cc348ccf96efd455c8b5bc2c61e6f7e7b8250dc26b8828c1d76a56f818a7ee907a36ae9fb37a599d3d24609207001d60
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.3.7":
+  version: 7.3.7
+  resolution: "semver@npm:7.3.7"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 2fa3e877568cd6ce769c75c211beaed1f9fce80b28338cadd9d0b6c40f2e2862bafd62c19a6cff42f3d54292b7c623277bcab8816a2b5521cf15210d43e75232
   languageName: node
   linkType: hard
 
