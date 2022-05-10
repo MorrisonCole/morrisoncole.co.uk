@@ -12448,27 +12448,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "gatsby-plugin-utils@npm:3.7.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    "@gatsbyjs/potrace": ^2.2.0
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.13.0
-    gatsby-sharp: ^0.7.0
-    graphql-compose: ^9.0.7
-    import-from: ^4.0.0
-    joi: ^17.4.2
-    mime: ^3.0.0
-    mini-svg-data-uri: ^1.4.4
-    svgo: ^2.8.0
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: d80f10aa8d9ca872252b751313042c16eb6f3b011ee240585d376666f6f263e2536e1a69aeb02960988416c280d4057028b5c58f5db08e2cbd837a83ffc667d5
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^3.8.0":
   version: 3.8.0
   resolution: "gatsby-plugin-utils@npm:3.8.0"
@@ -12531,9 +12510,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-autolink-headers@npm:5.13.0":
-  version: 5.13.0
-  resolution: "gatsby-remark-autolink-headers@npm:5.13.0"
+"gatsby-remark-autolink-headers@npm:5.14.0":
+  version: 5.14.0
+  resolution: "gatsby-remark-autolink-headers@npm:5.14.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     github-slugger: ^1.3.0
@@ -12544,7 +12523,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: c0b633ccb0c04e940c9c027710818ee166010bdbea624ab4ed4b7f67b8800f70b993423a00695a15c784a296922211d1492b78e92d7db501bd9a860d695a3eb7
+  checksum: 770e9fc384bfc2377e2bc96e3997bcc3acec85cc10fc7fd15bd8ad5a9b341010ad475bf6fe9b85b0cd9aded7b22486b339e37d690ab4512cf0f78e3e43d0edc7
   languageName: node
   linkType: hard
 
@@ -12567,16 +12546,6 @@ __metadata:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
   checksum: 4f154943678036851398a55a71a01e7fffccf234ccd7984460fe229547ec94d7c0e2e53e49b4123592c99916cd5f10ab978c348a99aa25fde8e55c42d98a4a01
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "gatsby-sharp@npm:0.7.0"
-  dependencies:
-    "@types/sharp": ^0.30.0
-    sharp: ^0.30.3
-  checksum: 57278aab193daa25017d681521a153b452e7521fe8e1ebfaf4804df12c8fd3b5d11daa03db43ed237c91a028a9003ca5d8d4a649c7d5d4a2b434298adcfe031a
   languageName: node
   linkType: hard
 
@@ -17575,7 +17544,7 @@ __metadata:
     gatsby-plugin-typescript: 4.13.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.14.0
-    gatsby-remark-autolink-headers: 5.13.0
+    gatsby-remark-autolink-headers: 5.14.0
     gatsby-remark-images: 6.14.0
     gatsby-source-filesystem: 4.14.0
     gatsby-transformer-json: 4.14.0
