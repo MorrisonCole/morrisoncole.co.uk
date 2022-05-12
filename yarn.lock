@@ -12327,9 +12327,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:4.14.0":
-  version: 4.14.0
-  resolution: "gatsby-plugin-sharp@npm:4.14.0"
+"gatsby-plugin-sharp@npm:4.14.1":
+  version: 4.14.1
+  resolution: "gatsby-plugin-sharp@npm:4.14.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@gatsbyjs/potrace": ^2.2.0
@@ -12352,7 +12352,7 @@ __metadata:
     uuid: 3.4.0
   peerDependencies:
     gatsby: ^4.0.0-next
-  checksum: f8dba0fc0fe9f93487aac3646993b8f3f70d5213dec2ec23821070031c70b5f001c2e207f471c1ccab2005bcd3347be48ae633883e9b5cee6dd4bdf5ef9b04de
+  checksum: 5f6b28501ca54b8a6a7e7123734fbe605e5d48b39d665e7ee5a4fd7623a0f806449ba4162819cba2aea5e26bd8fcaf50301302e6327d5de5f39d46aa0afd4f84
   languageName: node
   linkType: hard
 
@@ -17497,7 +17497,7 @@ __metadata:
     gatsby-plugin-react-helmet: 5.13.0
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
-    gatsby-plugin-sharp: 4.14.0
+    gatsby-plugin-sharp: 4.14.1
     gatsby-plugin-sitemap: 5.14.0
     gatsby-plugin-typescript: 4.13.0
     gatsby-plugin-web-font-loader: 1.0.4
