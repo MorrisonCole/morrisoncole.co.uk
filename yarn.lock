@@ -7168,19 +7168,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-remove-graphql-queries@npm:^4.13.0":
-  version: 4.13.0
-  resolution: "babel-plugin-remove-graphql-queries@npm:4.13.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    gatsby-core-utils: ^3.13.0
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    gatsby: ^4.0.0-next
-  checksum: 5e52778bbfbde94df929db427f03d4d7e882ce2f6b9c0a6e37ddc30e73cb05cb309bc2c3fea705903f24183006ee2a0b9a4fdf32af77bed40b5b55e1b15b753d
-  languageName: node
-  linkType: hard
-
 "babel-plugin-remove-graphql-queries@npm:^4.14.0":
   version: 4.14.0
   resolution: "babel-plugin-remove-graphql-queries@npm:4.14.0"
@@ -11848,17 +11835,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "fs-extra@npm:10.0.0"
-  dependencies:
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^2.0.0
-  checksum: 5285a3d8f34b917cf2b66af8c231a40c1623626e9d701a20051d3337be16c6d7cac94441c8b3732d47a92a2a027886ca93c69b6a4ae6aee3c89650d2a8880c0a
-  languageName: node
-  linkType: hard
-
 "fs-extra@npm:^10.1.0":
   version: 10.1.0
   resolution: "fs-extra@npm:10.1.0"
@@ -12096,29 +12072,6 @@ __metadata:
   bin:
     gatsby: cli.js
   checksum: 2f8c72bb7511023cd19b6a1471bca42659c30636db1c49101a5f2ae3e1bf7a4316cf1f4dcbf6b2cd3de5252979b835b4a30521cf63a1d772e5ac5b42ad6af1bd
-  languageName: node
-  linkType: hard
-
-"gatsby-core-utils@npm:^3.13.0":
-  version: 3.13.0
-  resolution: "gatsby-core-utils@npm:3.13.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.13.0
-    file-type: ^16.5.3
-    fs-extra: ^10.0.0
-    got: ^11.8.3
-    import-from: ^4.0.0
-    lmdb: ^2.2.6
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 474a0c491743f475c00b90a5c5f1972ac0359539a8d567ed44f0664e6ee0733ea268122a3af4bc8480a89020daaca9d8097575ee0f1784e050175c807ee202ab
   languageName: node
   linkType: hard
 
@@ -12551,24 +12504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-typescript@npm:4.13.0":
-  version: 4.13.0
-  resolution: "gatsby-plugin-typescript@npm:4.13.0"
-  dependencies:
-    "@babel/core": ^7.15.5
-    "@babel/plugin-proposal-nullish-coalescing-operator": ^7.14.5
-    "@babel/plugin-proposal-numeric-separator": ^7.14.5
-    "@babel/plugin-proposal-optional-chaining": ^7.14.5
-    "@babel/preset-typescript": ^7.15.0
-    "@babel/runtime": ^7.15.4
-    babel-plugin-remove-graphql-queries: ^4.13.0
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: 4da1eaff1eb92a209519b83cc60f8f7ff7f8ed5c9f60568ec36050865ead78de9791b3a4c8588eeebcd6c62c8def980944523121d049a9c808038af55106eb4d
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-typescript@npm:^4.15.0":
+"gatsby-plugin-typescript@npm:4.15.0, gatsby-plugin-typescript@npm:^4.15.0":
   version: 4.15.0
   resolution: "gatsby-plugin-typescript@npm:4.15.0"
   dependencies:
@@ -17852,7 +17788,7 @@ __metadata:
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 4.14.1
     gatsby-plugin-sitemap: 5.14.0
-    gatsby-plugin-typescript: 4.13.0
+    gatsby-plugin-typescript: 4.15.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.14.0
     gatsby-remark-autolink-headers: 5.14.0
