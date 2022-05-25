@@ -12316,7 +12316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-parcel-config@npm:^0.6.0":
+"gatsby-parcel-config@npm:0.6.0":
   version: 0.6.0
   resolution: "gatsby-parcel-config@npm:0.6.0"
   dependencies:
@@ -12898,9 +12898,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.15.0":
-  version: 4.15.0
-  resolution: "gatsby@npm:4.15.0"
+"gatsby@npm:4.15.1":
+  version: 4.15.1
+  resolution: "gatsby@npm:4.15.1"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -12985,7 +12985,7 @@ __metadata:
     gatsby-legacy-polyfills: ^2.15.0
     gatsby-link: ^4.15.0
     gatsby-page-utils: ^2.15.0
-    gatsby-parcel-config: ^0.6.0
+    gatsby-parcel-config: 0.6.0
     gatsby-plugin-page-creator: ^4.15.0
     gatsby-plugin-typescript: ^4.15.0
     gatsby-plugin-utils: ^3.9.0
@@ -13073,7 +13073,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 2ee5b080a964c52690ea5d771aa3c03a4d426a0c5da68f16c30801685f07fd28604f12b159609fac1149a75164148c07c5c9a8d200e34304a270030ff7e0719c
+  checksum: 256b2622475189b2f6cec8b57d0af970c58acf5f324cfb8b040c56ffd76f1ca3f2219e4a3258da1316115c85174be039c2e5d9a89ebd02dab3ae4cb13bffb578
   languageName: node
   linkType: hard
 
@@ -17878,7 +17878,7 @@ __metadata:
     classnames: 2.3.1
     css.escape: 1.5.1
     event-source-polyfill: 1.0.26
-    gatsby: 4.15.0
+    gatsby: 4.15.1
     gatsby-cli: 4.14.0
     gatsby-legacy-polyfills: 2.14.0
     gatsby-link: 4.14.1
