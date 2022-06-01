@@ -12509,9 +12509,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-tagmanager@npm:4.15.0":
-  version: 4.15.0
-  resolution: "gatsby-plugin-google-tagmanager@npm:4.15.0"
+"gatsby-plugin-google-tagmanager@npm:4.15.1":
+  version: 4.15.1
+  resolution: "gatsby-plugin-google-tagmanager@npm:4.15.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     web-vitals: ^1.1.2
@@ -12519,7 +12519,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 5ec6e7661fed42c00135236b42ea4bb98feae2595a1170eed48b400e5a17ea8900cfd42a2f4fe176b7752914fa4ee2416b5fdb8dbf12ff0d696c6aa1b0537702
+  checksum: 372d1d0ab881d099c11834a37f194d52546e715d4afc1b412ca166d1040bc62e6b109f0adc097536423d2733e33fd994a7e18926873300d69060940e04c30c7f
   languageName: node
   linkType: hard
 
@@ -17977,7 +17977,7 @@ __metadata:
     gatsby-link: 4.15.0
     gatsby-plugin-canonical-urls: 4.15.0
     gatsby-plugin-feed: 4.15.1
-    gatsby-plugin-google-tagmanager: 4.15.0
+    gatsby-plugin-google-tagmanager: 4.15.1
     gatsby-plugin-image: 2.15.0
     gatsby-plugin-layout: 3.15.0
     gatsby-plugin-mdx: 3.15.0
