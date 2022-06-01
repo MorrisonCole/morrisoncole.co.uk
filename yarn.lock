@@ -12780,6 +12780,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-utils@npm:^3.9.1":
+  version: 3.9.1
+  resolution: "gatsby-plugin-utils@npm:3.9.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    "@gatsbyjs/potrace": ^2.2.0
+    fs-extra: ^10.1.0
+    gatsby-core-utils: ^3.15.0
+    gatsby-sharp: ^0.9.0
+    graphql-compose: ^9.0.7
+    import-from: ^4.0.0
+    joi: ^17.4.2
+    mime: ^3.0.0
+    mini-svg-data-uri: ^1.4.4
+    svgo: ^2.8.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 17d7e36004fa6506fefeda2264f5be2333bec72b618ff16095355d2c88859978d594cc300aac230584493c6327e27039d008f62a47c620b6798a0e2ccc38dbb3
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-web-font-loader@npm:1.0.4":
   version: 1.0.4
   resolution: "gatsby-plugin-web-font-loader@npm:1.0.4"
@@ -12935,23 +12956,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:4.15.0":
-  version: 4.15.0
-  resolution: "gatsby-transformer-sharp@npm:4.15.0"
+"gatsby-transformer-sharp@npm:4.15.1":
+  version: 4.15.1
+  resolution: "gatsby-transformer-sharp@npm:4.15.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@gatsbyjs/potrace": ^2.2.0
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^3.9.0
+    gatsby-plugin-utils: ^3.9.1
     probe-image-size: ^7.2.3
     semver: ^7.3.7
     sharp: ^0.30.3
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 90b2e430b20f1b99047be0325340c563b8a39874619cfb090c9a89e1b4e57871892c7f37fd01b9df49e140bbd457376c7a173966dc04401ea90168b49ee28159
+  checksum: 1697dbd742cebf4c161946985a4811f1cc1c38abbc8430339705004088997ce64bbc5d0b1aa07bd62677ff9a3990a750c0f52b08ebef299ae13803a8f8b5313c
   languageName: node
   linkType: hard
 
@@ -17973,7 +17994,7 @@ __metadata:
     gatsby-remark-images: 6.15.0
     gatsby-source-filesystem: 4.15.0
     gatsby-transformer-json: 4.15.0
-    gatsby-transformer-sharp: 4.15.0
+    gatsby-transformer-sharp: 4.15.1
     graphql: 16.5.0
     lmdb-store: 1.6.14
     lodash: 4.17.21
