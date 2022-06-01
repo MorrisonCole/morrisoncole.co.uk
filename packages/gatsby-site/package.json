@@ -28,7 +28,7 @@
     "gatsby-legacy-polyfills": "2.15.0",
     "gatsby-link": "4.15.0",
     "gatsby-plugin-canonical-urls": "4.15.0",
-    "gatsby-plugin-feed": "4.15.0",
+    "gatsby-plugin-feed": "4.15.1",
     "gatsby-plugin-google-tagmanager": "4.15.0",
     "gatsby-plugin-image": "2.15.0",
     "gatsby-plugin-layout": "3.15.0",
