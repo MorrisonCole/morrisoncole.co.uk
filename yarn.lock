@@ -17942,7 +17942,7 @@ __metadata:
     react: 18.1.0
     react-dom: 18.1.0
     react-helmet: 6.1.0
-    react-intersection-observer: 9.2.0
+    react-intersection-observer: 9.2.1
     react-live: 2.4.1
     reading-time: 1.5.0
     remark-unwrap-images: 2.1.0
@@ -20763,12 +20763,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:9.2.0":
-  version: 9.2.0
-  resolution: "react-intersection-observer@npm:9.2.0"
+"react-intersection-observer@npm:9.2.1":
+  version: 9.2.1
+  resolution: "react-intersection-observer@npm:9.2.1"
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
-  checksum: cab57ea88217d9697c9c3763fa9db3ac4cb31b8061f13990fedb8e732eac41f5ed196c6e31ba78181f1f60eaaa861aedcdb037d038338171703dea3e84c36868
+  checksum: 402afd0378252a40d0ec959376f28f2babfd4fdac73c22f66dc809f91d06b34022c3539d6bd9d3f777f1a1021446cc3e97030693dfd16837df637f8a2ec6f0b7
   languageName: node
   linkType: hard
 
