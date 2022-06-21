@@ -9359,17 +9359,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-gatsby@npm:^2.16.0":
-  version: 2.16.0
-  resolution: "create-gatsby@npm:2.16.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-  bin:
-    create-gatsby: cli.js
-  checksum: 9e8ca969d2afc4d703d249fc19dff9f14a4687e24c7592ab9293252928240e3e7f98c9b26b993123049d82e01861e34e86cc5a7e131d8e9bfacaf3c46c0c44c2
-  languageName: node
-  linkType: hard
-
 "create-gatsby@npm:^2.17.0":
   version: 2.17.0
   resolution: "create-gatsby@npm:2.17.0"
@@ -12511,61 +12500,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:4.16.0":
-  version: 4.16.0
-  resolution: "gatsby-cli@npm:4.16.0"
-  dependencies:
-    "@babel/code-frame": ^7.14.0
-    "@babel/core": ^7.15.5
-    "@babel/generator": ^7.16.8
-    "@babel/helper-plugin-utils": ^7.16.7
-    "@babel/preset-typescript": ^7.16.7
-    "@babel/runtime": ^7.15.4
-    "@babel/template": ^7.16.7
-    "@babel/types": ^7.16.8
-    "@jridgewell/trace-mapping": ^0.3.13
-    "@types/common-tags": ^1.8.1
-    better-opn: ^2.1.1
-    boxen: ^5.1.2
-    chalk: ^4.1.2
-    clipboardy: ^2.3.0
-    common-tags: ^1.8.2
-    configstore: ^5.0.1
-    convert-hrtime: ^3.0.0
-    create-gatsby: ^2.16.0
-    envinfo: ^7.8.1
-    execa: ^5.1.1
-    fs-exists-cached: ^1.0.0
-    fs-extra: ^10.1.0
-    gatsby-core-utils: ^3.16.0
-    gatsby-telemetry: ^3.16.0
-    hosted-git-info: ^3.0.8
-    is-valid-path: ^0.1.1
-    joi: ^17.4.2
-    lodash: ^4.17.21
-    meant: ^1.0.3
-    node-fetch: ^2.6.6
-    opentracing: ^0.14.5
-    pretty-error: ^2.1.2
-    progress: ^2.0.3
-    prompts: ^2.4.2
-    redux: 4.1.2
-    resolve-cwd: ^3.0.0
-    semver: ^7.3.7
-    signal-exit: ^3.0.6
-    stack-trace: ^0.0.10
-    strip-ansi: ^6.0.1
-    update-notifier: ^5.1.0
-    yargs: ^15.4.1
-    yoga-layout-prebuilt: ^1.10.0
-    yurnalist: ^2.1.0
-  bin:
-    gatsby: cli.js
-  checksum: 51bfa3b028cd55dae9479da4615adb7f8823bb9dfcc26c734e111cd590d9c92632dfee8316ef000dfa58fb45563b831b24edf0b88e7aab1f4092bb20524e73ea
-  languageName: node
-  linkType: hard
-
-"gatsby-cli@npm:^4.17.0":
+"gatsby-cli@npm:4.17.0, gatsby-cli@npm:^4.17.0":
   version: 4.17.0
   resolution: "gatsby-cli@npm:4.17.0"
   dependencies:
@@ -18380,7 +18315,7 @@ __metadata:
     css.escape: 1.5.1
     event-source-polyfill: 1.0.26
     gatsby: 4.17.0
-    gatsby-cli: 4.16.0
+    gatsby-cli: 4.17.0
     gatsby-legacy-polyfills: 2.16.0
     gatsby-link: 4.16.0
     gatsby-plugin-canonical-urls: 4.16.0
