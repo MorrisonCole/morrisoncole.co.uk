@@ -13055,27 +13055,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^3.9.1":
-  version: 3.9.1
-  resolution: "gatsby-plugin-utils@npm:3.9.1"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    "@gatsbyjs/potrace": ^2.2.0
-    fs-extra: ^10.1.0
-    gatsby-core-utils: ^3.15.0
-    gatsby-sharp: ^0.9.0
-    graphql-compose: ^9.0.7
-    import-from: ^4.0.0
-    joi: ^17.4.2
-    mime: ^3.0.0
-    mini-svg-data-uri: ^1.4.4
-    svgo: ^2.8.0
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: 17d7e36004fa6506fefeda2264f5be2333bec72b618ff16095355d2c88859978d594cc300aac230584493c6327e27039d008f62a47c620b6798a0e2ccc38dbb3
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-web-font-loader@npm:1.0.4":
   version: 1.0.4
   resolution: "gatsby-plugin-web-font-loader@npm:1.0.4"
@@ -13200,16 +13179,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-sharp@npm:^0.9.0":
-  version: 0.9.0
-  resolution: "gatsby-sharp@npm:0.9.0"
-  dependencies:
-    "@types/sharp": ^0.30.0
-    sharp: ^0.30.3
-  checksum: 09486e59b59334ccf3db381aad9fbc5917fa7b6fbc351d907a52c742b2dea25dccb3da6fa22a9de6da9208953d68c7de7515ddf57780a8ba5fab5925c9b327e1
-  languageName: node
-  linkType: hard
-
 "gatsby-source-filesystem@npm:4.15.0":
   version: 4.15.0
   resolution: "gatsby-source-filesystem@npm:4.15.0"
@@ -13286,23 +13255,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:4.15.1":
-  version: 4.15.1
-  resolution: "gatsby-transformer-sharp@npm:4.15.1"
+"gatsby-transformer-sharp@npm:4.17.0":
+  version: 4.17.0
+  resolution: "gatsby-transformer-sharp@npm:4.17.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@gatsbyjs/potrace": ^2.2.0
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^3.9.1
+    gatsby-plugin-utils: ^3.11.0
     probe-image-size: ^7.2.3
     semver: ^7.3.7
     sharp: ^0.30.3
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 1697dbd742cebf4c161946985a4811f1cc1c38abbc8430339705004088997ce64bbc5d0b1aa07bd62677ff9a3990a750c0f52b08ebef299ae13803a8f8b5313c
+  checksum: d6e363813f4e189f1669e7c248a5e9634524b1562d5bcb23f8b3e5fc3382219267e515239721dd37fd3991fc1e079d550f4da4cac3342b4f56ed5b3bb0b260c6
   languageName: node
   linkType: hard
 
@@ -18310,7 +18279,7 @@ __metadata:
     gatsby-remark-images: 6.15.0
     gatsby-source-filesystem: 4.15.0
     gatsby-transformer-json: 4.17.0
-    gatsby-transformer-sharp: 4.15.1
+    gatsby-transformer-sharp: 4.17.0
     graphql: 16.5.0
     lmdb-store: 1.6.14
     lodash: 4.17.21
