@@ -13055,9 +13055,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:5.16.0":
-  version: 5.16.0
-  resolution: "gatsby-plugin-sitemap@npm:5.16.0"
+"gatsby-plugin-sitemap@npm:5.17.0":
+  version: 5.17.0
+  resolution: "gatsby-plugin-sitemap@npm:5.17.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     common-tags: ^1.8.2
@@ -13067,7 +13067,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 63e79b7f4a4c3a3535c76b45f9c474955b5a73e83f081c3449476410feb34d7f18ec1a5c2dd32145808b0dc5f214da3c3b5cc4823f0bef3443e0cdd4e4690a40
+  checksum: dc347badd40c010c377798009e626d01952001af8c012a5248d5f4b16c7bab9321ee4d3b5e63db21a8dd866f22d00d9705d3c1954d8a6dd520b7abd09ca36508
   languageName: node
   linkType: hard
 
@@ -18394,7 +18394,7 @@ __metadata:
     gatsby-plugin-remove-serviceworker: 1.0.0
     gatsby-plugin-s3: 0.3.8
     gatsby-plugin-sharp: 4.16.1
-    gatsby-plugin-sitemap: 5.16.0
+    gatsby-plugin-sitemap: 5.17.0
     gatsby-plugin-typescript: 4.16.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-react-router-scroll: 5.15.0
