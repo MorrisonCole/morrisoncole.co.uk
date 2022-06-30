@@ -2614,9 +2614,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:2.6.3":
-  version: 2.6.3
-  resolution: "@graphql-codegen/cli@npm:2.6.3"
+"@graphql-codegen/cli@npm:2.6.4":
+  version: 2.6.4
+  resolution: "@graphql-codegen/cli@npm:2.6.4"
   dependencies:
     "@graphql-codegen/core": 2.5.1
     "@graphql-codegen/plugin-helpers": ^2.4.1
@@ -2642,7 +2642,7 @@ __metadata:
     inquirer: ^8.0.0
     is-glob: ^4.0.1
     json-to-pretty-yaml: ^1.2.2
-    latest-version: ^6.0.0
+    latest-version: 5.1.0
     listr: ^0.14.3
     listr-update-renderer: ^0.5.0
     log-symbols: ^4.0.0
@@ -2658,7 +2658,7 @@ __metadata:
     gql-gen: bin.js
     graphql-code-generator: bin.js
     graphql-codegen: bin.js
-  checksum: 9188fcba6d19f499bf000a2d8507b8624f47d246657e92f79a6bf44729584bbb0fc458dad896f857eb1a2ee944883e605f6d8b2e982b59b32397825e088ccbf8
+  checksum: 664fbd395f3cb877c887e7a5bd41aa18e74db6d6bd70579c92235b3ba4853a331ad6ea317e22a0317f28dc90e41c7051554753c7023780399f72a187ba24c894
   languageName: node
   linkType: hard
 
@@ -16290,15 +16290,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"latest-version@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "latest-version@npm:6.0.0"
-  dependencies:
-    package-json: ^7.0.0
-  checksum: c3f282dee464b400dacac9bd785415df9f55b31b08f7e201ca9d6862ce829c6f49d2c14120632d43f6bca48e0eaa2daa6cf755f291fac9fe5dc67fdd9777ab77
-  languageName: node
-  linkType: hard
-
 "levn@npm:^0.4.1":
   version: 0.4.1
   resolution: "levn@npm:0.4.1"
@@ -18266,7 +18257,7 @@ __metadata:
     "@emotion/server": 11.4.0
     "@emotion/styled": 11.9.3
     "@gatsbyjs/reach-router": 1.3.6
-    "@graphql-codegen/cli": 2.6.3
+    "@graphql-codegen/cli": 2.6.4
     "@graphql-codegen/typescript": 2.5.1
     "@graphql-codegen/typescript-operations": 2.4.2
     "@mdx-js/mdx": 1.6.22
@@ -19520,18 +19511,6 @@ __metadata:
     registry-url: ^5.0.0
     semver: ^6.2.0
   checksum: cc9f890d3667d7610e6184decf543278b87f657d1ace0deb4a9c9155feca738ef88f660c82200763d3348010f4e42e9c7adc91e96ab0f86a770955995b5351e2
-  languageName: node
-  linkType: hard
-
-"package-json@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "package-json@npm:7.0.0"
-  dependencies:
-    got: ^11.8.2
-    registry-auth-token: ^4.0.0
-    registry-url: ^5.0.0
-    semver: ^7.3.5
-  checksum: c03699b057f665c5bf2d6af76190b8fb32aaf69c70a78faf7c073c03c3d0d5e168d4a96f386739a4d179e925e66289bf0b93a446fbb3f97b05451a3cd2a3bd90
   languageName: node
   linkType: hard
 
