@@ -18,6 +18,7 @@ export type Scalars = {
   Float: number;
   /** A date string, such as 2007-12-03, compliant with the ISO 8601 standard for representation of dates and times using the Gregorian calendar. */
   Date: any;
+  GatsbyImageData: any;
   /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
   JSON: any;
 };
@@ -410,15 +411,11 @@ export type File = Node & {
   childImageSharp?: Maybe<ImageSharp>;
   /** Returns the first child node of type Mdx or null if there are no children of given type on this node */
   childMdx?: Maybe<Mdx>;
-  /** Returns the first child node of type SoftwareJson or null if there are no children of given type on this node */
-  childSoftwareJson?: Maybe<SoftwareJson>;
   children: Array<Node>;
   /** Returns all children nodes filtered by type ImageSharp */
   childrenImageSharp?: Maybe<Array<Maybe<ImageSharp>>>;
   /** Returns all children nodes filtered by type Mdx */
   childrenMdx?: Maybe<Array<Maybe<Mdx>>>;
-  /** Returns all children nodes filtered by type SoftwareJson */
-  childrenSoftwareJson?: Maybe<Array<Maybe<SoftwareJson>>>;
   ctime: Scalars["Date"];
   ctimeMs: Scalars["Float"];
   dev: Scalars["Int"];
@@ -684,46 +681,6 @@ export enum FileFieldsEnum {
   ChildMdxWordCountParagraphs = "childMdx___wordCount___paragraphs",
   ChildMdxWordCountSentences = "childMdx___wordCount___sentences",
   ChildMdxWordCountWords = "childMdx___wordCount___words",
-  ChildSoftwareJson_2019 = "childSoftwareJson____2019",
-  ChildSoftwareJson_2020 = "childSoftwareJson____2020",
-  ChildSoftwareJsonChildren = "childSoftwareJson___children",
-  ChildSoftwareJsonChildrenChildren = "childSoftwareJson___children___children",
-  ChildSoftwareJsonChildrenChildrenChildren = "childSoftwareJson___children___children___children",
-  ChildSoftwareJsonChildrenChildrenId = "childSoftwareJson___children___children___id",
-  ChildSoftwareJsonChildrenId = "childSoftwareJson___children___id",
-  ChildSoftwareJsonChildrenInternalContent = "childSoftwareJson___children___internal___content",
-  ChildSoftwareJsonChildrenInternalContentDigest = "childSoftwareJson___children___internal___contentDigest",
-  ChildSoftwareJsonChildrenInternalDescription = "childSoftwareJson___children___internal___description",
-  ChildSoftwareJsonChildrenInternalFieldOwners = "childSoftwareJson___children___internal___fieldOwners",
-  ChildSoftwareJsonChildrenInternalIgnoreType = "childSoftwareJson___children___internal___ignoreType",
-  ChildSoftwareJsonChildrenInternalMediaType = "childSoftwareJson___children___internal___mediaType",
-  ChildSoftwareJsonChildrenInternalOwner = "childSoftwareJson___children___internal___owner",
-  ChildSoftwareJsonChildrenInternalType = "childSoftwareJson___children___internal___type",
-  ChildSoftwareJsonChildrenParentChildren = "childSoftwareJson___children___parent___children",
-  ChildSoftwareJsonChildrenParentId = "childSoftwareJson___children___parent___id",
-  ChildSoftwareJsonId = "childSoftwareJson___id",
-  ChildSoftwareJsonInternalContent = "childSoftwareJson___internal___content",
-  ChildSoftwareJsonInternalContentDigest = "childSoftwareJson___internal___contentDigest",
-  ChildSoftwareJsonInternalDescription = "childSoftwareJson___internal___description",
-  ChildSoftwareJsonInternalFieldOwners = "childSoftwareJson___internal___fieldOwners",
-  ChildSoftwareJsonInternalIgnoreType = "childSoftwareJson___internal___ignoreType",
-  ChildSoftwareJsonInternalMediaType = "childSoftwareJson___internal___mediaType",
-  ChildSoftwareJsonInternalOwner = "childSoftwareJson___internal___owner",
-  ChildSoftwareJsonInternalType = "childSoftwareJson___internal___type",
-  ChildSoftwareJsonParentChildren = "childSoftwareJson___parent___children",
-  ChildSoftwareJsonParentChildrenChildren = "childSoftwareJson___parent___children___children",
-  ChildSoftwareJsonParentChildrenId = "childSoftwareJson___parent___children___id",
-  ChildSoftwareJsonParentId = "childSoftwareJson___parent___id",
-  ChildSoftwareJsonParentInternalContent = "childSoftwareJson___parent___internal___content",
-  ChildSoftwareJsonParentInternalContentDigest = "childSoftwareJson___parent___internal___contentDigest",
-  ChildSoftwareJsonParentInternalDescription = "childSoftwareJson___parent___internal___description",
-  ChildSoftwareJsonParentInternalFieldOwners = "childSoftwareJson___parent___internal___fieldOwners",
-  ChildSoftwareJsonParentInternalIgnoreType = "childSoftwareJson___parent___internal___ignoreType",
-  ChildSoftwareJsonParentInternalMediaType = "childSoftwareJson___parent___internal___mediaType",
-  ChildSoftwareJsonParentInternalOwner = "childSoftwareJson___parent___internal___owner",
-  ChildSoftwareJsonParentInternalType = "childSoftwareJson___parent___internal___type",
-  ChildSoftwareJsonParentParentChildren = "childSoftwareJson___parent___parent___children",
-  ChildSoftwareJsonParentParentId = "childSoftwareJson___parent___parent___id",
   Children = "children",
   ChildrenImageSharp = "childrenImageSharp",
   ChildrenImageSharpChildren = "childrenImageSharp___children",
@@ -860,47 +817,6 @@ export enum FileFieldsEnum {
   ChildrenMdxWordCountParagraphs = "childrenMdx___wordCount___paragraphs",
   ChildrenMdxWordCountSentences = "childrenMdx___wordCount___sentences",
   ChildrenMdxWordCountWords = "childrenMdx___wordCount___words",
-  ChildrenSoftwareJson = "childrenSoftwareJson",
-  ChildrenSoftwareJson_2019 = "childrenSoftwareJson____2019",
-  ChildrenSoftwareJson_2020 = "childrenSoftwareJson____2020",
-  ChildrenSoftwareJsonChildren = "childrenSoftwareJson___children",
-  ChildrenSoftwareJsonChildrenChildren = "childrenSoftwareJson___children___children",
-  ChildrenSoftwareJsonChildrenChildrenChildren = "childrenSoftwareJson___children___children___children",
-  ChildrenSoftwareJsonChildrenChildrenId = "childrenSoftwareJson___children___children___id",
-  ChildrenSoftwareJsonChildrenId = "childrenSoftwareJson___children___id",
-  ChildrenSoftwareJsonChildrenInternalContent = "childrenSoftwareJson___children___internal___content",
-  ChildrenSoftwareJsonChildrenInternalContentDigest = "childrenSoftwareJson___children___internal___contentDigest",
-  ChildrenSoftwareJsonChildrenInternalDescription = "childrenSoftwareJson___children___internal___description",
-  ChildrenSoftwareJsonChildrenInternalFieldOwners = "childrenSoftwareJson___children___internal___fieldOwners",
-  ChildrenSoftwareJsonChildrenInternalIgnoreType = "childrenSoftwareJson___children___internal___ignoreType",
-  ChildrenSoftwareJsonChildrenInternalMediaType = "childrenSoftwareJson___children___internal___mediaType",
-  ChildrenSoftwareJsonChildrenInternalOwner = "childrenSoftwareJson___children___internal___owner",
-  ChildrenSoftwareJsonChildrenInternalType = "childrenSoftwareJson___children___internal___type",
-  ChildrenSoftwareJsonChildrenParentChildren = "childrenSoftwareJson___children___parent___children",
-  ChildrenSoftwareJsonChildrenParentId = "childrenSoftwareJson___children___parent___id",
-  ChildrenSoftwareJsonId = "childrenSoftwareJson___id",
-  ChildrenSoftwareJsonInternalContent = "childrenSoftwareJson___internal___content",
-  ChildrenSoftwareJsonInternalContentDigest = "childrenSoftwareJson___internal___contentDigest",
-  ChildrenSoftwareJsonInternalDescription = "childrenSoftwareJson___internal___description",
-  ChildrenSoftwareJsonInternalFieldOwners = "childrenSoftwareJson___internal___fieldOwners",
-  ChildrenSoftwareJsonInternalIgnoreType = "childrenSoftwareJson___internal___ignoreType",
-  ChildrenSoftwareJsonInternalMediaType = "childrenSoftwareJson___internal___mediaType",
-  ChildrenSoftwareJsonInternalOwner = "childrenSoftwareJson___internal___owner",
-  ChildrenSoftwareJsonInternalType = "childrenSoftwareJson___internal___type",
-  ChildrenSoftwareJsonParentChildren = "childrenSoftwareJson___parent___children",
-  ChildrenSoftwareJsonParentChildrenChildren = "childrenSoftwareJson___parent___children___children",
-  ChildrenSoftwareJsonParentChildrenId = "childrenSoftwareJson___parent___children___id",
-  ChildrenSoftwareJsonParentId = "childrenSoftwareJson___parent___id",
-  ChildrenSoftwareJsonParentInternalContent = "childrenSoftwareJson___parent___internal___content",
-  ChildrenSoftwareJsonParentInternalContentDigest = "childrenSoftwareJson___parent___internal___contentDigest",
-  ChildrenSoftwareJsonParentInternalDescription = "childrenSoftwareJson___parent___internal___description",
-  ChildrenSoftwareJsonParentInternalFieldOwners = "childrenSoftwareJson___parent___internal___fieldOwners",
-  ChildrenSoftwareJsonParentInternalIgnoreType = "childrenSoftwareJson___parent___internal___ignoreType",
-  ChildrenSoftwareJsonParentInternalMediaType = "childrenSoftwareJson___parent___internal___mediaType",
-  ChildrenSoftwareJsonParentInternalOwner = "childrenSoftwareJson___parent___internal___owner",
-  ChildrenSoftwareJsonParentInternalType = "childrenSoftwareJson___parent___internal___type",
-  ChildrenSoftwareJsonParentParentChildren = "childrenSoftwareJson___parent___parent___children",
-  ChildrenSoftwareJsonParentParentId = "childrenSoftwareJson___parent___parent___id",
   ChildrenChildren = "children___children",
   ChildrenChildrenChildren = "children___children___children",
   ChildrenChildrenChildrenChildren = "children___children___children___children",
@@ -1025,11 +941,9 @@ export type FileFilterInput = {
   changeTime?: InputMaybe<DateQueryOperatorInput>;
   childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childMdx?: InputMaybe<MdxFilterInput>;
-  childSoftwareJson?: InputMaybe<SoftwareJsonFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   childrenImageSharp?: InputMaybe<ImageSharpFilterListInput>;
   childrenMdx?: InputMaybe<MdxFilterListInput>;
-  childrenSoftwareJson?: InputMaybe<SoftwareJsonFilterListInput>;
   ctime?: InputMaybe<DateQueryOperatorInput>;
   ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
   dev?: InputMaybe<IntQueryOperatorInput>;
@@ -1109,6 +1023,13 @@ export type FloatQueryOperatorInput = {
   lte?: InputMaybe<Scalars["Float"]>;
   ne?: InputMaybe<Scalars["Float"]>;
   nin?: InputMaybe<Array<InputMaybe<Scalars["Float"]>>>;
+};
+
+export type GatsbyImageDataQueryOperatorInput = {
+  eq?: InputMaybe<Scalars["GatsbyImageData"]>;
+  in?: InputMaybe<Array<InputMaybe<Scalars["GatsbyImageData"]>>>;
+  ne?: InputMaybe<Scalars["GatsbyImageData"]>;
+  nin?: InputMaybe<Array<InputMaybe<Scalars["GatsbyImageData"]>>>;
 };
 
 export enum GatsbyImageFormat {
@@ -2870,7 +2791,7 @@ export type ImageSharp = Node & {
   children: Array<Node>;
   fixed?: Maybe<ImageSharpFixed>;
   fluid?: Maybe<ImageSharpFluid>;
-  gatsbyImageData: Scalars["JSON"];
+  gatsbyImageData: Scalars["GatsbyImageData"];
   id: Scalars["ID"];
   internal: Internal;
   original?: Maybe<ImageSharpOriginal>;
@@ -3134,7 +3055,7 @@ export type ImageSharpFilterInput = {
   children?: InputMaybe<NodeFilterListInput>;
   fixed?: InputMaybe<ImageSharpFixedFilterInput>;
   fluid?: InputMaybe<ImageSharpFluidFilterInput>;
-  gatsbyImageData?: InputMaybe<JsonQueryOperatorInput>;
+  gatsbyImageData?: InputMaybe<GatsbyImageDataQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   internal?: InputMaybe<InternalFilterInput>;
   original?: InputMaybe<ImageSharpOriginalFilterInput>;
@@ -3517,7 +3438,6 @@ export enum MdxFieldsEnum {
   ExportsMetaImageChildren = "exports___meta___image___children",
   ExportsMetaImageChildrenImageSharp = "exports___meta___image___childrenImageSharp",
   ExportsMetaImageChildrenMdx = "exports___meta___image___childrenMdx",
-  ExportsMetaImageChildrenSoftwareJson = "exports___meta___image___childrenSoftwareJson",
   ExportsMetaImageCtime = "exports___meta___image___ctime",
   ExportsMetaImageCtimeMs = "exports___meta___image___ctimeMs",
   ExportsMetaImageDev = "exports___meta___image___dev",
@@ -3789,6 +3709,7 @@ export type Query = {
   allSitePage: SitePageConnection;
   allSitePlugin: SitePluginConnection;
   allSoftwareJson: SoftwareJsonConnection;
+  allStaticImage: StaticImageConnection;
   directory?: Maybe<Directory>;
   file?: Maybe<File>;
   goodreadsAuthor?: Maybe<GoodreadsAuthor>;
@@ -3803,6 +3724,7 @@ export type Query = {
   sitePage?: Maybe<SitePage>;
   sitePlugin?: Maybe<SitePlugin>;
   softwareJson?: Maybe<SoftwareJson>;
+  staticImage?: Maybe<StaticImage>;
 };
 
 export type QueryAllDirectoryArgs = {
@@ -3903,6 +3825,13 @@ export type QueryAllSoftwareJsonArgs = {
   sort?: InputMaybe<SoftwareJsonSortInput>;
 };
 
+export type QueryAllStaticImageArgs = {
+  filter?: InputMaybe<StaticImageFilterInput>;
+  limit?: InputMaybe<Scalars["Int"]>;
+  skip?: InputMaybe<Scalars["Int"]>;
+  sort?: InputMaybe<StaticImageSortInput>;
+};
+
 export type QueryDirectoryArgs = {
   absolutePath?: InputMaybe<StringQueryOperatorInput>;
   accessTime?: InputMaybe<DateQueryOperatorInput>;
@@ -3955,11 +3884,9 @@ export type QueryFileArgs = {
   changeTime?: InputMaybe<DateQueryOperatorInput>;
   childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childMdx?: InputMaybe<MdxFilterInput>;
-  childSoftwareJson?: InputMaybe<SoftwareJsonFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   childrenImageSharp?: InputMaybe<ImageSharpFilterListInput>;
   childrenMdx?: InputMaybe<MdxFilterListInput>;
-  childrenSoftwareJson?: InputMaybe<SoftwareJsonFilterListInput>;
   ctime?: InputMaybe<DateQueryOperatorInput>;
   ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
   dev?: InputMaybe<IntQueryOperatorInput>;
@@ -4079,7 +4006,7 @@ export type QueryImageSharpArgs = {
   children?: InputMaybe<NodeFilterListInput>;
   fixed?: InputMaybe<ImageSharpFixedFilterInput>;
   fluid?: InputMaybe<ImageSharpFluidFilterInput>;
-  gatsbyImageData?: InputMaybe<JsonQueryOperatorInput>;
+  gatsbyImageData?: InputMaybe<GatsbyImageDataQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   internal?: InputMaybe<InternalFilterInput>;
   original?: InputMaybe<ImageSharpOriginalFilterInput>;
@@ -4112,6 +4039,7 @@ export type QuerySiteArgs = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   children?: InputMaybe<NodeFilterListInput>;
   flags?: InputMaybe<SiteFlagsFilterInput>;
+  graphqlTypegen?: InputMaybe<BooleanQueryOperatorInput>;
   host?: InputMaybe<StringQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   internal?: InputMaybe<InternalFilterInput>;
@@ -4185,11 +4113,51 @@ export type QuerySoftwareJsonArgs = {
   parent?: InputMaybe<NodeFilterInput>;
 };
 
+export type QueryStaticImageArgs = {
+  absolutePath?: InputMaybe<StringQueryOperatorInput>;
+  accessTime?: InputMaybe<DateQueryOperatorInput>;
+  atime?: InputMaybe<DateQueryOperatorInput>;
+  atimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  base?: InputMaybe<StringQueryOperatorInput>;
+  birthTime?: InputMaybe<DateQueryOperatorInput>;
+  birthtime?: InputMaybe<DateQueryOperatorInput>;
+  birthtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  blksize?: InputMaybe<IntQueryOperatorInput>;
+  blocks?: InputMaybe<IntQueryOperatorInput>;
+  changeTime?: InputMaybe<DateQueryOperatorInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  ctime?: InputMaybe<DateQueryOperatorInput>;
+  ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  dev?: InputMaybe<FloatQueryOperatorInput>;
+  dir?: InputMaybe<StringQueryOperatorInput>;
+  ext?: InputMaybe<StringQueryOperatorInput>;
+  extension?: InputMaybe<StringQueryOperatorInput>;
+  id?: InputMaybe<StringQueryOperatorInput>;
+  ino?: InputMaybe<FloatQueryOperatorInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+  mode?: InputMaybe<IntQueryOperatorInput>;
+  modifiedTime?: InputMaybe<DateQueryOperatorInput>;
+  mtime?: InputMaybe<DateQueryOperatorInput>;
+  mtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  name?: InputMaybe<StringQueryOperatorInput>;
+  nlink?: InputMaybe<IntQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  prettySize?: InputMaybe<StringQueryOperatorInput>;
+  rdev?: InputMaybe<IntQueryOperatorInput>;
+  relativeDirectory?: InputMaybe<StringQueryOperatorInput>;
+  relativePath?: InputMaybe<StringQueryOperatorInput>;
+  root?: InputMaybe<StringQueryOperatorInput>;
+  size?: InputMaybe<IntQueryOperatorInput>;
+  sourceInstanceName?: InputMaybe<StringQueryOperatorInput>;
+  uid?: InputMaybe<IntQueryOperatorInput>;
+};
+
 export type Site = Node & {
   __typename?: "Site";
   buildTime?: Maybe<Scalars["Date"]>;
   children: Array<Node>;
   flags?: Maybe<SiteFlags>;
+  graphqlTypegen?: Maybe<Scalars["Boolean"]>;
   host?: Maybe<Scalars["String"]>;
   id: Scalars["ID"];
   internal: Internal;
@@ -4493,6 +4461,7 @@ export enum SiteFieldsEnum {
   FlagsFastDev = "flags___FAST_DEV",
   FlagsParallelSourcing = "flags___PARALLEL_SOURCING",
   FlagsPreserveFileDownloadCache = "flags___PRESERVE_FILE_DOWNLOAD_CACHE",
+  GraphqlTypegen = "graphqlTypegen",
   Host = "host",
   Id = "id",
   InternalContent = "internal___content",
@@ -4559,6 +4528,7 @@ export type SiteFilterInput = {
   buildTime?: InputMaybe<DateQueryOperatorInput>;
   children?: InputMaybe<NodeFilterListInput>;
   flags?: InputMaybe<SiteFlagsFilterInput>;
+  graphqlTypegen?: InputMaybe<BooleanQueryOperatorInput>;
   host?: InputMaybe<StringQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   internal?: InputMaybe<InternalFilterInput>;
@@ -5487,10 +5457,6 @@ export type SoftwareJsonFilterInput = {
   parent?: InputMaybe<NodeFilterInput>;
 };
 
-export type SoftwareJsonFilterListInput = {
-  elemMatch?: InputMaybe<SoftwareJsonFilterInput>;
-};
-
 export type SoftwareJsonGroupConnection = {
   __typename?: "SoftwareJsonGroupConnection";
   distinct: Array<Scalars["String"]>;
@@ -5537,6 +5503,346 @@ export enum SortOrderEnum {
   Asc = "ASC",
   Desc = "DESC",
 }
+
+export type StaticImage = Node & {
+  __typename?: "StaticImage";
+  absolutePath?: Maybe<Scalars["String"]>;
+  accessTime?: Maybe<Scalars["Date"]>;
+  atime?: Maybe<Scalars["Date"]>;
+  atimeMs?: Maybe<Scalars["Float"]>;
+  base?: Maybe<Scalars["String"]>;
+  birthTime?: Maybe<Scalars["Date"]>;
+  birthtime?: Maybe<Scalars["Date"]>;
+  birthtimeMs?: Maybe<Scalars["Float"]>;
+  blksize?: Maybe<Scalars["Int"]>;
+  blocks?: Maybe<Scalars["Int"]>;
+  changeTime?: Maybe<Scalars["Date"]>;
+  children: Array<Node>;
+  ctime?: Maybe<Scalars["Date"]>;
+  ctimeMs?: Maybe<Scalars["Float"]>;
+  dev?: Maybe<Scalars["Float"]>;
+  dir?: Maybe<Scalars["String"]>;
+  ext?: Maybe<Scalars["String"]>;
+  extension?: Maybe<Scalars["String"]>;
+  id: Scalars["ID"];
+  ino?: Maybe<Scalars["Float"]>;
+  internal: Internal;
+  mode?: Maybe<Scalars["Int"]>;
+  modifiedTime?: Maybe<Scalars["Date"]>;
+  mtime?: Maybe<Scalars["Date"]>;
+  mtimeMs?: Maybe<Scalars["Float"]>;
+  name?: Maybe<Scalars["String"]>;
+  nlink?: Maybe<Scalars["Int"]>;
+  parent?: Maybe<Node>;
+  prettySize?: Maybe<Scalars["String"]>;
+  rdev?: Maybe<Scalars["Int"]>;
+  relativeDirectory?: Maybe<Scalars["String"]>;
+  relativePath?: Maybe<Scalars["String"]>;
+  root?: Maybe<Scalars["String"]>;
+  size?: Maybe<Scalars["Int"]>;
+  sourceInstanceName?: Maybe<Scalars["String"]>;
+  uid?: Maybe<Scalars["Int"]>;
+};
+
+export type StaticImageAccessTimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageAtimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageBirthTimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageBirthtimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageChangeTimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageCtimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageModifiedTimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageMtimeArgs = {
+  difference?: InputMaybe<Scalars["String"]>;
+  formatString?: InputMaybe<Scalars["String"]>;
+  fromNow?: InputMaybe<Scalars["Boolean"]>;
+  locale?: InputMaybe<Scalars["String"]>;
+};
+
+export type StaticImageConnection = {
+  __typename?: "StaticImageConnection";
+  distinct: Array<Scalars["String"]>;
+  edges: Array<StaticImageEdge>;
+  group: Array<StaticImageGroupConnection>;
+  max?: Maybe<Scalars["Float"]>;
+  min?: Maybe<Scalars["Float"]>;
+  nodes: Array<StaticImage>;
+  pageInfo: PageInfo;
+  sum?: Maybe<Scalars["Float"]>;
+  totalCount: Scalars["Int"];
+};
+
+export type StaticImageConnectionDistinctArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageConnectionGroupArgs = {
+  field: StaticImageFieldsEnum;
+  limit?: InputMaybe<Scalars["Int"]>;
+  skip?: InputMaybe<Scalars["Int"]>;
+};
+
+export type StaticImageConnectionMaxArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageConnectionMinArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageConnectionSumArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageEdge = {
+  __typename?: "StaticImageEdge";
+  next?: Maybe<StaticImage>;
+  node: StaticImage;
+  previous?: Maybe<StaticImage>;
+};
+
+export enum StaticImageFieldsEnum {
+  AbsolutePath = "absolutePath",
+  AccessTime = "accessTime",
+  Atime = "atime",
+  AtimeMs = "atimeMs",
+  Base = "base",
+  BirthTime = "birthTime",
+  Birthtime = "birthtime",
+  BirthtimeMs = "birthtimeMs",
+  Blksize = "blksize",
+  Blocks = "blocks",
+  ChangeTime = "changeTime",
+  Children = "children",
+  ChildrenChildren = "children___children",
+  ChildrenChildrenChildren = "children___children___children",
+  ChildrenChildrenChildrenChildren = "children___children___children___children",
+  ChildrenChildrenChildrenId = "children___children___children___id",
+  ChildrenChildrenId = "children___children___id",
+  ChildrenChildrenInternalContent = "children___children___internal___content",
+  ChildrenChildrenInternalContentDigest = "children___children___internal___contentDigest",
+  ChildrenChildrenInternalDescription = "children___children___internal___description",
+  ChildrenChildrenInternalFieldOwners = "children___children___internal___fieldOwners",
+  ChildrenChildrenInternalIgnoreType = "children___children___internal___ignoreType",
+  ChildrenChildrenInternalMediaType = "children___children___internal___mediaType",
+  ChildrenChildrenInternalOwner = "children___children___internal___owner",
+  ChildrenChildrenInternalType = "children___children___internal___type",
+  ChildrenChildrenParentChildren = "children___children___parent___children",
+  ChildrenChildrenParentId = "children___children___parent___id",
+  ChildrenId = "children___id",
+  ChildrenInternalContent = "children___internal___content",
+  ChildrenInternalContentDigest = "children___internal___contentDigest",
+  ChildrenInternalDescription = "children___internal___description",
+  ChildrenInternalFieldOwners = "children___internal___fieldOwners",
+  ChildrenInternalIgnoreType = "children___internal___ignoreType",
+  ChildrenInternalMediaType = "children___internal___mediaType",
+  ChildrenInternalOwner = "children___internal___owner",
+  ChildrenInternalType = "children___internal___type",
+  ChildrenParentChildren = "children___parent___children",
+  ChildrenParentChildrenChildren = "children___parent___children___children",
+  ChildrenParentChildrenId = "children___parent___children___id",
+  ChildrenParentId = "children___parent___id",
+  ChildrenParentInternalContent = "children___parent___internal___content",
+  ChildrenParentInternalContentDigest = "children___parent___internal___contentDigest",
+  ChildrenParentInternalDescription = "children___parent___internal___description",
+  ChildrenParentInternalFieldOwners = "children___parent___internal___fieldOwners",
+  ChildrenParentInternalIgnoreType = "children___parent___internal___ignoreType",
+  ChildrenParentInternalMediaType = "children___parent___internal___mediaType",
+  ChildrenParentInternalOwner = "children___parent___internal___owner",
+  ChildrenParentInternalType = "children___parent___internal___type",
+  ChildrenParentParentChildren = "children___parent___parent___children",
+  ChildrenParentParentId = "children___parent___parent___id",
+  Ctime = "ctime",
+  CtimeMs = "ctimeMs",
+  Dev = "dev",
+  Dir = "dir",
+  Ext = "ext",
+  Extension = "extension",
+  Id = "id",
+  Ino = "ino",
+  InternalContent = "internal___content",
+  InternalContentDigest = "internal___contentDigest",
+  InternalDescription = "internal___description",
+  InternalFieldOwners = "internal___fieldOwners",
+  InternalIgnoreType = "internal___ignoreType",
+  InternalMediaType = "internal___mediaType",
+  InternalOwner = "internal___owner",
+  InternalType = "internal___type",
+  Mode = "mode",
+  ModifiedTime = "modifiedTime",
+  Mtime = "mtime",
+  MtimeMs = "mtimeMs",
+  Name = "name",
+  Nlink = "nlink",
+  ParentChildren = "parent___children",
+  ParentChildrenChildren = "parent___children___children",
+  ParentChildrenChildrenChildren = "parent___children___children___children",
+  ParentChildrenChildrenId = "parent___children___children___id",
+  ParentChildrenId = "parent___children___id",
+  ParentChildrenInternalContent = "parent___children___internal___content",
+  ParentChildrenInternalContentDigest = "parent___children___internal___contentDigest",
+  ParentChildrenInternalDescription = "parent___children___internal___description",
+  ParentChildrenInternalFieldOwners = "parent___children___internal___fieldOwners",
+  ParentChildrenInternalIgnoreType = "parent___children___internal___ignoreType",
+  ParentChildrenInternalMediaType = "parent___children___internal___mediaType",
+  ParentChildrenInternalOwner = "parent___children___internal___owner",
+  ParentChildrenInternalType = "parent___children___internal___type",
+  ParentChildrenParentChildren = "parent___children___parent___children",
+  ParentChildrenParentId = "parent___children___parent___id",
+  ParentId = "parent___id",
+  ParentInternalContent = "parent___internal___content",
+  ParentInternalContentDigest = "parent___internal___contentDigest",
+  ParentInternalDescription = "parent___internal___description",
+  ParentInternalFieldOwners = "parent___internal___fieldOwners",
+  ParentInternalIgnoreType = "parent___internal___ignoreType",
+  ParentInternalMediaType = "parent___internal___mediaType",
+  ParentInternalOwner = "parent___internal___owner",
+  ParentInternalType = "parent___internal___type",
+  ParentParentChildren = "parent___parent___children",
+  ParentParentChildrenChildren = "parent___parent___children___children",
+  ParentParentChildrenId = "parent___parent___children___id",
+  ParentParentId = "parent___parent___id",
+  ParentParentInternalContent = "parent___parent___internal___content",
+  ParentParentInternalContentDigest = "parent___parent___internal___contentDigest",
+  ParentParentInternalDescription = "parent___parent___internal___description",
+  ParentParentInternalFieldOwners = "parent___parent___internal___fieldOwners",
+  ParentParentInternalIgnoreType = "parent___parent___internal___ignoreType",
+  ParentParentInternalMediaType = "parent___parent___internal___mediaType",
+  ParentParentInternalOwner = "parent___parent___internal___owner",
+  ParentParentInternalType = "parent___parent___internal___type",
+  ParentParentParentChildren = "parent___parent___parent___children",
+  ParentParentParentId = "parent___parent___parent___id",
+  PrettySize = "prettySize",
+  Rdev = "rdev",
+  RelativeDirectory = "relativeDirectory",
+  RelativePath = "relativePath",
+  Root = "root",
+  Size = "size",
+  SourceInstanceName = "sourceInstanceName",
+  Uid = "uid",
+}
+
+export type StaticImageFilterInput = {
+  absolutePath?: InputMaybe<StringQueryOperatorInput>;
+  accessTime?: InputMaybe<DateQueryOperatorInput>;
+  atime?: InputMaybe<DateQueryOperatorInput>;
+  atimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  base?: InputMaybe<StringQueryOperatorInput>;
+  birthTime?: InputMaybe<DateQueryOperatorInput>;
+  birthtime?: InputMaybe<DateQueryOperatorInput>;
+  birthtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  blksize?: InputMaybe<IntQueryOperatorInput>;
+  blocks?: InputMaybe<IntQueryOperatorInput>;
+  changeTime?: InputMaybe<DateQueryOperatorInput>;
+  children?: InputMaybe<NodeFilterListInput>;
+  ctime?: InputMaybe<DateQueryOperatorInput>;
+  ctimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  dev?: InputMaybe<FloatQueryOperatorInput>;
+  dir?: InputMaybe<StringQueryOperatorInput>;
+  ext?: InputMaybe<StringQueryOperatorInput>;
+  extension?: InputMaybe<StringQueryOperatorInput>;
+  id?: InputMaybe<StringQueryOperatorInput>;
+  ino?: InputMaybe<FloatQueryOperatorInput>;
+  internal?: InputMaybe<InternalFilterInput>;
+  mode?: InputMaybe<IntQueryOperatorInput>;
+  modifiedTime?: InputMaybe<DateQueryOperatorInput>;
+  mtime?: InputMaybe<DateQueryOperatorInput>;
+  mtimeMs?: InputMaybe<FloatQueryOperatorInput>;
+  name?: InputMaybe<StringQueryOperatorInput>;
+  nlink?: InputMaybe<IntQueryOperatorInput>;
+  parent?: InputMaybe<NodeFilterInput>;
+  prettySize?: InputMaybe<StringQueryOperatorInput>;
+  rdev?: InputMaybe<IntQueryOperatorInput>;
+  relativeDirectory?: InputMaybe<StringQueryOperatorInput>;
+  relativePath?: InputMaybe<StringQueryOperatorInput>;
+  root?: InputMaybe<StringQueryOperatorInput>;
+  size?: InputMaybe<IntQueryOperatorInput>;
+  sourceInstanceName?: InputMaybe<StringQueryOperatorInput>;
+  uid?: InputMaybe<IntQueryOperatorInput>;
+};
+
+export type StaticImageGroupConnection = {
+  __typename?: "StaticImageGroupConnection";
+  distinct: Array<Scalars["String"]>;
+  edges: Array<StaticImageEdge>;
+  field: Scalars["String"];
+  fieldValue?: Maybe<Scalars["String"]>;
+  group: Array<StaticImageGroupConnection>;
+  max?: Maybe<Scalars["Float"]>;
+  min?: Maybe<Scalars["Float"]>;
+  nodes: Array<StaticImage>;
+  pageInfo: PageInfo;
+  sum?: Maybe<Scalars["Float"]>;
+  totalCount: Scalars["Int"];
+};
+
+export type StaticImageGroupConnectionDistinctArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageGroupConnectionGroupArgs = {
+  field: StaticImageFieldsEnum;
+  limit?: InputMaybe<Scalars["Int"]>;
+  skip?: InputMaybe<Scalars["Int"]>;
+};
+
+export type StaticImageGroupConnectionMaxArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageGroupConnectionMinArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageGroupConnectionSumArgs = {
+  field: StaticImageFieldsEnum;
+};
+
+export type StaticImageSortInput = {
+  fields?: InputMaybe<Array<InputMaybe<StaticImageFieldsEnum>>>;
+  order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
+};
 
 export type StringQueryOperatorInput = {
   eq?: InputMaybe<Scalars["String"]>;
