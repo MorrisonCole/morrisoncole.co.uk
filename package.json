@@ -7,10 +7,10 @@
   "devDependencies": {
     "@types/css": "0.0.33",
     "@types/eslint": "8.4.5",
-    "@types/node": "18.0.0",
+    "@types/node": "18.0.3",
     "@types/prettier": "2.6.3",
-    "@typescript-eslint/eslint-plugin": "5.30.3",
-    "@typescript-eslint/parser": "5.30.3",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
     "axios": "0.27.2",
     "css": "3.0.0",
     "eslint": "8.19.0",
