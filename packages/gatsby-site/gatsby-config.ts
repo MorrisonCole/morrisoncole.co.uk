@@ -152,14 +152,6 @@ const config: GatsbyConfig = {
         },
       },
     },
-    "gatsby-transformer-json",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: path.resolve(`data`),
-        name: "data",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-mui-emotion",
     {
