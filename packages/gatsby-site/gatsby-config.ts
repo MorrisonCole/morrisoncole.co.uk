@@ -12,6 +12,7 @@ if (goodreadsKey == null) {
 }
 
 const config: GatsbyConfig = {
+  graphqlTypegen: true,
   flags: {
     FAST_DEV: true,
     PRESERVE_FILE_DOWNLOAD_CACHE: true,
