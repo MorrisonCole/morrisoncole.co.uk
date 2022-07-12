@@ -3,8 +3,13 @@
   "compilerOptions": {
     "module": "esnext",
     "outDir": "dist",
-    "typeRoots": ["./types", "./node_modules/@types"]
+    "typeRoots": ["./types", "../../node_modules/@types"]
   },
-  "include": ["plugins/**/*"],
-  "exclude": [".cache", "./public", "./types/graphql-types", "dist"]
+  "include": [
+    "./src/**/*",
+    "./gatsby-node.ts",
+    "./gatsby-config.ts",
+    "./plugins/**/*"
+  ],
+  "exclude": ["./.cache", "./public", "./dist"]
 }
