@@ -2457,7 +2457,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gatsbyjs/reach-router@npm:1.3.6, @gatsbyjs/reach-router@npm:^1.3.6":
+"@gatsbyjs/reach-router@npm:1.3.9":
+  version: 1.3.9
+  resolution: "@gatsbyjs/reach-router@npm:1.3.9"
+  dependencies:
+    invariant: ^2.2.3
+    prop-types: ^15.6.1
+    react-lifecycles-compat: ^3.0.4
+  peerDependencies:
+    react: 15.x || 16.x || 17.x || 18.x
+    react-dom: 15.x || 16.x || 17.x || 18.x
+  checksum: 4e6155026bac53bc7444f32a67846a9080546f986a788786b674ec3274d0ff739a6e06dde9fd75d919ce109fb44ce09932303e20397905daa7691113db6da9ad
+  languageName: node
+  linkType: hard
+
+"@gatsbyjs/reach-router@npm:^1.3.6":
   version: 1.3.6
   resolution: "@gatsbyjs/reach-router@npm:1.3.6"
   dependencies:
@@ -17356,7 +17370,7 @@ __metadata:
     "@emotion/react": 11.9.3
     "@emotion/server": 11.4.0
     "@emotion/styled": 11.9.3
-    "@gatsbyjs/reach-router": 1.3.6
+    "@gatsbyjs/reach-router": 1.3.9
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
     "@mikaelkristiansson/domready": 1.0.11
