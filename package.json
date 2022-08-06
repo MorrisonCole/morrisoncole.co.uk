@@ -7,19 +7,19 @@
   "devDependencies": {
     "@types/css": "0.0.33",
     "@types/eslint": "8.4.5",
-    "@types/node": "18.6.2",
-    "@types/prettier": "2.6.4",
-    "@typescript-eslint/eslint-plugin": "5.31.0",
-    "@typescript-eslint/parser": "5.31.0",
+    "@types/node": "18.6.4",
+    "@types/prettier": "2.7.0",
+    "@typescript-eslint/eslint-plugin": "5.32.0",
+    "@typescript-eslint/parser": "5.32.0",
     "axios": "0.27.2",
     "css": "3.0.0",
-    "eslint": "8.20.0",
+    "eslint": "8.21.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-react": "7.30.1",
     "prettier": "2.7.1",
-    "ts-node": "10.8.2",
+    "ts-node": "10.9.1",
     "typescript": "4.7.4",
-    "vercel": "27.0.2"
+    "vercel": "27.3.7"
   },
   "scripts": {
     "start:gatsby": "yarn workspace morrisoncole.co.uk start",
