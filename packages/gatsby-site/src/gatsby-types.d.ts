@@ -4099,7 +4099,7 @@ type Query_siteArgs = {
   buildTime: InputMaybe<DateQueryOperatorInput>;
   children: InputMaybe<NodeFilterListInput>;
   flags: InputMaybe<SiteFlagsFilterInput>;
-  graphqlTypegen: InputMaybe<BooleanQueryOperatorInput>;
+  graphqlTypegen: InputMaybe<SiteGraphqlTypegenFilterInput>;
   host: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
@@ -4182,7 +4182,7 @@ type Site = Node & {
   readonly buildTime: Maybe<Scalars['Date']>;
   readonly children: ReadonlyArray<Node>;
   readonly flags: Maybe<SiteFlags>;
-  readonly graphqlTypegen: Maybe<Scalars['Boolean']>;
+  readonly graphqlTypegen: Maybe<SiteGraphqlTypegen>;
   readonly host: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
@@ -4496,7 +4496,7 @@ type SiteFieldsEnum =
   | 'flags.FAST_DEV'
   | 'flags.PARALLEL_SOURCING'
   | 'flags.PRESERVE_FILE_DOWNLOAD_CACHE'
-  | 'graphqlTypegen'
+  | 'graphqlTypegen.typesOutputPath'
   | 'host'
   | 'id'
   | 'internal.content'
@@ -4562,7 +4562,7 @@ type SiteFilterInput = {
   readonly buildTime: InputMaybe<DateQueryOperatorInput>;
   readonly children: InputMaybe<NodeFilterListInput>;
   readonly flags: InputMaybe<SiteFlagsFilterInput>;
-  readonly graphqlTypegen: InputMaybe<BooleanQueryOperatorInput>;
+  readonly graphqlTypegen: InputMaybe<SiteGraphqlTypegenFilterInput>;
   readonly host: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
@@ -4799,6 +4799,14 @@ type SiteFunctionGroupConnection_sumArgs = {
 type SiteFunctionSortInput = {
   readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SiteFunctionFieldsEnum>>>;
   readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+};
+
+type SiteGraphqlTypegen = {
+  readonly typesOutputPath: Maybe<Scalars['String']>;
+};
+
+type SiteGraphqlTypegenFilterInput = {
+  readonly typesOutputPath: InputMaybe<StringQueryOperatorInput>;
 };
 
 type SiteGroupConnection = {
