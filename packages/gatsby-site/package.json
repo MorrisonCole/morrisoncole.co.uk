@@ -59,7 +59,7 @@
     "react-intersection-observer": "9.4.0",
     "react-live": "2.4.1",
     "reading-time": "1.5.0",
-    "remark-unwrap-images": "2.1.0",
+    "remark-unwrap-images": "3.0.1",
     "shallow-compare": "1.2.2",
     "stack-trace": "1.0.0-pre1",
     "stream": "0.0.2",
