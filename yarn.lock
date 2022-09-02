@@ -17377,7 +17377,7 @@ __metadata:
     reading-time: 1.5.0
     remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
-    socket.io-client: 4.5.1
+    socket.io-client: 4.5.2
     stack-trace: 1.0.0-pre1
     stream: 0.0.2
     util: 0.12.4
@@ -21606,15 +21606,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socket.io-client@npm:4.5.1":
-  version: 4.5.1
-  resolution: "socket.io-client@npm:4.5.1"
+"socket.io-client@npm:4.5.2":
+  version: 4.5.2
+  resolution: "socket.io-client@npm:4.5.2"
   dependencies:
     "@socket.io/component-emitter": ~3.1.0
     debug: ~4.3.2
     engine.io-client: ~6.2.1
     socket.io-parser: ~4.2.0
-  checksum: e6e5ff1bb4b5714195b961274925cf23de81e070258d2ec1c8e12fcd9cebf4b4725c5fcff58699b23de8a260884f272f4e7e1e1146c0c72b75028fc438d069aa
+  checksum: f3196a731d7f502bcce8b54a3430485d2015d0e7d74050c1be8fa0622da0b62977719f903ec0dfb113d4be1564f6509d73f2fc257cf3972f3be877722aeabeb9
   languageName: node
   linkType: hard
 
