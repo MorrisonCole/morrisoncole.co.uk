@@ -1943,12 +1943,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.18.9, @babel/runtime@npm:^7.18.3":
-  version: 7.18.9
-  resolution: "@babel/runtime@npm:7.18.9"
+"@babel/runtime@npm:7.19.0":
+  version: 7.19.0
+  resolution: "@babel/runtime@npm:7.19.0"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 36dd736baba7164e82b3cc9d43e081f0cb2d05ff867ad39cac515d99546cee75b7f782018b02a3dcf5f2ef3d27f319faa68965fdfec49d4912c60c6002353a2e
+  checksum: fa69c351bb05e1db3ceb9a02fdcf620c234180af68cdda02152d3561015f6d55277265d3109815992f96d910f3db709458cae4f8df1c3def66f32e0867d82294
   languageName: node
   linkType: hard
 
@@ -1985,6 +1985,15 @@ __metadata:
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: 9d0caa5fe690623fb6c5df6fb3b3581d227b55ef9f7c35eba0da83d10aa756669a81fe521ac4dbc007e5790716bac40ebe71ff098e2d1a9599dd696a282a3e95
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.18.3":
+  version: 7.18.9
+  resolution: "@babel/runtime@npm:7.18.9"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 36dd736baba7164e82b3cc9d43e081f0cb2d05ff867ad39cac515d99546cee75b7f782018b02a3dcf5f2ef3d27f319faa68965fdfec49d4912c60c6002353a2e
   languageName: node
   linkType: hard
 
@@ -17309,7 +17318,7 @@ __metadata:
   resolution: "morrisoncole.co.uk@workspace:packages/gatsby-site"
   dependencies:
     "@babel/core": 7.18.13
-    "@babel/runtime": 7.18.9
+    "@babel/runtime": 7.19.0
     "@emotion/react": 11.10.0
     "@emotion/server": 11.10.0
     "@emotion/styled": 11.10.0

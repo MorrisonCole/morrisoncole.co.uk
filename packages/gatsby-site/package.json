@@ -8,7 +8,7 @@
     "url": "https://github.com/MorrisonCole/morrisoncole.co.uk/issues"
   },
   "dependencies": {
-    "@babel/runtime": "7.18.9",
+    "@babel/runtime": "7.19.0",
     "@emotion/react": "11.10.0",
     "@emotion/server": "11.10.0",
     "@emotion/styled": "11.10.0",
