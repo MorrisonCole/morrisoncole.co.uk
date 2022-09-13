@@ -36,7 +36,7 @@
     "gatsby-plugin-remove-serviceworker": "1.0.0",
     "gatsby-plugin-s3": "0.3.8",
     "gatsby-plugin-sharp": "4.22.0",
-    "gatsby-plugin-sitemap": "5.22.0",
+    "gatsby-plugin-sitemap": "5.23.0",
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-remark-autolink-headers": "5.22.0",
     "gatsby-remark-images": "6.22.0",
