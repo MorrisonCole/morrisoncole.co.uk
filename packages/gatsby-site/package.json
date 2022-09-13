@@ -19,7 +19,7 @@
     "@mui/lab": "5.0.0-alpha.99",
     "@mui/material": "5.10.5",
     "anser": "2.1.1",
-    "classnames": "2.3.1",
+    "classnames": "2.3.2",
     "css.escape": "1.5.1",
     "event-source-polyfill": "1.0.31",
     "gatsby": "4.22.1",
