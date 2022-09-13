@@ -11825,15 +11825,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-images@npm:6.22.0":
-  version: 6.22.0
-  resolution: "gatsby-remark-images@npm:6.22.0"
+"gatsby-remark-images@npm:6.23.0":
+  version: 6.23.0
+  resolution: "gatsby-remark-images@npm:6.23.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@gatsbyjs/potrace": ^2.3.0
     chalk: ^4.1.2
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^3.22.0
+    gatsby-core-utils: ^3.23.0
     is-relative-url: ^3.0.0
     lodash: ^4.17.21
     mdast-util-definitions: ^4.0.0
@@ -11843,7 +11843,7 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 65d1f35d4260511f22e801c3993b54e31bce4307969450c1cebc30613b0b65516b6ee9064e79eb1998bd00a39ea76a8ffef3993e4325d1c75cc7f2746cd29486
+  checksum: a1ec057745fb64a29c3de3e590fc6a7bef4b76e89af2cfdf846a9a6967c8b0288850cf59e3e0e98926d32597737ccfaa173955c05905303d0f8f800c13422736
   languageName: node
   linkType: hard
 
@@ -16298,7 +16298,7 @@ __metadata:
     gatsby-plugin-sitemap: 5.23.0
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-remark-autolink-headers: 5.22.0
-    gatsby-remark-images: 6.22.0
+    gatsby-remark-images: 6.23.0
     gatsby-source-filesystem: 4.23.0
     gatsby-transformer-json: 4.22.0
     gatsby-transformer-sharp: 4.23.0
