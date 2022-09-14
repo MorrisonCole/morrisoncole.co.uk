@@ -2,12 +2,15 @@ import React from "react";
 import SEO from "../components/seo";
 import { Paper, Typography, Box } from "@mui/material";
 import Alert from "@mui/material/Alert";
-import { PageProps } from "gatsby";
+import { HeadProps, PageProps } from "gatsby";
+
+export const Head = ({ location }: HeadProps) => {
+  return <SEO title="404: Not Found" pathname={location.pathname} />;
+};
 
 export default function NotFoundPage({ location }: PageProps): JSX.Element {
   return (
     <>
-      <SEO title="404: Not Found" location={location} />
       <Box
         sx={{
           marginTop: ({ spacing }) => spacing(8),

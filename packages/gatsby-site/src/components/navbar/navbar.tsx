@@ -1,4 +1,4 @@
-import { Box, Theme } from "@mui/material";
+import { Box } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import { Link } from "gatsby";

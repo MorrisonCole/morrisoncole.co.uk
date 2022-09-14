@@ -1,29 +1,40 @@
 import { Typography, Divider, Link, Box } from "@mui/material";
-import { graphql, Link as GatsbyLink } from "gatsby";
+import { graphql, HeadProps, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
-import {
-  BlogPostBySlugQuery,
-  SitePageContext,
-} from "../../types/graphql-types";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
 import MDXLayout from "../components/blog/mdx-layout";
-import { WindowLocation } from "@reach/router";
 import readingTime from "reading-time";
 import { getSrc } from "gatsby-plugin-image";
+import { PageProps } from "gatsby";
 
-interface BlogPostTemplateProps {
-  location: WindowLocation;
-  data: BlogPostBySlugQuery;
-  pageContext: SitePageContext;
+export const Head = ({ data, location }: HeadProps<Queries.BlogPostBySlugQuery>) => {
+  const post = data.mdx;
+
+  return (
+    <SEO
+      pathname={location.pathname}
+      title={post.exports?.meta.title}
+      description={post.exports?.meta.description ?? post.excerpt}
+      image={getSrc(
+        post?.exports?.meta?.image?.childImageSharp?.gatsbyImageData
+      )}
+      imageAlt={post?.exports?.meta?.imageAlt}
+      article
+    />
+  );
+};
+
+interface BlogPageContext {
+  previous: any;
+  next: any;
 }
 
 function BlogPostTemplate({
-  location,
   data,
   pageContext,
-}: BlogPostTemplateProps): JSX.Element {
+}: PageProps<Queries.BlogPostBySlugQuery, BlogPageContext>): JSX.Element {
   const post = data.mdx;
   const { previous, next } = pageContext;
 
@@ -33,17 +44,6 @@ function BlogPostTemplate({
         marginTop: ({ spacing }) => spacing(6),
       }}
     >
-      <SEO
-        location={location}
-        title={post.exports?.meta.title}
-        description={post.exports?.meta.description ?? post.excerpt}
-        image={getSrc(
-          post?.exports?.meta?.image?.childImageSharp?.gatsbyImageData
-        )}
-        imageAlt={post?.exports?.meta?.imageAlt}
-        article
-      />
-
       <Box
         sx={{
           paddingBottom: ({ spacing }) => spacing(2),

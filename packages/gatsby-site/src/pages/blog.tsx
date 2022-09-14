@@ -6,21 +6,26 @@ import {
   Box,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import { graphql, Link, PageProps } from "gatsby";
+import { graphql, HeadProps, Link, PageProps } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
-import { BlogIndexQuery } from "../../types/graphql-types";
 import ComposableGatsbyImage from "../components/composable/composable-gatsby-image";
 import { IGatsbyImageData } from "gatsby-plugin-image";
 
-interface BlogProps {
-  data: BlogIndexQuery;
-}
+export const Head = ({ location }: HeadProps) => {
+  return (
+    <SEO title="Blog" pathname={location.pathname}>
+      <link
+        rel="alternate"
+        type="application/rss+xml"
+        title="Morrison Cole's Blog"
+        href="/rss.xml"
+      />
+    </SEO>
+  );
+};
 
-export default function Blog({
-  data,
-  location,
-}: BlogProps & PageProps): JSX.Element {
+export default function Blog({ data }: PageProps<Queries.BlogIndexQuery>): JSX.Element {
   const posts = data.allMdx.edges;
 
   return (
@@ -34,8 +39,6 @@ export default function Blog({
         gridGap: theme.spacing(4),
       })}
     >
-      <SEO title="Blog" location={location} />
-
       {posts.map(({ node }) => {
         const title = node.exports?.meta?.title ?? node.fields?.slug;
         const date = node.exports?.meta?.date ?? "";

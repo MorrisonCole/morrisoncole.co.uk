@@ -1,6 +1,6 @@
 import { Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { PageProps } from "gatsby";
+import { HeadProps, PageProps } from "gatsby";
 import React from "react";
 import DownloadCVButton from "../components/download-cv-button";
 import SEO from "../components/seo";
@@ -10,12 +10,15 @@ import {
   TimelineEntry,
 } from "../components/timeline/timeline-data";
 
+export const Head = ({ location }: HeadProps) => {
+  return <SEO title="Timeline" pathname={location.pathname} />;
+};
+
 export default function TimelineIndex({ location }: PageProps): JSX.Element {
   const lifeEvents: TimelineEntry[] = getTimelineEntries();
 
   return (
     <>
-      <SEO title="Timeline" location={location} />
       <Box
         sx={(theme) => ({
           display: "grid",

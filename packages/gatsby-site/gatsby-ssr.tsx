@@ -6,3 +6,7 @@ import type { GatsbySSR } from "gatsby";
 export const wrapPageElement: GatsbySSR["wrapPageElement"] = ({ element }) => (
   <WrapWithCommon>{element}</WrapWithCommon>
 );
+
+export const onRenderBody = ({ setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: "en" });
+};
