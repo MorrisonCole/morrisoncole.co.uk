@@ -153,7 +153,6 @@ const config: GatsbyConfig = {
         },
       },
     },
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-mui-emotion",
     {
       resolve: "gatsby-source-filesystem",
