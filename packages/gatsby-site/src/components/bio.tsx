@@ -1,11 +1,10 @@
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
-import { BioQuery, SiteSiteMetadata } from "../../types/graphql-types";
 import useSiteMetadata from "../hooks/use-site-metadata";
 
 const Bio = (): JSX.Element => {
-  const data: BioQuery = useStaticQuery(graphql`
+  const data: Queries.BioQuery = useStaticQuery(graphql`
     query Bio {
       avatar: file(absolutePath: { regex: "/morrison-cole-profile.jpg/" }) {
         childImageSharp {
@@ -15,7 +14,7 @@ const Bio = (): JSX.Element => {
     }
   `);
 
-  const { author, social }: SiteSiteMetadata = useSiteMetadata();
+  const { author, social }: Queries.SiteSiteMetadata = useSiteMetadata();
 
   return (
     <div
