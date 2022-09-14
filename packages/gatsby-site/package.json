@@ -61,7 +61,7 @@
     "util": "0.12.4"
   },
   "devDependencies": {
-    "@babel/core": "7.19.0",
+    "@babel/core": "7.19.1",
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
     "@types/babel__core": "7.1.19",
     "@types/lodash": "4.14.185",
