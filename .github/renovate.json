@@ -1,4 +1,5 @@
 {
   "enabled": true,
-  "labels": ["automerge"]
+  "labels": ["automerge"],
+  "dependencyDashboard": true
 }
