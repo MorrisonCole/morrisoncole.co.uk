@@ -11172,29 +11172,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^3.22.0":
-  version: 3.22.0
-  resolution: "gatsby-core-utils@npm:3.22.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    ci-info: 2.0.0
-    configstore: ^5.0.1
-    fastq: ^1.13.0
-    file-type: ^16.5.3
-    fs-extra: ^10.1.0
-    got: ^11.8.5
-    import-from: ^4.0.0
-    lmdb: 2.5.3
-    lock: ^1.1.0
-    node-object-hash: ^2.3.10
-    proper-lockfile: ^4.1.2
-    resolve-from: ^5.0.0
-    tmp: ^0.2.1
-    xdg-basedir: ^4.0.0
-  checksum: 3659656d95d307313dd81dae6fac36df46c233b3b2a125306cb692ac75a30bfb906beb57dbec8fb1b1193d39c579a1c733dbee9a59071baea072b98bbc935efc
-  languageName: node
-  linkType: hard
-
 "gatsby-core-utils@npm:^3.23.0":
   version: 3.23.0
   resolution: "gatsby-core-utils@npm:3.23.0"
@@ -11335,9 +11312,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-google-tagmanager@npm:4.22.0":
-  version: 4.22.0
-  resolution: "gatsby-plugin-google-tagmanager@npm:4.22.0"
+"gatsby-plugin-google-tagmanager@npm:4.23.0":
+  version: 4.23.0
+  resolution: "gatsby-plugin-google-tagmanager@npm:4.23.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     web-vitals: ^1.1.2
@@ -11345,7 +11322,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 00bb04a725ca661cc55fc5934960d25dd99ba71b095f6b466b2f68eaa98254b1f85b2d832f40e2a0859a996b744519fba6a360837130f6c322a699b1661b97f2
+  checksum: bda72afcaefe666513decfb1613b6d7af847d7f86f149b6d5d86e9f41c61c4cbc9603894bbdb6262927ca66b05abea2cb90cdb950d4402527974f78803c0a04f
   languageName: node
   linkType: hard
 
@@ -16068,7 +16045,7 @@ __metadata:
     gatsby-legacy-polyfills: 2.22.0
     gatsby-plugin-canonical-urls: 4.23.0
     gatsby-plugin-feed: 4.23.0
-    gatsby-plugin-google-tagmanager: 4.22.0
+    gatsby-plugin-google-tagmanager: 4.23.0
     gatsby-plugin-image: 2.23.0
     gatsby-plugin-layout: 3.23.0
     gatsby-plugin-mdx: 4.2.0
