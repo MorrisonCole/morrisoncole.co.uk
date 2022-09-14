@@ -7,7 +7,7 @@ resource "aws_cloudfront_distribution" "morrisoncole_com" {
   provider = aws.us-west-2
 
   origin {
-    domain_name         = aws_s3_bucket.morrisoncole_com.website_endpoint
+    domain_name         = aws_s3_bucket_website_configuration.morrisoncole_com.website_endpoint
     origin_id           = local.morrisoncole_com_origin_id
     connection_attempts = 3
     connection_timeout  = 10
@@ -70,7 +70,7 @@ resource "aws_cloudfront_distribution" "www_morrisoncole_com" {
   provider = aws.us-west-2
 
   origin {
-    domain_name         = aws_s3_bucket.www_morrisoncole_com.website_endpoint
+    domain_name         = aws_s3_bucket_website_configuration.morrisoncole_com.website_endpoint
     origin_id           = local.www_morrisoncole_com_origin_id
     connection_attempts = 3
     connection_timeout  = 10
