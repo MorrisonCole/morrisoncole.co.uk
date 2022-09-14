@@ -11316,22 +11316,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:4.22.0":
-  version: 4.22.0
-  resolution: "gatsby-plugin-feed@npm:4.22.0"
+"gatsby-plugin-feed@npm:4.23.0":
+  version: 4.23.0
+  resolution: "gatsby-plugin-feed@npm:4.23.0"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.2
     fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^3.16.0
+    gatsby-plugin-utils: ^3.17.0
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 659384c15a32747752d6b0690fa660d7ff5ecccf9ed9969d8b0ba7e0d08909411bf4da8e4567abe622d66f92500a26909150dff3b6bb1d6aeb0cbc1e612384d9
+  checksum: 7fe008a48233a8f0d2f678be6690be0a0f5362507b5fe04fb300608cb6a3b3cfa0aeda16ac9586a90369798e780a7d14ee87004884188a58e42ef20578f54bc8
   languageName: node
   linkType: hard
 
@@ -11563,29 +11563,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-utils@npm:^3.16.0":
-  version: 3.16.0
-  resolution: "gatsby-plugin-utils@npm:3.16.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    "@gatsbyjs/potrace": ^2.3.0
-    fastq: ^1.13.0
-    fs-extra: ^10.1.0
-    gatsby-core-utils: ^3.22.0
-    gatsby-sharp: ^0.16.0
-    graphql-compose: ^9.0.7
-    import-from: ^4.0.0
-    joi: ^17.4.2
-    mime: ^3.0.0
-    mini-svg-data-uri: ^1.4.4
-    svgo: ^2.8.0
-  peerDependencies:
-    gatsby: ^4.0.0-next
-    graphql: ^15.0.0
-  checksum: ebba95158055003a0506a5264bb1b48e9c788da13a757c0d5775b54f9a3d9e362a654d1fe7f30a5b7ba5560a19248b17439f972e0da6b90b7615e8457cb54fd1
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-utils@npm:^3.17.0":
   version: 3.17.0
   resolution: "gatsby-plugin-utils@npm:3.17.0"
@@ -11697,16 +11674,6 @@ __metadata:
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
   checksum: dcdd572e8ff086cf26c64214ec42dfe2845e1814e06053207bc6d24367e8960b2569ff6c7eb3de460862bde23952e09428adac172dc9cfb2ab3c41c1423c09f3
-  languageName: node
-  linkType: hard
-
-"gatsby-sharp@npm:^0.16.0":
-  version: 0.16.0
-  resolution: "gatsby-sharp@npm:0.16.0"
-  dependencies:
-    "@types/sharp": ^0.30.5
-    sharp: ^0.30.7
-  checksum: 9333008ea3ce13c10529d4ce4448d18d1f98466d469d146c65a8e8aeff2404be7a34e88345b6e900b603501dd164c0cd2ef291727dbee60b13f4f9723a947433
   languageName: node
   linkType: hard
 
@@ -16100,7 +16067,7 @@ __metadata:
     gatsby-cli: 4.23.0
     gatsby-legacy-polyfills: 2.22.0
     gatsby-plugin-canonical-urls: 4.23.0
-    gatsby-plugin-feed: 4.22.0
+    gatsby-plugin-feed: 4.23.0
     gatsby-plugin-google-tagmanager: 4.22.0
     gatsby-plugin-image: 2.23.0
     gatsby-plugin-layout: 3.23.0
