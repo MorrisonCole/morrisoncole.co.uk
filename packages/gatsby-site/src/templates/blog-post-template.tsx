@@ -61,7 +61,7 @@ function BlogPostTemplate({
           </Typography>
           <Typography variant="subtitle2">{post.exports?.meta.date}</Typography>
           <Typography variant="subtitle2">
-            {readingTime(post.body).text}
+            {`${readingTime(post.body).minutes} min read`}
           </Typography>
         </header>
         <section>
