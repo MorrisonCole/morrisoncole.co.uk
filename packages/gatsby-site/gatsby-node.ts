@@ -12,16 +12,14 @@ export const createPages: GatsbyNode["createPages"] = async ({
     `
       query BlogPages {
         allMdx(
-          sort: { fields: [exports___meta___date], order: DESC }
-          filter: { exports: { meta: { draft: { eq: false } } } }
+          sort: { fields: [frontmatter___date], order: DESC }
+          filter: { frontmatter: { draft: { eq: false } } }
           limit: 1000
         ) {
           edges {
             node {
-              exports {
-                meta {
-                  title
-                }
+              frontmatter {
+                title
               }
               fields {
                 slug
@@ -98,15 +96,7 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
       _2020: [String!]!
     }
 
-    type Mdx implements Node {
-      exports: MdxExports
-    }
-
-    type MdxExports @derivedTypes {
-      meta: MdxExportsMeta
-    }
-    
-    type MdxExportsMeta @dontInfer {
+    type MdxFrontmatter @dontInfer {
       title: String!
       date: Date! @dateformat
       updated: Date @dateformat

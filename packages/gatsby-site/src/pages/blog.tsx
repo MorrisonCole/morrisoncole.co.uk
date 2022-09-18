@@ -40,13 +40,12 @@ export default function Blog({ data }: PageProps<Queries.BlogIndexQuery>): JSX.E
       })}
     >
       {posts.map(({ node }) => {
-        const title = node.exports?.meta?.title ?? node.fields?.slug;
-        const date = node.exports?.meta?.date ?? "";
-        const description =
-          node.exports?.meta?.description ?? node.excerpt ?? "";
+        const title = node.frontmatter?.title ?? node.fields?.slug;
+        const date = node.frontmatter?.date ?? "";
+        const description = node.frontmatter?.description ?? node.excerpt ?? "";
         const link = node.fields?.slug ?? "";
-        const linkText = node.exports?.meta?.linkText ?? "Continue to post...";
-        const image = node.exports?.meta?.image?.childImageSharp
+        const linkText = node.frontmatter?.linkText ?? "Continue to post...";
+        const image = node.frontmatter?.image?.childImageSharp
           ?.gatsbyImageData as IGatsbyImageData;
 
         return (
@@ -101,8 +100,8 @@ export default function Blog({ data }: PageProps<Queries.BlogIndexQuery>): JSX.E
 export const pageQuery = graphql`
   query BlogIndex {
     allMdx(
-      sort: { fields: [exports___meta___date], order: DESC }
-      filter: { exports: { meta: { draft: { eq: false } } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { draft: { eq: false } } }
     ) {
       edges {
         node {
@@ -110,18 +109,16 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          exports {
-            meta {
-              draft
-              title
-              date(formatString: "MMMM DD, YYYY")
-              description
-              category
-              linkText
-              image {
-                childImageSharp {
-                  gatsbyImageData(width: 800, layout: CONSTRAINED)
-                }
+          frontmatter {
+            draft
+            title
+            date(formatString: "MMMM DD, YYYY")
+            description
+            category
+            linkText
+            image {
+              childImageSharp {
+                gatsbyImageData(width: 800, layout: CONSTRAINED)
               }
             }
           }
