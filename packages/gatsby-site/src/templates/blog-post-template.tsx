@@ -9,18 +9,19 @@ import readingTime from "reading-time";
 import { getSrc } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
 
-export const Head = ({ data, location }: HeadProps<Queries.BlogPostBySlugQuery>) => {
+export const Head = ({
+  data,
+  location,
+}: HeadProps<Queries.BlogPostBySlugQuery>) => {
   const post = data.mdx;
 
   return (
     <SEO
       pathname={location.pathname}
-      title={post.exports?.meta.title}
-      description={post.exports?.meta.description ?? post.excerpt}
-      image={getSrc(
-        post?.exports?.meta?.image?.childImageSharp?.gatsbyImageData
-      )}
-      imageAlt={post?.exports?.meta?.imageAlt}
+      title={post.frontmatter.title}
+      description={post.frontmatter.description ?? post.excerpt}
+      image={getSrc(post?.frontmatter?.image?.childImageSharp?.gatsbyImageData)}
+      imageAlt={post?.frontmatter?.imageAlt}
       article
     />
   );
@@ -50,16 +51,16 @@ function BlogPostTemplate({
         }}
       >
         <SimpleBreadcrumbs
-          location={post?.exports?.meta?.category ?? "Unknown"}
+          location={post?.frontmatter?.category ?? "Unknown"}
         />
       </Box>
 
       <article>
         <header>
           <Typography variant="h1" gutterBottom>
-            {post.exports?.meta.title}
+            {post.frontmatter.title}
           </Typography>
-          <Typography variant="subtitle2">{post.exports?.meta.date}</Typography>
+          <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
           <Typography variant="subtitle2">
             {`${readingTime(post.body).minutes} min read`}
           </Typography>
@@ -99,7 +100,7 @@ function BlogPostTemplate({
                 to={previous.fields.slug ?? "/blog"}
                 rel="prev"
               >
-                ← {previous.exports?.meta.title}
+                ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
@@ -110,7 +111,7 @@ function BlogPostTemplate({
                 to={next.fields.slug ?? "/blog"}
                 rel="next"
               >
-                {next.exports?.meta.title} →
+                {next.frontmatter.title} →
               </Link>
             )}
           </li>
@@ -128,20 +129,18 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       body
-      exports {
-        meta {
-          title
-          date(formatString: "MMMM DD, YYYY")
-          updated(formatString: "MMMM DD, YYYY")
-          description
-          category
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 800, layout: CONSTRAINED)
-            }
+      frontmatter {
+        title
+        date(formatString: "MMMM DD, YYYY")
+        updated(formatString: "MMMM DD, YYYY")
+        description
+        category
+        image {
+          childImageSharp {
+            gatsbyImageData(width: 800, layout: CONSTRAINED)
           }
-          imageAlt
         }
+        imageAlt
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {

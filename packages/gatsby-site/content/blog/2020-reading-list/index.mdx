@@ -1,3 +1,15 @@
+---
+title: "2020 Reading List"
+date: "2020-03-22"
+updated: "2020-12-31"
+description: "Books I read in 2020, ranked."
+category: "Books"
+image: "books.jpg"
+imageAlt: "Stack of Books"
+linkText: "Quarantine reading 📚"
+draft: false
+---
+
 import {
   Avatar,
   List,
@@ -8,18 +20,6 @@ import {
   Rating,
 } from "@mui/material";
 import { Star } from "@mui/icons-material";
-
-export const meta = {
-  title: "2020 Reading List",
-  date: "2020-03-22",
-  updated: "2020-12-31",
-  description: "Books I read in 2020, ranked.",
-  category: "Books",
-  image: "books.jpg",
-  imageAlt: "Stack of Books",
-  linkText: "Quarantine reading 📚",
-  draft: false,
-};
 
 <List dense>
   {props.data.books2020.edges[0].node.reviews

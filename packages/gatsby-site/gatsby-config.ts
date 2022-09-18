@@ -54,11 +54,11 @@ const config: GatsbyConfig = {
           {
             serialize: ({ query }) => {
               return query.allMdx.edges.map((edge) => {
-                return Object.assign({}, edge.node.exports.meta, {
+                return Object.assign({}, edge.node.frontmatter, {
                   site_url: query.site.siteMetadata.siteUrl,
                   url: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  categories: [edge.node.exports.meta.category],
+                  categories: [edge.node.frontmatter.category],
                   custom_elements: [
                     {
                       "content:encoded": `<strong><a href="${
@@ -67,7 +67,7 @@ const config: GatsbyConfig = {
                     },
                   ],
                   enclosure: {
-                    url: `${rawUrl}${edge.node.exports.meta.image.childImageSharp.gatsbyImageData.images.fallback.src}`,
+                    url: `${rawUrl}${edge.node.frontmatter.image.childImageSharp.gatsbyImageData.images.fallback.src}`,
                     type: "image/jpeg",
                   },
                 });
@@ -76,26 +76,24 @@ const config: GatsbyConfig = {
             query: `
             {
               allMdx(
-                sort: { fields: [exports___meta___date], order: DESC }
-                filter: { exports: { meta: { draft: { eq: false } } } }
+                sort: { fields: [frontmatter___date], order: DESC }
+                filter: { frontmatter: { draft: { eq: false } } }
               ) {
                 edges {
                   node {
                     fields {
                       slug
                     }
-                    exports {
-                      meta {
-                        draft
-                        title
-                        date(formatString: "MMMM DD, YYYY")
-                        category
-                        description
-                        linkText
-                        image {
-                          childImageSharp {
-                            gatsbyImageData(width: 800, layout: CONSTRAINED)
-                          }
+                    frontmatter {
+                      draft
+                      title
+                      date(formatString: "MMMM DD, YYYY")
+                      category
+                      description
+                      linkText
+                      image {
+                        childImageSharp {
+                          gatsbyImageData(width: 800, layout: CONSTRAINED)
                         }
                       }
                     }
