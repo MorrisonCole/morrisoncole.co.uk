@@ -10,7 +10,7 @@
     "@types/node": "18.7.18",
     "@types/prettier": "2.7.1",
     "@typescript-eslint/eslint-plugin": "5.37.0",
-    "@typescript-eslint/parser": "5.37.0",
+    "@typescript-eslint/parser": "5.38.0",
     "axios": "0.27.2",
     "css": "3.0.0",
     "eslint": "8.23.1",
