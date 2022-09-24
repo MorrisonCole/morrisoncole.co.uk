@@ -11016,22 +11016,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-feed@npm:4.23.0":
-  version: 4.23.0
-  resolution: "gatsby-plugin-feed@npm:4.23.0"
+"gatsby-plugin-feed@npm:4.23.1":
+  version: 4.23.1
+  resolution: "gatsby-plugin-feed@npm:4.23.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@hapi/joi": ^15.1.1
     common-tags: ^1.8.2
     fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^3.17.0
+    gatsby-plugin-utils: ^3.17.1
     lodash.merge: ^4.6.2
     rss: ^1.2.2
   peerDependencies:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0
-  checksum: 7fe008a48233a8f0d2f678be6690be0a0f5362507b5fe04fb300608cb6a3b3cfa0aeda16ac9586a90369798e780a7d14ee87004884188a58e42ef20578f54bc8
+  checksum: e761fb91cf63a3f4778368d68f0e14110b7fcccd1d8f136b28813ba1ab85198c44fc7660ac5345eca14b42ee94c4b51bd02d8768e00767e496b82fa01d133202
   languageName: node
   linkType: hard
 
@@ -11291,6 +11291,29 @@ __metadata:
     gatsby: ^4.0.0-next
     graphql: ^15.0.0
   checksum: 9482031e0fea1e9ec2a9dcffbd87f6e5e499dc4f79391e6661c6d70ce354cf303a4f41b737dc0829196f39ed3d59dc0b47ef8ea19e013455308c90704440c475
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-utils@npm:^3.17.1":
+  version: 3.17.1
+  resolution: "gatsby-plugin-utils@npm:3.17.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    "@gatsbyjs/potrace": ^2.3.0
+    fastq: ^1.13.0
+    fs-extra: ^10.1.0
+    gatsby-core-utils: ^3.23.0
+    gatsby-sharp: ^0.17.0
+    graphql-compose: ^9.0.7
+    import-from: ^4.0.0
+    joi: ^17.4.2
+    mime: ^3.0.0
+    mini-svg-data-uri: ^1.4.4
+    svgo: ^2.8.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+    graphql: ^15.0.0
+  checksum: 73c4b1ec270dd9a35d530bbac02a67e6ec78c74a83564e304716401cdaa00ce08b36198f6a22e87126b78fd0d5f0a1508b36294c1c57c99d53a59d8a77a17384
   languageName: node
   linkType: hard
 
@@ -15771,7 +15794,7 @@ __metadata:
     gatsby-cli: 4.23.0
     gatsby-legacy-polyfills: 2.23.0
     gatsby-plugin-canonical-urls: 4.23.0
-    gatsby-plugin-feed: 4.23.0
+    gatsby-plugin-feed: 4.23.1
     gatsby-plugin-google-tagmanager: 4.23.0
     gatsby-plugin-image: 2.23.0
     gatsby-plugin-layout: 3.23.0
