@@ -24,7 +24,7 @@
     "gatsby-cli": "4.23.0",
     "gatsby-legacy-polyfills": "2.23.0",
     "gatsby-plugin-canonical-urls": "4.23.0",
-    "gatsby-plugin-feed": "4.23.0",
+    "gatsby-plugin-feed": "4.23.1",
     "gatsby-plugin-google-tagmanager": "4.23.0",
     "gatsby-plugin-image": "2.23.0",
     "gatsby-plugin-layout": "3.23.0",
