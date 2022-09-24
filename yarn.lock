@@ -11294,6 +11294,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-utils@npm:^3.17.1":
+  version: 3.17.1
+  resolution: "gatsby-plugin-utils@npm:3.17.1"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    "@gatsbyjs/potrace": ^2.3.0
+    fastq: ^1.13.0
+    fs-extra: ^10.1.0
+    gatsby-core-utils: ^3.23.0
+    gatsby-sharp: ^0.17.0
+    graphql-compose: ^9.0.7
+    import-from: ^4.0.0
+    joi: ^17.4.2
+    mime: ^3.0.0
+    mini-svg-data-uri: ^1.4.4
+    svgo: ^2.8.0
+  peerDependencies:
+    gatsby: ^4.0.0-next
+    graphql: ^15.0.0
+  checksum: 73c4b1ec270dd9a35d530bbac02a67e6ec78c74a83564e304716401cdaa00ce08b36198f6a22e87126b78fd0d5f0a1508b36294c1c57c99d53a59d8a77a17384
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-web-font-loader@npm:1.0.4":
   version: 1.0.4
   resolution: "gatsby-plugin-web-font-loader@npm:1.0.4"
@@ -11430,23 +11453,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:4.23.0":
-  version: 4.23.0
-  resolution: "gatsby-transformer-sharp@npm:4.23.0"
+"gatsby-transformer-sharp@npm:4.23.1":
+  version: 4.23.1
+  resolution: "gatsby-transformer-sharp@npm:4.23.1"
   dependencies:
     "@babel/runtime": ^7.15.4
     "@gatsbyjs/potrace": ^2.3.0
     bluebird: ^3.7.2
     common-tags: ^1.8.2
     fs-extra: ^10.1.0
-    gatsby-plugin-utils: ^3.17.0
+    gatsby-plugin-utils: ^3.17.1
     probe-image-size: ^7.2.3
     semver: ^7.3.7
     sharp: ^0.30.7
   peerDependencies:
     gatsby: ^4.0.0-next
     gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 895f650d3714b1de0b29aa22adefcff8b485c9a4d4b2ade10fa6549a233ce376706674edd588e311927450bfa75d8541fb0ce42773785905f633090113041b87
+  checksum: 0c251fa6f531d962403cc184303bf66f6cbc8454f6ee614ac865992fba08751cb3f4a5e0e247b060e2ac61012b7b288e7519b81da7d3b768cca93503f8321cd9
   languageName: node
   linkType: hard
 
@@ -15786,7 +15809,7 @@ __metadata:
     gatsby-remark-images: 6.23.0
     gatsby-source-filesystem: 4.23.0
     gatsby-transformer-json: 4.23.0
-    gatsby-transformer-sharp: 4.23.0
+    gatsby-transformer-sharp: 4.23.1
     lodash: 4.17.21
     mdx-utils: 0.2.0
     mitt: 3.0.0
