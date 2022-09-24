@@ -1797,7 +1797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.19.0, @babel/runtime@npm:^7.18.9":
+"@babel/runtime@npm:7.19.0, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.19.0":
   version: 7.19.0
   resolution: "@babel/runtime@npm:7.19.0"
   dependencies:
@@ -3087,11 +3087,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:5.10.3":
-  version: 5.10.3
-  resolution: "@mui/icons-material@npm:5.10.3"
+"@mui/icons-material@npm:5.10.6":
+  version: 5.10.6
+  resolution: "@mui/icons-material@npm:5.10.6"
   dependencies:
-    "@babel/runtime": ^7.18.9
+    "@babel/runtime": ^7.19.0
   peerDependencies:
     "@mui/material": ^5.0.0
     "@types/react": ^17.0.0 || ^18.0.0
@@ -3099,7 +3099,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 9c32f3e9fc2be61b6518418818ead346469fb4650852307291fe23e16909fc1c2f4bc3b09a524fb0e90920aa1a26a6a41e91815e0da1d15d7e26ccad4f6915fa
+  checksum: c8577b5252d08c3b067c4119aae0b774ab6fb782d56d6e394ed26e1cfbaeca8634ac9ab455b9709415106d906d134f0fee23e2254b120de4ef246ca959b22de8
   languageName: node
   linkType: hard
 
@@ -15758,7 +15758,7 @@ __metadata:
     "@mdx-js/mdx": 1.6.22
     "@mdx-js/react": 1.6.22
     "@morrisoncole/gatsby-source-goodreads": 0.1.2
-    "@mui/icons-material": 5.10.3
+    "@mui/icons-material": 5.10.6
     "@mui/lab": 5.0.0-alpha.99
     "@mui/material": 5.10.5
     "@types/mdx-js__react": 1.5.5
