@@ -1,5 +1,17 @@
 {
   "enabled": true,
   "labels": ["automerge"],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "extends": "monorepo:gatsby",
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
+      "groupName": "gatsby monorepo"
+    },
+    {
+      "extends": "monorepo:material-ui",
+      "matchUpdateTypes": ["digest", "patch", "minor", "major"],
+      "groupName": "material-ui monorepo"
+    }
+  ]
 }
