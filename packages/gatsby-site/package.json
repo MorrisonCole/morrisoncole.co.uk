@@ -20,7 +20,7 @@
     "anser": "2.1.1",
     "css.escape": "1.5.1",
     "event-source-polyfill": "1.0.31",
-    "gatsby": "4.24.3",
+    "gatsby": "4.24.4",
     "gatsby-cli": "4.24.0",
     "gatsby-legacy-polyfills": "2.24.0",
     "gatsby-plugin-canonical-urls": "4.24.0",
