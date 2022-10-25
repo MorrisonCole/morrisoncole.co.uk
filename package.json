@@ -22,7 +22,7 @@
     "vercel": "28.4.12"
   },
   "resolutions": {
-    "@types/react": "18.0.22"
+    "@types/react": "18.0.23"
   },
   "scripts": {
     "start:gatsby": "yarn workspace morrisoncole.co.uk start",
