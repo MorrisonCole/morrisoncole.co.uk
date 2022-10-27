@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.19.4",
-    "@emotion/react": "11.10.4",
+    "@emotion/react": "11.10.5",
     "@emotion/server": "11.10.0",
     "@emotion/styled": "11.10.5",
     "@mdx-js/mdx": "1.6.22",
