@@ -4367,10 +4367,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.11.8":
-  version: 18.11.8
-  resolution: "@types/node@npm:18.11.8"
-  checksum: 60b358f97c1a029722dc785811b217615ef20249c3fbde60a65869cfd7a5cd5b1872ee95c79c187ef70e5a078f4ac7670d2129803985268b1f021ad6e8040af8
+"@types/node@npm:18.11.9":
+  version: 18.11.9
+  resolution: "@types/node@npm:18.11.9"
+  checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
   languageName: node
   linkType: hard
 
@@ -15677,7 +15677,7 @@ __metadata:
   dependencies:
     "@types/css": 0.0.33
     "@types/eslint": 8.4.9
-    "@types/node": 18.11.8
+    "@types/node": 18.11.9
     "@types/prettier": 2.7.1
     "@typescript-eslint/eslint-plugin": 5.42.0
     "@typescript-eslint/parser": 5.42.0
@@ -15708,7 +15708,7 @@ __metadata:
     "@mui/lab": 5.0.0-alpha.106
     "@mui/material": 5.10.12
     "@types/mdx-js__react": 1.5.5
-    "@types/node": 18.11.8
+    "@types/node": 18.11.9
     "@types/react": 18.0.24
     anser: 2.1.1
     css.escape: 1.5.1
@@ -16062,7 +16062,7 @@ __metadata:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.9.0
-    "@types/node": 18.11.8
+    "@types/node": 18.11.9
     "@types/react": 18.0.24
     "@types/styled-components": 5.1.26
     "@typescript-eslint/eslint-plugin": 5.42.0
