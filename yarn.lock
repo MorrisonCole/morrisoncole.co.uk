@@ -4457,14 +4457,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.0.24":
-  version: 18.0.24
-  resolution: "@types/react@npm:18.0.24"
+"@types/react@npm:18.0.25":
+  version: 18.0.25
+  resolution: "@types/react@npm:18.0.25"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 7d06125bac61e1c6661e5dfbeeeb56d5b6d1d4c743292faebaa6b0f30f8414c7af3cadf674923fd86e4ca14e82566ff9156cd40c56786be024600c31b97d6c03
+  checksum: 231d658c45abdef044a716b4502774f1585d8336d73b2f5bd68f181acbfc874b7a457686ecd29b415b43ed0922c309bab7e2cf96832d188a3f4f1b02f2af760a
   languageName: node
   linkType: hard
 
@@ -15710,7 +15710,7 @@ __metadata:
     "@mui/material": 5.10.12
     "@types/mdx-js__react": 1.5.5
     "@types/node": 18.11.9
-    "@types/react": 18.0.24
+    "@types/react": 18.0.25
     anser: 2.1.1
     css.escape: 1.5.1
     event-source-polyfill: 1.0.31
@@ -16064,7 +16064,7 @@ __metadata:
   dependencies:
     "@lhci/cli": 0.9.0
     "@types/node": 18.11.9
-    "@types/react": 18.0.24
+    "@types/react": 18.0.25
     "@types/styled-components": 5.1.26
     "@typescript-eslint/eslint-plugin": 5.42.0
     "@typescript-eslint/parser": 5.42.0
