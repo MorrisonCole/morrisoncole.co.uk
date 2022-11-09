@@ -11405,9 +11405,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:4.24.7":
-  version: 4.24.7
-  resolution: "gatsby@npm:4.24.7"
+"gatsby@npm:4.24.8":
+  version: 4.24.8
+  resolution: "gatsby@npm:4.24.8"
   dependencies:
     "@babel/code-frame": ^7.14.0
     "@babel/core": ^7.15.5
@@ -11583,7 +11583,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 0c0b446205f7bee6f7db2b7d5ac76e72d499aa9f3509fa1adf4be5e556de07403d5760de19ce5944732887cb4cafd114faba8e61e3cf220b180d951a0cd1e1c3
+  checksum: 1a44726d97077f86103e7503e3dba803ca645ffd9a5e15f331368b892ec97943447c786064cfb6972159b53ea00406b732db3a5031a02c2cc55b55b3c788cf1f
   languageName: node
   linkType: hard
 
@@ -15721,7 +15721,7 @@ __metadata:
     anser: 2.1.1
     css.escape: 1.5.1
     event-source-polyfill: 1.0.31
-    gatsby: 4.24.7
+    gatsby: 4.24.8
     gatsby-cli: 4.24.0
     gatsby-legacy-polyfills: 2.24.0
     gatsby-plugin-canonical-urls: 4.24.0
