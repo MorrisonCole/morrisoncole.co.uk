@@ -37,5 +37,5 @@
     "prettier:fix": "yarn prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write",
     "get-fonts": "ts-node -T scripts/get-fonts.ts"
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.3.0"
 }
