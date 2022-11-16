@@ -2,26 +2,25 @@ import { Typography, Divider, Link, Box } from "@mui/material";
 import { graphql, HeadProps, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
-import MDXLayout from "../components/blog/mdx-layout";
+import { MDXProvider } from "@mdx-js/react";
 import readingTime from "reading-time";
 import { getSrc } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
 
 export const Head = ({
-  data,
+  data: { mdx },
   location,
-}: HeadProps<Queries.BlogPostBySlugQuery>) => {
-  const post = data.mdx;
+}: HeadProps<Queries.BlogPostByIdQuery>) => {
+  console.error(JSON.stringify(mdx));
 
   return (
     <SEO
       pathname={location.pathname}
-      title={post.frontmatter.title}
-      description={post.frontmatter.description ?? post.excerpt}
-      image={getSrc(post?.frontmatter?.image?.childImageSharp?.gatsbyImageData)}
-      imageAlt={post?.frontmatter?.imageAlt}
+      title={mdx.frontmatter?.title}
+      description={mdx.frontmatter?.description ?? mdx?.excerpt}
+      image={getSrc(mdx.frontmatter?.image?.childImageSharp?.gatsbyImageData)}
+      imageAlt={mdx?.frontmatter?.imageAlt}
       article
     />
   );
@@ -32,12 +31,13 @@ interface BlogPageContext {
   next: any;
 }
 
-function BlogPostTemplate({
-  data,
+export default function BlogPostTemplate({
+  data: { mdx },
   pageContext,
-}: PageProps<Queries.BlogPostBySlugQuery, BlogPageContext>): JSX.Element {
-  const post = data.mdx;
+  children,
+}: PageProps<Queries.BlogPostByIdQuery, BlogPageContext>): JSX.Element {
   const { previous, next } = pageContext;
+  console.error(JSON.stringify(mdx));
 
   return (
     <Box
@@ -50,19 +50,17 @@ function BlogPostTemplate({
           paddingBottom: ({ spacing }) => spacing(2),
         }}
       >
-        <SimpleBreadcrumbs
-          location={post?.frontmatter?.category ?? "Unknown"}
-        />
+        <SimpleBreadcrumbs location={mdx?.frontmatter?.category ?? "Unknown"} />
       </Box>
 
       <article>
         <header>
           <Typography variant="h1" gutterBottom>
-            {post.frontmatter.title}
+            {mdx.frontmatter.title}
           </Typography>
-          <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
+          <Typography variant="subtitle2">{mdx.frontmatter.date}</Typography>
           <Typography variant="subtitle2">
-            {`${readingTime(post.body).minutes} min read`}
+            {`${readingTime(mdx.body).minutes} min read`}
           </Typography>
         </header>
         <section>
@@ -75,9 +73,7 @@ function BlogPostTemplate({
               },
             }}
           >
-            <MDXLayout>
-              <MDXRenderer data={data}>{post.body}</MDXRenderer>
-            </MDXLayout>
+            <MDXProvider>{children}</MDXProvider>
           </Box>
         </section>
         <Divider />
@@ -97,7 +93,7 @@ function BlogPostTemplate({
             {previous && (
               <Link
                 component={GatsbyLink}
-                to={previous.fields.slug ?? "/blog"}
+                to={previous.frontmatter.slug ?? "/blog"}
                 rel="prev"
               >
                 ← {previous.frontmatter.title}
@@ -108,7 +104,7 @@ function BlogPostTemplate({
             {next && (
               <Link
                 component={GatsbyLink}
-                to={next.fields.slug ?? "/blog"}
+                to={next.frontmatter.slug ?? "/blog"}
                 rel="next"
               >
                 {next.frontmatter.title} →
@@ -121,14 +117,11 @@ function BlogPostTemplate({
   );
 }
 
-export default BlogPostTemplate;
-
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
+  query BlogPostById($id: String!) {
+    mdx(id: { eq: $id }) {
       body
+      excerpt(pruneLength: 160)
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

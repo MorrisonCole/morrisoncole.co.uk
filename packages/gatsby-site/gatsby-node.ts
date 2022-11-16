@@ -6,24 +6,24 @@ const { createFilePath } = require("gatsby-source-filesystem");
 export const createPages: GatsbyNode["createPages"] = async ({
   graphql,
   actions,
+  reporter
 }) => {
   const blogPostTemplate = path.resolve("src/templates/blog-post-template.tsx");
-  const result = await graphql(
+  const result = await graphql<Queries.BlogPagesQuery>(
     `
       query BlogPages {
         allMdx(
           sort: { frontmatter: { date: DESC } }
           filter: { frontmatter: { draft: { eq: false } } }
-          limit: 1000
         ) {
-          edges {
-            node {
-              frontmatter {
-                title
-              }
-              fields {
-                slug
-              }
+          nodes {
+            id
+            frontmatter {
+              title
+              slug
+            }
+            internal {
+              contentFilePath
             }
           }
         }
@@ -32,40 +32,25 @@ export const createPages: GatsbyNode["createPages"] = async ({
   );
 
   if (result.errors) {
-    throw result.errors;
+    reporter.panicOnBuild("Error loading MDX result", result.errors);
   }
 
-  const posts = result.data.allMdx.edges;
+  const nodes = result.data?.allMdx.nodes;
 
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
+  nodes?.forEach((node, index) => {
+    const previous = index === nodes.length - 1 ? null : nodes[index + 1].node;
+    const next = index === 0 ? null : nodes[index - 1].node;
 
     actions.createPage({
-      path: post.node.fields.slug,
-      component: blogPostTemplate,
+      path: `blog/${node.frontmatter.slug}`,
+      component: `${blogPostTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       context: {
-        slug: post.node.fields.slug,
+        id: node.id,
         previous,
         next,
       },
     });
   });
-};
-
-export const onCreateNode: GatsbyNode["onCreateNode"] = ({
-  node,
-  actions,
-  getNode,
-}) => {
-  if (node.internal.type === "Mdx") {
-    const value = createFilePath({ node, getNode });
-    actions.createNodeField({
-      name: "slug",
-      node,
-      value: `${value}`,
-    });
-  }
 };
 
 export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] =
@@ -106,6 +91,7 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
       imageAlt: String!
       linkText: String
       draft: Boolean!
+      slug: String!
     }
   `);
 

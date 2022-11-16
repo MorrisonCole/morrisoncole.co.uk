@@ -40,10 +40,10 @@ export default function Blog({ data }: PageProps<Queries.BlogIndexQuery>): JSX.E
       })}
     >
       {posts.map(({ node }) => {
-        const title = node.frontmatter?.title ?? node.fields?.slug;
+        const title = node.frontmatter?.title ?? node.frontmatter?.slug;
         const date = node.frontmatter?.date ?? "";
         const description = node.frontmatter?.description ?? node.excerpt ?? "";
-        const link = node.fields?.slug ?? "";
+        const link = node.frontmatter?.slug ?? "";
         const linkText = node.frontmatter?.linkText ?? "Continue to post...";
         const image = node.frontmatter?.image?.childImageSharp
           ?.gatsbyImageData as IGatsbyImageData;
@@ -106,10 +106,8 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
-          fields {
-            slug
-          }
           frontmatter {
+            slug
             draft
             title
             date(formatString: "MMMM DD, YYYY")

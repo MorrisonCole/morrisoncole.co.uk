@@ -1,8 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 import path from "path";
 
-const unwrapImages = require("remark-unwrap-images");
-
 const rawUrl = "https://morrisoncole.co.uk";
 const siteAddress = new URL(rawUrl);
 
@@ -56,13 +54,18 @@ const config: GatsbyConfig = {
               return query.allMdx.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   site_url: query.site.siteMetadata.siteUrl,
-                  url: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: query.site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url:
+                    query.site.siteMetadata.siteUrl +
+                    edge.node.frontmatter.slug,
+                  guid:
+                    query.site.siteMetadata.siteUrl +
+                    edge.node.frontmatter.slug,
                   categories: [edge.node.frontmatter.category],
                   custom_elements: [
                     {
                       "content:encoded": `<strong><a href="${
-                        query.site.siteMetadata.siteUrl + edge.node.fields.slug
+                        query.site.siteMetadata.siteUrl +
+                        edge.node.frontmatter.slug
                       }">Read directly on morrisoncole.co.uk</a>...</strong>`,
                     },
                   ],
@@ -76,15 +79,13 @@ const config: GatsbyConfig = {
             query: `
             {
               allMdx(
-                sort: { fields: [frontmatter___date], order: DESC }
+                sort: { frontmatter: { date: DESC } }
                 filter: { frontmatter: { draft: { eq: false } } }
               ) {
                 edges {
                   node {
-                    fields {
-                      slug
-                    }
                     frontmatter {
+                      slug
                       draft
                       title
                       date(formatString: "MMMM DD, YYYY")
@@ -162,10 +163,6 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        remarkPlugins: [
-          // Prevents images in MDX being wrapped in a paragraph tag, which makes things difficult to style.
-          unwrapImages,
-        ],
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-autolink-headers",
@@ -198,6 +195,9 @@ const config: GatsbyConfig = {
               withWebp: true,
               srcSetBreakpoints: [600, 900, 1200],
             },
+          },
+          {
+            resolve: `gatsby-remark-unwrap-images`,
           },
         ],
       },
