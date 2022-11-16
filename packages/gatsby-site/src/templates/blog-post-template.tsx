@@ -3,17 +3,14 @@ import { graphql, HeadProps, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
-import { MDXProvider } from "@mdx-js/react";
-import readingTime from "reading-time";
 import { getSrc } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
+import MDXLayout from "../components/blog/mdx-layout";
 
 export const Head = ({
   data: { mdx },
   location,
 }: HeadProps<Queries.BlogPostByIdQuery>) => {
-  console.error(JSON.stringify(mdx));
-
   return (
     <SEO
       pathname={location.pathname}
@@ -37,7 +34,6 @@ export default function BlogPostTemplate({
   children,
 }: PageProps<Queries.BlogPostByIdQuery, BlogPageContext>): JSX.Element {
   const { previous, next } = pageContext;
-  console.error(JSON.stringify(mdx));
 
   return (
     <Box
@@ -60,7 +56,7 @@ export default function BlogPostTemplate({
           </Typography>
           <Typography variant="subtitle2">{mdx.frontmatter.date}</Typography>
           <Typography variant="subtitle2">
-            {`${readingTime(mdx.body).minutes} min read`}
+            {`${mdx.timeToRead} min read`}
           </Typography>
         </header>
         <section>
@@ -73,7 +69,7 @@ export default function BlogPostTemplate({
               },
             }}
           >
-            <MDXProvider>{children}</MDXProvider>
+            <MDXLayout>{children}</MDXLayout>
           </Box>
         </section>
         <Divider />
@@ -120,7 +116,7 @@ export default function BlogPostTemplate({
 export const pageQuery = graphql`
   query BlogPostById($id: String!) {
     mdx(id: { eq: $id }) {
-      body
+      timeToRead
       excerpt(pruneLength: 160)
       frontmatter {
         title

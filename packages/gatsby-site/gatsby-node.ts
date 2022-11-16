@@ -1,7 +1,17 @@
 import type { GatsbyNode } from "gatsby";
+import path from "path";
+import readingTime from "reading-time";
 
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+export const onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `Mdx`) {
+    createNodeField({
+      node,
+      name: `timeToRead`,
+      value: readingTime(node.body),
+    });
+  }
+};
 
 export const createPages: GatsbyNode["createPages"] = async ({
   graphql,
@@ -18,6 +28,7 @@ export const createPages: GatsbyNode["createPages"] = async ({
         ) {
           nodes {
             id
+            body
             frontmatter {
               title
               slug
@@ -58,41 +69,45 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
     const { createTypes, printTypeDefinitions } = actions;
 
     createTypes(`
-    type Site implements Node {
-      siteMetadata: SiteSiteMetadata!
-    }
-    
-    type SiteSiteMetadata {
-      title: String!
-      description: String!
-      author: String!
-      siteUrl: String!
-      image: String!
-      imageAlt: String!
-      social: SiteSiteMetadataSocial!
-    }
+      type Site implements Node {
+        siteMetadata: SiteSiteMetadata!
+      }
+      
+      type SiteSiteMetadata {
+        title: String!
+        description: String!
+        author: String!
+        siteUrl: String!
+        image: String!
+        imageAlt: String!
+        social: SiteSiteMetadataSocial!
+      }
 
-    type SiteSiteMetadataSocial {
-      twitter: String!
-    }
+      type SiteSiteMetadataSocial {
+        twitter: String!
+      }
 
-    type SoftwareJson implements Node {
-      _2019: [String!]!
-      _2020: [String!]!
-    }
+      type SoftwareJson implements Node {
+        _2019: [String!]!
+        _2020: [String!]!
+      }
 
-    type MdxFrontmatter @dontInfer {
-      title: String!
-      date: Date! @dateformat
-      updated: Date @dateformat
-      description: String!
-      category: String
-      image: File! @fileByRelativePath
-      imageAlt: String!
-      linkText: String
-      draft: Boolean!
-      slug: String!
-    }
+      type MdxFrontmatter @dontInfer {
+        title: String!
+        date: Date! @dateformat
+        updated: Date @dateformat
+        description: String!
+        category: String
+        image: File! @fileByRelativePath
+        imageAlt: String!
+        linkText: String
+        draft: Boolean!
+        slug: String!
+      }
+
+      type Mdx implements Node {
+        timeToRead: Float @proxy(from: "fields.timeToRead.minutes")
+      }
   `);
 
     // printTypeDefinitions({ path: "./typeDefs.txt" });

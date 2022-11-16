@@ -163,6 +163,9 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
+        mdxOptions: {
+          remarkPlugins: [require("remark-unwrap-images")],
+        },
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-autolink-headers",
@@ -195,9 +198,6 @@ const config: GatsbyConfig = {
               withWebp: true,
               srcSetBreakpoints: [600, 900, 1200],
             },
-          },
-          {
-            resolve: `gatsby-remark-unwrap-images`,
           },
         ],
       },

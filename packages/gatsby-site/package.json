@@ -36,7 +36,6 @@
     "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-remark-autolink-headers": "6.0.0",
     "gatsby-remark-images": "7.0.0",
-    "gatsby-remark-unwrap-images": "1.0.2",
     "gatsby-source-filesystem": "5.0.0",
     "gatsby-transformer-json": "5.0.0",
     "gatsby-transformer-sharp": "5.0.0",
@@ -50,6 +49,7 @@
     "react-intersection-observer": "9.4.1",
     "react-live": "3.1.1",
     "reading-time": "2.0.0-1",
+    "remark-unwrap-images": "2.1.0",
     "shallow-compare": "1.2.2"
   },
   "devDependencies": {

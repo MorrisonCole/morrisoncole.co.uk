@@ -10805,18 +10805,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-remark-unwrap-images@npm:1.0.2":
-  version: 1.0.2
-  resolution: "gatsby-remark-unwrap-images@npm:1.0.2"
-  dependencies:
-    unist-util-remove: ^1.0.1
-    unist-util-visit: ^1.4.0
-  peerDependencies:
-    gatsby: ">2.0.0-alpha"
-  checksum: 61f2ae3a809f2780c495bd526b82fdff9a75cf1fc2b2a40d65d4ee349ffc3963da2f4404f7dcb9a7fd4c3f093bb3b5b256ddc96d1c6c696b749e354cbd61b57c
-  languageName: node
-  linkType: hard
-
 "gatsby-script@npm:^2.0.0":
   version: 2.0.0
   resolution: "gatsby-script@npm:2.0.0"
@@ -11831,6 +11819,13 @@ __metadata:
     "@types/hast": ^2.0.0
     micromark-util-character: ^1.0.0
   checksum: b2f35072dc103daa85b652f497a8492cc20fcc829d91b4154cc062d969f9b406d29e865105c33038e727c8409deaa4b3c7aab18a4206cf19257cb0e65c5a6832
+  languageName: node
+  linkType: hard
+
+"hast-util-whitespace@npm:^1.0.0":
+  version: 1.0.4
+  resolution: "hast-util-whitespace@npm:1.0.4"
+  checksum: b7f4a1942bc78239a6fe4741aca34e3e7f84487e15e2cd2b6ca07bbba3055571763d877d7c077d7a2a029ede7500bc50a62af7b6dfe88e0644b16228b91dee0d
   languageName: node
   linkType: hard
 
@@ -14986,7 +14981,6 @@ __metadata:
     gatsby-plugin-web-font-loader: 1.0.4
     gatsby-remark-autolink-headers: 6.0.0
     gatsby-remark-images: 7.0.0
-    gatsby-remark-unwrap-images: 1.0.2
     gatsby-source-filesystem: 5.0.0
     gatsby-transformer-json: 5.0.0
     gatsby-transformer-sharp: 5.0.0
@@ -15000,6 +14994,7 @@ __metadata:
     react-intersection-observer: 9.4.1
     react-live: 3.1.1
     reading-time: 2.0.0-1
+    remark-unwrap-images: 2.1.0
     shallow-compare: 1.2.2
     socket.io-client: 4.5.3
   peerDependencies:
@@ -17958,6 +17953,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"remark-unwrap-images@npm:2.1.0":
+  version: 2.1.0
+  resolution: "remark-unwrap-images@npm:2.1.0"
+  dependencies:
+    hast-util-whitespace: ^1.0.0
+    unist-util-visit: ^2.0.0
+  checksum: 7c662c536f076f4cfe3c871875f15d321a5a460e1ddbe171321835d49f4c37584e476d079564d3e6f0a63f07724758c8ec4945856438e9032579ae0e471d59d7
+  languageName: node
+  linkType: hard
+
 "remark-unwrap-images@npm:^3.0.1":
   version: 3.0.1
   resolution: "remark-unwrap-images@npm:3.0.1"
@@ -20463,13 +20468,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-util-is@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "unist-util-is@npm:3.0.0"
-  checksum: d24a5dd80c670f763b2ae608651cf062317456aa81be51f66f45cbd7d440a2ab18356e4f48aeac6b5e3d391c69d3c3452ade5fe5aa9574bec4a2de0b10122ed5
-  languageName: node
-  linkType: hard
-
 "unist-util-is@npm:^4.0.0":
   version: 4.1.0
   resolution: "unist-util-is@npm:4.1.0"
@@ -20517,15 +20515,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unist-util-remove@npm:^1.0.1":
-  version: 1.0.3
-  resolution: "unist-util-remove@npm:1.0.3"
-  dependencies:
-    unist-util-is: ^3.0.0
-  checksum: 16ba4e1190a0faa7fd21760a21b54d0b26dd48c136f657815b9e745b7abff8a2ca2477c1ff42b1c6779529954670eda67673d538ae2ee0bb06f272397c05b169
-  languageName: node
-  linkType: hard
-
 "unist-util-select@npm:^3.0.4":
   version: 3.0.4
   resolution: "unist-util-select@npm:3.0.4"
@@ -20545,15 +20534,6 @@ __metadata:
   dependencies:
     "@types/unist": ^2.0.0
   checksum: 460d5e16065942da7acd2578e92f4b8421c5af1f3f15ebc858db90865be69a5454dd6638d73f855cc82b1fa9e6e941a258f97b3f5f3be4f2766b0e6f6c45a031
-  languageName: node
-  linkType: hard
-
-"unist-util-visit-parents@npm:^2.0.0":
-  version: 2.1.2
-  resolution: "unist-util-visit-parents@npm:2.1.2"
-  dependencies:
-    unist-util-is: ^3.0.0
-  checksum: 048edbb590a8c4bc0043eec9f50d3fe76faa58f1ac663a7e6dee5e895ddd0ce8bc52f2cfe2e633849fa93671e8de021070667acb1518e3d40220768c7f70a3d3
   languageName: node
   linkType: hard
 
@@ -20594,15 +20574,6 @@ __metadata:
     "@types/unist": ^2.0.0
     unist-util-is: ^5.0.0
   checksum: c699d18f5b26461dee37612b84c243fd5457c98f4c0540d9ba8bee05062aece5f3b4fb1af6b07423ce6750d8926e8c01fc2b1a4de1e54925ef6795c177ed8e18
-  languageName: node
-  linkType: hard
-
-"unist-util-visit@npm:^1.4.0":
-  version: 1.4.1
-  resolution: "unist-util-visit@npm:1.4.1"
-  dependencies:
-    unist-util-visit-parents: ^2.0.0
-  checksum: e9395205b6908c8d0fe71bc44e65d89d4781d1bb2d453a33cb67ed4124bad0b89d6b1d526ebaecb82a7c48e211bdf6f24351449b8cc115327b345f4617c18728
   languageName: node
   linkType: hard
 
