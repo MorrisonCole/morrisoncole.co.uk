@@ -100,7 +100,7 @@ export default function Blog({ data }: PageProps<Queries.BlogIndexQuery>): JSX.E
 export const pageQuery = graphql`
   query BlogIndex {
     allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { draft: { eq: false } } }
     ) {
       edges {
