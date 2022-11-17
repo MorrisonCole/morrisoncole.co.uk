@@ -169,29 +169,29 @@ type DirectoryConnection = {
 
 
 type DirectoryConnection_distinctArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 
 type DirectoryConnection_groupArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type DirectoryConnection_maxArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 
 type DirectoryConnection_minArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 
 type DirectoryConnection_sumArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 type DirectoryEdge = {
@@ -200,131 +200,43 @@ type DirectoryEdge = {
   readonly previous: Maybe<Directory>;
 };
 
-type DirectoryFieldsEnum =
-  | 'absolutePath'
-  | 'accessTime'
-  | 'atime'
-  | 'atimeMs'
-  | 'base'
-  | 'birthTime'
-  | 'birthtime'
-  | 'birthtimeMs'
-  | 'changeTime'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'ctime'
-  | 'ctimeMs'
-  | 'dev'
-  | 'dir'
-  | 'ext'
-  | 'extension'
-  | 'gid'
-  | 'id'
-  | 'ino'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'mode'
-  | 'modifiedTime'
-  | 'mtime'
-  | 'mtimeMs'
-  | 'name'
-  | 'nlink'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'prettySize'
-  | 'rdev'
-  | 'relativeDirectory'
-  | 'relativePath'
-  | 'root'
-  | 'size'
-  | 'sourceInstanceName'
-  | 'uid';
+type DirectoryFieldSelector = {
+  readonly absolutePath: InputMaybe<FieldSelectorEnum>;
+  readonly accessTime: InputMaybe<FieldSelectorEnum>;
+  readonly atime: InputMaybe<FieldSelectorEnum>;
+  readonly atimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly base: InputMaybe<FieldSelectorEnum>;
+  readonly birthTime: InputMaybe<FieldSelectorEnum>;
+  readonly birthtime: InputMaybe<FieldSelectorEnum>;
+  readonly birthtimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly changeTime: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly ctime: InputMaybe<FieldSelectorEnum>;
+  readonly ctimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly dev: InputMaybe<FieldSelectorEnum>;
+  readonly dir: InputMaybe<FieldSelectorEnum>;
+  readonly ext: InputMaybe<FieldSelectorEnum>;
+  readonly extension: InputMaybe<FieldSelectorEnum>;
+  readonly gid: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly ino: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly mode: InputMaybe<FieldSelectorEnum>;
+  readonly modifiedTime: InputMaybe<FieldSelectorEnum>;
+  readonly mtime: InputMaybe<FieldSelectorEnum>;
+  readonly mtimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly nlink: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly prettySize: InputMaybe<FieldSelectorEnum>;
+  readonly rdev: InputMaybe<FieldSelectorEnum>;
+  readonly relativeDirectory: InputMaybe<FieldSelectorEnum>;
+  readonly relativePath: InputMaybe<FieldSelectorEnum>;
+  readonly root: InputMaybe<FieldSelectorEnum>;
+  readonly size: InputMaybe<FieldSelectorEnum>;
+  readonly sourceInstanceName: InputMaybe<FieldSelectorEnum>;
+  readonly uid: InputMaybe<FieldSelectorEnum>;
+};
 
 type DirectoryFilterInput = {
   readonly absolutePath: InputMaybe<StringQueryOperatorInput>;
@@ -380,34 +292,67 @@ type DirectoryGroupConnection = {
 
 
 type DirectoryGroupConnection_distinctArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 
 type DirectoryGroupConnection_groupArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type DirectoryGroupConnection_maxArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 
 type DirectoryGroupConnection_minArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 
 type DirectoryGroupConnection_sumArgs = {
-  field: DirectoryFieldsEnum;
+  field: DirectoryFieldSelector;
 };
 
 type DirectorySortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<DirectoryFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly absolutePath: InputMaybe<SortOrderEnum>;
+  readonly accessTime: InputMaybe<SortOrderEnum>;
+  readonly atime: InputMaybe<SortOrderEnum>;
+  readonly atimeMs: InputMaybe<SortOrderEnum>;
+  readonly base: InputMaybe<SortOrderEnum>;
+  readonly birthTime: InputMaybe<SortOrderEnum>;
+  readonly birthtime: InputMaybe<SortOrderEnum>;
+  readonly birthtimeMs: InputMaybe<SortOrderEnum>;
+  readonly changeTime: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly ctime: InputMaybe<SortOrderEnum>;
+  readonly ctimeMs: InputMaybe<SortOrderEnum>;
+  readonly dev: InputMaybe<SortOrderEnum>;
+  readonly dir: InputMaybe<SortOrderEnum>;
+  readonly ext: InputMaybe<SortOrderEnum>;
+  readonly extension: InputMaybe<SortOrderEnum>;
+  readonly gid: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly ino: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly mode: InputMaybe<SortOrderEnum>;
+  readonly modifiedTime: InputMaybe<SortOrderEnum>;
+  readonly mtime: InputMaybe<SortOrderEnum>;
+  readonly mtimeMs: InputMaybe<SortOrderEnum>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly nlink: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly prettySize: InputMaybe<SortOrderEnum>;
+  readonly rdev: InputMaybe<SortOrderEnum>;
+  readonly relativeDirectory: InputMaybe<SortOrderEnum>;
+  readonly relativePath: InputMaybe<SortOrderEnum>;
+  readonly root: InputMaybe<SortOrderEnum>;
+  readonly size: InputMaybe<SortOrderEnum>;
+  readonly sourceInstanceName: InputMaybe<SortOrderEnum>;
+  readonly uid: InputMaybe<SortOrderEnum>;
 };
 
 type DuotoneGradient = {
@@ -415,6 +360,9 @@ type DuotoneGradient = {
   readonly opacity: InputMaybe<Scalars['Int']>;
   readonly shadow: Scalars['String'];
 };
+
+type FieldSelectorEnum =
+  | 'SELECT';
 
 type File = Node & {
   readonly absolutePath: Scalars['String'];
@@ -538,29 +486,29 @@ type FileConnection = {
 
 
 type FileConnection_distinctArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 
 type FileConnection_groupArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type FileConnection_maxArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 
 type FileConnection_minArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 
 type FileConnection_sumArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 type FileEdge = {
@@ -569,488 +517,50 @@ type FileEdge = {
   readonly previous: Maybe<File>;
 };
 
-type FileFieldsEnum =
-  | 'absolutePath'
-  | 'accessTime'
-  | 'atime'
-  | 'atimeMs'
-  | 'base'
-  | 'birthTime'
-  | 'birthtime'
-  | 'birthtimeMs'
-  | 'blksize'
-  | 'blocks'
-  | 'changeTime'
-  | 'childImageSharp.children'
-  | 'childImageSharp.children.children'
-  | 'childImageSharp.children.children.children'
-  | 'childImageSharp.children.children.id'
-  | 'childImageSharp.children.id'
-  | 'childImageSharp.children.internal.content'
-  | 'childImageSharp.children.internal.contentDigest'
-  | 'childImageSharp.children.internal.contentFilePath'
-  | 'childImageSharp.children.internal.description'
-  | 'childImageSharp.children.internal.fieldOwners'
-  | 'childImageSharp.children.internal.ignoreType'
-  | 'childImageSharp.children.internal.mediaType'
-  | 'childImageSharp.children.internal.owner'
-  | 'childImageSharp.children.internal.type'
-  | 'childImageSharp.children.parent.children'
-  | 'childImageSharp.children.parent.id'
-  | 'childImageSharp.fixed.aspectRatio'
-  | 'childImageSharp.fixed.base64'
-  | 'childImageSharp.fixed.height'
-  | 'childImageSharp.fixed.originalName'
-  | 'childImageSharp.fixed.src'
-  | 'childImageSharp.fixed.srcSet'
-  | 'childImageSharp.fixed.srcSetWebp'
-  | 'childImageSharp.fixed.srcWebp'
-  | 'childImageSharp.fixed.tracedSVG'
-  | 'childImageSharp.fixed.width'
-  | 'childImageSharp.fluid.aspectRatio'
-  | 'childImageSharp.fluid.base64'
-  | 'childImageSharp.fluid.originalImg'
-  | 'childImageSharp.fluid.originalName'
-  | 'childImageSharp.fluid.presentationHeight'
-  | 'childImageSharp.fluid.presentationWidth'
-  | 'childImageSharp.fluid.sizes'
-  | 'childImageSharp.fluid.src'
-  | 'childImageSharp.fluid.srcSet'
-  | 'childImageSharp.fluid.srcSetWebp'
-  | 'childImageSharp.fluid.srcWebp'
-  | 'childImageSharp.fluid.tracedSVG'
-  | 'childImageSharp.gatsbyImageData'
-  | 'childImageSharp.id'
-  | 'childImageSharp.internal.content'
-  | 'childImageSharp.internal.contentDigest'
-  | 'childImageSharp.internal.contentFilePath'
-  | 'childImageSharp.internal.description'
-  | 'childImageSharp.internal.fieldOwners'
-  | 'childImageSharp.internal.ignoreType'
-  | 'childImageSharp.internal.mediaType'
-  | 'childImageSharp.internal.owner'
-  | 'childImageSharp.internal.type'
-  | 'childImageSharp.original.height'
-  | 'childImageSharp.original.src'
-  | 'childImageSharp.original.width'
-  | 'childImageSharp.parent.children'
-  | 'childImageSharp.parent.children.children'
-  | 'childImageSharp.parent.children.id'
-  | 'childImageSharp.parent.id'
-  | 'childImageSharp.parent.internal.content'
-  | 'childImageSharp.parent.internal.contentDigest'
-  | 'childImageSharp.parent.internal.contentFilePath'
-  | 'childImageSharp.parent.internal.description'
-  | 'childImageSharp.parent.internal.fieldOwners'
-  | 'childImageSharp.parent.internal.ignoreType'
-  | 'childImageSharp.parent.internal.mediaType'
-  | 'childImageSharp.parent.internal.owner'
-  | 'childImageSharp.parent.internal.type'
-  | 'childImageSharp.parent.parent.children'
-  | 'childImageSharp.parent.parent.id'
-  | 'childImageSharp.resize.aspectRatio'
-  | 'childImageSharp.resize.height'
-  | 'childImageSharp.resize.originalName'
-  | 'childImageSharp.resize.src'
-  | 'childImageSharp.resize.tracedSVG'
-  | 'childImageSharp.resize.width'
-  | 'childMdx.body'
-  | 'childMdx.children'
-  | 'childMdx.children.children'
-  | 'childMdx.children.children.children'
-  | 'childMdx.children.children.id'
-  | 'childMdx.children.id'
-  | 'childMdx.children.internal.content'
-  | 'childMdx.children.internal.contentDigest'
-  | 'childMdx.children.internal.contentFilePath'
-  | 'childMdx.children.internal.description'
-  | 'childMdx.children.internal.fieldOwners'
-  | 'childMdx.children.internal.ignoreType'
-  | 'childMdx.children.internal.mediaType'
-  | 'childMdx.children.internal.owner'
-  | 'childMdx.children.internal.type'
-  | 'childMdx.children.parent.children'
-  | 'childMdx.children.parent.id'
-  | 'childMdx.excerpt'
-  | 'childMdx.fields.slug'
-  | 'childMdx.fileAbsolutePath'
-  | 'childMdx.frontmatter.category'
-  | 'childMdx.frontmatter.date'
-  | 'childMdx.frontmatter.description'
-  | 'childMdx.frontmatter.draft'
-  | 'childMdx.frontmatter.imageAlt'
-  | 'childMdx.frontmatter.image.absolutePath'
-  | 'childMdx.frontmatter.image.accessTime'
-  | 'childMdx.frontmatter.image.atime'
-  | 'childMdx.frontmatter.image.atimeMs'
-  | 'childMdx.frontmatter.image.base'
-  | 'childMdx.frontmatter.image.birthTime'
-  | 'childMdx.frontmatter.image.birthtime'
-  | 'childMdx.frontmatter.image.birthtimeMs'
-  | 'childMdx.frontmatter.image.blksize'
-  | 'childMdx.frontmatter.image.blocks'
-  | 'childMdx.frontmatter.image.changeTime'
-  | 'childMdx.frontmatter.image.children'
-  | 'childMdx.frontmatter.image.childrenImageSharp'
-  | 'childMdx.frontmatter.image.childrenMdx'
-  | 'childMdx.frontmatter.image.ctime'
-  | 'childMdx.frontmatter.image.ctimeMs'
-  | 'childMdx.frontmatter.image.dev'
-  | 'childMdx.frontmatter.image.dir'
-  | 'childMdx.frontmatter.image.ext'
-  | 'childMdx.frontmatter.image.extension'
-  | 'childMdx.frontmatter.image.gid'
-  | 'childMdx.frontmatter.image.id'
-  | 'childMdx.frontmatter.image.ino'
-  | 'childMdx.frontmatter.image.mode'
-  | 'childMdx.frontmatter.image.modifiedTime'
-  | 'childMdx.frontmatter.image.mtime'
-  | 'childMdx.frontmatter.image.mtimeMs'
-  | 'childMdx.frontmatter.image.name'
-  | 'childMdx.frontmatter.image.nlink'
-  | 'childMdx.frontmatter.image.prettySize'
-  | 'childMdx.frontmatter.image.publicURL'
-  | 'childMdx.frontmatter.image.rdev'
-  | 'childMdx.frontmatter.image.relativeDirectory'
-  | 'childMdx.frontmatter.image.relativePath'
-  | 'childMdx.frontmatter.image.root'
-  | 'childMdx.frontmatter.image.size'
-  | 'childMdx.frontmatter.image.sourceInstanceName'
-  | 'childMdx.frontmatter.image.uid'
-  | 'childMdx.frontmatter.linkText'
-  | 'childMdx.frontmatter.title'
-  | 'childMdx.frontmatter.updated'
-  | 'childMdx.headings'
-  | 'childMdx.headings.depth'
-  | 'childMdx.headings.value'
-  | 'childMdx.html'
-  | 'childMdx.id'
-  | 'childMdx.internal.content'
-  | 'childMdx.internal.contentDigest'
-  | 'childMdx.internal.contentFilePath'
-  | 'childMdx.internal.description'
-  | 'childMdx.internal.fieldOwners'
-  | 'childMdx.internal.ignoreType'
-  | 'childMdx.internal.mediaType'
-  | 'childMdx.internal.owner'
-  | 'childMdx.internal.type'
-  | 'childMdx.mdxAST'
-  | 'childMdx.parent.children'
-  | 'childMdx.parent.children.children'
-  | 'childMdx.parent.children.id'
-  | 'childMdx.parent.id'
-  | 'childMdx.parent.internal.content'
-  | 'childMdx.parent.internal.contentDigest'
-  | 'childMdx.parent.internal.contentFilePath'
-  | 'childMdx.parent.internal.description'
-  | 'childMdx.parent.internal.fieldOwners'
-  | 'childMdx.parent.internal.ignoreType'
-  | 'childMdx.parent.internal.mediaType'
-  | 'childMdx.parent.internal.owner'
-  | 'childMdx.parent.internal.type'
-  | 'childMdx.parent.parent.children'
-  | 'childMdx.parent.parent.id'
-  | 'childMdx.rawBody'
-  | 'childMdx.slug'
-  | 'childMdx.tableOfContents'
-  | 'childMdx.timeToRead'
-  | 'childMdx.wordCount.paragraphs'
-  | 'childMdx.wordCount.sentences'
-  | 'childMdx.wordCount.words'
-  | 'children'
-  | 'childrenImageSharp'
-  | 'childrenImageSharp.children'
-  | 'childrenImageSharp.children.children'
-  | 'childrenImageSharp.children.children.children'
-  | 'childrenImageSharp.children.children.id'
-  | 'childrenImageSharp.children.id'
-  | 'childrenImageSharp.children.internal.content'
-  | 'childrenImageSharp.children.internal.contentDigest'
-  | 'childrenImageSharp.children.internal.contentFilePath'
-  | 'childrenImageSharp.children.internal.description'
-  | 'childrenImageSharp.children.internal.fieldOwners'
-  | 'childrenImageSharp.children.internal.ignoreType'
-  | 'childrenImageSharp.children.internal.mediaType'
-  | 'childrenImageSharp.children.internal.owner'
-  | 'childrenImageSharp.children.internal.type'
-  | 'childrenImageSharp.children.parent.children'
-  | 'childrenImageSharp.children.parent.id'
-  | 'childrenImageSharp.fixed.aspectRatio'
-  | 'childrenImageSharp.fixed.base64'
-  | 'childrenImageSharp.fixed.height'
-  | 'childrenImageSharp.fixed.originalName'
-  | 'childrenImageSharp.fixed.src'
-  | 'childrenImageSharp.fixed.srcSet'
-  | 'childrenImageSharp.fixed.srcSetWebp'
-  | 'childrenImageSharp.fixed.srcWebp'
-  | 'childrenImageSharp.fixed.tracedSVG'
-  | 'childrenImageSharp.fixed.width'
-  | 'childrenImageSharp.fluid.aspectRatio'
-  | 'childrenImageSharp.fluid.base64'
-  | 'childrenImageSharp.fluid.originalImg'
-  | 'childrenImageSharp.fluid.originalName'
-  | 'childrenImageSharp.fluid.presentationHeight'
-  | 'childrenImageSharp.fluid.presentationWidth'
-  | 'childrenImageSharp.fluid.sizes'
-  | 'childrenImageSharp.fluid.src'
-  | 'childrenImageSharp.fluid.srcSet'
-  | 'childrenImageSharp.fluid.srcSetWebp'
-  | 'childrenImageSharp.fluid.srcWebp'
-  | 'childrenImageSharp.fluid.tracedSVG'
-  | 'childrenImageSharp.gatsbyImageData'
-  | 'childrenImageSharp.id'
-  | 'childrenImageSharp.internal.content'
-  | 'childrenImageSharp.internal.contentDigest'
-  | 'childrenImageSharp.internal.contentFilePath'
-  | 'childrenImageSharp.internal.description'
-  | 'childrenImageSharp.internal.fieldOwners'
-  | 'childrenImageSharp.internal.ignoreType'
-  | 'childrenImageSharp.internal.mediaType'
-  | 'childrenImageSharp.internal.owner'
-  | 'childrenImageSharp.internal.type'
-  | 'childrenImageSharp.original.height'
-  | 'childrenImageSharp.original.src'
-  | 'childrenImageSharp.original.width'
-  | 'childrenImageSharp.parent.children'
-  | 'childrenImageSharp.parent.children.children'
-  | 'childrenImageSharp.parent.children.id'
-  | 'childrenImageSharp.parent.id'
-  | 'childrenImageSharp.parent.internal.content'
-  | 'childrenImageSharp.parent.internal.contentDigest'
-  | 'childrenImageSharp.parent.internal.contentFilePath'
-  | 'childrenImageSharp.parent.internal.description'
-  | 'childrenImageSharp.parent.internal.fieldOwners'
-  | 'childrenImageSharp.parent.internal.ignoreType'
-  | 'childrenImageSharp.parent.internal.mediaType'
-  | 'childrenImageSharp.parent.internal.owner'
-  | 'childrenImageSharp.parent.internal.type'
-  | 'childrenImageSharp.parent.parent.children'
-  | 'childrenImageSharp.parent.parent.id'
-  | 'childrenImageSharp.resize.aspectRatio'
-  | 'childrenImageSharp.resize.height'
-  | 'childrenImageSharp.resize.originalName'
-  | 'childrenImageSharp.resize.src'
-  | 'childrenImageSharp.resize.tracedSVG'
-  | 'childrenImageSharp.resize.width'
-  | 'childrenMdx'
-  | 'childrenMdx.body'
-  | 'childrenMdx.children'
-  | 'childrenMdx.children.children'
-  | 'childrenMdx.children.children.children'
-  | 'childrenMdx.children.children.id'
-  | 'childrenMdx.children.id'
-  | 'childrenMdx.children.internal.content'
-  | 'childrenMdx.children.internal.contentDigest'
-  | 'childrenMdx.children.internal.contentFilePath'
-  | 'childrenMdx.children.internal.description'
-  | 'childrenMdx.children.internal.fieldOwners'
-  | 'childrenMdx.children.internal.ignoreType'
-  | 'childrenMdx.children.internal.mediaType'
-  | 'childrenMdx.children.internal.owner'
-  | 'childrenMdx.children.internal.type'
-  | 'childrenMdx.children.parent.children'
-  | 'childrenMdx.children.parent.id'
-  | 'childrenMdx.excerpt'
-  | 'childrenMdx.fields.slug'
-  | 'childrenMdx.fileAbsolutePath'
-  | 'childrenMdx.frontmatter.category'
-  | 'childrenMdx.frontmatter.date'
-  | 'childrenMdx.frontmatter.description'
-  | 'childrenMdx.frontmatter.draft'
-  | 'childrenMdx.frontmatter.imageAlt'
-  | 'childrenMdx.frontmatter.image.absolutePath'
-  | 'childrenMdx.frontmatter.image.accessTime'
-  | 'childrenMdx.frontmatter.image.atime'
-  | 'childrenMdx.frontmatter.image.atimeMs'
-  | 'childrenMdx.frontmatter.image.base'
-  | 'childrenMdx.frontmatter.image.birthTime'
-  | 'childrenMdx.frontmatter.image.birthtime'
-  | 'childrenMdx.frontmatter.image.birthtimeMs'
-  | 'childrenMdx.frontmatter.image.blksize'
-  | 'childrenMdx.frontmatter.image.blocks'
-  | 'childrenMdx.frontmatter.image.changeTime'
-  | 'childrenMdx.frontmatter.image.children'
-  | 'childrenMdx.frontmatter.image.childrenImageSharp'
-  | 'childrenMdx.frontmatter.image.childrenMdx'
-  | 'childrenMdx.frontmatter.image.ctime'
-  | 'childrenMdx.frontmatter.image.ctimeMs'
-  | 'childrenMdx.frontmatter.image.dev'
-  | 'childrenMdx.frontmatter.image.dir'
-  | 'childrenMdx.frontmatter.image.ext'
-  | 'childrenMdx.frontmatter.image.extension'
-  | 'childrenMdx.frontmatter.image.gid'
-  | 'childrenMdx.frontmatter.image.id'
-  | 'childrenMdx.frontmatter.image.ino'
-  | 'childrenMdx.frontmatter.image.mode'
-  | 'childrenMdx.frontmatter.image.modifiedTime'
-  | 'childrenMdx.frontmatter.image.mtime'
-  | 'childrenMdx.frontmatter.image.mtimeMs'
-  | 'childrenMdx.frontmatter.image.name'
-  | 'childrenMdx.frontmatter.image.nlink'
-  | 'childrenMdx.frontmatter.image.prettySize'
-  | 'childrenMdx.frontmatter.image.publicURL'
-  | 'childrenMdx.frontmatter.image.rdev'
-  | 'childrenMdx.frontmatter.image.relativeDirectory'
-  | 'childrenMdx.frontmatter.image.relativePath'
-  | 'childrenMdx.frontmatter.image.root'
-  | 'childrenMdx.frontmatter.image.size'
-  | 'childrenMdx.frontmatter.image.sourceInstanceName'
-  | 'childrenMdx.frontmatter.image.uid'
-  | 'childrenMdx.frontmatter.linkText'
-  | 'childrenMdx.frontmatter.title'
-  | 'childrenMdx.frontmatter.updated'
-  | 'childrenMdx.headings'
-  | 'childrenMdx.headings.depth'
-  | 'childrenMdx.headings.value'
-  | 'childrenMdx.html'
-  | 'childrenMdx.id'
-  | 'childrenMdx.internal.content'
-  | 'childrenMdx.internal.contentDigest'
-  | 'childrenMdx.internal.contentFilePath'
-  | 'childrenMdx.internal.description'
-  | 'childrenMdx.internal.fieldOwners'
-  | 'childrenMdx.internal.ignoreType'
-  | 'childrenMdx.internal.mediaType'
-  | 'childrenMdx.internal.owner'
-  | 'childrenMdx.internal.type'
-  | 'childrenMdx.mdxAST'
-  | 'childrenMdx.parent.children'
-  | 'childrenMdx.parent.children.children'
-  | 'childrenMdx.parent.children.id'
-  | 'childrenMdx.parent.id'
-  | 'childrenMdx.parent.internal.content'
-  | 'childrenMdx.parent.internal.contentDigest'
-  | 'childrenMdx.parent.internal.contentFilePath'
-  | 'childrenMdx.parent.internal.description'
-  | 'childrenMdx.parent.internal.fieldOwners'
-  | 'childrenMdx.parent.internal.ignoreType'
-  | 'childrenMdx.parent.internal.mediaType'
-  | 'childrenMdx.parent.internal.owner'
-  | 'childrenMdx.parent.internal.type'
-  | 'childrenMdx.parent.parent.children'
-  | 'childrenMdx.parent.parent.id'
-  | 'childrenMdx.rawBody'
-  | 'childrenMdx.slug'
-  | 'childrenMdx.tableOfContents'
-  | 'childrenMdx.timeToRead'
-  | 'childrenMdx.wordCount.paragraphs'
-  | 'childrenMdx.wordCount.sentences'
-  | 'childrenMdx.wordCount.words'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'ctime'
-  | 'ctimeMs'
-  | 'dev'
-  | 'dir'
-  | 'ext'
-  | 'extension'
-  | 'gid'
-  | 'id'
-  | 'ino'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'mode'
-  | 'modifiedTime'
-  | 'mtime'
-  | 'mtimeMs'
-  | 'name'
-  | 'nlink'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'prettySize'
-  | 'publicURL'
-  | 'rdev'
-  | 'relativeDirectory'
-  | 'relativePath'
-  | 'root'
-  | 'size'
-  | 'sourceInstanceName'
-  | 'uid';
+type FileFieldSelector = {
+  readonly absolutePath: InputMaybe<FieldSelectorEnum>;
+  readonly accessTime: InputMaybe<FieldSelectorEnum>;
+  readonly atime: InputMaybe<FieldSelectorEnum>;
+  readonly atimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly base: InputMaybe<FieldSelectorEnum>;
+  readonly birthTime: InputMaybe<FieldSelectorEnum>;
+  readonly birthtime: InputMaybe<FieldSelectorEnum>;
+  readonly birthtimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly blksize: InputMaybe<FieldSelectorEnum>;
+  readonly blocks: InputMaybe<FieldSelectorEnum>;
+  readonly changeTime: InputMaybe<FieldSelectorEnum>;
+  readonly childImageSharp: InputMaybe<ImageSharpFieldSelector>;
+  readonly childMdx: InputMaybe<MdxFieldSelector>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly childrenImageSharp: InputMaybe<ImageSharpFieldSelector>;
+  readonly childrenMdx: InputMaybe<MdxFieldSelector>;
+  readonly ctime: InputMaybe<FieldSelectorEnum>;
+  readonly ctimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly dev: InputMaybe<FieldSelectorEnum>;
+  readonly dir: InputMaybe<FieldSelectorEnum>;
+  readonly ext: InputMaybe<FieldSelectorEnum>;
+  readonly extension: InputMaybe<FieldSelectorEnum>;
+  readonly gid: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly ino: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly mode: InputMaybe<FieldSelectorEnum>;
+  readonly modifiedTime: InputMaybe<FieldSelectorEnum>;
+  readonly mtime: InputMaybe<FieldSelectorEnum>;
+  readonly mtimeMs: InputMaybe<FieldSelectorEnum>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly nlink: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly prettySize: InputMaybe<FieldSelectorEnum>;
+  readonly publicURL: InputMaybe<FieldSelectorEnum>;
+  readonly rdev: InputMaybe<FieldSelectorEnum>;
+  readonly relativeDirectory: InputMaybe<FieldSelectorEnum>;
+  readonly relativePath: InputMaybe<FieldSelectorEnum>;
+  readonly root: InputMaybe<FieldSelectorEnum>;
+  readonly size: InputMaybe<FieldSelectorEnum>;
+  readonly sourceInstanceName: InputMaybe<FieldSelectorEnum>;
+  readonly uid: InputMaybe<FieldSelectorEnum>;
+};
 
 type FileFilterInput = {
   readonly absolutePath: InputMaybe<StringQueryOperatorInput>;
@@ -1113,34 +623,74 @@ type FileGroupConnection = {
 
 
 type FileGroupConnection_distinctArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 
 type FileGroupConnection_groupArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type FileGroupConnection_maxArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 
 type FileGroupConnection_minArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 
 type FileGroupConnection_sumArgs = {
-  field: FileFieldsEnum;
+  field: FileFieldSelector;
 };
 
 type FileSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<FileFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly absolutePath: InputMaybe<SortOrderEnum>;
+  readonly accessTime: InputMaybe<SortOrderEnum>;
+  readonly atime: InputMaybe<SortOrderEnum>;
+  readonly atimeMs: InputMaybe<SortOrderEnum>;
+  readonly base: InputMaybe<SortOrderEnum>;
+  readonly birthTime: InputMaybe<SortOrderEnum>;
+  readonly birthtime: InputMaybe<SortOrderEnum>;
+  readonly birthtimeMs: InputMaybe<SortOrderEnum>;
+  readonly blksize: InputMaybe<SortOrderEnum>;
+  readonly blocks: InputMaybe<SortOrderEnum>;
+  readonly changeTime: InputMaybe<SortOrderEnum>;
+  readonly childImageSharp: InputMaybe<ImageSharpSortInput>;
+  readonly childMdx: InputMaybe<MdxSortInput>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly childrenImageSharp: InputMaybe<ImageSharpSortInput>;
+  readonly childrenMdx: InputMaybe<MdxSortInput>;
+  readonly ctime: InputMaybe<SortOrderEnum>;
+  readonly ctimeMs: InputMaybe<SortOrderEnum>;
+  readonly dev: InputMaybe<SortOrderEnum>;
+  readonly dir: InputMaybe<SortOrderEnum>;
+  readonly ext: InputMaybe<SortOrderEnum>;
+  readonly extension: InputMaybe<SortOrderEnum>;
+  readonly gid: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly ino: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly mode: InputMaybe<SortOrderEnum>;
+  readonly modifiedTime: InputMaybe<SortOrderEnum>;
+  readonly mtime: InputMaybe<SortOrderEnum>;
+  readonly mtimeMs: InputMaybe<SortOrderEnum>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly nlink: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly prettySize: InputMaybe<SortOrderEnum>;
+  readonly publicURL: InputMaybe<SortOrderEnum>;
+  readonly rdev: InputMaybe<SortOrderEnum>;
+  readonly relativeDirectory: InputMaybe<SortOrderEnum>;
+  readonly relativePath: InputMaybe<SortOrderEnum>;
+  readonly root: InputMaybe<SortOrderEnum>;
+  readonly size: InputMaybe<SortOrderEnum>;
+  readonly sourceInstanceName: InputMaybe<SortOrderEnum>;
+  readonly uid: InputMaybe<SortOrderEnum>;
 };
 
 type FloatQueryOperatorInput = {
@@ -1211,29 +761,29 @@ type GoodreadsAuthorConnection = {
 
 
 type GoodreadsAuthorConnection_distinctArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 
 type GoodreadsAuthorConnection_groupArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsAuthorConnection_maxArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 
 type GoodreadsAuthorConnection_minArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 
 type GoodreadsAuthorConnection_sumArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 type GoodreadsAuthorEdge = {
@@ -1242,284 +792,22 @@ type GoodreadsAuthorEdge = {
   readonly previous: Maybe<GoodreadsAuthor>;
 };
 
-type GoodreadsAuthorFieldsEnum =
-  | 'average_rating'
-  | 'books'
-  | 'books.authors'
-  | 'books.authors.average_rating'
-  | 'books.authors.books'
-  | 'books.authors.books.authors'
-  | 'books.authors.books.average_rating'
-  | 'books.authors.books.children'
-  | 'books.authors.books.description'
-  | 'books.authors.books.edition_information'
-  | 'books.authors.books.format'
-  | 'books.authors.books.goodreadsId'
-  | 'books.authors.books.id'
-  | 'books.authors.books.image_url'
-  | 'books.authors.books.isbn'
-  | 'books.authors.books.isbn13'
-  | 'books.authors.books.large_image_url'
-  | 'books.authors.books.link'
-  | 'books.authors.books.num_pages'
-  | 'books.authors.books.publication_day'
-  | 'books.authors.books.publication_month'
-  | 'books.authors.books.publication_year'
-  | 'books.authors.books.published'
-  | 'books.authors.books.publisher'
-  | 'books.authors.books.ratings_count'
-  | 'books.authors.books.reviews'
-  | 'books.authors.books.small_image_url'
-  | 'books.authors.books.text_reviews_count'
-  | 'books.authors.books.title'
-  | 'books.authors.books.title_without_series'
-  | 'books.authors.books.uri'
-  | 'books.authors.children'
-  | 'books.authors.children.children'
-  | 'books.authors.children.id'
-  | 'books.authors.goodreadsId'
-  | 'books.authors.id'
-  | 'books.authors.image_url'
-  | 'books.authors.internal.content'
-  | 'books.authors.internal.contentDigest'
-  | 'books.authors.internal.contentFilePath'
-  | 'books.authors.internal.description'
-  | 'books.authors.internal.fieldOwners'
-  | 'books.authors.internal.ignoreType'
-  | 'books.authors.internal.mediaType'
-  | 'books.authors.internal.owner'
-  | 'books.authors.internal.type'
-  | 'books.authors.link'
-  | 'books.authors.name'
-  | 'books.authors.parent.children'
-  | 'books.authors.parent.id'
-  | 'books.authors.ratings_count'
-  | 'books.authors.role'
-  | 'books.authors.small_image_url'
-  | 'books.authors.text_reviews_count'
-  | 'books.average_rating'
-  | 'books.children'
-  | 'books.children.children'
-  | 'books.children.children.children'
-  | 'books.children.children.id'
-  | 'books.children.id'
-  | 'books.children.internal.content'
-  | 'books.children.internal.contentDigest'
-  | 'books.children.internal.contentFilePath'
-  | 'books.children.internal.description'
-  | 'books.children.internal.fieldOwners'
-  | 'books.children.internal.ignoreType'
-  | 'books.children.internal.mediaType'
-  | 'books.children.internal.owner'
-  | 'books.children.internal.type'
-  | 'books.children.parent.children'
-  | 'books.children.parent.id'
-  | 'books.description'
-  | 'books.edition_information'
-  | 'books.format'
-  | 'books.goodreadsId'
-  | 'books.id'
-  | 'books.image_url'
-  | 'books.internal.content'
-  | 'books.internal.contentDigest'
-  | 'books.internal.contentFilePath'
-  | 'books.internal.description'
-  | 'books.internal.fieldOwners'
-  | 'books.internal.ignoreType'
-  | 'books.internal.mediaType'
-  | 'books.internal.owner'
-  | 'books.internal.type'
-  | 'books.isbn'
-  | 'books.isbn13'
-  | 'books.large_image_url'
-  | 'books.link'
-  | 'books.num_pages'
-  | 'books.parent.children'
-  | 'books.parent.children.children'
-  | 'books.parent.children.id'
-  | 'books.parent.id'
-  | 'books.parent.internal.content'
-  | 'books.parent.internal.contentDigest'
-  | 'books.parent.internal.contentFilePath'
-  | 'books.parent.internal.description'
-  | 'books.parent.internal.fieldOwners'
-  | 'books.parent.internal.ignoreType'
-  | 'books.parent.internal.mediaType'
-  | 'books.parent.internal.owner'
-  | 'books.parent.internal.type'
-  | 'books.parent.parent.children'
-  | 'books.parent.parent.id'
-  | 'books.publication_day'
-  | 'books.publication_month'
-  | 'books.publication_year'
-  | 'books.published'
-  | 'books.publisher'
-  | 'books.ratings_count'
-  | 'books.reviews'
-  | 'books.reviews.body'
-  | 'books.reviews.book.authors'
-  | 'books.reviews.book.average_rating'
-  | 'books.reviews.book.children'
-  | 'books.reviews.book.description'
-  | 'books.reviews.book.edition_information'
-  | 'books.reviews.book.format'
-  | 'books.reviews.book.goodreadsId'
-  | 'books.reviews.book.id'
-  | 'books.reviews.book.image_url'
-  | 'books.reviews.book.isbn'
-  | 'books.reviews.book.isbn13'
-  | 'books.reviews.book.large_image_url'
-  | 'books.reviews.book.link'
-  | 'books.reviews.book.num_pages'
-  | 'books.reviews.book.publication_day'
-  | 'books.reviews.book.publication_month'
-  | 'books.reviews.book.publication_year'
-  | 'books.reviews.book.published'
-  | 'books.reviews.book.publisher'
-  | 'books.reviews.book.ratings_count'
-  | 'books.reviews.book.reviews'
-  | 'books.reviews.book.small_image_url'
-  | 'books.reviews.book.text_reviews_count'
-  | 'books.reviews.book.title'
-  | 'books.reviews.book.title_without_series'
-  | 'books.reviews.book.uri'
-  | 'books.reviews.children'
-  | 'books.reviews.children.children'
-  | 'books.reviews.children.id'
-  | 'books.reviews.comments_count'
-  | 'books.reviews.date_added'
-  | 'books.reviews.date_updated'
-  | 'books.reviews.goodreadsId'
-  | 'books.reviews.id'
-  | 'books.reviews.internal.content'
-  | 'books.reviews.internal.contentDigest'
-  | 'books.reviews.internal.contentFilePath'
-  | 'books.reviews.internal.description'
-  | 'books.reviews.internal.fieldOwners'
-  | 'books.reviews.internal.ignoreType'
-  | 'books.reviews.internal.mediaType'
-  | 'books.reviews.internal.owner'
-  | 'books.reviews.internal.type'
-  | 'books.reviews.link'
-  | 'books.reviews.owned'
-  | 'books.reviews.parent.children'
-  | 'books.reviews.parent.id'
-  | 'books.reviews.rating'
-  | 'books.reviews.read_at'
-  | 'books.reviews.read_count'
-  | 'books.reviews.spoiler_flag'
-  | 'books.reviews.spoilers_state'
-  | 'books.reviews.started_at'
-  | 'books.reviews.url'
-  | 'books.reviews.votes'
-  | 'books.small_image_url'
-  | 'books.text_reviews_count'
-  | 'books.title'
-  | 'books.title_without_series'
-  | 'books.uri'
-  | 'books.work.id'
-  | 'books.work.uri'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'goodreadsId'
-  | 'id'
-  | 'image_url'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'link'
-  | 'name'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'ratings_count'
-  | 'role'
-  | 'small_image_url'
-  | 'text_reviews_count';
+type GoodreadsAuthorFieldSelector = {
+  readonly average_rating: InputMaybe<FieldSelectorEnum>;
+  readonly books: InputMaybe<GoodreadsBookFieldSelector>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly goodreadsId: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly image_url: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly link: InputMaybe<FieldSelectorEnum>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly ratings_count: InputMaybe<FieldSelectorEnum>;
+  readonly role: InputMaybe<FieldSelectorEnum>;
+  readonly small_image_url: InputMaybe<FieldSelectorEnum>;
+  readonly text_reviews_count: InputMaybe<FieldSelectorEnum>;
+};
 
 type GoodreadsAuthorFilterInput = {
   readonly average_rating: InputMaybe<StringQueryOperatorInput>;
@@ -1558,34 +846,46 @@ type GoodreadsAuthorGroupConnection = {
 
 
 type GoodreadsAuthorGroupConnection_distinctArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 
 type GoodreadsAuthorGroupConnection_groupArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsAuthorGroupConnection_maxArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 
 type GoodreadsAuthorGroupConnection_minArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 
 type GoodreadsAuthorGroupConnection_sumArgs = {
-  field: GoodreadsAuthorFieldsEnum;
+  field: GoodreadsAuthorFieldSelector;
 };
 
 type GoodreadsAuthorSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsAuthorFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly average_rating: InputMaybe<SortOrderEnum>;
+  readonly books: InputMaybe<GoodreadsBookSortInput>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly goodreadsId: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly image_url: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly link: InputMaybe<SortOrderEnum>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly ratings_count: InputMaybe<SortOrderEnum>;
+  readonly role: InputMaybe<SortOrderEnum>;
+  readonly small_image_url: InputMaybe<SortOrderEnum>;
+  readonly text_reviews_count: InputMaybe<SortOrderEnum>;
 };
 
 type GoodreadsBook = Node & {
@@ -1650,29 +950,29 @@ type GoodreadsBookConnection = {
 
 
 type GoodreadsBookConnection_distinctArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 
 type GoodreadsBookConnection_groupArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsBookConnection_maxArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 
 type GoodreadsBookConnection_minArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 
 type GoodreadsBookConnection_sumArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 type GoodreadsBookEdge = {
@@ -1681,373 +981,37 @@ type GoodreadsBookEdge = {
   readonly previous: Maybe<GoodreadsBook>;
 };
 
-type GoodreadsBookFieldsEnum =
-  | 'authors'
-  | 'authors.average_rating'
-  | 'authors.books'
-  | 'authors.books.authors'
-  | 'authors.books.authors.average_rating'
-  | 'authors.books.authors.books'
-  | 'authors.books.authors.children'
-  | 'authors.books.authors.goodreadsId'
-  | 'authors.books.authors.id'
-  | 'authors.books.authors.image_url'
-  | 'authors.books.authors.link'
-  | 'authors.books.authors.name'
-  | 'authors.books.authors.ratings_count'
-  | 'authors.books.authors.role'
-  | 'authors.books.authors.small_image_url'
-  | 'authors.books.authors.text_reviews_count'
-  | 'authors.books.average_rating'
-  | 'authors.books.children'
-  | 'authors.books.children.children'
-  | 'authors.books.children.id'
-  | 'authors.books.description'
-  | 'authors.books.edition_information'
-  | 'authors.books.format'
-  | 'authors.books.goodreadsId'
-  | 'authors.books.id'
-  | 'authors.books.image_url'
-  | 'authors.books.internal.content'
-  | 'authors.books.internal.contentDigest'
-  | 'authors.books.internal.contentFilePath'
-  | 'authors.books.internal.description'
-  | 'authors.books.internal.fieldOwners'
-  | 'authors.books.internal.ignoreType'
-  | 'authors.books.internal.mediaType'
-  | 'authors.books.internal.owner'
-  | 'authors.books.internal.type'
-  | 'authors.books.isbn'
-  | 'authors.books.isbn13'
-  | 'authors.books.large_image_url'
-  | 'authors.books.link'
-  | 'authors.books.num_pages'
-  | 'authors.books.parent.children'
-  | 'authors.books.parent.id'
-  | 'authors.books.publication_day'
-  | 'authors.books.publication_month'
-  | 'authors.books.publication_year'
-  | 'authors.books.published'
-  | 'authors.books.publisher'
-  | 'authors.books.ratings_count'
-  | 'authors.books.reviews'
-  | 'authors.books.reviews.body'
-  | 'authors.books.reviews.children'
-  | 'authors.books.reviews.comments_count'
-  | 'authors.books.reviews.date_added'
-  | 'authors.books.reviews.date_updated'
-  | 'authors.books.reviews.goodreadsId'
-  | 'authors.books.reviews.id'
-  | 'authors.books.reviews.link'
-  | 'authors.books.reviews.owned'
-  | 'authors.books.reviews.rating'
-  | 'authors.books.reviews.read_at'
-  | 'authors.books.reviews.read_count'
-  | 'authors.books.reviews.spoiler_flag'
-  | 'authors.books.reviews.spoilers_state'
-  | 'authors.books.reviews.started_at'
-  | 'authors.books.reviews.url'
-  | 'authors.books.reviews.votes'
-  | 'authors.books.small_image_url'
-  | 'authors.books.text_reviews_count'
-  | 'authors.books.title'
-  | 'authors.books.title_without_series'
-  | 'authors.books.uri'
-  | 'authors.books.work.id'
-  | 'authors.books.work.uri'
-  | 'authors.children'
-  | 'authors.children.children'
-  | 'authors.children.children.children'
-  | 'authors.children.children.id'
-  | 'authors.children.id'
-  | 'authors.children.internal.content'
-  | 'authors.children.internal.contentDigest'
-  | 'authors.children.internal.contentFilePath'
-  | 'authors.children.internal.description'
-  | 'authors.children.internal.fieldOwners'
-  | 'authors.children.internal.ignoreType'
-  | 'authors.children.internal.mediaType'
-  | 'authors.children.internal.owner'
-  | 'authors.children.internal.type'
-  | 'authors.children.parent.children'
-  | 'authors.children.parent.id'
-  | 'authors.goodreadsId'
-  | 'authors.id'
-  | 'authors.image_url'
-  | 'authors.internal.content'
-  | 'authors.internal.contentDigest'
-  | 'authors.internal.contentFilePath'
-  | 'authors.internal.description'
-  | 'authors.internal.fieldOwners'
-  | 'authors.internal.ignoreType'
-  | 'authors.internal.mediaType'
-  | 'authors.internal.owner'
-  | 'authors.internal.type'
-  | 'authors.link'
-  | 'authors.name'
-  | 'authors.parent.children'
-  | 'authors.parent.children.children'
-  | 'authors.parent.children.id'
-  | 'authors.parent.id'
-  | 'authors.parent.internal.content'
-  | 'authors.parent.internal.contentDigest'
-  | 'authors.parent.internal.contentFilePath'
-  | 'authors.parent.internal.description'
-  | 'authors.parent.internal.fieldOwners'
-  | 'authors.parent.internal.ignoreType'
-  | 'authors.parent.internal.mediaType'
-  | 'authors.parent.internal.owner'
-  | 'authors.parent.internal.type'
-  | 'authors.parent.parent.children'
-  | 'authors.parent.parent.id'
-  | 'authors.ratings_count'
-  | 'authors.role'
-  | 'authors.small_image_url'
-  | 'authors.text_reviews_count'
-  | 'average_rating'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'description'
-  | 'edition_information'
-  | 'format'
-  | 'goodreadsId'
-  | 'id'
-  | 'image_url'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'isbn'
-  | 'isbn13'
-  | 'large_image_url'
-  | 'link'
-  | 'num_pages'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'publication_day'
-  | 'publication_month'
-  | 'publication_year'
-  | 'published'
-  | 'publisher'
-  | 'ratings_count'
-  | 'reviews'
-  | 'reviews.body'
-  | 'reviews.book.authors'
-  | 'reviews.book.authors.average_rating'
-  | 'reviews.book.authors.books'
-  | 'reviews.book.authors.children'
-  | 'reviews.book.authors.goodreadsId'
-  | 'reviews.book.authors.id'
-  | 'reviews.book.authors.image_url'
-  | 'reviews.book.authors.link'
-  | 'reviews.book.authors.name'
-  | 'reviews.book.authors.ratings_count'
-  | 'reviews.book.authors.role'
-  | 'reviews.book.authors.small_image_url'
-  | 'reviews.book.authors.text_reviews_count'
-  | 'reviews.book.average_rating'
-  | 'reviews.book.children'
-  | 'reviews.book.children.children'
-  | 'reviews.book.children.id'
-  | 'reviews.book.description'
-  | 'reviews.book.edition_information'
-  | 'reviews.book.format'
-  | 'reviews.book.goodreadsId'
-  | 'reviews.book.id'
-  | 'reviews.book.image_url'
-  | 'reviews.book.internal.content'
-  | 'reviews.book.internal.contentDigest'
-  | 'reviews.book.internal.contentFilePath'
-  | 'reviews.book.internal.description'
-  | 'reviews.book.internal.fieldOwners'
-  | 'reviews.book.internal.ignoreType'
-  | 'reviews.book.internal.mediaType'
-  | 'reviews.book.internal.owner'
-  | 'reviews.book.internal.type'
-  | 'reviews.book.isbn'
-  | 'reviews.book.isbn13'
-  | 'reviews.book.large_image_url'
-  | 'reviews.book.link'
-  | 'reviews.book.num_pages'
-  | 'reviews.book.parent.children'
-  | 'reviews.book.parent.id'
-  | 'reviews.book.publication_day'
-  | 'reviews.book.publication_month'
-  | 'reviews.book.publication_year'
-  | 'reviews.book.published'
-  | 'reviews.book.publisher'
-  | 'reviews.book.ratings_count'
-  | 'reviews.book.reviews'
-  | 'reviews.book.reviews.body'
-  | 'reviews.book.reviews.children'
-  | 'reviews.book.reviews.comments_count'
-  | 'reviews.book.reviews.date_added'
-  | 'reviews.book.reviews.date_updated'
-  | 'reviews.book.reviews.goodreadsId'
-  | 'reviews.book.reviews.id'
-  | 'reviews.book.reviews.link'
-  | 'reviews.book.reviews.owned'
-  | 'reviews.book.reviews.rating'
-  | 'reviews.book.reviews.read_at'
-  | 'reviews.book.reviews.read_count'
-  | 'reviews.book.reviews.spoiler_flag'
-  | 'reviews.book.reviews.spoilers_state'
-  | 'reviews.book.reviews.started_at'
-  | 'reviews.book.reviews.url'
-  | 'reviews.book.reviews.votes'
-  | 'reviews.book.small_image_url'
-  | 'reviews.book.text_reviews_count'
-  | 'reviews.book.title'
-  | 'reviews.book.title_without_series'
-  | 'reviews.book.uri'
-  | 'reviews.book.work.id'
-  | 'reviews.book.work.uri'
-  | 'reviews.children'
-  | 'reviews.children.children'
-  | 'reviews.children.children.children'
-  | 'reviews.children.children.id'
-  | 'reviews.children.id'
-  | 'reviews.children.internal.content'
-  | 'reviews.children.internal.contentDigest'
-  | 'reviews.children.internal.contentFilePath'
-  | 'reviews.children.internal.description'
-  | 'reviews.children.internal.fieldOwners'
-  | 'reviews.children.internal.ignoreType'
-  | 'reviews.children.internal.mediaType'
-  | 'reviews.children.internal.owner'
-  | 'reviews.children.internal.type'
-  | 'reviews.children.parent.children'
-  | 'reviews.children.parent.id'
-  | 'reviews.comments_count'
-  | 'reviews.date_added'
-  | 'reviews.date_updated'
-  | 'reviews.goodreadsId'
-  | 'reviews.id'
-  | 'reviews.internal.content'
-  | 'reviews.internal.contentDigest'
-  | 'reviews.internal.contentFilePath'
-  | 'reviews.internal.description'
-  | 'reviews.internal.fieldOwners'
-  | 'reviews.internal.ignoreType'
-  | 'reviews.internal.mediaType'
-  | 'reviews.internal.owner'
-  | 'reviews.internal.type'
-  | 'reviews.link'
-  | 'reviews.owned'
-  | 'reviews.parent.children'
-  | 'reviews.parent.children.children'
-  | 'reviews.parent.children.id'
-  | 'reviews.parent.id'
-  | 'reviews.parent.internal.content'
-  | 'reviews.parent.internal.contentDigest'
-  | 'reviews.parent.internal.contentFilePath'
-  | 'reviews.parent.internal.description'
-  | 'reviews.parent.internal.fieldOwners'
-  | 'reviews.parent.internal.ignoreType'
-  | 'reviews.parent.internal.mediaType'
-  | 'reviews.parent.internal.owner'
-  | 'reviews.parent.internal.type'
-  | 'reviews.parent.parent.children'
-  | 'reviews.parent.parent.id'
-  | 'reviews.rating'
-  | 'reviews.read_at'
-  | 'reviews.read_count'
-  | 'reviews.spoiler_flag'
-  | 'reviews.spoilers_state'
-  | 'reviews.started_at'
-  | 'reviews.url'
-  | 'reviews.votes'
-  | 'small_image_url'
-  | 'text_reviews_count'
-  | 'title'
-  | 'title_without_series'
-  | 'uri'
-  | 'work.id'
-  | 'work.uri';
+type GoodreadsBookFieldSelector = {
+  readonly authors: InputMaybe<GoodreadsAuthorFieldSelector>;
+  readonly average_rating: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly description: InputMaybe<FieldSelectorEnum>;
+  readonly edition_information: InputMaybe<FieldSelectorEnum>;
+  readonly format: InputMaybe<FieldSelectorEnum>;
+  readonly goodreadsId: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly image_url: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly isbn: InputMaybe<FieldSelectorEnum>;
+  readonly isbn13: InputMaybe<FieldSelectorEnum>;
+  readonly large_image_url: InputMaybe<FieldSelectorEnum>;
+  readonly link: InputMaybe<FieldSelectorEnum>;
+  readonly num_pages: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly publication_day: InputMaybe<FieldSelectorEnum>;
+  readonly publication_month: InputMaybe<FieldSelectorEnum>;
+  readonly publication_year: InputMaybe<FieldSelectorEnum>;
+  readonly published: InputMaybe<FieldSelectorEnum>;
+  readonly publisher: InputMaybe<FieldSelectorEnum>;
+  readonly ratings_count: InputMaybe<FieldSelectorEnum>;
+  readonly reviews: InputMaybe<GoodreadsReviewFieldSelector>;
+  readonly small_image_url: InputMaybe<FieldSelectorEnum>;
+  readonly text_reviews_count: InputMaybe<FieldSelectorEnum>;
+  readonly title: InputMaybe<FieldSelectorEnum>;
+  readonly title_without_series: InputMaybe<FieldSelectorEnum>;
+  readonly uri: InputMaybe<FieldSelectorEnum>;
+  readonly work: InputMaybe<GoodreadsBookWorkFieldSelector>;
+};
 
 type GoodreadsBookFilterInput = {
   readonly authors: InputMaybe<GoodreadsAuthorFilterListInput>;
@@ -2101,34 +1065,61 @@ type GoodreadsBookGroupConnection = {
 
 
 type GoodreadsBookGroupConnection_distinctArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 
 type GoodreadsBookGroupConnection_groupArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsBookGroupConnection_maxArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 
 type GoodreadsBookGroupConnection_minArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 
 type GoodreadsBookGroupConnection_sumArgs = {
-  field: GoodreadsBookFieldsEnum;
+  field: GoodreadsBookFieldSelector;
 };
 
 type GoodreadsBookSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsBookFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly authors: InputMaybe<GoodreadsAuthorSortInput>;
+  readonly average_rating: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly description: InputMaybe<SortOrderEnum>;
+  readonly edition_information: InputMaybe<SortOrderEnum>;
+  readonly format: InputMaybe<SortOrderEnum>;
+  readonly goodreadsId: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly image_url: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly isbn: InputMaybe<SortOrderEnum>;
+  readonly isbn13: InputMaybe<SortOrderEnum>;
+  readonly large_image_url: InputMaybe<SortOrderEnum>;
+  readonly link: InputMaybe<SortOrderEnum>;
+  readonly num_pages: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly publication_day: InputMaybe<SortOrderEnum>;
+  readonly publication_month: InputMaybe<SortOrderEnum>;
+  readonly publication_year: InputMaybe<SortOrderEnum>;
+  readonly published: InputMaybe<SortOrderEnum>;
+  readonly publisher: InputMaybe<SortOrderEnum>;
+  readonly ratings_count: InputMaybe<SortOrderEnum>;
+  readonly reviews: InputMaybe<GoodreadsReviewSortInput>;
+  readonly small_image_url: InputMaybe<SortOrderEnum>;
+  readonly text_reviews_count: InputMaybe<SortOrderEnum>;
+  readonly title: InputMaybe<SortOrderEnum>;
+  readonly title_without_series: InputMaybe<SortOrderEnum>;
+  readonly uri: InputMaybe<SortOrderEnum>;
+  readonly work: InputMaybe<GoodreadsBookWorkSortInput>;
 };
 
 type GoodreadsBookWork = {
@@ -2136,9 +1127,19 @@ type GoodreadsBookWork = {
   readonly uri: Maybe<Scalars['String']>;
 };
 
+type GoodreadsBookWorkFieldSelector = {
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly uri: InputMaybe<FieldSelectorEnum>;
+};
+
 type GoodreadsBookWorkFilterInput = {
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly uri: InputMaybe<StringQueryOperatorInput>;
+};
+
+type GoodreadsBookWorkSortInput = {
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly uri: InputMaybe<SortOrderEnum>;
 };
 
 type GoodreadsReview = Node & {
@@ -2178,29 +1179,29 @@ type GoodreadsReviewConnection = {
 
 
 type GoodreadsReviewConnection_distinctArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 
 type GoodreadsReviewConnection_groupArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsReviewConnection_maxArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 
 type GoodreadsReviewConnection_minArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 
 type GoodreadsReviewConnection_sumArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 type GoodreadsReviewEdge = {
@@ -2209,289 +1210,28 @@ type GoodreadsReviewEdge = {
   readonly previous: Maybe<GoodreadsReview>;
 };
 
-type GoodreadsReviewFieldsEnum =
-  | 'body'
-  | 'book.authors'
-  | 'book.authors.average_rating'
-  | 'book.authors.books'
-  | 'book.authors.books.authors'
-  | 'book.authors.books.average_rating'
-  | 'book.authors.books.children'
-  | 'book.authors.books.description'
-  | 'book.authors.books.edition_information'
-  | 'book.authors.books.format'
-  | 'book.authors.books.goodreadsId'
-  | 'book.authors.books.id'
-  | 'book.authors.books.image_url'
-  | 'book.authors.books.isbn'
-  | 'book.authors.books.isbn13'
-  | 'book.authors.books.large_image_url'
-  | 'book.authors.books.link'
-  | 'book.authors.books.num_pages'
-  | 'book.authors.books.publication_day'
-  | 'book.authors.books.publication_month'
-  | 'book.authors.books.publication_year'
-  | 'book.authors.books.published'
-  | 'book.authors.books.publisher'
-  | 'book.authors.books.ratings_count'
-  | 'book.authors.books.reviews'
-  | 'book.authors.books.small_image_url'
-  | 'book.authors.books.text_reviews_count'
-  | 'book.authors.books.title'
-  | 'book.authors.books.title_without_series'
-  | 'book.authors.books.uri'
-  | 'book.authors.children'
-  | 'book.authors.children.children'
-  | 'book.authors.children.id'
-  | 'book.authors.goodreadsId'
-  | 'book.authors.id'
-  | 'book.authors.image_url'
-  | 'book.authors.internal.content'
-  | 'book.authors.internal.contentDigest'
-  | 'book.authors.internal.contentFilePath'
-  | 'book.authors.internal.description'
-  | 'book.authors.internal.fieldOwners'
-  | 'book.authors.internal.ignoreType'
-  | 'book.authors.internal.mediaType'
-  | 'book.authors.internal.owner'
-  | 'book.authors.internal.type'
-  | 'book.authors.link'
-  | 'book.authors.name'
-  | 'book.authors.parent.children'
-  | 'book.authors.parent.id'
-  | 'book.authors.ratings_count'
-  | 'book.authors.role'
-  | 'book.authors.small_image_url'
-  | 'book.authors.text_reviews_count'
-  | 'book.average_rating'
-  | 'book.children'
-  | 'book.children.children'
-  | 'book.children.children.children'
-  | 'book.children.children.id'
-  | 'book.children.id'
-  | 'book.children.internal.content'
-  | 'book.children.internal.contentDigest'
-  | 'book.children.internal.contentFilePath'
-  | 'book.children.internal.description'
-  | 'book.children.internal.fieldOwners'
-  | 'book.children.internal.ignoreType'
-  | 'book.children.internal.mediaType'
-  | 'book.children.internal.owner'
-  | 'book.children.internal.type'
-  | 'book.children.parent.children'
-  | 'book.children.parent.id'
-  | 'book.description'
-  | 'book.edition_information'
-  | 'book.format'
-  | 'book.goodreadsId'
-  | 'book.id'
-  | 'book.image_url'
-  | 'book.internal.content'
-  | 'book.internal.contentDigest'
-  | 'book.internal.contentFilePath'
-  | 'book.internal.description'
-  | 'book.internal.fieldOwners'
-  | 'book.internal.ignoreType'
-  | 'book.internal.mediaType'
-  | 'book.internal.owner'
-  | 'book.internal.type'
-  | 'book.isbn'
-  | 'book.isbn13'
-  | 'book.large_image_url'
-  | 'book.link'
-  | 'book.num_pages'
-  | 'book.parent.children'
-  | 'book.parent.children.children'
-  | 'book.parent.children.id'
-  | 'book.parent.id'
-  | 'book.parent.internal.content'
-  | 'book.parent.internal.contentDigest'
-  | 'book.parent.internal.contentFilePath'
-  | 'book.parent.internal.description'
-  | 'book.parent.internal.fieldOwners'
-  | 'book.parent.internal.ignoreType'
-  | 'book.parent.internal.mediaType'
-  | 'book.parent.internal.owner'
-  | 'book.parent.internal.type'
-  | 'book.parent.parent.children'
-  | 'book.parent.parent.id'
-  | 'book.publication_day'
-  | 'book.publication_month'
-  | 'book.publication_year'
-  | 'book.published'
-  | 'book.publisher'
-  | 'book.ratings_count'
-  | 'book.reviews'
-  | 'book.reviews.body'
-  | 'book.reviews.book.authors'
-  | 'book.reviews.book.average_rating'
-  | 'book.reviews.book.children'
-  | 'book.reviews.book.description'
-  | 'book.reviews.book.edition_information'
-  | 'book.reviews.book.format'
-  | 'book.reviews.book.goodreadsId'
-  | 'book.reviews.book.id'
-  | 'book.reviews.book.image_url'
-  | 'book.reviews.book.isbn'
-  | 'book.reviews.book.isbn13'
-  | 'book.reviews.book.large_image_url'
-  | 'book.reviews.book.link'
-  | 'book.reviews.book.num_pages'
-  | 'book.reviews.book.publication_day'
-  | 'book.reviews.book.publication_month'
-  | 'book.reviews.book.publication_year'
-  | 'book.reviews.book.published'
-  | 'book.reviews.book.publisher'
-  | 'book.reviews.book.ratings_count'
-  | 'book.reviews.book.reviews'
-  | 'book.reviews.book.small_image_url'
-  | 'book.reviews.book.text_reviews_count'
-  | 'book.reviews.book.title'
-  | 'book.reviews.book.title_without_series'
-  | 'book.reviews.book.uri'
-  | 'book.reviews.children'
-  | 'book.reviews.children.children'
-  | 'book.reviews.children.id'
-  | 'book.reviews.comments_count'
-  | 'book.reviews.date_added'
-  | 'book.reviews.date_updated'
-  | 'book.reviews.goodreadsId'
-  | 'book.reviews.id'
-  | 'book.reviews.internal.content'
-  | 'book.reviews.internal.contentDigest'
-  | 'book.reviews.internal.contentFilePath'
-  | 'book.reviews.internal.description'
-  | 'book.reviews.internal.fieldOwners'
-  | 'book.reviews.internal.ignoreType'
-  | 'book.reviews.internal.mediaType'
-  | 'book.reviews.internal.owner'
-  | 'book.reviews.internal.type'
-  | 'book.reviews.link'
-  | 'book.reviews.owned'
-  | 'book.reviews.parent.children'
-  | 'book.reviews.parent.id'
-  | 'book.reviews.rating'
-  | 'book.reviews.read_at'
-  | 'book.reviews.read_count'
-  | 'book.reviews.spoiler_flag'
-  | 'book.reviews.spoilers_state'
-  | 'book.reviews.started_at'
-  | 'book.reviews.url'
-  | 'book.reviews.votes'
-  | 'book.small_image_url'
-  | 'book.text_reviews_count'
-  | 'book.title'
-  | 'book.title_without_series'
-  | 'book.uri'
-  | 'book.work.id'
-  | 'book.work.uri'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'comments_count'
-  | 'date_added'
-  | 'date_updated'
-  | 'goodreadsId'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'link'
-  | 'owned'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'rating'
-  | 'read_at'
-  | 'read_count'
-  | 'spoiler_flag'
-  | 'spoilers_state'
-  | 'started_at'
-  | 'url'
-  | 'votes';
+type GoodreadsReviewFieldSelector = {
+  readonly body: InputMaybe<FieldSelectorEnum>;
+  readonly book: InputMaybe<GoodreadsBookFieldSelector>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly comments_count: InputMaybe<FieldSelectorEnum>;
+  readonly date_added: InputMaybe<FieldSelectorEnum>;
+  readonly date_updated: InputMaybe<FieldSelectorEnum>;
+  readonly goodreadsId: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly link: InputMaybe<FieldSelectorEnum>;
+  readonly owned: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly rating: InputMaybe<FieldSelectorEnum>;
+  readonly read_at: InputMaybe<FieldSelectorEnum>;
+  readonly read_count: InputMaybe<FieldSelectorEnum>;
+  readonly spoiler_flag: InputMaybe<FieldSelectorEnum>;
+  readonly spoilers_state: InputMaybe<FieldSelectorEnum>;
+  readonly started_at: InputMaybe<FieldSelectorEnum>;
+  readonly url: InputMaybe<FieldSelectorEnum>;
+  readonly votes: InputMaybe<FieldSelectorEnum>;
+};
 
 type GoodreadsReviewFilterInput = {
   readonly body: InputMaybe<StringQueryOperatorInput>;
@@ -2536,34 +1276,52 @@ type GoodreadsReviewGroupConnection = {
 
 
 type GoodreadsReviewGroupConnection_distinctArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 
 type GoodreadsReviewGroupConnection_groupArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsReviewGroupConnection_maxArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 
 type GoodreadsReviewGroupConnection_minArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 
 type GoodreadsReviewGroupConnection_sumArgs = {
-  field: GoodreadsReviewFieldsEnum;
+  field: GoodreadsReviewFieldSelector;
 };
 
 type GoodreadsReviewSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsReviewFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly body: InputMaybe<SortOrderEnum>;
+  readonly book: InputMaybe<GoodreadsBookSortInput>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly comments_count: InputMaybe<SortOrderEnum>;
+  readonly date_added: InputMaybe<SortOrderEnum>;
+  readonly date_updated: InputMaybe<SortOrderEnum>;
+  readonly goodreadsId: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly link: InputMaybe<SortOrderEnum>;
+  readonly owned: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly rating: InputMaybe<SortOrderEnum>;
+  readonly read_at: InputMaybe<SortOrderEnum>;
+  readonly read_count: InputMaybe<SortOrderEnum>;
+  readonly spoiler_flag: InputMaybe<SortOrderEnum>;
+  readonly spoilers_state: InputMaybe<SortOrderEnum>;
+  readonly started_at: InputMaybe<SortOrderEnum>;
+  readonly url: InputMaybe<SortOrderEnum>;
+  readonly votes: InputMaybe<SortOrderEnum>;
 };
 
 type GoodreadsShelf = Node & {
@@ -2593,29 +1351,29 @@ type GoodreadsShelfConnection = {
 
 
 type GoodreadsShelfConnection_distinctArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 
 type GoodreadsShelfConnection_groupArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsShelfConnection_maxArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 
 type GoodreadsShelfConnection_minArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 
 type GoodreadsShelfConnection_sumArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 type GoodreadsShelfEdge = {
@@ -2624,232 +1382,18 @@ type GoodreadsShelfEdge = {
   readonly previous: Maybe<GoodreadsShelf>;
 };
 
-type GoodreadsShelfFieldsEnum =
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'exclusive'
-  | 'goodreadsId'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'name'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'review_shelf_id'
-  | 'reviews'
-  | 'reviews.body'
-  | 'reviews.book.authors'
-  | 'reviews.book.authors.average_rating'
-  | 'reviews.book.authors.books'
-  | 'reviews.book.authors.children'
-  | 'reviews.book.authors.goodreadsId'
-  | 'reviews.book.authors.id'
-  | 'reviews.book.authors.image_url'
-  | 'reviews.book.authors.link'
-  | 'reviews.book.authors.name'
-  | 'reviews.book.authors.ratings_count'
-  | 'reviews.book.authors.role'
-  | 'reviews.book.authors.small_image_url'
-  | 'reviews.book.authors.text_reviews_count'
-  | 'reviews.book.average_rating'
-  | 'reviews.book.children'
-  | 'reviews.book.children.children'
-  | 'reviews.book.children.id'
-  | 'reviews.book.description'
-  | 'reviews.book.edition_information'
-  | 'reviews.book.format'
-  | 'reviews.book.goodreadsId'
-  | 'reviews.book.id'
-  | 'reviews.book.image_url'
-  | 'reviews.book.internal.content'
-  | 'reviews.book.internal.contentDigest'
-  | 'reviews.book.internal.contentFilePath'
-  | 'reviews.book.internal.description'
-  | 'reviews.book.internal.fieldOwners'
-  | 'reviews.book.internal.ignoreType'
-  | 'reviews.book.internal.mediaType'
-  | 'reviews.book.internal.owner'
-  | 'reviews.book.internal.type'
-  | 'reviews.book.isbn'
-  | 'reviews.book.isbn13'
-  | 'reviews.book.large_image_url'
-  | 'reviews.book.link'
-  | 'reviews.book.num_pages'
-  | 'reviews.book.parent.children'
-  | 'reviews.book.parent.id'
-  | 'reviews.book.publication_day'
-  | 'reviews.book.publication_month'
-  | 'reviews.book.publication_year'
-  | 'reviews.book.published'
-  | 'reviews.book.publisher'
-  | 'reviews.book.ratings_count'
-  | 'reviews.book.reviews'
-  | 'reviews.book.reviews.body'
-  | 'reviews.book.reviews.children'
-  | 'reviews.book.reviews.comments_count'
-  | 'reviews.book.reviews.date_added'
-  | 'reviews.book.reviews.date_updated'
-  | 'reviews.book.reviews.goodreadsId'
-  | 'reviews.book.reviews.id'
-  | 'reviews.book.reviews.link'
-  | 'reviews.book.reviews.owned'
-  | 'reviews.book.reviews.rating'
-  | 'reviews.book.reviews.read_at'
-  | 'reviews.book.reviews.read_count'
-  | 'reviews.book.reviews.spoiler_flag'
-  | 'reviews.book.reviews.spoilers_state'
-  | 'reviews.book.reviews.started_at'
-  | 'reviews.book.reviews.url'
-  | 'reviews.book.reviews.votes'
-  | 'reviews.book.small_image_url'
-  | 'reviews.book.text_reviews_count'
-  | 'reviews.book.title'
-  | 'reviews.book.title_without_series'
-  | 'reviews.book.uri'
-  | 'reviews.book.work.id'
-  | 'reviews.book.work.uri'
-  | 'reviews.children'
-  | 'reviews.children.children'
-  | 'reviews.children.children.children'
-  | 'reviews.children.children.id'
-  | 'reviews.children.id'
-  | 'reviews.children.internal.content'
-  | 'reviews.children.internal.contentDigest'
-  | 'reviews.children.internal.contentFilePath'
-  | 'reviews.children.internal.description'
-  | 'reviews.children.internal.fieldOwners'
-  | 'reviews.children.internal.ignoreType'
-  | 'reviews.children.internal.mediaType'
-  | 'reviews.children.internal.owner'
-  | 'reviews.children.internal.type'
-  | 'reviews.children.parent.children'
-  | 'reviews.children.parent.id'
-  | 'reviews.comments_count'
-  | 'reviews.date_added'
-  | 'reviews.date_updated'
-  | 'reviews.goodreadsId'
-  | 'reviews.id'
-  | 'reviews.internal.content'
-  | 'reviews.internal.contentDigest'
-  | 'reviews.internal.contentFilePath'
-  | 'reviews.internal.description'
-  | 'reviews.internal.fieldOwners'
-  | 'reviews.internal.ignoreType'
-  | 'reviews.internal.mediaType'
-  | 'reviews.internal.owner'
-  | 'reviews.internal.type'
-  | 'reviews.link'
-  | 'reviews.owned'
-  | 'reviews.parent.children'
-  | 'reviews.parent.children.children'
-  | 'reviews.parent.children.id'
-  | 'reviews.parent.id'
-  | 'reviews.parent.internal.content'
-  | 'reviews.parent.internal.contentDigest'
-  | 'reviews.parent.internal.contentFilePath'
-  | 'reviews.parent.internal.description'
-  | 'reviews.parent.internal.fieldOwners'
-  | 'reviews.parent.internal.ignoreType'
-  | 'reviews.parent.internal.mediaType'
-  | 'reviews.parent.internal.owner'
-  | 'reviews.parent.internal.type'
-  | 'reviews.parent.parent.children'
-  | 'reviews.parent.parent.id'
-  | 'reviews.rating'
-  | 'reviews.read_at'
-  | 'reviews.read_count'
-  | 'reviews.spoiler_flag'
-  | 'reviews.spoilers_state'
-  | 'reviews.started_at'
-  | 'reviews.url'
-  | 'reviews.votes'
-  | 'sortable';
+type GoodreadsShelfFieldSelector = {
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly exclusive: InputMaybe<FieldSelectorEnum>;
+  readonly goodreadsId: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly review_shelf_id: InputMaybe<FieldSelectorEnum>;
+  readonly reviews: InputMaybe<GoodreadsReviewFieldSelector>;
+  readonly sortable: InputMaybe<FieldSelectorEnum>;
+};
 
 type GoodreadsShelfFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
@@ -2880,43 +1424,43 @@ type GoodreadsShelfGroupConnection = {
 
 
 type GoodreadsShelfGroupConnection_distinctArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 
 type GoodreadsShelfGroupConnection_groupArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type GoodreadsShelfGroupConnection_maxArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 
 type GoodreadsShelfGroupConnection_minArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 
 type GoodreadsShelfGroupConnection_sumArgs = {
-  field: GoodreadsShelfFieldsEnum;
+  field: GoodreadsShelfFieldSelector;
 };
 
 type GoodreadsShelfSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsShelfFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly exclusive: InputMaybe<SortOrderEnum>;
+  readonly goodreadsId: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly review_shelf_id: InputMaybe<SortOrderEnum>;
+  readonly reviews: InputMaybe<GoodreadsReviewSortInput>;
+  readonly sortable: InputMaybe<SortOrderEnum>;
 };
-
-type HeadingsMdx =
-  | 'h1'
-  | 'h2'
-  | 'h3'
-  | 'h4'
-  | 'h5'
-  | 'h6';
 
 type ImageCropFocus =
   | 17
@@ -3076,29 +1620,29 @@ type ImageSharpConnection = {
 
 
 type ImageSharpConnection_distinctArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 
 type ImageSharpConnection_groupArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type ImageSharpConnection_maxArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 
 type ImageSharpConnection_minArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 
 type ImageSharpConnection_sumArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 type ImageSharpEdge = {
@@ -3107,132 +1651,17 @@ type ImageSharpEdge = {
   readonly previous: Maybe<ImageSharp>;
 };
 
-type ImageSharpFieldsEnum =
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'fixed.aspectRatio'
-  | 'fixed.base64'
-  | 'fixed.height'
-  | 'fixed.originalName'
-  | 'fixed.src'
-  | 'fixed.srcSet'
-  | 'fixed.srcSetWebp'
-  | 'fixed.srcWebp'
-  | 'fixed.tracedSVG'
-  | 'fixed.width'
-  | 'fluid.aspectRatio'
-  | 'fluid.base64'
-  | 'fluid.originalImg'
-  | 'fluid.originalName'
-  | 'fluid.presentationHeight'
-  | 'fluid.presentationWidth'
-  | 'fluid.sizes'
-  | 'fluid.src'
-  | 'fluid.srcSet'
-  | 'fluid.srcSetWebp'
-  | 'fluid.srcWebp'
-  | 'fluid.tracedSVG'
-  | 'gatsbyImageData'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'original.height'
-  | 'original.src'
-  | 'original.width'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'resize.aspectRatio'
-  | 'resize.height'
-  | 'resize.originalName'
-  | 'resize.src'
-  | 'resize.tracedSVG'
-  | 'resize.width';
+type ImageSharpFieldSelector = {
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly fixed: InputMaybe<ImageSharpFixedFieldSelector>;
+  readonly fluid: InputMaybe<ImageSharpFluidFieldSelector>;
+  readonly gatsbyImageData: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly original: InputMaybe<ImageSharpOriginalFieldSelector>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly resize: InputMaybe<ImageSharpResizeFieldSelector>;
+};
 
 type ImageSharpFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
@@ -3263,6 +1692,19 @@ type ImageSharpFixed = {
   readonly width: Scalars['Float'];
 };
 
+type ImageSharpFixedFieldSelector = {
+  readonly aspectRatio: InputMaybe<FieldSelectorEnum>;
+  readonly base64: InputMaybe<FieldSelectorEnum>;
+  readonly height: InputMaybe<FieldSelectorEnum>;
+  readonly originalName: InputMaybe<FieldSelectorEnum>;
+  readonly src: InputMaybe<FieldSelectorEnum>;
+  readonly srcSet: InputMaybe<FieldSelectorEnum>;
+  readonly srcSetWebp: InputMaybe<FieldSelectorEnum>;
+  readonly srcWebp: InputMaybe<FieldSelectorEnum>;
+  readonly tracedSVG: InputMaybe<FieldSelectorEnum>;
+  readonly width: InputMaybe<FieldSelectorEnum>;
+};
+
 type ImageSharpFixedFilterInput = {
   readonly aspectRatio: InputMaybe<FloatQueryOperatorInput>;
   readonly base64: InputMaybe<StringQueryOperatorInput>;
@@ -3274,6 +1716,19 @@ type ImageSharpFixedFilterInput = {
   readonly srcWebp: InputMaybe<StringQueryOperatorInput>;
   readonly tracedSVG: InputMaybe<StringQueryOperatorInput>;
   readonly width: InputMaybe<FloatQueryOperatorInput>;
+};
+
+type ImageSharpFixedSortInput = {
+  readonly aspectRatio: InputMaybe<SortOrderEnum>;
+  readonly base64: InputMaybe<SortOrderEnum>;
+  readonly height: InputMaybe<SortOrderEnum>;
+  readonly originalName: InputMaybe<SortOrderEnum>;
+  readonly src: InputMaybe<SortOrderEnum>;
+  readonly srcSet: InputMaybe<SortOrderEnum>;
+  readonly srcSetWebp: InputMaybe<SortOrderEnum>;
+  readonly srcWebp: InputMaybe<SortOrderEnum>;
+  readonly tracedSVG: InputMaybe<SortOrderEnum>;
+  readonly width: InputMaybe<SortOrderEnum>;
 };
 
 type ImageSharpFluid = {
@@ -3291,6 +1746,21 @@ type ImageSharpFluid = {
   readonly tracedSVG: Maybe<Scalars['String']>;
 };
 
+type ImageSharpFluidFieldSelector = {
+  readonly aspectRatio: InputMaybe<FieldSelectorEnum>;
+  readonly base64: InputMaybe<FieldSelectorEnum>;
+  readonly originalImg: InputMaybe<FieldSelectorEnum>;
+  readonly originalName: InputMaybe<FieldSelectorEnum>;
+  readonly presentationHeight: InputMaybe<FieldSelectorEnum>;
+  readonly presentationWidth: InputMaybe<FieldSelectorEnum>;
+  readonly sizes: InputMaybe<FieldSelectorEnum>;
+  readonly src: InputMaybe<FieldSelectorEnum>;
+  readonly srcSet: InputMaybe<FieldSelectorEnum>;
+  readonly srcSetWebp: InputMaybe<FieldSelectorEnum>;
+  readonly srcWebp: InputMaybe<FieldSelectorEnum>;
+  readonly tracedSVG: InputMaybe<FieldSelectorEnum>;
+};
+
 type ImageSharpFluidFilterInput = {
   readonly aspectRatio: InputMaybe<FloatQueryOperatorInput>;
   readonly base64: InputMaybe<StringQueryOperatorInput>;
@@ -3304,6 +1774,21 @@ type ImageSharpFluidFilterInput = {
   readonly srcSetWebp: InputMaybe<StringQueryOperatorInput>;
   readonly srcWebp: InputMaybe<StringQueryOperatorInput>;
   readonly tracedSVG: InputMaybe<StringQueryOperatorInput>;
+};
+
+type ImageSharpFluidSortInput = {
+  readonly aspectRatio: InputMaybe<SortOrderEnum>;
+  readonly base64: InputMaybe<SortOrderEnum>;
+  readonly originalImg: InputMaybe<SortOrderEnum>;
+  readonly originalName: InputMaybe<SortOrderEnum>;
+  readonly presentationHeight: InputMaybe<SortOrderEnum>;
+  readonly presentationWidth: InputMaybe<SortOrderEnum>;
+  readonly sizes: InputMaybe<SortOrderEnum>;
+  readonly src: InputMaybe<SortOrderEnum>;
+  readonly srcSet: InputMaybe<SortOrderEnum>;
+  readonly srcSetWebp: InputMaybe<SortOrderEnum>;
+  readonly srcWebp: InputMaybe<SortOrderEnum>;
+  readonly tracedSVG: InputMaybe<SortOrderEnum>;
 };
 
 type ImageSharpGroupConnection = {
@@ -3322,29 +1807,29 @@ type ImageSharpGroupConnection = {
 
 
 type ImageSharpGroupConnection_distinctArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 
 type ImageSharpGroupConnection_groupArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type ImageSharpGroupConnection_maxArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 
 type ImageSharpGroupConnection_minArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 
 type ImageSharpGroupConnection_sumArgs = {
-  field: ImageSharpFieldsEnum;
+  field: ImageSharpFieldSelector;
 };
 
 type ImageSharpOriginal = {
@@ -3353,10 +1838,22 @@ type ImageSharpOriginal = {
   readonly width: Maybe<Scalars['Float']>;
 };
 
+type ImageSharpOriginalFieldSelector = {
+  readonly height: InputMaybe<FieldSelectorEnum>;
+  readonly src: InputMaybe<FieldSelectorEnum>;
+  readonly width: InputMaybe<FieldSelectorEnum>;
+};
+
 type ImageSharpOriginalFilterInput = {
   readonly height: InputMaybe<FloatQueryOperatorInput>;
   readonly src: InputMaybe<StringQueryOperatorInput>;
   readonly width: InputMaybe<FloatQueryOperatorInput>;
+};
+
+type ImageSharpOriginalSortInput = {
+  readonly height: InputMaybe<SortOrderEnum>;
+  readonly src: InputMaybe<SortOrderEnum>;
+  readonly width: InputMaybe<SortOrderEnum>;
 };
 
 type ImageSharpResize = {
@@ -3368,6 +1865,15 @@ type ImageSharpResize = {
   readonly width: Maybe<Scalars['Int']>;
 };
 
+type ImageSharpResizeFieldSelector = {
+  readonly aspectRatio: InputMaybe<FieldSelectorEnum>;
+  readonly height: InputMaybe<FieldSelectorEnum>;
+  readonly originalName: InputMaybe<FieldSelectorEnum>;
+  readonly src: InputMaybe<FieldSelectorEnum>;
+  readonly tracedSVG: InputMaybe<FieldSelectorEnum>;
+  readonly width: InputMaybe<FieldSelectorEnum>;
+};
+
 type ImageSharpResizeFilterInput = {
   readonly aspectRatio: InputMaybe<FloatQueryOperatorInput>;
   readonly height: InputMaybe<IntQueryOperatorInput>;
@@ -3377,9 +1883,25 @@ type ImageSharpResizeFilterInput = {
   readonly width: InputMaybe<IntQueryOperatorInput>;
 };
 
+type ImageSharpResizeSortInput = {
+  readonly aspectRatio: InputMaybe<SortOrderEnum>;
+  readonly height: InputMaybe<SortOrderEnum>;
+  readonly originalName: InputMaybe<SortOrderEnum>;
+  readonly src: InputMaybe<SortOrderEnum>;
+  readonly tracedSVG: InputMaybe<SortOrderEnum>;
+  readonly width: InputMaybe<SortOrderEnum>;
+};
+
 type ImageSharpSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<ImageSharpFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly fixed: InputMaybe<ImageSharpFixedSortInput>;
+  readonly fluid: InputMaybe<ImageSharpFluidSortInput>;
+  readonly gatsbyImageData: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly original: InputMaybe<ImageSharpOriginalSortInput>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly resize: InputMaybe<ImageSharpResizeSortInput>;
 };
 
 type IntQueryOperatorInput = {
@@ -3405,6 +1927,18 @@ type Internal = {
   readonly type: Scalars['String'];
 };
 
+type InternalFieldSelector = {
+  readonly content: InputMaybe<FieldSelectorEnum>;
+  readonly contentDigest: InputMaybe<FieldSelectorEnum>;
+  readonly contentFilePath: InputMaybe<FieldSelectorEnum>;
+  readonly description: InputMaybe<FieldSelectorEnum>;
+  readonly fieldOwners: InputMaybe<FieldSelectorEnum>;
+  readonly ignoreType: InputMaybe<FieldSelectorEnum>;
+  readonly mediaType: InputMaybe<FieldSelectorEnum>;
+  readonly owner: InputMaybe<FieldSelectorEnum>;
+  readonly type: InputMaybe<FieldSelectorEnum>;
+};
+
 type InternalFilterInput = {
   readonly content: InputMaybe<StringQueryOperatorInput>;
   readonly contentDigest: InputMaybe<StringQueryOperatorInput>;
@@ -3415,6 +1949,18 @@ type InternalFilterInput = {
   readonly mediaType: InputMaybe<StringQueryOperatorInput>;
   readonly owner: InputMaybe<StringQueryOperatorInput>;
   readonly type: InputMaybe<StringQueryOperatorInput>;
+};
+
+type InternalSortInput = {
+  readonly content: InputMaybe<SortOrderEnum>;
+  readonly contentDigest: InputMaybe<SortOrderEnum>;
+  readonly contentFilePath: InputMaybe<SortOrderEnum>;
+  readonly description: InputMaybe<SortOrderEnum>;
+  readonly fieldOwners: InputMaybe<SortOrderEnum>;
+  readonly ignoreType: InputMaybe<SortOrderEnum>;
+  readonly mediaType: InputMaybe<SortOrderEnum>;
+  readonly owner: InputMaybe<SortOrderEnum>;
+  readonly type: InputMaybe<SortOrderEnum>;
 };
 
 type JPGOptions = {
@@ -3432,34 +1978,21 @@ type JSONQueryOperatorInput = {
 };
 
 type Mdx = Node & {
-  readonly body: Scalars['String'];
+  readonly body: Maybe<Scalars['String']>;
   readonly children: ReadonlyArray<Node>;
-  readonly excerpt: Scalars['String'];
+  readonly excerpt: Maybe<Scalars['String']>;
   readonly fields: Maybe<MdxFields>;
-  readonly fileAbsolutePath: Scalars['String'];
   readonly frontmatter: Maybe<MdxFrontmatter>;
-  readonly headings: Maybe<ReadonlyArray<Maybe<MdxHeadingMdx>>>;
-  readonly html: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
   readonly internal: Internal;
-  readonly mdxAST: Maybe<Scalars['JSON']>;
   readonly parent: Maybe<Node>;
-  readonly rawBody: Scalars['String'];
-  readonly slug: Maybe<Scalars['String']>;
   readonly tableOfContents: Maybe<Scalars['JSON']>;
-  readonly timeToRead: Maybe<Scalars['Int']>;
-  readonly wordCount: Maybe<MdxWordCount>;
+  readonly timeToRead: Maybe<Scalars['Float']>;
 };
 
 
 type Mdx_excerptArgs = {
   pruneLength?: InputMaybe<Scalars['Int']>;
-  truncate?: InputMaybe<Scalars['Boolean']>;
-};
-
-
-type Mdx_headingsArgs = {
-  depth: InputMaybe<HeadingsMdx>;
 };
 
 
@@ -3481,29 +2014,29 @@ type MdxConnection = {
 
 
 type MdxConnection_distinctArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 
 type MdxConnection_groupArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type MdxConnection_maxArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 
 type MdxConnection_minArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 
 type MdxConnection_sumArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 type MdxEdge = {
@@ -3512,212 +2045,73 @@ type MdxEdge = {
   readonly previous: Maybe<Mdx>;
 };
 
-type MdxFields = {
-  readonly slug: Maybe<Scalars['String']>;
+type MdxFieldSelector = {
+  readonly body: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly excerpt: InputMaybe<FieldSelectorEnum>;
+  readonly fields: InputMaybe<MdxFieldsFieldSelector>;
+  readonly frontmatter: InputMaybe<MdxFrontmatterFieldSelector>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly tableOfContents: InputMaybe<FieldSelectorEnum>;
+  readonly timeToRead: InputMaybe<FieldSelectorEnum>;
 };
 
-type MdxFieldsEnum =
-  | 'body'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'excerpt'
-  | 'fields.slug'
-  | 'fileAbsolutePath'
-  | 'frontmatter.category'
-  | 'frontmatter.date'
-  | 'frontmatter.description'
-  | 'frontmatter.draft'
-  | 'frontmatter.imageAlt'
-  | 'frontmatter.image.absolutePath'
-  | 'frontmatter.image.accessTime'
-  | 'frontmatter.image.atime'
-  | 'frontmatter.image.atimeMs'
-  | 'frontmatter.image.base'
-  | 'frontmatter.image.birthTime'
-  | 'frontmatter.image.birthtime'
-  | 'frontmatter.image.birthtimeMs'
-  | 'frontmatter.image.blksize'
-  | 'frontmatter.image.blocks'
-  | 'frontmatter.image.changeTime'
-  | 'frontmatter.image.childImageSharp.children'
-  | 'frontmatter.image.childImageSharp.gatsbyImageData'
-  | 'frontmatter.image.childImageSharp.id'
-  | 'frontmatter.image.childMdx.body'
-  | 'frontmatter.image.childMdx.children'
-  | 'frontmatter.image.childMdx.excerpt'
-  | 'frontmatter.image.childMdx.fileAbsolutePath'
-  | 'frontmatter.image.childMdx.headings'
-  | 'frontmatter.image.childMdx.html'
-  | 'frontmatter.image.childMdx.id'
-  | 'frontmatter.image.childMdx.mdxAST'
-  | 'frontmatter.image.childMdx.rawBody'
-  | 'frontmatter.image.childMdx.slug'
-  | 'frontmatter.image.childMdx.tableOfContents'
-  | 'frontmatter.image.childMdx.timeToRead'
-  | 'frontmatter.image.children'
-  | 'frontmatter.image.childrenImageSharp'
-  | 'frontmatter.image.childrenImageSharp.children'
-  | 'frontmatter.image.childrenImageSharp.gatsbyImageData'
-  | 'frontmatter.image.childrenImageSharp.id'
-  | 'frontmatter.image.childrenMdx'
-  | 'frontmatter.image.childrenMdx.body'
-  | 'frontmatter.image.childrenMdx.children'
-  | 'frontmatter.image.childrenMdx.excerpt'
-  | 'frontmatter.image.childrenMdx.fileAbsolutePath'
-  | 'frontmatter.image.childrenMdx.headings'
-  | 'frontmatter.image.childrenMdx.html'
-  | 'frontmatter.image.childrenMdx.id'
-  | 'frontmatter.image.childrenMdx.mdxAST'
-  | 'frontmatter.image.childrenMdx.rawBody'
-  | 'frontmatter.image.childrenMdx.slug'
-  | 'frontmatter.image.childrenMdx.tableOfContents'
-  | 'frontmatter.image.childrenMdx.timeToRead'
-  | 'frontmatter.image.children.children'
-  | 'frontmatter.image.children.id'
-  | 'frontmatter.image.ctime'
-  | 'frontmatter.image.ctimeMs'
-  | 'frontmatter.image.dev'
-  | 'frontmatter.image.dir'
-  | 'frontmatter.image.ext'
-  | 'frontmatter.image.extension'
-  | 'frontmatter.image.gid'
-  | 'frontmatter.image.id'
-  | 'frontmatter.image.ino'
-  | 'frontmatter.image.internal.content'
-  | 'frontmatter.image.internal.contentDigest'
-  | 'frontmatter.image.internal.contentFilePath'
-  | 'frontmatter.image.internal.description'
-  | 'frontmatter.image.internal.fieldOwners'
-  | 'frontmatter.image.internal.ignoreType'
-  | 'frontmatter.image.internal.mediaType'
-  | 'frontmatter.image.internal.owner'
-  | 'frontmatter.image.internal.type'
-  | 'frontmatter.image.mode'
-  | 'frontmatter.image.modifiedTime'
-  | 'frontmatter.image.mtime'
-  | 'frontmatter.image.mtimeMs'
-  | 'frontmatter.image.name'
-  | 'frontmatter.image.nlink'
-  | 'frontmatter.image.parent.children'
-  | 'frontmatter.image.parent.id'
-  | 'frontmatter.image.prettySize'
-  | 'frontmatter.image.publicURL'
-  | 'frontmatter.image.rdev'
-  | 'frontmatter.image.relativeDirectory'
-  | 'frontmatter.image.relativePath'
-  | 'frontmatter.image.root'
-  | 'frontmatter.image.size'
-  | 'frontmatter.image.sourceInstanceName'
-  | 'frontmatter.image.uid'
-  | 'frontmatter.linkText'
-  | 'frontmatter.title'
-  | 'frontmatter.updated'
-  | 'headings'
-  | 'headings.depth'
-  | 'headings.value'
-  | 'html'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'mdxAST'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'rawBody'
-  | 'slug'
-  | 'tableOfContents'
-  | 'timeToRead'
-  | 'wordCount.paragraphs'
-  | 'wordCount.sentences'
-  | 'wordCount.words';
+type MdxFields = {
+  readonly timeToRead: Maybe<MdxFieldsTimeToRead>;
+};
+
+type MdxFieldsFieldSelector = {
+  readonly timeToRead: InputMaybe<MdxFieldsTimeToReadFieldSelector>;
+};
 
 type MdxFieldsFilterInput = {
-  readonly slug: InputMaybe<StringQueryOperatorInput>;
+  readonly timeToRead: InputMaybe<MdxFieldsTimeToReadFilterInput>;
+};
+
+type MdxFieldsSortInput = {
+  readonly timeToRead: InputMaybe<MdxFieldsTimeToReadSortInput>;
+};
+
+type MdxFieldsTimeToRead = {
+  readonly minutes: Maybe<Scalars['Int']>;
+  readonly time: Maybe<Scalars['Int']>;
+  readonly words: Maybe<MdxFieldsTimeToReadWords>;
+};
+
+type MdxFieldsTimeToReadFieldSelector = {
+  readonly minutes: InputMaybe<FieldSelectorEnum>;
+  readonly time: InputMaybe<FieldSelectorEnum>;
+  readonly words: InputMaybe<MdxFieldsTimeToReadWordsFieldSelector>;
+};
+
+type MdxFieldsTimeToReadFilterInput = {
+  readonly minutes: InputMaybe<IntQueryOperatorInput>;
+  readonly time: InputMaybe<IntQueryOperatorInput>;
+  readonly words: InputMaybe<MdxFieldsTimeToReadWordsFilterInput>;
+};
+
+type MdxFieldsTimeToReadSortInput = {
+  readonly minutes: InputMaybe<SortOrderEnum>;
+  readonly time: InputMaybe<SortOrderEnum>;
+  readonly words: InputMaybe<MdxFieldsTimeToReadWordsSortInput>;
+};
+
+type MdxFieldsTimeToReadWords = {
+  readonly total: Maybe<Scalars['Int']>;
+};
+
+type MdxFieldsTimeToReadWordsFieldSelector = {
+  readonly total: InputMaybe<FieldSelectorEnum>;
+};
+
+type MdxFieldsTimeToReadWordsFilterInput = {
+  readonly total: InputMaybe<IntQueryOperatorInput>;
+};
+
+type MdxFieldsTimeToReadWordsSortInput = {
+  readonly total: InputMaybe<SortOrderEnum>;
 };
 
 type MdxFilterInput = {
@@ -3725,19 +2119,12 @@ type MdxFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
   readonly excerpt: InputMaybe<StringQueryOperatorInput>;
   readonly fields: InputMaybe<MdxFieldsFilterInput>;
-  readonly fileAbsolutePath: InputMaybe<StringQueryOperatorInput>;
   readonly frontmatter: InputMaybe<MdxFrontmatterFilterInput>;
-  readonly headings: InputMaybe<MdxHeadingMdxFilterListInput>;
-  readonly html: InputMaybe<StringQueryOperatorInput>;
   readonly id: InputMaybe<StringQueryOperatorInput>;
   readonly internal: InputMaybe<InternalFilterInput>;
-  readonly mdxAST: InputMaybe<JSONQueryOperatorInput>;
   readonly parent: InputMaybe<NodeFilterInput>;
-  readonly rawBody: InputMaybe<StringQueryOperatorInput>;
-  readonly slug: InputMaybe<StringQueryOperatorInput>;
   readonly tableOfContents: InputMaybe<JSONQueryOperatorInput>;
-  readonly timeToRead: InputMaybe<IntQueryOperatorInput>;
-  readonly wordCount: InputMaybe<MdxWordCountFilterInput>;
+  readonly timeToRead: InputMaybe<FloatQueryOperatorInput>;
 };
 
 type MdxFilterListInput = {
@@ -3752,6 +2139,7 @@ type MdxFrontmatter = {
   readonly image: File;
   readonly imageAlt: Scalars['String'];
   readonly linkText: Maybe<Scalars['String']>;
+  readonly slug: Scalars['String'];
   readonly title: Scalars['String'];
   readonly updated: Maybe<Scalars['Date']>;
 };
@@ -3772,6 +2160,19 @@ type MdxFrontmatter_updatedArgs = {
   locale: InputMaybe<Scalars['String']>;
 };
 
+type MdxFrontmatterFieldSelector = {
+  readonly category: InputMaybe<FieldSelectorEnum>;
+  readonly date: InputMaybe<FieldSelectorEnum>;
+  readonly description: InputMaybe<FieldSelectorEnum>;
+  readonly draft: InputMaybe<FieldSelectorEnum>;
+  readonly image: InputMaybe<FileFieldSelector>;
+  readonly imageAlt: InputMaybe<FieldSelectorEnum>;
+  readonly linkText: InputMaybe<FieldSelectorEnum>;
+  readonly slug: InputMaybe<FieldSelectorEnum>;
+  readonly title: InputMaybe<FieldSelectorEnum>;
+  readonly updated: InputMaybe<FieldSelectorEnum>;
+};
+
 type MdxFrontmatterFilterInput = {
   readonly category: InputMaybe<StringQueryOperatorInput>;
   readonly date: InputMaybe<DateQueryOperatorInput>;
@@ -3780,8 +2181,22 @@ type MdxFrontmatterFilterInput = {
   readonly image: InputMaybe<FileFilterInput>;
   readonly imageAlt: InputMaybe<StringQueryOperatorInput>;
   readonly linkText: InputMaybe<StringQueryOperatorInput>;
+  readonly slug: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly updated: InputMaybe<DateQueryOperatorInput>;
+};
+
+type MdxFrontmatterSortInput = {
+  readonly category: InputMaybe<SortOrderEnum>;
+  readonly date: InputMaybe<SortOrderEnum>;
+  readonly description: InputMaybe<SortOrderEnum>;
+  readonly draft: InputMaybe<SortOrderEnum>;
+  readonly image: InputMaybe<FileSortInput>;
+  readonly imageAlt: InputMaybe<SortOrderEnum>;
+  readonly linkText: InputMaybe<SortOrderEnum>;
+  readonly slug: InputMaybe<SortOrderEnum>;
+  readonly title: InputMaybe<SortOrderEnum>;
+  readonly updated: InputMaybe<SortOrderEnum>;
 };
 
 type MdxGroupConnection = {
@@ -3800,60 +2215,42 @@ type MdxGroupConnection = {
 
 
 type MdxGroupConnection_distinctArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 
 type MdxGroupConnection_groupArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type MdxGroupConnection_maxArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 
 type MdxGroupConnection_minArgs = {
-  field: MdxFieldsEnum;
+  field: MdxFieldSelector;
 };
 
 
 type MdxGroupConnection_sumArgs = {
-  field: MdxFieldsEnum;
-};
-
-type MdxHeadingMdx = {
-  readonly depth: Maybe<Scalars['Int']>;
-  readonly value: Maybe<Scalars['String']>;
-};
-
-type MdxHeadingMdxFilterInput = {
-  readonly depth: InputMaybe<IntQueryOperatorInput>;
-  readonly value: InputMaybe<StringQueryOperatorInput>;
-};
-
-type MdxHeadingMdxFilterListInput = {
-  readonly elemMatch: InputMaybe<MdxHeadingMdxFilterInput>;
+  field: MdxFieldSelector;
 };
 
 type MdxSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<MdxFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
-};
-
-type MdxWordCount = {
-  readonly paragraphs: Maybe<Scalars['Int']>;
-  readonly sentences: Maybe<Scalars['Int']>;
-  readonly words: Maybe<Scalars['Int']>;
-};
-
-type MdxWordCountFilterInput = {
-  readonly paragraphs: InputMaybe<IntQueryOperatorInput>;
-  readonly sentences: InputMaybe<IntQueryOperatorInput>;
-  readonly words: InputMaybe<IntQueryOperatorInput>;
+  readonly body: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly excerpt: InputMaybe<SortOrderEnum>;
+  readonly fields: InputMaybe<MdxFieldsSortInput>;
+  readonly frontmatter: InputMaybe<MdxFrontmatterSortInput>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly tableOfContents: InputMaybe<SortOrderEnum>;
+  readonly timeToRead: InputMaybe<SortOrderEnum>;
 };
 
 /** Node Interface */
@@ -3862,6 +2259,13 @@ type Node = {
   readonly id: Scalars['ID'];
   readonly internal: Internal;
   readonly parent: Maybe<Node>;
+};
+
+type NodeFieldSelector = {
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
 };
 
 type NodeFilterInput = {
@@ -3873,6 +2277,13 @@ type NodeFilterInput = {
 
 type NodeFilterListInput = {
   readonly elemMatch: InputMaybe<NodeFilterInput>;
+};
+
+type NodeSortInput = {
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly parent: InputMaybe<NodeSortInput>;
 };
 
 type PNGOptions = {
@@ -3946,7 +2357,7 @@ type Query_allDirectoryArgs = {
   filter: InputMaybe<DirectoryFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<DirectorySortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<DirectorySortInput>>>;
 };
 
 
@@ -3954,7 +2365,7 @@ type Query_allFileArgs = {
   filter: InputMaybe<FileFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<FileSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<FileSortInput>>>;
 };
 
 
@@ -3962,7 +2373,7 @@ type Query_allGoodreadsAuthorArgs = {
   filter: InputMaybe<GoodreadsAuthorFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<GoodreadsAuthorSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsAuthorSortInput>>>;
 };
 
 
@@ -3970,7 +2381,7 @@ type Query_allGoodreadsBookArgs = {
   filter: InputMaybe<GoodreadsBookFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<GoodreadsBookSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsBookSortInput>>>;
 };
 
 
@@ -3978,7 +2389,7 @@ type Query_allGoodreadsReviewArgs = {
   filter: InputMaybe<GoodreadsReviewFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<GoodreadsReviewSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsReviewSortInput>>>;
 };
 
 
@@ -3986,7 +2397,7 @@ type Query_allGoodreadsShelfArgs = {
   filter: InputMaybe<GoodreadsShelfFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<GoodreadsShelfSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<GoodreadsShelfSortInput>>>;
 };
 
 
@@ -3994,7 +2405,7 @@ type Query_allImageSharpArgs = {
   filter: InputMaybe<ImageSharpFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<ImageSharpSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<ImageSharpSortInput>>>;
 };
 
 
@@ -4002,7 +2413,7 @@ type Query_allMdxArgs = {
   filter: InputMaybe<MdxFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<MdxSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<MdxSortInput>>>;
 };
 
 
@@ -4010,7 +2421,7 @@ type Query_allSiteArgs = {
   filter: InputMaybe<SiteFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<SiteSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SiteSortInput>>>;
 };
 
 
@@ -4018,7 +2429,7 @@ type Query_allSiteBuildMetadataArgs = {
   filter: InputMaybe<SiteBuildMetadataFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<SiteBuildMetadataSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SiteBuildMetadataSortInput>>>;
 };
 
 
@@ -4026,7 +2437,7 @@ type Query_allSiteFunctionArgs = {
   filter: InputMaybe<SiteFunctionFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<SiteFunctionSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SiteFunctionSortInput>>>;
 };
 
 
@@ -4034,7 +2445,7 @@ type Query_allSitePageArgs = {
   filter: InputMaybe<SitePageFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<SitePageSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SitePageSortInput>>>;
 };
 
 
@@ -4042,7 +2453,7 @@ type Query_allSitePluginArgs = {
   filter: InputMaybe<SitePluginFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<SitePluginSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SitePluginSortInput>>>;
 };
 
 
@@ -4050,7 +2461,7 @@ type Query_allSoftwareJsonArgs = {
   filter: InputMaybe<SoftwareJsonFilterInput>;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
-  sort: InputMaybe<SoftwareJsonSortInput>;
+  sort: InputMaybe<ReadonlyArray<InputMaybe<SoftwareJsonSortInput>>>;
 };
 
 
@@ -4246,19 +2657,12 @@ type Query_mdxArgs = {
   children: InputMaybe<NodeFilterListInput>;
   excerpt: InputMaybe<StringQueryOperatorInput>;
   fields: InputMaybe<MdxFieldsFilterInput>;
-  fileAbsolutePath: InputMaybe<StringQueryOperatorInput>;
   frontmatter: InputMaybe<MdxFrontmatterFilterInput>;
-  headings: InputMaybe<MdxHeadingMdxFilterListInput>;
-  html: InputMaybe<StringQueryOperatorInput>;
   id: InputMaybe<StringQueryOperatorInput>;
   internal: InputMaybe<InternalFilterInput>;
-  mdxAST: InputMaybe<JSONQueryOperatorInput>;
   parent: InputMaybe<NodeFilterInput>;
-  rawBody: InputMaybe<StringQueryOperatorInput>;
-  slug: InputMaybe<StringQueryOperatorInput>;
   tableOfContents: InputMaybe<JSONQueryOperatorInput>;
-  timeToRead: InputMaybe<IntQueryOperatorInput>;
-  wordCount: InputMaybe<MdxWordCountFilterInput>;
+  timeToRead: InputMaybe<FloatQueryOperatorInput>;
 };
 
 
@@ -4400,29 +2804,29 @@ type SiteBuildMetadataConnection = {
 
 
 type SiteBuildMetadataConnection_distinctArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 
 type SiteBuildMetadataConnection_groupArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SiteBuildMetadataConnection_maxArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 
 type SiteBuildMetadataConnection_minArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 
 type SiteBuildMetadataConnection_sumArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 type SiteBuildMetadataEdge = {
@@ -4431,101 +2835,13 @@ type SiteBuildMetadataEdge = {
   readonly previous: Maybe<SiteBuildMetadata>;
 };
 
-type SiteBuildMetadataFieldsEnum =
-  | 'buildTime'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id';
+type SiteBuildMetadataFieldSelector = {
+  readonly buildTime: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+};
 
 type SiteBuildMetadataFilterInput = {
   readonly buildTime: InputMaybe<DateQueryOperatorInput>;
@@ -4551,34 +2867,37 @@ type SiteBuildMetadataGroupConnection = {
 
 
 type SiteBuildMetadataGroupConnection_distinctArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 
 type SiteBuildMetadataGroupConnection_groupArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SiteBuildMetadataGroupConnection_maxArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 
 type SiteBuildMetadataGroupConnection_minArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 
 type SiteBuildMetadataGroupConnection_sumArgs = {
-  field: SiteBuildMetadataFieldsEnum;
+  field: SiteBuildMetadataFieldSelector;
 };
 
 type SiteBuildMetadataSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SiteBuildMetadataFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly buildTime: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly parent: InputMaybe<NodeSortInput>;
 };
 
 type SiteConnection = {
@@ -4595,29 +2914,29 @@ type SiteConnection = {
 
 
 type SiteConnection_distinctArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 
 type SiteConnection_groupArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SiteConnection_maxArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 
 type SiteConnection_minArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 
 type SiteConnection_sumArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 type SiteEdge = {
@@ -4626,119 +2945,22 @@ type SiteEdge = {
   readonly previous: Maybe<Site>;
 };
 
-type SiteFieldsEnum =
-  | 'buildTime'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'flags.FAST_DEV'
-  | 'flags.PARALLEL_SOURCING'
-  | 'flags.PRESERVE_FILE_DOWNLOAD_CACHE'
-  | 'graphqlTypegen.generateOnBuild'
-  | 'graphqlTypegen.typesOutputPath'
-  | 'host'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'jsxRuntime'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'pathPrefix'
-  | 'polyfill'
-  | 'port'
-  | 'siteMetadata.author'
-  | 'siteMetadata.description'
-  | 'siteMetadata.image'
-  | 'siteMetadata.imageAlt'
-  | 'siteMetadata.siteUrl'
-  | 'siteMetadata.social.twitter'
-  | 'siteMetadata.title'
-  | 'trailingSlash';
+type SiteFieldSelector = {
+  readonly buildTime: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly flags: InputMaybe<SiteFlagsFieldSelector>;
+  readonly graphqlTypegen: InputMaybe<SiteGraphqlTypegenFieldSelector>;
+  readonly host: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly jsxRuntime: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly pathPrefix: InputMaybe<FieldSelectorEnum>;
+  readonly polyfill: InputMaybe<FieldSelectorEnum>;
+  readonly port: InputMaybe<FieldSelectorEnum>;
+  readonly siteMetadata: InputMaybe<SiteSiteMetadataFieldSelector>;
+  readonly trailingSlash: InputMaybe<FieldSelectorEnum>;
+};
 
 type SiteFilterInput = {
   readonly buildTime: InputMaybe<DateQueryOperatorInput>;
@@ -4763,10 +2985,22 @@ type SiteFlags = {
   readonly PRESERVE_FILE_DOWNLOAD_CACHE: Maybe<Scalars['Boolean']>;
 };
 
+type SiteFlagsFieldSelector = {
+  readonly FAST_DEV: InputMaybe<FieldSelectorEnum>;
+  readonly PARALLEL_SOURCING: InputMaybe<FieldSelectorEnum>;
+  readonly PRESERVE_FILE_DOWNLOAD_CACHE: InputMaybe<FieldSelectorEnum>;
+};
+
 type SiteFlagsFilterInput = {
   readonly FAST_DEV: InputMaybe<BooleanQueryOperatorInput>;
   readonly PARALLEL_SOURCING: InputMaybe<BooleanQueryOperatorInput>;
   readonly PRESERVE_FILE_DOWNLOAD_CACHE: InputMaybe<BooleanQueryOperatorInput>;
+};
+
+type SiteFlagsSortInput = {
+  readonly FAST_DEV: InputMaybe<SortOrderEnum>;
+  readonly PARALLEL_SOURCING: InputMaybe<SortOrderEnum>;
+  readonly PRESERVE_FILE_DOWNLOAD_CACHE: InputMaybe<SortOrderEnum>;
 };
 
 type SiteFunction = Node & {
@@ -4797,29 +3031,29 @@ type SiteFunctionConnection = {
 
 
 type SiteFunctionConnection_distinctArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 
 type SiteFunctionConnection_groupArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SiteFunctionConnection_maxArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 
 type SiteFunctionConnection_minArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 
 type SiteFunctionConnection_sumArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 type SiteFunctionEdge = {
@@ -4828,107 +3062,19 @@ type SiteFunctionEdge = {
   readonly previous: Maybe<SiteFunction>;
 };
 
-type SiteFunctionFieldsEnum =
-  | 'absoluteCompiledFilePath'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'functionRoute'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'matchPath'
-  | 'originalAbsoluteFilePath'
-  | 'originalRelativeFilePath'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'pluginName'
-  | 'relativeCompiledFilePath';
+type SiteFunctionFieldSelector = {
+  readonly absoluteCompiledFilePath: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly functionRoute: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly matchPath: InputMaybe<FieldSelectorEnum>;
+  readonly originalAbsoluteFilePath: InputMaybe<FieldSelectorEnum>;
+  readonly originalRelativeFilePath: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly pluginName: InputMaybe<FieldSelectorEnum>;
+  readonly relativeCompiledFilePath: InputMaybe<FieldSelectorEnum>;
+};
 
 type SiteFunctionFilterInput = {
   readonly absoluteCompiledFilePath: InputMaybe<StringQueryOperatorInput>;
@@ -4960,34 +3106,43 @@ type SiteFunctionGroupConnection = {
 
 
 type SiteFunctionGroupConnection_distinctArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 
 type SiteFunctionGroupConnection_groupArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SiteFunctionGroupConnection_maxArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 
 type SiteFunctionGroupConnection_minArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 
 type SiteFunctionGroupConnection_sumArgs = {
-  field: SiteFunctionFieldsEnum;
+  field: SiteFunctionFieldSelector;
 };
 
 type SiteFunctionSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SiteFunctionFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly absoluteCompiledFilePath: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly functionRoute: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly matchPath: InputMaybe<SortOrderEnum>;
+  readonly originalAbsoluteFilePath: InputMaybe<SortOrderEnum>;
+  readonly originalRelativeFilePath: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly pluginName: InputMaybe<SortOrderEnum>;
+  readonly relativeCompiledFilePath: InputMaybe<SortOrderEnum>;
 };
 
 type SiteGraphqlTypegen = {
@@ -4995,9 +3150,19 @@ type SiteGraphqlTypegen = {
   readonly typesOutputPath: Maybe<Scalars['String']>;
 };
 
+type SiteGraphqlTypegenFieldSelector = {
+  readonly generateOnBuild: InputMaybe<FieldSelectorEnum>;
+  readonly typesOutputPath: InputMaybe<FieldSelectorEnum>;
+};
+
 type SiteGraphqlTypegenFilterInput = {
   readonly generateOnBuild: InputMaybe<BooleanQueryOperatorInput>;
   readonly typesOutputPath: InputMaybe<StringQueryOperatorInput>;
+};
+
+type SiteGraphqlTypegenSortInput = {
+  readonly generateOnBuild: InputMaybe<SortOrderEnum>;
+  readonly typesOutputPath: InputMaybe<SortOrderEnum>;
 };
 
 type SiteGroupConnection = {
@@ -5016,29 +3181,29 @@ type SiteGroupConnection = {
 
 
 type SiteGroupConnection_distinctArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 
 type SiteGroupConnection_groupArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SiteGroupConnection_maxArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 
 type SiteGroupConnection_minArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 
 type SiteGroupConnection_sumArgs = {
-  field: SiteFieldsEnum;
+  field: SiteFieldSelector;
 };
 
 type SitePage = Node & {
@@ -5069,29 +3234,29 @@ type SitePageConnection = {
 
 
 type SitePageConnection_distinctArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 
 type SitePageConnection_groupArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SitePageConnection_maxArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 
 type SitePageConnection_minArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 
 type SitePageConnection_sumArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 type SitePageEdge = {
@@ -5100,156 +3265,19 @@ type SitePageEdge = {
   readonly previous: Maybe<SitePage>;
 };
 
-type SitePageFieldsEnum =
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'component'
-  | 'componentChunkName'
-  | 'id'
-  | 'internalComponentName'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'matchPath'
-  | 'pageContext'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'path'
-  | 'pluginCreator.browserAPIs'
-  | 'pluginCreator.children'
-  | 'pluginCreator.children.children'
-  | 'pluginCreator.children.children.children'
-  | 'pluginCreator.children.children.id'
-  | 'pluginCreator.children.id'
-  | 'pluginCreator.children.internal.content'
-  | 'pluginCreator.children.internal.contentDigest'
-  | 'pluginCreator.children.internal.contentFilePath'
-  | 'pluginCreator.children.internal.description'
-  | 'pluginCreator.children.internal.fieldOwners'
-  | 'pluginCreator.children.internal.ignoreType'
-  | 'pluginCreator.children.internal.mediaType'
-  | 'pluginCreator.children.internal.owner'
-  | 'pluginCreator.children.internal.type'
-  | 'pluginCreator.children.parent.children'
-  | 'pluginCreator.children.parent.id'
-  | 'pluginCreator.id'
-  | 'pluginCreator.internal.content'
-  | 'pluginCreator.internal.contentDigest'
-  | 'pluginCreator.internal.contentFilePath'
-  | 'pluginCreator.internal.description'
-  | 'pluginCreator.internal.fieldOwners'
-  | 'pluginCreator.internal.ignoreType'
-  | 'pluginCreator.internal.mediaType'
-  | 'pluginCreator.internal.owner'
-  | 'pluginCreator.internal.type'
-  | 'pluginCreator.name'
-  | 'pluginCreator.nodeAPIs'
-  | 'pluginCreator.packageJson'
-  | 'pluginCreator.parent.children'
-  | 'pluginCreator.parent.children.children'
-  | 'pluginCreator.parent.children.id'
-  | 'pluginCreator.parent.id'
-  | 'pluginCreator.parent.internal.content'
-  | 'pluginCreator.parent.internal.contentDigest'
-  | 'pluginCreator.parent.internal.contentFilePath'
-  | 'pluginCreator.parent.internal.description'
-  | 'pluginCreator.parent.internal.fieldOwners'
-  | 'pluginCreator.parent.internal.ignoreType'
-  | 'pluginCreator.parent.internal.mediaType'
-  | 'pluginCreator.parent.internal.owner'
-  | 'pluginCreator.parent.internal.type'
-  | 'pluginCreator.parent.parent.children'
-  | 'pluginCreator.parent.parent.id'
-  | 'pluginCreator.pluginFilepath'
-  | 'pluginCreator.pluginOptions'
-  | 'pluginCreator.resolve'
-  | 'pluginCreator.ssrAPIs'
-  | 'pluginCreator.version';
+type SitePageFieldSelector = {
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly component: InputMaybe<FieldSelectorEnum>;
+  readonly componentChunkName: InputMaybe<FieldSelectorEnum>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly internalComponentName: InputMaybe<FieldSelectorEnum>;
+  readonly matchPath: InputMaybe<FieldSelectorEnum>;
+  readonly pageContext: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly path: InputMaybe<FieldSelectorEnum>;
+  readonly pluginCreator: InputMaybe<SitePluginFieldSelector>;
+};
 
 type SitePageFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
@@ -5281,34 +3309,43 @@ type SitePageGroupConnection = {
 
 
 type SitePageGroupConnection_distinctArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 
 type SitePageGroupConnection_groupArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SitePageGroupConnection_maxArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 
 type SitePageGroupConnection_minArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 
 type SitePageGroupConnection_sumArgs = {
-  field: SitePageFieldsEnum;
+  field: SitePageFieldSelector;
 };
 
 type SitePageSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SitePageFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly component: InputMaybe<SortOrderEnum>;
+  readonly componentChunkName: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly internalComponentName: InputMaybe<SortOrderEnum>;
+  readonly matchPath: InputMaybe<SortOrderEnum>;
+  readonly pageContext: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly path: InputMaybe<SortOrderEnum>;
+  readonly pluginCreator: InputMaybe<SitePluginSortInput>;
 };
 
 type SitePlugin = Node & {
@@ -5341,29 +3378,29 @@ type SitePluginConnection = {
 
 
 type SitePluginConnection_distinctArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 
 type SitePluginConnection_groupArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SitePluginConnection_maxArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 
 type SitePluginConnection_minArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 
 type SitePluginConnection_sumArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 type SitePluginEdge = {
@@ -5372,109 +3409,21 @@ type SitePluginEdge = {
   readonly previous: Maybe<SitePlugin>;
 };
 
-type SitePluginFieldsEnum =
-  | 'browserAPIs'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'name'
-  | 'nodeAPIs'
-  | 'packageJson'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id'
-  | 'pluginFilepath'
-  | 'pluginOptions'
-  | 'resolve'
-  | 'ssrAPIs'
-  | 'version';
+type SitePluginFieldSelector = {
+  readonly browserAPIs: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly name: InputMaybe<FieldSelectorEnum>;
+  readonly nodeAPIs: InputMaybe<FieldSelectorEnum>;
+  readonly packageJson: InputMaybe<FieldSelectorEnum>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+  readonly pluginFilepath: InputMaybe<FieldSelectorEnum>;
+  readonly pluginOptions: InputMaybe<FieldSelectorEnum>;
+  readonly resolve: InputMaybe<FieldSelectorEnum>;
+  readonly ssrAPIs: InputMaybe<FieldSelectorEnum>;
+  readonly version: InputMaybe<FieldSelectorEnum>;
+};
 
 type SitePluginFilterInput = {
   readonly browserAPIs: InputMaybe<StringQueryOperatorInput>;
@@ -5508,34 +3457,45 @@ type SitePluginGroupConnection = {
 
 
 type SitePluginGroupConnection_distinctArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 
 type SitePluginGroupConnection_groupArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SitePluginGroupConnection_maxArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 
 type SitePluginGroupConnection_minArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 
 type SitePluginGroupConnection_sumArgs = {
-  field: SitePluginFieldsEnum;
+  field: SitePluginFieldSelector;
 };
 
 type SitePluginSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SitePluginFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly browserAPIs: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly name: InputMaybe<SortOrderEnum>;
+  readonly nodeAPIs: InputMaybe<SortOrderEnum>;
+  readonly packageJson: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly pluginFilepath: InputMaybe<SortOrderEnum>;
+  readonly pluginOptions: InputMaybe<SortOrderEnum>;
+  readonly resolve: InputMaybe<SortOrderEnum>;
+  readonly ssrAPIs: InputMaybe<SortOrderEnum>;
+  readonly version: InputMaybe<SortOrderEnum>;
 };
 
 type SiteSiteMetadata = {
@@ -5546,6 +3506,16 @@ type SiteSiteMetadata = {
   readonly siteUrl: Scalars['String'];
   readonly social: SiteSiteMetadataSocial;
   readonly title: Scalars['String'];
+};
+
+type SiteSiteMetadataFieldSelector = {
+  readonly author: InputMaybe<FieldSelectorEnum>;
+  readonly description: InputMaybe<FieldSelectorEnum>;
+  readonly image: InputMaybe<FieldSelectorEnum>;
+  readonly imageAlt: InputMaybe<FieldSelectorEnum>;
+  readonly siteUrl: InputMaybe<FieldSelectorEnum>;
+  readonly social: InputMaybe<SiteSiteMetadataSocialFieldSelector>;
+  readonly title: InputMaybe<FieldSelectorEnum>;
 };
 
 type SiteSiteMetadataFilterInput = {
@@ -5562,13 +3532,43 @@ type SiteSiteMetadataSocial = {
   readonly twitter: Scalars['String'];
 };
 
+type SiteSiteMetadataSocialFieldSelector = {
+  readonly twitter: InputMaybe<FieldSelectorEnum>;
+};
+
 type SiteSiteMetadataSocialFilterInput = {
   readonly twitter: InputMaybe<StringQueryOperatorInput>;
 };
 
+type SiteSiteMetadataSocialSortInput = {
+  readonly twitter: InputMaybe<SortOrderEnum>;
+};
+
+type SiteSiteMetadataSortInput = {
+  readonly author: InputMaybe<SortOrderEnum>;
+  readonly description: InputMaybe<SortOrderEnum>;
+  readonly image: InputMaybe<SortOrderEnum>;
+  readonly imageAlt: InputMaybe<SortOrderEnum>;
+  readonly siteUrl: InputMaybe<SortOrderEnum>;
+  readonly social: InputMaybe<SiteSiteMetadataSocialSortInput>;
+  readonly title: InputMaybe<SortOrderEnum>;
+};
+
 type SiteSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SiteFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly buildTime: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly flags: InputMaybe<SiteFlagsSortInput>;
+  readonly graphqlTypegen: InputMaybe<SiteGraphqlTypegenSortInput>;
+  readonly host: InputMaybe<SortOrderEnum>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly jsxRuntime: InputMaybe<SortOrderEnum>;
+  readonly parent: InputMaybe<NodeSortInput>;
+  readonly pathPrefix: InputMaybe<SortOrderEnum>;
+  readonly polyfill: InputMaybe<SortOrderEnum>;
+  readonly port: InputMaybe<SortOrderEnum>;
+  readonly siteMetadata: InputMaybe<SiteSiteMetadataSortInput>;
+  readonly trailingSlash: InputMaybe<SortOrderEnum>;
 };
 
 type SoftwareJson = Node & {
@@ -5594,29 +3594,29 @@ type SoftwareJsonConnection = {
 
 
 type SoftwareJsonConnection_distinctArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 
 type SoftwareJsonConnection_groupArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SoftwareJsonConnection_maxArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 
 type SoftwareJsonConnection_minArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 
 type SoftwareJsonConnection_sumArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 type SoftwareJsonEdge = {
@@ -5625,102 +3625,14 @@ type SoftwareJsonEdge = {
   readonly previous: Maybe<SoftwareJson>;
 };
 
-type SoftwareJsonFieldsEnum =
-  | '_2019'
-  | '_2020'
-  | 'children'
-  | 'children.children'
-  | 'children.children.children'
-  | 'children.children.children.children'
-  | 'children.children.children.id'
-  | 'children.children.id'
-  | 'children.children.internal.content'
-  | 'children.children.internal.contentDigest'
-  | 'children.children.internal.contentFilePath'
-  | 'children.children.internal.description'
-  | 'children.children.internal.fieldOwners'
-  | 'children.children.internal.ignoreType'
-  | 'children.children.internal.mediaType'
-  | 'children.children.internal.owner'
-  | 'children.children.internal.type'
-  | 'children.children.parent.children'
-  | 'children.children.parent.id'
-  | 'children.id'
-  | 'children.internal.content'
-  | 'children.internal.contentDigest'
-  | 'children.internal.contentFilePath'
-  | 'children.internal.description'
-  | 'children.internal.fieldOwners'
-  | 'children.internal.ignoreType'
-  | 'children.internal.mediaType'
-  | 'children.internal.owner'
-  | 'children.internal.type'
-  | 'children.parent.children'
-  | 'children.parent.children.children'
-  | 'children.parent.children.id'
-  | 'children.parent.id'
-  | 'children.parent.internal.content'
-  | 'children.parent.internal.contentDigest'
-  | 'children.parent.internal.contentFilePath'
-  | 'children.parent.internal.description'
-  | 'children.parent.internal.fieldOwners'
-  | 'children.parent.internal.ignoreType'
-  | 'children.parent.internal.mediaType'
-  | 'children.parent.internal.owner'
-  | 'children.parent.internal.type'
-  | 'children.parent.parent.children'
-  | 'children.parent.parent.id'
-  | 'id'
-  | 'internal.content'
-  | 'internal.contentDigest'
-  | 'internal.contentFilePath'
-  | 'internal.description'
-  | 'internal.fieldOwners'
-  | 'internal.ignoreType'
-  | 'internal.mediaType'
-  | 'internal.owner'
-  | 'internal.type'
-  | 'parent.children'
-  | 'parent.children.children'
-  | 'parent.children.children.children'
-  | 'parent.children.children.id'
-  | 'parent.children.id'
-  | 'parent.children.internal.content'
-  | 'parent.children.internal.contentDigest'
-  | 'parent.children.internal.contentFilePath'
-  | 'parent.children.internal.description'
-  | 'parent.children.internal.fieldOwners'
-  | 'parent.children.internal.ignoreType'
-  | 'parent.children.internal.mediaType'
-  | 'parent.children.internal.owner'
-  | 'parent.children.internal.type'
-  | 'parent.children.parent.children'
-  | 'parent.children.parent.id'
-  | 'parent.id'
-  | 'parent.internal.content'
-  | 'parent.internal.contentDigest'
-  | 'parent.internal.contentFilePath'
-  | 'parent.internal.description'
-  | 'parent.internal.fieldOwners'
-  | 'parent.internal.ignoreType'
-  | 'parent.internal.mediaType'
-  | 'parent.internal.owner'
-  | 'parent.internal.type'
-  | 'parent.parent.children'
-  | 'parent.parent.children.children'
-  | 'parent.parent.children.id'
-  | 'parent.parent.id'
-  | 'parent.parent.internal.content'
-  | 'parent.parent.internal.contentDigest'
-  | 'parent.parent.internal.contentFilePath'
-  | 'parent.parent.internal.description'
-  | 'parent.parent.internal.fieldOwners'
-  | 'parent.parent.internal.ignoreType'
-  | 'parent.parent.internal.mediaType'
-  | 'parent.parent.internal.owner'
-  | 'parent.parent.internal.type'
-  | 'parent.parent.parent.children'
-  | 'parent.parent.parent.id';
+type SoftwareJsonFieldSelector = {
+  readonly _2019: InputMaybe<FieldSelectorEnum>;
+  readonly _2020: InputMaybe<FieldSelectorEnum>;
+  readonly children: InputMaybe<NodeFieldSelector>;
+  readonly id: InputMaybe<FieldSelectorEnum>;
+  readonly internal: InputMaybe<InternalFieldSelector>;
+  readonly parent: InputMaybe<NodeFieldSelector>;
+};
 
 type SoftwareJsonFilterInput = {
   readonly _2019: InputMaybe<StringQueryOperatorInput>;
@@ -5747,34 +3659,38 @@ type SoftwareJsonGroupConnection = {
 
 
 type SoftwareJsonGroupConnection_distinctArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 
 type SoftwareJsonGroupConnection_groupArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
   limit: InputMaybe<Scalars['Int']>;
   skip: InputMaybe<Scalars['Int']>;
 };
 
 
 type SoftwareJsonGroupConnection_maxArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 
 type SoftwareJsonGroupConnection_minArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 
 type SoftwareJsonGroupConnection_sumArgs = {
-  field: SoftwareJsonFieldsEnum;
+  field: SoftwareJsonFieldSelector;
 };
 
 type SoftwareJsonSortInput = {
-  readonly fields: InputMaybe<ReadonlyArray<InputMaybe<SoftwareJsonFieldsEnum>>>;
-  readonly order: InputMaybe<ReadonlyArray<InputMaybe<SortOrderEnum>>>;
+  readonly _2019: InputMaybe<SortOrderEnum>;
+  readonly _2020: InputMaybe<SortOrderEnum>;
+  readonly children: InputMaybe<NodeSortInput>;
+  readonly id: InputMaybe<SortOrderEnum>;
+  readonly internal: InputMaybe<InternalSortInput>;
+  readonly parent: InputMaybe<NodeSortInput>;
 };
 
 type SortOrderEnum =
@@ -5811,14 +3727,16 @@ type BioQuery = { readonly avatar: { readonly childImageSharp: { readonly gatsby
 type BlogIndexQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type BlogIndexQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly excerpt: string, readonly fields: { readonly slug: string | null } | null, readonly frontmatter: { readonly draft: boolean, readonly title: string, readonly date: string, readonly description: string, readonly category: string | null, readonly linkText: string | null, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } } | null } }> } };
+type BlogIndexQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly excerpt: string | null, readonly frontmatter: { readonly slug: string, readonly draft: boolean, readonly title: string, readonly date: string, readonly description: string, readonly category: string | null, readonly linkText: string | null, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } } | null } }> } };
 
-type BlogPostBySlugQueryVariables = Exact<{
-  slug: Scalars['String'];
+type BlogPostByIdQueryVariables = Exact<{
+  id: Scalars['String'];
+  previousPostId: InputMaybe<Scalars['String']>;
+  nextPostId: InputMaybe<Scalars['String']>;
 }>;
 
 
-type BlogPostBySlugQuery = { readonly mdx: { readonly id: string, readonly excerpt: string, readonly body: string, readonly frontmatter: { readonly title: string, readonly date: string, readonly updated: string | null, readonly description: string, readonly category: string | null, readonly imageAlt: string, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } } | null } | null, readonly books2019: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2020: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2021: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2022: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> } };
+type BlogPostByIdQuery = { readonly mdx: { readonly timeToRead: number | null, readonly excerpt: string | null, readonly frontmatter: { readonly title: string, readonly date: string, readonly updated: string | null, readonly description: string, readonly category: string | null, readonly imageAlt: string, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } } | null } | null, readonly previous: { readonly frontmatter: { readonly slug: string, readonly title: string } | null } | null, readonly next: { readonly frontmatter: { readonly slug: string, readonly title: string } | null } | null, readonly books2019: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2020: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2021: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2022: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> } };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 
@@ -5854,7 +3772,7 @@ type SiteMetadataQuery = { readonly site: { readonly siteMetadata: { readonly ti
 type BlogPagesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type BlogPagesQuery = { readonly allMdx: { readonly edges: ReadonlyArray<{ readonly node: { readonly frontmatter: { readonly title: string } | null, readonly fields: { readonly slug: string | null } | null } }> } };
+type BlogPagesQuery = { readonly allMdx: { readonly nodes: ReadonlyArray<{ readonly id: string, readonly body: string | null, readonly frontmatter: { readonly title: string, readonly slug: string } | null, readonly internal: { readonly contentFilePath: string | null } }> } };
 
 
 }
