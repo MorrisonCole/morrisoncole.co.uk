@@ -14906,7 +14906,7 @@ __metadata:
     prettier: 2.7.1
     ts-node: 10.9.1
     typescript: 4.9.3
-    vercel: 28.5.3
+    vercel: 28.5.4
   languageName: unknown
   linkType: soft
 
@@ -20743,9 +20743,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:28.5.3":
-  version: 28.5.3
-  resolution: "vercel@npm:28.5.3"
+"vercel@npm:28.5.4":
+  version: 28.5.4
+  resolution: "vercel@npm:28.5.4"
   dependencies:
     "@vercel/build-utils": 5.5.8
     "@vercel/go": 2.2.16
@@ -20762,7 +20762,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 39922ae260b3dc4f01768a7bfcb1b58d6604dcf36567616a25be249f3ac4e71a0b8253ffe5ed6d5faff4057f88de148291e27b8c14a04f18dcdab3fbca602be2
+  checksum: c2278a9c7f2ec8ebc4247bb26f8349af40baa07c94c69140627530ab1ca4c1c2f3916995dda2899d9b8969a247cf596ef3126ff56801e40ce245babecd0c1f53
   languageName: node
   linkType: hard
 
