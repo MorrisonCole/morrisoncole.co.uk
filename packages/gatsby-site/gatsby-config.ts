@@ -164,7 +164,9 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         mdxOptions: {
-          remarkPlugins: [require("remark-unwrap-images")],
+          rehypePlugins: [
+            // require("gatsby-rehype-unwrap-image-div"),
+          ],
         },
         gatsbyRemarkPlugins: [
           {
