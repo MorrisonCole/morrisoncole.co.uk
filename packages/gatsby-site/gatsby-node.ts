@@ -46,19 +46,19 @@ export const createPages: GatsbyNode["createPages"] = async ({
     reporter.panicOnBuild("Error loading MDX result", result.errors);
   }
 
-  const nodes = result.data?.allMdx.nodes;
+  const posts = result.data?.allMdx.nodes;
 
-  nodes?.forEach((node, index) => {
-    const previous = index === nodes.length - 1 ? null : nodes[index + 1].node;
-    const next = index === 0 ? null : nodes[index - 1].node;
+  posts?.forEach((post, index) => {
+    const previousPostId = index === 0 ? null : posts[index - 1].id;
+    const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
 
     actions.createPage({
-      path: `blog/${node.frontmatter.slug}`,
-      component: `${blogPostTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
+      path: `blog/${post.frontmatter.slug}`,
+      component: `${blogPostTemplate}?__contentFilePath=${post.internal.contentFilePath}`,
       context: {
-        id: node.id,
-        previous,
-        next,
+        id: post.id,
+        previousPostId,
+        nextPostId,
       },
     });
   });

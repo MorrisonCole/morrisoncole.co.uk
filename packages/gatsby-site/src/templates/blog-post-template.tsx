@@ -29,12 +29,9 @@ interface BlogPageContext {
 }
 
 export default function BlogPostTemplate({
-  data: { mdx },
-  pageContext,
+  data: { mdx, previous, next },
   children,
 }: PageProps<Queries.BlogPostByIdQuery, BlogPageContext>): JSX.Element {
-  const { previous, next } = pageContext;
-
   return (
     <Box
       sx={{
@@ -89,7 +86,7 @@ export default function BlogPostTemplate({
             {previous && (
               <Link
                 component={GatsbyLink}
-                to={previous.frontmatter.slug ?? "/blog"}
+                to={`/blog/${previous.frontmatter.slug}`}
                 rel="prev"
               >
                 ← {previous.frontmatter.title}
@@ -100,7 +97,7 @@ export default function BlogPostTemplate({
             {next && (
               <Link
                 component={GatsbyLink}
-                to={next.frontmatter.slug ?? "/blog"}
+                to={`/blog/${next.frontmatter.slug}`}
                 rel="next"
               >
                 {next.frontmatter.title} →
@@ -114,7 +111,11 @@ export default function BlogPostTemplate({
 }
 
 export const pageQuery = graphql`
-  query BlogPostById($id: String!) {
+  query BlogPostById(
+    $id: String!
+    $previousPostId: String
+    $nextPostId: String
+  ) {
     mdx(id: { eq: $id }) {
       timeToRead
       excerpt(pruneLength: 160)
@@ -130,6 +131,18 @@ export const pageQuery = graphql`
           }
         }
         imageAlt
+      }
+    }
+    previous: mdx(id: { eq: $previousPostId }) {
+      frontmatter {
+        slug
+        title
+      }
+    }
+    next: mdx(id: { eq: $nextPostId }) {
+      frontmatter {
+        slug
+        title
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {
