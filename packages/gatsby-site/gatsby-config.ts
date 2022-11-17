@@ -189,7 +189,6 @@ const config: GatsbyConfig = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1200,
-              wrapperStyle: `width: 100%; grid-column: 1 / 6; margin-bottom: 16px;`,
               linkImagesToOriginal: false,
               withAvif: true,
               withWebp: true,
