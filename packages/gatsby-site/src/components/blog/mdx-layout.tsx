@@ -71,13 +71,12 @@ const components = {
     </Box>
   ),
   a: (props): JSX.Element => <CustomLink {...props}></CustomLink>,
-  pre: (preProps) => {
-    const props = preToCodeBlock(preProps);
-    if (props) {
-      return <Code {...props} />;
-    } else {
-      return <pre {...preProps} />;
+  pre: (props) => {
+    const childProps = props.children.props;
+    if (childProps.className) {
+      return <Code className={childProps.className}>{childProps.children}</Code>;
     }
+    return <pre {...props} />;
   },
 };
 
