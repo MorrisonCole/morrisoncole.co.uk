@@ -2,26 +2,22 @@ import { Typography, Divider, Link, Box } from "@mui/material";
 import { graphql, HeadProps, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import SEO from "../components/seo";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import SimpleBreadcrumbs from "../components/navigation/breadcrumb";
-import MDXLayout from "../components/blog/mdx-layout";
-import readingTime from "reading-time";
 import { getSrc } from "gatsby-plugin-image";
 import { PageProps } from "gatsby";
+import MDXLayout from "../components/blog/mdx-layout";
 
 export const Head = ({
-  data,
+  data: { mdx },
   location,
-}: HeadProps<Queries.BlogPostBySlugQuery>) => {
-  const post = data.mdx;
-
+}: HeadProps<Queries.BlogPostByIdQuery>) => {
   return (
     <SEO
       pathname={location.pathname}
-      title={post.frontmatter.title}
-      description={post.frontmatter.description ?? post.excerpt}
-      image={getSrc(post?.frontmatter?.image?.childImageSharp?.gatsbyImageData)}
-      imageAlt={post?.frontmatter?.imageAlt}
+      title={mdx.frontmatter?.title}
+      description={mdx.frontmatter?.description ?? mdx?.excerpt}
+      image={getSrc(mdx.frontmatter?.image?.childImageSharp?.gatsbyImageData)}
+      imageAlt={mdx?.frontmatter?.imageAlt}
       article
     />
   );
@@ -32,13 +28,10 @@ interface BlogPageContext {
   next: any;
 }
 
-function BlogPostTemplate({
-  data,
-  pageContext,
-}: PageProps<Queries.BlogPostBySlugQuery, BlogPageContext>): JSX.Element {
-  const post = data.mdx;
-  const { previous, next } = pageContext;
-
+export default function BlogPostTemplate({
+  data: { mdx, previous, next },
+  children,
+}: PageProps<Queries.BlogPostByIdQuery, BlogPageContext>): JSX.Element {
   return (
     <Box
       sx={{
@@ -50,19 +43,17 @@ function BlogPostTemplate({
           paddingBottom: ({ spacing }) => spacing(2),
         }}
       >
-        <SimpleBreadcrumbs
-          location={post?.frontmatter?.category ?? "Unknown"}
-        />
+        <SimpleBreadcrumbs location={mdx?.frontmatter?.category ?? "Unknown"} />
       </Box>
 
       <article>
         <header>
           <Typography variant="h1" gutterBottom>
-            {post.frontmatter.title}
+            {mdx.frontmatter.title}
           </Typography>
-          <Typography variant="subtitle2">{post.frontmatter.date}</Typography>
+          <Typography variant="subtitle2">{mdx.frontmatter.date}</Typography>
           <Typography variant="subtitle2">
-            {`${readingTime(post.body).minutes} min read`}
+            {`${mdx.timeToRead} min read`}
           </Typography>
         </header>
         <section>
@@ -75,9 +66,7 @@ function BlogPostTemplate({
               },
             }}
           >
-            <MDXLayout>
-              <MDXRenderer data={data}>{post.body}</MDXRenderer>
-            </MDXLayout>
+            <MDXLayout>{children}</MDXLayout>
           </Box>
         </section>
         <Divider />
@@ -97,7 +86,7 @@ function BlogPostTemplate({
             {previous && (
               <Link
                 component={GatsbyLink}
-                to={previous.fields.slug ?? "/blog"}
+                to={`/blog/${previous.frontmatter.slug}`}
                 rel="prev"
               >
                 ← {previous.frontmatter.title}
@@ -108,7 +97,7 @@ function BlogPostTemplate({
             {next && (
               <Link
                 component={GatsbyLink}
-                to={next.fields.slug ?? "/blog"}
+                to={`/blog/${next.frontmatter.slug}`}
                 rel="next"
               >
                 {next.frontmatter.title} →
@@ -121,14 +110,15 @@ function BlogPostTemplate({
   );
 }
 
-export default BlogPostTemplate;
-
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      id
+  query BlogPostById(
+    $id: String!
+    $previousPostId: String
+    $nextPostId: String
+  ) {
+    mdx(id: { eq: $id }) {
+      timeToRead
       excerpt(pruneLength: 160)
-      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -141,6 +131,18 @@ export const pageQuery = graphql`
           }
         }
         imageAlt
+      }
+    }
+    previous: mdx(id: { eq: $previousPostId }) {
+      frontmatter {
+        slug
+        title
+      }
+    }
+    next: mdx(id: { eq: $nextPostId }) {
+      frontmatter {
+        slug
+        title
       }
     }
     books2019: allGoodreadsShelf(filter: { name: { eq: "2019" } }) {

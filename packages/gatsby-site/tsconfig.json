@@ -10,6 +10,6 @@
     "./gatsby-node.ts",
     "./gatsby-config.ts",
     "./plugins/**/*"
-  ],
+, "content/blog"  ],
   "exclude": ["./.cache", "./public", "./dist"]
 }
