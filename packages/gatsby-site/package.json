@@ -39,7 +39,6 @@
     "gatsby-source-filesystem": "5.0.0",
     "gatsby-transformer-json": "5.0.0",
     "gatsby-transformer-sharp": "5.0.0",
-    "hast-util-select": "3.0.1",
     "lodash": "4.17.21",
     "mdx-utils": "0.2.0",
     "mitt": "3.0.0",
@@ -50,12 +49,7 @@
     "react-intersection-observer": "9.4.1",
     "react-live": "3.1.1",
     "reading-time": "2.0.0-1",
-    "rehype-parse": "6.0.1",
-    "remark-parse": "7.0.2",
-    "remark-rehype": "5.0.0",
-    "shallow-compare": "1.2.2",
-    "unified": "8.4.1",
-    "unist-util-visit": "2.0.3"
+    "shallow-compare": "1.2.2"
   },
   "devDependencies": {
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
