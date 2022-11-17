@@ -1,5 +1,6 @@
 import type { GatsbyConfig } from "gatsby";
 import path from "path";
+import unwrap from "./plugins/gatsby-rehype-unwrap-image-div";
 
 const rawUrl = "https://morrisoncole.co.uk";
 const siteAddress = new URL(rawUrl);
@@ -164,9 +165,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         mdxOptions: {
-          rehypePlugins: [
-            // require("gatsby-rehype-unwrap-image-div"),
-          ],
+          rehypePlugins: [unwrap],
         },
         gatsbyRemarkPlugins: [
           {
