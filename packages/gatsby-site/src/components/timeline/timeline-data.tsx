@@ -66,10 +66,10 @@ export function getTimelineEntries(): TimelineEntry[] {
       icon: new HomeIcon(),
       image: <StaticImage src="./images/tokyo.jpg" alt="Tokyo at night" />,
       mainLink: "https://goo.gl/maps/7FFdpXCeUU3koAAv9",
-      subtitle1: "Tokyo",
+      subtitle1: "Moved",
       subtitle2: "",
-      text: "From Kobe to Tokyo, where I'm now working and teaching in the software industry 🙌",
-      title: "Moved 🇯🇵",
+      text: "Back to the metropolis. Working and teaching in the software industry.",
+      title: "Tokyo",
     },
     {
       date: "2019 - 2020",
@@ -78,7 +78,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       mainLink: "https://medmain.com/",
       subtitle1: "Software Engineer, Server",
       subtitle2: "",
-      text: "Developing products at the forefront of AI-assisted medicine.",
+      text: "Developed an AI-powered product to speed up medical diagnoses. Didn't do any AI things though.",
       title: "Medmain Inc.",
     },
     {
@@ -86,10 +86,10 @@ export function getTimelineEntries(): TimelineEntry[] {
       icon: new HomeIcon(),
       image: <StaticImage src="./images/kobe.jpg" alt="Kobe cityscape" />,
       mainLink: "https://goo.gl/maps/hURywEujBbYCqqbA6",
-      subtitle1: "Kobe, Hyogo",
+      subtitle1: "Moved",
       subtitle2: "",
-      text: "Studied Japanese, hiked (a lot), and begun exploring Japan!",
-      title: "Moved 🇯🇵",
+      text: "Studied Japanese, hiked (a lot), tried to figure out how to do basic stuff.",
+      title: "Kobe, Hyogo",
     },
     {
       date: "2015 - 2019",
@@ -102,9 +102,9 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text:
         "Improbable contacted me when they were an early-stage startup of around 40 people. The mission " +
-        "merged the gaming industry with challenging software and product problems, so I immediately interviewed and " +
+        "merged the gaming industry with challenging software and product problems, so I interviewed and " +
         "the rest, as they say, is history. Improbable now stands at around 400 people. I was sad to leave after I " +
-        "had experienced so much there, but new horizons beckoned!",
+        "had experienced so much there, but honestly scaling a startup is tiring (or at least, being part of a startup that scales is tiring).",
       title: "Improbable",
     },
     {
@@ -139,7 +139,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       mainLink: "https://www.ucl.ac.uk/",
       subtitle1: "BSc Computer Science",
       subtitle2: "First-class Honours",
-      text: "Rather than attend music College, I decided to get a degree in Computer Science. Graduated with 1st-class honours.",
+      text: "Wanted to attend music college, but for some reason I decided at the last moment to get a degree in Computer Science. Graduated with 1st-class honours.",
       title: "University College London",
     },
     {
@@ -147,10 +147,10 @@ export function getTimelineEntries(): TimelineEntry[] {
       icon: new HomeIcon(),
       image: <StaticImage src="./images/london.jpg" alt="London cityscape" />,
       mainLink: "https://goo.gl/maps/QoKpM98YJtjERNmY8",
-      subtitle1: "London, UK",
+      subtitle1: "Moved",
       subtitle2: "",
-      text: "",
-      title: "Moved 🇬🇧",
+      text: "After a life in the countryside, the metropolis was attractive.",
+      title: "London, UK",
     },
     {
       date: "2006 - 2010",
@@ -164,7 +164,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       mainLink: "https://wells.cathedral.school/",
       subtitle1: "Specialist Musician",
       subtitle2: "3 A-Levels (A*-A), 6 GCSEs (A*-A)",
-      text: "I joined as a trombonist with a full musical scholarship.",
+      text: "Joined as a trombonist with a full musical scholarship. Typical conservative/religious boarding school typed stuff... (and I wonder why I have to go to therapy).",
       title: "Wells Cathedral School",
     },
     {
@@ -176,8 +176,8 @@ export function getTimelineEntries(): TimelineEntry[] {
       mainLink: "https://goo.gl/maps/w7SRynhttGuu4Nst7",
       subtitle1: "Falmouth, Cornwall",
       subtitle2: "",
-      text: "",
-      title: "Born 🇬🇧",
+      text: "I never asked for this.",
+      title: "Born",
     },
   ];
 }
