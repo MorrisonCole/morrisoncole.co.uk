@@ -53,8 +53,8 @@ export default function TimelineIndex({ location }: PageProps): JSX.Element {
                 marginTop: ({ spacing }) => spacing(1),
               }}
             >
-              I&apos;m a software engineer, product manager, and (occasional)
-              musician working in Tokyo.
+              I&apos;m a software engineer, ex-product manager, and (occasional)
+              musician living in Tokyo.
             </Typography>
             <DownloadCVButton />
           </Paper>
