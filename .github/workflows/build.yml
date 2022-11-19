@@ -50,7 +50,6 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         with:
-          vercel_team_id: ""
           vercel_project_id: "QmXDbu5Q4G9fCayQvVk3XbCU4fWJarh2P79kGAxEsPAfzM"
       - name: Run Lighthouse CI
         run: |
