@@ -2,11 +2,14 @@ import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 import { Typography, Divider, Paper, Box } from "@mui/material";
 import CustomLink from "./link";
-import { preToCodeBlock } from "mdx-utils";
 import { Code } from "./code";
 import "./mdx-layout.css";
+import { SpotifyAlbum } from "./spotify-album";
+import { SpotifyTrack } from "./spotify-track";
 
 const components = {
+  SpotifyAlbum,
+  SpotifyTrack,
   h1: (props): JSX.Element => (
     <Typography {...props} component="h1" variant="h1" gutterBottom={true} />
   ),
