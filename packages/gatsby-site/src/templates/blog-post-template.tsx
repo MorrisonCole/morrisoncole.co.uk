@@ -59,6 +59,7 @@ export default function BlogPostTemplate({
         <section>
           <Box
             sx={{
+              marginTop: ({ spacing }) => spacing(2),
               display: "grid",
               gridTemplateColumns: "3fr 1fr min(85ch, 100%) 1fr 3fr",
               "& *": {
