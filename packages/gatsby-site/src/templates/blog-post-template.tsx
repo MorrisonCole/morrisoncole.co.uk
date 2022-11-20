@@ -23,15 +23,10 @@ export const Head = ({
   );
 };
 
-interface BlogPageContext {
-  previous: any;
-  next: any;
-}
-
 export default function BlogPostTemplate({
   data: { mdx, previous, next },
   children,
-}: PageProps<Queries.BlogPostByIdQuery, BlogPageContext>): JSX.Element {
+}: PageProps<Queries.BlogPostByIdQuery>): JSX.Element {
   return (
     <Box
       sx={{
