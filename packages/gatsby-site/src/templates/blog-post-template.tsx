@@ -14,9 +14,9 @@ export const Head = ({
   return (
     <SEO
       pathname={location.pathname}
-      title={mdx.frontmatter?.title}
-      description={mdx.frontmatter?.description ?? mdx?.excerpt}
-      image={getSrc(mdx.frontmatter?.image?.childImageSharp?.gatsbyImageData)}
+      title={mdx?.frontmatter.title}
+      description={mdx.frontmatter.description}
+      image={getSrc(mdx.frontmatter.image.childImageSharp?.gatsbyImageData)}
       imageAlt={mdx?.frontmatter?.imageAlt}
       article
     />

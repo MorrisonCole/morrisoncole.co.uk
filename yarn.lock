@@ -15099,6 +15099,7 @@ __metadata:
     "@types/react": 18.0.25
     anser: 2.1.1
     css.escape: 1.5.1
+    eslint: 8.28.0
     event-source-polyfill: 1.0.31
     gatsby: 5.0.1
     gatsby-cli: 5.0.0

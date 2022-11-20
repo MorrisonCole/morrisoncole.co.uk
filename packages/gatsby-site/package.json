@@ -54,6 +54,7 @@
     "@types/mdx-js__react": "1.5.5",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
+    "eslint": "8.28.0",
     "socket.io-client": "4.5.3",
     "source-map": "0.8.0-beta.0"
   },
@@ -99,8 +100,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby-plugin-s3 deploy -y",
-    "lint:eslint": "eslint .",
-    "lint:eslint:fix": "eslint . --fix",
+    "lint:eslint": "NODE_OPTIONS=\"--max-old-space-size=4096\" eslint .",
+    "lint:eslint:fix": "NODE_OPTIONS=\"--max-old-space-size=4096\" eslint . --fix",
     "lint:prettier": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --check",
     "lint:prettier:fix": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write"
   }
