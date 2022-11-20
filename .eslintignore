@@ -1,6 +1,1 @@
-gatsby-site/.cache
-gatsby-site/.circleci
-gatsby-site/node_modules
-gatsby-site/public
-gatsby-site/types/graphql-types.ts
-gatsby-site/scripts
+node_modules

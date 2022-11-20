@@ -1,7 +1,5 @@
-import sharedConfig from "../../.eslintrc";
-
-export default {
-  ...sharedConfig,
+module.exports = {
+  extends: ["../../.eslintrc"],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ["tsconfig.eslint.json"],
