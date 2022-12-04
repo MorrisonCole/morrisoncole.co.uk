@@ -1,5 +1,6 @@
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { MDXComponents } from "mdx/types";
 import React from "react";
 import styled from "styled-components";
 import fs from "fs/promises";
@@ -34,7 +35,7 @@ export default function PostPage({
 }) {
   return (
     <Layout>
-      <MDXRemote {...source} components={mdxComponents} />
+      <MDXRemote {...source} components={mdxComponents as MDXComponents} />
     </Layout>
   );
 }
