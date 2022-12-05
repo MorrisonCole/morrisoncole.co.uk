@@ -9,7 +9,7 @@
     "@types/eslint": "8.4.10",
     "@types/node": "18.11.11",
     "@types/prettier": "2.7.1",
-    "@typescript-eslint/eslint-plugin": "5.45.0",
+    "@typescript-eslint/eslint-plugin": "5.45.1",
     "@typescript-eslint/parser": "5.45.0",
     "axios": "1.2.1",
     "css": "3.0.0",
