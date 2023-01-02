@@ -15,7 +15,7 @@
     "@mdx-js/react": "2.2.1",
     "@mui/icons-material": "5.11.0",
     "@mui/lab": "5.0.0-alpha.114",
-    "@mui/material": "5.11.2",
+    "@mui/material": "5.11.3",
     "anser": "2.1.1",
     "css.escape": "1.5.1",
     "event-source-polyfill": "1.0.31",
