@@ -1,14 +1,14 @@
 ---
-title: "2022 Reading List"
-date: "2022-01-03"
+title: "2023 Reading List"
+date: "2023-01-04"
 updated: null
-description: "Books I read in 2022, ranked."
+description: "Books I've read this year, ranked."
 category: "Books"
 image: "books.jpg"
 imageAlt: "Stack of Books"
-linkText: "What I read 📚"
+linkText: "What I've read so far 📚"
 draft: false
-slug: "2022-reading-list"
+slug: "2023-reading-list"
 ---
 
 import {
@@ -23,7 +23,7 @@ import {
 import { Star } from "@mui/icons-material";
 
 <List dense>
-  {props.data.books2022.edges[0].node.reviews
+  {props.data.books2023.edges[0]?.node.reviews
     .sort((a, b) => parseInt(b.rating) - parseInt(a.rating))
     .map(({ rating, book }) => (
       <ListItem
