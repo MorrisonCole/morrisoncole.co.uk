@@ -213,5 +213,23 @@ export const pageQuery = graphql`
         }
       }
     }
+    books2023: allGoodreadsShelf(filter: { name: { eq: "2023" } }) {
+      edges {
+        node {
+          name
+          reviews {
+            rating
+            book {
+              title
+              authors {
+                name
+              }
+              link
+              image_url
+            }
+          }
+        }
+      }
+    }
   }
 `;

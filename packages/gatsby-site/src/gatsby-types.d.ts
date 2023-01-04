@@ -3196,21 +3196,25 @@ type SiteFunctionSortInput = {
 };
 
 type SiteGraphqlTypegen = {
+  readonly documentSearchPaths: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly generateOnBuild: Maybe<Scalars['Boolean']>;
   readonly typesOutputPath: Maybe<Scalars['String']>;
 };
 
 type SiteGraphqlTypegenFieldSelector = {
+  readonly documentSearchPaths: InputMaybe<FieldSelectorEnum>;
   readonly generateOnBuild: InputMaybe<FieldSelectorEnum>;
   readonly typesOutputPath: InputMaybe<FieldSelectorEnum>;
 };
 
 type SiteGraphqlTypegenFilterInput = {
+  readonly documentSearchPaths: InputMaybe<StringQueryOperatorInput>;
   readonly generateOnBuild: InputMaybe<BooleanQueryOperatorInput>;
   readonly typesOutputPath: InputMaybe<StringQueryOperatorInput>;
 };
 
 type SiteGraphqlTypegenSortInput = {
+  readonly documentSearchPaths: InputMaybe<SortOrderEnum>;
   readonly generateOnBuild: InputMaybe<SortOrderEnum>;
   readonly typesOutputPath: InputMaybe<SortOrderEnum>;
 };
@@ -4092,7 +4096,7 @@ type BlogPostByIdQueryVariables = Exact<{
 }>;
 
 
-type BlogPostByIdQuery = { readonly mdx: { readonly timeToRead: number | null, readonly excerpt: string | null, readonly frontmatter: { readonly title: string, readonly date: string, readonly updated: string | null, readonly description: string, readonly category: string | null, readonly imageAlt: string, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } } | null } | null, readonly previous: { readonly frontmatter: { readonly slug: string, readonly title: string } | null } | null, readonly next: { readonly frontmatter: { readonly slug: string, readonly title: string } | null } | null, readonly books2019: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2020: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2021: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2022: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> } };
+type BlogPostByIdQuery = { readonly mdx: { readonly timeToRead: number | null, readonly excerpt: string | null, readonly frontmatter: { readonly title: string, readonly date: string, readonly updated: string | null, readonly description: string, readonly category: string | null, readonly imageAlt: string, readonly image: { readonly childImageSharp: { readonly gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData } | null } } | null } | null, readonly previous: { readonly frontmatter: { readonly slug: string, readonly title: string } | null } | null, readonly next: { readonly frontmatter: { readonly slug: string, readonly title: string } | null } | null, readonly books2019: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2020: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2021: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2022: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> }, readonly books2023: { readonly edges: ReadonlyArray<{ readonly node: { readonly name: string | null, readonly reviews: ReadonlyArray<{ readonly rating: string | null, readonly book: { readonly title: string | null, readonly link: string | null, readonly image_url: string | null, readonly authors: ReadonlyArray<{ readonly name: string | null } | null> | null } | null } | null> | null } }> } };
 
 type GatsbyImageSharpFixedFragment = { readonly base64: string | null, readonly width: number, readonly height: number, readonly src: string, readonly srcSet: string };
 
