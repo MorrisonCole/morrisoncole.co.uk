@@ -2780,31 +2780,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/mdx@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@mdx-js/mdx@npm:2.0.0"
-  dependencies:
-    "@types/estree-jsx": ^0.0.1
-    "@types/mdx": ^2.0.0
-    astring: ^1.6.0
-    estree-util-build-jsx: ^2.0.0
-    estree-util-is-identifier-name: ^2.0.0
-    estree-walker: ^3.0.0
-    hast-util-to-estree: ^2.0.0
-    markdown-extensions: ^1.0.0
-    periscopic: ^3.0.0
-    remark-mdx: ^2.0.0
-    remark-parse: ^10.0.0
-    remark-rehype: ^10.0.0
-    unified: ^10.0.0
-    unist-util-position-from-estree: ^1.0.0
-    unist-util-stringify-position: ^3.0.0
-    unist-util-visit: ^4.0.0
-    vfile: ^5.0.0
-  checksum: b97f91aba46556163f8284fa06e370c762303b4b4279afcd700277920e7c54230a2ace88927c4f03d4b5a81579440e4753f7b47d0ad5d32291c683ce70385528
-  languageName: node
-  linkType: hard
-
 "@mdx-js/mdx@npm:^2.1.5":
   version: 2.1.5
   resolution: "@mdx-js/mdx@npm:2.1.5"
@@ -2830,7 +2805,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:2.2.1":
+"@mdx-js/mdx@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@mdx-js/mdx@npm:2.2.1"
+  dependencies:
+    "@types/estree-jsx": ^1.0.0
+    "@types/mdx": ^2.0.0
+    estree-util-build-jsx: ^2.0.0
+    estree-util-is-identifier-name: ^2.0.0
+    estree-util-to-js: ^1.1.0
+    estree-walker: ^3.0.0
+    hast-util-to-estree: ^2.0.0
+    markdown-extensions: ^1.0.0
+    periscopic: ^3.0.0
+    remark-mdx: ^2.0.0
+    remark-parse: ^10.0.0
+    remark-rehype: ^10.0.0
+    unified: ^10.0.0
+    unist-util-position-from-estree: ^1.0.0
+    unist-util-stringify-position: ^3.0.0
+    unist-util-visit: ^4.0.0
+    vfile: ^5.0.0
+  checksum: 3985e37a22af541ee3840020b74a804409ff49f8b307ee607feb889b159f4e3d526141fb2725a753d31acce945250d814eac96b8d923bb47ddb46296ffeb5348
+  languageName: node
+  linkType: hard
+
+"@mdx-js/react@npm:2.2.1, @mdx-js/react@npm:^2.2.1":
   version: 2.2.1
   resolution: "@mdx-js/react@npm:2.2.1"
   dependencies:
@@ -2839,18 +2839,6 @@ __metadata:
   peerDependencies:
     react: ">=16"
   checksum: 4462dad1d7d658bda1c2eabc3960fb843fdbcb5788ce5f863b674752e4db1b7048b5587aa85661283b5196e4641385e6b594205c2482202446ecb5f5433c975b
-  languageName: node
-  linkType: hard
-
-"@mdx-js/react@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@mdx-js/react@npm:2.0.0"
-  dependencies:
-    "@types/mdx": ^2.0.0
-    "@types/react": ">=16"
-  peerDependencies:
-    react: ">=16"
-  checksum: 4d47ac0418eb9820527829838aaf508a2cdea82f7be8c62b4f739bb2a439f98556360dcdf4cef74f7db615f3e0c05e28353c4b5b182bc36e1b920893f54670f4
   languageName: node
   linkType: hard
 
@@ -5662,15 +5650,6 @@ __metadata:
   version: 2.0.0
   resolution: "astral-regex@npm:2.0.0"
   checksum: 876231688c66400473ba505731df37ea436e574dd524520294cc3bbc54ea40334865e01fa0d074d74d036ee874ee7e62f486ea38bc421ee8e6a871c06f011766
-  languageName: node
-  linkType: hard
-
-"astring@npm:^1.6.0":
-  version: 1.8.1
-  resolution: "astring@npm:1.8.1"
-  bin:
-    astring: bin/astring
-  checksum: 2a86ff8cc0c8f25694865cb8b22cdff784b8a0b115bd970c3def864618f22fe6ea78c3bef3ecdc359b2e5eb254a16d408ab06fa52a44e887b298cbf980a8083c
   languageName: node
   linkType: hard
 
@@ -15312,18 +15291,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-mdx-remote@npm:4.2.0":
-  version: 4.2.0
-  resolution: "next-mdx-remote@npm:4.2.0"
+"next-mdx-remote@npm:4.2.1":
+  version: 4.2.1
+  resolution: "next-mdx-remote@npm:4.2.1"
   dependencies:
-    "@mdx-js/mdx": ^2.0.0
-    "@mdx-js/react": ^2.0.0
+    "@mdx-js/mdx": ^2.2.1
+    "@mdx-js/react": ^2.2.1
     vfile: ^5.3.0
     vfile-matter: ^3.0.1
   peerDependencies:
     react: ">=16.x <=18.x"
     react-dom: ">=16.x <=18.x"
-  checksum: 06fc3787187bbe359930ee7f8aca5f12aa979e7a2e6773430bf7ed304506dc011550c7f34606dca0058bc37cd0ce98a51d016b22a211f3fbec0e9ea78b8d436e
+  checksum: bc9cff107ae1d98f6a40073e937c2617ca0580881f8d705e9ce9eaa08a5b525213d5f2c85c0641f7deff9a513343970660dd1ad364258cc69c13e66816248ad4
   languageName: node
   linkType: hard
 
@@ -15424,7 +15403,7 @@ __metadata:
     glyphhanger: 5.0.0
     gray-matter: 4.0.3
     next: 13.1.1
-    next-mdx-remote: 4.2.0
+    next-mdx-remote: 4.2.1
     react: 18.2.0
     react-dom: 18.2.0
     react-is: 18.2.0
