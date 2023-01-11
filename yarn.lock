@@ -5165,31 +5165,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:5.7.4":
-  version: 5.7.4
-  resolution: "@vercel/build-utils@npm:5.7.4"
-  checksum: 71be0f15ff619a0f75ffe3953751518428aed721ea27798deaf85917fb9c89773a9b2a42882ec77fcf708339de90d3b5aec2d6e194917cafd65104f80449f77e
+"@vercel/build-utils@npm:5.7.5":
+  version: 5.7.5
+  resolution: "@vercel/build-utils@npm:5.7.5"
+  checksum: e082718fc77171818ef02b4069e07b1502375a4515e399da1a7d0b174348ad3895050677b8c17028855f81203c30cbd6ccc5af1f42413becdf4eccb6f92fbdb5
   languageName: node
   linkType: hard
 
-"@vercel/go@npm:2.2.23":
-  version: 2.2.23
-  resolution: "@vercel/go@npm:2.2.23"
-  checksum: 055398000ff5eef9f738a047248c49fb9524c90ef5d98734f146f66de3ac6e150c9b5716f8531760e254d78bf15242d3218665d0942ae986c9d712d37102b4e5
+"@vercel/go@npm:2.2.24":
+  version: 2.2.24
+  resolution: "@vercel/go@npm:2.2.24"
+  checksum: 50fc055d3c0dd0bb5a247a516826e41a8c38ec0c331b98d30a7001bec5cd9952602dabcbce182ccbeeff1497b453ea55ea5e32903fd0f30bbad773b309b200fb
   languageName: node
   linkType: hard
 
-"@vercel/hydrogen@npm:0.0.37":
-  version: 0.0.37
-  resolution: "@vercel/hydrogen@npm:0.0.37"
-  checksum: d73c46f163380bebeac4cfb8cdf5ddf02f51098fcefc966cbf419eea1eee21359bf87f4da47664bcddbf4d550f07fecac9a9a6b09a133e8cc43f65df883fcd0c
+"@vercel/hydrogen@npm:0.0.38":
+  version: 0.0.38
+  resolution: "@vercel/hydrogen@npm:0.0.38"
+  checksum: f09f0ed797771b3ba91b27500ebefe8da3c3228bf44b5438c0590ba282f6a0581f8507d7716346c3d8c4d040fc0db5b602d8e91ab331dbdeaea128005372ff0b
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:3.3.8":
-  version: 3.3.8
-  resolution: "@vercel/next@npm:3.3.8"
-  checksum: 6fb8ab546bf76403d6b7bfeedc5454735b329c5be3ca4e1db449ac4196304aba33b3bcc9416ab63435072e26cb22592d54225ffc61135f9e636d2c4f02c05fea
+"@vercel/next@npm:3.3.9":
+  version: 3.3.9
+  resolution: "@vercel/next@npm:3.3.9"
+  checksum: 5f501e2cf48ca95b0ba08d69921954c441f10c8063f43064215e2144ff039fa389ae494d8901bafc3b829842c897676906178f51b1cc9fcc699b200e6fa77785
   languageName: node
   linkType: hard
 
@@ -5221,13 +5221,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:2.8.5":
-  version: 2.8.5
-  resolution: "@vercel/node@npm:2.8.5"
+"@vercel/node@npm:2.8.6":
+  version: 2.8.6
+  resolution: "@vercel/node@npm:2.8.6"
   dependencies:
     "@edge-runtime/vm": 2.0.0
     "@types/node": 14.18.33
-    "@vercel/build-utils": 5.7.4
+    "@vercel/build-utils": 5.7.5
     "@vercel/node-bridge": 3.1.3
     "@vercel/static-config": 2.0.6
     edge-runtime: 2.0.0
@@ -5236,34 +5236,34 @@ __metadata:
     node-fetch: 2.6.7
     ts-node: 10.9.1
     typescript: 4.3.4
-  checksum: 9a44c4b56fbc1df7eb7154e5fe86231f379d870a3431f224d4422c6ee316ac655026346a92afd960420130ddd1d0139642e2020aefb03229899b2c31cee4855e
+  checksum: 2312fa40acfe072c0221964d6ca56ab6b98bba7b8c1135e5cd6997a1f73c747a449bff770fe717fbc51fbe7712e3b18f03ed523457adcb82411e58727a400166
   languageName: node
   linkType: hard
 
-"@vercel/python@npm:3.1.33":
-  version: 3.1.33
-  resolution: "@vercel/python@npm:3.1.33"
-  checksum: caa496fc7e1b7be6628b1ebf6708b0b286049d1635ee40ba860093fd462ccbe0bfb9adcfc5c572b8e50fcf3f5740356280ce90f05011c055ae28a83f5cb5ca3b
+"@vercel/python@npm:3.1.34":
+  version: 3.1.34
+  resolution: "@vercel/python@npm:3.1.34"
+  checksum: 8a78ee6d92f3ea51f2740c372f7e9ab7f00f11a6fcf007ae1301cd76e53e5a4e8e92e68c4a5b57ec711e1b831141defb9d674a7f04a28afa1a3d95c4e8e46eb9
   languageName: node
   linkType: hard
 
-"@vercel/redwood@npm:1.0.44":
-  version: 1.0.44
-  resolution: "@vercel/redwood@npm:1.0.44"
+"@vercel/redwood@npm:1.0.45":
+  version: 1.0.45
+  resolution: "@vercel/redwood@npm:1.0.45"
   dependencies:
     "@vercel/nft": 0.22.5
     "@vercel/routing-utils": 2.1.3
     semver: 6.1.1
-  checksum: 8c2e220738fe64427944d80245a5ce74f2a7fd52acead926c12124b11882507720b08bb73f056c822f8f3c4f984b526882e45e510fbabc83b51204edd26f6cab
+  checksum: e680057ef0b57a38dfd126d31ba20542b29c9d2dda7099bb84cc82adbc0746ca4fe337f3f7f6ce2c04b03dc6f1ca72371cb1f5dfcd5266e039036e4b1e8982ec
   languageName: node
   linkType: hard
 
-"@vercel/remix@npm:1.1.6":
-  version: 1.1.6
-  resolution: "@vercel/remix@npm:1.1.6"
+"@vercel/remix@npm:1.1.7":
+  version: 1.1.7
+  resolution: "@vercel/remix@npm:1.1.7"
   dependencies:
     "@vercel/nft": 0.22.5
-  checksum: 9281d449c47c6fc86e299df65477f92e0473a9c6af73290a2a3d9bd574587a2b342a8886121707c6e1477265d1ee1cf27f217cacced50d7ea20972df4543965b
+  checksum: 8770227cfda2b94f59f5296280b7f5c64dc97c0c4fdec1fe3dd5a3c48df10a475671afed3a3b2c3d97334fcb69a33a4bb598085ef0a677fb07c65f67b49926ee
   languageName: node
   linkType: hard
 
@@ -5280,17 +5280,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ruby@npm:1.3.49":
-  version: 1.3.49
-  resolution: "@vercel/ruby@npm:1.3.49"
-  checksum: 742f9bed0ef6964633c3a43ce6948d5ed1fd98e2fedb94b5b7825aa3897d45e27d440ee210776b6bfdcbfa779e97fdd085f9894e68d881b85bf29bd1e9931969
+"@vercel/ruby@npm:1.3.50":
+  version: 1.3.50
+  resolution: "@vercel/ruby@npm:1.3.50"
+  checksum: b3d6e4b21db3df5aae08b43df88b5e0c313289f594f1773f627e7351e9eb5840fc37b1b5529391c9a1ceffb5e61e9612848a271e39c346593b5db17ace5c45c3
   languageName: node
   linkType: hard
 
-"@vercel/static-build@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@vercel/static-build@npm:1.1.0"
-  checksum: 4dbf47822fa1109c59906b64b91d605180626d7a9f0c950abe736f521df08290954f53f181ab08f53993a419f4e927141bce3553230ac640f094afb01a7be5bb
+"@vercel/static-build@npm:1.1.1":
+  version: 1.1.1
+  resolution: "@vercel/static-build@npm:1.1.1"
+  checksum: 1796d9327abb33e7deb3795ee83a6000c75214be21f99df0bf79263d1690b1ce84fd4d352995d314ddbaec2fc272578c91c0968ddd8a943f98017208d29adc1d
   languageName: node
   linkType: hard
 
@@ -6670,7 +6670,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"boxen@npm:^5.0.0, boxen@npm:^5.1.2":
+"boxen@npm:^5.1.2":
   version: 5.1.2
   resolution: "boxen@npm:5.1.2"
   dependencies:
@@ -9427,13 +9427,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"escape-goat@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "escape-goat@npm:2.1.1"
-  checksum: ce05c70c20dd7007b60d2d644b625da5412325fdb57acf671ba06cb2ab3cd6789e2087026921a05b665b0a03fadee2955e7fc0b9a67da15a6551a980b260eba7
-  languageName: node
-  linkType: hard
-
 "escape-html@npm:~1.0.3":
   version: 1.0.3
   resolution: "escape-html@npm:1.0.3"
@@ -11974,15 +11967,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"global-dirs@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "global-dirs@npm:3.0.1"
-  dependencies:
-    ini: 2.0.0
-  checksum: 70147b80261601fd40ac02a104581432325c1c47329706acd773f3a6ce99bb36d1d996038c85ccacd482ad22258ec233c586b6a91535b1a116b89663d49d6438
-  languageName: node
-  linkType: hard
-
 "global-modules@npm:^2.0.0":
   version: 2.0.0
   resolution: "global-modules@npm:2.0.0"
@@ -12172,7 +12156,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:^9.5.0, got@npm:^9.6.0":
+"got@npm:^9.5.0":
   version: 9.6.0
   resolution: "got@npm:9.6.0"
   dependencies:
@@ -12359,13 +12343,6 @@ __metadata:
   version: 2.0.1
   resolution: "has-unicode@npm:2.0.1"
   checksum: 1eab07a7436512db0be40a710b29b5dc21fa04880b7f63c9980b706683127e3c1b57cb80ea96d47991bdae2dfe479604f6a1ba410106ee1046a41d1bd0814400
-  languageName: node
-  linkType: hard
-
-"has-yarn@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "has-yarn@npm:2.1.0"
-  checksum: 5eb1d0bb8518103d7da24532bdbc7124ffc6d367b5d3c10840b508116f2f1bcbcf10fd3ba843ff6e2e991bdf9969fd862d42b2ed58aade88343326c950b7e7f7
   languageName: node
   linkType: hard
 
@@ -12827,13 +12804,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"import-lazy@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "import-lazy@npm:2.1.0"
-  checksum: 05294f3b9dd4971d3a996f0d2f176410fb6745d491d6e73376429189f5c1c3d290548116b2960a7cf3e89c20cdf11431739d1d2d8c54b84061980795010e803a
-  languageName: node
-  linkType: hard
-
 "imurmurhash@npm:^0.1.4":
   version: 0.1.4
   resolution: "imurmurhash@npm:0.1.4"
@@ -12889,13 +12859,6 @@ __metadata:
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 4a48a733847879d6cf6691860a6b1e3f0f4754176e4d71494c41f3475553768b10f84b5ce1d40fbd0e34e6bfbb864ee35858ad4dd2cf31e02fc4a154b724d7f1
-  languageName: node
-  linkType: hard
-
-"ini@npm:2.0.0":
-  version: 2.0.0
-  resolution: "ini@npm:2.0.0"
-  checksum: e7aadc5fb2e4aefc666d74ee2160c073995a4061556b1b5b4241ecb19ad609243b9cceafe91bae49c219519394bbd31512516cb22a3b1ca6e66d869e0447e84e
   languageName: node
   linkType: hard
 
@@ -13262,16 +13225,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-installed-globally@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "is-installed-globally@npm:0.4.0"
-  dependencies:
-    global-dirs: ^3.0.0
-    is-path-inside: ^3.0.2
-  checksum: 3359840d5982d22e9b350034237b2cda2a12bac1b48a721912e1ab8e0631dd07d45a2797a120b7b87552759a65ba03e819f1bd63f2d7ab8657ec0b44ee0bf399
-  languageName: node
-  linkType: hard
-
 "is-invalid-path@npm:^0.1.0":
   version: 0.1.0
   resolution: "is-invalid-path@npm:0.1.0"
@@ -13304,13 +13257,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-npm@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "is-npm@npm:5.0.0"
-  checksum: 9baff02b0c69a3d3c79b162cb2f9e67fb40ef6d172c16601b2e2471c21e9a4fa1fc9885a308d7bc6f3a3cd2a324c27fa0bf284c133c3349bb22571ab70d041cc
-  languageName: node
-  linkType: hard
-
 "is-number-object@npm:^1.0.4":
   version: 1.0.6
   resolution: "is-number-object@npm:1.0.6"
@@ -13334,7 +13280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-path-inside@npm:^3.0.2, is-path-inside@npm:^3.0.3":
+"is-path-inside@npm:^3.0.3":
   version: 3.0.3
   resolution: "is-path-inside@npm:3.0.3"
   checksum: abd50f06186a052b349c15e55b182326f1936c89a78bf6c8f2b707412517c097ce04bc49a0ca221787bc44e1049f51f09a2ffb63d22899051988d3a618ba13e9
@@ -13551,13 +13497,6 @@ __metadata:
   dependencies:
     is-docker: ^2.0.0
   checksum: 20849846ae414997d290b75e16868e5261e86ff5047f104027026fd61d8b5a9b0b3ade16239f35e1a067b3c7cc02f70183cb661010ed16f4b6c7c93dad1b19d8
-  languageName: node
-  linkType: hard
-
-"is-yarn-global@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "is-yarn-global@npm:0.3.0"
-  checksum: bca013d65fee2862024c9fbb3ba13720ffca2fe750095174c1c80922fdda16402b5c233f5ac9e265bc12ecb5446e7b7f519a32d9541788f01d4d44e24d2bf481
   languageName: node
   linkType: hard
 
@@ -14028,15 +13967,6 @@ __metadata:
   dependencies:
     language-subtag-registry: ~0.3.2
   checksum: c81b5d8b9f5f9cfd06ee71ada6ddfe1cf83044dd5eeefcd1e420ad491944da8957688db4a0a9bc562df4afdc2783425cbbdfd152c01d93179cf86888903123cf
-  languageName: node
-  linkType: hard
-
-"latest-version@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "latest-version@npm:5.1.0"
-  dependencies:
-    package-json: ^6.3.0
-  checksum: fbc72b071eb66c40f652441fd783a9cca62f08bf42433651937f078cd9ef94bf728ec7743992777826e4e89305aef24f234b515e6030503a2cbee7fc9bdc2c0f
   languageName: node
   linkType: hard
 
@@ -15624,7 +15554,7 @@ __metadata:
     prettier: 2.8.2
     ts-node: 10.9.1
     typescript: 4.9.4
-    vercel: 28.11.0
+    vercel: 28.11.1
   languageName: unknown
   linkType: soft
 
@@ -16856,18 +16786,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-json@npm:^6.3.0":
-  version: 6.5.0
-  resolution: "package-json@npm:6.5.0"
-  dependencies:
-    got: ^9.6.0
-    registry-auth-token: ^4.0.0
-    registry-url: ^5.0.0
-    semver: ^6.2.0
-  checksum: cc9f890d3667d7610e6184decf543278b87f657d1ace0deb4a9c9155feca738ef88f660c82200763d3348010f4e42e9c7adc91e96ab0f86a770955995b5351e2
-  languageName: node
-  linkType: hard
-
 "package-json@npm:^8.1.0":
   version: 8.1.0
   resolution: "package-json@npm:8.1.0"
@@ -17989,15 +17907,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pupa@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "pupa@npm:2.1.1"
-  dependencies:
-    escape-goat: ^2.0.0
-  checksum: 49529e50372ffdb0cccf0efa0f3b3cb0a2c77805d0d9cc2725bd2a0f6bb414631e61c93a38561b26be1259550b7bb6c2cb92315aa09c8bf93f3bdcb49f2b2fb7
-  languageName: node
-  linkType: hard
-
 "puppeteer@npm:*":
   version: 13.0.0
   resolution: "puppeteer@npm:13.0.0"
@@ -18173,7 +18082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc@npm:1.2.8, rc@npm:^1.2.7, rc@npm:^1.2.8":
+"rc@npm:1.2.8, rc@npm:^1.2.7":
   version: 1.2.8
   resolution: "rc@npm:1.2.8"
   dependencies:
@@ -18558,30 +18467,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"registry-auth-token@npm:^4.0.0":
-  version: 4.2.2
-  resolution: "registry-auth-token@npm:4.2.2"
-  dependencies:
-    rc: 1.2.8
-  checksum: c5030198546ecfdcbcb0722cbc3e260c4f5f174d8d07bdfedd4620e79bfdf17a2db735aa230d600bd388fce6edd26c0a9ed2eb7e9b4641ec15213a28a806688b
-  languageName: node
-  linkType: hard
-
 "registry-auth-token@npm:^5.0.1":
   version: 5.0.1
   resolution: "registry-auth-token@npm:5.0.1"
   dependencies:
     "@pnpm/npm-conf": ^1.0.4
   checksum: abd3a3b14aee445398d09efc3b67be57fbf1b1e93b61443b45196055d2372f3814e6942a56ecd5a5385ab8e26c2078e0b3f6d346689c49b82f7e5049940e4b03
-  languageName: node
-  linkType: hard
-
-"registry-url@npm:^5.0.0":
-  version: 5.1.0
-  resolution: "registry-url@npm:5.1.0"
-  dependencies:
-    rc: ^1.2.8
-  checksum: bcea86c84a0dbb66467b53187fadebfea79017cddfb4a45cf27530d7275e49082fe9f44301976eb0164c438e395684bcf3dae4819b36ff9d1640d8cc60c73df9
   languageName: node
   linkType: hard
 
@@ -19173,15 +19064,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver-diff@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "semver-diff@npm:3.1.1"
-  dependencies:
-    semver: ^6.3.0
-  checksum: 8bbe5a5d7add2d5e51b72314a9215cd294d71f41cdc2bf6bd59ee76411f3610b576172896f1d191d0d7294cb9f2f847438d2ee158adacc0c224dca79052812fe
-  languageName: node
-  linkType: hard
-
 "semver@npm:2 || 3 || 4 || 5, semver@npm:^5.3.0, semver@npm:^5.5.0, semver@npm:^5.7.1":
   version: 5.7.1
   resolution: "semver@npm:5.7.1"
@@ -19209,7 +19091,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^6.0.0, semver@npm:^6.1.1, semver@npm:^6.1.2, semver@npm:^6.2.0, semver@npm:^6.3.0":
+"semver@npm:^6.0.0, semver@npm:^6.1.1, semver@npm:^6.1.2, semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0"
   bin:
@@ -21460,28 +21342,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-notifier@npm:5.1.0":
-  version: 5.1.0
-  resolution: "update-notifier@npm:5.1.0"
-  dependencies:
-    boxen: ^5.0.0
-    chalk: ^4.1.0
-    configstore: ^5.0.1
-    has-yarn: ^2.1.0
-    import-lazy: ^2.1.0
-    is-ci: ^2.0.0
-    is-installed-globally: ^0.4.0
-    is-npm: ^5.0.0
-    is-yarn-global: ^0.3.0
-    latest-version: ^5.1.0
-    pupa: ^2.1.1
-    semver: ^7.3.4
-    semver-diff: ^3.1.1
-    xdg-basedir: ^4.0.0
-  checksum: 461e5e5b002419296d3868ee2abe0f9ab3e1846d9db642936d0c46f838872ec56069eddfe662c45ce1af0a8d6d5026353728de2e0a95ab2e3546a22ea077caf1
-  languageName: node
-  linkType: hard
-
 "upper-case-first@npm:^2.0.2":
   version: 2.0.2
   resolution: "upper-case-first@npm:2.0.2"
@@ -21659,25 +21519,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:28.11.0":
-  version: 28.11.0
-  resolution: "vercel@npm:28.11.0"
+"vercel@npm:28.11.1":
+  version: 28.11.1
+  resolution: "vercel@npm:28.11.1"
   dependencies:
-    "@vercel/build-utils": 5.7.4
-    "@vercel/go": 2.2.23
-    "@vercel/hydrogen": 0.0.37
-    "@vercel/next": 3.3.8
-    "@vercel/node": 2.8.5
-    "@vercel/python": 3.1.33
-    "@vercel/redwood": 1.0.44
-    "@vercel/remix": 1.1.6
-    "@vercel/ruby": 1.3.49
-    "@vercel/static-build": 1.1.0
-    update-notifier: 5.1.0
+    "@vercel/build-utils": 5.7.5
+    "@vercel/go": 2.2.24
+    "@vercel/hydrogen": 0.0.38
+    "@vercel/next": 3.3.9
+    "@vercel/node": 2.8.6
+    "@vercel/python": 3.1.34
+    "@vercel/redwood": 1.0.45
+    "@vercel/remix": 1.1.7
+    "@vercel/ruby": 1.3.50
+    "@vercel/static-build": 1.1.1
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: 36557ca9fbe46780aa21679a9ead73f335473a123a4b8010abc0da2383d0b6b48e841ba8ed9ac2636d96ec786cf77c337af1ab8ae6bf6cde648a2061213a685a
+  checksum: 2a95ac335cfd8f50f4bb3bd06d921b70b262f408b6fb483b89144fd73c87df1dd7e13081b84ef0951e4aaa01bb029df7bb0ea5f56cc4f2fcaeeb7258d5bc98c2
   languageName: node
   linkType: hard
 
