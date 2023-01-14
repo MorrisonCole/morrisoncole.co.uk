@@ -3728,14 +3728,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mdx@npm:2.0.1":
-  version: 2.0.1
-  resolution: "@types/mdx@npm:2.0.1"
-  checksum: 521ee9f976af45859a4dd60b159e1cc09109de49ec5570fe70f34cddb0a7b5472b87c1bea743429270398207a997821dec34fd7bd63cbc2a1e5f2f6c701dd1c2
-  languageName: node
-  linkType: hard
-
-"@types/mdx@npm:^2.0.0":
+"@types/mdx@npm:2.0.3, @types/mdx@npm:^2.0.0":
   version: 2.0.3
   resolution: "@types/mdx@npm:2.0.3"
   checksum: 41deb51c29535913af01d25f0e1414cfb5a6948d0e60e77e4aca895694de48bf0ac69c5a81fe2d9617d726cb253001ef82a65b683d5ef51987d15aa1931d086b
@@ -14319,7 +14312,7 @@ __metadata:
   resolution: "nextjs-site@workspace:packages/nextjs-site"
   dependencies:
     "@lhci/cli": 0.10.0
-    "@types/mdx": 2.0.1
+    "@types/mdx": 2.0.3
     "@types/node": 18.11.18
     "@types/react": 18.0.26
     "@types/styled-components": 5.1.26

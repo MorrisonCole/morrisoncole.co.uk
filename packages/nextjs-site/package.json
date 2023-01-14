@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@lhci/cli": "0.10.0",
-    "@types/mdx": "2.0.1",
+    "@types/mdx": "2.0.3",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/styled-components": "5.1.26",
