@@ -222,7 +222,6 @@ const config: GatsbyConfig = {
         routeChangeEventName: "route-change",
       },
     },
-    "gatsby-plugin-typescript",
     {
       resolve: "gatsby-plugin-layout",
       options: {
