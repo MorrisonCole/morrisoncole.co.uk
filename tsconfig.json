@@ -9,12 +9,23 @@
     "isolatedModules": true,
     "jsx": "react",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
+    "outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "typeRoots": ["./types"]
   },
-  "include": ["scripts"]
+  "include": [
+    "./src/**/*",
+    "./gatsby-browser.tsx",
+    "./gatsby-node.ts",
+    "./gatsby-config.ts",
+    "./gatsby-ssr.tsx",
+    "./plugins/**/*",
+    "./content/blog/**/*"
+  ],
+  "exclude": ["./.cache", "./public", "./dist"]
 }

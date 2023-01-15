@@ -1,9 +1,0 @@
-# Avoid uploading big files
-.github
-.vscode
-.yarn/cache
-.yarn/unplugged
-.yarn/sdks
-packages/gatsby-site
-terraform
-README.md
