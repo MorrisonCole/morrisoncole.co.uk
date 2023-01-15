@@ -1,8 +1,8 @@
 .DS_Store
 
 # Gatsby
-packages/gatsby-site/.cache
-packages/gatsby-site/public
+.cache
+public
 
 # Terraform
 .terraform
