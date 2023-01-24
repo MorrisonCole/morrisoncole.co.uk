@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.49.0"],\
             ["@typescript-eslint/parser", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.49.0"],\
             ["anser", "npm:2.1.1"],\
-            ["axios", "npm:1.2.3"],\
+            ["axios", "npm:1.2.4"],\
             ["css", "npm:3.0.0"],\
             ["css.escape", "npm:1.5.1"],\
             ["eslint", "npm:8.32.0"],\
@@ -7090,15 +7090,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/axios-npm-0.21.4-e278873748-44245f24ac.zip/node_modules/axios/",\
           "packageDependencies": [\
             ["axios", "npm:0.21.4"],\
-            ["follow-redirects", "virtual:f755ac0cc4c70c35e076928f8aa6f0263fd636cc4e2099e4e273c13cc606b69b7a388f291c0c8619acb7408ff1b451b75383f6c8b49bc764e34ed80f23de3d43#npm:1.15.2"]\
+            ["follow-redirects", "virtual:74dd1631b2fc61c8bfb2f37d24ff41b5b41dc3266939a8668b03d3d49a1683bd6626d23e6b20eb94a1effdcd1a8f506c771f643691fa00fdef71aef15762ed79#npm:1.15.2"]\
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:1.2.3", {\
-          "packageLocation": "./.yarn/cache/axios-npm-1.2.3-f755ac0cc4-52802a1e31.zip/node_modules/axios/",\
+        ["npm:1.2.4", {\
+          "packageLocation": "./.yarn/cache/axios-npm-1.2.4-74dd1631b2-3454248d72.zip/node_modules/axios/",\
           "packageDependencies": [\
-            ["axios", "npm:1.2.3"],\
-            ["follow-redirects", "virtual:f755ac0cc4c70c35e076928f8aa6f0263fd636cc4e2099e4e273c13cc606b69b7a388f291c0c8619acb7408ff1b451b75383f6c8b49bc764e34ed80f23de3d43#npm:1.15.2"],\
+            ["axios", "npm:1.2.4"],\
+            ["follow-redirects", "virtual:74dd1631b2fc61c8bfb2f37d24ff41b5b41dc3266939a8668b03d3d49a1683bd6626d23e6b20eb94a1effdcd1a8f506c771f643691fa00fdef71aef15762ed79#npm:1.15.2"],\
             ["form-data", "npm:4.0.0"],\
             ["proxy-from-env", "npm:1.1.0"]\
           ],\
@@ -11356,10 +11356,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:f755ac0cc4c70c35e076928f8aa6f0263fd636cc4e2099e4e273c13cc606b69b7a388f291c0c8619acb7408ff1b451b75383f6c8b49bc764e34ed80f23de3d43#npm:1.15.2", {\
-          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-648473d7d2/0/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
+        ["virtual:74dd1631b2fc61c8bfb2f37d24ff41b5b41dc3266939a8668b03d3d49a1683bd6626d23e6b20eb94a1effdcd1a8f506c771f643691fa00fdef71aef15762ed79#npm:1.15.2", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-6f8fcc7cb8/0/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
           "packageDependencies": [\
-            ["follow-redirects", "virtual:f755ac0cc4c70c35e076928f8aa6f0263fd636cc4e2099e4e273c13cc606b69b7a388f291c0c8619acb7408ff1b451b75383f6c8b49bc764e34ed80f23de3d43#npm:1.15.2"],\
+            ["follow-redirects", "virtual:74dd1631b2fc61c8bfb2f37d24ff41b5b41dc3266939a8668b03d3d49a1683bd6626d23e6b20eb94a1effdcd1a8f506c771f643691fa00fdef71aef15762ed79#npm:1.15.2"],\
             ["@types/debug", null],\
             ["debug", null]\
           ],\
@@ -16703,7 +16703,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.49.0"],\
             ["@typescript-eslint/parser", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.49.0"],\
             ["anser", "npm:2.1.1"],\
-            ["axios", "npm:1.2.3"],\
+            ["axios", "npm:1.2.4"],\
             ["css", "npm:3.0.0"],\
             ["css.escape", "npm:1.5.1"],\
             ["eslint", "npm:8.32.0"],\
