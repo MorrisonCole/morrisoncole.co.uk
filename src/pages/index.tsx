@@ -1,21 +1,31 @@
-import { Paper, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Chip, Paper, Typography } from "@mui/material";
+import { Box, Container } from "@mui/system";
 import { HeadProps, PageProps } from "gatsby";
-import React from "react";
+import React, { useState } from "react";
 import DownloadCVButton from "../components/download-cv-button";
 import SEO from "../components/seo";
 import CustomizedTimeline from "../components/timeline/timeline";
 import {
+  Category,
   getTimelineEntries,
   TimelineEntry,
 } from "../components/timeline/timeline-data";
+
+const FILTER_MAP = {
+  EVERYTHING: [Category.Work, Category.Life],
+  WORK: [Category.Work],
+  LIFE: [Category.Life],
+};
 
 export const Head = ({ location }: HeadProps) => {
   return <SEO title="Timeline" pathname={location.pathname} />;
 };
 
-export default function TimelineIndex({ location }: PageProps): JSX.Element {
-  const lifeEvents: TimelineEntry[] = getTimelineEntries();
+export default function TimelineIndex(): JSX.Element {
+  const [filter, setFilter] = useState(FILTER_MAP.EVERYTHING);
+  const lifeEvents: TimelineEntry[] = getTimelineEntries().filter(
+    (timelineEntry) => filter.includes(timelineEntry.category)
+  );
 
   return (
     <>
@@ -66,6 +76,30 @@ export default function TimelineIndex({ location }: PageProps): JSX.Element {
             gridColumn: "1 / 4",
           }}
         >
+          <Box
+            sx={{
+              display: "flex",
+              marginTop: ({ spacing }) => spacing(2),
+              justifyContent: "center",
+              gap: ({ spacing }) => spacing(1),
+            }}
+          >
+            <Chip
+              label="Everything"
+              variant={filter == FILTER_MAP.EVERYTHING ? "filled" : "outlined"}
+              onClick={() => setFilter(FILTER_MAP.EVERYTHING)}
+            />
+            <Chip
+              label="Work"
+              variant={filter == FILTER_MAP.WORK ? "filled" : "outlined"}
+              onClick={() => setFilter(FILTER_MAP.WORK)}
+            />
+            <Chip
+              label="Life"
+              variant={filter == FILTER_MAP.LIFE ? "filled" : "outlined"}
+              onClick={() => setFilter(FILTER_MAP.LIFE)}
+            />
+          </Box>
           <CustomizedTimeline timelineEntries={lifeEvents} />
         </Box>
       </Box>
