@@ -37,6 +37,12 @@ export interface TimelineEntry {
   subtitle2: string;
   text: string;
   title: string;
+  category: Category;
+}
+
+export enum Category {
+  Work,
+  Life,
 }
 
 export function getTimelineEntries(): TimelineEntry[] {
@@ -60,6 +66,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text: "Full-stack development on an unannounced project.",
       title: "Unity",
+      category: Category.Work,
     },
     {
       date: "2019",
@@ -70,6 +77,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text: "Back to the metropolis. Working and teaching in the software industry.",
       title: "Tokyo",
+      category: Category.Life,
     },
     {
       date: "2019 - 2020",
@@ -80,6 +88,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text: "Developed an AI-powered product to speed up medical diagnoses. Didn't do any AI things though.",
       title: "Medmain Inc.",
+      category: Category.Work,
     },
     {
       date: "2019",
@@ -90,6 +99,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text: "Studied Japanese, hiked (a lot), tried to figure out how to do basic stuff.",
       title: "Kobe, Hyogo",
+      category: Category.Life,
     },
     {
       date: "2015 - 2019",
@@ -106,6 +116,7 @@ export function getTimelineEntries(): TimelineEntry[] {
         "the rest, as they say, is history. Improbable now stands at around 400 people. I was sad to leave after I " +
         "had experienced so much there, but honestly scaling a startup is tiring (or at least, being part of a startup that scales is tiring).",
       title: "Improbable",
+      category: Category.Work,
     },
     {
       date: "2013 - 2015",
@@ -116,6 +127,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "(Aqc. by Apple, 2018)",
       text: "After interning here during the final year of my degree, I joined the Android team full-time.",
       title: "Shazam",
+      category: Category.Work,
     },
     {
       date: "2013",
@@ -131,6 +143,7 @@ export function getTimelineEntries(): TimelineEntry[] {
         "I founded Third Nerve at UCL during a resurgence of independent games. We developed" +
         " a multiplayer platformer that we took to game festivals around the UK and successfully got greenlit on Steam.",
       title: "Third Nerve",
+      category: Category.Work,
     },
     {
       date: "2010 - 2014",
@@ -141,6 +154,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "First-class Honours",
       text: "Wanted to attend music college, but for some reason I decided at the last moment to get a degree in Computer Science. Graduated with 1st-class honours.",
       title: "University College London",
+      category: Category.Work,
     },
     {
       date: "2010",
@@ -151,6 +165,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text: "After a life in the countryside, the metropolis was attractive.",
       title: "London, UK",
+      category: Category.Life,
     },
     {
       date: "2006 - 2010",
@@ -166,6 +181,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "3 A-Levels (A*-A), 6 GCSEs (A*-A)",
       text: "Joined as a trombonist with a full musical scholarship. Typical conservative/religious boarding school typed stuff... (and I wonder why I have to go to therapy).",
       title: "Wells Cathedral School",
+      category: Category.Life,
     },
     {
       date: "1992",
@@ -178,6 +194,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       subtitle2: "",
       text: "I never asked for this.",
       title: "Born",
+      category: Category.Life,
     },
   ];
 }
