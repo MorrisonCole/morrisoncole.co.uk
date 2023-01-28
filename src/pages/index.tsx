@@ -12,8 +12,8 @@ import {
 } from "../components/timeline/timeline-data";
 
 const FILTER_MAP = {
-  EVERYTHING: [Category.Work, Category.Life],
-  WORK: [Category.Work],
+  EVERYTHING: [Category.Software, Category.Life],
+  SOFTWARE: [Category.Software],
   LIFE: [Category.Life],
 };
 
@@ -90,9 +90,9 @@ export default function TimelineIndex(): JSX.Element {
               onClick={() => setFilter(FILTER_MAP.EVERYTHING)}
             />
             <Chip
-              label="Work"
-              variant={filter == FILTER_MAP.WORK ? "filled" : "outlined"}
-              onClick={() => setFilter(FILTER_MAP.WORK)}
+              label="Software"
+              variant={filter == FILTER_MAP.SOFTWARE ? "filled" : "outlined"}
+              onClick={() => setFilter(FILTER_MAP.SOFTWARE)}
             />
             <Chip
               label="Life"
