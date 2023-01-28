@@ -12,9 +12,10 @@ import {
 } from "../components/timeline/timeline-data";
 
 const FILTER_MAP = {
-  EVERYTHING: [Category.Software, Category.Life],
-  SOFTWARE: [Category.Software],
+  EVERYTHING: [Category.Music, Category.Software, Category.Life],
   LIFE: [Category.Life],
+  MUSIC: [Category.Music],
+  SOFTWARE: [Category.Software],
 };
 
 export const Head = ({ location }: HeadProps) => {
@@ -84,25 +85,56 @@ export default function TimelineIndex(): JSX.Element {
               gap: ({ spacing }) => spacing(1),
             }}
           >
-            <Chip
+            <FilterChip
               label="Everything"
-              variant={filter == FILTER_MAP.EVERYTHING ? "filled" : "outlined"}
-              onClick={() => setFilter(FILTER_MAP.EVERYTHING)}
+              setFilter={setFilter}
+              activeFilter={filter}
+              expectedFilter={FILTER_MAP.EVERYTHING}
             />
-            <Chip
-              label="Software"
-              variant={filter == FILTER_MAP.SOFTWARE ? "filled" : "outlined"}
-              onClick={() => setFilter(FILTER_MAP.SOFTWARE)}
-            />
-            <Chip
+            <FilterChip
               label="Life"
-              variant={filter == FILTER_MAP.LIFE ? "filled" : "outlined"}
-              onClick={() => setFilter(FILTER_MAP.LIFE)}
+              setFilter={setFilter}
+              activeFilter={filter}
+              expectedFilter={FILTER_MAP.LIFE}
+            />
+            <FilterChip
+              label="Music"
+              setFilter={setFilter}
+              activeFilter={filter}
+              expectedFilter={FILTER_MAP.MUSIC}
+            />
+            <FilterChip
+              label="Software"
+              setFilter={setFilter}
+              activeFilter={filter}
+              expectedFilter={FILTER_MAP.SOFTWARE}
             />
           </Box>
           <CustomizedTimeline timelineEntries={lifeEvents} />
         </Box>
       </Box>
     </>
+  );
+}
+
+type FilterChipProps = {
+  label: string;
+  setFilter: React.Dispatch<React.SetStateAction<Category[]>>;
+  activeFilter: Category[];
+  expectedFilter: Category[];
+};
+
+export function FilterChip({
+  label,
+  setFilter,
+  activeFilter,
+  expectedFilter,
+}: FilterChipProps): JSX.Element {
+  return (
+    <Chip
+      label={label}
+      variant={activeFilter == expectedFilter ? "filled" : "outlined"}
+      onClick={() => setFilter(expectedFilter)}
+    />
   );
 }

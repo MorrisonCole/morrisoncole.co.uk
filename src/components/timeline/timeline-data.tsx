@@ -1,4 +1,10 @@
-import { ChildFriendly, Home, School, Work } from "@mui/icons-material/";
+import {
+  ChildFriendly,
+  Home,
+  School,
+  Work,
+  MusicNote,
+} from "@mui/icons-material/";
 import React from "react";
 import { CSSObject, useTheme } from "@mui/material/styles";
 import { StaticImage } from "gatsby-plugin-image";
@@ -28,6 +34,11 @@ class WorkIcon implements TimelineIcon {
   icon = (<Work />);
 }
 
+class MusicIcon implements TimelineIcon {
+  background = { background: "hsl(339, 82%, 51%)", color: "hsl(0, 0%, 100%)" };
+  icon = (<MusicNote />);
+}
+
 export interface TimelineEntry {
   date: string;
   icon: TimelineIcon;
@@ -43,6 +54,7 @@ export interface TimelineEntry {
 export enum Category {
   Software,
   Life,
+  Music,
 }
 
 export function getTimelineEntries(): TimelineEntry[] {
@@ -100,6 +112,22 @@ export function getTimelineEntries(): TimelineEntry[] {
       text: "Studied Japanese, hiked (a lot), tried to figure out how to do basic stuff.",
       title: "Kobe, Hyogo",
       category: Category.Life,
+    },
+    {
+      date: "2018 - Now",
+      icon: new MusicIcon(),
+      image: (
+        <StaticImage
+          src="./images/latent-signal.png"
+          alt="Latent Signal channel art"
+        />
+      ),
+      mainLink: "https://www.youtube.com/@latentsignal",
+      subtitle1: "Performer, Songwriter, Mixing Engineer, Video Editor",
+      subtitle2: "",
+      text: "TL;DR I make music.",
+      title: "Latent Signal",
+      category: Category.Music,
     },
     {
       date: "2015 - 2019",
