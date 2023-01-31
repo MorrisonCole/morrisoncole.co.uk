@@ -59,7 +59,7 @@
     "@types/node": "18.11.18",
     "@types/prettier": "2.7.2",
     "@types/react": "18.0.27",
-    "@typescript-eslint/eslint-plugin": "5.49.0",
+    "@typescript-eslint/eslint-plugin": "5.50.0",
     "@typescript-eslint/parser": "5.50.0",
     "axios": "1.2.6",
     "css": "3.0.0",
