@@ -78,7 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mitt", "npm:3.0.0"],\
             ["platform", "npm:1.3.6"],\
-            ["prettier", "npm:2.8.3"],\
+            ["prettier", "npm:2.8.4"],\
             ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.3.5"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:18.2.0"],\
@@ -16949,7 +16949,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.21"],\
             ["mitt", "npm:3.0.0"],\
             ["platform", "npm:1.3.6"],\
-            ["prettier", "npm:2.8.3"],\
+            ["prettier", "npm:2.8.4"],\
             ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:1.3.5"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:18.2.0"],\
@@ -19107,10 +19107,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prettier", [\
-        ["npm:2.8.3", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.8.3-2c5624c4ca-92f2ceb522.zip/node_modules/prettier/",\
+        ["npm:2.8.4", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.8.4-ba64a351d1-c173064bf3.zip/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.8.3"]\
+            ["prettier", "npm:2.8.4"]\
           ],\
           "linkType": "HARD"\
         }]\
