@@ -11,8 +11,8 @@ body {
   filter: hue-rotate(180deg);
 }
 
-div:has(> .gatsby-resp-image-wrapper) {
-  width: 100%; 
-  grid-column: 1 / 6; 
+span:has(> .gatsby-resp-image-wrapper) {
+  width: 100%;
+  grid-column: 1 / 6;
   margin-bottom: 16px;
 }
