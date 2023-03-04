@@ -17,7 +17,16 @@ const components = {
     <Typography {...props} component="h2" variant="h2" gutterBottom={true} />
   ),
   h3: (props): JSX.Element => (
-    <Typography {...props} component="h3" variant="h3" gutterBottom={true} />
+    <Typography
+      {...props}
+      component="h3"
+      variant="h3"
+      gutterBottom={true}
+      sx={{
+        color: "primary.light",
+        marginTop: ({ spacing }) => spacing(2),
+      }}
+    />
   ),
   h4: (props): JSX.Element => (
     <Typography {...props} component="h4" variant="h4" gutterBottom={true} />
@@ -68,7 +77,10 @@ const components = {
         {...props}
         elevation={3}
         sx={{
-          padding: ({ spacing }) => spacing(3),
+          paddingLeft: ({ spacing }) => spacing(3),
+          paddingRight: ({ spacing }) => spacing(3),
+          paddingTop: ({ spacing }) => spacing(3),
+          paddingBottom: ({ spacing }) => spacing(1),
         }}
       />
     </Box>
@@ -77,7 +89,9 @@ const components = {
   pre: (props) => {
     const childProps = props.children.props;
     if (childProps.className) {
-      return <Code className={childProps.className}>{childProps.children}</Code>;
+      return (
+        <Code className={childProps.className}>{childProps.children}</Code>
+      );
     }
     return <pre {...props} />;
   },
