@@ -9,7 +9,7 @@ type Props = {
 export default function WrapWithCommon({ children }: Props): JSX.Element {
   return (
     <ThemeProvider>
-      <CssBaseline />
+      <CssBaseline enableColorScheme />
       <>{children}</>
     </ThemeProvider>
   );
