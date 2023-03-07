@@ -32,7 +32,7 @@ export default function Layout({
       <Box
         sx={(theme) => ({
           gridArea: "content",
-          [theme.breakpoints.down("sm")]: {
+          [theme.breakpoints.down("lg")]: {
             paddingLeft: theme.spacing(1),
             paddingRight: theme.spacing(1),
           },

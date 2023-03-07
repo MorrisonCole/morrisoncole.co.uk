@@ -11,7 +11,7 @@ export default function Header(): JSX.Element {
   return (
     <Box
       sx={(theme) => ({
-        [theme.breakpoints.down("sm")]: {
+        [theme.breakpoints.down("lg")]: {
           paddingLeft: theme.spacing(1),
           paddingRight: theme.spacing(1),
         },
