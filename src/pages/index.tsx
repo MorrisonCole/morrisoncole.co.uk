@@ -19,7 +19,7 @@ const FILTER_MAP = {
 };
 
 export const Head = ({ location }: HeadProps) => {
-  return <SEO title="Timeline" pathname={location.pathname} />;
+  return <SEO pathname={location.pathname} />;
 };
 
 export default function TimelineIndex(): JSX.Element {
