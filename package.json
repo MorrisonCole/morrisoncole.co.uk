@@ -29,6 +29,7 @@
     "gatsby-plugin-google-tagmanager": "5.7.0",
     "gatsby-plugin-image": "3.7.0",
     "gatsby-plugin-layout": "4.7.0",
+    "gatsby-plugin-manifest": "5.7.0",
     "gatsby-plugin-mdx": "5.7.0",
     "gatsby-plugin-preconnect": "1.4.0",
     "gatsby-plugin-remove-serviceworker": "1.0.0",
