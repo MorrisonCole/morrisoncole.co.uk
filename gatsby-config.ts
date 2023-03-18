@@ -231,6 +231,17 @@ const config: GatsbyConfig = {
         hostname: siteAddress.hostname,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Morrison Cole`,
+        short_name: `Morrison Cole`,
+        start_url: `/`,
+        display: `standalone`,
+        icon: `content/favicon.ico`,
+        theme_color_in_head: false,
+      },
+    },
     "gatsby-plugin-remove-serviceworker",
   ],
 };
