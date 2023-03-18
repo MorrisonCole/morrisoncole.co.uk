@@ -8859,6 +8859,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-plugin-manifest@npm:5.7.0":
+  version: 5.7.0
+  resolution: "gatsby-plugin-manifest@npm:5.7.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    gatsby-core-utils: ^4.7.0
+    gatsby-plugin-utils: ^4.7.0
+    semver: ^7.3.8
+    sharp: ^0.31.3
+  peerDependencies:
+    gatsby: ^5.0.0-next
+  checksum: 5c3a69fb9ce9a2579297d79d2ec2adce5a4b7faf5533664dc06735d54d606e4976185e33ca6ce95dab3439fce940e75ceaec387f299665263dc6fef4bc7572aa
+  languageName: node
+  linkType: hard
+
 "gatsby-plugin-mdx@npm:5.7.0":
   version: 5.7.0
   resolution: "gatsby-plugin-mdx@npm:5.7.0"
@@ -12706,6 +12721,7 @@ __metadata:
     gatsby-plugin-google-tagmanager: 5.7.0
     gatsby-plugin-image: 3.7.0
     gatsby-plugin-layout: 4.7.0
+    gatsby-plugin-manifest: 5.7.0
     gatsby-plugin-mdx: 5.7.0
     gatsby-plugin-preconnect: 1.4.0
     gatsby-plugin-remove-serviceworker: 1.0.0

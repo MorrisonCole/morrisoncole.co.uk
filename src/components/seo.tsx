@@ -1,5 +1,6 @@
 import React from "react";
 import useSiteMetadata from "../hooks/use-site-metadata";
+import { useTheme } from "@mui/material/styles";
 
 interface SEOProps {
   title?: string;
@@ -22,6 +23,8 @@ function SEO({
   pathname,
   children,
 }: SEOProps): JSX.Element {
+  const theme = useTheme();
+
   const siteMetadata: Queries.SiteSiteMetadata = useSiteMetadata();
 
   const formattedTitle = title
@@ -35,7 +38,11 @@ function SEO({
   return (
     <>
       <title>{formattedTitle}</title>
-      <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
+      <meta
+        id="theme-color"
+        name="theme-color"
+        content={theme.palette.primary.main}
+      />
       <meta id="description" name="description" content={metaDescription} />
       <meta
         id="image"
