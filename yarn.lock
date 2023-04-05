@@ -8902,9 +8902,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-s3@npm:0.4.0":
-  version: 0.4.0
-  resolution: "gatsby-plugin-s3@npm:0.4.0"
+"gatsby-plugin-s3@npm:0.4.1":
+  version: 0.4.1
+  resolution: "gatsby-plugin-s3@npm:0.4.1"
   dependencies:
     "@babel/polyfill": ^7.8.3
     async: ^2.6.2
@@ -8926,7 +8926,7 @@ __metadata:
     gatsby: ">2.0.0-alpha"
   bin:
     gatsby-plugin-s3: bin.js
-  checksum: b960caa0099284cec0deb0e209da8d09db406274c4ae226bd379a5cae2a6a589de51846d81d069558a1ccc812094c927821f388e12fe1739845335a7a5436e91
+  checksum: 8099888ec289aee950cf17d32de2653bcc637a9fc7f2a36827747edd53f4bf294d054d81451c4fc201cf333f8867b6b4422bdd84bb81327a5b70e03a35080f71
   languageName: node
   linkType: hard
 
@@ -12649,7 +12649,7 @@ __metadata:
     gatsby-plugin-mdx: 5.8.0
     gatsby-plugin-preconnect: 1.4.0
     gatsby-plugin-remove-serviceworker: 1.0.0
-    gatsby-plugin-s3: 0.4.0
+    gatsby-plugin-s3: 0.4.1
     gatsby-plugin-sharp: 5.8.1
     gatsby-plugin-sitemap: 6.8.0
     gatsby-plugin-web-font-loader: 1.0.4
