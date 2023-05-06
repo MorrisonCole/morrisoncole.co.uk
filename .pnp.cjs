@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/runtime", "npm:7.21.5"],\
             ["@emotion/cache", "npm:11.11.0"],\
             ["@emotion/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
-            ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.10.0"],\
+            ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@emotion/styled", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@mdx-js/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.3.0"],\
             ["@morrisoncole/gatsby-source-goodreads", "npm:0.1.2"],\
@@ -2828,19 +2828,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@emotion/server", [\
-        ["npm:11.10.0", {\
-          "packageLocation": "./.yarn/cache/@emotion-server-npm-11.10.0-4c64a8cb41-15b7135a57.zip/node_modules/@emotion/server/",\
+        ["npm:11.11.0", {\
+          "packageLocation": "./.yarn/cache/@emotion-server-npm-11.11.0-a2de354ee0-2130b51390.zip/node_modules/@emotion/server/",\
           "packageDependencies": [\
-            ["@emotion/server", "npm:11.10.0"]\
+            ["@emotion/server", "npm:11.11.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.10.0", {\
-          "packageLocation": "./.yarn/__virtual__/@emotion-server-virtual-606e75c3b1/0/cache/@emotion-server-npm-11.10.0-4c64a8cb41-15b7135a57.zip/node_modules/@emotion/server/",\
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0", {\
+          "packageLocation": "./.yarn/__virtual__/@emotion-server-virtual-658ec4a2d6/0/cache/@emotion-server-npm-11.11.0-a2de354ee0-2130b51390.zip/node_modules/@emotion/server/",\
           "packageDependencies": [\
-            ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.10.0"],\
+            ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@emotion/css", null],\
-            ["@emotion/utils", "npm:1.2.0"],\
+            ["@emotion/utils", "npm:1.2.1"],\
             ["@types/emotion__css", null],\
             ["html-tokenize", "npm:2.0.1"],\
             ["multipipe", "npm:1.0.2"],\
@@ -16917,7 +16917,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/runtime", "npm:7.21.5"],\
             ["@emotion/cache", "npm:11.11.0"],\
             ["@emotion/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
-            ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.10.0"],\
+            ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@emotion/styled", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@mdx-js/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.3.0"],\
             ["@morrisoncole/gatsby-source-goodreads", "npm:0.1.2"],\
