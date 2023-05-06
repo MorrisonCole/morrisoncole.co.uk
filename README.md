@@ -11,7 +11,7 @@ Requires `GOODREADS_KEY` in order to import Goodreads data.
 Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 
 1. Run `yarn install`
-2. Run `yarn start:gatsby`
+2. Run `yarn start`
 
 ## Yarn
 
