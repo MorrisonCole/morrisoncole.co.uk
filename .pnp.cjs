@@ -28,7 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@babel/runtime", "npm:7.21.5"],\
+            ["@babel/runtime", "npm:7.22.0"],\
             ["@emotion/cache", "npm:11.11.0"],\
             ["@emotion/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
@@ -2606,10 +2606,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:7.21.5", {\
-          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.21.5-7d058028a3-358f2779d3.zip/node_modules/@babel/runtime/",\
+        ["npm:7.22.0", {\
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.22.0-49aa4c2aeb-fa60a963f3.zip/node_modules/@babel/runtime/",\
           "packageDependencies": [\
-            ["@babel/runtime", "npm:7.21.5"],\
+            ["@babel/runtime", "npm:7.22.0"],\
             ["regenerator-runtime", "npm:0.13.11"]\
           ],\
           "linkType": "HARD"\
@@ -16831,7 +16831,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["morrisoncole.co.uk", "workspace:."],\
-            ["@babel/runtime", "npm:7.21.5"],\
+            ["@babel/runtime", "npm:7.22.0"],\
             ["@emotion/cache", "npm:11.11.0"],\
             ["@emotion/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
             ["@emotion/server", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:11.11.0"],\
