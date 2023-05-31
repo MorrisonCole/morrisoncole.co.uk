@@ -12643,7 +12643,7 @@ __metadata:
     react-intersection-observer: 9.4.3
     reading-time: 2.0.0-1
     shallow-compare: 1.2.2
-    socket.io-client: 4.6.1
+    socket.io-client: 4.6.2
     source-map: 0.8.0-beta.0
     ts-node: 10.9.1
     typescript: 5.0.4
@@ -15784,6 +15784,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"socket.io-client@npm:4.6.2":
+  version: 4.6.2
+  resolution: "socket.io-client@npm:4.6.2"
+  dependencies:
+    "@socket.io/component-emitter": ~3.1.0
+    debug: ~4.3.2
+    engine.io-client: ~6.4.0
+    socket.io-parser: ~4.2.4
+  checksum: 2e0bb4518f0be0066f47fe89bdabb8169ad87f44c617d4b40aa196be04e6c0b1fd5daa9de322414f2d0b40757987f299168f916627120d9018ecf979d9a170f5
+  languageName: node
+  linkType: hard
+
 "socket.io-parser@npm:~4.2.1":
   version: 4.2.1
   resolution: "socket.io-parser@npm:4.2.1"
@@ -15791,6 +15803,16 @@ __metadata:
     "@socket.io/component-emitter": ~3.1.0
     debug: ~4.3.1
   checksum: 2582202f22538d7e6b4436991378cb4cea3b2f8219cda24923ae35afd291ab5ad6120e7d093e41738256b6c6ad10c667dd25753c2d9a2340fead04e9286f152d
+  languageName: node
+  linkType: hard
+
+"socket.io-parser@npm:~4.2.4":
+  version: 4.2.4
+  resolution: "socket.io-parser@npm:4.2.4"
+  dependencies:
+    "@socket.io/component-emitter": ~3.1.0
+    debug: ~4.3.1
+  checksum: 61540ef99af33e6a562b9effe0fad769bcb7ec6a301aba5a64b3a8bccb611a0abdbe25f469933ab80072582006a78ca136bf0ad8adff9c77c9953581285e2263
   languageName: node
   linkType: hard
 
