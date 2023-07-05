@@ -67,7 +67,7 @@
     "eslint": "8.44.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-react": "7.32.2",
-    "prettier": "2.8.8",
+    "prettier": "3.0.0",
     "socket.io-client": "4.7.1",
     "source-map": "0.8.0-beta.0",
     "ts-node": "10.9.1",
