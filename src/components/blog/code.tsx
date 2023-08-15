@@ -1,20 +1,18 @@
 import React, { useContext } from "react";
-import Highlight, { defaultProps, Language } from "prism-react-renderer";
-import vsDark from "prism-react-renderer/themes/vsDark";
-import gitHub from "prism-react-renderer/themes/github";
+import { Highlight, themes } from "prism-react-renderer";
 import { ThemeContext } from "../../theme";
 import { Paper } from "@mui/material";
 import { useTheme } from "@mui/system";
 
 type CodeProps = {
-  children: JSX.Element;
+  code: string;
   className: string;
 };
 
-export function Code({ children, className }: CodeProps): JSX.Element {
+export function Code({ code, className }: CodeProps): JSX.Element {
   const { paletteMode } = useContext(ThemeContext);
   const theme = useTheme();
-  const language = className.replace(/language-/gm, "") as Language;
+  const language = className.replace(/language-/gm, "");
 
   return (
     <Paper
@@ -28,10 +26,9 @@ export function Code({ children, className }: CodeProps): JSX.Element {
       elevation={3}
     >
       <Highlight
-        {...defaultProps}
-        code={children}
+        code={code}
         language={language}
-        theme={paletteMode === "dark" ? vsDark : gitHub}
+        theme={paletteMode === "dark" ? themes.vsDark : themes.github}
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <pre
@@ -47,9 +44,9 @@ export function Code({ children, className }: CodeProps): JSX.Element {
             }}
           >
             {tokens.slice(0, -1).map((line, i) => (
-              <div {...getLineProps({ line, key: i })}>
+              <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
-                  <span {...getTokenProps({ token, key })} />
+                  <span key={key} {...getTokenProps({ token, key })} />
                 ))}
               </div>
             ))}
