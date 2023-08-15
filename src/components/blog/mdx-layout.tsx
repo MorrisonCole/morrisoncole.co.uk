@@ -86,11 +86,11 @@ const components = {
     </Box>
   ),
   a: (props): JSX.Element => <CustomLink {...props}></CustomLink>,
-  pre: (props) => {
+  pre: (props: JSX.Element) => {
     const childProps = props.children.props;
     if (childProps.className) {
       return (
-        <Code className={childProps.className}>{childProps.children}</Code>
+        <Code code={childProps.children as string} className={childProps.className}></Code>
       );
     }
     return <pre {...props} />;
