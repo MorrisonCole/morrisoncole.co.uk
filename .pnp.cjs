@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/css", "npm:0.0.34"],\
             ["@types/eslint", "npm:8.44.2"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
-            ["@types/node", "npm:20.6.0"],\
+            ["@types/node", "npm:20.6.1"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/react", "npm:18.2.21"],\
             ["@typescript-eslint/eslint-plugin", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:6.7.0"],\
@@ -5876,10 +5876,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:20.6.0", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.6.0-73d5022935-52611801af.zip/node_modules/@types/node/",\
+        ["npm:20.6.1", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.6.1-83e0fece4b-f984861722.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:20.6.0"]\
+            ["@types/node", "npm:20.6.1"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -17232,7 +17232,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/css", "npm:0.0.34"],\
             ["@types/eslint", "npm:8.44.2"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
-            ["@types/node", "npm:20.6.0"],\
+            ["@types/node", "npm:20.6.1"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/react", "npm:18.2.21"],\
             ["@typescript-eslint/eslint-plugin", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:6.7.0"],\
@@ -22337,7 +22337,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", "npm:20.6.0"],\
+            ["@types/node", "npm:20.6.1"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
