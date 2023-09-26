@@ -80,7 +80,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mitt", "npm:3.0.1"],\
             ["platform", "npm:1.3.6"],\
             ["prettier", "npm:3.0.3"],\
-            ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.0.6"],\
+            ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.1.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:18.2.0"],\
             ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:9.5.2"],\
@@ -17282,7 +17282,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mitt", "npm:3.0.1"],\
             ["platform", "npm:1.3.6"],\
             ["prettier", "npm:3.0.3"],\
-            ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.0.6"],\
+            ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.1.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:18.2.0"],\
             ["react-intersection-observer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:9.5.2"],\
@@ -19518,17 +19518,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prism-react-renderer", [\
-        ["npm:2.0.6", {\
-          "packageLocation": "./.yarn/cache/prism-react-renderer-npm-2.0.6-2c96c45f28-d2202b79dd.zip/node_modules/prism-react-renderer/",\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/prism-react-renderer-npm-2.1.0-74f6a54268-61b4eb22bd.zip/node_modules/prism-react-renderer/",\
           "packageDependencies": [\
-            ["prism-react-renderer", "npm:2.0.6"]\
+            ["prism-react-renderer", "npm:2.1.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.0.6", {\
-          "packageLocation": "./.yarn/__virtual__/prism-react-renderer-virtual-030e74eb0b/0/cache/prism-react-renderer-npm-2.0.6-2c96c45f28-d2202b79dd.zip/node_modules/prism-react-renderer/",\
+        ["virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/prism-react-renderer-virtual-aa10bd0623/0/cache/prism-react-renderer-npm-2.1.0-74f6a54268-61b4eb22bd.zip/node_modules/prism-react-renderer/",\
           "packageDependencies": [\
-            ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.0.6"],\
+            ["prism-react-renderer", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:2.1.0"],\
             ["@types/prismjs", "npm:1.26.0"],\
             ["@types/react", "npm:18.2.22"],\
             ["clsx", "npm:1.2.1"],\
