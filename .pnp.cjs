@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/css", "npm:0.0.34"],\
             ["@types/eslint", "npm:8.44.3"],\
             ["@types/mdx-js__react", "npm:1.5.6"],\
-            ["@types/node", "npm:20.8.3"],\
+            ["@types/node", "npm:20.8.4"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/react", "npm:18.2.25"],\
             ["@typescript-eslint/eslint-plugin", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:6.7.4"],\
@@ -5888,10 +5888,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:20.8.3", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-20.8.3-bab45f3f77-bfb88b341f.zip/node_modules/@types/node/",\
+        ["npm:20.8.4", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.8.4-eacd001178-2106b9ef97.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:20.8.3"]\
+            ["@types/node", "npm:20.8.4"],\
+            ["undici-types", "npm:5.25.3"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -17276,7 +17277,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/css", "npm:0.0.34"],\
             ["@types/eslint", "npm:8.44.3"],\
             ["@types/mdx-js__react", "npm:1.5.6"],\
-            ["@types/node", "npm:20.8.3"],\
+            ["@types/node", "npm:20.8.4"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/react", "npm:18.2.25"],\
             ["@typescript-eslint/eslint-plugin", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:6.7.4"],\
@@ -22413,7 +22414,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.3"],\
-            ["@types/node", "npm:20.8.3"],\
+            ["@types/node", "npm:20.8.4"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -22707,6 +22708,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/unc-path-regex-npm-0.1.2-53c3343ef3-a05fa2006b.zip/node_modules/unc-path-regex/",\
           "packageDependencies": [\
             ["unc-path-regex", "npm:0.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["undici-types", [\
+        ["npm:5.25.3", {\
+          "packageLocation": "./.yarn/cache/undici-types-npm-5.25.3-2ac9eafc9e-ec9d2cc365.zip/node_modules/undici-types/",\
+          "packageDependencies": [\
+            ["undici-types", "npm:5.25.3"]\
           ],\
           "linkType": "HARD"\
         }]\
