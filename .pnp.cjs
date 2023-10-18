@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/lab", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.0.0-alpha.149"],\
             ["@mui/material", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.14.14"],\
             ["@mui/system", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.14.14"],\
-            ["@types/css", "npm:0.0.34"],\
+            ["@types/css", "npm:0.0.35"],\
             ["@types/eslint", "npm:8.44.4"],\
             ["@types/mdx-js__react", "npm:1.5.6"],\
             ["@types/node", "npm:20.8.6"],\
@@ -5629,10 +5629,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/css", [\
-        ["npm:0.0.34", {\
-          "packageLocation": "./.yarn/cache/@types-css-npm-0.0.34-77b54fdc14-fc9e9e2ad0.zip/node_modules/@types/css/",\
+        ["npm:0.0.35", {\
+          "packageLocation": "./.yarn/cache/@types-css-npm-0.0.35-3b5647f5a9-4f74e3c2a6.zip/node_modules/@types/css/",\
           "packageDependencies": [\
-            ["@types/css", "npm:0.0.34"]\
+            ["@types/css", "npm:0.0.35"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -17290,7 +17290,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/lab", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.0.0-alpha.149"],\
             ["@mui/material", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.14.14"],\
             ["@mui/system", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.14.14"],\
-            ["@types/css", "npm:0.0.34"],\
+            ["@types/css", "npm:0.0.35"],\
             ["@types/eslint", "npm:8.44.4"],\
             ["@types/mdx-js__react", "npm:1.5.6"],\
             ["@types/node", "npm:20.8.6"],\
