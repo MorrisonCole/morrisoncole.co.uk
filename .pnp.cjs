@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/system", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.14.17"],\
             ["@types/css", "npm:0.0.36"],\
             ["@types/eslint", "npm:8.44.7"],\
-            ["@types/mdx-js__react", "npm:1.5.7"],\
+            ["@types/mdx-js__react", "npm:1.5.8"],\
             ["@types/node", "npm:20.8.10"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/react", "npm:18.2.36"],\
@@ -5755,10 +5755,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/mdx-js__react", [\
-        ["npm:1.5.7", {\
-          "packageLocation": "./.yarn/cache/@types-mdx-js__react-npm-1.5.7-1dc3f0774b-110f3c5f72.zip/node_modules/@types/mdx-js__react/",\
+        ["npm:1.5.8", {\
+          "packageLocation": "./.yarn/cache/@types-mdx-js__react-npm-1.5.8-22cc12e6cd-cb972e9059.zip/node_modules/@types/mdx-js__react/",\
           "packageDependencies": [\
-            ["@types/mdx-js__react", "npm:1.5.7"],\
+            ["@types/mdx-js__react", "npm:1.5.8"],\
             ["@types/react", "npm:18.2.36"]\
           ],\
           "linkType": "HARD"\
@@ -12854,7 +12854,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mdx-js/react", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:3.0.0"],\
             ["@types/gatsby", null],\
             ["@types/gatsby-source-filesystem", null],\
-            ["@types/mdx-js__react", "npm:1.5.7"],\
+            ["@types/mdx-js__react", "npm:1.5.8"],\
             ["@types/react", "npm:18.2.36"],\
             ["@types/react-dom", null],\
             ["acorn", "npm:8.8.2"],\
@@ -17205,7 +17205,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mui/system", "virtual:558efa4e697544fb5f50a181fc36e55ebcafff0499f76cc52f7c75ca71443cf511e473feceb11b527227cdd8a27c72bc748e67d84d6a11b9beff85c3ccc5b427#npm:5.14.17"],\
             ["@types/css", "npm:0.0.36"],\
             ["@types/eslint", "npm:8.44.7"],\
-            ["@types/mdx-js__react", "npm:1.5.7"],\
+            ["@types/mdx-js__react", "npm:1.5.8"],\
             ["@types/node", "npm:20.8.10"],\
             ["@types/prettier", "npm:2.7.3"],\
             ["@types/react", "npm:18.2.36"],\
