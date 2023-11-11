@@ -80,7 +80,7 @@ resource "aws_route53_record" "soa_morrisoncole_co_uk" {
   ttl = 900
 }
 
-resource "aws_route53_record" "google_site_verification_morrisoncole_co_uk" {
+resource "aws_route53_record" "txt_morrisoncole_co_uk" {
   provider = aws.ap-northeast-1
 
   zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
@@ -88,6 +88,7 @@ resource "aws_route53_record" "google_site_verification_morrisoncole_co_uk" {
   type    = "TXT"
   records = [
     "google-site-verification=l9nxzwNCDiiCTEPu1R2glmGhlpBJCnfX_OKOVLE04r8",
+    "openai-domain-verification=dv-mnVt5rr5zsXQPrGLkxc6ZQiM"
   ]
   ttl = 300
 }
