@@ -10,6 +10,7 @@ public
 # Yarn
 node_modules
 .yarn/*
+.pnp.cjs
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
