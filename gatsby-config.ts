@@ -224,14 +224,6 @@ const config: GatsbyConfig = {
       },
     },
     {
-      resolve: "gatsby-plugin-s3",
-      options: {
-        bucketName: "morrisoncole.co.uk",
-        protocol: siteAddress.protocol.slice(0, -1),
-        hostname: siteAddress.hostname,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Morrison Cole`,
