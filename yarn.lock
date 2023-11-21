@@ -7062,13 +7062,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "clsx@npm:1.2.1"
-  checksum: 5ded6f61f15f1fa0350e691ccec43a28b12fb8e64c8e94715f2a937bc3722d4c3ed41d6e945c971fc4dcc2a7213a43323beaf2e1c28654af63ba70c9968a8643
-  languageName: node
-  linkType: hard
-
 "clsx@npm:^2.0.0":
   version: 2.0.0
   resolution: "clsx@npm:2.0.0"
@@ -13621,7 +13614,7 @@ __metadata:
     mitt: "npm:3.0.1"
     platform: "npm:1.3.6"
     prettier: "npm:3.1.0"
-    prism-react-renderer: "npm:2.2.0"
+    prism-react-renderer: "npm:2.3.0"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     react-intersection-observer: "npm:9.5.3"
@@ -15170,15 +15163,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prism-react-renderer@npm:2.2.0":
-  version: 2.2.0
-  resolution: "prism-react-renderer@npm:2.2.0"
+"prism-react-renderer@npm:2.3.0":
+  version: 2.3.0
+  resolution: "prism-react-renderer@npm:2.3.0"
   dependencies:
     "@types/prismjs": "npm:^1.26.0"
-    clsx: "npm:^1.2.1"
+    clsx: "npm:^2.0.0"
   peerDependencies:
     react: ">=16.0.0"
-  checksum: 8378d40511303dcc6aeaffb4485df14d005f18a8b973a865c0ca18c754719147b86f25787e794896487f203209b253258c4c0d0f1ea7ae635faff14c7bdc1a58
+  checksum: f582e0de68548dbe16754c5125929b13b59d430acc57ad1f724e811d247d2e1d00185e151e4b5b76661f62a34b3fdcf3caf88f057531ece0fbc8b0946c0300ef
   languageName: node
   linkType: hard
 
