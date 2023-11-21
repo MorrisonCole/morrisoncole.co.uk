@@ -55,7 +55,7 @@
     "@aws-sdk/client-s3": "3.454.0",
     "@aws-sdk/credential-provider-node": "3.451.0",
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
-    "@types/css": "0.0.36",
+    "@types/css": "0.0.37",
     "@types/eslint": "8.44.7",
     "@types/mdx-js__react": "1.5.8",
     "@types/mime": "^3",

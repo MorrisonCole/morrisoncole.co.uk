@@ -4732,10 +4732,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/css@npm:0.0.36":
-  version: 0.0.36
-  resolution: "@types/css@npm:0.0.36"
-  checksum: b967980f01d933688d150845e44d1aae29eaba6bcbd46087483b03a45de91ab6e0342b2efac4e62224b01a9b17c5e1de0ee641a8e6ba9c0d760c3116c934459d
+"@types/css@npm:0.0.37":
+  version: 0.0.37
+  resolution: "@types/css@npm:0.0.37"
+  checksum: c17cf1a74f65d8d658d7691ab81e08de301860bce4ce27409b1925125e3e5a0e7f842adfdf816c23b8863b3815f47521d8a4588683c6920028f3408b596e3eeb
   languageName: node
   linkType: hard
 
@@ -13579,7 +13579,7 @@ __metadata:
     "@mui/lab": "npm:5.0.0-alpha.153"
     "@mui/material": "npm:5.14.18"
     "@mui/system": "npm:5.14.18"
-    "@types/css": "npm:0.0.36"
+    "@types/css": "npm:0.0.37"
     "@types/eslint": "npm:8.44.7"
     "@types/mdx-js__react": "npm:1.5.8"
     "@types/mime": "npm:^3"
