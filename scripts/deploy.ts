@@ -2,7 +2,7 @@ import { S3Client, PutObjectCommand, ListObjectsV2Command, DeleteObjectsCommand,
 import { defaultProvider } from "@aws-sdk/credential-provider-node";
 import * as fs from 'fs';
 import * as path from 'path';
-import * as mime from 'mime';
+import mime from 'mime';
 
 const BUCKET_NAME = 'morrisoncole.co.uk';
 const BUCKET_REGION = 'ap-northeast-1';

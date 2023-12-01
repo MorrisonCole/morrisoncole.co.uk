@@ -4927,13 +4927,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mime@npm:^3":
-  version: 3.0.4
-  resolution: "@types/mime@npm:3.0.4"
-  checksum: a6139c8e1f705ef2b064d072f6edc01f3c099023ad7c4fce2afc6c2bf0231888202adadbdb48643e8e20da0ce409481a49922e737eca52871b3dc08017455843
-  languageName: node
-  linkType: hard
-
 "@types/minimatch@npm:*":
   version: 5.1.2
   resolution: "@types/minimatch@npm:5.1.2"
@@ -6796,24 +6789,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001400":
-  version: 1.0.30001444
-  resolution: "caniuse-lite@npm:1.0.30001444"
-  checksum: 8655aedde1a54cddb3e8167b031fbe49d827ba74d33bc5df126a4761429f1d19dff017bcb73160969e88d35102fc8fce2bf24f084fae09d6d4bd8f31fbefc15e
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001449, caniuse-lite@npm:^1.0.30001464":
-  version: 1.0.30001488
-  resolution: "caniuse-lite@npm:1.0.30001488"
-  checksum: f6c570c58052387d7a01c48a189d8ba8717921103ccbe0ac3490baf87b7cb82245ebdbf23f33a5657fb30dca5e13bab8735567721afc22b12dcd492ff3372193
-  languageName: node
-  linkType: hard
-
-"caniuse-lite@npm:^1.0.30001517":
-  version: 1.0.30001522
-  resolution: "caniuse-lite@npm:1.0.30001522"
-  checksum: fbb72297c5be7de37fbd51b321b930a5525aeb060dbce706b7c3017de02bc059cd40817274821463fb8230d73009668f8393c941b68b8e36370369580c82b8c8
+"caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001449, caniuse-lite@npm:^1.0.30001464, caniuse-lite@npm:^1.0.30001517":
+  version: 1.0.30001565
+  resolution: "caniuse-lite@npm:1.0.30001565"
+  checksum: abc58bf3504508c4cb62f0e4a3267a222140935cb63ff252f1e960bf8680cc17368da1d29fb1f68343dfa8b046de7b9e7c2003b822732adc4c68e8ab6ae82c0e
   languageName: node
   linkType: hard
 
@@ -13624,7 +13603,6 @@ __metadata:
     "@types/css": "npm:0.0.37"
     "@types/eslint": "npm:8.44.8"
     "@types/mdx-js__react": "npm:1.5.8"
-    "@types/mime": "npm:^3"
     "@types/node": "npm:20.10.1"
     "@types/prettier": "npm:2.7.3"
     "@types/react": "npm:18.2.39"
