@@ -93,6 +93,18 @@ resource "aws_route53_record" "txt_morrisoncole_co_uk" {
   ttl = 300
 }
 
+resource "aws_route53_record" "github_verify_txt_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "_github-pages-challenge-MorrisonCole.${local.uk_root_domain}"
+  type    = "TXT"
+  records = [
+    "9a15d658cb1fac7a4d7337b134971f",
+  ]
+  ttl = 300
+}
+
 resource "aws_route53_record" "mx_subdomains_morrisoncole_co_uk" {
   provider = aws.ap-northeast-1
 
