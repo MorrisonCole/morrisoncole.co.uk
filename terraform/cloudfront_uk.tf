@@ -27,6 +27,7 @@ resource "aws_cloudfront_distribution" "morrisoncole_co_uk" {
   }
 
   enabled         = true
+  http_version    = "http2and3"
   is_ipv6_enabled = true
   price_class     = "PriceClass_All"
 
@@ -93,7 +94,7 @@ resource "aws_cloudfront_distribution" "morrisoncole_co_uk" {
   viewer_certificate {
     acm_certificate_arn            = aws_acm_certificate.morrisoncole_co_uk.arn
     cloudfront_default_certificate = false
-    minimum_protocol_version       = "TLSv1.2_2018"
+    minimum_protocol_version       = "TLSv1.2_2021"
     ssl_support_method             = "sni-only"
   }
 }
@@ -122,6 +123,7 @@ resource "aws_cloudfront_distribution" "www_morrisoncole_co_uk" {
   }
 
   enabled         = true
+  http_version    = "http2and3"
   is_ipv6_enabled = true
   price_class     = "PriceClass_All"
 
@@ -156,7 +158,7 @@ resource "aws_cloudfront_distribution" "www_morrisoncole_co_uk" {
   viewer_certificate {
     acm_certificate_arn            = aws_acm_certificate.morrisoncole_co_uk.arn
     cloudfront_default_certificate = false
-    minimum_protocol_version       = "TLSv1.2_2018"
+    minimum_protocol_version       = "TLSv1.2_2021"
     ssl_support_method             = "sni-only"
   }
 }
