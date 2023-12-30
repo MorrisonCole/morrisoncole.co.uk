@@ -38,6 +38,15 @@ export function ThemeProvider({ children }: Props): JSX.Element {
     () =>
       responsiveFontSizes(
         createTheme({
+          components: {
+            MuiTypography: {
+              styleOverrides: {
+                root: {
+                  lineHeight: 1.5,
+                },
+              }
+            },
+          },
           typography: {
             fontFamily: "Roboto,Helvetica,Arial,sans-serif",
             fontSize: 19,

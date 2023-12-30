@@ -13,6 +13,15 @@ Requires `gatsby` to be available (`yarn global add gatsby-cli`).
 1. Run `yarn install`
 2. Run `yarn start`
 
+## Font Generation
+
+You'll need `glyphhanger` [prerequisites](https://github.com/zachleat/glyphhanger?tab=readme-ov-file#installation).
+
+(On WSL, [follow the Puppeteer setup guide](https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-puppeteer-on-wsl-windows-subsystem-for-linux)).
+
+1. `yarn start`
+2. `yarn fonts`
+
 ## Yarn
 
 ### Upgrade Yarn
