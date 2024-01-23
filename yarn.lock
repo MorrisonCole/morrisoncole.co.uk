@@ -144,9 +144,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-s3@npm:3.496.0":
-  version: 3.496.0
-  resolution: "@aws-sdk/client-s3@npm:3.496.0"
+"@aws-sdk/client-s3@npm:3.498.0":
+  version: 3.498.0
+  resolution: "@aws-sdk/client-s3@npm:3.498.0"
   dependencies:
     "@aws-crypto/sha1-browser": "npm:3.0.0"
     "@aws-crypto/sha256-browser": "npm:3.0.0"
@@ -163,7 +163,7 @@ __metadata:
     "@aws-sdk/middleware-recursion-detection": "npm:3.496.0"
     "@aws-sdk/middleware-sdk-s3": "npm:3.496.0"
     "@aws-sdk/middleware-signing": "npm:3.496.0"
-    "@aws-sdk/middleware-ssec": "npm:3.496.0"
+    "@aws-sdk/middleware-ssec": "npm:3.498.0"
     "@aws-sdk/middleware-user-agent": "npm:3.496.0"
     "@aws-sdk/region-config-resolver": "npm:3.496.0"
     "@aws-sdk/signature-v4-multi-region": "npm:3.496.0"
@@ -206,7 +206,7 @@ __metadata:
     "@smithy/util-waiter": "npm:^2.1.1"
     fast-xml-parser: "npm:4.2.5"
     tslib: "npm:^2.5.0"
-  checksum: 4f126a0b0a58f6964b146eb28f119bbbb222ff75e40339879bb9466dbb6a1654ad7ee7dbfa692b63563b614ce1f76e4411b3aa84254458088cb34c822c1f6b13
+  checksum: 7abbc8ca3aef1c20f330989868b749c8a8ea6bd5ae74e3cb614c7b977b5ff6b75fdff8fd8499a926f5fa891aa8d843e5e3bbdcc3193e68eac2f5cb9219f5cd7d
   languageName: node
   linkType: hard
 
@@ -527,14 +527,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/middleware-ssec@npm:3.496.0":
-  version: 3.496.0
-  resolution: "@aws-sdk/middleware-ssec@npm:3.496.0"
+"@aws-sdk/middleware-ssec@npm:3.498.0":
+  version: 3.498.0
+  resolution: "@aws-sdk/middleware-ssec@npm:3.498.0"
   dependencies:
     "@aws-sdk/types": "npm:3.496.0"
     "@smithy/types": "npm:^2.9.1"
     tslib: "npm:^2.5.0"
-  checksum: be86a639db4f48ba7827cdcd19ac06ad7ed8d4cb8b6089dfb24a404bdc716a1d8351dbecea619378ecaea17d35382dc371b6f7226d219b3ae581b64047683016
+  checksum: 22c53fe93ca49843eb2ade5e55b8e5b10254227604a60b1637c46e553a0fa1acedf6b7d332397b7ff2675c8754284592b25744105155fad5803fcad105556888
   languageName: node
   linkType: hard
 
@@ -13784,7 +13784,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
-    "@aws-sdk/client-s3": "npm:3.496.0"
+    "@aws-sdk/client-s3": "npm:3.498.0"
     "@aws-sdk/credential-provider-node": "npm:3.496.0"
     "@babel/runtime": "npm:7.23.8"
     "@emotion/cache": "npm:11.11.0"
