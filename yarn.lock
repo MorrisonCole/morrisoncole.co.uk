@@ -366,6 +366,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-sdk/credential-provider-node@npm:3.499.0":
+  version: 3.499.0
+  resolution: "@aws-sdk/credential-provider-node@npm:3.499.0"
+  dependencies:
+    "@aws-sdk/credential-provider-env": "npm:3.496.0"
+    "@aws-sdk/credential-provider-ini": "npm:3.496.0"
+    "@aws-sdk/credential-provider-process": "npm:3.496.0"
+    "@aws-sdk/credential-provider-sso": "npm:3.496.0"
+    "@aws-sdk/credential-provider-web-identity": "npm:3.496.0"
+    "@aws-sdk/types": "npm:3.496.0"
+    "@smithy/credential-provider-imds": "npm:^2.2.1"
+    "@smithy/property-provider": "npm:^2.1.1"
+    "@smithy/shared-ini-file-loader": "npm:^2.3.1"
+    "@smithy/types": "npm:^2.9.1"
+    tslib: "npm:^2.5.0"
+  checksum: ab592362acc32598b0ee1924747b42e523352684a7dfa3399370f0cf3d0206354c78575722962e25fd19697750571c8541322529d3bc42bf115d86e3e6d35f61
+  languageName: node
+  linkType: hard
+
 "@aws-sdk/credential-provider-process@npm:3.496.0":
   version: 3.496.0
   resolution: "@aws-sdk/credential-provider-process@npm:3.496.0"
@@ -13785,7 +13804,7 @@ __metadata:
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
     "@aws-sdk/client-s3": "npm:3.498.0"
-    "@aws-sdk/credential-provider-node": "npm:3.496.0"
+    "@aws-sdk/credential-provider-node": "npm:3.499.0"
     "@babel/runtime": "npm:7.23.8"
     "@emotion/cache": "npm:11.11.0"
     "@emotion/react": "npm:11.11.3"
