@@ -88,6 +88,7 @@ resource "aws_route53_record" "txt_morrisoncole_co_uk" {
   type    = "TXT"
   records = [
     "google-site-verification=l9nxzwNCDiiCTEPu1R2glmGhlpBJCnfX_OKOVLE04r8",
+    "google-site-verification=hLh_6PrYN-1R2zPgB-ga1cbc_hVyLqB6VMzyO3xY_Q8",
     "openai-domain-verification=dv-mnVt5rr5zsXQPrGLkxc6ZQiM"
   ]
   ttl = 300
