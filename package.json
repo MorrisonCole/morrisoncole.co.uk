@@ -58,7 +58,7 @@
     "@types/css": "0.0.37",
     "@types/eslint": "8.56.3",
     "@types/mdx-js__react": "1.5.8",
-    "@types/node": "20.11.20",
+    "@types/node": "20.11.24",
     "@types/prettier": "2.7.3",
     "@types/react": "18.2.58",
     "@typescript-eslint/eslint-plugin": "7.0.2",
