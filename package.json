@@ -60,7 +60,7 @@
     "@types/mdx-js__react": "1.5.8",
     "@types/node": "20.11.28",
     "@types/prettier": "2.7.3",
-    "@types/react": "18.2.65",
+    "@types/react": "18.2.67",
     "@typescript-eslint/eslint-plugin": "7.2.0",
     "@typescript-eslint/parser": "7.2.0",
     "axios": "1.6.8",
@@ -104,7 +104,7 @@
     "vm-browserify": "*"
   },
   "resolutions": {
-    "@types/react": "18.2.65"
+    "@types/react": "18.2.67"
   },
   "homepage": "https://github.com/MorrisonCole/morrisoncole.co.uk#readme",
   "keywords": [
