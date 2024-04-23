@@ -9470,9 +9470,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.1.0":
-  version: 9.1.0
-  resolution: "eslint@npm:9.1.0"
+"eslint@npm:9.1.1":
+  version: 9.1.1
+  resolution: "eslint@npm:9.1.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.6.1"
@@ -9510,7 +9510,7 @@ __metadata:
     text-table: "npm:^0.2.0"
   bin:
     eslint: bin/eslint.js
-  checksum: 10/8a8902a9aed9113f13638b78794cbe2a711b44300cc0ec05b00e017d52d94b209cf1af81caaaad8cfb4087870f850d7da8e3a892d186c657fb5a21cb1b802379
+  checksum: 10/d0bf8c6335b26a489935df10b74505c0b43ba16a333d938c820ffd097faec05cc0aa27006f5e4091d2c3d10367da3aab01a37bace59d61932976bd7af6dcb99c
   languageName: node
   linkType: hard
 
@@ -14412,7 +14412,7 @@ __metadata:
     axios: "npm:1.6.8"
     css: "npm:3.0.0"
     css.escape: "npm:1.5.1"
-    eslint: "npm:9.1.0"
+    eslint: "npm:9.1.1"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-react: "npm:7.34.1"
     event-source-polyfill: "npm:1.0.31"
