@@ -14149,12 +14149,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mime@npm:4.0.2":
-  version: 4.0.2
-  resolution: "mime@npm:4.0.2"
+"mime@npm:4.0.3":
+  version: 4.0.3
+  resolution: "mime@npm:4.0.3"
   bin:
     mime: bin/cli.js
-  checksum: 10/795e4a4308f6c1ca1d7b080796444cb6bd408ef9694241ea8dd8991b75521ae9575ccdfa710a54684168bdc0d7b5a17e26fe42b469829b9417690c3de473d016
+  checksum: 10/fdabb0f0aecd34c11be108e7a73d74a9f672bee8586d3353834ebebedfb8420bdf932efad11a343de994978504024dab5b7846fc4cae4b1855b571a01d27ee6e
   languageName: node
   linkType: hard
 
@@ -14437,7 +14437,7 @@ __metadata:
     gatsby-transformer-json: "npm:5.13.1"
     gatsby-transformer-sharp: "npm:5.13.1"
     lodash: "npm:4.17.21"
-    mime: "npm:4.0.2"
+    mime: "npm:4.0.3"
     mitt: "npm:3.0.1"
     platform: "npm:1.3.6"
     prettier: "npm:3.2.5"
