@@ -14204,7 +14204,7 @@ __metadata:
     prettier: "npm:3.2.5"
     prism-react-renderer: "npm:2.3.1"
     react: "npm:18.3.0"
-    react-dom: "npm:18.3.0"
+    react-dom: "npm:18.3.1"
     react-intersection-observer: "npm:9.8.2"
     reading-time: "npm:2.0.0-1"
     shallow-compare: "npm:1.2.2"
@@ -16126,15 +16126,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.3.0":
-  version: 18.3.0
-  resolution: "react-dom@npm:18.3.0"
+"react-dom@npm:18.3.1":
+  version: 18.3.1
+  resolution: "react-dom@npm:18.3.1"
   dependencies:
     loose-envify: "npm:^1.1.0"
-    scheduler: "npm:^0.23.1"
+    scheduler: "npm:^0.23.2"
   peerDependencies:
-    react: ^18.3.0
-  checksum: 10/08d6a351fb4032c1b8cd6fc159b4d2d9f1e7ec967f3365f2585d808b381c9e83466dab9b15b72c2162c1a578776044fde641279a55af016473719be66c415408
+    react: ^18.3.1
+  checksum: 10/3f4b73a3aa083091173b29812b10394dd06f4ac06aff410b74702cfb3aa29d7b0ced208aab92d5272919b612e5cda21aeb1d54191848cf6e46e9e354f3541f81
   languageName: node
   linkType: hard
 
@@ -16872,12 +16872,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.23.1":
-  version: 0.23.1
-  resolution: "scheduler@npm:0.23.1"
+"scheduler@npm:^0.23.2":
+  version: 0.23.2
+  resolution: "scheduler@npm:0.23.2"
   dependencies:
     loose-envify: "npm:^1.1.0"
-  checksum: 10/6e194e726210c2d619cbf69a73fdb068cb0c9b0c99222de429ec5fc562c2f28e59a8cb3526e9104e16521e7e57c785a82bc44dd3f78fd0de86aea719a218f3c3
+  checksum: 10/e8d68b89d18d5b028223edf090092846868a765a591944760942b77ea1f69b17235f7e956696efbb62c8130ab90af7e0949bfb8eba7896335507317236966bc9
   languageName: node
   linkType: hard
 
