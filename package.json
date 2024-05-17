@@ -57,7 +57,7 @@
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
     "@types/css": "0.0.37",
     "@types/eslint": "8.56.10",
-    "@types/mdx-js__react": "1.5.8",
+    "@types/mdx-js__react": "2.0.0",
     "@types/node": "20.12.12",
     "@types/prettier": "3.0.0",
     "@types/react": "18.3.2",
