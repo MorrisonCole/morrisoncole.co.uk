@@ -3359,7 +3359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdx-js/react@npm:3.0.1":
+"@mdx-js/react@npm:*, @mdx-js/react@npm:3.0.1":
   version: 3.0.1
   resolution: "@mdx-js/react@npm:3.0.1"
   dependencies:
@@ -5077,12 +5077,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mdx-js__react@npm:1.5.8":
-  version: 1.5.8
-  resolution: "@types/mdx-js__react@npm:1.5.8"
+"@types/mdx-js__react@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@types/mdx-js__react@npm:2.0.0"
   dependencies:
-    "@types/react": "npm:*"
-  checksum: 10/cb972e905990adfd95adc40dd9a764697e3d612c52b309858cd92f3b5cb8d2b2d677bdb9071b8160f507b3ba4ecad2655778f9494bc2d6e61a3ab41057a49e04
+    "@mdx-js/react": "npm:*"
+  checksum: 10/a23e4355f52e2e5051791273296786dbe44facc0535fd7b517f24921581234462e59637f80ac494b7883d17eeaee22e54088490ab8f71d63d686a15a32f493d8
   languageName: node
   linkType: hard
 
@@ -14147,7 +14147,7 @@ __metadata:
     "@mui/system": "npm:5.15.15"
     "@types/css": "npm:0.0.37"
     "@types/eslint": "npm:8.56.10"
-    "@types/mdx-js__react": "npm:1.5.8"
+    "@types/mdx-js__react": "npm:2.0.0"
     "@types/node": "npm:20.12.12"
     "@types/prettier": "npm:3.0.0"
     "@types/react": "npm:18.3.2"
