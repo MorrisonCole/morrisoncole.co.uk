@@ -52,7 +52,7 @@
     "shallow-compare": "1.2.2"
   },
   "devDependencies": {
-    "@aws-sdk/client-s3": "3.590.0",
+    "@aws-sdk/client-s3": "3.591.0",
     "@aws-sdk/credential-provider-node": "3.590.0",
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
     "@types/css": "0.0.37",
