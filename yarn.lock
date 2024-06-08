@@ -14290,7 +14290,7 @@ __metadata:
     shallow-compare: "npm:1.2.2"
     socket.io-client: "npm:4.7.5"
     source-map: "npm:0.8.0-beta.0"
-    tsx: "npm:4.13.2"
+    tsx: "npm:4.13.3"
     typescript: "npm:5.4.5"
   peerDependencies:
     "@babel/core": "*"
@@ -18394,9 +18394,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:4.13.2":
-  version: 4.13.2
-  resolution: "tsx@npm:4.13.2"
+"tsx@npm:4.13.3":
+  version: 4.13.3
+  resolution: "tsx@npm:4.13.3"
   dependencies:
     esbuild: "npm:~0.20.2"
     fsevents: "npm:~2.3.3"
@@ -18406,7 +18406,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10/494d5aa20e39fec4b344d769d9deecbdd27f047f8efd09bcb8daaccde4b00a315855693a08b8d7eddbea8a932c804acd890aae55e664499c76aa26194bba4db4
+  checksum: 10/ba7891084e91d0ae27fa996b80d8164c28b8463a5ff5e6d43dcdf8f8d30dccb59b1e2461622f0b4ae71b683389a799e5d569caafa0b7e81e74cec4f0705b65f0
   languageName: node
   linkType: hard
 
