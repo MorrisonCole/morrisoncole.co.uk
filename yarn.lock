@@ -2299,16 +2299,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/cache@npm:11.12.0, @emotion/cache@npm:^11.12.0":
-  version: 11.12.0
-  resolution: "@emotion/cache@npm:11.12.0"
+"@emotion/cache@npm:11.13.0":
+  version: 11.13.0
+  resolution: "@emotion/cache@npm:11.13.0"
   dependencies:
     "@emotion/memoize": "npm:^0.9.0"
-    "@emotion/sheet": "npm:^1.3.0"
-    "@emotion/utils": "npm:^1.3.0"
+    "@emotion/sheet": "npm:^1.4.0"
+    "@emotion/utils": "npm:^1.4.0"
     "@emotion/weak-memoize": "npm:^0.4.0"
     stylis: "npm:4.2.0"
-  checksum: 10/706fc607d2d1350e5c07d87c905d786ad351ff1c49ebabb45fc76c3c532976c9f2d54109523fa71c3745325cd215d3a9f8e66c898134e2ea7baf3ee24c080411
+  checksum: 10/20a3207600cceb0ddc490fbf6c449c73af1cfe6bea01fcf452d2a00a73fd5d8ce2e7b04ff869289e94fa5c528571618bce48d1dd39820d56de38f1e8de314c5d
   languageName: node
   linkType: hard
 
@@ -2322,6 +2322,19 @@ __metadata:
     "@emotion/weak-memoize": "npm:^0.3.1"
     stylis: "npm:4.2.0"
   checksum: 10/ef29756247dafb87168b4ffb76ee60feb06b8a1016323ecb1d3ba8aed3f4300ca10049bedbfe83aa11e0d81e616c328002a9d50020ebb3af6e4f5337a785c1fe
+  languageName: node
+  linkType: hard
+
+"@emotion/cache@npm:^11.12.0":
+  version: 11.12.0
+  resolution: "@emotion/cache@npm:11.12.0"
+  dependencies:
+    "@emotion/memoize": "npm:^0.9.0"
+    "@emotion/sheet": "npm:^1.3.0"
+    "@emotion/utils": "npm:^1.3.0"
+    "@emotion/weak-memoize": "npm:^0.4.0"
+    stylis: "npm:4.2.0"
+  checksum: 10/706fc607d2d1350e5c07d87c905d786ad351ff1c49ebabb45fc76c3c532976c9f2d54109523fa71c3745325cd215d3a9f8e66c898134e2ea7baf3ee24c080411
   languageName: node
   linkType: hard
 
@@ -2420,6 +2433,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/sheet@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@emotion/sheet@npm:1.4.0"
+  checksum: 10/8ac6e9bf6b373a648f26ae7f1c24041038524f4c72f436f4f8c4761c665e58880c3229d8d89b1f7a4815dd8e5b49634d03e60187cb6f93097d7f7c1859e869d5
+  languageName: node
+  linkType: hard
+
 "@emotion/styled@npm:11.12.0":
   version: 11.12.0
   resolution: "@emotion/styled@npm:11.12.0"
@@ -2467,6 +2487,13 @@ __metadata:
   version: 1.3.0
   resolution: "@emotion/utils@npm:1.3.0"
   checksum: 10/ba391a71dd6071730faf6a1c577ff8466904ffc89b2d67e2fc6f38046962aa4531570cc79b75ceec587ea410f24390e49d4e8e2f5015b07412aba6f915e2053c
+  languageName: node
+  linkType: hard
+
+"@emotion/utils@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@emotion/utils@npm:1.4.0"
+  checksum: 10/e4cdb51819db01fec21c3e35a1391900c9e7f3ac1e7ecb419c8e408464830cd7ef6e1a116381cbfe3fb1039406fb7ed35f16a1575d502c92bc9f81bc13a3ee5a
   languageName: node
   linkType: hard
 
@@ -14408,7 +14435,7 @@ __metadata:
     "@aws-sdk/client-s3": "npm:3.616.0"
     "@aws-sdk/credential-provider-node": "npm:3.616.0"
     "@babel/runtime": "npm:7.24.8"
-    "@emotion/cache": "npm:11.12.0"
+    "@emotion/cache": "npm:11.13.0"
     "@emotion/react": "npm:11.12.0"
     "@emotion/server": "npm:11.11.0"
     "@emotion/styled": "npm:11.12.0"
