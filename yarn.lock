@@ -5315,12 +5315,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.0.0":
-  version: 22.0.0
-  resolution: "@types/node@npm:22.0.0"
+"@types/node@npm:22.0.1":
+  version: 22.0.1
+  resolution: "@types/node@npm:22.0.1"
   dependencies:
     undici-types: "npm:~6.11.1"
-  checksum: 10/7142a13ef1f884fde38f1e1499cbebcfe72755e8cb8657c4cb1ba1c2c91a3ae8656a72eb6e0a7d8189b0124c23c30e7c115324375d9c593435166da7a292e80e
+  checksum: 10/fa753b7f0888457d7f6a3ec9ceb7ceb70fc62d510af4ea345484a16824f0e74b0d48d9a48a576795f13514c33de5f873fd4cea10527f60b808eff9770d7478ea
   languageName: node
   linkType: hard
 
@@ -14447,7 +14447,7 @@ __metadata:
     "@types/css": "npm:0.0.37"
     "@types/eslint": "npm:9.6.0"
     "@types/mdx-js__react": "npm:2.0.0"
-    "@types/node": "npm:22.0.0"
+    "@types/node": "npm:22.0.1"
     "@types/prettier": "npm:3.0.0"
     "@types/react": "npm:18.3.3"
     "@typescript-eslint/eslint-plugin": "npm:7.18.0"
