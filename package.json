@@ -127,5 +127,5 @@
     "lint:prettier:fix": "prettier \"**/*.{tsx,ts,js,md,mdx,json,yml,html,css}\" --write",
     "upgrade": "yarn set version latest"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.4.0"
 }
