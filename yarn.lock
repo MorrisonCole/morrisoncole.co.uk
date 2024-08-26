@@ -5143,13 +5143,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:9.6.0":
-  version: 9.6.0
-  resolution: "@types/eslint@npm:9.6.0"
+"@types/eslint@npm:9.6.1":
+  version: 9.6.1
+  resolution: "@types/eslint@npm:9.6.1"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
-  checksum: 10/39fc797c671ec9c9184802b4974748cf45ee1b11d7aaaaede44426abcafd07ec7c18eb090e8f5b3387b51637ce3fdf54499472d8dd58a928f0d005cbacb573b4
+  checksum: 10/719fcd255760168a43d0e306ef87548e1e15bffe361d5f4022b0f266575637acc0ecb85604ac97879ee8ae83c6a6d0613b0ed31d0209ddf22a0fe6d608fc56fe
   languageName: node
   linkType: hard
 
@@ -14469,7 +14469,7 @@ __metadata:
     "@mui/material": "npm:5.16.7"
     "@mui/system": "npm:5.16.7"
     "@types/css": "npm:0.0.37"
-    "@types/eslint": "npm:9.6.0"
+    "@types/eslint": "npm:9.6.1"
     "@types/mdx-js__react": "npm:2.0.0"
     "@types/node": "npm:22.5.0"
     "@types/prettier": "npm:3.0.0"
