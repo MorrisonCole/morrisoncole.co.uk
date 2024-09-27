@@ -6158,7 +6158,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anser@npm:2.1.1, anser@npm:^2.1.1":
+"anser@npm:2.3.0":
+  version: 2.3.0
+  resolution: "anser@npm:2.3.0"
+  checksum: 10/a3be4be16b753c6bf4790d93bac4f64819d29dbb09592ade1979d3cb3584d7f2cb229fcff33b3519978f3c8bf5a85dac70fb1182a45c42c72826aba5e512ee98
+  languageName: node
+  linkType: hard
+
+"anser@npm:^2.1.1":
   version: 2.1.1
   resolution: "anser@npm:2.1.1"
   checksum: 10/7cf63f2ac34a77a410da37bd7748f9d4f1b077763b51e5eadf7b355211050e12cabbb405268cc033f6351e1e60cc00ca18431a240053ffc94c12f0c758e1e66d
@@ -14583,7 +14590,7 @@ __metadata:
     "@types/react": "npm:18.3.4"
     "@typescript-eslint/eslint-plugin": "npm:8.6.0"
     "@typescript-eslint/parser": "npm:8.7.0"
-    anser: "npm:2.1.1"
+    anser: "npm:2.3.0"
     axios: "npm:1.7.7"
     css: "npm:3.0.0"
     css.escape: "npm:1.5.1"
