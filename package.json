@@ -18,7 +18,7 @@
     "@mui/lab": "5.0.0-alpha.173",
     "@mui/material": "6.0.2",
     "@mui/system": "6.0.2",
-    "anser": "2.1.1",
+    "anser": "2.3.0",
     "css.escape": "1.5.1",
     "event-source-polyfill": "1.0.31",
     "gatsby": "5.13.7",
