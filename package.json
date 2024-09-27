@@ -67,7 +67,7 @@
     "css": "3.0.0",
     "eslint": "9.10.0",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-react": "7.36.1",
+    "eslint-plugin-react": "7.37.0",
     "mime": "4.0.4",
     "prettier": "3.3.3",
     "socket.io-client": "4.8.0",
