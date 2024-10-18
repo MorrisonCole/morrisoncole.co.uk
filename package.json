@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "3.675.0",
-    "@aws-sdk/credential-provider-node": "3.670.0",
+    "@aws-sdk/credential-provider-node": "3.675.0",
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
     "@types/css": "0.0.38",
     "@types/eslint": "9.6.1",
