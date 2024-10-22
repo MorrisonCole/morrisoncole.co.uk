@@ -2161,12 +2161,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.25.7":
-  version: 7.25.7
-  resolution: "@babel/runtime@npm:7.25.7"
+"@babel/runtime@npm:7.25.9":
+  version: 7.25.9
+  resolution: "@babel/runtime@npm:7.25.9"
   dependencies:
     regenerator-runtime: "npm:^0.14.0"
-  checksum: 10/73411fe0f1bff3a962586cef05b30f49e554b6563767e6d84f7d79d605b2c20e7fc3df291a3aebef69043181a8f893afdab9e6672557a5c2d08b9377d6f678cd
+  checksum: 10/8d904cfcb433374b3bb90369452751c94ae69547cdd3679950de4527ac5d04195b9c4a1840482a6f3a84694cb22a6403a7f98b826d60cd945918223a4a6b479c
   languageName: node
   linkType: hard
 
@@ -14594,7 +14594,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-s3": "npm:3.676.0"
     "@aws-sdk/credential-provider-node": "npm:3.675.0"
-    "@babel/runtime": "npm:7.25.7"
+    "@babel/runtime": "npm:7.25.9"
     "@emotion/cache": "npm:11.13.1"
     "@emotion/react": "npm:11.13.3"
     "@emotion/server": "npm:11.11.0"
