@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "7.26.0",
-    "@emotion/cache": "11.13.1",
+    "@emotion/cache": "11.13.5",
     "@emotion/react": "11.13.5",
     "@emotion/server": "11.11.0",
     "@emotion/styled": "11.13.0",
