@@ -14979,7 +14979,7 @@ __metadata:
     prism-react-renderer: "npm:2.4.1"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
-    react-intersection-observer: "npm:9.14.0"
+    react-intersection-observer: "npm:9.14.1"
     reading-time: "npm:2.0.0-1"
     shallow-compare: "npm:1.2.2"
     socket.io-client: "npm:4.8.1"
@@ -16927,16 +16927,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:9.14.0":
-  version: 9.14.0
-  resolution: "react-intersection-observer@npm:9.14.0"
+"react-intersection-observer@npm:9.14.1":
+  version: 9.14.1
+  resolution: "react-intersection-observer@npm:9.14.1"
   peerDependencies:
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 10/270a26927f89771962df15ba0ea5a9d22abfe7f10f96c9a5714c9e63390e718d2f4ce7618fb3062c59fa3976d3055612fb2165e3cf1982c5a7399122a1e608b8
+  checksum: 10/80985460e92fd9a7c2aab81bc64307f858d5a3405a33916cc2a5c5f969305866dc250531ffb40f1d4175e4ed5f01f762a7e6f7820409793bf35df8528c8c1a03
   languageName: node
   linkType: hard
 
