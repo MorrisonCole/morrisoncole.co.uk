@@ -61,7 +61,7 @@
     "@types/node": "22.10.9",
     "@types/prettier": "3.0.0",
     "@types/react": "18.3.4",
-    "@typescript-eslint/eslint-plugin": "8.21.0",
+    "@typescript-eslint/eslint-plugin": "8.22.0",
     "@typescript-eslint/parser": "8.21.0",
     "axios": "1.7.9",
     "css": "3.0.0",
