@@ -63,7 +63,7 @@
     "@types/react": "18.3.4",
     "@typescript-eslint/eslint-plugin": "8.25.0",
     "@typescript-eslint/parser": "8.25.0",
-    "axios": "1.7.9",
+    "axios": "1.8.1",
     "css": "3.0.0",
     "eslint": "9.21.0",
     "eslint-config-prettier": "10.0.2",
