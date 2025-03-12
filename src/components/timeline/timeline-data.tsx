@@ -76,7 +76,7 @@ export function getTimelineEntries(): TimelineEntry[] {
       mainLink: "https://unity.com/",
       subtitle1: "Senior Software Engineer",
       subtitle2: "",
-      text: "Full-stack development on an unannounced project.",
+      text: "Building the core platform for cloud.unity.com 🛠️",
       title: "Unity",
       category: Category.Software,
     },
