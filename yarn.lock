@@ -5254,13 +5254,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.19":
-  version: 18.3.19
-  resolution: "@types/react@npm:18.3.19"
+"@types/react@npm:18.3.20":
+  version: 18.3.20
+  resolution: "@types/react@npm:18.3.20"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 10/4b40a4adf7a59390541dc24059c09d95a777e8e8025fab13d660e1929a88e78efadde8ec94ebd357c5cc80b25590645e81c5b621661700f40496e7833b3d2983
+  checksum: 10/020c51e63b60862e6d772f0cdea0b9441182eedab6289dabd8add0708ded62003834c4e7c6f23a1ccd3ca9486b46296057c3f881c34261a0483765351f8d0bc3
   languageName: node
   linkType: hard
 
@@ -13778,7 +13778,7 @@ __metadata:
     "@types/mdx-js__react": "npm:2.0.0"
     "@types/node": "npm:22.13.13"
     "@types/prettier": "npm:3.0.0"
-    "@types/react": "npm:18.3.19"
+    "@types/react": "npm:18.3.20"
     "@typescript-eslint/eslint-plugin": "npm:8.27.0"
     "@typescript-eslint/parser": "npm:8.27.0"
     anser: "npm:2.3.2"
