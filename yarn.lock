@@ -10087,10 +10087,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-graphiql-explorer@npm:^3.14.0":
-  version: 3.14.0
-  resolution: "gatsby-graphiql-explorer@npm:3.14.0"
-  checksum: 10/7b789bc9094a3d2cddc0cb5ec8fb44a1865b998a67038d9f395ffc24a7abdfd4a28d012db2268175670e402474ac7f9b534602b2b670e4647933161f7513e06c
+"gatsby-graphiql-explorer@npm:^3.14.1":
+  version: 3.14.1
+  resolution: "gatsby-graphiql-explorer@npm:3.14.1"
+  checksum: 10/a4259c4d4112957872d3a42f6617744062327f763fe9686080a6f9581eefd857bcb1d4904ca10d9362f9c2cf1d77a43b5204eda2ef4d7b1d0715ec78db06cbd0
   languageName: node
   linkType: hard
 
@@ -10260,9 +10260,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:5.14.0":
-  version: 5.14.0
-  resolution: "gatsby-plugin-mdx@npm:5.14.0"
+"gatsby-plugin-mdx@npm:5.14.1":
+  version: 5.14.1
+  resolution: "gatsby-plugin-mdx@npm:5.14.1"
   dependencies:
     "@mdx-js/mdx": "npm:^2.3.0"
     acorn: "npm:^8.8.2"
@@ -10289,7 +10289,7 @@ __metadata:
     gatsby-source-filesystem: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 10/96bc1fc39dc59713ad753c55572e0f3a6cb4bb0afdc7fbfddcbaae67c8bf7d2a2e2590a261385f4d9cea75b90dba0b69ffcf229b0cae23d0eaaf38a7aaa302e7
+  checksum: 10/d3862785150b868ad66eff8e250eb061b2b670a6bab21e71b30b51a98aa78c4f47084ed35434e226c5941dd25938b85a1429e615b3810e0289bd5d325b6efa17
   languageName: node
   linkType: hard
 
@@ -10551,9 +10551,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:5.14.1":
-  version: 5.14.1
-  resolution: "gatsby@npm:5.14.1"
+"gatsby@npm:5.14.2":
+  version: 5.14.2
+  resolution: "gatsby@npm:5.14.2"
   dependencies:
     "@babel/code-frame": "npm:^7.18.6"
     "@babel/core": "npm:^7.20.12"
@@ -10638,7 +10638,7 @@ __metadata:
     fs-extra: "npm:^11.2.0"
     gatsby-cli: "npm:^5.14.0"
     gatsby-core-utils: "npm:^4.14.0"
-    gatsby-graphiql-explorer: "npm:^3.14.0"
+    gatsby-graphiql-explorer: "npm:^3.14.1"
     gatsby-legacy-polyfills: "npm:^3.14.0"
     gatsby-link: "npm:^5.14.1"
     gatsby-page-utils: "npm:^3.14.0"
@@ -10715,7 +10715,7 @@ __metadata:
     type-of: "npm:^2.0.1"
     url-loader: "npm:^4.1.1"
     uuid: "npm:^8.3.2"
-    webpack: "npm:^5.88.1"
+    webpack: "npm:~5.98.0"
     webpack-dev-middleware: "npm:^5.3.4"
     webpack-merge: "npm:^5.9.0"
     webpack-stats-plugin: "npm:^1.1.3"
@@ -10730,7 +10730,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 10/07b45c1f19233164013dfc4593666eac8d378c7a8326be89665a2f65e152fb7cb383a4e4300f358ea5565edf2eaf22879898b7459376857fc2450f455925a764
+  checksum: 10/7af00bd08d71189675b383fa7dbdf65c437518b0b5b042397004ab0ca6e04419803085d7d1c2d65be97eff2266e8bcd2178e63db6bec62261f3f99156bd5db7e
   languageName: node
   linkType: hard
 
@@ -13805,7 +13805,7 @@ __metadata:
     eslint-config-prettier: "npm:10.1.1"
     eslint-plugin-react: "npm:7.37.5"
     event-source-polyfill: "npm:1.0.31"
-    gatsby: "npm:5.14.1"
+    gatsby: "npm:5.14.2"
     gatsby-cli: "npm:5.14.0"
     gatsby-legacy-polyfills: "npm:3.14.0"
     gatsby-plugin-canonical-urls: "npm:5.14.0"
@@ -13814,7 +13814,7 @@ __metadata:
     gatsby-plugin-image: "npm:3.14.0"
     gatsby-plugin-layout: "npm:4.14.0"
     gatsby-plugin-manifest: "npm:5.14.0"
-    gatsby-plugin-mdx: "npm:5.14.0"
+    gatsby-plugin-mdx: "npm:5.14.1"
     gatsby-plugin-preconnect: "npm:1.4.0"
     gatsby-plugin-remove-serviceworker: "npm:1.0.0"
     gatsby-plugin-sharp: "npm:5.14.0"
@@ -18425,7 +18425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.88.1":
+"webpack@npm:~5.98.0":
   version: 5.98.0
   resolution: "webpack@npm:5.98.0"
   dependencies:
