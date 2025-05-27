@@ -2043,7 +2043,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.27.1, @babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.25.0, @babel/runtime@npm:^7.26.0, @babel/runtime@npm:^7.27.1, @babel/runtime@npm:^7.4.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:7.27.3":
+  version: 7.27.3
+  resolution: "@babel/runtime@npm:7.27.3"
+  checksum: 10/c1975b37bfc3f24a32c0beb4999d4302a33a70d0599fb3d42a9baf836fcd615de7ae36eff2fbbc7451c892d3dcc9314a90c3f1f3b337f5617f6c5b826d2dbd54
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.9, @babel/runtime@npm:^7.25.0, @babel/runtime@npm:^7.26.0, @babel/runtime@npm:^7.27.1, @babel/runtime@npm:^7.4.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.27.1
   resolution: "@babel/runtime@npm:7.27.1"
   checksum: 10/34cefcbf781ea5a4f1b93f8563327b9ac82694bebdae91e8bd9d7f58d084cbe5b9a6e7f94d77076e15b0bcdaa0040a36cb30737584028df6c4673b4c67b2a31d
@@ -13783,7 +13790,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-s3": "npm:3.817.0"
     "@aws-sdk/credential-provider-node": "npm:3.817.0"
-    "@babel/runtime": "npm:7.27.1"
+    "@babel/runtime": "npm:7.27.3"
     "@emotion/cache": "npm:11.14.0"
     "@emotion/react": "npm:11.14.0"
     "@emotion/server": "npm:11.11.0"
