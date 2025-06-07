@@ -6807,7 +6807,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"busboy@npm:^1.0.0":
+"busboy@npm:^1.6.0":
   version: 1.6.0
   resolution: "busboy@npm:1.6.0"
   dependencies:
@@ -7413,15 +7413,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"concat-stream@npm:^1.5.2":
-  version: 1.6.2
-  resolution: "concat-stream@npm:1.6.2"
+"concat-stream@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "concat-stream@npm:2.0.0"
   dependencies:
     buffer-from: "npm:^1.0.0"
     inherits: "npm:^2.0.3"
-    readable-stream: "npm:^2.2.2"
+    readable-stream: "npm:^3.0.2"
     typedarray: "npm:^0.0.6"
-  checksum: 10/71db903c84fc073ca35a274074e8d26c4330713d299f8623e993c448c1f6bf8b967806dd1d1a7b0f8add6f15ab1af7435df21fe79b4fe7efd78420c89e054e28
+  checksum: 10/250e576d0617e7c58e1c4b2dd6fe69560f316d2c962a409f9f3aac794018499ddb31948b1e4296f217008e124cd5d526432097745157fe504b5d9f3dc469eadb
   languageName: node
   linkType: hard
 
@@ -10597,9 +10597,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:5.14.3":
-  version: 5.14.3
-  resolution: "gatsby@npm:5.14.3"
+"gatsby@npm:5.14.4":
+  version: 5.14.4
+  resolution: "gatsby@npm:5.14.4"
   dependencies:
     "@babel/code-frame": "npm:^7.18.6"
     "@babel/core": "npm:^7.20.12"
@@ -10720,7 +10720,7 @@ __metadata:
     mini-css-extract-plugin: "npm:1.6.2"
     mitt: "npm:^1.2.0"
     moment: "npm:^2.29.4"
-    multer: "npm:^1.4.5-lts.1"
+    multer: "npm:^2.0.1"
     node-fetch: "npm:^2.6.11"
     node-html-parser: "npm:^5.4.2"
     normalize-path: "npm:^3.0.0"
@@ -10776,7 +10776,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 10/070f2cba4add914f125684ffdbd18d73d1d0c6707c500e2fb80d6eeeca53aa3f0caf7e12e1d5cdeb96894d4770f724d1d58db983a2561811400414d438b63588
+  checksum: 10/e1be85bccf94164fb461e1b545fe7c64a7c6fe15ddb91d7876995bb979fdd1892fe760bd424189ccb3cfb431d2ed9ce56d0d0012be307879aaa80524e533a683
   languageName: node
   linkType: hard
 
@@ -13805,7 +13805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mkdirp@npm:^0.5.1, mkdirp@npm:^0.5.4":
+"mkdirp@npm:^0.5.1, mkdirp@npm:^0.5.6":
   version: 0.5.6
   resolution: "mkdirp@npm:0.5.6"
   dependencies:
@@ -13865,7 +13865,7 @@ __metadata:
     eslint-config-prettier: "npm:10.1.5"
     eslint-plugin-react: "npm:7.37.5"
     event-source-polyfill: "npm:1.0.31"
-    gatsby: "npm:5.14.3"
+    gatsby: "npm:5.14.4"
     gatsby-cli: "npm:5.14.0"
     gatsby-legacy-polyfills: "npm:3.14.0"
     gatsby-plugin-canonical-urls: "npm:5.14.0"
@@ -13967,18 +13967,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"multer@npm:^1.4.5-lts.1":
-  version: 1.4.5-lts.2
-  resolution: "multer@npm:1.4.5-lts.2"
+"multer@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "multer@npm:2.0.1"
   dependencies:
     append-field: "npm:^1.0.0"
-    busboy: "npm:^1.0.0"
-    concat-stream: "npm:^1.5.2"
-    mkdirp: "npm:^0.5.4"
+    busboy: "npm:^1.6.0"
+    concat-stream: "npm:^2.0.0"
+    mkdirp: "npm:^0.5.6"
     object-assign: "npm:^4.1.1"
-    type-is: "npm:^1.6.4"
-    xtend: "npm:^4.0.0"
-  checksum: 10/9aa3ebc765954409e0adbb751ea7154a19ce1404e3b65091621685402c724b286552c89d7305facd3778eea73bff283f353a3beb036c094ed4e52c2cd726610f
+    type-is: "npm:^1.6.18"
+    xtend: "npm:^4.0.2"
+  checksum: 10/cb0dda65ae37be40968fc1f9ea492bdb4c20bd189ce427e11e95d333837193544606b82ef6431f2acd3cd11156164f215bdeb46f47847d29b6bf3a36ac736a8f
   languageName: node
   linkType: hard
 
@@ -15767,7 +15767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^2.0.2, readable-stream@npm:^2.2.2":
+"readable-stream@npm:^2.0.2":
   version: 2.3.8
   resolution: "readable-stream@npm:2.3.8"
   dependencies:
@@ -15782,7 +15782,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:^3.1.1, readable-stream@npm:^3.4.0":
+"readable-stream@npm:^3.0.2, readable-stream@npm:^3.1.1, readable-stream@npm:^3.4.0":
   version: 3.6.2
   resolution: "readable-stream@npm:3.6.2"
   dependencies:
@@ -17819,7 +17819,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-is@npm:^1.6.4, type-is@npm:~1.6.18":
+"type-is@npm:^1.6.18, type-is@npm:~1.6.18":
   version: 1.6.18
   resolution: "type-is@npm:1.6.18"
   dependencies:
@@ -18779,7 +18779,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xtend@npm:^4.0.0":
+"xtend@npm:^4.0.2":
   version: 4.0.2
   resolution: "xtend@npm:4.0.2"
   checksum: 10/ac5dfa738b21f6e7f0dd6e65e1b3155036d68104e67e5d5d1bde74892e327d7e5636a076f625599dc394330a731861e87343ff184b0047fef1360a7ec0a5a36a
