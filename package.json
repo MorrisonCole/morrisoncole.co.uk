@@ -12,7 +12,7 @@
     "@emotion/cache": "11.14.0",
     "@emotion/react": "11.14.0",
     "@emotion/server": "11.11.0",
-    "@emotion/styled": "11.14.0",
+    "@emotion/styled": "11.14.1",
     "@mdx-js/react": "3.1.0",
     "@mui/icons-material": "6.0.2",
     "@mui/lab": "5.0.0-alpha.173",
