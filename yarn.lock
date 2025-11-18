@@ -5240,13 +5240,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.3.26":
-  version: 18.3.26
-  resolution: "@types/react@npm:18.3.26"
+"@types/react@npm:18.3.27":
+  version: 18.3.27
+  resolution: "@types/react@npm:18.3.27"
   dependencies:
     "@types/prop-types": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10/04852f5a93f1ac5140313e6c3bb7ce1abad84425709df838154102d0ed3d422c78f7c6ea114c1ee183cba6db0475a371d7dc9c0fdf991697c42da5cc24ca0512
+    csstype: "npm:^3.2.2"
+  checksum: 10/90155820a2af315cad1ff47df695f3f2f568c12ad641a7805746a6a9a9aa6c40b1374e819e50d39afe0e375a6b9160a73176cbdb4e09807262bc6fcdc06e67db
   languageName: node
   linkType: hard
 
@@ -7837,6 +7837,13 @@ __metadata:
   version: 3.2.2
   resolution: "csstype@npm:3.2.2"
   checksum: 10/ad0598a38433a98c2e1d53bf541bd2c400b77acf9d60858fc9983b9b25a0c1c023ffef0f2b1f28e829e273e5a80f590d4b451a099572b14b4b854bc134736b0b
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.2.2":
+  version: 3.2.3
+  resolution: "csstype@npm:3.2.3"
+  checksum: 10/ad41baf7e2ffac65ab544d79107bf7cd1a4bb9bab9ac3302f59ab4ba655d5e30942a8ae46e10ba160c6f4ecea464cc95b975ca2fefbdeeacd6ac63f12f99fe1f
   languageName: node
   linkType: hard
 
@@ -13798,7 +13805,7 @@ __metadata:
     "@types/mdx-js__react": "npm:2.0.0"
     "@types/node": "npm:24.10.1"
     "@types/prettier": "npm:3.0.0"
-    "@types/react": "npm:18.3.26"
+    "@types/react": "npm:18.3.27"
     "@typescript-eslint/eslint-plugin": "npm:8.46.4"
     "@typescript-eslint/parser": "npm:8.46.4"
     anser: "npm:2.3.3"
