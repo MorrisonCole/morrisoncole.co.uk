@@ -7908,7 +7908,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.4.1":
+"debug@npm:4, debug@npm:^4.0.0, debug@npm:^4.0.1, debug@npm:^4.1.0, debug@npm:^4.1.1, debug@npm:^4.3.1, debug@npm:^4.3.2, debug@npm:^4.3.4, debug@npm:^4.4.1, debug@npm:~4.4.1":
   version: 4.4.3
   resolution: "debug@npm:4.4.3"
   dependencies:
@@ -13779,7 +13779,7 @@ __metadata:
     react-intersection-observer: "npm:10.0.0"
     reading-time: "npm:2.0.0-1"
     shallow-compare: "npm:1.2.2"
-    socket.io-client: "npm:4.8.1"
+    socket.io-client: "npm:4.8.2"
     source-map: "npm:0.8.0-beta.0"
     tsx: "npm:4.21.0"
     typescript: "npm:5.9.3"
@@ -16663,7 +16663,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socket.io-client@npm:4.8.1, socket.io-client@npm:^4.8.1":
+"socket.io-client@npm:4.8.2":
+  version: 4.8.2
+  resolution: "socket.io-client@npm:4.8.2"
+  dependencies:
+    "@socket.io/component-emitter": "npm:~3.1.0"
+    debug: "npm:~4.4.1"
+    engine.io-client: "npm:~6.6.1"
+    socket.io-parser: "npm:~4.2.4"
+  checksum: 10/490e2f9c42d97324e24ecff72a1e301d8050fa2c203668a9cdb76da7a27e45973c44c45848203f08fae78e81f88e21842ebcca41c91bcdcab3e2582e6ac83f1f
+  languageName: node
+  linkType: hard
+
+"socket.io-client@npm:^4.8.1":
   version: 4.8.1
   resolution: "socket.io-client@npm:4.8.1"
   dependencies:
