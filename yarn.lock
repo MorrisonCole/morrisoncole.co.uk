@@ -350,6 +350,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@aws-sdk/credential-provider-http@npm:^3.972.4":
+  version: 3.972.4
+  resolution: "@aws-sdk/credential-provider-http@npm:3.972.4"
+  dependencies:
+    "@aws-sdk/core": "npm:^3.973.4"
+    "@aws-sdk/types": "npm:^3.973.1"
+    "@smithy/fetch-http-handler": "npm:^5.3.9"
+    "@smithy/node-http-handler": "npm:^4.4.8"
+    "@smithy/property-provider": "npm:^4.2.8"
+    "@smithy/protocol-http": "npm:^5.3.8"
+    "@smithy/smithy-client": "npm:^4.11.1"
+    "@smithy/types": "npm:^4.12.0"
+    "@smithy/util-stream": "npm:^4.5.10"
+    tslib: "npm:^2.6.2"
+  checksum: 10/e5a3d25eea417b137dba76be2941c90b9023fc4085ef12ce83d33595678bcb0132455f091634bacc9a0acf2c218599226dc422d3c14e4419618f2a93c4765473
+  languageName: node
+  linkType: hard
+
 "@aws-sdk/credential-provider-ini@npm:^3.972.2":
   version: 3.972.2
   resolution: "@aws-sdk/credential-provider-ini@npm:3.972.2"
@@ -388,7 +406,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/credential-provider-node@npm:3.972.2, @aws-sdk/credential-provider-node@npm:^3.972.2":
+"@aws-sdk/credential-provider-node@npm:3.972.3":
+  version: 3.972.3
+  resolution: "@aws-sdk/credential-provider-node@npm:3.972.3"
+  dependencies:
+    "@aws-sdk/credential-provider-env": "npm:^3.972.2"
+    "@aws-sdk/credential-provider-http": "npm:^3.972.4"
+    "@aws-sdk/credential-provider-ini": "npm:^3.972.2"
+    "@aws-sdk/credential-provider-process": "npm:^3.972.2"
+    "@aws-sdk/credential-provider-sso": "npm:^3.972.2"
+    "@aws-sdk/credential-provider-web-identity": "npm:^3.972.2"
+    "@aws-sdk/types": "npm:^3.973.1"
+    "@smithy/credential-provider-imds": "npm:^4.2.8"
+    "@smithy/property-provider": "npm:^4.2.8"
+    "@smithy/shared-ini-file-loader": "npm:^4.4.3"
+    "@smithy/types": "npm:^4.12.0"
+    tslib: "npm:^2.6.2"
+  checksum: 10/7f1e77e40bbb101090ccea997d6597ca195009629a587d8a3cbe620cd483a9acc84f773f32389896b05df07bf19931b673a11a50222f4a82264a2f3c8875715e
+  languageName: node
+  linkType: hard
+
+"@aws-sdk/credential-provider-node@npm:^3.972.2":
   version: 3.972.2
   resolution: "@aws-sdk/credential-provider-node@npm:3.972.2"
   dependencies:
@@ -14061,7 +14099,7 @@ __metadata:
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
     "@aws-sdk/client-s3": "npm:3.978.0"
-    "@aws-sdk/credential-provider-node": "npm:3.972.2"
+    "@aws-sdk/credential-provider-node": "npm:3.972.3"
     "@babel/runtime": "npm:7.28.6"
     "@emotion/cache": "npm:11.14.0"
     "@emotion/react": "npm:11.14.0"
