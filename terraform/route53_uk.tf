@@ -41,14 +41,7 @@ resource "aws_route53_record" "mx_morrisoncole_co_uk" {
   name    = local.uk_root_domain
   type    = "MX"
   records = [
-    "1 ASPMX.L.GOOGLE.COM.",
-    "5 ALT1.ASPMX.L.GOOGLE.COM.",
-    "5 ALT2.ASPMX.L.GOOGLE.COM.",
-    "10 ASPMX2.GOOGLEMAIL.COM.",
-    "10 ASPMX3.GOOGLEMAIL.COM.",
-    "10 ASPMX4.GOOGLEMAIL.COM.",
-    "10 ASPMX5.GOOGLEMAIL.COM.",
-    "10 mail.morrisoncole.co.uk.",
+    "10 inbound-smtp.us-east-1.amazonaws.com.",
   ]
   ttl = 300
 }
@@ -89,7 +82,8 @@ resource "aws_route53_record" "txt_morrisoncole_co_uk" {
   records = [
     "google-site-verification=l9nxzwNCDiiCTEPu1R2glmGhlpBJCnfX_OKOVLE04r8",
     "google-site-verification=hLh_6PrYN-1R2zPgB-ga1cbc_hVyLqB6VMzyO3xY_Q8",
-    "openai-domain-verification=dv-mnVt5rr5zsXQPrGLkxc6ZQiM"
+    "openai-domain-verification=dv-mnVt5rr5zsXQPrGLkxc6ZQiM",
+    "v=spf1 include:amazonses.com ~all",
   ]
   ttl = 300
 }
@@ -113,7 +107,7 @@ resource "aws_route53_record" "mx_subdomains_morrisoncole_co_uk" {
   name    = "*.${local.uk_root_domain}"
   type    = "MX"
   records = [
-    "10 mail.morrisoncole.co.uk.",
+    "10 inbound-smtp.us-east-1.amazonaws.com.",
   ]
   ttl = 300
 }
@@ -152,6 +146,106 @@ resource "aws_route53_record" "cname_morrisoncole_co_uk" {
 
   records = [
     "_b17fef609136024cd7b27cded3eb4f6f.mhbtsbpdnt.acm-validations.aws.",
+  ]
+  ttl = 300
+}
+
+# WorkMail DNS Records
+
+resource "aws_route53_record" "autodiscover_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "autodiscover.${local.uk_root_domain}"
+  type    = "CNAME"
+  records = [
+    "autodiscover.mail.us-east-1.awsapps.com.",
+  ]
+  ttl = 300
+}
+
+# Custom MAIL FROM domain for SES/WorkMail
+
+resource "aws_route53_record" "mx_mail_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "mail.${local.uk_root_domain}"
+  type    = "MX"
+  records = [
+    "10 feedback-smtp.us-east-1.amazonses.com.",
+  ]
+  ttl = 300
+}
+
+resource "aws_route53_record" "txt_mail_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "mail.${local.uk_root_domain}"
+  type    = "TXT"
+  records = [
+    "v=spf1 include:amazonses.com ~all",
+  ]
+  ttl = 300
+}
+
+resource "aws_route53_record" "amazonses_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "_amazonses.${local.uk_root_domain}"
+  type    = "TXT"
+  records = [
+    "G8isCZCBieNxOLYlM345UJcsHDIIxRLFrEHkuRTion8=",
+  ]
+  ttl = 300
+}
+
+resource "aws_route53_record" "dmarc_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "_dmarc.${local.uk_root_domain}"
+  type    = "TXT"
+  records = [
+    "v=DMARC1;p=quarantine;pct=100;fo=1",
+  ]
+  ttl = 300
+}
+
+resource "aws_route53_record" "dkim1_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "cx5zm6omnhhcedioidjhshqwwpr75wzi._domainkey.${local.uk_root_domain}"
+  type    = "CNAME"
+  records = [
+    "cx5zm6omnhhcedioidjhshqwwpr75wzi.dkim.amazonses.com.",
+  ]
+  ttl = 300
+}
+
+resource "aws_route53_record" "dkim2_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "74wwcvedkviyitj3rb2xaq4yq7megmip._domainkey.${local.uk_root_domain}"
+  type    = "CNAME"
+  records = [
+    "74wwcvedkviyitj3rb2xaq4yq7megmip.dkim.amazonses.com.",
+  ]
+  ttl = 300
+}
+
+resource "aws_route53_record" "dkim3_morrisoncole_co_uk" {
+  provider = aws.ap-northeast-1
+
+  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
+  name    = "67ia5zaldlbyrhiwjcm27smeimtbaxgi._domainkey.${local.uk_root_domain}"
+  type    = "CNAME"
+  records = [
+    "67ia5zaldlbyrhiwjcm27smeimtbaxgi.dkim.amazonses.com.",
   ]
   ttl = 300
 }
