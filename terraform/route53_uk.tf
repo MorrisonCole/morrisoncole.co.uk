@@ -112,18 +112,6 @@ resource "aws_route53_record" "mx_subdomains_morrisoncole_co_uk" {
   ttl = 300
 }
 
-resource "aws_route53_record" "gmail_morrisoncole_co_uk" {
-  provider = aws.ap-northeast-1
-
-  zone_id = aws_route53_zone.morrisoncole_co_uk.zone_id
-  name    = "gmail.${local.uk_root_domain}"
-  type    = "CNAME"
-  records = [
-    "ghs.google.com.",
-  ]
-  ttl = 300
-}
-
 resource "aws_route53_record" "a_www_morrisoncole_co_uk" {
   provider = aws.ap-northeast-1
 
