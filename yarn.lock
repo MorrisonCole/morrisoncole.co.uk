@@ -116,9 +116,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-s3@npm:3.1005.0":
-  version: 3.1005.0
-  resolution: "@aws-sdk/client-s3@npm:3.1005.0"
+"@aws-sdk/client-s3@npm:3.1006.0":
+  version: 3.1006.0
+  resolution: "@aws-sdk/client-s3@npm:3.1006.0"
   dependencies:
     "@aws-crypto/sha1-browser": "npm:5.2.0"
     "@aws-crypto/sha256-browser": "npm:5.2.0"
@@ -173,9 +173,9 @@ __metadata:
     "@smithy/util-retry": "npm:^4.2.11"
     "@smithy/util-stream": "npm:^4.5.17"
     "@smithy/util-utf8": "npm:^4.2.2"
-    "@smithy/util-waiter": "npm:^4.2.11"
+    "@smithy/util-waiter": "npm:^4.2.12"
     tslib: "npm:^2.6.2"
-  checksum: 10/0e57dfa15bf610ff410ab1677adb118091031e8915688ff9376620caba1f073c788422a9f762ddf53828be99591e3ec518d62bc3f550ab8babcb0a04ccb38b7f
+  checksum: 10/c61b8652c87ff628497fb12ef33661475a670c5b2ccfa58e20f21e4895f85fe90cce1a5880bc12e70373d4e82d79579bc7c9bcdee9028c6e175a036c213923e6
   languageName: node
   linkType: hard
 
@@ -4842,14 +4842,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@smithy/util-waiter@npm:^4.2.11":
-  version: 4.2.11
-  resolution: "@smithy/util-waiter@npm:4.2.11"
+"@smithy/util-waiter@npm:^4.2.12":
+  version: 4.2.12
+  resolution: "@smithy/util-waiter@npm:4.2.12"
   dependencies:
     "@smithy/abort-controller": "npm:^4.2.11"
     "@smithy/types": "npm:^4.13.0"
     tslib: "npm:^2.6.2"
-  checksum: 10/b33b552631a06c3b6787a27d4d9df2a32119f084696faad4cf470dcc8d45133926dd87a0d918f08043ac3ee35c946dd6b6cf9836b45751159a91f450b46fa02e
+  checksum: 10/56e9760c4c8b530109a9cbddc7445d1d64769c0ac95e54b3c86e1c65ff571ea16b0b76377549e176baa79b9221a06e4ba0902d38da9ae70569a8bbff50f52335
   languageName: node
   linkType: hard
 
@@ -13606,7 +13606,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
-    "@aws-sdk/client-s3": "npm:3.1005.0"
+    "@aws-sdk/client-s3": "npm:3.1006.0"
     "@aws-sdk/credential-provider-node": "npm:3.972.19"
     "@babel/runtime": "npm:7.28.6"
     "@emotion/cache": "npm:11.14.0"
