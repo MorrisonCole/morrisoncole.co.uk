@@ -6198,7 +6198,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.14.0, axios@npm:^1.6.4":
+"axios@npm:1.14.1":
+  version: 1.14.1
+  resolution: "axios@npm:1.14.1"
+  dependencies:
+    follow-redirects: "npm:^1.15.11"
+    form-data: "npm:^4.0.5"
+    plain-crypto-js: "npm:^4.2.1"
+    proxy-from-env: "npm:^2.1.0"
+  checksum: 10/805bc9a656fa0c94e7d2257632825fb670e118b4d2cd9c29348bffc6eff3046dcc12037814be3fa4d4e14e505c89f725a8c84f3aef65e8b3fc4201d413a9c6d3
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.4":
   version: 1.14.0
   resolution: "axios@npm:1.14.0"
   dependencies:
@@ -13640,7 +13652,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:8.58.0"
     "@typescript-eslint/parser": "npm:8.58.0"
     anser: "npm:2.3.5"
-    axios: "npm:1.14.0"
+    axios: "npm:1.14.1"
     css: "npm:3.0.0"
     css.escape: "npm:1.5.1"
     eslint: "npm:10.1.0"
@@ -14662,6 +14674,13 @@ __metadata:
   dependencies:
     find-up: "npm:^3.0.0"
   checksum: 10/5bac346b7c7c903613c057ae3ab722f320716199d753f4a7d053d38f2b5955460f3e6ab73b4762c62fd3e947f58e04f1343e92089e7bb6091c90877406fcd8c8
+  languageName: node
+  linkType: hard
+
+"plain-crypto-js@npm:^4.2.1":
+  version: 4.2.1
+  resolution: "plain-crypto-js@npm:4.2.1"
+  checksum: 10/5d0b631e6b7dff6305d8aa171b17a5e070b89407210063d7b9c39aebd9812b7d3ad7de41c8f4b063e3be1f945232f7c2f02529d85020c32f3256791ca3e01aec
   languageName: node
   linkType: hard
 
