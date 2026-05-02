@@ -6176,7 +6176,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:1.15.2, axios@npm:^1.6.4":
+"axios@npm:1.16.0":
+  version: 1.16.0
+  resolution: "axios@npm:1.16.0"
+  dependencies:
+    follow-redirects: "npm:^1.16.0"
+    form-data: "npm:^4.0.5"
+    proxy-from-env: "npm:^2.1.0"
+  checksum: 10/cf8b521ff732c21550b38c8739aef556ea5e14b268468bb89e4307416ab262b462e582474e810963a3d61c2392ab47ad35c11d05eff027de7c97113bc7411623
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.6.4":
   version: 1.15.2
   resolution: "axios@npm:1.15.2"
   dependencies:
@@ -9666,7 +9677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.11":
+"follow-redirects@npm:^1.15.11, follow-redirects@npm:^1.16.0":
   version: 1.16.0
   resolution: "follow-redirects@npm:1.16.0"
   peerDependenciesMeta:
@@ -13473,7 +13484,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:8.59.1"
     "@typescript-eslint/parser": "npm:8.59.1"
     anser: "npm:2.3.5"
-    axios: "npm:1.15.2"
+    axios: "npm:1.16.0"
     css: "npm:3.0.0"
     css.escape: "npm:1.5.1"
     eslint: "npm:10.3.0"
