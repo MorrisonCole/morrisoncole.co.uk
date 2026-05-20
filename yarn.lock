@@ -116,9 +116,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-s3@npm:3.1050.0":
-  version: 3.1050.0
-  resolution: "@aws-sdk/client-s3@npm:3.1050.0"
+"@aws-sdk/client-s3@npm:3.1051.0":
+  version: 3.1051.0
+  resolution: "@aws-sdk/client-s3@npm:3.1051.0"
   dependencies:
     "@aws-crypto/sha1-browser": "npm:5.2.0"
     "@aws-crypto/sha256-browser": "npm:5.2.0"
@@ -138,7 +138,7 @@ __metadata:
     "@smithy/node-http-handler": "npm:^4.7.2"
     "@smithy/types": "npm:^4.14.1"
     tslib: "npm:^2.6.2"
-  checksum: 10/8dd5f42dc9c9672f5d87ce3685e4604564c868fbefd9997bc086fe50a08382f06c3e6249ebc74da9e0dfc7b1db993af8659cc5202439808f529720485fd5b24e
+  checksum: 10/ff4cd4edb11e2a337caa545e089c6d5c2a6727bd0202db5b7f9abeb6cd78a38567e2c6da3e91277e014add81545a28a7e1a8498962ec202d5e2f8a49557e6e3a
   languageName: node
   linkType: hard
 
@@ -12762,7 +12762,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "morrisoncole.co.uk@workspace:."
   dependencies:
-    "@aws-sdk/client-s3": "npm:3.1050.0"
+    "@aws-sdk/client-s3": "npm:3.1051.0"
     "@aws-sdk/credential-provider-node": "npm:3.972.43"
     "@babel/runtime": "npm:7.29.2"
     "@emotion/cache": "npm:11.14.0"
