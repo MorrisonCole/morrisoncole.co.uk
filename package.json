@@ -45,8 +45,8 @@
     "mitt": "3.0.1",
     "platform": "1.3.6",
     "prism-react-renderer": "2.4.1",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
     "react-intersection-observer": "10.0.3",
     "reading-time": "2.0.0-1",
     "shallow-compare": "1.2.2"
@@ -60,7 +60,7 @@
     "@types/mdx-js__react": "2.0.0",
     "@types/node": "24.12.4",
     "@types/prettier": "3.0.0",
-    "@types/react": "19.2.15",
+    "@types/react": "19.2.16",
     "@typescript-eslint/eslint-plugin": "8.60.1",
     "@typescript-eslint/parser": "8.60.1",
     "axios": "1.16.1",
@@ -76,7 +76,7 @@
     "typescript": "6.0.3"
   },
   "resolutions": {
-    "@types/react": "19.2.15"
+    "@types/react": "19.2.16"
   },
   "homepage": "https://github.com/MorrisonCole/morrisoncole.co.uk#readme",
   "keywords": [
