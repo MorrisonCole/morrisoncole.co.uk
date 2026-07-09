@@ -12819,7 +12819,7 @@ __metadata:
     mime: "npm:4.1.0"
     mitt: "npm:3.0.1"
     platform: "npm:1.3.6"
-    prettier: "npm:3.9.4"
+    prettier: "npm:3.9.5"
     prism-react-renderer: "npm:2.4.1"
     react: "npm:19.2.7"
     react-dom: "npm:19.2.7"
@@ -14242,12 +14242,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:*, prettier@npm:3.9.4":
+"prettier@npm:*":
   version: 3.9.4
   resolution: "prettier@npm:3.9.4"
   bin:
     prettier: bin/prettier.cjs
   checksum: 10/4a0dc4389d442f5aca0beb12778c90b6ceb9831940b01a1df5eba9150b5ce96fa52eda9074a10a370e732adc03e2f645597dfd8b7e3f1e94dee28df01004a0fd
+  languageName: node
+  linkType: hard
+
+"prettier@npm:3.9.5":
+  version: 3.9.5
+  resolution: "prettier@npm:3.9.5"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 10/b6587f1582ba653ce5207ee227aff646500e5098646931088f176d1ab090b1f47d5a333f1facd634e9aa7dcb15c45940e2cec13a5962534cf0200617517b67b6
   languageName: node
   linkType: hard
 
