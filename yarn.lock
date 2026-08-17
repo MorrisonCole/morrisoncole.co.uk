@@ -4019,66 +4019,66 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@smithy/core@npm:^3.31.1":
-  version: 3.31.1
-  resolution: "@smithy/core@npm:3.31.1"
+"@smithy/core@npm:^3.31.1, @smithy/core@npm:^3.33.2":
+  version: 3.33.2
+  resolution: "@smithy/core@npm:3.33.2"
   dependencies:
-    "@smithy/types": "npm:^4.16.1"
+    "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10/4a66d0f1f6b6aac8cbe424d0c9c6ca12e02b8b64c21065de396b60c203f163e245000e4607f02d1a8391028a669a78b666843dc5769af4c8f0101afd6858aba0
+  checksum: 10/9a7bdacb40e9e79b11de4efc8538cdb302e3228d17e99f5bebe25d695dd57107322b0a8e7dcbcd73844521a1c4b04048043e50e0c82771d59d47710634b44535
   languageName: node
   linkType: hard
 
 "@smithy/credential-provider-imds@npm:^4.4.16":
-  version: 4.4.16
-  resolution: "@smithy/credential-provider-imds@npm:4.4.16"
+  version: 4.5.2
+  resolution: "@smithy/credential-provider-imds@npm:4.5.2"
   dependencies:
-    "@smithy/core": "npm:^3.31.1"
-    "@smithy/types": "npm:^4.16.1"
+    "@smithy/core": "npm:^3.33.2"
+    "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10/5a9d54b151ec9296db79f52e68c8fd1feddd4d75332f13dad0dc5efe2aabe3994092193ea532c2cb3e5133f099a650accbd2ff836b4aba916b96d0d796766a0c
+  checksum: 10/5db260066aa97e2a7eca5258ff1c1dd1234cd2ed28e3b7ec36cbcf578007878853fa787cb48df2fd070fb0440a8c537d628344b1fd4ec589aaa2fa154d150b3e
   languageName: node
   linkType: hard
 
 "@smithy/fetch-http-handler@npm:^5.6.13":
-  version: 5.6.13
-  resolution: "@smithy/fetch-http-handler@npm:5.6.13"
+  version: 5.7.2
+  resolution: "@smithy/fetch-http-handler@npm:5.7.2"
   dependencies:
-    "@smithy/core": "npm:^3.31.1"
-    "@smithy/types": "npm:^4.16.1"
+    "@smithy/core": "npm:^3.33.2"
+    "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10/272d367031096802c8ea7c8e7479e7522589018628064e01b5d101316091687eaa48b4029543e0a11486db6ec4ffbcd9a9ac26923f0a655150e33fe9e085e3ca
+  checksum: 10/21d66b9fe99771d608bb5950d7e123f6b4cd4ecf1d7d51d55bfcac715cfb29e5613523ca02239f0167a1f0dc3a66656b09c2b2673a53b6e31c827c4610fa5519
   languageName: node
   linkType: hard
 
 "@smithy/node-http-handler@npm:^4.9.13":
-  version: 4.9.13
-  resolution: "@smithy/node-http-handler@npm:4.9.13"
+  version: 4.11.2
+  resolution: "@smithy/node-http-handler@npm:4.11.2"
   dependencies:
-    "@smithy/core": "npm:^3.31.1"
-    "@smithy/types": "npm:^4.16.1"
+    "@smithy/core": "npm:^3.33.2"
+    "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10/d52fac160d879b957c8092c70e9991c23a3775bb448a8c6d5836873afab1f5ea43dd72c63150da748879b29443f0af7f83fb777763975a81939e8806e18ba71a
+  checksum: 10/8172c26ef1a49a072688f7704e4db87767d3addc1825fd4fb6131c83467bb464e86c2c61408126fce1d4f67becdf7cff09b92a3be26d8b1a5b22ef1664297f95
   languageName: node
   linkType: hard
 
 "@smithy/signature-v4@npm:^5.6.12":
-  version: 5.6.12
-  resolution: "@smithy/signature-v4@npm:5.6.12"
+  version: 5.7.2
+  resolution: "@smithy/signature-v4@npm:5.7.2"
   dependencies:
-    "@smithy/core": "npm:^3.31.1"
-    "@smithy/types": "npm:^4.16.1"
+    "@smithy/core": "npm:^3.33.2"
+    "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10/0a14dac2c93118eb5fabdb34c8e3dd042fb645be959a6546e67c6b3d181a3df8f13ef210a8c2b9811371b8b0fc846d9e15e9bb3076bcb1c019e830f924fba60a
+  checksum: 10/47b59515c2cc9273ba18dbe4d840f6c64d203373a73520c25b366ae9e3b508d863ea36a14be0fd92a2ede187b14a63f4ae1c09d2c55e57d04012d0276d42715d
   languageName: node
   linkType: hard
 
-"@smithy/types@npm:^4.16.1":
-  version: 4.16.1
-  resolution: "@smithy/types@npm:4.16.1"
+"@smithy/types@npm:^4.16.1, @smithy/types@npm:^4.17.2":
+  version: 4.17.2
+  resolution: "@smithy/types@npm:4.17.2"
   dependencies:
     tslib: "npm:^2.6.2"
-  checksum: 10/23651203f2e8800b2b2311ef163ddec166d91e15b30fa1c877be352aeef8ae7cc7b0189f99e07b0dcd52160b10adfb3fa4ca32c38a2d7195fc5428b8986d5201
+  checksum: 10/e54500bb56a12a6f92374d6095834af04f19868e5178836b21fdcbce0c0fef0570dede2a39777b9d3330075d55096db206867f73ddf4dfe530d1b392f8d0aea9
   languageName: node
   linkType: hard
 
@@ -5749,11 +5749,11 @@ __metadata:
   linkType: hard
 
 "bare-url@npm:^2.2.2":
-  version: 2.5.1
-  resolution: "bare-url@npm:2.5.1"
+  version: 2.5.2
+  resolution: "bare-url@npm:2.5.2"
   dependencies:
     bare-path: "npm:^3.0.0"
-  checksum: 10/3ecc2d1904a244a5a20d049dc64c2bcdf695a9726d1d90dd47b84859e81c4b87215a84f215531486a51bed9ebbbde0c9975243dc4a3476eb1b4a4628ab4a9020
+  checksum: 10/4a3eb8ad515e86d13c25d25796db36eb48968d9af69aff9c5e311355592d315dbec3f3f1ff2986e076ef1a46246df0740d711cebab45e5ce51e83f9378e1929e
   languageName: node
   linkType: hard
 
@@ -5781,11 +5781,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.11.12":
-  version: 2.11.13
-  resolution: "baseline-browser-mapping@npm:2.11.13"
+  version: 2.11.14
+  resolution: "baseline-browser-mapping@npm:2.11.14"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10/42b8b85ab6662d8cba5678dcd01acfcd884b4e87b882f517b137ce0b193db1478cfb0d0c5a50cd43c031e81f8514d1a1533ce1d55f0cb5735246665fd5ebe8f6
+  checksum: 10/b1745ec32246d3d1182bfeab2c2efeaf29925e6f617da59f28fde032fce6fa4eaa4632bcf2f9edeca83ceeb7cdfd72d6361ebd7c10e1d4fcb117259ec7059165
   languageName: node
   linkType: hard
 
@@ -6633,9 +6633,9 @@ __metadata:
   linkType: hard
 
 "content-type@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "content-type@npm:2.0.0"
-  checksum: 10/0bbb276b790ba7e86c479c7d69fae1861b2e908ff3ce2cb01975b516f93eede2216d242902ed6c5b15cd554014611ce9dfdcf51cd35b16569e45a979e50d0cef
+  version: 2.1.0
+  resolution: "content-type@npm:2.1.0"
+  checksum: 10/8aac907922538f430d8bfab1d8fe2fbdc1eb890a0fa7a619f712db4bfefe24be951ba464f972007df64840c775bf2db284ca8223547ac5317ad9ab2ee8e6501b
   languageName: node
   linkType: hard
 
@@ -7474,9 +7474,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.402":
-  version: 1.5.403
-  resolution: "electron-to-chromium@npm:1.5.403"
-  checksum: 10/6c579ac1fa7594fc49556d5c87a8a0d718a261c1763a8c92d619daa396ba4174c088a11743c0c3d6f6494b096748460df018fd4126b17ab16712a2dcee33306d
+  version: 1.5.408
+  resolution: "electron-to-chromium@npm:1.5.408"
+  checksum: 10/02084c418bb1577f7f768e377c2d9f9c83b718ee272a6122b1cb4913ff7c12888116a24313dd6c642d1c74c41ab1d24adfa14d9649184ea4162920a15e5a5b41
   languageName: node
   linkType: hard
 
@@ -14256,13 +14256,13 @@ __metadata:
   linkType: hard
 
 "probe-image-size@npm:^7.2.3":
-  version: 7.3.0
-  resolution: "probe-image-size@npm:7.3.0"
+  version: 7.4.0
+  resolution: "probe-image-size@npm:7.4.0"
   dependencies:
     lodash.merge: "npm:^4.6.2"
     needle: "npm:^2.5.2"
     stream-parser: "npm:~0.3.1"
-  checksum: 10/ced7397e3992e4dc0889471e743b07656c5397e31368911b9929ec79786bcec4b2941fa873f10b287e097d7d4f5cf1a8cf0299cc338d3c6ea4b1dfbaaf7ac1e8
+  checksum: 10/07b73761bfe4d11532994e3c1eef98163f4d9930e0adaea318fe7671e48821db8e59022c946c0f1c09ff1bccecf9272e2e318cbdbdc0a60d65d6800cced291f9
   languageName: node
   linkType: hard
 
@@ -16339,8 +16339,8 @@ __metadata:
   linkType: hard
 
 "terser@npm:^5.2.0, terser@npm:^5.31.1":
-  version: 5.49.2
-  resolution: "terser@npm:5.49.2"
+  version: 5.50.0
+  resolution: "terser@npm:5.50.0"
   dependencies:
     "@jridgewell/source-map": "npm:^0.3.3"
     acorn: "npm:^8.15.0"
@@ -16348,7 +16348,7 @@ __metadata:
     source-map-support: "npm:~0.5.20"
   bin:
     terser: bin/terser
-  checksum: 10/a115116b7d9f302506b5d87aa3c661078a5d520939b316ba7f3095083fcd9b779d51cb7761cde00e3f91ad3bb9d7ff1832c6cfd8be4f63291d847bab6b1cf01b
+  checksum: 10/d94ccee6ab8cd73dfe041c9f34729026e3b00e26ed1544497e7b54bb90b0d162a44621d830c0dd26684dc1a0e3ac91a75a6aab2f233ee6b82df9c21c7bab3354
   languageName: node
   linkType: hard
 
@@ -16998,8 +16998,8 @@ __metadata:
   linkType: hard
 
 "update-browserslist-db@npm:^1.3.0":
-  version: 1.3.0
-  resolution: "update-browserslist-db@npm:1.3.0"
+  version: 1.3.1
+  resolution: "update-browserslist-db@npm:1.3.1"
   dependencies:
     escalade: "npm:^3.2.0"
     picocolors: "npm:^1.1.1"
@@ -17007,7 +17007,7 @@ __metadata:
     browserslist: ">= 4.21.0"
   bin:
     update-browserslist-db: cli.js
-  checksum: 10/5a02f6424c926ba8665abf0907ae3ef06e08677b4accc133ac1cb224c21beae338ba7c11a3a1bb181dec9b88a30aacf731d06d4759ac60ffe4187f113e2d9d28
+  checksum: 10/24ba3c17529c4319c6c29e59fb2cb5dadb101ea2170bc6cfca4dd3e0a2fa6686e00d0f5cadb5ba22da3ec3f1a71e36a1785b71717b6f42237cfff1fb160b8bd5
   languageName: node
   linkType: hard
 
