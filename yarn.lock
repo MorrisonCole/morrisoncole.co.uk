@@ -4019,17 +4019,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@smithy/core@npm:^3.33.2":
-  version: 3.33.2
-  resolution: "@smithy/core@npm:3.33.2"
-  dependencies:
-    "@smithy/types": "npm:^4.17.2"
-    tslib: "npm:^2.6.2"
-  checksum: 10/9a7bdacb40e9e79b11de4efc8538cdb302e3228d17e99f5bebe25d695dd57107322b0a8e7dcbcd73844521a1c4b04048043e50e0c82771d59d47710634b44535
-  languageName: node
-  linkType: hard
-
-"@smithy/core@npm:^3.33.3":
+"@smithy/core@npm:^3.33.2, @smithy/core@npm:^3.33.3":
   version: 3.33.3
   resolution: "@smithy/core@npm:3.33.3"
   dependencies:
@@ -4073,13 +4063,13 @@ __metadata:
   linkType: hard
 
 "@smithy/signature-v4@npm:^5.6.12":
-  version: 5.7.2
-  resolution: "@smithy/signature-v4@npm:5.7.2"
+  version: 5.7.3
+  resolution: "@smithy/signature-v4@npm:5.7.3"
   dependencies:
-    "@smithy/core": "npm:^3.33.2"
+    "@smithy/core": "npm:^3.33.3"
     "@smithy/types": "npm:^4.17.2"
     tslib: "npm:^2.6.2"
-  checksum: 10/47b59515c2cc9273ba18dbe4d840f6c64d203373a73520c25b366ae9e3b508d863ea36a14be0fd92a2ede187b14a63f4ae1c09d2c55e57d04012d0276d42715d
+  checksum: 10/8f18091aedd508ac746570b1eb811fd30147112dc359909d8400d155f759bdda16a8f1b03ddfdb641190e18f8fac8915be151b2d68e200c58b1c6821800502f8
   languageName: node
   linkType: hard
 
@@ -5791,11 +5781,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.11.12":
-  version: 2.11.14
-  resolution: "baseline-browser-mapping@npm:2.11.14"
+  version: 2.11.18
+  resolution: "baseline-browser-mapping@npm:2.11.18"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10/b1745ec32246d3d1182bfeab2c2efeaf29925e6f617da59f28fde032fce6fa4eaa4632bcf2f9edeca83ceeb7cdfd72d6361ebd7c10e1d4fcb117259ec7059165
+  checksum: 10/2b27bf073acb9ec443c7d9cf7185ca4aac854fbc1236467aeeefbfa24a212e0cc6659c32c79c29bbd50d40cb81289feb38d9faf7ecfb6f66f6fae1d5a2b332df
   languageName: node
   linkType: hard
 
@@ -6491,9 +6481,9 @@ __metadata:
   linkType: hard
 
 "colord@npm:^2.9.1":
-  version: 2.9.3
-  resolution: "colord@npm:2.9.3"
-  checksum: 10/907a4506d7307e2f580b471b581e992181ed75ab0c6925ece9ca46d88161d2fc50ed15891cd0556d0d9321237ca75afc9d462e4c050b939ef88428517f047f30
+  version: 2.10.0
+  resolution: "colord@npm:2.10.0"
+  checksum: 10/0983763f320b52e9026a59bd7f7633f1487130310d1f381901d14939b3a6e0aef3128c8bd8e5669ededbda0b69e6ba12c801c8905fce6de359284d1ff5d48431
   languageName: node
   linkType: hard
 
@@ -7484,9 +7474,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.402":
-  version: 1.5.408
-  resolution: "electron-to-chromium@npm:1.5.408"
-  checksum: 10/02084c418bb1577f7f768e377c2d9f9c83b718ee272a6122b1cb4913ff7c12888116a24313dd6c642d1c74c41ab1d24adfa14d9649184ea4162920a15e5a5b41
+  version: 1.5.412
+  resolution: "electron-to-chromium@npm:1.5.412"
+  checksum: 10/cfc71d676e88771fffbbc1541bc5cf1252ac7c9ed7cd7d969ed96867c3b668b957445cca86fe41e37cecbb36c3fac7f044d2d1684ca9f33e577cd9fa18eb5468
   languageName: node
   linkType: hard
 
@@ -8683,9 +8673,9 @@ __metadata:
   linkType: hard
 
 "fast-uri@npm:^3.0.1":
-  version: 3.1.5
-  resolution: "fast-uri@npm:3.1.5"
-  checksum: 10/784bef687ca3ecfb4587a05104a4d41101796f0fec72be47a9abed743b10109e69a24d1ad0854ee7d2705912dc2ca9d93e03d35b65df0a3da0339e05b5d83b5c
+  version: 3.1.6
+  resolution: "fast-uri@npm:3.1.6"
+  checksum: 10/de34fceafd3a1d917989a1116b092d9b6ebe6fa3c9e908a308b988a6455449fa0a0256b6ef628aa7da80f1f84031d704c290d6ba0ea4c6f4c42b7974a3bd43ae
   languageName: node
   linkType: hard
 
@@ -11349,15 +11339,15 @@ __metadata:
   linkType: hard
 
 "joi@npm:^17.11.0, joi@npm:^17.9.2":
-  version: 17.13.4
-  resolution: "joi@npm:17.13.4"
+  version: 17.13.6
+  resolution: "joi@npm:17.13.6"
   dependencies:
     "@hapi/hoek": "npm:^9.3.0"
     "@hapi/topo": "npm:^5.1.0"
     "@sideway/address": "npm:^4.1.5"
     "@sideway/formula": "npm:^3.0.1"
     "@sideway/pinpoint": "npm:^2.0.0"
-  checksum: 10/0e407d4cc6cb0830b93c2d107f8b85113338473296025c31a931589359b58883e61fd183dd7532d3ab1ee014a01a20830a8fca90d9f0217d0c0894ee2cbf9ff5
+  checksum: 10/9fd7f2ecdb39deaf298b12de824181e5f50e6d562dc1d05512ee3963e607994b54621299ce956b0e3b12c982f8eb71a7126883d3311ccdda1d6efff1986f2276
   languageName: node
   linkType: hard
 
