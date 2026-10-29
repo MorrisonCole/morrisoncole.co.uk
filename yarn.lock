@@ -1802,10 +1802,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:8.0.8":
-  version: 8.0.8
-  resolution: "@babel/runtime@npm:8.0.8"
-  checksum: 10/11aef038d43291323bdcb6bb30e37c27b475b53d465008b93dd73e7d1e12b00db49ca2f21467be703f17749ad4361ee8d6f7f14c592a15ad9fee68715e7e0536
+"@babel/runtime@npm:8.0.10":
+  version: 8.0.10
+  resolution: "@babel/runtime@npm:8.0.10"
+  checksum: 10/7a5375aa26f57396ceeae045705acdb86c961b658153247382306cdd15775a895dc3d80a3f7d38fb5f762bb99df5eb05e1ac99808d79c23205b0fc4be9fa90a0
   languageName: node
   linkType: hard
 
@@ -12842,7 +12842,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-s3": "npm:3.1159.0"
     "@aws-sdk/credential-provider-node": "npm:3.972.90"
-    "@babel/runtime": "npm:8.0.8"
+    "@babel/runtime": "npm:8.0.10"
     "@emotion/cache": "npm:11.14.0"
     "@emotion/react": "npm:11.14.0"
     "@emotion/server": "npm:11.11.0"
