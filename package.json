@@ -52,8 +52,8 @@
     "shallow-compare": "1.2.2"
   },
   "devDependencies": {
-    "@aws-sdk/client-s3": "3.1166.0",
-    "@aws-sdk/credential-provider-node": "3.972.96",
+    "@aws-sdk/client-s3": "3.1167.0",
+    "@aws-sdk/credential-provider-node": "3.972.97",
     "@morrisoncole/gatsby-source-goodreads": "0.1.2",
     "@types/css": "0.0.38",
     "@types/eslint": "9.6.1",
