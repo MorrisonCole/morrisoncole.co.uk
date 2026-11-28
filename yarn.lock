@@ -2284,14 +2284,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-array@npm:^0.23.6":
-  version: 0.23.6
-  resolution: "@eslint/config-array@npm:0.23.6"
+"@eslint/config-array@npm:^0.23.7":
+  version: 0.23.7
+  resolution: "@eslint/config-array@npm:0.23.7"
   dependencies:
     "@eslint/object-schema": "npm:^3.0.5"
     debug: "npm:^4.3.1"
     minimatch: "npm:^11.0.5"
-  checksum: 10/090cbcfcd0de25c6ae8c1542a0a5a042806c52166e8e687b54dd317967c9fd9dabcaaa090ab62f68db8449e7916681a1d9d3a82ffd4e4b5b229ce0335edbcaf6
+  checksum: 10/6284bfc76df11dcc492a231f591c2d9d95d9e9790475846c0f20bba4954b4c7717752ebe47aa8208d73b9b792a05bcb5dc3e228e66f2c8066e5e659f777504f5
   languageName: node
   linkType: hard
 
@@ -8289,13 +8289,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:10.15.0":
-  version: 10.15.0
-  resolution: "eslint@npm:10.15.0"
+"eslint@npm:10.16.0":
+  version: 10.16.0
+  resolution: "eslint@npm:10.16.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.2"
-    "@eslint/config-array": "npm:^0.23.6"
+    "@eslint/config-array": "npm:^0.23.7"
     "@eslint/config-helpers": "npm:^0.7.0"
     "@eslint/core": "npm:^1.2.1"
     "@eslint/plugin-kit": "npm:^0.7.3"
@@ -8330,7 +8330,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10/210e852590cd25dd45192bd69861801f2ad692ff1ab60fcee88c9a5a7482b1626b052b0e12801301be55a811fb1aa5361b4632957848fb3bce5453833053df9e
+  checksum: 10/b7ff67a08189f30b650aca1aa8b39c8a466b502c293fe0e701706963868ab2f393126ab4b948baab7a44c92490a723b3d6227e3f2adb5ba142ce865eb6ee8348
   languageName: node
   linkType: hard
 
@@ -12867,7 +12867,7 @@ __metadata:
     axios: "npm:1.21.1"
     css: "npm:3.0.0"
     css.escape: "npm:1.5.1"
-    eslint: "npm:10.15.0"
+    eslint: "npm:10.16.0"
     eslint-config-prettier: "npm:10.1.9"
     eslint-plugin-react: "npm:7.37.5"
     event-source-polyfill: "npm:1.0.31"
